@@ -1,0 +1,17 @@
+services:
+  db:
+    build:
+      context: .
+      dockerfile: ./dockerfile/mysql.dockerfile
+    ports:
+      - "3306:3306"
+    networks:
+      my_network:
+        ipv4_address: 172.21.0.1
+
+networks:
+  my_network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.21.0.0/24
