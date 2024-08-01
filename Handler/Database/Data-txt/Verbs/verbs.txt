@@ -42,20 +42,6 @@ Ví dụ:
 * Abbreviate your presentation to fit the time limit. (Rút ngắn bài thuyết trình của bạn để phù hợp với giới hạn thời gian)
 * Scientists often abbreviate long chemical names. (Các nhà khoa học thường viết tắt tên các hóa chất dài)
 
-Abbreviate:
-- Viết tắt.
-- Rút ngắn.
-- Tóm tắt.
-- Làm ngắn gọn.
-Ngữ cảnh:
-+ Khi cần tiết kiệm không gian trong văn bản.
-+ Trong giao tiếp không chính thức hoặc trên mạng xã hội.
-+ Trong các tài liệu kỹ thuật hoặc khoa học.
-Ví dụ:
-* Abbreviate "United States of America" to "USA". (Viết tắt "Hợp chủng quốc Hoa Kỳ" thành "USA")
-* Abbreviate your presentation to fit the time limit. (Rút ngắn bài thuyết trình của bạn để phù hợp với giới hạn thời gian)
-* Scientists often abbreviate long chemical names. (Các nhà khoa học thường viết tắt tên các hóa chất dài)
-
 Abdicate:
 - Từ bỏ (quyền lực, ngôi vị).
 - Thoái vị.
@@ -1811,3 +1797,4436 @@ Ví dụ:
 * The president appointed a new cabinet member. (Tổng thống đã bổ nhiệm một thành viên nội các mới)
 * We appointed Tuesday for our next meeting. (Chúng tôi đã sắp xếp ngày thứ Ba cho cuộc họp tiếp theo)
 
+Apportion:
+- Phân chia.
+- Phân bổ.
+Ngữ cảnh:
++ Trong quản lý tài chính và nguồn lực.
++ Khi chia sẻ trách nhiệm hoặc công việc.
+Ví dụ:
+* The manager apportioned the budget among different departments. (Người quản lý đã phân bổ ngân sách cho các phòng ban khác nhau)
+* We need to apportion the tasks equally among team members. (Chúng ta cần phân chia công việc đồng đều giữa các thành viên trong nhóm)
+
+Appraise:
+- Đánh giá.
+- Ước tính giá trị.
+Ngữ cảnh:
++ Trong lĩnh vực kinh doanh và tài chính.
++ Khi đánh giá hiệu suất công việc.
+Ví dụ:
+* The jeweler appraised the diamond necklace. (Người thợ kim hoàn đã đánh giá giá trị của chiếc vòng cổ kim cương)
+* Managers regularly appraise their employees' performance. (Các quản lý thường xuyên đánh giá hiệu suất của nhân viên)
+
+Appreciate:
+- Đánh giá cao.
+- Cảm kích.
+- Tăng giá trị.
+Ngữ cảnh:
++ Khi bày tỏ lòng biết ơn.
++ Trong lĩnh vực tài chính và đầu tư.
+Ví dụ:
+* I really appreciate your help with this project. (Tôi thực sự đánh giá cao sự giúp đỡ của bạn trong dự án này)
+* The value of the property has appreciated over the years. (Giá trị của bất động sản đã tăng lên qua các năm)
+
+Apprehend:
+- Bắt giữ.
+- Hiểu, nắm bắt.
+Ngữ cảnh:
++ Trong lĩnh vực thực thi pháp luật.
++ Khi nói về việc hiểu một khái niệm phức tạp.
+Ví dụ:
+* The police apprehended the suspect after a long chase. (Cảnh sát đã bắt giữ nghi phạm sau một cuộc truy đuổi dài)
+* I find it difficult to apprehend the concept of quantum physics. (Tôi thấy khó nắm bắt khái niệm về vật lý lượng tử)
+
+Apprentice:
+- Học việc.
+- Tập sự.
+Ngữ cảnh:
++ Trong môi trường công việc, đặc biệt là các nghề thủ công.
++ Khi nói về việc học hỏi kỹ năng mới từ người có kinh nghiệm.
+Ví dụ:
+* He apprenticed as a carpenter for five years. (Anh ấy đã học việc làm thợ mộc trong năm năm)
+* Many chefs start their careers as apprentices in professional kitchens. (Nhiều đầu bếp bắt đầu sự nghiệp của họ như những người học việc trong các nhà bếp chuyên nghiệp)
+
+Apprise:
+- Thông báo.
+- Cho biết.
+Ngữ cảnh:
++ Trong giao tiếp chính thức hoặc công việc.
++ Khi cung cấp thông tin quan trọng.
+Ví dụ:
+* Please apprise me of any changes to the schedule. (Vui lòng thông báo cho tôi về bất kỳ thay đổi nào trong lịch trình)
+* The manager apprised the team of the new company policies. (Người quản lý đã thông báo cho nhóm về các chính sách mới của công ty)
+
+Approach:
+- Tiếp cận.
+- Đến gần.
+Ngữ cảnh:
++ Khi nói về cách giải quyết vấn đề.
++ Trong tình huống di chuyển về phía một địa điểm hoặc người nào đó.
+Ví dụ:
+* We need to approach this problem from a different angle. (Chúng ta cần tiếp cận vấn đề này từ một góc độ khác)
+* As we approached the city, the traffic became heavier. (Khi chúng tôi đến gần thành phố, giao thông trở nên đông đúc hơn)
+
+Appropriate:
+- Chiếm đoạt.
+- Phân bổ.
+- Thích hợp (tính từ).
+Ngữ cảnh:
++ Trong lĩnh vực tài chính và quản lý nguồn lực.
++ Khi nói về hành vi không đúng đắn.
+Ví dụ:
+* The government appropriated funds for the new infrastructure project. (Chính phủ đã phân bổ ngân sách cho dự án cơ sở hạ tầng mới)
+* He was accused of appropriating company assets for personal use. (Anh ta bị cáo buộc chiếm đoạt tài sản công ty cho mục đích cá nhân)
+
+
+Approve:
+- Phê duyệt.
+- Tán thành.
+Ngữ cảnh:
++ Trong quy trình ra quyết định của tổ chức.
++ Khi bày tỏ sự đồng ý với ý tưởng hoặc hành động.
+Ví dụ:
+* The board approved the new business plan. (Hội đồng quản trị đã phê duyệt kế hoạch kinh doanh mới)
+* I don't approve of his behavior at the party. (Tôi không tán thành hành vi của anh ấy tại bữa tiệc)
+
+Approximate:
+- Ước tính.
+- Xấp xỉ.
+Ngữ cảnh:
++ Trong toán học và khoa học.
++ Khi đưa ra ước tính gần đúng.
+Ví dụ:
+* The cost of the project is approximately $1 million. (Chi phí của dự án xấp xỉ 1 triệu đô la)
+* Scientists can approximate the age of fossils using carbon dating. (Các nhà khoa học có thể ước tính tuổi của hóa thạch bằng phương pháp định tuổi carbon)
+
+Aquaplane:
+- Lướt trên mặt nước.
+- Mất kiểm soát trên đường ướt (về xe).
+Ngữ cảnh:
++ Khi nói về lái xe trong điều kiện thời tiết xấu.
++ Trong các môn thể thao dưới nước.
+Ví dụ:
+* The car aquaplaned on the wet road and spun out of control. (Chiếc xe đã trượt nước trên đường ướt và mất kiểm soát)
+* Surfers often aquaplane when catching a wave. (Người lướt sóng thường lướt trên mặt nước khi bắt sóng)
+
+Arbitrate:
+- Phân xử.
+- Làm trọng tài.
+Ngữ cảnh:
++ Trong giải quyết tranh chấp pháp lý.
++ Khi giải quyết xung đột giữa các bên.
+Ví dụ:
+* A neutral third party was brought in to arbitrate the dispute. (Một bên thứ ba trung lập đã được mời đến để phân xử tranh chấp)
+* The union and management agreed to let an independent expert arbitrate their negotiations. (Công đoàn và ban quản lý đồng ý để một chuyên gia độc lập làm trọng tài trong cuộc đàm phán của họ)
+
+Arc:
+- Tạo hình cung.
+- Di chuyển theo đường cong.
+Ngữ cảnh:
++ Trong hình học và thiết kế.
++ Khi mô tả chuyển động.
+Ví dụ:
+* The ball arced through the air and into the net. (Quả bóng bay theo hình cung qua không trung và vào lưới)
+* The architect designed a beautiful arched doorway. (Kiến trúc sư đã thiết kế một cổng vòm đẹp)
+
+Arch:
+- Uốn cong.
+- Tạo hình vòm.
+Ngữ cảnh:
++ Trong kiến trúc và xây dựng.
++ Khi mô tả cử động của cơ thể.
+Ví dụ:
+* The cat arched its back when it saw the dog. (Con mèo uốn cong lưng khi nhìn thấy con chó)
+* The ancient Romans were masters at building arched structures. (Người La Mã cổ đại là bậc thầy trong việc xây dựng các công trình vòm)
+
+Archive:
+- Lưu trữ.
+- Đưa vào kho lưu trữ.
+Ngữ cảnh:
++ Trong quản lý thông tin và dữ liệu.
++ Trong bảo tồn lịch sử và văn hóa.
+Ví dụ:
+* The library archived old newspapers on microfilm. (Thư viện đã lưu trữ các báo cũ trên vi phim)
+* It's important to archive important emails for future reference. (Việc lưu trữ các email quan trọng để tham khảo trong tương lai là rất quan trọng)
+
+Argue:
+- Tranh luận.
+- Lập luận.
+Ngữ cảnh:
++ Trong các cuộc thảo luận và tranh luận.
++ Khi bảo vệ quan điểm hoặc ý kiến.
+Ví dụ:
+* The lawyers argued their case before the judge. (Các luật sư đã lập luận cho vụ án của họ trước thẩm phán)
+* They always argue about politics at family dinners. (Họ luôn tranh luận về chính trị trong các bữa tối gia đình)
+
+Arise:
+- Nảy sinh.
+- Xuất hiện.
+Ngữ cảnh:
++ Khi nói về sự xuất hiện của vấn đề hoặc tình huống mới.
++ Trong văn học khi mô tả sự xuất hiện.
+Ví dụ:
+* New challenges arose as the project progressed. (Những thách thức mới nảy sinh khi dự án tiến triển)
+* The sun arose over the horizon, painting the sky in vibrant colors. (Mặt trời mọc trên đường chân trời, vẽ nên bầu trời với những màu sắc rực rỡ)
+
+Arm:
+- Vũ trang.
+- Trang bị.
+Ngữ cảnh:
++ Trong lĩnh vực quân sự và an ninh.
++ Khi chuẩn bị cho một tình huống.
+Ví dụ:
+* The soldiers were armed with the latest weapons. (Các binh sĩ được trang bị vũ khí mới nhất)
+* We need to arm ourselves with knowledge before the debate. (Chúng ta cần trang bị kiến thức cho mình trước cuộc tranh luận)
+
+Arouse:
+- Khơi dậy.
+- Kích thích.
+Ngữ cảnh:
++ Khi nói về cảm xúc hoặc phản ứng.
++ Trong ngữ cảnh tình dục.
+Ví dụ:
+* The speech aroused strong feelings of patriotism. (Bài phát biểu đã khơi dậy mạnh mẽ tình yêu nước)
+* The smell of coffee aroused him from his sleep. (Mùi cà phê đã đánh thức anh ta dậy)
+
+Arraign:
+- Buộc tội.
+- Đưa ra tòa.
+Ngữ cảnh:
++ Trong quy trình tố tụng hình sự.
++ Khi chính thức cáo buộc ai đó phạm tội.
+Ví dụ:
+* The suspect was arraigned before the court on charges of theft. (Nghi phạm đã bị đưa ra tòa với tội danh trộm cắp)
+* She was arraigned for her alleged involvement in the fraud scheme. (Cô ấy bị buộc tội vì bị cáo buộc liên quan đến kế hoạch gian lận)
+
+Arrange:
+- Sắp xếp.
+- Bố trí.
+Ngữ cảnh:
++ Khi tổ chức sự kiện hoặc cuộc họp.
++ Trong thiết kế và trang trí.
+Ví dụ:
+* Can you arrange a meeting with the client for next week? (Bạn có thể sắp xếp một cuộc họp với khách hàng vào tuần tới không?)
+* She arranged the flowers in a beautiful bouquet. (Cô ấy đã bố trí những bông hoa thành một bó hoa đẹp)
+
+Array:
+- Sắp xếp theo thứ tự.
+- Trưng bày.
+Ngữ cảnh:
++ Trong lập trình và khoa học máy tính.
++ Khi trình bày hoặc hiển thị nhiều vật.
+Ví dụ:
+* The programmer arrayed the data in a two-dimensional matrix. (Lập trình viên đã sắp xếp dữ liệu trong một ma trận hai chiều)
+* The museum arrayed the artifacts chronologically. (Bảo tàng đã trưng bày các hiện vật theo trình tự thời gian)
+
+Arrest:
+- Bắt giữ.
+- Ngăn chặn.
+Ngữ cảnh:
++ Trong thực thi pháp luật.
++ Khi nói về việc dừng một quá trình.
+Ví dụ:
+* The police arrested the suspect at his home. (Cảnh sát đã bắt giữ nghi phạm tại nhà của anh ta)
+* The new drug can arrest the progress of the disease. (Loại thuốc mới có thể ngăn chặn sự tiến triển của bệnh)
+
+Arrive:
+- Đến nơi.
+- Tới.
+Ngữ cảnh:
++ Khi nói về việc di chuyển đến một địa điểm.
++ Khi đạt được một mục tiêu hoặc kết luận.
+Ví dụ:
+* The train arrived at the station on time. (Tàu đã đến ga đúng giờ)
+* After much discussion, we finally arrived at a decision. (Sau nhiều thảo luận, chúng tôi cuối cùng đã đi đến một quyết định)
+
+Arrogate:
+- Chiếm đoạt.
+- Tự tiện nhận lấy.
+Ngữ cảnh:
++ Trong lĩnh vực chính trị và quyền lực.
++ Khi nói về việc lạm quyền.
+Ví dụ:
+* The dictator arrogated all power to himself. (Nhà độc tài đã chiếm đoạt mọi quyền lực cho bản thân)
+* He arrogated the right to speak for the entire group. (Anh ta tự tiện nhận lấy quyền phát ngôn cho cả nhóm)
+
+Arse:
+- Mông (từ lóng, thô tục).
+- Làm hỏng việc.
+- Lãng phí thời gian, làm việc không hiệu quả hoặc không nghiêm túc.
+Ngữ cảnh:
++ Trong ngôn ngữ không chính thức, đặc biệt là tiếng Anh.
++ Khi nói về việc làm hỏng hoặc không hứng thú khi bị buộc làm điều gì đó.
+Ví dụ:
+* He fell on his arse while trying to dance. (Anh ta ngã đập mông khi cố gắng nhảy)
+* Don't arse around, we need to finish this work. (Đừng có làm ẩu, chúng ta cần hoàn thành công việc này)
+
+Art:
+- Là (dạng cổ của "are").
+Ngữ cảnh:
++ Trong văn học cổ hoặc phong cách viết trang trọng.
+Ví dụ:
+* Thou art the chosen one. (Ngươi là người được chọn)
+* What manner of man art thou? (Ngươi là hạng người gì vậy?)
+
+Articulate:
+- Phát âm rõ ràng.
+- Diễn đạt rõ ràng.
+Ngữ cảnh:
++ Trong giao tiếp và thuyết trình.
++ Khi trình bày ý tưởng hoặc quan điểm.
+Ví dụ:
+* She articulated her ideas clearly during the presentation. (Cô ấy đã diễn đạt ý tưởng của mình một cách rõ ràng trong buổi thuyết trình)
+* It's important to articulate each word when learning a new language. (Việc phát âm rõ ràng từng từ rất quan trọng khi học một ngôn ngữ mới)
+
+Ascend:
+- Leo lên.
+- Thăng tiến.
+Ngữ cảnh:
++ Khi nói về việc di chuyển lên cao.
++ Trong sự nghiệp hoặc địa vị xã hội.
+Ví dụ:
+* The hikers ascended the mountain slowly but steadily. (Những người đi bộ leo núi từ từ nhưng vững chắc)
+* She quickly ascended through the ranks of the company. (Cô ấy nhanh chóng thăng tiến qua các cấp bậc trong công ty)
+
+Ascertain:
+- Xác định.
+- Tìm hiểu chắc chắn.
+Ngữ cảnh:
++ Trong nghiên cứu và điều tra.
++ Khi cần thông tin chính xác.
+Ví dụ:
+* The detective tried to ascertain the facts of the case. (Thám tử cố gắng xác định các sự thật của vụ án)
+* We need to ascertain the cause of the problem before we can fix it. (Chúng ta cần tìm hiểu chắc chắn nguyên nhân của vấn đề trước khi có thể sửa chữa nó)
+
+Ascribe:
+- Gán cho.
+- Quy cho.
+Ngữ cảnh:
++ Khi nói về nguyên nhân hoặc nguồn gốc của điều gì đó.
++ Trong phân tích văn học hoặc nghệ thuật.
+Ví dụ:
+* The critics ascribed the painting's unique style to the artist's childhood experiences. (Các nhà phê bình quy cho phong cách độc đáo của bức tranh là do trải nghiệm thời thơ ấu của họa sĩ)
+* He ascribed his success to hard work and determination. (Anh ấy gán sự thành công của mình cho sự chăm chỉ và quyết tâm)
+
+Ask:
+- Hỏi.
+- Yêu cầu.
+Ngữ cảnh:
++ Trong giao tiếp hàng ngày.
++ Khi cần thông tin hoặc sự giúp đỡ.
+Ví dụ:
+* Don't be afraid to ask questions if you don't understand. (Đừng ngại hỏi nếu bạn không hiểu)
+* He asked for a raise during his annual review. (Anh ấy đã yêu cầu tăng lương trong cuộc đánh giá hàng năm)
+
+Asphyxiate:
+- Làm ngạt thở.
+- Bóp nghẹt.
+Ngữ cảnh:
++ Trong y học và an toàn.
++ Khi mô tả tình trạng thiếu oxy.
+Ví dụ:
+* The toxic fumes could asphyxiate anyone who enters the room without proper protection. (Khói độc có thể làm ngạt thở bất kỳ ai vào phòng mà không có bảo vệ thích hợp)
+* The government's policies were asphyxiating small businesses. (Các chính sách của chính phủ đang bóp nghẹt các doanh nghiệp nhỏ)
+
+Aspirate:
+- Hít vào.
+- Phát âm với hơi thở mạnh.
+Ngữ cảnh:
++ Trong y học và sinh lý học.
++ Trong ngôn ngữ học và phát âm.
+Ví dụ:
+* The doctor had to aspirate fluid from the patient's lungs. (Bác sĩ phải hút dịch từ phổi của bệnh nhân)
+* In English, we aspirate the 'p' sound in words like 'pin'. (Trong tiếng Anh, chúng ta phát âm âm 'p' với hơi thở mạnh trong các từ như 'pin')
+
+Aspire:
+- Khao khát.
+- Mong muốn đạt được.
+Ngữ cảnh:
++ Khi nói về mục tiêu và ước mơ.
++ Trong phát triển cá nhân và nghề nghiệp.
+Ví dụ:
+* Many young athletes aspire to compete in the Olympics. (Nhiều vận động viên trẻ khao khát được thi đấu tại Olympic)
+* She aspires to become a leading researcher in her field. (Cô ấy mong muốn trở thành một nhà nghiên cứu hàng đầu trong lĩnh vực của mình)
+
+Assail:
+- Tấn công.
+- Chỉ trích mạnh mẽ.
+Ngữ cảnh:
++ Trong các cuộc tranh luận hoặc phê bình.
++ Khi mô tả các cuộc tấn công vật lý hoặc tinh thần.
+Ví dụ:
+* The politician was assailed by critics for his controversial statements. (Chính trị gia đã bị các nhà phê bình tấn công vì những tuyên bố gây tranh cãi của mình)
+* The fortress was assailed by enemy forces. (Pháo đài bị quân địch tấn công)
+
+Assassinate:
+- Ám sát.
+Ngữ cảnh:
++ Trong lịch sử và chính trị.
++ Khi nói về việc giết người có chủ đích, thường là nhân vật nổi tiếng.
+Ví dụ:
+* President Kennedy was assassinated in Dallas in 1963. (Tổng thống Kennedy đã bị ám sát tại Dallas vào năm 1963)
+* The plot to assassinate the dictator was uncovered by intelligence agents. (Âm mưu ám sát nhà độc tài đã bị các đặc vụ tình báo phát hiện)
+
+Assault:
+- Tấn công.
+- Hành hung.
+Ngữ cảnh:
++ Trong luật pháp và tội phạm học.
++ Khi mô tả hành vi bạo lực.
+Ví dụ:
+* He was charged with assault after the bar fight. (Anh ta bị buộc tội hành hung sau vụ ẩu đả tại quán bar)
+* The army launched an assault on the enemy stronghold. (Quân đội đã phát động cuộc tấn công vào pháo đài của kẻ thù)
+
+Assay:
+- Thử nghiệm.
+- Phân tích.
+Ngữ cảnh:
++ Trong khoa học và công nghệ.
++ Trong lĩnh vực khai thác mỏ và kim loại quý.
+Ví dụ:
+* The lab conducted an assay to determine the purity of the gold sample. (Phòng thí nghiệm đã tiến hành thử nghiệm để xác định độ tinh khiết của mẫu vàng)
+* Scientists assayed the new drug for potential side effects. (Các nhà khoa học đã phân tích loại thuốc mới để tìm các tác dụng phụ tiềm ẩn)
+
+Assemble:
+- Tập hợp.
+- Lắp ráp.
+Ngữ cảnh:
++ Trong sản xuất và kỹ thuật.
++ Khi tổ chức nhóm người hoặc sự kiện.
+Ví dụ:
+* Workers assembled the car on the production line. (Công nhân lắp ráp xe hơi trên dây chuyền sản xuất)
+* The protesters assembled in the town square. (Những người biểu tình tập hợp tại quảng trường thị trấn)
+
+Assent:
+- Đồng ý.
+- Chấp thuận.
+Ngữ cảnh:
++ Trong quy trình ra quyết định.
++ Trong ngữ cảnh pháp lý hoặc chính thức.
+Ví dụ:
+* The board members assented to the new proposal with a nod. (Các thành viên hội đồng đã đồng ý với đề xuất mới bằng cách gật đầu)
+* The bill cannot become law without the monarch's assent. (Dự luật không thể trở thành luật mà không có sự chấp thuận của nhà vua)
+
+Assert:
+- Khẳng định.
+- Tuyên bố mạnh mẽ.
+Ngữ cảnh:
++ Trong tranh luận và thảo luận.
++ Khi bảo vệ quyền lợi hoặc quan điểm.
+Ví dụ:
+* He asserted his innocence throughout the trial. (Anh ta khẳng định sự vô tội của mình trong suốt phiên tòa)
+* It's important to assert your rights in the workplace. (Việc khẳng định quyền lợi của bạn tại nơi làm việc là rất quan trọng)
+
+Assess:
+- Đánh giá.
+- Ước lượng.
+Ngữ cảnh:
++ Trong giáo dục và đào tạo.
++ Trong quản lý rủi ro và bảo hiểm.
+Ví dụ:
+* The teacher will assess the students' progress at the end of the term. (Giáo viên sẽ đánh giá tiến bộ của học sinh vào cuối kỳ)
+* Experts were called in to assess the damage caused by the earthquake. (Các chuyên gia được mời đến để đánh giá thiệt hại do trận động đất gây ra)
+
+Assign:
+- Phân công.
+- Giao nhiệm vụ.
+Ngữ cảnh:
++ Trong quản lý và tổ chức công việc.
++ Trong giáo dục khi giao bài tập.
+Ví dụ:
+* The manager assigned different tasks to each team member. (Người quản lý đã phân công các nhiệm vụ khác nhau cho từng thành viên trong nhóm)
+* The teacher assigned a research project for the weekend. (Giáo viên đã giao một dự án nghiên cứu cho cuối tuần)
+
+Assimilate:
+- Hấp thụ.
+- Đồng hóa.
+Ngữ cảnh:
++ Trong học tập và tiếp thu kiến thức.
++ Trong xã hội học khi nói về hòa nhập văn hóa.
+Ví dụ:
+* It takes time to assimilate new information. (Cần có thời gian để hấp thụ thông tin mới)
+* Immigrants often struggle to assimilate into their new culture. (Người nhập cư thường phải vật lộn để hòa nhập vào nền văn hóa mới của họ)
+
+Assist:
+- Hỗ trợ.
+- Giúp đỡ.
+Ngữ cảnh:
++ Trong công việc và cuộc sống hàng ngày.
++ Trong thể thao khi nói về việc kiến tạo.
+Ví dụ:
+* Can you assist me with this heavy box? (Bạn có thể giúp tôi với cái hộp nặng này không?)
+* The midfielder assisted in scoring the winning goal. (Tiền vệ đã hỗ trợ ghi bàn thắng quyết định)
+
+Associate:
+- Liên kết.
+- Kết hợp.
+Ngữ cảnh:
++ Trong kinh doanh và tổ chức.
++ Khi nói về mối quan hệ giữa ý tưởng hoặc khái niệm.
+Ví dụ:
+* He is associated with several charitable organizations. (Anh ấy có liên kết với một số tổ chức từ thiện)
+* Many people associate the color red with danger. (Nhiều người kết hợp màu đỏ với sự nguy hiểm)
+
+Assuage:
+- Xoa dịu.
+- Làm giảm bớt.
+Ngữ cảnh:
++ Khi đối phó với cảm xúc tiêu cực.
++ Trong y học khi nói về giảm đau hoặc khó chịu.
+Ví dụ:
+* The mother's gentle words assuaged the child's fears. (Những lời nói nhẹ nhàng của người mẹ đã xoa dịu nỗi sợ hãi của đứa trẻ)
+* The medication helped to assuage the patient's pain. (Thuốc đã giúp làm giảm bớt cơn đau của bệnh nhân)
+
+Assume:
+- Giả định.
+- Đảm nhận.
+Ngữ cảnh:
++ Trong lập luận và suy luận.
++ Khi nói về việc nhận lấy trách nhiệm hoặc vai trò.
+Ví dụ:
+* Don't assume that everyone agrees with you. (Đừng giả định rằng mọi người đều đồng ý với bạn)
+* She assumed leadership of the company after the CEO resigned. (Cô ấy đã đảm nhận vai trò lãnh đạo công ty sau khi CEO từ chức)
+
+Assure:
+- Đảm bảo.
+- Cam đoan.
+Ngữ cảnh:
++ Trong giao tiếp kinh doanh và cá nhân.
++ Khi cần tạo niềm tin hoặc sự an tâm.
+Ví dụ:
+* The manager assured the team that their jobs were secure. (Người quản lý đã đảm bảo với nhóm rằng công việc của họ an toàn)
+* I can assure you that the product will be delivered on time. (Tôi có thể cam đoan với bạn rằng sản phẩm sẽ được giao đúng hạn)
+
+Asterisk:
+- Đánh dấu sao.
+- Chú thích bằng dấu sao.
+Ngữ cảnh:
++ Trong văn bản và ấn phẩm.
++ Trong lập trình và cơ sở dữ liệu.
+Ví dụ:
+* The terms with asterisks require further explanation. (Các thuật ngữ có dấu sao cần được giải thích thêm)
+* Use an asterisk as a wildcard in the search query. (Sử dụng dấu sao làm ký tự đại diện trong truy vấn tìm kiếm)
+
+Astonish:
+- Làm kinh ngạc.
+- Gây ngạc nhiên.
+Ngữ cảnh:
++ Khi đối mặt với điều gì đó bất ngờ hoặc phi thường.
++ Trong văn học và kể chuyện.
+Ví dụ:
+* The magician's trick astonished the audience. (Trò ảo thuật của nhà ảo thuật đã làm khán giả kinh ngạc)
+* Her rapid progress in learning the language astonished her teachers. (Sự tiến bộ nhanh chóng của cô ấy trong việc học ngôn ngữ đã khiến các giáo viên ngạc nhiên)
+
+Astound:
+- Làm sửng sốt.
+- Gây kinh ngạc.
+Ngữ cảnh:
++ Khi đối mặt với điều gì đó cực kỳ ấn tượng hoặc khó tin.
++ Trong quảng cáo và tiếp thị.
+Ví dụ:
+* The scientist's breakthrough discovery astounded the academic community. (Khám phá đột phá của nhà khoa học đã làm cộng đồng học thuật sửng sốt)
+* The new smartphone's features astounded tech enthusiasts. (Các tính năng của chiếc điện thoại thông minh mới đã gây kinh ngạc cho những người đam mê công nghệ)
+
+Atomise (UK) / Atomize (US):
+- Phun sương.
+- Chia nhỏ thành các phần tử.
+Ngữ cảnh:
++ Trong công nghiệp và khoa học.
++ Khi nói về việc phân tán chất lỏng thành các hạt nhỏ.
+Ví dụ:
+* The perfume is atomized to create a fine mist. (Nước hoa được phun sương để tạo ra một làn sương mịn)
+* The company decided to atomize its operations into smaller, more manageable units. (Công ty quyết định chia nhỏ hoạt động của mình thành các đơn vị nhỏ hơn, dễ quản lý hơn)
+
+Atone:
+- Chuộc lỗi.
+- Đền bù.
+Ngữ cảnh:
++ Trong tôn giáo và đạo đức.
++ Khi nói về việc sửa chữa sai lầm trong quá khứ.
+Ví dụ:
+* He tried to atone for his mistakes by volunteering at the local charity. (Anh ấy cố gắng chuộc lỗi cho những sai lầm của mình bằng cách tình nguyện tại tổ chức từ thiện địa phương)
+* The company atoned for the environmental damage by investing in reforestation. (Công ty đã đền bù cho thiệt hại môi trường bằng cách đầu tư vào việc tái trồng rừng)
+
+Atrophy:
+- Teo đi.
+- Suy thoái.
+Ngữ cảnh:
++ Trong y học và sinh học.
++ Khi nói về sự suy giảm kỹ năng hoặc khả năng.
+Ví dụ:
+* Without regular exercise, muscles will atrophy. (Nếu không tập thể dục thường xuyên, cơ bắp sẽ teo đi)
+* His writing skills atrophied after years of disuse. (Kỹ năng viết của anh ấy đã suy thoái sau nhiều năm không sử dụng)
+
+Attach:
+- Gắn kết.
+- Đính kèm.
+Ngữ cảnh:
++ Trong giao tiếp điện tử và văn phòng.
++ Khi nói về mối quan hệ cảm xúc.
+Ví dụ:
+* Please attach the document to your email before sending. (Vui lòng đính kèm tài liệu vào email của bạn trước khi gửi)
+* He became emotionally attached to the old house. (Anh ấy đã trở nên gắn bó về mặt cảm xúc với ngôi nhà cũ)
+
+Attack:
+- Tấn công.
+- Công kích.
+Ngữ cảnh:
++ Trong quân sự và an ninh.
++ Trong thể thao và tranh luận.
+Ví dụ:
+* The army launched an attack at dawn. (Quân đội đã phát động cuộc tấn công vào lúc bình minh)
+* The politician attacked his opponent's policies during the debate. (Chính trị gia đã công kích các chính sách của đối thủ trong cuộc tranh luận)
+
+Attain:
+- Đạt được.
+- Đạt tới.
+Ngữ cảnh:
++ Trong giáo dục và phát triển cá nhân.
++ Khi nói về mục tiêu và thành tựu.
+Ví dụ:
+* She worked hard to attain her goal of becoming a doctor. (Cô ấy đã làm việc chăm chỉ để đạt được mục tiêu trở thành bác sĩ)
+* The climbers finally attained the summit after days of arduous climbing. (Các nhà leo núi cuối cùng đã đạt tới đỉnh sau nhiều ngày leo núi vất vả)
+
+Attempt:
+- Cố gắng.
+- Thử.
+Ngữ cảnh:
++ Trong học tập và công việc.
++ Khi đối mặt với thách thức hoặc nhiệm vụ khó khăn.
+Ví dụ:
+* He made several attempts to solve the puzzle. (Anh ấy đã cố gắng nhiều lần để giải câu đố)
+* The rescue team attempted to reach the stranded hikers. (Đội cứu hộ đã cố gắng tiếp cận những người đi bộ đường dài bị mắc kẹt)
+
+Attend:
+- Tham dự.
+- Chăm sóc.
+Ngữ cảnh:
++ Trong giáo dục và sự kiện.
++ Trong y tế và chăm sóc.
+Ví dụ:
+* All employees are required to attend the annual meeting. (Tất cả nhân viên đều phải tham dự cuộc họp thường niên)
+* The nurse attended to the patient's needs throughout the night. (Y tá đã chăm sóc nhu cầu của bệnh nhân suốt đêm)
+
+Attenuate:
+- Làm suy yếu.
+- Giảm cường độ.
+Ngữ cảnh:
++ Trong khoa học và kỹ thuật.
++ Khi nói về âm thanh hoặc tín hiệu.
+Ví dụ:
+* The thick walls attenuated the sound from outside. (Những bức tường dày đã làm suy yếu âm thanh từ bên ngoài)
+* The vaccine helps to attenuate the severity of the disease. (Vắc-xin giúp giảm mức độ nghiêm trọng của bệnh)
+
+Attest:
+- Chứng thực.
+- Xác nhận.
+Ngữ cảnh:
++ Trong pháp lý và hành chính.
++ Khi cung cấp bằng chứng hoặc lời khai.
+Ví dụ:
+* The witness attested to the defendant's alibi. (Nhân chứng đã xác nhận bằng chứng ngoại phạm của bị cáo)
+* His excellent work attests to his skills and dedication. (Công việc xuất sắc của anh ấy chứng thực cho kỹ năng và sự tận tụy của anh ấy)
+
+Attract:
+- Thu hút.
+- Lôi cuốn.
+Ngữ cảnh:
++ Trong marketing và quảng cáo.
++ Trong mối quan hệ cá nhân và xã hội.
+Ví dụ:
+* The new exhibit attracted thousands of visitors to the museum. (Triển lãm mới đã thu hút hàng nghìn khách tham quan đến bảo tàng)
+* His charming personality attracts people from all walks of life. (Tính cách quyến rũ của anh ấy lôi cuốn mọi người từ mọi tầng lớp xã hội)
+
+Attribute:
+- Gán cho.
+- Cho là của.
+Ngữ cảnh:
++ Trong phân tích và nghiên cứu.
++ Khi nói về nguồn gốc của ý tưởng hoặc hành động.
+Ví dụ:
+* The scientists attributed the climate change to human activities. (Các nhà khoa học đã gán biến đổi khí hậu cho các hoạt động của con người)
+* She attributes her success to hard work and perseverance. (Cô ấy cho rằng thành công của mình là nhờ làm việc chăm chỉ và kiên trì)
+
+Auction:
+- Đấu giá.
+Ngữ cảnh:
++ Trong mua bán và thương mại.
++ Trong nghệ thuật và đồ cổ.
+Ví dụ:
+* The painting was sold at auction for a record price. (Bức tranh đã được bán đấu giá với giá kỷ lục)
+* The company decided to auction off its old equipment. (Công ty quyết định đấu giá các thiết bị cũ của mình)
+
+Audit:
+- Kiểm toán.
+- Kiểm tra.
+Ngữ cảnh:
++ Trong tài chính và kế toán.
++ Trong quản lý chất lượng.
+Ví dụ:
+* The company undergoes an annual financial audit. (Công ty trải qua cuộc kiểm toán tài chính hàng năm)
+* The university decided to audit its admissions process. (Trường đại học quyết định kiểm tra quy trình tuyển sinh của mình)
+
+Audition:
+- Thử vai.
+- Thử giọng.
+Ngữ cảnh:
++ Trong nghệ thuật biểu diễn.
++ Trong tuyển chọn tài năng.
+Ví dụ:
+* She auditioned for the lead role in the school play. (Cô ấy đã thử vai chính trong vở kịch của trường)
+* The band is holding auditions for a new drummer. (Ban nhạc đang tổ chức thử giọng cho một tay trống mới)
+
+Augment:
+- Tăng cường.
+- Bổ sung.
+Ngữ cảnh:
++ Trong công nghệ và khoa học.
++ Khi nói về cải thiện hoặc mở rộng.
+Ví dụ:
+* The company plans to augment its workforce with new hires. (Công ty có kế hoạch tăng cường lực lượng lao động bằng cách tuyển dụng mới)
+* The software augments reality by overlaying digital information on the real world. (Phần mềm tăng cường thực tế bằng cách chồng thông tin kỹ thuật số lên thế giới thực)
+
+Augur:
+- Báo trước.
+- Dự đoán.
+Ngữ cảnh:
++ Trong phân tích xu hướng.
++ Khi nói về dấu hiệu hoặc điềm báo.
+Ví dụ:
+* The rise in stock prices augurs well for the economy. (Sự tăng giá cổ phiếu báo hiệu tốt cho nền kinh tế)
+* Dark clouds on the horizon augured an approaching storm. (Những đám mây đen ở chân trời dự báo một cơn bão đang đến gần)
+
+Authenticate:
+- Xác thực.
+- Chứng thực.
+Ngữ cảnh:
++ Trong bảo mật và công nghệ thông tin.
++ Khi xác minh tính chân thực của tài liệu hoặc tác phẩm nghệ thuật.
+Ví dụ:
+* Users must authenticate their identity before accessing the secure database. (Người dùng phải xác thực danh tính của họ trước khi truy cập cơ sở dữ liệu an toàn)
+* Experts were called in to authenticate the ancient manuscript. (Các chuyên gia được mời đến để chứng thực bản thảo cổ)
+
+Author:
+- Viết.
+- Sáng tác.
+Ngữ cảnh:
++ Trong văn học và xuất bản.
++ Khi nói về việc tạo ra nội dung hoặc tài liệu.
+Ví dụ:
+* She authored several bestselling novels. (Cô ấy đã viết một số tiểu thuyết bán chạy nhất)
+* The team authored a comprehensive report on climate change. (Nhóm đã sáng tác một báo cáo toàn diện về biến đổi khí hậu)
+
+Authorise (UK) / Authorize (US):
+- Ủy quyền.
+- Cho phép.
+Ngữ cảnh:
++ Trong quản lý và hành chính.
++ Khi cấp quyền hoặc phê duyệt.
+Ví dụ:
+* The manager authorized the purchase of new equipment. (Người quản lý đã ủy quyền mua thiết bị mới)
+* Only authorized personnel are allowed in this area. (Chỉ nhân viên được phép mới được vào khu vực này)
+
+Autograph:
+- Ký tên.
+- Xin chữ ký.
+Ngữ cảnh:
++ Trong các sự kiện với người nổi tiếng.
++ Khi sưu tầm kỷ vật.
+Ví dụ:
+* The actor autographed posters for his fans after the premiere. (Diễn viên đã ký tên lên các áp phích cho người hâm mộ sau buổi công chiếu)
+* She collects autographed baseballs from famous players. (Cô ấy sưu tầm những quả bóng chày có chữ ký của các cầu thủ nổi tiếng)
+
+Automate:
+- Tự động hóa.
+Ngữ cảnh:
++ Trong công nghiệp và sản xuất.
++ Trong công nghệ thông tin và quy trình kinh doanh.
+Ví dụ:
+* The company decided to automate its production line to increase efficiency. (Công ty quyết định tự động hóa dây chuyền sản xuất để tăng hiệu quả)
+* Many businesses are looking to automate repetitive tasks. (Nhiều doanh nghiệp đang tìm cách tự động hóa các công việc lặp đi lặp lại)
+
+Autosave:
+- Tự động lưu.
+Ngữ cảnh:
++ Trong phần mềm máy tính.
++ Khi làm việc với tài liệu hoặc dự án.
+Ví dụ:
+* The word processor autosaves your document every five minutes. (Trình xử lý văn bản tự động lưu tài liệu của bạn cứ sau năm phút)
+* Autosave features have saved many people from losing their work. (Tính năng tự động lưu đã cứu nhiều người khỏi việc mất công việc của họ)
+
+Autowind:
+- Tự động lên dây cót.
+Ngữ cảnh:
++ Trong công nghệ đồng hồ.
+Ví dụ:
+* Many modern watches have an autowind mechanism. (Nhiều đồng hồ hiện đại có cơ chế tự động lên dây cót)
+* The autowind feature ensures that the watch keeps accurate time without manual winding. (Tính năng tự động lên dây cót đảm bảo đồng hồ giữ thời gian chính xác mà không cần lên dây thủ công)
+
+Avail:
+- Tận dụng.
+- Có ích.
+Ngữ cảnh:
++ Khi nói về việc sử dụng cơ hội hoặc nguồn lực.
++ Trong ngôn ngữ trang trọng hoặc văn chương.
+Ví dụ:
+* Students should avail themselves of all learning opportunities. (Sinh viên nên tận dụng mọi cơ hội học tập)
+* His efforts to solve the problem were of no avail. (Nỗ lực của anh ấy để giải quyết vấn đề không có ích gì)
+
+Avenge:
+- Trả thù.
+- Báo thù.
+Ngữ cảnh:
++ Trong văn học và phim ảnh.
++ Khi nói về việc đòi lại công lý.
+Ví dụ:
+* The hero vowed to avenge his family's death. (Người anh hùng thề sẽ trả thù cho cái chết của gia đình mình)
+* She sought to avenge the wrongs done to her community. (Cô ấy tìm cách báo thù những sai trái đã gây ra cho cộng đồng của mình)
+
+Aver:
+- Khẳng định.
+- Tuyên bố.
+Ngữ cảnh:
++ Trong ngôn ngữ pháp lý.
++ Khi đưa ra tuyên bố mạnh mẽ.
+Ví dụ:
+* The witness averred that he had seen the suspect at the scene of the crime. (Nhân chứng khẳng định rằng anh ta đã nhìn thấy nghi phạm tại hiện trường vụ án)
+* She averred her innocence throughout the trial. (Cô ấy tuyên bố mình vô tội trong suốt phiên tòa)
+
+Average:
+- Tính trung bình.
+- Làm cho cân bằng.
+Ngữ cảnh:
++ Trong toán học và thống kê.
++ Khi đánh giá hiệu suất hoặc kết quả.
+Ví dụ:
+* The teacher averaged the students' scores to determine their final grade. (Giáo viên tính trung bình điểm số của học sinh để xác định điểm cuối cùng)
+* His performance this season has been average at best. (Hiệu suất của anh ấy trong mùa giải này chỉ ở mức trung bình trong trường hợp tốt nhất)
+
+Avert:
+- Ngăn chặn.
+- Tránh khỏi.
+Ngữ cảnh:
++ Khi đối phó với nguy hiểm hoặc rủi ro.
++ Trong quản lý khủng hoảng.
+Ví dụ:
+* Quick action by the pilot averted a potential disaster. (Hành động nhanh chóng của phi công đã ngăn chặn một thảm họa tiềm tàng)
+* She averted her eyes from the gruesome scene. (Cô ấy tránh nhìn vào cảnh tượng ghê rợn)
+
+Avoid:
+- Tránh.
+- Né tránh.
+Ngữ cảnh:
++ Trong cuộc sống hàng ngày và ra quyết định.
++ Khi nói về quản lý rủi ro.
+Ví dụ:
+* It's best to avoid heavy traffic by leaving early. (Tốt nhất nên tránh tắc nghẽn giao thông bằng cách khởi hành sớm)
+* The company implemented new policies to avoid future legal issues. (Công ty đã thực hiện các chính sách mới để tránh các vấn đề pháp lý trong tương lai)
+
+Avow:
+- Thừa nhận.
+- Tuyên bố công khai.
+Ngữ cảnh:
++ Trong tình huống chính thức hoặc pháp lý.
++ Khi bày tỏ niềm tin hoặc cam kết mạnh mẽ.
+Ví dụ:
+* He avowed his loyalty to the company. (Anh ấy tuyên bố công khai lòng trung thành với công ty)
+* The politician avowed that he had never accepted bribes. (Chính trị gia thừa nhận rằng ông ta chưa bao giờ nhận hối lộ)
+
+Await:
+- Chờ đợi.
+- Mong đợi.
+Ngữ cảnh:
++ Khi nói về sự kiện hoặc kết quả trong tương lai.
++ Trong giao tiếp chính thức.
+Ví dụ:
+* We await your response to our proposal. (Chúng tôi chờ đợi phản hồi của bạn về đề xuất của chúng tôi)
+* The students anxiously awaited their exam results. (Các học sinh lo lắng chờ đợi kết quả thi của họ)
+
+Awake:
+- Thức dậy.
+- Đánh thức.
+Ngữ cảnh:
++ Trong cuộc sống hàng ngày.
++ Khi nói về nhận thức hoặc ý thức.
+Ví dụ:
+* I usually awake at 6 AM every morning. (Tôi thường thức dậy lúc 6 giờ sáng mỗi ngày)
+* The noise awoke the sleeping baby. (Tiếng ồn đã đánh thức đứa bé đang ngủ)
+
+Awaken:
+- Đánh thức.
+- Khơi dậy.
+Ngữ cảnh:
++ Trong văn học và nghệ thuật.
++ Khi nói về sự nhận thức hoặc cảm xúc.
+Ví dụ:
+* The experience awakened her interest in environmental issues. (Trải nghiệm đã khơi dậy sự quan tâm của cô ấy đối với các vấn đề môi trường)
+* The alarm clock awakened him from a deep sleep. (Đồng hồ báo thức đã đánh thức anh ta khỏi giấc ngủ say)
+
+Award:
+- Trao giải.
+- Tặng thưởng.
+Ngữ cảnh:
++ Trong các cuộc thi và lễ trao giải.
++ Trong kinh doanh và hợp đồng.
+Ví dụ:
+* The committee awarded the prize to the most innovative project. (Ủy ban đã trao giải cho dự án sáng tạo nhất)
+* The court awarded damages to the plaintiff. (Tòa án đã trao tiền bồi thường cho nguyên đơn)
+
+Awe:
+- Kính sợ.
+- Làm kinh ngạc.
+Ngữ cảnh:
++ Khi đối mặt với cái gì đó vĩ đại hoặc ấn tượng.
++ Trong văn học và nghệ thuật.
+Ví dụ:
+* The tourists stood in awe of the magnificent cathedral. (Du khách đứng kính sợ trước vẻ đẹp của nhà thờ lớn)
+* His performance awed the audience into silence. (Màn trình diễn của anh ấy đã làm khán giả kinh ngạc đến im lặng)
+
+Ax (US) / Axe (UK):
+- Chặt.
+- Cắt giảm.
+Ngữ cảnh:
++ Trong lâm nghiệp.
++ Trong kinh doanh, khi nói về cắt giảm chi phí hoặc nhân sự.
+Ví dụ:
+* The lumberjack axed the tree with precision. (Người đốn gỗ chặt cây một cách chính xác)
+* The company axed 100 jobs in the recent restructuring. (Công ty đã cắt giảm 100 việc làm trong đợt tái cơ cấu gần đây)
+
+Baa:
+- Kêu be be (tiếng cừu).
+Ngữ cảnh:
++ Khi mô tả âm thanh của cừu.
++ Trong văn học thiếu nhi hoặc truyện ngụ ngôn.
+Ví dụ:
+* The lambs baaed for their mothers. (Những con cừu con kêu be be gọi mẹ)
+* The children laughed as they imitated the sheep's baa. (Bọn trẻ cười khi chúng bắt chước tiếng be be của cừu)
+
+Babble:
+- Nói lảm nhảm.
+- Lẩm bẩm.
+Ngữ cảnh:
++ Khi mô tả cách nói của trẻ nhỏ.
++ Khi nói về tiếng nước chảy.
+Ví dụ:
+* The toddler babbled happily to her toys. (Đứa trẻ mới biết đi nói lảm nhảm vui vẻ với đồ chơi của nó)
+* The brook babbled over the rocks. (Con suối lẩm bẩm chảy qua những tảng đá)
+
+Baby:
+- Chăm sóc như em bé.
+- Nuông chiều.
+Ngữ cảnh:
++ Khi nói về cách đối xử với người khác.
++ Trong mối quan hệ.
+Ví dụ:
+* Don't baby your teenage son; he needs to learn independence. (Đừng chăm sóc con trai tuổi teen của bạn như em bé; nó cần học cách độc lập)
+* She babies her plants, talking to them every day. (Cô ấy nuông chiều cây cối của mình, nói chuyện với chúng mỗi ngày)
+
+Babysit:
+- Trông trẻ.
+- Giữ trẻ.
+Ngữ cảnh:
++ Khi chăm sóc trẻ em tạm thời.
++ Trong công việc bán thời gian.
+Ví dụ:
+* She babysits for her neighbors every Saturday night. (Cô ấy trông trẻ cho hàng xóm mỗi tối thứ Bảy)
+* Many teenagers earn money by babysitting. (Nhiều thanh thiếu niên kiếm tiền bằng cách giữ trẻ)
+
+Back:
+- Ủng hộ.
+- Lùi lại.
+Ngữ cảnh:
++ Trong chính trị và kinh doanh.
++ Khi di chuyển hoặc thay đổi vị trí.
+Ví dụ:
+* The union backed the new labor agreement. (Công đoàn đã ủng hộ thỏa thuận lao động mới)
+* Please back your car out of the driveway. (Vui lòng lùi xe ra khỏi đường lái xe)
+
+Backcomb:
+- Chải ngược tóc.
+Ngữ cảnh:
++ Trong tạo mẫu tóc.
++ Khi tạo kiểu tóc phồng.
+Ví dụ:
+* The stylist backcombed her hair to create more volume. (Nhà tạo mẫu đã chải ngược tóc của cô ấy để tạo thêm độ phồng)
+* Backcombing was a popular hairstyling technique in the 1960s. (Chải ngược tóc là một kỹ thuật tạo kiểu tóc phổ biến trong những năm 1960)
+
+Backdate:
+- Đề ngày cũ hơn.
+- Ghi ngày trước đó.
+Ngữ cảnh:
++ Trong tài chính và kế toán.
++ Trong các giao dịch pháp lý.
+Ví dụ:
+* It's illegal to backdate financial documents to avoid taxes. (Việc đề ngày cũ hơn trên các tài liệu tài chính để tránh thuế là bất hợp pháp)
+* The contract was backdated to the start of the month. (Hợp đồng được ghi ngày trước đó vào đầu tháng)
+
+Backdate:
+- Đề ngày trước đó.
+- Ghi ngày cũ hơn thực tế.
+Ngữ cảnh:
++ Trong tài chính và kế toán.
++ Trong các giao dịch pháp lý.
+Ví dụ:
+* The company was accused of backdating stock options. (Công ty bị cáo buộc đã ghi ngày cũ hơn thực tế cho các quyền chọn cổ phiếu)
+* He backdated the check to avoid late fees. (Anh ta đề ngày cũ hơn trên tấm séc để tránh phí trả chậm)
+
+Backfill:
+- Lấp đầy lại.
+- Bổ sung vào vị trí trống.
+Ngữ cảnh:
++ Trong xây dựng và khai thác mỏ.
++ Trong quản lý nhân sự.
+Ví dụ:
+* The workers backfilled the trench after laying the pipes. (Công nhân lấp đầy lại rãnh sau khi đặt ống)
+* HR is working to backfill the vacant positions. (Bộ phận nhân sự đang làm việc để bổ sung vào các vị trí còn trống)
+
+Backfire:
+- Phản tác dụng.
+- Nổ ngược (về động cơ).
+Ngữ cảnh:
++ Khi nói về kế hoạch hoặc hành động không thành công.
++ Trong lĩnh vực ô tô và động cơ.
+Ví dụ:
+* His plan to impress her backfired completely. (Kế hoạch gây ấn tượng với cô ấy của anh ta đã hoàn toàn phản tác dụng)
+* The old car's engine backfired loudly. (Động cơ của chiếc xe cũ nổ ngược một cách ồn ào)
+
+Backlight:
+- Chiếu sáng từ phía sau.
+- Tạo ánh sáng nền.
+Ngữ cảnh:
++ Trong nhiếp ảnh và quay phim.
++ Trong thiết kế màn hình và đèn.
+Ví dụ:
+* The photographer backlit the model to create a dramatic silhouette. (Nhiếp ảnh gia chiếu sáng từ phía sau người mẫu để tạo ra một bóng đen ấn tượng)
+* Modern smartphones use LED backlighting for their screens. (Các điện thoại thông minh hiện đại sử dụng đèn LED để tạo ánh sáng nền cho màn hình)
+
+Backpack:
+- Đeo ba lô.
+- Du lịch.
+Ngữ cảnh:
++ Khi nói về du lịch và phiêu lưu.
++ Trong giáo dục, khi nói về học sinh mang ba lô.
+Ví dụ:
+* They decided to backpack across Europe for the summer. (Họ quyết định du lịch khắp Châu Âu trong mùa hè)
+* Students often backpack heavy textbooks to school. (Học sinh thường đeo ba lô nặng sách giáo khoa đến trường)
+
+Backspace:
+- Xóa lùi (trong đánh máy).
+- Di chuyển ngược lại.
+Ngữ cảnh:
++ Khi sử dụng máy tính hoặc thiết bị điện tử.
++ Trong lập trình và xử lý văn bản.
+Ví dụ:
+* Press the backspace key to delete the last character. (Nhấn phím backspace để xóa ký tự cuối cùng)
+* The programmer used backspace to correct the typo in the code. (Lập trình viên sử dụng backspace để sửa lỗi đánh máy trong mã)
+
+Backtrack:
+- Quay lại.
+- Rút lại lời nói.
+Ngữ cảnh:
++ Trong đi bộ đường dài hoặc leo núi.
++ Trong tranh luận hoặc đàm phán.
+Ví dụ:
+* The hikers had to backtrack when they realized they'd taken a wrong turn. (Những người đi bộ đường dài phải quay lại khi họ nhận ra đã rẽ nhầm đường)
+* The politician was forced to backtrack on his earlier statement. (Chính trị gia buộc phải rút lại tuyên bố trước đó của mình)
+
+Badger:
+- Quấy rầy.
+- Làm phiền liên tục.
+Ngữ cảnh:
++ Trong giao tiếp hàng ngày.
++ Trong văn học, để mô tả hành vi dai dẳng.
+Ví dụ:
+* The reporter badgered the celebrity with questions about her personal life. (Phóng viên liên tục quấy rầy người nổi tiếng với những câu hỏi về đời tư của cô ấy)
+* The child badgered his parents for a new toy. (Đứa trẻ liên tục làm phiền bố mẹ để xin một món đồ chơi mới)
+
+Baffle:
+- Làm bối rối.
+- Gây khó hiểu.
+Ngữ cảnh:
++ Trong giải quyết vấn đề hoặc điều tra.
++ Trong khoa học và kỹ thuật.
+Ví dụ:
+* The complex puzzle baffled even the experts. (Câu đố phức tạp làm cho ngay cả các chuyên gia cũng bối rối)
+* The strange phenomenon baffled scientists for years. (Hiện tượng kỳ lạ đã gây khó hiểu cho các nhà khoa học trong nhiều năm)
+
+Bag:
+- Bỏ vào túi.
+- Săn bắt, bắt được.
+Ngữ cảnh:
++ Khi mua sắm hoặc đóng gói.
++ Trong săn bắn hoặc thể thao.
+Ví dụ:
+* The cashier bagged the groceries quickly. (Nhân viên thu ngân nhanh chóng bỏ các món hàng tạp hóa vào túi)
+* The hunter bagged two pheasants on his trip. (Người thợ săn đã bắt được hai con chim trĩ trong chuyến đi của mình)
+
+Bail:
+- Bảo lãnh (tại ngoại).
+- Tát nước (ra khỏi thuyền).
+Ngữ cảnh:
++ Trong hệ thống pháp luật.
++ Trong các hoạt động hàng hải.
+Ví dụ:
+* The lawyer managed to bail his client out of jail. (Luật sư đã bảo lãnh để thân chủ của mình ra khỏi tù)
+* The sailors had to bail water out of the leaking boat. (Các thủy thủ phải tát nước ra khỏi con thuyền bị rò rỉ)
+
+Bait:
+- Nhử, dụ.
+- Gắn mồi.
+Ngữ cảnh:
++ Trong câu cá hoặc săn bắt.
++ Trong marketing hoặc bán hàng.
+Ví dụ:
+* The fisherman baited his hook with a worm. (Người câu cá gắn mồi giun vào lưỡi câu)
+* The store used low prices to bait customers into the shop. (Cửa hàng sử dụng giá thấp để nhử khách hàng vào)
+
+Bake:
+- Nướng.
+- Làm khô, làm cứng.
+Ngữ cảnh:
++ Trong nấu ăn và làm bánh.
++ Trong công nghiệp gốm sứ.
+Ví dụ:
+* She baked a delicious apple pie for dessert. (Cô ấy nướng một chiếc bánh táo ngon tuyệt cho món tráng miệng)
+* The sun baked the mud until it was hard as rock. (Mặt trời làm khô bùn đất cho đến khi nó cứng như đá)
+
+Balance:
+- Cân bằng.
+- Đối chiếu (sổ sách).
+Ngữ cảnh:
++ Trong thể dục và thể thao.
++ Trong kế toán và tài chính.
+Ví dụ:
+* The gymnast balanced gracefully on the beam. (Vận động viên thể dục dụng cụ cân bằng một cách duyên dáng trên xà)
+* The accountant balanced the books at the end of the fiscal year. (Kế toán viên đối chiếu sổ sách vào cuối năm tài chính)
+
+Bale:
+- Đóng kiện.
+- Tát nước (ra khỏi thuyền).
+Ngữ cảnh:
++ Trong nông nghiệp.
++ Trong hàng hải (tương tự như "bail").
+Ví dụ:
+* The farmer baled the hay for storage. (Người nông dân đóng kiện cỏ khô để lưu trữ)
+* The crew baled water from the sinking ship. (Thủy thủ đoàn tát nước ra khỏi con tàu đang chìm)
+
+Ball:
+- Vo tròn.
+- Khiêu vũ.
+Ngữ cảnh:
++ Trong nấu ăn hoặc làm thủ công.
++ Trong các sự kiện xã hội.
+Ví dụ:
+* She balled up the dough to make cookies. (Cô ấy vo tròn bột để làm bánh quy)
+* The couple balled all night at the fancy dress party. (Cặp đôi khiêu vũ suốt đêm tại buổi tiệc hóa trang)
+
+Balloon:
+- Phồng lên.
+- Bay bằng khinh khí cầu.
+Ngữ cảnh:
++ Khi nói về sự tăng trưởng hoặc mở rộng.
++ Trong hoạt động giải trí hoặc thể thao.
+Ví dụ:
+* The company's debt ballooned to unmanageable levels. (Nợ của công ty phồng lên đến mức không thể kiểm soát)
+* They ballooned over the countryside, enjoying the view. (Họ bay bằng khinh khí cầu qua vùng nông thôn, thưởng thức cảnh đẹp)
+
+Ballot:
+- Bỏ phiếu.
+- Chọn bằng phiếu bầu.
+Ngữ cảnh:
++ Trong các cuộc bầu cử.
++ Trong quá trình ra quyết định tập thể.
+Ví dụ:
+* The citizens balloted for their preferred candidate. (Công dân bỏ phiếu cho ứng cử viên họ ưa thích)
+* The committee balloted to decide on the new policy. (Ủy ban bỏ phiếu để quyết định chính sách mới)
+
+Balls:
+- Làm cho dũng cảm.
+- Làm hỏng, làm rối tung.
+Ngữ cảnh:
++ Trong ngôn ngữ không chính thức.
++ Khi nói về sự can đảm hoặc thất bại.
+Ví dụ:
+* He balled up and finally asked her out. (Anh ấy lấy hết can đảm và cuối cùng đã mời cô ấy đi chơi)
+* The new employee completely balled up the project. (Nhân viên mới đã làm hỏng hoàn toàn dự án)
+
+Bamboozle:
+- Lừa gạt.
+- Đánh lừa.
+Ngữ cảnh:
++ Trong giao dịch kinh doanh không trung thực.
++ Trong các trò chơi hoặc cuộc thi.
+Ví dụ:
+* The con artist bamboozled the elderly couple out of their savings. (Kẻ lừa đảo đã lừa gạt cặp vợ chồng già lấy hết tiền tiết kiệm của họ)
+* The magician bamboozled the audience with his clever tricks. (Nhà ảo thuật đánh lừa khán giả bằng những trò ảo thuật khéo léo của mình)
+
+Ban:
+- Cấm.
+- Loại trừ.
+Ngữ cảnh:
++ Trong luật pháp và chính sách.
++ Trong các tổ chức hoặc cộng đồng.
+Ví dụ:
+* The city banned smoking in public places. (Thành phố cấm hút thuốc ở nơi công cộng)
+* The player was banned from the game for cheating. (Người chơi bị loại khỏi trò chơi vì gian lận)
+
+Band:
+- Tập hợp.
+- Quấn băng.
+Ngữ cảnh:
++ Trong âm nhạc.
++ Trong y tế hoặc thể thao.
+Ví dụ:
+* The musicians banded together to form a new group. (Các nhạc sĩ tập hợp lại để thành lập một nhóm mới)
+* The nurse banded the patient's injured arm. (Y tá quấn băng cánh tay bị thương của bệnh nhân)
+
+Bandage:
+- Băng bó.
+- Quấn băng.
+Ngữ cảnh:
++ Trong y tế và sơ cứu.
++ Trong thể thao.
+Ví dụ:
+* The doctor bandaged the wound carefully. (Bác sĩ băng bó vết thương cẩn thận)
+* The boxer's hands were bandaged before the fight. (Tay của võ sĩ quyền Anh được quấn băng trước trận đấu)
+
+Bandy:
+- Trao đổi qua lại.
+- Truyền đi.
+Ngữ cảnh:
++ Trong cuộc trò chuyện hoặc tranh luận.
++ Trong việc lan truyền tin đồn.
+Ví dụ:
+* The politicians bandied insults during the heated debate. (Các chính trị gia trao đổi những lời lăng mạ trong cuộc tranh luận gay gắt)
+* Rumors were bandied about in the office. (Những tin đồn được truyền đi trong văn phòng)
+
+Bang:
+- Đập mạnh.
+- Phát ra tiếng nổ.
+Ngữ cảnh:
++ Khi mô tả âm thanh đột ngột và lớn.
++ Trong các hoạt động thể chất.
+Ví dụ:
+* The door banged shut in the strong wind. (Cánh cửa đóng sầm lại trong gió mạnh)
+* He banged his fist on the table in anger. (Anh ta đập mạnh nắm đấm xuống bàn trong cơn giận dữ)
+
+Bangs:
+- Cắt tóc mái.
+- Tạo kiểu tóc mái.
+Ngữ cảnh:
++ Trong ngành làm tóc và thời trang.
++ Khi nói về thay đổi diện mạo.
+Ví dụ:
+* She decided to bangs her hair for a new look. (Cô ấy quyết định cắt tóc mái để có diện mạo mới)
+* The stylist banged the model's hair before the photoshoot. (Nhà tạo mẫu tóc đã tạo kiểu tóc mái cho người mẫu trước buổi chụp ảnh)
+
+Banish:
+- Trục xuất.
+- Xua đuổi.
+Ngữ cảnh:
++ Trong lịch sử và chính trị.
++ Khi nói về loại bỏ suy nghĩ hoặc cảm xúc tiêu cực.
+Ví dụ:
+* The king banished the traitor from the kingdom. (Nhà vua trục xuất kẻ phản bội ra khỏi vương quốc)
+* She tried to banish negative thoughts from her mind. (Cô ấy cố gắng xua đuổi những suy nghĩ tiêu cực ra khỏi tâm trí)
+
+Bank:
+- Gửi tiền vào ngân hàng.
+- Nghiêng, chếch (về máy bay).
+Ngữ cảnh:
++ Trong tài chính và ngân hàng.
++ Trong hàng không.
+Ví dụ:
+* He banked his paycheck every month. (Anh ta gửi tiền lương vào ngân hàng mỗi tháng)
+* The pilot banked the plane to the left to avoid turbulence. (Phi công nghiêng máy bay sang trái để tránh nhiễu động)
+
+Bankroll:
+- Tài trợ.
+- Cung cấp tài chính.
+Ngữ cảnh:
++ Trong kinh doanh và đầu tư.
++ Trong sản xuất phim hoặc dự án nghệ thuật.
+Ví dụ:
+* The millionaire bankrolled the startup company. (Triệu phú đã tài trợ cho công ty khởi nghiệp)
+* The studio bankrolled the expensive film production. (Hãng phim đã cung cấp tài chính cho việc sản xuất bộ phim đắt đỏ)
+
+Bankrupt:
+- Phá sản.
+- Làm cạn kiệt.
+Ngữ cảnh:
++ Trong kinh doanh và tài chính.
++ Khi nói về sự cạn kiệt về mặt tinh thần hoặc đạo đức.
+Ví dụ:
+* The company went bankrupt during the economic crisis. (Công ty đã phá sản trong cuộc khủng hoảng kinh tế)
+* His constant lying bankrupted his credibility. (Việc nói dối liên tục của anh ta đã làm cạn kiệt uy tín của mình)
+
+Banter:
+- Đùa cợt.
+- Trêu chọc thân thiện.
+Ngữ cảnh:
++ Trong giao tiếp xã hội.
++ Giữa bạn bè hoặc đồng nghiệp.
+Ví dụ:
+* The colleagues often bantered during lunch breaks. (Các đồng nghiệp thường đùa cợt trong giờ nghỉ trưa)
+* The sports commentators bantered playfully during the game. (Các bình luận viên thể thao trêu chọc nhau một cách vui vẻ trong trận đấu)
+
+Baptise (UK) / Baptize (US):
+- Làm lễ rửa tội.
+- Đặt tên.
+Ngữ cảnh:
++ Trong nghi lễ tôn giáo.
++ Khi đặt tên cho một đối tượng mới.
+Ví dụ:
+* The priest baptized the baby in the church. (Linh mục làm lễ rửa tội cho em bé trong nhà thờ)
+* They baptized their new boat "Sea Breeze". (Họ đặt tên cho con thuyền mới của mình là "Sea Breeze")
+
+Bar:
+- Cấm.
+- Chặn lại.
+Ngữ cảnh:
++ Trong luật pháp và quy định.
++ Khi ngăn chặn hoặc loại trừ.
+Ví dụ:
+* The court barred him from practicing law. (Tòa án cấm anh ta hành nghề luật sư)
+* Heavy snow barred access to the mountain pass. (Tuyết dày chặn lối vào đèo núi)
+
+Barbecue:
+- Nướng thịt.
+- Tổ chức tiệc nướng.
+Ngữ cảnh:
++ Trong nấu ăn ngoài trời.
++ Trong các sự kiện xã hội.
+Ví dụ:
+* They barbecued steaks in the backyard. (Họ nướng thịt bò ở sân sau)
+* The neighbors barbecued together every summer weekend. (Hàng xóm tổ chức tiệc nướng cùng nhau mỗi cuối tuần mùa hè)
+
+Bare:
+- Để trần.
+- Phơi bày.
+Ngữ cảnh:
++ Khi nói về cơ thể hoặc vật thể.
++ Khi tiết lộ thông tin hoặc cảm xúc.
+Ví dụ:
+* He bared his chest to show the scar. (Anh ta để trần ngực để cho thấy vết sẹo)
+* The writer bared her soul in the autobiography. (Nhà văn phơi bày tâm hồn mình trong tự truyện)
+
+Barf:
+- Nôn mửa.
+- Ói.
+Ngữ cảnh:
++ Trong ngôn ngữ không chính thức.
++ Khi mô tả phản ứng sinh lý.
+Ví dụ:
+* The child barfed after eating too much candy. (Đứa trẻ nôn mửa sau khi ăn quá nhiều kẹo)
+* The sight of blood made him want to barf. (Cảnh máu me khiến anh ta muốn ói)
+
+Bargain:
+- Mặc cả.
+- Thỏa thuận.
+Ngữ cảnh:
++ Trong mua sắm và kinh doanh.
++ Trong đàm phán.
+Ví dụ:
+* She bargained with the vendor for a lower price. (Cô ấy mặc cả với người bán để có giá thấp hơn)
+* The union bargained for better working conditions. (Công đoàn thỏa thuận để có điều kiện làm việc tốt hơn)
+
+Barge:
+- Xông vào.
+- Di chuyển một cách vụng về.
+Ngữ cảnh:
++ Khi mô tả hành động đột ngột hoặc thô lỗ.
++ Trong giao thông đường thủy.
+Ví dụ:
+* He barged into the room without knocking. (Anh ta xông vào phòng mà không gõ cửa)
+* The heavy boat barged through the narrow canal. (Con thuyền nặng nề di chuyển qua kênh đào hẹp)
+
+Bark:
+- Sủa (chó).
+- Quát tháo.
+Ngữ cảnh:
++ Khi nói về âm thanh của động vật.
++ Khi mô tả giọng nói gay gắt hoặc mệnh lệnh.
+Ví dụ:
+* The dog barked at the mailman. (Con chó sủa vào người đưa thư)
+* The sergeant barked orders at the new recruits. (Trung sĩ quát tháo ra lệnh với những tân binh)
+
+Barnstorm:
+- Đi lưu diễn.
+- Vận động tranh cử.
+Ngữ cảnh:
++ Trong nghệ thuật biểu diễn.
++ Trong chiến dịch chính trị.
+Ví dụ:
+* The band barnstormed across the country, playing in small towns. (Ban nhạc đi lưu diễn khắp đất nước, biểu diễn ở các thị trấn nhỏ)
+* The candidate barnstormed through swing states before the election. (Ứng cử viên vận động tranh cử qua các bang chưa ngã ngũ trước cuộc bầu cử)
+
+Barrack:
+- Cổ vũ ầm ĩ.
+- La ó phản đối.
+Ngữ cảnh:
++ Trong các sự kiện thể thao.
++ Trong các cuộc biểu tình hoặc tụ tập đông người.
+Ví dụ:
+* The fans barracked loudly for their team. (Người hâm mộ cổ vũ ầm ĩ cho đội của họ)
+* Protesters barracked the politician during his speech. (Người biểu tình la ó phản đối chính trị gia trong bài phát biểu của ông ta)
+
+Barrel:
+- Chạy nhanh.
+- Đóng thùng.
+Ngữ cảnh:
++ Khi mô tả chuyển động nhanh.
++ Trong công nghiệp sản xuất rượu hoặc dầu.
+Ví dụ:
+* The car barreled down the highway at high speed. (Chiếc xe chạy nhanh trên đường cao tốc với tốc độ cao)
+* The winery barreled the new vintage for aging. (Nhà máy rượu đóng thùng rượu mới để ủ)
+
+Barricade:
+- Chặn, rào chắn.
+- Phong tỏa.
+Ngữ cảnh:
++ Trong tình huống khẩn cấp hoặc bạo loạn.
++ Trong xây dựng hoặc an ninh.
+Ví dụ:
+* Protesters barricaded the streets with burning tires. (Người biểu tình chặn đường bằng lốp xe đang cháy)
+* The police barricaded the crime scene. (Cảnh sát phong tỏa hiện trường vụ án)
+
+Barter:
+- Trao đổi hàng hóa.
+- Mặc cả.
+Ngữ cảnh:
++ Trong nền kinh tế không dùng tiền.
++ Trong đàm phán kinh doanh.
+Ví dụ:
+* The tribes bartered goods with each other. (Các bộ lạc trao đổi hàng hóa với nhau)
+* They bartered services for products in the deal. (Họ mặc cả dịch vụ lấy sản phẩm trong thỏa thuận)
+
+Base:
+- Đặt nền tảng.
+- Đóng quân.
+Ngữ cảnh:
++ Trong xây dựng hoặc tổ chức.
++ Trong quân sự.
+Ví dụ:
+* They based their argument on solid evidence. (Họ đặt nền tảng lập luận của mình trên bằng chứng vững chắc)
+* The troops based themselves in the nearby town. (Quân đội đóng quân ở thị trấn gần đó)
+
+Bash:
+- Đập mạnh.
+- Chỉ trích gay gắt.
+Ngữ cảnh:
++ Khi mô tả hành động bạo lực.
++ Trong phê bình hoặc tranh luận.
+Ví dụ:
+* He bashed the nail into the wall with a hammer. (Anh ta đập mạnh cái đinh vào tường bằng búa)
+* The critic bashed the new movie in his review. (Nhà phê bình chỉ trích gay gắt bộ phim mới trong bài đánh giá của mình)
+
+Bask:
+- Tắm nắng.
+- Tận hưởng.
+Ngữ cảnh:
++ Khi thư giãn dưới ánh nắng.
++ Khi tận hưởng sự ngưỡng mộ hoặc thành công.
+Ví dụ:
+* The lizards basked in the warm sun. (Những con thằn lằn tắm nắng dưới ánh mặt trời ấm áp)
+* She basked in the applause after her performance. (Cô ấy tận hưởng tràng pháo tay sau màn trình diễn của mình)
+
+Bastardise (UK) / Bastardize (US):
+- Làm sai lệch.
+- Làm biến chất.
+Ngữ cảnh:
++ Trong ngôn ngữ hoặc văn hóa.
++ Trong khoa học hoặc kỹ thuật.
+Ví dụ:
+* The translation bastardised the original meaning of the text. (Bản dịch đã làm sai lệch ý nghĩa gốc của văn bản)
+* They bastardized the traditional recipe by adding modern ingredients. (Họ làm biến chất công thức truyền thống bằng cách thêm nguyên liệu hiện đại)
+
+Baste:
+- Tưới nước thịt (khi nướng).
+- Khâu lược.
+Ngữ cảnh:
++ Trong nấu ăn.
++ Trong may vá.
+Ví dụ:
+* She basted the turkey regularly to keep it moist. (Cô ấy thường xuyên tưới nước thịt gà tây để giữ độ ẩm)
+* The tailor basted the seam before final stitching. (Thợ may khâu lược đường may trước khi khâu cuối cùng)
+
+Bat:
+- Đánh bóng (trong cricket hoặc baseball).
+- Chớp mắt.
+Ngữ cảnh:
++ Trong thể thao.
++ Khi mô tả cử động mắt.
+Ví dụ:
+* He batted the ball out of the park. (Anh ta đánh bóng ra khỏi sân)
+* She didn't bat an eye at the shocking news. (Cô ấy không chớp mắt trước tin tức gây sốc)
+
+Batch:
+- Xử lý theo lô.
+- Nhóm lại.
+Ngữ cảnh:
++ Trong sản xuất và chế biến.
++ Trong công nghệ thông tin.
+Ví dụ:
+* The factory batched the orders for efficient processing. (Nhà máy xử lý theo lô các đơn hàng để tăng hiệu quả)
+* The programmer batched the data for faster analysis. (Lập trình viên nhóm dữ liệu lại để phân tích nhanh hơn)
+
+Bath:
+- Tắm.
+- Ngâm.
+Ngữ cảnh:
++ Trong vệ sinh cá nhân.
++ Trong quy trình công nghiệp.
+Ví dụ:
+* She bathed the baby before bedtime. (Cô ấy tắm cho em bé trước giờ đi ngủ)
+* The jeweler bathed the ring in a cleaning solution. (Thợ kim hoàn ngâm chiếc nhẫn trong dung dịch làm sạch)
+
+Bathe:
+- Tắm.
+- Rửa sạch.
+Ngữ cảnh:
++ Trong chăm sóc cá nhân hoặc y tế.
++ Khi mô tả ánh sáng hoặc màu sắc.
+Ví dụ:
+* The nurse bathed the patient's wound. (Y tá rửa sạch vết thương của bệnh nhân)
+* The sunset bathed the landscape in golden light. (Hoàng hôn tắm cảnh quan trong ánh sáng vàng)
+
+Batten:
+- Gia cố.
+- Béo lên.
+Ngữ cảnh:
++ Trong xây dựng hoặc hàng hải.
++ Khi nói về sự thịnh vượng.
+Ví dụ:
+* They battened down the hatches before the storm. (Họ gia cố các cửa hầm trước cơn bão)
+* The executives battened on the company's profits. (Các giám đốc béo lên nhờ lợi nhuận của công ty)
+
+Batter:
+- Đánh đập.
+- Trộn bột.
+Ngữ cảnh:
++ Khi mô tả bạo lực.
++ Trong nấu ăn.
+Ví dụ:
+* The waves battered the shore during the storm. (Sóng đánh đập bờ biển trong cơn bão)
+* She battered the ingredients together to make pancakes. (Cô ấy trộn các nguyên liệu lại với nhau để làm bánh kếp)
+
+Battle:
+- Chiến đấu.
+- Đấu tranh.
+Ngữ cảnh:
++ Trong chiến tranh hoặc xung đột.
++ Khi đối mặt với khó khăn.
+Ví dụ:
+* The armies battled for control of the city. (Các đội quân chiến đấu để kiểm soát thành phố)
+* He battled cancer for years before recovering. (Anh ấy đấu tranh với bệnh ung thư trong nhiều năm trước khi hồi phục)
+
+Baulk (UK) / Balk (US):
+- Do dự, lưỡng lự.
+- Từ chối.
+Ngữ cảnh:
++ Khi đối mặt với quyết định khó khăn.
++ Trong thể thao (đặc biệt là bóng chày).
+Ví dụ:
+* He baulked at the idea of moving to a new city. (Anh ấy do dự trước ý tưởng chuyển đến một thành phố mới)
+* The pitcher balked, resulting in a penalty. (Cầu thủ ném bóng phạm lỗi, dẫn đến bị phạt)
+
+Bawl:
+- Gào thét.
+- Khóc lóc ầm ĩ.
+Ngữ cảnh:
++ Khi biểu lộ cảm xúc mạnh mẽ.
++ Khi mô tả tiếng khóc của trẻ em.
+Ví dụ:
+* The child bawled when his toy broke. (Đứa trẻ gào khóc khi đồ chơi của nó bị vỡ)
+* The coach bawled instructions to his team. (Huấn luyện viên gào thét chỉ dẫn cho đội của mình)
+
+Bay:
+- Sủa (về chó).
+- Bị dồn vào góc.
+Ngữ cảnh:
++ Khi mô tả âm thanh của chó.
++ Trong tình huống bị áp đảo.
+Ví dụ:
+* The hounds bayed as they chased the fox. (Những con chó săn sủa khi chúng đuổi theo con cáo)
+* The politician was bayed into a corner by aggressive reporters. (Chính trị gia bị dồn vào góc bởi các phóng viên hung hăng)
+
+Bayonet:
+- Đâm bằng lưỡi lê.
+- Gắn lưỡi lê.
+Ngữ cảnh:
++ Trong chiến tranh hoặc xung đột vũ trang.
++ Trong huấn luyện quân sự.
+Ví dụ:
+* The soldier bayoneted the enemy in close combat. (Người lính đâm kẻ thù bằng lưỡi lê trong chiến đấu cận chiến)
+* They bayoneted their rifles before charging. (Họ gắn lưỡi lê vào súng trước khi xung phong)
+
+Be:
+- Là, tồn tại.
+- Xảy ra, diễn ra.
+Ngữ cảnh:
++ Trong mọi tình huống giao tiếp.
++ Khi mô tả trạng thái hoặc sự tồn tại.
+Ví dụ:
+* She wants to be a doctor when she grows up. (Cô ấy muốn trở thành bác sĩ khi lớn lên)
+* The meeting will be at 3 PM. (Cuộc họp sẽ diễn ra lúc 3 giờ chiều)
+
+Beach:
+- Đưa lên bãi biển.
+- Mắc cạn.
+Ngữ cảnh:
++ Trong hàng hải.
++ Khi nói về động vật biển.
+Ví dụ:
+* They beached the boat for repairs. (Họ đưa thuyền lên bãi biển để sửa chữa)
+* The whale beached itself on the shore. (Con cá voi mắc cạn trên bờ)
+
+Beam:
+- Tỏa sáng, chiếu sáng.
+- Cười rạng rỡ.
+Ngữ cảnh:
++ Khi mô tả ánh sáng.
++ Khi biểu lộ niềm vui hoặc hạnh phúc.
+Ví dụ:
+* The lighthouse beamed its light across the sea. (Ngọn hải đăng chiếu sáng ra biển)
+* She beamed with pride at her daughter's achievement. (Cô ấy cười rạng rỡ vì thành tích của con gái)
+
+Bean:
+- Ném trúng.
+- Đánh đầu.
+Ngữ cảnh:
++ Trong thể thao, đặc biệt là bóng chày.
++ Trong ngôn ngữ không chính thức.
+Ví dụ:
+* The pitcher beaned the batter with a wild throw. (Cầu thủ ném bóng đã ném trúng người đánh bóng với cú ném lỗi)
+* He accidentally beaned himself on the low doorframe. (Anh ta vô tình đánh đầu vào khung cửa thấp)
+
+Bear:
+- Chịu đựng, gánh vác.
+- Sinh (con).
+Ngữ cảnh:
++ Khi nói về trách nhiệm hoặc gánh nặng.
++ Trong sinh học và gia đình.
+Ví dụ:
+* She couldn't bear the pain any longer. (Cô ấy không thể chịu đựng cơn đau thêm nữa)
+* The tree bears fruit in the summer. (Cây ra quả vào mùa hè)
+
+Beard:
+- Thách thức, đối đầu.
+- Mọc râu.
+Ngữ cảnh:
++ Khi đối mặt với người hoặc tình huống khó khăn.
++ Khi nói về sự trưởng thành của nam giới.
+Ví dụ:
+* He bearded the lion in its den. (Anh ta thách thức kẻ thù ngay trên sân nhà của họ)
+* He started to beard when he turned 16. (Anh ta bắt đầu mọc râu khi bước sang tuổi 16)
+
+Beat:
+- Đánh bại, đánh đập.
+- Đập (nhịp).
+Ngữ cảnh:
++ Trong cuộc thi hoặc cạnh tranh.
++ Trong âm nhạc hoặc khi mô tả nhịp điệu.
+Ví dụ:
+* Our team beat the champions in the final. (Đội của chúng tôi đã đánh bại nhà vô địch trong trận chung kết)
+* His heart beat faster as he approached the stage. (Tim anh đập nhanh hơn khi anh tiến gần đến sân khấu)
+
+Beatbox:
+- Tạo âm thanh bằng miệng.
+- Biểu diễn beatbox.
+Ngữ cảnh:
++ Trong âm nhạc hip-hop và rap.
++ Trong các cuộc thi tài năng.
+Ví dụ:
+* He can beatbox and rap at the same time. (Anh ấy có thể vừa beatbox vừa rap cùng lúc)
+* The group beatboxed their way through the talent show. (Nhóm đã biểu diễn beatbox xuyên suốt cuộc thi tài năng)
+
+Beatboxer:
+- Trở thành người beatbox.
+- Biểu diễn như một người beatbox.
+Ngữ cảnh:
++ Trong cộng đồng âm nhạc đường phố.
++ Trong sự nghiệp âm nhạc.
+Ví dụ:
+* He beatboxered for years before joining a professional group. (Anh ấy đã làm người beatbox trong nhiều năm trước khi gia nhập một nhóm chuyên nghiệp)
+* She beatboxered her way to fame on social media. (Cô ấy đã trở nên nổi tiếng trên mạng xã hội nhờ khả năng beatbox của mình)
+
+Beatify:
+- Phong chân phước.
+- Làm cho hạnh phúc.
+Ngữ cảnh:
++ Trong nghi lễ tôn giáo Công giáo.
++ Khi nói về việc làm cho ai đó hạnh phúc hoặc mãn nguyện.
+Ví dụ:
+* The Pope beatified the nun for her lifelong service to the poor. (Đức Giáo Hoàng đã phong chân phước cho nữ tu vì sự phục vụ suốt đời của bà đối với người nghèo)
+* The news of her recovery beatified her family. (Tin về sự hồi phục của cô ấy đã làm cho gia đình cô ấy hạnh phúc)
+
+Beautify:
+- Làm đẹp.
+- Trang điểm.
+Ngữ cảnh:
++ Trong mỹ phẩm và chăm sóc sắc đẹp.
++ Trong thiết kế và trang trí.
+Ví dụ:
+* She beautified her garden with colorful flowers. (Cô ấy làm đẹp khu vườn của mình bằng những bông hoa đầy màu sắc)
+* The app beautifies photos with various filters. (Ứng dụng làm đẹp ảnh bằng nhiều bộ lọc khác nhau)
+
+Beaver:
+- Làm việc chăm chỉ.
+- Cắn gặm (như hải ly).
+Ngữ cảnh:
++ Khi nói về sự siêng năng.
++ Trong mô tả hành vi động vật.
+Ví dụ:
+* He beavered away at his project all night. (Anh ấy làm việc chăm chỉ với dự án của mình suốt đêm)
+* The rodents beavered through the wood. (Những con gặm nhấm cắn gặm qua khúc gỗ)
+
+Beckon:
+- Ra hiệu gọi.
+- Hấp dẫn, lôi cuốn.
+Ngữ cảnh:
++ Trong giao tiếp phi ngôn ngữ.
++ Khi nói về sự hấp dẫn của cơ hội hoặc địa điểm.
+Ví dụ:
+* She beckoned to her friend across the room. (Cô ấy ra hiệu gọi người bạn ở phía bên kia phòng)
+* The mountains beckoned to the adventurers. (Những ngọn núi lôi cuốn các nhà thám hiểm)
+
+Become:
+- Trở thành.
+- Phù hợp với.
+Ngữ cảnh:
++ Khi nói về sự thay đổi trạng thái hoặc vai trò.
++ Trong thời trang hoặc hành vi xã hội.
+Ví dụ:
+* She became a doctor after years of study. (Cô ấy trở thành bác sĩ sau nhiều năm học tập)
+* That hairstyle really becomes you. (Kiểu tóc đó rất phù hợp với bạn)
+
+Bed:
+- Đặt vào giường.
+- Trồng (cây) vào đất.
+Ngữ cảnh:
++ Trong chăm sóc y tế hoặc trẻ em.
++ Trong làm vườn.
+Ví dụ:
+* The nurse bedded the patient for the night. (Y tá đặt bệnh nhân vào giường cho qua đêm)
+* They bedded the new plants in rich soil. (Họ trồng những cây mới vào đất màu mỡ)
+
+Bedazzle:
+- Làm choáng ngợp.
+- Trang trí lấp lánh.
+Ngữ cảnh:
++ Khi gây ấn tượng mạnh.
++ Trong thời trang và trang trí.
+Ví dụ:
+* Her performance bedazzled the audience. (Màn trình diễn của cô ấy làm choáng ngợp khán giả)
+* She bedazzled her jeans with rhinestones. (Cô ấy trang trí quần jean của mình bằng đá rhinestone lấp lánh)
+
+Bedeck:
+- Trang hoàng.
+- Trang trí lộng lẫy.
+Ngữ cảnh:
++ Trong trang trí cho các dịp đặc biệt.
++ Trong thời trang và thiết kế nội thất.
+Ví dụ:
+* They bedecked the hall for the wedding. (Họ trang hoàng hội trường cho đám cưới)
+* She bedecked herself with jewels for the gala. (Cô ấy trang điểm lộng lẫy với đồ trang sức cho buổi dạ tiệc)
+
+Bedevil:
+- Quấy rầy, làm phiền.
+- Ám ảnh.
+Ngữ cảnh:
++ Khi đối mặt với vấn đề dai dẳng.
++ Trong văn học hoặc phim ảnh kinh dị.
+Ví dụ:
+* Technical issues bedeviled the project from the start. (Các vấn đề kỹ thuật đã quấy rầy dự án ngay từ đầu)
+* The ghost bedeviled the old mansion. (Con ma ám ảnh ngôi biệt thự cũ)
+
+Beef:
+- Tăng cường, củng cố.
+- Phàn nàn.
+Ngữ cảnh:
++ Trong quân sự hoặc kinh doanh.
++ Trong ngôn ngữ không chính thức.
+Ví dụ:
+* They beefed up security after the incident. (Họ tăng cường an ninh sau sự cố)
+* He's always beefing about the workload. (Anh ấy luôn phàn nàn về khối lượng công việc)
+
+Beep:
+- Phát ra tiếng bíp.
+- Bấm còi.
+Ngữ cảnh:
++ Với thiết bị điện tử.
++ Trong giao thông.
+Ví dụ:
+* The microwave beeped when the food was ready. (Lò vi sóng phát ra tiếng bíp khi thức ăn đã sẵn sàng)
+* He beeped his horn to alert the pedestrian. (Anh ta bấm còi để cảnh báo người đi bộ)
+
+Beetle:
+- Di chuyển nhanh.
+- Nhô ra.
+Ngữ cảnh:
++ Khi mô tả chuyển động nhanh.
++ Trong kiến trúc hoặc địa hình.
+Ví dụ:
+* The child beetled across the playground. (Đứa trẻ di chuyển nhanh qua sân chơi)
+* The cliff beetled over the sea. (Vách đá nhô ra trên biển)
+
+Befall:
+- Xảy đến, xảy ra.
+- Giáng xuống.
+Ngữ cảnh:
++ Khi nói về sự kiện bất ngờ hoặc không may.
++ Trong văn học hoặc ngôn ngữ trang trọng.
+Ví dụ:
+* Tragedy befell the small town. (Bi kịch đã xảy đến với thị trấn nhỏ)
+* Whatever fate befalls us, we'll face it together. (Dù số phận nào giáng xuống, chúng ta sẽ cùng nhau đối mặt)
+
+Befit:
+- Phù hợp với.
+- Xứng đáng với.
+Ngữ cảnh:
++ Trong nghi thức hoặc phép tắc xã hội.
++ Khi nói về vai trò hoặc địa vị.
+Ví dụ:
+* His actions befitted his position as a leader. (Hành động của ông ấy phù hợp với vị trí lãnh đạo của mình)
+* She dressed in a manner befitting the occasion. (Cô ấy ăn mặc xứng đáng với dịp này)
+
+Befog:
+- Làm mờ mịt.
+- Làm rối trí.
+Ngữ cảnh:
++ Khi nói về thời tiết hoặc tầm nhìn.
++ Trong tình huống gây nhầm lẫn hoặc khó hiểu.
+Ví dụ:
+* The mist befogged the landscape. (Sương mù làm mờ mịt cảnh quan)
+* The complex instructions befogged most of the students. (Những hướng dẫn phức tạp làm rối trí hầu hết học sinh)
+
+Befriend:
+- Kết bạn với.
+- Giúp đỡ, hỗ trợ.
+Ngữ cảnh:
++ Trong các mối quan hệ xã hội.
++ Khi giúp đỡ người khác.
+Ví dụ:
+* She befriended the new student in her class. (Cô ấy kết bạn với học sinh mới trong lớp)
+* The kind stranger befriended the lost traveler. (Người lạ tốt bụng đã giúp đỡ du khách bị lạc)
+
+Beg:
+- Cầu xin.
+- Xin ăn xin.
+Ngữ cảnh:
++ Khi yêu cầu điều gì đó một cách khẩn thiết.
++ Trong tình huống khó khăn về tài chính.
+Ví dụ:
+* He begged for forgiveness after his mistake. (Anh ta cầu xin sự tha thứ sau lỗi lầm của mình)
+* The homeless man begged on the street corner. (Người vô gia cư xin ăn ở góc phố)
+
+Beget:
+- Sinh ra, tạo ra.
+- Dẫn đến.
+Ngữ cảnh:
++ Trong ngôn ngữ trang trọng hoặc tôn giáo.
++ Khi nói về nguyên nhân và kết quả.
+Ví dụ:
+* Violence begets more violence. (Bạo lực sinh ra thêm bạo lực)
+* His actions begot a series of unfortunate events. (Hành động của anh ta dẫn đến một loạt sự kiện không may)
+
+Beggar:
+- Làm cho nghèo đi.
+- Vượt quá, làm cho bất lực.
+Ngữ cảnh:
++ Khi nói về tác động kinh tế.
++ Khi mô tả điều gì đó vượt quá khả năng hoặc sự hiểu biết.
+Ví dụ:
+* The economic crisis beggared many families. (Cuộc khủng hoảng kinh tế đã làm nhiều gia đình trở nên nghèo khó)
+* The complexity of the problem beggars description. (Sự phức tạp của vấn đề vượt quá khả năng mô tả)
+
+Begin:
+- Bắt đầu.
+- Khởi sự.
+Ngữ cảnh:
++ Khi bắt đầu một hành động hoặc quá trình.
++ Trong việc khởi động một dự án hoặc sự nghiệp.
+Ví dụ:
+* The concert will begin at 8 PM sharp. (Buổi hòa nhạc sẽ bắt đầu đúng 8 giờ tối)
+* They began their business with just a small loan. (Họ khởi sự kinh doanh chỉ với một khoản vay nhỏ)
+
+Begrudge:
+- Ghen tị, đố kỵ.
+- Miễn cưỡng cho.
+Ngữ cảnh:
++ Khi cảm thấy không hài lòng về thành công của người khác.
++ Khi miễn cưỡng đưa ra hoặc chấp nhận điều gì đó.
+Ví dụ:
+* He begrudged his colleague's promotion. (Anh ta ghen tị với sự thăng chức của đồng nghiệp)
+* I don't begrudge you your success. (Tôi không đố kỵ với thành công của bạn)
+
+Beguile:
+- Quyến rũ, mê hoặc.
+- Đánh lừa.
+Ngữ cảnh:
++ Trong các mối quan hệ lãng mạn.
++ Trong quảng cáo hoặc marketing.
+Ví dụ:
+* Her charm beguiled many suitors. (Sự quyến rũ của cô ấy mê hoặc nhiều người theo đuổi)
+* The advertisement beguiled consumers into buying the product. (Quảng cáo đánh lừa người tiêu dùng mua sản phẩm)
+
+Behave:
+- Cư xử, hành xử.
+- Hoạt động (về máy móc).
+Ngữ cảnh:
++ Trong giáo dục và xã hội.
++ Trong khoa học và kỹ thuật.
+Ví dụ:
+* The children behaved well during the ceremony. (Bọn trẻ cư xử tốt trong buổi lễ)
+* The new software is behaving erratically. (Phần mềm mới đang hoạt động không ổn định)
+
+Behead:
+- Chặt đầu.
+- Loại bỏ phần đầu.
+Ngữ cảnh:
++ Trong lịch sử hoặc văn học.
++ Trong nấu ăn hoặc làm vườn.
+Ví dụ:
+* The king ordered the traitor to be beheaded. (Nhà vua ra lệnh chặt đầu kẻ phản bội)
+* She beheaded the flowers before arranging them in the vase. (Cô ấy cắt bỏ phần đầu của hoa trước khi cắm vào bình)
+
+Behold:
+- Nhìn ngắm, chiêm ngưỡng.
+- Chứng kiến.
+Ngữ cảnh:
++ Khi ngắm nhìn cái gì đó ấn tượng.
++ Trong ngôn ngữ trang trọng hoặc tôn giáo.
+Ví dụ:
+* They beheld the magnificent sunset in awe. (Họ chiêm ngưỡng cảnh hoàng hôn tuyệt đẹp trong sự kinh ngạc)
+* Behold, the power of nature! (Hãy chứng kiến sức mạnh của thiên nhiên!)
+
+Behoove (US) / Behove (UK):
+- Cần phải, nên.
+- Phù hợp với.
+Ngữ cảnh:
++ Trong ngôn ngữ trang trọng hoặc chính thức.
++ Khi đưa ra lời khuyên hoặc nghĩa vụ đạo đức.
+Ví dụ:
+* It behooves us to consider all options before making a decision. (Chúng ta nên xem xét tất cả các lựa chọn trước khi đưa ra quyết định)
+* It would behove you to apologize for your mistake. (Bạn nên xin lỗi vì lỗi lầm của mình)
+
+Belabor (US) / Belabour (UK):
+- Nhấn mạnh quá mức.
+- Chỉ trích gay gắt.
+Ngữ cảnh:
++ Trong tranh luận hoặc thảo luận.
++ Trong phê bình hoặc đánh giá.
+Ví dụ:
+* There's no need to belabor the point; we all understand. (Không cần phải nhấn mạnh quá mức điểm này; tất cả chúng ta đều hiểu)
+* The critic belabored every flaw in the film. (Nhà phê bình chỉ trích gay gắt mọi khuyết điểm trong bộ phim)
+
+Belay:
+- Buộc chặt (dây).
+- Hủy bỏ, ngừng lại.
+Ngữ cảnh:
++ Trong leo núi hoặc hàng hải.
++ Trong quân đội hoặc tình huống khẩn cấp.
+Ví dụ:
+* The climber belayed his partner as they ascended the cliff. (Người leo núi buộc chặt dây bảo hiểm cho đồng đội khi họ leo lên vách đá)
+* Belay that order! The situation has changed. (Hủy bỏ mệnh lệnh đó! Tình hình đã thay đổi)
+
+Belch:
+- Ợ.
+- Phun ra (khói, lửa).
+Ngữ cảnh:
++ Trong sinh lý học.
++ Khi mô tả núi lửa hoặc máy móc.
+Ví dụ:
+* He belched loudly after drinking the carbonated beverage. (Anh ta ợ to sau khi uống đồ uống có ga)
+* The factory chimneys belched smoke into the air. (Ống khói nhà máy phun khói ra không khí)
+
+Belie:
+- Mâu thuẫn với.
+- Che giấu.
+Ngữ cảnh:
++ Khi có sự khác biệt giữa vẻ bề ngoài và thực tế.
++ Trong văn học hoặc phân tích tâm lý.
+Ví dụ:
+* His calm demeanor belied his inner turmoil. (Vẻ bình tĩnh bên ngoài của anh ta mâu thuẫn với sự hỗn loạn bên trong)
+* The company's financial reports belied its true economic situation. (Các báo cáo tài chính của công ty che giấu tình hình kinh tế thực sự của nó)
+
+Believe:
+- Tin tưởng.
+- Cho rằng.
+Ngữ cảnh:
++ Trong tôn giáo hoặc triết học.
++ Trong đời sống hàng ngày và quan điểm cá nhân.
+Ví dụ:
+* Many people believe in life after death. (Nhiều người tin vào cuộc sống sau cái chết)
+* I believe we should give this new approach a try. (Tôi cho rằng chúng ta nên thử cách tiếp cận mới này)
+
+Belittle:
+- Coi thường.
+- Hạ thấp giá trị.
+Ngữ cảnh:
++ Trong các tình huống xã hội hoặc chuyên nghiệp.
++ Khi phê bình hoặc đánh giá.
+Ví dụ:
+* Don't belittle her achievements; she worked hard for them. (Đừng coi thường thành tích của cô ấy; cô ấy đã làm việc chăm chỉ để đạt được chúng)
+* His constant belittling remarks made her feel insecure. (Những nhận xét coi thường liên tục của anh ta khiến cô cảm thấy không an toàn)
+
+Bellow:
+- Gầm lên.
+- Hét to.
+Ngữ cảnh:
++ Khi mô tả âm thanh lớn của động vật.
++ Khi diễn tả tiếng nói hoặc tiếng kêu rất to của con người.
+Ví dụ:
+* The lion bellowed, scaring all the nearby animals. (Con sư tử gầm lên, làm sợ hãi tất cả các con vật xung quanh)
+* The angry customer bellowed his complaints at the store manager. (Người khách hàng tức giận hét to những lời phàn nàn của mình với người quản lý cửa hàng)
+
+Belly:
+- Bò bằng bụng.
+- Phình ra.
+Ngữ cảnh:
++ Khi mô tả cách di chuyển của một số động vật.
++ Khi nói về sự phình to hoặc nở ra của vật thể.
+Ví dụ:
+* The snake bellied across the hot sand. (Con rắn bò bằng bụng qua cát nóng)
+* The sail bellied out in the strong wind. (Cánh buồm phình ra trong gió mạnh)
+
+Bellyache:
+- Than phiền.
+- Kêu ca.
+Ngữ cảnh:
++ Trong giao tiếp hàng ngày, thường mang tính tiêu cực.
++ Khi nói về sự không hài lòng liên tục.
+Ví dụ:
+* He's always bellyaching about the food in the cafeteria. (Anh ta luôn than phiền về đồ ăn trong căng tin)
+* Stop bellyaching and do something about it! (Ngừng kêu ca và hãy làm gì đó đi!)
+
+Belong:
+- Thuộc về.
+- Là thành viên của.
+Ngữ cảnh:
++ Khi nói về quyền sở hữu hoặc mối quan hệ.
++ Khi đề cập đến việc là một phần của nhóm hoặc tổ chức.
+Ví dụ:
+* This book belongs to the library. (Cuốn sách này thuộc về thư viện)
+* She feels like she finally belongs in her new school. (Cô ấy cảm thấy cuối cùng mình cũng thuộc về ngôi trường mới)
+
+Belt:
+- Thắt dây lưng.
+- Đánh bằng dây lưng.
+Ngữ cảnh:
++ Khi nói về việc mặc quần áo.
++ Trong ngữ cảnh bạo lực (không khuyến khích).
+Ví dụ:
+* He belted his trousers and put on his shoes. (Anh ấy thắt dây lưng quần và đi giày vào)
+* The singer belted out the high notes effortlessly. (Ca sĩ hát vang những nốt cao một cách dễ dàng)
+
+Bemoan:
+- Than vãn.
+- Tiếc nuối.
+Ngữ cảnh:
++ Khi bày tỏ sự buồn bã hoặc thất vọng.
++ Trong văn học hoặc ngôn ngữ trang trọng.
+Ví dụ:
+* The farmers bemoaned the lack of rain this season. (Những nông dân than vãn về việc thiếu mưa trong mùa này)
+* He bemoaned his lost opportunities. (Anh ấy tiếc nuối những cơ hội đã mất)
+
+Bemuse:
+- Làm bối rối.
+- Làm ngơ ngác.
+Ngữ cảnh:
++ Khi mô tả phản ứng của ai đó trước tình huống khó hiểu.
++ Trong văn học hoặc báo chí.
+Ví dụ:
+* The complex instructions bemused the new employees. (Những hướng dẫn phức tạp làm bối rối các nhân viên mới)
+* She was bemused by his strange behavior. (Cô ấy cảm thấy ngơ ngác trước hành vi kỳ lạ của anh ta)
+
+Benchmark:
+- Đánh giá chuẩn.
+- So sánh.
+Ngữ cảnh:
++ Trong kinh doanh và công nghệ.
++ Khi đánh giá hiệu suất hoặc chất lượng.
+Ví dụ:
+* We need to benchmark our performance against industry standards. (Chúng ta cần đánh giá chuẩn hiệu suất của mình so với tiêu chuẩn ngành)
+* The new processor was benchmarked against its competitors. (Bộ xử lý mới được so sánh với các đối thủ cạnh tranh)
+
+Bend:
+- Uốn cong.
+- Cúi xuống.
+Ngữ cảnh:
++ Khi nói về thay đổi hình dạng vật thể.
++ Trong các hoạt động thể chất.
+Ví dụ:
+* The wind bent the trees. (Gió uốn cong những cái cây)
+* She bent down to tie her shoelaces. (Cô ấy cúi xuống để buộc dây giày)
+
+Benefit:
+- Hưởng lợi.
+- Có ích.
+Ngữ cảnh:
++ Trong kinh doanh và chính sách xã hội.
++ Khi nói về lợi ích cá nhân hoặc tập thể.
+Ví dụ:
+* The new policy will benefit low-income families. (Chính sách mới sẽ có lợi cho các gia đình có thu nhập thấp)
+* Exercise benefits both physical and mental health. (Tập thể dục có lợi cho cả sức khỏe thể chất và tinh thần)
+
+Bequeath:
+- Di chúc lại.
+- Truyền lại.
+Ngữ cảnh:
++ Trong các vấn đề pháp lý và di sản.
++ Khi nói về việc truyền lại kiến thức hoặc truyền thống.
+Ví dụ:
+* He bequeathed his entire fortune to charity. (Ông ấy di chúc lại toàn bộ tài sản cho tổ chức từ thiện)
+* The artist bequeathed her techniques to her students. (Nghệ sĩ truyền lại kỹ thuật của mình cho học trò)
+
+Berate:
+- Mắng mỏ.
+- Quở trách.
+Ngữ cảnh:
++ Trong tình huống xung đột hoặc kỷ luật.
++ Trong môi trường làm việc hoặc giáo dục.
+Ví dụ:
+* The coach berated the team for their poor performance. (Huấn luyện viên mắng mỏ đội vì màn trình diễn kém cỏi)
+* She berated herself for making such a silly mistake. (Cô ấy tự trách mình vì đã mắc một sai lầm ngớ ngẩn như vậy)
+
+Bereave:
+- Làm mất mát.
+- Cướp đi.
+Ngữ cảnh:
++ Khi nói về sự mất mát, đặc biệt là cái chết.
++ Trong văn học hoặc ngôn ngữ trang trọng.
+Ví dụ:
+* The war bereaved many families of their loved ones. (Cuộc chiến đã cướp đi người thân yêu của nhiều gia đình)
+* She was bereaved of her husband at a young age. (Cô ấy đã mất chồng khi còn rất trẻ)
+
+Berth:
+- Neo đậu (tàu).
+- Cung cấp chỗ ngủ.
+Ngữ cảnh:
++ Trong hàng hải.
++ Khi nói về chỗ ở tạm thời, đặc biệt trên tàu hoặc xe lửa.
+Ví dụ:
+* The ship berthed at the harbor. (Con tàu neo đậu tại bến cảng)
+* The train has comfortable berths for overnight travel. (Tàu hỏa có những chỗ ngủ thoải mái cho chuyến đi qua đêm)
+
+Beseech:
+- Van xin.
+- Cầu xin.
+Ngữ cảnh:
++ Trong ngôn ngữ trang trọng hoặc văn học.
++ Khi diễn tả lời cầu xin khẩn thiết.
+Ví dụ:
+* He beseeched the judge for mercy. (Anh ta van xin thẩm phán khoan hồng)
+* The drought-stricken farmers beseeched the heavens for rain. (Những nông dân bị hạn hán cầu xin trời mưa)
+
+Beset:
+- Bao vây.
+- Tấn công.
+Ngữ cảnh:
++ Khi mô tả khó khăn hoặc nguy hiểm.
++ Trong văn học hoặc báo chí.
+Ví dụ:
+* The hikers were beset by a sudden snowstorm. (Những người đi bộ đường dài bị bao vây bởi một cơn bão tuyết bất ngờ)
+* The company is beset with financial problems. (Công ty đang bị bao vây bởi các vấn đề tài chính)
+
+Besiege:
+- Bao vây.
+- Vây hãm.
+Ngữ cảnh:
++ Trong lịch sử quân sự.
++ Khi mô tả áp lực mạnh mẽ từ nhiều phía.
+Ví dụ:
+* The army besieged the castle for months. (Quân đội bao vây lâu đài trong nhiều tháng)
+* The celebrity was besieged by fans and reporters. (Người nổi tiếng bị vây hãm bởi người hâm mộ và phóng viên)
+
+Besmirch:
+- Làm ô danh.
+- Bôi nhọ (thiên về tinh thần).
+Ngữ cảnh:
++ Khi nói về danh tiếng hoặc uy tín.
++ Trong báo chí hoặc chính trị.
+Ví dụ:
+* The scandal besmirched the politician's reputation. (Vụ bê bối đã làm ô danh chính trị gia)
+* He refused to besmirch his opponent's character during the debate. (Anh ta từ chối bôi nhọ nhân cách của đối thủ trong cuộc tranh luận)
+
+Bespatter:
+- Làm bẩn.
+- Bôi nhọ (thiên về vật lý).
+Ngữ cảnh:
++ Khi nói về việc làm bẩn vật thể hoặc danh tiếng.
++ Trong văn học hoặc ngôn ngữ trang trọng.
+Ví dụ:
+* The mud bespatters his shoes. (Bùn làm bẩn đôi giày của anh ấy)
+* The scandal bespatters the company's reputation. (Vụ bê bối bôi nhọ danh tiếng của công ty)
+
+Bespeak:
+- Chỉ ra.
+- Đặt trước.
+Ngữ cảnh:
++ Trong ngôn ngữ trang trọng hoặc văn học.
++ Khi nói về việc đặt hàng đặc biệt.
+Ví dụ:
+* His actions bespeak a kind heart. (Hành động của anh ấy chỉ ra một trái tim nhân hậu)
+* She bespoke a custom-made dress for the event. (Cô ấy đặt trước một chiếc váy may đo cho sự kiện)
+
+Best:
+- Đánh bại.
+- Vượt qua.
+Ngữ cảnh:
++ Trong các cuộc thi đấu hoặc cạnh tranh.
++ Khi nói về việc vượt trội hơn người khác.
+Ví dụ:
+* He bested all his opponents in the chess tournament. (Anh ấy đánh bại tất cả đối thủ trong giải đấu cờ vua)
+* The new smartphone bests its competitors in battery life. (Chiếc smartphone mới vượt qua các đối thủ về thời lượng pin)
+
+Bestir:
+- Kích thích.
+- Thúc đẩy.
+Ngữ cảnh:
++ Trong văn học hoặc ngôn ngữ trang trọng.
++ Khi nói về việc tự thúc đẩy bản thân.
+Ví dụ:
+* He finally bestirred himself to clean the house. (Cuối cùng anh ấy cũng tự thúc đẩy bản thân để dọn dẹp nhà cửa)
+* The crisis bestirred the government into action. (Cuộc khủng hoảng đã thúc đẩy chính phủ hành động)
+
+Bestow:
+- Ban tặng.
+- Trao tặng.
+Ngữ cảnh:
++ Khi nói về việc trao tặng danh hiệu hoặc phần thưởng.
++ Trong ngôn ngữ trang trọng hoặc nghi lễ.
+Ví dụ:
+* The king bestowed the title of knight upon him. (Nhà vua ban tặng tước hiệu hiệp sĩ cho anh ta)
+* She bestowed her blessing on the young couple. (Bà ấy ban phước lành cho đôi trẻ)
+
+Bestride:
+- Cưỡi lên.
+- Đứng chân dang rộng trên.
+Ngữ cảnh:
++ Trong văn học hoặc ngôn ngữ trang trọng.
++ Khi mô tả tư thế hoặc vị trí.
+Ví dụ:
+* The cowboy bestrode his horse. (Chàng cao bồi cưỡi lên con ngựa của mình)
+* The ancient colossus bestrode the harbor entrance. (Bức tượng khổng lồ cổ đại đứng chân dang rộng trên lối vào cảng)
+
+Bet:
+- Đánh cược.
+- Cá cược.
+Ngữ cảnh:
++ Trong các trò chơi may rủi hoặc cá cược thể thao.
++ Khi nói về việc dự đoán hoặc tin tưởng mạnh mẽ.
+Ví dụ:
+* He bet all his savings on the horse race. (Anh ta đánh cược tất cả tiền tiết kiệm vào cuộc đua ngựa)
+* I bet she'll win the election. (Tôi cá là cô ấy sẽ thắng cuộc bầu cử)
+
+Betake:
+- Đi đến.
+- Chuyển đến.
+Ngữ cảnh:
++ Trong văn học hoặc ngôn ngữ trang trọng.
++ Khi nói về việc di chuyển đến một nơi hoặc tình trạng mới.
+Ví dụ:
+* He betook himself to the library to study. (Anh ấy đi đến thư viện để học)
+* They betook themselves to a life of solitude. (Họ chuyển sang cuộc sống ẩn dật)
+
+Betide:
+- Xảy ra.
+- Xảy đến.
+Ngữ cảnh:
++ Trong văn học hoặc ngôn ngữ cổ.
++ Khi nói về những sự kiện trong tương lai, thường mang tính cảnh báo.
+Ví dụ:
+* Woe betide anyone who crosses her path. (Khốn khổ sẽ xảy đến với bất kỳ ai cản đường cô ấy)
+* Whatever betides, we'll face it together. (Bất cứ điều gì xảy ra, chúng ta sẽ cùng nhau đối mặt)
+
+Betoken:
+- Báo hiệu.
+- Chỉ ra.
+Ngữ cảnh:
++ Trong văn học hoặc ngôn ngữ trang trọng.
++ Khi nói về dấu hiệu hoặc biểu hiện của điều gì đó.
+Ví dụ:
+* Dark clouds betoken an approaching storm. (Mây đen báo hiệu một cơn bão đang đến gần)
+* His silence betokens his disapproval. (Sự im lặng của anh ấy chỉ ra sự không tán thành)
+
+Betray:
+- Phản bội.
+- Tiết lộ.
+Ngữ cảnh:
++ Trong các mối quan hệ cá nhân hoặc chính trị.
++ Khi nói về việc vô tình tiết lộ thông tin hoặc cảm xúc.
+Ví dụ:
+* He betrayed his country by selling secrets to the enemy. (Anh ta đã phản bội đất nước bằng cách bán bí mật cho kẻ thù)
+* Her trembling hands betrayed her nervousness. (Đôi tay run rẩy của cô ấy đã tiết lộ sự lo lắng)
+
+Better:
+- Cải thiện.
+- Làm tốt hơn.
+Ngữ cảnh:
++ Khi nói về việc nâng cao chất lượng hoặc hiệu suất.
++ Trong các tình huống cạnh tranh hoặc so sánh.
+Ví dụ:
+* We need to better our performance in the next game. (Chúng ta cần cải thiện màn trình diễn trong trận đấu tới)
+* She bettered the world record by two seconds. (Cô ấy đã phá kỷ lục thế giới với hai giây)
+
+Bewail:
+- Than khóc.
+- Thương tiếc.
+Ngữ cảnh:
++ Khi bày tỏ sự đau buồn hoặc hối tiếc sâu sắc.
++ Trong văn học hoặc ngôn ngữ trang trọng.
+Ví dụ:
+* The widow bewailed her husband's death. (Người góa phụ than khóc cái chết của chồng)
+* He bewailed his lost opportunities. (Anh ấy thương tiếc những cơ hội đã mất)
+
+Beware:
+- Cẩn thận.
+- Đề phòng.
+Ngữ cảnh:
++ Khi cảnh báo về nguy hiểm hoặc rủi ro.
++ Trong các biển báo hoặc thông báo công cộng.
+Ví dụ:
+* Beware of pickpockets in crowded areas. (Hãy cẩn thận với kẻ móc túi ở những nơi đông đúc)
+* Beware the Ides of March. (Hãy đề phòng ngày 15 tháng 3)
+
+Bewilder:
+- Làm bối rối.
+- Làm hoang mang.
+Ngữ cảnh:
++ Khi nói về tình trạng không hiểu hoặc không chắc chắn.
++ Trong các tình huống phức tạp hoặc khó hiểu.
+Ví dụ:
+* The complex instructions bewildered the new employees. (Những hướng dẫn phức tạp làm bối rối các nhân viên mới)
+* She was bewildered by his sudden change of attitude. (Cô ấy hoang mang trước sự thay đổi thái độ đột ngột của anh ta)
+
+Bewitch:
+- Mê hoặc.
+- Bỏ bùa.
+Ngữ cảnh:
++ Trong truyện cổ tích hoặc văn học huyền bí.
++ Khi nói về sức hấp dẫn mạnh mẽ.
+Ví dụ:
+* The witch bewitched the prince, turning him into a frog. (Phù thủy đã bỏ bùa hoàng tử, biến anh ta thành một con ếch)
+* Her beauty bewitched everyone at the party. (Vẻ đẹp của cô ấy mê hoặc tất cả mọi người tại bữa tiệc)
+
+Bias:
+- Thiên vị.
+- Định kiến.
+Ngữ cảnh:
++ Trong các cuộc thảo luận về công bằng và bình đẳng.
++ Trong nghiên cứu khoa học hoặc báo cáo tin tức.
+Ví dụ:
+* The judge was accused of biasing his decisions. (Thẩm phán bị cáo buộc thiên vị trong các quyết định của mình)
+* Unconscious bias can affect hiring decisions. (Định kiến vô thức có thể ảnh hưởng đến quyết định tuyển dụng)
+
+Bicker:
+- Cãi vã.
+- Tranh cãi.
+Ngữ cảnh:
++ Trong các mối quan hệ cá nhân hoặc gia đình.
++ Khi nói về những cuộc tranh luận nhỏ và liên tục.
+Ví dụ:
+* The siblings bickered over who would get the last piece of cake. (Anh chị em cãi vã về việc ai sẽ được miếng bánh cuối cùng)
+* The couple bickered constantly about household chores. (Cặp đôi liên tục tranh cãi về việc nhà)
+
+Bicycle:
+- Đi xe đạp.
+Ngữ cảnh:
++ Khi nói về phương tiện di chuyển.
++ Trong các hoạt động thể thao hoặc giải trí.
+Ví dụ:
+* They bicycled through the countryside on their vacation. (Họ đi xe đạp qua vùng nông thôn trong kỳ nghỉ của mình)
+* More people are bicycling to work to reduce their carbon footprint. (Ngày càng nhiều người đi xe đạp đến nơi làm việc để giảm dấu chân carbon)
+
+Bid:
+- Đấu giá.
+- Đề nghị.
+Ngữ cảnh:
++ Trong các cuộc đấu giá hoặc đấu thầu.
++ Khi nói về việc chào giá hoặc đưa ra đề xuất.
+Ví dụ:
+* He bid $1000 for the antique vase. (Anh ta đấu giá 1000 đô la cho chiếc bình cổ)
+* The company bid for the government contract. (Công ty đã đấu thầu cho hợp đồng chính phủ)
+
+Bide:
+- Chờ đợi.
+- Chịu đựng.
+Ngữ cảnh:
++ Trong văn học hoặc ngôn ngữ trang trọng.
++ Khi nói về việc kiên nhẫn chờ đợi.
+Ví dụ:
+* We must bide our time until the right moment. (Chúng ta phải chờ đợi thời cơ thích hợp)
+* She bided the winter in her small cottage. (Cô ấy chịu đựng mùa đông trong căn nhà nhỏ của mình)
+
+Biff:
+- Đấm.
+- Đánh mạnh.
+Ngữ cảnh:
++ Trong ngôn ngữ không trang trọng hoặc truyện tranh.
++ Khi mô tả hành động đánh đập nhanh và mạnh.
+Ví dụ:
+* He biffed the bully on the nose. (Anh ta đấm tên bắt nạt vào mũi)
+* The boxer biffed his opponent with a strong right hook. (Võ sĩ quyền Anh đánh mạnh đối thủ bằng một cú móc phải)
+
+Bifurcate:
+- Phân nhánh.
+- Chia đôi.
+Ngữ cảnh:
++ Trong khoa học hoặc kỹ thuật.
++ Khi nói về sự phân chia hoặc tách ra.
+Ví dụ:
+* The road bifurcates at the next intersection. (Con đường phân nhánh tại giao lộ tiếp theo)
+* The company decided to bifurcate its operations into two separate divisions. (Công ty quyết định chia đôi hoạt động của mình thành hai bộ phận riêng biệt)
+
+Big:
+- Phóng đại.
+- Khoác lác.
+Ngữ cảnh:
++ Trong ngôn ngữ không trang trọng.
++ Khi nói về việc nói quá hoặc khoe khoang.
+Ví dụ:
+* He's always bigging up his achievements. (Anh ta luôn phóng đại thành tích của mình)
+* Don't big yourself up too much in the interview. (Đừng khoác lác quá nhiều trong cuộc phỏng vấn)
+
+Bike:
+- Đi xe đạp.
+Ngữ cảnh:
++ Khi nói về phương tiện di chuyển.
++ Trong các hoạt động thể thao hoặc giải trí.
+Ví dụ:
+* We biked around the lake this morning. (Chúng tôi đi xe đạp quanh hồ sáng nay)
+* More people are biking to work to stay fit. (Ngày càng nhiều người đi xe đạp đến nơi làm việc để giữ gìn sức khỏe)
+
+Bilk:
+- Lừa gạt.
+- Trốn trả.
+Ngữ cảnh:
++ Trong các tình huống liên quan đến tiền bạc hoặc dịch vụ.
++ Khi nói về hành vi gian lận hoặc không trung thực.
+Ví dụ:
+* The con artist bilked investors out of millions. (Kẻ lừa đảo đã lừa gạt các nhà đầu tư hàng triệu đô)
+* He tried to bilk the taxi driver by running away without paying. (Anh ta cố gắng trốn trả tiền tài xế taxi bằng cách bỏ chạy)
+
+Bill:
+- Lập hóa đơn.
+- Tính tiền.
+Ngữ cảnh:
++ Trong kinh doanh và tài chính.
++ Khi nói về việc yêu cầu thanh toán.
+Ví dụ:
+* The restaurant billed us for the meal. (Nhà hàng đã tính tiền bữa ăn cho chúng tôi)
+* The company bills its clients on a monthly basis. (Công ty lập hóa đơn cho khách hàng hàng tháng)
+
+Billet:
+- Bố trí chỗ ở.
+- Phân công.
+Ngữ cảnh:
++ Trong quân đội.
++ Khi nói về việc sắp xếp nơi ở tạm thời.
+Ví dụ:
+* The soldiers were billeted in local homes. (Các binh sĩ được bố trí chỗ ở tại các nhà dân địa phương)
+* He was billeted to the marketing department. (Anh ấy được phân công vào bộ phận tiếp thị)
+
+Billow:
+- Phồng lên.
+- Cuộn sóng.
+Ngữ cảnh:
++ Khi mô tả chuyển động của vải, khói hoặc nước.
++ Trong văn học hoặc mô tả phong cảnh.
+Ví dụ:
+* The curtains billowed in the breeze. (Những tấm rèm phồng lên trong gió)
+* Smoke billowed from the factory chimney. (Khói cuộn lên từ ống khói nhà máy)
+
+Bin:
+- Bỏ vào thùng.
+- Phân loại.
+Ngữ cảnh:
++ Khi nói về việc xử lý rác thải hoặc tổ chức đồ đạc.
++ Trong công nghệ thông tin, khi nói về việc phân loại dữ liệu.
+Ví dụ:
+* Please bin your rubbish after the picnic. (Vui lòng bỏ rác vào thùng sau khi dã ngoại)
+* The system automatically bins incoming emails by sender. (Hệ thống tự động phân loại email đến theo người gửi)
+
+Bind:
+- Buộc.
+- Ràng buộc.
+Ngữ cảnh:
++ Khi nói về việc gắn kết vật lý hoặc pháp lý.
++ Trong y học hoặc nấu ăn.
+Ví dụ:
+* She bound the books with a strong cord. (Cô ấy buộc các cuốn sách lại bằng một sợi dây chắc chắn)
+* The contract binds both parties to the agreement. (Hợp đồng ràng buộc cả hai bên với thỏa thuận)
+
+Binge:
+- Ăn uống vô độ.
+- Tiêu thụ quá mức.
+Ngữ cảnh:
++ Khi nói về hành vi tiêu thụ quá mức, thường liên quan đến thức ăn, đồ uống hoặc giải trí.
++ Trong các cuộc thảo luận về sức khỏe và lối sống.
+Ví dụ:
+* He binged on junk food all weekend. (Anh ta ăn uống vô độ đồ ăn vặt suốt cuối tuần)
+* Many people binge-watch their favorite TV series. (Nhiều người xem liên tục các bộ phim truyền hình yêu thích của họ)
+
+Biodegrade:
+- Phân hủy sinh học.
+Ngữ cảnh:
++ Trong các cuộc thảo luận về môi trường và bền vững.
++ Khi nói về sản phẩm thân thiện với môi trường.
+Ví dụ:
+* These plastic bags will biodegrade within a year. (Những túi nhựa này sẽ phân hủy sinh học trong vòng một năm)
+* We need to use more materials that biodegrade naturally. (Chúng ta cần sử dụng nhiều vật liệu có thể phân hủy sinh học tự nhiên hơn)
+
+Bird:
+- Quan sát chim.
+- Săn chim.
+Ngữ cảnh:
++ Trong hoạt động giải trí hoặc nghiên cứu về chim.
++ Trong ngữ cảnh săn bắn (ít phổ biến).
+Ví dụ:
+* They spent the weekend birding in the national park. (Họ dành cuối tuần để quan sát chim trong công viên quốc gia)
+* Some people bird for sport, but many do it for conservation research. (Một số người săn chim để giải trí, nhưng nhiều người làm điều đó cho nghiên cứu bảo tồn)
+
+Bisect:
+- Chia đôi.
+- Cắt ngang.
+Ngữ cảnh:
++ Trong toán học và hình học.
++ Khi nói về việc chia một vật hoặc khu vực thành hai phần bằng nhau.
+Ví dụ:
+* The line bisects the circle perfectly. (Đường thẳng chia đôi hình tròn một cách hoàn hảo)
+* The new highway bisects the old farmland. (Con đường cao tốc mới cắt ngang vùng đất nông nghiệp cũ)
+
+Bitch:
+- Phàn nàn.
+- Cằn nhằn.
+Ngữ cảnh:
++ Trong ngôn ngữ không trang trọng hoặc thô tục.
++ Khi bày tỏ sự không hài lòng hoặc khó chịu.
+Ví dụ:
+* He's always bitching about his job. (Anh ta luôn phàn nàn về công việc của mình)
+* Stop bitching and do something about it. (Ngừng cằn nhằn và hãy làm gì đó đi)
+
+Bite:
+- Cắn.
+- Đớp.
+Ngữ cảnh:
++ Khi nói về hành động của động vật hoặc con người.
++ Trong ngữ cảnh ẩm thực hoặc y tế.
+Ví dụ:
+* The dog bit the postman. (Con chó cắn người đưa thư)
+* She bit into the juicy apple. (Cô ấy cắn vào quả táo mọng nước)
+
+Bitmap:
+- Chuyển đổi thành ảnh bitmap.
+Ngữ cảnh:
++ Trong công nghệ thông tin và đồ họa máy tính.
++ Khi nói về xử lý hình ảnh kỹ thuật số.
+Ví dụ:
+* The designer bitmapped the logo for use on the website. (Nhà thiết kế đã chuyển đổi logo thành ảnh bitmap để sử dụng trên trang web)
+* Some old computer games were bitmapped to save memory. (Một số trò chơi máy tính cũ được chuyển đổi thành bitmap để tiết kiệm bộ nhớ)
+
+Bivouac:
+- Cắm trại tạm thời.
+- Đóng quân.
+Ngữ cảnh:
++ Trong hoạt động quân sự hoặc cắm trại ngoài trời.
++ Khi nói về nơi ở tạm thời trong thiên nhiên.
+Ví dụ:
+* The soldiers bivouacked in the forest for the night. (Các binh sĩ đóng quân trong rừng qua đêm)
+* The hikers decided to bivouac by the lake. (Những người đi bộ đường dài quyết định cắm trại tạm thời bên hồ)
+
+Bivvy:
+- Cắm trại đơn giản.
+- Ngủ ngoài trời.
+Ngữ cảnh:
++ Trong hoạt động leo núi hoặc cắm trại nhẹ.
++ Khi nói về việc ngủ ngoài trời với trang bị tối thiểu.
+Ví dụ:
+* We bivvied on the mountain ridge to catch the sunrise. (Chúng tôi cắm trại đơn giản trên đỉnh núi để đón bình minh)
+* Experienced hikers often prefer to bivvy rather than carry a tent. (Những người đi bộ đường dài có kinh nghiệm thường thích ngủ ngoài trời hơn là mang theo lều)
+
+Blab:
+- Nói lộ.
+- Tiết lộ bí mật.
+Ngữ cảnh:
++ Trong giao tiếp hàng ngày, thường mang tính tiêu cực.
++ Khi nói về việc tiết lộ thông tin một cách bất cẩn.
+Ví dụ:
+* Don't tell him anything; he always blabs. (Đừng nói gì với anh ta; anh ta luôn nói lộ)
+* She blabbed about the surprise party to everyone. (Cô ấy đã tiết lộ về bữa tiệc bất ngờ với mọi người)
+
+Blabber:
+- Nói lảm nhảm.
+- Nói nhiều vô nghĩa.
+Ngữ cảnh:
++ Trong giao tiếp hàng ngày, thường mang tính tiêu cực.
++ Khi mô tả việc nói nhiều mà không có mục đích rõ ràng.
+Ví dụ:
+* He just blabbered on about nothing important. (Anh ta cứ nói lảm nhảm về những điều không quan trọng)
+* Stop blabbering and get to the point. (Ngừng nói vô nghĩa và đi vào trọng tâm đi)
+
+Black:
+- Làm đen.
+- Tẩy chay.
+Ngữ cảnh:
++ Khi nói về việc thay đổi màu sắc.
++ Trong ngữ cảnh chính trị hoặc xã hội.
+Ví dụ:
+* The smoke blacked the walls of the room. (Khói làm đen các bức tường của căn phòng)
+* The community blacked the store for its unfair practices. (Cộng đồng tẩy chay cửa hàng vì những hành vi không công bằng của nó)
+
+Blackball:
+- Loại trừ.
+- Từ chối.
+Ngữ cảnh:
++ Trong các tổ chức hoặc câu lạc bộ.
++ Khi nói về việc từ chối ai đó một cách có hệ thống.
+Ví dụ:
+* He was blackballed from the club for his inappropriate behavior. (Anh ta bị loại trừ khỏi câu lạc bộ vì hành vi không phù hợp)
+* The committee blackballed his application without giving a reason. (Ủy ban đã từ chối đơn xin của anh ta mà không đưa ra lý do)
+
+Blacken:
+- Làm đen.
+- Bôi nhọ.
+Ngữ cảnh:
++ Khi nói về việc thay đổi màu sắc.
++ Trong ngữ cảnh làm hại danh tiếng.
+Ví dụ:
+* The fire blackened the walls of the building. (Ngọn lửa làm đen các bức tường của tòa nhà)
+* The scandal blackened his reputation. (Vụ bê bối đã bôi nhọ danh tiếng của anh ta)
+
+Blacklist:
+- Đưa vào danh sách đen.
+- Cấm.
+Ngữ cảnh:
++ Trong kinh doanh hoặc chính trị.
++ Khi nói về việc loại trừ hoặc cấm đoán.
+Ví dụ:
+* The company blacklisted suppliers who failed to meet quality standards. (Công ty đưa vào danh sách đen những nhà cung cấp không đáp ứng tiêu chuẩn chất lượng)
+* He was blacklisted from the industry for unethical practices. (Anh ta bị cấm tham gia ngành công nghiệp vì những hành vi phi đạo đức)
+
+Blackmail:
+- Tống tiền.
+- Đe dọa.
+Ngữ cảnh:
++ Trong tình huống pháp lý hoặc hình sự.
++ Khi nói về việc ép buộc ai đó bằng thông tin bí mật.
+Ví dụ:
+* He tried to blackmail his boss with sensitive information. (Anh ta cố gắng tống tiền sếp bằng thông tin nhạy cảm)
+* The politician was blackmailed into resigning. (Chính trị gia bị đe dọa phải từ chức)
+
+Blag:
+- Lừa gạt.
+- Nói dối để được lợi.
+Ngữ cảnh:
++ Trong ngôn ngữ không trang trọng, chủ yếu ở Anh.
++ Khi nói về việc lấy được thứ gì đó bằng cách lừa dối.
+Ví dụ:
+* He blagged his way into the VIP area. (Anh ta lừa gạt để vào khu vực VIP)
+* She tried to blag free drinks at the bar. (Cô ấy cố gắng nói dối để được uống miễn phí tại quán bar)
+
+Blame:
+- Đổ lỗi.
+- Quy trách nhiệm.
+Ngữ cảnh:
++ Trong các tình huống xã hội hoặc chuyên nghiệp.
++ Khi nói về việc xác định trách nhiệm cho một vấn đề.
+Ví dụ:
+* Don't blame me for your mistakes. (Đừng đổ lỗi cho tôi về những sai lầm của bạn)
+* The report blamed poor management for the company's failure. (Bản báo cáo quy trách nhiệm cho việc quản lý kém về sự thất bại của công ty)
+
+Blanch:
+- Làm trắng bệch.
+- Chần (nấu ăn).
+Ngữ cảnh:
++ Khi mô tả phản ứng về mặt cảm xúc.
++ Trong nấu ăn.
+Ví dụ:
+* He blanched at the sight of blood. (Anh ta trắng bệch mặt khi nhìn thấy máu)
+* Blanch the vegetables before freezing them. (Chần rau trước khi đông lạnh chúng)
+
+Blank:
+- Xóa trắng.
+- Làm trống rỗng.
+Ngữ cảnh:
++ Trong công nghệ thông tin hoặc xử lý dữ liệu.
++ Khi nói về việc làm cho cái gì đó trở nên trống rỗng hoặc vô nghĩa.
+Ví dụ:
+* The computer virus blanked all the files on the hard drive. (Virus máy tính đã xóa trắng tất cả các tệp trên ổ cứng)
+* His mind blanked when he tried to remember the answer. (Tâm trí anh ấy trở nên trống rỗng khi cố gắng nhớ lại câu trả lời)
+
+Blanket:
+- Bao phủ.
+- Che phủ hoàn toàn.
+Ngữ cảnh:
++ Khi nói về việc bao phủ một khu vực rộng lớn.
++ Trong ngữ cảnh chính sách hoặc quy định.
+Ví dụ:
+* Snow blanketed the entire city. (Tuyết bao phủ toàn bộ thành phố)
+* The company issued a blanket ban on smoking in all its facilities. (Công ty ban hành lệnh cấm hút thuốc toàn diện trong tất cả các cơ sở của mình)
+
+Blare:
+- Kêu inh ỏi.
+- Phát ra âm thanh lớn.
+Ngữ cảnh:
++ Khi mô tả âm thanh lớn và khó chịu.
++ Trong các tình huống ồn ào hoặc hỗn loạn.
+Ví dụ:
+* The car horn blared in the quiet street. (Còi xe kêu inh ỏi trên con đường yên tĩnh)
+* Music blared from the speakers at the party. (Nhạc phát ra ầm ĩ từ loa tại bữa tiệc)
+
+Blaspheme:
+- Phạm thượng.
+- Nói báng bổ.
+Ngữ cảnh:
++ Trong ngữ cảnh tôn giáo.
++ Khi nói về việc xúc phạm đến niềm tin tôn giáo.
+Ví dụ:
+* He was accused of blaspheming against the church. (Anh ta bị cáo buộc phạm thượng chống lại nhà thờ)
+* Some people believe that using God's name in vain is blaspheming. (Một số người tin rằng sử dụng tên Chúa một cách vô ích là nói báng bổ)
+
+Blast:
+- Nổ tung.
+- Phá hủy bằng chất nổ.
+Ngữ cảnh:
++ Trong xây dựng hoặc khai thác mỏ.
++ Khi nói về việc phá hủy hoặc tấn công mạnh mẽ.
+Ví dụ:
+* They had to blast through the rock to build the tunnel. (Họ phải nổ tung đá để xây dựng đường hầm)
+* The critics blasted the new movie for its poor plot. (Các nhà phê bình đã chỉ trích gay gắt bộ phim mới vì cốt truyện kém)
+
+Blather:
+- Nói nhảm.
+- Nói dài dòng vô nghĩa.
+Ngữ cảnh:
++ Trong giao tiếp hàng ngày, thường mang tính tiêu cực.
++ Khi mô tả việc nói nhiều mà không có nội dung quan trọng.
+Ví dụ:
+* He just blathered on about his weekend plans. (Anh ta cứ nói nhảm về kế hoạch cuối tuần của mình)
+* Stop blathering and get to the point. (Ngừng nói dài dòng vô nghĩa và đi vào trọng tâm đi)
+
+Blaze:
+- Bùng cháy.
+- Tỏa sáng rực rỡ.
+Ngữ cảnh:
++ Khi mô tả lửa hoặc ánh sáng mạnh.
++ Trong ngữ cảnh thể hiện sự nổi bật hoặc mạnh mẽ.
+Ví dụ:
+* The forest fire blazed out of control. (Đám cháy rừng bùng cháy không kiểm soát)
+* Her eyes blazed with anger. (Đôi mắt cô ấy bừng bừng tức giận)
+
+Blazon:
+- Công bố rộng rãi.
+- Trang trí bằng huy hiệu.
+Ngữ cảnh:
++ Trong ngôn ngữ trang trọng hoặc văn học.
++ Trong lĩnh vực nghi lễ hoặc huy hiệu học.
+Ví dụ:
+* The company blazoned its success across all media channels. (Công ty công bố rộng rãi thành công của mình trên tất cả các kênh truyền thông)
+* The knight's shield was blazoned with his family crest. (Khiên của hiệp sĩ được trang trí bằng huy hiệu gia đình)
+
+Bleach:
+- Tẩy trắng.
+- Làm mất màu.
+Ngữ cảnh:
++ Trong công nghiệp dệt may hoặc giặt ủi.
++ Khi nói về việc làm sạch hoặc khử trùng.
+Ví dụ:
+* She bleached her hair blonde. (Cô ấy tẩy tóc thành màu vàng)
+* They bleached the sheets to remove the stains. (Họ tẩy trắng ga giường để loại bỏ vết bẩn)
+
+Bleat:
+- Kêu be be (như cừu).
+- Phàn nàn yếu ớt.
+Ngữ cảnh:
++ Khi mô tả âm thanh của động vật.
++ Khi nói về việc phàn nàn một cách yếu ớt hoặc không hiệu quả.
+Ví dụ:
+* The lambs bleated for their mothers. (Những con cừu con kêu be be gọi mẹ)
+* He just bleated about the unfairness without taking any action. (Anh ta chỉ phàn nàn yếu ớt về sự bất công mà không có hành động nào)
+
+Bleed:
+- Chảy máu.
+- Mất dần.
+Ngữ cảnh:
++ Trong y học hoặc khi nói về thương tích.
++ Trong in ấn hoặc tài chính.
+Ví dụ:
+* The wound continued to bleed for hours. (Vết thương tiếp tục chảy máu trong nhiều giờ)
+* The company was bleeding money due to poor management. (Công ty đang mất dần tiền do quản lý kém)
+
+Bleep:
+- Phát ra tiếng bíp.
+- Che tiếng (từ không phù hợp).
+Ngữ cảnh:
++ Trong công nghệ hoặc truyền thông.
++ Khi nói về việc kiểm duyệt ngôn ngữ.
+Ví dụ:
+* The machine beeped when it finished its cycle. (Máy phát ra tiếng bíp khi kết thúc chu kỳ)
+* They bleeped out all the swear words in the broadcast. (Họ che tiếng tất cả các từ chửi thề trong bản phát sóng)
+
+Blemish:
+- Làm xấu đi.
+- Gây tỳ vết.
+Ngữ cảnh:
++ Khi nói về ngoại hình hoặc danh tiếng.
++ Trong mỹ phẩm hoặc chăm sóc da.
+Ví dụ:
+* The scandal blemished his otherwise perfect record. (Vụ bê bối đã gây tỳ vết cho hồ sơ vốn hoàn hảo của anh ta)
+* The new cream promises to reduce blemishes on the skin. (Loại kem mới hứa hẹn sẽ giảm các vết xấu trên da)
+
+Blench:
+- Lùi lại vì sợ.
+- Tỏ ra e ngại.
+Ngữ cảnh:
++ Trong văn học hoặc ngôn ngữ trang trọng.
++ Khi mô tả phản ứng với sự sợ hãi hoặc ghê tởm.
+Ví dụ:
+* He didn't blench at the sight of the gruesome scene. (Anh ta không lùi lại vì sợ khi nhìn thấy cảnh tượng ghê rợn)
+* She blenched when she heard the bad news. (Cô ấy tỏ ra e ngại khi nghe tin xấu)
+
+Blend:
+- Pha trộn.
+- Hòa hợp.
+Ngữ cảnh:
++ Trong nấu ăn hoặc pha chế.
++ Khi nói về việc kết hợp các yếu tố khác nhau.
+Ví dụ:
+* The chef blended different spices to create a unique flavor. (Đầu bếp pha trộn các loại gia vị khác nhau để tạo ra một hương vị độc đáo)
+* Their musical styles blend perfectly in this new album. (Phong cách âm nhạc của họ hòa hợp hoàn hảo trong album mới này)
+
+Bless:
+- Ban phước.
+- Chúc phúc.
+Ngữ cảnh:
++ Trong ngữ cảnh tôn giáo hoặc tâm linh.
++ Khi bày tỏ lòng biết ơn hoặc sự ủng hộ.
+Ví dụ:
+* The priest blessed the congregation. (Linh mục ban phước cho giáo đoàn)
+* May God bless you with happiness and health. (Cầu Chúa chúc phúc cho bạn hạnh phúc và sức khỏe)
+
+Blight:
+- Làm hư hại.
+- Phá hoại.
+Ngữ cảnh:
++ Trong nông nghiệp, khi nói về bệnh cây trồng.
++ Khi nói về sự suy thoái của khu vực đô thị hoặc xã hội.
+Ví dụ:
+* The potato blight caused widespread famine. (Bệnh mốc khoai tây gây ra nạn đói lan rộng)
+* Crime and poverty have blighted many inner-city neighborhoods. (Tội phạm và đói nghèo đã phá hoại nhiều khu dân cư nội thành)
+
+Blind:
+- Làm mù.
+- Che khuất tầm nhìn.
+Ngữ cảnh:
++ Khi nói về thị lực hoặc nhận thức.
++ Trong ngữ cảnh che chắn hoặc ngăn cản.
+Ví dụ:
+* The bright headlights blinded the oncoming drivers. (Đèn pha sáng chói làm mù mắt các tài xế đang đi tới)
+* His love for her blinded him to her faults. (Tình yêu dành cho cô ấy đã che khuất tầm nhìn của anh ta về những khuyết điểm của cô)
+
+Blindfold:
+- Bịt mắt.
+Ngữ cảnh:
++ Trong trò chơi hoặc thử nghiệm.
++ Khi nói về việc che giấu thông tin hoặc sự thật.
+Ví dụ:
+* The children played pin the tail on the donkey while blindfolded. (Bọn trẻ chơi trò gắn đuôi lừa trong khi bị bịt mắt)
+* He went into the situation blindfolded, unaware of the risks. (Anh ta bước vào tình huống một cách mù quáng, không nhận thức được những rủi ro)
+
+Blindfolded:
+- Bị bịt mắt.
+Ngữ cảnh:
++ Trong các hoạt động hoặc thử nghiệm đặc biệt.
++ Khi mô tả tình trạng không biết hoặc không nhận thức.
+Ví dụ:
+* The magician performed the trick blindfolded. (Nhà ảo thuật thực hiện trò ảo thuật trong khi bị bịt mắt)
+* He felt blindfolded in the new job, unsure of what to do. (Anh ta cảm thấy như bị bịt mắt trong công việc mới, không chắc chắn phải làm gì)
+
+Blindside:
+- Tấn công bất ngờ.
+- Làm bất ngờ.
+Ngữ cảnh:
++ Trong thể thao, đặc biệt là các môn thể thao tiếp xúc.
++ Khi nói về các tình huống bất ngờ hoặc không lường trước được.
+Ví dụ:
+* The quarterback was blindsided by the defensive tackle. (Tiền vệ bị hậu vệ phòng ngự tấn công bất ngờ)
+* The company was blindsided by the sudden change in market conditions. (Công ty bị bất ngờ bởi sự thay đổi đột ngột trong điều kiện thị trường)
+
+Blink:
+- Chớp mắt.
+- Nhấp nháy.
+Ngữ cảnh:
++ Khi mô tả hành động của mắt.
++ Trong công nghệ, khi nói về đèn hoặc tín hiệu.
+Ví dụ:
+* She blinked in surprise at the unexpected news. (Cô ấy chớp mắt ngạc nhiên trước tin tức bất ngờ)
+* The warning light on the dashboard blinked rapidly. (Đèn cảnh báo trên bảng điều khiển nhấp nháy nhanh)
+
+Bliss:
+- Làm hạnh phúc tột độ.
+Ngữ cảnh:
++ Khi nói về trạng thái hạnh phúc hoặc mãn nguyện cao độ.
++ Trong văn học hoặc thơ ca.
+Ví dụ:
+* The news of their engagement blissed out the entire family. (Tin đính hôn của họ làm cả gia đình hạnh phúc tột độ)
+* The beautiful scenery blissed her out completely. (Phong cảnh đẹp làm cô ấy hoàn toàn hạnh phúc)
+
+Blister:
+- Gây phồng rộp.
+- Chỉ trích gay gắt.
+Ngữ cảnh:
++ Khi nói về tổn thương da hoặc bề mặt.
++ Trong ngôn ngữ hình ảnh, khi nói về lời chỉ trích mạnh mẽ.
+Ví dụ:
+* The new shoes blistered her heels. (Đôi giày mới gây phồng rộp gót chân cô ấy)
+* The critic blistered the play in his review. (Nhà phê bình chỉ trích gay gắt vở kịch trong bài đánh giá của mình)
+
+Blitz:
+- Tấn công dồn dập.
+- Làm nhanh chóng và mạnh mẽ.
+Ngữ cảnh:
++ Trong quân sự hoặc thể thao.
++ Khi nói về hành động nhanh chóng và quyết liệt.
+Ví dụ:
+* The team blitzed their opponents in the second half. (Đội bóng tấn công dồn dập đối thủ trong hiệp hai)
+* The company blitzed the market with a massive advertising campaign. (Công ty tấn công thị trường bằng một chiến dịch quảng cáo quy mô lớn)
+
+Bloat:
+- Làm phồng lên.
+- Làm tăng quá mức.
+Ngữ cảnh:
++ Khi nói về tình trạng sức khỏe hoặc tiêu hóa.
++ Trong công nghệ phần mềm, khi nói về việc tăng kích thước không cần thiết.
+Ví dụ:
+* Eating too fast can bloat your stomach. (Ăn quá nhanh có thể làm phồng bụng của bạn)
+* The new update bloated the app with unnecessary features. (Bản cập nhật mới làm tăng kích thước ứng dụng với các tính năng không cần thiết)
+
+Block:
+- Chặn.
+- Cản trở.
+Ngữ cảnh:
++ Trong thể thao hoặc giao thông.
++ Khi nói về việc ngăn cản hoặc làm gián đoạn.
+Ví dụ:
+* The defender blocked the shot. (Hậu vệ chặn cú sút)
+* The protesters blocked the entrance to the building. (Những người biểu tình chặn lối vào tòa nhà)
+
+Blockade:
+- Phong tỏa.
+- Bao vây.
+Ngữ cảnh:
++ Trong quân sự hoặc chính trị.
++ Khi nói về việc cắt đứt nguồn cung cấp hoặc giao thông.
+Ví dụ:
+* The navy blockaded the enemy port. (Hải quân phong tỏa cảng của kẻ thù)
+* The union blockaded the factory gates during the strike. (Công đoàn bao vây cổng nhà máy trong cuộc đình công)
+
+Blog:
+- Viết blog.
+Ngữ cảnh:
++ Trên internet và mạng xã hội.
++ Khi chia sẻ thông tin hoặc ý kiến cá nhân trực tuyến.
+Ví dụ:
+* She blogs about her travel experiences. (Cô ấy viết blog về những trải nghiệm du lịch của mình)
+* Many experts blog to share their knowledge with a wider audience. (Nhiều chuyên gia viết blog để chia sẻ kiến thức của họ với đông đảo độc giả)
+
+Blood:
+- Làm đẫm máu.
+- Làm quen với bạo lực.
+Ngữ cảnh:
++ Trong y học hoặc chiến tranh.
++ Khi nói về việc làm cho ai đó quen với tình huống khó khăn hoặc bạo lực.
+Ví dụ:
+* The soldier's uniform was blooded in battle. (Bộ quân phục của người lính bị đẫm máu trong trận chiến)
+* The rookie cop was blooded on his first dangerous mission. (Cảnh sát mới được làm quen với bạo lực trong nhiệm vụ nguy hiểm đầu tiên của mình)
+
+Bloom:
+- Nở hoa.
+- Phát triển rực rỡ.
+Ngữ cảnh:
++ Trong làm vườn hoặc nông nghiệp.
++ Khi nói về sự phát triển hoặc thành công.
+Ví dụ:
+* The roses bloom in early summer. (Hoa hồng nở vào đầu mùa hè)
+* Her talent really bloomed during her time at university. (Tài năng của cô ấy thực sự phát triển rực rỡ trong thời gian học đại học)
+
+Bloop:
+- Đánh một cú bóng chày yếu.
+- Phát ra âm thanh ngắn, thấp.
+Ngữ cảnh:
++ Trong bóng chày.
++ Khi mô tả âm thanh ngắn, thấp.
+Ví dụ:
+* The batter blooped a single over the infielder's head. (Cầu thủ đánh một cú bóng chày yếu qua đầu cầu thủ trong sân)
+* The sonar blooped as it detected something under the water. (Máy dò âm phát ra tiếng bíp khi phát hiện thứ gì đó dưới nước)
+
+Blossom:
+- Nở hoa.
+- Phát triển tốt đẹp.
+Ngữ cảnh:
++ Trong làm vườn hoặc nông nghiệp.
++ Khi nói về sự phát triển cá nhân hoặc mối quan hệ.
+Ví dụ:
+* The cherry trees blossom in spring. (Cây anh đào nở hoa vào mùa xuân)
+* Their friendship blossomed into romance. (Tình bạn của họ phát triển thành tình yêu)
+
+Blot:
+- Làm ố.
+- Xóa bỏ.
+Ngữ cảnh:
++ Khi nói về vết bẩn hoặc lỗi.
++ Trong văn học hoặc ngôn ngữ hình ảnh.
+Ví dụ:
+* He accidentally blotted the document with ink. (Anh ta vô tình làm ố tài liệu bằng mực)
+* The scandal blotted his otherwise perfect record. (Vụ bê bối đã xóa bỏ hồ sơ vốn hoàn hảo của anh ta)
+
+Blow:
+- Thổi.
+- Nổ tung.
+Ngữ cảnh:
++ Khi nói về gió hoặc hơi thở.
++ Trong các tình huống bất ngờ hoặc thất bại.
+Ví dụ:
+* The wind blew the leaves off the trees. (Gió thổi bay lá khỏi cây)
+* Their cover was blown when a spy revealed their identities. (Vỏ bọc của họ bị nổ tung khi một gián điệp tiết lộ danh tính)
+
+Blub:
+- Khóc nức nở.
+Ngữ cảnh:
++ Khi mô tả việc khóc lóc mạnh mẽ.
++ Trong ngôn ngữ không trang trọng.
+Ví dụ:
+* She blubbed all night after the breakup. (Cô ấy khóc nức nở suốt đêm sau khi chia tay)
+* The child blubbed when he lost his favorite toy. (Đứa trẻ khóc nức nở khi mất đồ chơi yêu thích)
+
+Blubber:
+- Khóc lóc ầm ĩ.
+Ngữ cảnh:
++ Khi mô tả việc khóc lóc quá mức hoặc không kiểm soát.
++ Trong ngôn ngữ không trang trọng.
+Ví dụ:
+* The toddler blubbered when his mother left for work. (Đứa trẻ mới biết đi khóc lóc ầm ĩ khi mẹ đi làm)
+* Stop blubbering and tell me what happened. (Ngừng khóc lóc và nói cho tôi biết chuyện gì đã xảy ra)
+
+Bludge:
+- Lười biếng.
+- Sống bám.
+Ngữ cảnh:
++ Trong tiếng Anh Úc, khi nói về việc tránh làm việc hoặc trách nhiệm.
++ Khi mô tả hành vi lợi dụng người khác.
+Ví dụ:
+* He's always bludging off his parents instead of getting a job. (Anh ta luôn sống bám vào bố mẹ thay vì đi làm)
+* Stop bludging and help with the housework. (Ngừng lười biếng và giúp làm việc nhà đi)
+
+Bludgeon:
+- Đánh đập dữ dội.
+- Ép buộc.
+Ngữ cảnh:
++ Khi mô tả bạo lực thể chất.
++ Trong ngôn ngữ hình ảnh, khi nói về áp lực mạnh mẽ.
+Ví dụ:
+* The attacker bludgeoned the victim with a baseball bat. (Kẻ tấn công đánh đập nạn nhân dữ dội bằng gậy bóng chày)
+* The government bludgeoned the opposition into accepting the new law. (Chính phủ ép buộc phe đối lập chấp nhận luật mới)
+
+Bluff:
+- Lừa gạt.
+- Đánh lừa.
+Ngữ cảnh:
++ Trong trò chơi bài hoặc đàm phán.
++ Khi nói về việc giả vờ có khả năng hoặc thông tin mà thực tế không có.
+Ví dụ:
+* He tried to bluff his way through the interview. (Anh ta cố gắng lừa gạt trong suốt cuộc phỏng vấn)
+* The poker player bluffed and won the hand. (Người chơi poker đánh lừa và thắng ván bài)
+
+Blunder:
+- Mắc sai lầm nghiêm trọng.
+- Làm hỏng việc.
+Ngữ cảnh:
++ Khi nói về lỗi lớn hoặc sai lầm đáng tiếc.
++ Trong các tình huống quan trọng hoặc nhạy cảm.
+Ví dụ:
+* The general blundered by underestimating the enemy's strength. (Vị tướng đã mắc sai lầm nghiêm trọng khi đánh giá thấp sức mạnh của kẻ thù)
+* He blundered into the wrong meeting room. (Anh ta vô tình làm hỏng việc bằng cách đi nhầm phòng họp)
+
+Blunt:
+- Làm cùn.
+- Nói thẳng thắn.
+Ngữ cảnh:
++ Khi nói về công cụ hoặc vũ khí.
++ Trong giao tiếp, khi nói về cách nói chuyện trực tiếp.
+Ví dụ:
+* Repeated use has blunted the knife's edge. (Sử dụng nhiều lần đã làm cùn lưỡi dao)
+* She blunted the criticism with a quick retort. (Cô ấy nói thẳng thắn để đáp trả lời chỉ trích)
+
+Blur:
+- Làm mờ.
+- Xóa nhòa ranh giới.
+Ngữ cảnh:
++ Trong nhiếp ảnh hoặc thị giác.
++ Khi nói về việc làm cho cái gì đó trở nên không rõ ràng.
+Ví dụ:
+* The fast movement blurred the image. (Chuyển động nhanh làm mờ hình ảnh)
+* The lines between work and personal life are increasingly blurred. (Ranh giới giữa công việc và cuộc sống cá nhân ngày càng bị xóa nhòa)
+
+Blurt:
+- Buột miệng nói ra.
+- Nói không suy nghĩ.
+Ngữ cảnh:
++ Khi nói về việc nói điều gì đó một cách đột ngột hoặc không cân nhắc.
++ Trong các tình huống xã hội hoặc cảm xúc.
+Ví dụ:
+* He blurted out the secret in front of everyone. (Anh ta buột miệng nói ra bí mật trước mặt mọi người)
+* She blurted "I love you" before she could stop herself. (Cô ấy buột miệng nói "Anh yêu em" trước khi kịp dừng lại)
+
+Blush:
+- Đỏ mặt.
+- Làm xấu hổ.
+Ngữ cảnh:
++ Khi mô tả phản ứng sinh lý do xấu hổ hoặc ngượng ngùng.
++ Trong văn học hoặc mô tả tâm lý nhân vật.
+Ví dụ:
+* She blushed when he complimented her dress. (Cô ấy đỏ mặt khi anh ta khen chiếc váy của cô)
+* His crude joke made everyone blush. (Câu đùa thô thiển của anh ta làm mọi người đỏ mặt)
+
+Bluster:
+- Nói khoác lác.
+- Gầm gừ (gió).
+Ngữ cảnh:
++ Khi mô tả hành vi hung hăng hoặc đe dọa.
++ Khi nói về thời tiết, đặc biệt là gió mạnh.
+Ví dụ:
+* The politician blustered about his achievements. (Chính trị gia nói khoác lác về thành tích của mình)
+* The wind blustered through the trees all night. (Gió gầm gừ qua những cây cối suốt đêm)
+
+Board:
+- Lên tàu/máy bay.
+- Cung cấp chỗ ở và ăn uống.
+Ngữ cảnh:
++ Khi nói về việc đi du lịch hoặc vận chuyển.
++ Trong ngữ cảnh cung cấp nơi ở và thức ăn.
+Ví dụ:
+* Passengers are now boarding the flight to Paris. (Hành khách đang lên máy bay đi Paris)
+* The school boards students from rural areas. (Trường cung cấp chỗ ở và ăn uống cho học sinh từ vùng nông thôn)
+
+Boast:
+- Khoe khoang.
+- Tự hào về.
+Ngữ cảnh:
++ Khi nói về thành tích hoặc tài sản cá nhân.
++ Trong quảng cáo hoặc tiếp thị.
+Ví dụ:
+* He often boasts about his expensive car. (Anh ta thường khoe khoang về chiếc xe đắt tiền của mình)
+* The hotel boasts a five-star rating. (Khách sạn tự hào về xếp hạng năm sao)
+
+Bob:
+- Cắt ngắn.
+- Di chuyển lên xuống.
+Ngữ cảnh:
++ Khi nói về kiểu tóc.
++ Khi mô tả chuyển động lên xuống.
+Ví dụ:
+* She bobbed her hair for the summer. (Cô ấy cắt tóc ngắn cho mùa hè)
+* The boat bobbed up and down on the waves. (Con thuyền di chuyển lên xuống trên sóng)
+
+Bobble:
+- Lắc lư.
+- Đánh rơi.
+Ngữ cảnh:
++ Trong thể thao, đặc biệt là bóng đá.
++ Khi mô tả chuyển động không ổn định.
+Ví dụ:
+* The goalkeeper bobbled the ball, allowing a goal. (Thủ môn đánh rơi bóng, dẫn đến một bàn thua)
+* The toy bobbled on the dashboard as we drove. (Đồ chơi lắc lư trên bảng điều khiển khi chúng tôi lái xe)
+
+Bode:
+- Báo trước.
+- Dự báo.
+Ngữ cảnh:
++ Khi nói về dấu hiệu hoặc điềm báo cho tương lai.
++ Trong văn học hoặc ngôn ngữ trang trọng.
+Ví dụ:
+* Dark clouds bode rain. (Mây đen báo trước trời sẽ mưa)
+* His success in the preliminary round bodes well for the final. (Thành công của anh ấy ở vòng sơ khảo dự báo điều tốt đẹp cho vòng chung kết)
+
+Bodge:
+- Làm cẩu thả.
+- Sửa chữa tạm thời.
+Ngữ cảnh:
++ Khi nói về công việc được thực hiện không chuyên nghiệp.
++ Trong ngôn ngữ không trang trọng, chủ yếu ở Anh.
+Ví dụ:
+* He bodged the repair job, and now it's worse than before. (Anh ta sửa chữa cẩu thả, và bây giờ nó còn tệ hơn trước)
+* We bodged together a temporary solution until the expert arrives. (Chúng tôi tạm thời sửa chữa cho đến khi chuyên gia đến)
+
+Bog:
+- Làm sa lầy.
+- Làm chậm trễ.
+Ngữ cảnh:
++ Khi nói về việc bị mắc kẹt hoặc chậm lại.
++ Trong ngữ cảnh công việc hoặc dự án.
+Ví dụ:
+* The car got bogged down in the mud. (Chiếc xe bị sa lầy trong bùn)
+* The project is bogged down in bureaucracy. (Dự án bị làm chậm trễ bởi thủ tục hành chính)
+
+Boggle:
+- Làm bối rối.
+- Làm kinh ngạc.
+Ngữ cảnh:
++ Khi nói về việc gây ngạc nhiên hoặc khó hiểu.
++ Trong ngôn ngữ không trang trọng.
+Ví dụ:
+* The complexity of the problem boggles my mind. (Sự phức tạp của vấn đề làm tôi bối rối)
+* It boggles me how he can eat so much and stay thin. (Thật kinh ngạc là anh ta có thể ăn nhiều như vậy mà vẫn gầy)
+
+Boil:
+- Đun sôi.
+- Nổi giận.
+Ngữ cảnh:
++ Trong nấu ăn hoặc xử lý nước.
++ Khi mô tả cảm xúc mạnh mẽ.
+Ví dụ:
+* Boil the water before drinking it. (Đun sôi nước trước khi uống)
+* He was boiling with anger after the argument. (Anh ta nổi giận sau cuộc tranh cãi)
+
+Bolster:
+- Củng cố.
+- Hỗ trợ.
+Ngữ cảnh:
++ Khi nói về việc tăng cường hoặc cải thiện.
++ Trong kinh doanh hoặc chính trị.
+Ví dụ:
+* The company bolstered its defenses against cyber attacks. (Công ty củng cố phòng thủ chống lại các cuộc tấn công mạng)
+* The new evidence bolstered their case. (Bằng chứng mới hỗ trợ cho vụ kiện của họ)
+
+Bolt:
+- Khóa chặt.
+- Chạy nhanh.
+Ngữ cảnh:
++ Khi nói về việc bảo đảm an toàn.
++ Khi mô tả chuyển động nhanh và đột ngột.
+Ví dụ:
+* Don't forget to bolt the door before going to bed. (Đừng quên khóa chặt cửa trước khi đi ngủ)
+* The horse bolted when it heard the loud noise. (Con ngựa chạy nhanh khi nghe thấy tiếng ồn lớn)
+
+Bomb:
+- Ném bom.
+- Thất bại thảm hại(nặng nề hơn từ fail nhưng lại nhẹ hơn từ Pathetic failure).
+Ngữ cảnh:
++ Trong quân sự hoặc xung đột.
++ Trong giải trí, khi nói về thất bại.
+Ví dụ:
+* The air force bombed enemy targets. (Không quân ném bom các mục tiêu của kẻ thù)
+* His new movie bombed at the box office. (Bộ phim mới của anh ấy thất bại thảm hại tại phòng vé)
+
+Bombard:
+- Ném bom dữ dội.
+- Tấn công liên tục bằng một thứ gì đó.
+Ngữ cảnh:
++ Trong quân sự hoặc xung đột.
++ Khi nói về việc gửi nhiều thông tin hoặc yêu cầu.
+Ví dụ:
+* The city was bombarded with missiles. (Thành phố bị ném bom dữ dội bằng tên lửa)
+* He was bombarded with questions from reporters. (Anh ta bị tấn công liên tục bởi các câu hỏi từ phóng viên)
+
+Bond:
+- Gắn kết.
+- Tạo liên kết.
+Ngữ cảnh:
++ Trong hóa học hoặc vật lý.
++ Khi nói về mối quan hệ giữa người hoặc nhóm.
+Ví dụ:
+* The atoms bond to form a molecule. (Các nguyên tử gắn kết để tạo thành phân tử)
+* The team bonded over their shared experience. (Đội ngũ tạo liên kết thông qua trải nghiệm chung)
+
+Bone:
+- Lấy xương ra.
+- Học kỹ.
+Ngữ cảnh:
++ Trong nấu ăn, khi chuẩn bị thịt.
++ Khi nói về việc học tập hoặc chuẩn bị kỹ lưỡng.
+Ví dụ:
+* The chef boned the fish before cooking. (Đầu bếp lấy xương cá ra trước khi nấu)
+* He boned up on the subject before the interview. (Anh ta học kỹ về chủ đề trước cuộc phỏng vấn)
+
+Bonk:
+- Đụng mạnh.
+- Kiệt sức đột ngột.
+Ngữ cảnh:
++ Khi mô tả va chạm hoặc đụng đầu.
++ Trong thể thao, đặc biệt là đua xe đạp.
+Ví dụ:
+* He bonked his head on the low doorway. (Anh ta đụng mạnh đầu vào khung cửa thấp)
+* The cyclist bonked halfway through the race. (Người đua xe đạp kiệt sức đột ngột giữa chừng cuộc đua)
+
+Boo:
+- La ó phản đối.
+- Dọa ma.
+Ngữ cảnh:
++ Trong các sự kiện thể thao hoặc biểu diễn.
++ Khi chơi đùa với trẻ em.
+Ví dụ:
+* The audience booed the poor performance. (Khán giả la ó phản đối màn trình diễn kém)
+* The children love it when their father boos them during hide-and-seek. (Bọn trẻ thích thú khi bố chúng dọa ma trong trò chơi trốn tìm)
+
+Boob:
+- Mắc sai lầm ngớ ngẩn.
+Ngữ cảnh:
++ Trong ngôn ngữ không trang trọng.
++ Khi nói về lỗi nhỏ hoặc hành động ngốc nghếch.
+Ví dụ:
+* I really boobed when I forgot her birthday. (Tôi đã mắc sai lầm ngớ ngẩn khi quên sinh nhật của cô ấy)
+* He boobed by sending the email to the wrong person. (Anh ta mắc sai lầm ngớ ngẩn khi gửi email nhầm người)
+
+Boogie:
+- Nhảy múa sôi động.
+Ngữ cảnh:
++ Trong âm nhạc và khiêu vũ.
++ Khi nói về việc di chuyển nhanh chóng.
+Ví dụ:
+* They boogied all night at the disco. (Họ nhảy múa sôi động cả đêm tại vũ trường)
+* We need to boogie if we want to catch that train. (Chúng ta cần di chuyển nhanh nếu muốn bắt kịp chuyến tàu đó)
+
+Book:
+- Đặt chỗ.
+- Ghi sổ.
+Ngữ cảnh:
++ Khi đặt vé hoặc phòng.
++ Trong kế toán hoặc ghi chép.
+Ví dụ:
+* I booked a table at the restaurant for tonight. (Tôi đã đặt chỗ tại nhà hàng cho tối nay)
+* The accountant booked the expenses in the ledger. (Kế toán viên ghi sổ các khoản chi tiêu vào sổ cái)
+
+Boom:
+- Phát triển nhanh chóng.
+- Phát ra tiếng ồn lớn.
+Ngữ cảnh:
++ Trong kinh tế hoặc kinh doanh.
++ Khi mô tả âm thanh lớn.
+Ví dụ:
+* The tech industry is booming in this region. (Ngành công nghệ đang phát triển nhanh chóng trong khu vực này)
+* Thunder boomed in the distance. (Sấm rền vang từ xa)
+
+Boost:
+- Tăng cường.
+- Nâng cao.
+Ngữ cảnh:
++ Trong kinh doanh hoặc marketing.
++ Khi nói về cải thiện hiệu suất.
+Ví dụ:
+* The new ad campaign boosted sales significantly. (Chiến dịch quảng cáo mới đã tăng cường doanh số đáng kể)
+* Exercise can boost your immune system. (Tập thể dục có thể nâng cao hệ miễn dịch của bạn)
+
+Boot:
+- Khởi động (máy tính).
+- Đá (bóng).
+Ngữ cảnh:
++ Trong công nghệ thông tin.
++ Trong bóng đá.
+Ví dụ:
+* Remember to boot your computer after installing the updates. (Nhớ khởi động lại máy tính sau khi cài đặt các bản cập nhật)
+* The striker booted the ball into the goal. (Tiền đạo đá bóng vào khung thành)
+
+Bootleg:
+- Sản xuất hoặc buôn bán bất hợp pháp.
+Ngữ cảnh:
++ Trong âm nhạc hoặc phim ảnh.
++ Khi nói về hàng hóa bất hợp pháp.
+Ví dụ:
+* They bootlegged the concert and sold the recordings online. (Họ ghi âm lậu buổi hòa nhạc và bán các bản ghi trực tuyến)
+* The store was caught bootlegging designer clothes. (Cửa hàng bị bắt quả tang buôn bán quần áo nhãn hiệu bất hợp pháp)
+
+Border:
+- Giáp ranh.
+- Trang trí viền.
+Ngữ cảnh:
++ Khi nói về địa lý hoặc ranh giới.
++ Trong thiết kế hoặc trang trí.
+Ví dụ:
+* Canada borders the United States to the north. (Canada giáp ranh với Hoa Kỳ ở phía bắc)
+* She bordered the photograph with a gold frame. (Cô ấy trang trí viền bức ảnh bằng khung vàng)
+
+Bore:
+- Khoan.
+- Làm chán.
+Ngữ cảnh:
++ Trong xây dựng hoặc kỹ thuật.
++ Khi nói về việc gây nhàm chán.
+Ví dụ:
+* They bored a hole through the wall for the new wiring. (Họ khoan một lỗ qua tường cho hệ thống dây điện mới)
+* His long speeches bore most of the audience. (Những bài phát biểu dài của ông ấy làm chán hầu hết khán giả)
+
+Borrow:
+- Mượn.
+- Vay.
+Ngữ cảnh:
++ Khi nói về tiền bạc hoặc đồ vật.
++ Trong ngôn ngữ hoặc văn hóa.
+Ví dụ:
+* Can I borrow your pen for a moment? (Tôi có thể mượn bút của bạn một lát được không?)
+* The company had to borrow money to expand. (Công ty phải vay tiền để mở rộng)
+
+Boss:
+- Ra lệnh.
+- Làm chủ.
+Ngữ cảnh:
++ Trong môi trường làm việc.
++ Khi nói về quyền lực hoặc kiểm soát.
+Ví dụ:
+* Don't try to boss me around; I'm not your employee. (Đừng cố ra lệnh cho tôi; tôi không phải là nhân viên của bạn)
+* He bossed the meeting, not letting anyone else speak. (Anh ta làm chủ cuộc họp, không để ai khác nói)
+
+Botch:
+- Làm hỏng.
+- Thực hiện vụng về.
+Ngữ cảnh:
++ Khi nói về công việc được thực hiện kém.
++ Trong các tình huống yêu cầu kỹ năng hoặc sự cẩn thận.
+Ví dụ:
+* The carpenter botched the job, and now the shelf is crooked. (Thợ mộc đã làm hỏng công việc, và bây giờ kệ bị nghiêng)
+* He botched his lines during the play's opening night. (Anh ấy đã thực hiện vụng về các câu thoại trong đêm khai mạc vở kịch)
+
+Bother:
+- Làm phiền.
+- Quấy rầy.
+Ngữ cảnh:
++ Trong giao tiếp hàng ngày.
++ Khi nói về sự khó chịu hoặc lo lắng.
+Ví dụ:
+* Don't bother me while I'm working. (Đừng làm phiền tôi khi tôi đang làm việc)
+* The noise from the construction site bothers me all day. (Tiếng ồn từ công trường xây dựng quấy rầy tôi cả ngày)
+
+Bottle:
+- Đóng chai.
+- Kìm nén (cảm xúc).
+Ngữ cảnh:
++ Trong công nghiệp thực phẩm và đồ uống.
++ Khi nói về việc kiềm chế cảm xúc.
+Ví dụ:
+* The company bottles spring water from the mountains. (Công ty đóng chai nước suối từ vùng núi)
+* He bottled up his anger for years before finally exploding. (Anh ta kìm nén cơn giận trong nhiều năm trước khi cuối cùng bùng nổ)
+
+Bounce:
+- Nảy lên.
+- Trả lại (một cái gì đó).
+Ngữ cảnh:
++ Khi mô tả chuyển động của vật thể.
++ Trong công nghệ thông tin, đặc biệt là email.
+Ví dụ:
+* The ball bounced off the wall. (Quả bóng nảy lên từ tường)
+* The email bounced back due to an invalid address. (Email bị trả lại do địa chỉ không hợp lệ)
+
+Bound:
+- Nhảy.
+- Giới hạn.
+Ngữ cảnh:
++ Khi mô tả chuyển động.
++ Trong toán học hoặc logic.
+Ví dụ:
+* The deer bounded across the field. (Con hươu nhảy qua cánh đồng)
+* The function is bounded by these two values. (Hàm số được giới hạn bởi hai giá trị này)
+
+Bow:
+- Cúi chào.
+- Uốn cong.
+Ngữ cảnh:
++ Trong nghi thức xã giao, đặc biệt là ở các nền văn hóa châu Á.
++ Khi nói về hình dạng hoặc cấu trúc.
+Ví dụ:
+* In Japan, it's customary to bow when greeting someone. (Ở Nhật Bản, việc cúi chào khi chào hỏi ai đó là thông lệ)
+* The branch bowed under the weight of the snow. (Cành cây uốn cong dưới sức nặng của tuyết)
+
+Bowl:
+- Ném bóng (trong cricket hoặc bowling).
+- Đánh bại hoàn toàn.
+Ngữ cảnh:
++ Trong thể thao, đặc biệt là cricket và bowling.
++ Khi nói về chiến thắng áp đảo.
+Ví dụ:
+* He bowled a perfect strike. (Anh ta ném bóng một cú strike hoàn hảo)
+* The team was bowled over by their opponents in the final match. (Đội bóng bị đánh bại hoàn toàn bởi đối thủ trong trận chung kết)
+
+Box:
+- Đấm bốc.
+- Đóng hộp.
+Ngữ cảnh:
++ Trong thể thao đấm bốc.
++ Khi nói về việc đóng gói hoặc phân loại.
+Ví dụ:
+* He boxes at the local gym every weekend. (Anh ấy đấm bốc tại phòng tập địa phương mỗi cuối tuần)
+* We need to box up these books for storage. (Chúng ta cần đóng hộp những cuốn sách này để lưu trữ)
+
+Boycott:
+- Tẩy chay.
+Ngữ cảnh:
++ Trong hoạt động chính trị hoặc xã hội.
++ Khi nói về phản đối hoặc phản kháng.
+Ví dụ:
+* The group called for a boycott of the company's products. (Nhóm kêu gọi tẩy chay các sản phẩm của công ty)
+* Students boycotted classes to protest the new policy. (Sinh viên tẩy chay các lớp học để phản đối chính sách mới)
+
+Brace:
+- Chuẩn bị (tinh thần).
+- Gia cố.
+Ngữ cảnh:
++ Khi nói về việc chuẩn bị cho tình huống khó khăn.
++ Trong xây dựng hoặc kỹ thuật.
+Ví dụ:
+* Brace yourself for bad news. (Hãy chuẩn bị tinh thần cho tin xấu)
+* They braced the walls to prevent collapse during the earthquake. (Họ gia cố các bức tường để ngăn sụp đổ trong trận động đất)
+
+Bracket:
+- Phân loại.
+- Đặt trong ngoặc.
+Ngữ cảnh:
++ Trong toán học hoặc ngôn ngữ viết.
++ Khi nói về việc phân nhóm hoặc sắp xếp.
+Ví dụ:
+* Please bracket the important phrases in the text. (Hãy đặt các cụm từ quan trọng trong văn bản vào ngoặc)
+* The tax system brackets income into different levels. (Hệ thống thuế phân loại thu nhập thành các mức khác nhau)
+
+Brag:
+- Khoe khoang.
+Ngữ cảnh:
++ Trong giao tiếp xã hội.
++ Khi nói về thành tích cá nhân.
+Ví dụ:
+* He always brags about his expensive car. (Anh ta luôn khoe khoang về chiếc xe đắt tiền của mình)
+* Don't brag; let your actions speak for themselves. (Đừng khoe khoang; hãy để hành động nói lên tất cả)
+
+Braid:
+- Tết (tóc).
+- Đan, bện.
+Ngữ cảnh:
++ Trong làm tóc hoặc thời trang.
++ Khi nói về việc đan hoặc kết hợp các sợi, dây.
+Ví dụ:
+* She braided her hair for the wedding. (Cô ấy tết tóc cho đám cưới)
+* The chef braided the dough to make a special bread. (Đầu bếp bện bột để làm một loại bánh mì đặc biệt)
+* The artisan braided the leather straps to create a unique belt. (Người thợ thủ công đan các dây da để tạo ra một chiếc thắt lưng độc đáo)
+
+Brain:
+- Suy nghĩ kỹ.
+Ngữ cảnh:
++ Khi nói về việc tập trung suy nghĩ.
++ Trong các tình huống giải quyết vấn đề.
+Ví dụ:
+* Let's brain this problem out together. (Hãy cùng nhau suy nghĩ kỹ về vấn đề này)
+* We need to brain up some new ideas for the project. (Chúng ta cần suy nghĩ kỹ về một số ý tưởng mới cho dự án)
+
+Brake:
+- Phanh.
+- Làm chậm lại.
+Ngữ cảnh:
++ Trong lái xe hoặc vận hành máy móc.
++ Khi nói về việc giảm tốc độ hoặc dừng lại.
+Ví dụ:
+* The driver braked suddenly to avoid the accident. (Người lái xe phanh đột ngột để tránh tai nạn)
+* We need to brake the spread of this disease. (Chúng ta cần làm chậm lại sự lây lan của căn bệnh này)
+
+Branch:
+- Phân nhánh.
+- Mở chi nhánh.
+Ngữ cảnh:
++ Trong tổ chức hoặc kinh doanh.
++ Trong lập trình hoặc quản lý dự án.
+Ví dụ:
+* The company is branching out into new markets. (Công ty đang mở rộng sang các thị trường mới)
+* We need to branch this code for a new feature. (Chúng ta cần phân nhánh mã này cho một tính năng mới)
+
+Brand:
+- Gắn nhãn hiệu.
+- Đánh dấu.
+Ngữ cảnh:
++ Trong marketing hoặc kinh doanh.
++ Khi nói về việc tạo danh tiếng hoặc hình ảnh.
+Ví dụ:
+* They branded their products with a new logo. (Họ gắn nhãn hiệu sản phẩm của mình bằng một logo mới)
+* The scandal branded him as unreliable. (Vụ bê bối đánh dấu anh ta là người không đáng tin cậy)
+
+Brave:
+- Đối mặt can đảm.
+Ngữ cảnh:
++ Khi đối mặt với nguy hiểm hoặc khó khăn.
++ Trong văn học hoặc kể chuyện.
+Ví dụ:
+* He braved the storm to rescue the stranded hikers. (Anh ấy can đảm đối mặt với cơn bão để cứu những người đi bộ đường dài bị mắc kẹt)
+* Sometimes you have to brave criticism to stand up for what's right. (Đôi khi bạn phải can đảm đối mặt với lời chỉ trích để bảo vệ điều đúng đắn)
+
+Brawl:
+- Ẩu đả.
+Ngữ cảnh:
++ Trong các tình huống xung đột hoặc bạo lực.
++ Khi mô tả cuộc cãi vã lớn.
+Ví dụ:
+* A brawl broke out in the bar after the game. (Một cuộc ẩu đả nổ ra trong quán bar sau trận đấu)
+* The political debate devolved into a verbal brawl. (Cuộc tranh luận chính trị biến thành một cuộc cãi vã lớn bằng lời nói)
+
+Breach:
+- Vi phạm.
+- Phá vỡ.
+Ngữ cảnh:
++ Trong pháp luật hoặc hợp đồng.
++ Khi nói về an ninh hoặc bảo mật.
+Ví dụ:
+* The company breached the terms of the agreement. (Công ty đã vi phạm các điều khoản của thỏa thuận)
+* Hackers breached the security system of the bank. (Tin tặc đã phá vỡ hệ thống bảo mật của ngân hàng)
+
+Break:
+- Phá vỡ.
+- Ngừng.
+Ngữ cảnh:
++ Khi nói về vật thể hoặc quy tắc.
++ Trong công việc hoặc hoạt động.
+Ví dụ:
+* He accidentally broke the vase. (Anh ta vô tình làm vỡ bình hoa)
+* Let's break for lunch at noon. (Hãy nghỉ ăn trưa vào buổi trưa)
+
+Breathe:
+- Hít thở.
+- Thổi hơi vào.
+Ngữ cảnh:
++ Khi nói về hô hấp hoặc thư giãn.
++ Trong y học hoặc thể dục.
+Ví dụ:
+* Remember to breathe deeply during meditation. (Hãy nhớ hít thở sâu trong khi thiền)
+* The artist breathed life into the sculpture. (Nghệ sĩ đã thổi hơi thở sự sống vào bức tượng)
+
+Breed:
+- Sinh sản.
+- Nuôi giống.
+Ngữ cảnh:
++ Trong nông nghiệp hoặc chăn nuôi.
++ Khi nói về việc tạo ra hoặc phát triển.
+Ví dụ:
+* They breed horses on their farm. (Họ nuôi giống ngựa trên trang trại của mình)
+* Poverty can breed crime in urban areas. (Nghèo đói có thể sinh ra tội phạm ở các khu vực đô thị)
+
+Brew:
+- Pha chế.
+- Nấu bia.
+Ngữ cảnh:
++ Trong sản xuất đồ uống, đặc biệt là bia hoặc cà phê.
++ Khi nói về việc phát triển hoặc hình thành dần dần.
+Ví dụ:
+* He brews his own beer at home. (Anh ấy nấu bia của riêng mình tại nhà)
+* A storm was brewing on the horizon. (Một cơn bão đang hình thành ở chân trời)
+
+Bribe:
+- Hối lộ.
+Ngữ cảnh:
++ Trong tình huống tham nhũng hoặc phi pháp.
++ Khi nói về việc gây ảnh hưởng không chính đáng.
+Ví dụ:
+* The official was caught trying to bribe the judge. (Viên chức bị bắt quả tang khi cố gắng hối lộ thẩm phán)
+* Don't try to bribe me with flattery. (Đừng cố hối lộ tôi bằng lời nịnh hót)
+
+Bridge:
+- Bắc cầu.
+- Kết nối.
+Ngữ cảnh:
++ Trong xây dựng hoặc giao thông.
++ Khi nói về việc thu hẹp khoảng cách hoặc tạo liên kết.
+Ví dụ:
+* The new bridge will connect the two islands. (Cây cầu mới sẽ kết nối hai hòn đảo)
+* We need to bridge the gap between different generations. (Chúng ta cần bắc cầu nối khoảng cách giữa các thế hệ khác nhau)
+
+Brief:
+- Thông báo ngắn gọn.
+- Chỉ dẫn.
+Ngữ cảnh:
++ Trong kinh doanh hoặc pháp luật.
++ Khi cung cấp thông tin hoặc hướng dẫn.
+Ví dụ:
+* The lawyer briefed her client before the trial. (Luật sư đã thông báo ngắn gọn cho thân chủ trước phiên tòa)
+* The general briefed the troops on the mission. (Vị tướng đã chỉ dẫn cho quân đội về nhiệm vụ)
+
+Brighten:
+- Làm sáng lên.
+- Làm vui vẻ hơn.
+Ngữ cảnh:
++ Khi nói về ánh sáng hoặc màu sắc.
++ Trong tâm trạng hoặc không khí.
+Ví dụ:
+* The sun brightened the room. (Mặt trời làm sáng căn phòng)
+* Her smile brightened everyone's day. (Nụ cười của cô ấy làm mọi người vui vẻ hơn cả ngày)
+
+Bring:
+- Mang đến.
+- Gây ra.
+Ngữ cảnh:
++ Khi nói về việc di chuyển vật thể hoặc người.
++ Trong việc tạo ra kết quả hoặc hậu quả.
+Ví dụ:
+* Please bring your textbook to class. (Hãy mang sách giáo khoa đến lớp)
+* The new policy will bring significant changes. (Chính sách mới sẽ mang đến những thay đổi đáng kể)
+
+Broach:
+- Đề cập đến.
+- Mở ra (vấn đề).
+Ngữ cảnh:
++ Trong cuộc trò chuyện hoặc cuộc họp.
++ Khi bắt đầu thảo luận về một chủ đề nhạy cảm.
+Ví dụ:
+* He broached the subject of a pay raise with his boss. (Anh ta đề cập đến vấn đề tăng lương với sếp)
+* The diplomat carefully broached the sensitive topic. (Nhà ngoại giao cẩn thận mở ra chủ đề nhạy cảm)
+
+Broadcast:
+- Phát sóng.
+- Truyền bá rộng rãi.
+Ngữ cảnh:
++ Trong truyền thông và truyền hình.
++ Khi chia sẻ thông tin với một lượng lớn người.
+Ví dụ:
+* The station broadcasts news 24 hours a day. (Đài phát sóng tin tức 24 giờ một ngày)
+* Social media can broadcast information quickly. (Mạng xã hội có thể truyền bá thông tin nhanh chóng)
+
+Broaden:
+- Mở rộng.
+- Làm rộng ra.
+Ngữ cảnh:
++ Khi nói về kiến thức hoặc kinh nghiệm.
++ Trong việc phát triển cá nhân hoặc tổ chức.
+Ví dụ:
+* Traveling can broaden your horizons. (Du lịch có thể mở rộng tầm nhìn của bạn)
+* The company aims to broaden its customer base. (Công ty nhằm mục đích mở rộng cơ sở khách hàng)
+
+Broil:
+- Nướng (thức ăn).
+Ngữ cảnh:
++ Trong nấu ăn.
++ Khi nói về việc tiếp xúc với nhiệt độ cao.
+Ví dụ:
+* She broiled the fish for dinner. (Cô ấy nướng cá cho bữa tối)
+* The sun broiled the tourists on the beach. (Mặt trời nướng du khách trên bãi biển)
+
+Bronze:
+- Tạo màu đồng.
+- Đạt huy chương đồng.
+Ngữ cảnh:
++ Trong nghệ thuật hoặc trang trí.
++ Trong thể thao hoặc cuộc thi.
+Ví dụ:
+* The sculptor bronzed the statue. (Nhà điêu khắc tạo màu đồng cho bức tượng)
+* The team bronzed in the Olympic games. (Đội đã đạt huy chương đồng trong Thế vận hội Olympic)
+
+Brood:
+- Ấp (trứng).
+- Suy nghĩ u sầu.
+Ngữ cảnh:
++ Trong thế giới động vật.
++ Khi nói về tâm trạng hoặc suy nghĩ tiêu cực.
+Ví dụ:
+* The hen brooded over her eggs. (Con gà mái ấp trứng của nó)
+* He tends to brood over his mistakes. (Anh ấy có xu hướng suy nghĩ u sầu về những sai lầm của mình)
+
+Brook:
+- Chịu đựng.
+- Dung thứ.
+Ngữ cảnh:
++ Trong ngôn ngữ trang trọng hoặc văn học.
++ Khi nói về việc không chấp nhận hoặc không cho phép.
+Ví dụ:
+* The boss will not brook any dissent. (Sếp sẽ không chịu đựng bất kỳ sự bất đồng nào)
+* She doesn't brook fools gladly. (Cô ấy không dễ dàng dung thứ cho những kẻ ngốc)
+
+Bruise:
+- Làm bầm tím.
+- Làm tổn thương.
+Ngữ cảnh:
++ Khi nói về thương tích hoặc tổn thương thể chất.
++ Trong ngôn ngữ hình ảnh, khi nói về tổn thương tinh thần.
+Ví dụ:
+* He bruised his knee in the fall. (Anh ta làm bầm tím đầu gối khi ngã)
+* The criticism bruised his ego. (Lời chỉ trích làm tổn thương lòng tự trọng của anh ta)
+
+Brush:
+- Chải.
+- Quét sơn.
+Ngữ cảnh:
++ Trong chăm sóc cá nhân hoặc vệ sinh.
++ Trong nghệ thuật hoặc trang trí.
+Ví dụ:
+* Remember to brush your teeth twice a day. (Hãy nhớ chải răng hai lần một ngày)
+* The artist brushed vibrant colors onto the canvas. (Nghệ sĩ quét những màu sắc rực rỡ lên canvas)
+
+Bubble:
+- Sủi bọt.
+- Nổi lên (ý tưởng).
+Ngữ cảnh:
++ Khi nói về chất lỏng hoặc khí.
++ Trong kinh tế hoặc thị trường.
+Ví dụ:
+* The champagne bubbled in the glass. (Rượu sâm panh sủi bọt trong ly)
+* New ideas were bubbling up in his mind. (Những ý tưởng mới đang nổi lên trong tâm trí anh ấy)
+
+Buck:
+- Chống lại.
+- Nhảy dựng lên (ngựa).
+Ngữ cảnh:
++ Khi nói về việc phản đối hoặc chống lại quyền lực.
++ Trong cưỡi ngựa hoặc rodeo.
+Ví dụ:
+* The employee bucked against the new company policy. (Nhân viên chống lại chính sách mới của công ty)
+* The horse bucked, throwing its rider. (Con ngựa nhảy dựng lên, hất tung người cưỡi)
+
+Bucket:
+- Đổ vào xô.
+- Mưa như trút nước.
+Ngữ cảnh:
++ Khi nói về việc chứa đựng hoặc vận chuyển chất lỏng.
++ Khi mô tả mưa lớn.
+Ví dụ:
+* They bucketed water from the well. (Họ đổ nước từ giếng vào xô)
+* It's bucketing down outside; take an umbrella. (Trời đang mưa như trút nước bên ngoài; hãy mang ô)
+
+Buckle:
+- Thắt (dây lưng).
+- Gập xuống, sụp đổ.
+Ngữ cảnh:
++ Khi nói về quần áo hoặc phụ kiện.
++ Trong xây dựng hoặc kỹ thuật.
+Ví dụ:
+* Remember to buckle your seatbelt. (Hãy nhớ thắt dây an toàn)
+* The bridge buckled under the weight of the trucks. (Cây cầu gập xuống dưới sức nặng của những chiếc xe tải)
+
+Bud:
+- Nảy mầm.
+- Bắt đầu phát triển.
+Ngữ cảnh:
++ Trong thực vật học.
++ Khi nói về sự phát triển hoặc khởi đầu.
+Ví dụ:
+* The roses are starting to bud. (Hoa hồng đang bắt đầu nảy mầm)
+* A new idea was budding in her mind. (Một ý tưởng mới đang bắt đầu phát triển trong tâm trí cô ấy)
+
+Budget:
+- Lập ngân sách.
+- Tiết kiệm.
+Ngữ cảnh:
++ Trong tài chính cá nhân hoặc doanh nghiệp.
++ Khi nói về việc quản lý chi tiêu.
+Ví dụ:
+* We need to budget carefully for this project. (Chúng ta cần lập ngân sách cẩn thận cho dự án này)
+* They're budgeting for a new car. (Họ đang tiết kiệm để mua xe mới)
+
+Buffer:
+- Đệm.
+- Bảo vệ.
+Ngữ cảnh:
++ Trong công nghệ thông tin.
++ Khi nói về việc giảm thiểu tác động hoặc xung đột.
+Ví dụ:
+* The software buffers the data before processing. (Phần mềm đệm dữ liệu trước khi xử lý)
+* The trees buffer the house from street noise. (Những cây cối bảo vệ ngôi nhà khỏi tiếng ồn đường phố)
+
+Buffet:
+- Đánh mạnh.
+- Tác động mạnh.
+Ngữ cảnh:
++ Khi nói về gió hoặc sóng.
++ Trong các tình huống khó khăn hoặc thử thách.
+Ví dụ:
+* The ship was buffeted by strong winds. (Con tàu bị đánh mạnh bởi gió lớn)
+* The company has been buffeted by economic challenges. (Công ty đã bị tác động mạnh bởi những thách thức kinh tế)
+
+Bug:
+- Gắn thiết bị nghe lén.
+- Làm phiền.
+Ngữ cảnh:
++ Trong gián điệp hoặc theo dõi.
++ Trong giao tiếp hàng ngày.
+Ví dụ:
+* They bugged the diplomat's office. (Họ gắn thiết bị nghe lén vào văn phòng của nhà ngoại giao)
+* Stop bugging me with your constant questions. (Ngừng làm phiền tôi với những câu hỏi liên tục của bạn)
+
+Build:
+- Xây dựng.
+- Phát triển.
+Ngữ cảnh:
++ Trong xây dựng hoặc sản xuất.
++ Khi nói về việc tạo ra hoặc phát triển.
+Ví dụ:
+* They are building a new shopping center. (Họ đang xây dựng một trung tâm mua sắm mới)
+* It takes time to build trust in a relationship. (Cần có thời gian để xây dựng lòng tin trong một mối quan hệ)
+
+Bulge:
+- Phồng ra.
+- Lồi ra.
+Ngữ cảnh:
++ Khi nói về hình dạng hoặc kích thước.
++ Trong y học hoặc sinh học.
+Ví dụ:
+* His pockets bulged with coins. (Túi quần của anh ta phồng ra vì đồng xu)
+* The wall is bulging and may need repair. (Bức tường đang lồi ra và có thể cần sửa chữa)
+
+Bully:
+- Bắt nạt.
+- Ép buộc.
+Ngữ cảnh:
++ Trong trường học hoặc nơi làm việc.
++ Khi nói về lạm dụng quyền lực.
+Ví dụ:
+* The older kids were bullying the younger ones. (Những đứa trẻ lớn hơn đang bắt nạt những đứa nhỏ hơn)
+* The manager bullied his staff into working overtime. (Người quản lý ép buộc nhân viên làm thêm giờ)
+
+Bump:
+- Va chạm.
+- Tăng lên.
+Ngữ cảnh:
++ Khi nói về va chạm nhẹ hoặc ngẫu nhiên.
++ Trong kinh doanh hoặc kinh tế.
+Ví dụ:
+* He accidentally bumped into her in the crowded hallway. (Anh ta vô tình va chạm vào cô ấy trong hành lang đông đúc)
+* The company bumped up prices due to increased costs. (Công ty tăng giá do chi phí tăng)
+
+Bunch:
+- Gom lại.
+- Tụ tập.
+Ngữ cảnh:
++ Khi nói về việc nhóm hoặc tập hợp.
++ Trong ngôn ngữ không trang trọng.
+Ví dụ:
+* She bunched the flowers together in a vase. (Cô ấy gom hoa lại trong một bình)
+* Let's bunch up at the entrance and wait for everyone. (Hãy tụ tập ở lối vào và đợi mọi người)
+
+Bundle:
+- Bó lại.
+- Gộp chung.
+Ngữ cảnh:
++ Khi nói về việc đóng gói hoặc tổ chức.
++ Trong marketing hoặc bán hàng.
+Ví dụ:
+* She bundled up the baby in warm blankets. (Cô ấy bó em bé trong những tấm chăn ấm)
+* The company bundles its software with new computers. (Công ty gộp chung phần mềm của mình với máy tính mới)
+
+Bungle:
+- Làm hỏng.
+- Xử lý vụng về.
+Ngữ cảnh:
++ Khi nói về sai lầm hoặc thất bại.
++ Trong công việc hoặc nhiệm vụ.
+Ví dụ:
+* He bungled the presentation by forgetting key points. (Anh ta làm hỏng bài thuyết trình bằng cách quên các điểm chính)
+* The government bungled the response to the crisis. (Chính phủ xử lý vụng về phản ứng đối với cuộc khủng hoảng)
+
+Bunk:
+- Trốn.
+- Ngủ trong giường tầng.
+Ngữ cảnh:
++ Trong quân đội hoặc trường học nội trú.
++ Khi nói về việc trốn tránh trách nhiệm.
+Ví dụ:
+* The soldiers bunked in the barracks. (Những người lính ngủ trong doanh trại)
+* He bunked off school to go to the beach. (Anh ta trốn học để đi biển)
+
+Buoy:
+- Nổi lên.
+- Nâng đỡ tinh thần.
+Ngữ cảnh:
++ Trong hàng hải hoặc bơi lội.
++ Khi nói về việc cải thiện tâm trạng hoặc tinh thần.
+Ví dụ:
+* The life jacket buoyed him up in the water. (Áo phao nổi anh ta lên trong nước)
+* The good news buoyed the team's spirits. (Tin tốt nâng đỡ tinh thần của đội)
+
+Burden:
+- Gánh nặng.
+- Làm phiền.
+Ngữ cảnh:
++ Khi nói về trách nhiệm hoặc khó khăn.
++ Trong quan hệ cá nhân hoặc xã hội.
+Ví dụ:
+* The new taxes burdened small businesses. (Các loại thuế mới gây gánh nặng cho các doanh nghiệp nhỏ)
+* He didn't want to burden his friends with his problems. (Anh ấy không muốn làm phiền bạn bè với vấn đề của mình)
+
+Burgeon:
+- Phát triển nhanh chóng.
+- Nở rộ.
+Ngữ cảnh:
++ Khi nói về sự tăng trưởng hoặc phát triển.
++ Trong kinh tế hoặc xã hội.
+Ví dụ:
+* The tech industry is burgeoning in this region. (Ngành công nghệ đang phát triển nhanh chóng trong khu vực này)
+* Her talent burgeoned under the guidance of her mentor. (Tài năng của cô ấy nở rộ dưới sự hướng dẫn của người cố vấn)
+
+Burgle:
+- Đột nhập và trộm cắp.
+Ngữ cảnh:
++ Trong tội phạm học.
++ Khi nói về hành vi phạm tội.
+Ví dụ:
+* Their house was burgled while they were on vacation. (Nhà của họ bị đột nhập và trộm cắp khi họ đi nghỉ)
+* The thieves burgled several homes in the neighborhood. (Bọn trộm đã đột nhập và trộm cắp nhiều nhà trong khu phố)
+
+Burn:
+- Đốt cháy.
+- Bỏng.
+Ngữ cảnh:
++ Trong nấu ăn hoặc sản xuất.
++ Khi nói về thương tích hoặc cảm xúc mạnh.
+Ví dụ:
+* Be careful not to burn the toast. (Cẩn thận đừng đốt cháy bánh mì nướng)
+* His words burned in her memory. (Lời nói của anh ta đốt cháy trong ký ức của cô ấy)
+
+Burrow:
+- Đào hang.
+- Chui vào.
+Ngữ cảnh:
++ Trong thế giới động vật.
++ Khi nói về việc tìm kiếm hoặc ẩn náu.
+Ví dụ:
+* Rabbits burrow into the ground to make their homes. (Thỏ đào hang xuống đất để làm nhà)
+* He burrowed deeper into the blankets to escape the cold. (Anh ta chui sâu hơn vào chăn để tránh cái lạnh)
+
+Burst:
+- Nổ tung.
+- Bùng phát.
+Ngữ cảnh:
++ Khi nói về áp lực hoặc căng thẳng.
++ Trong các tình huống đột ngột hoặc mạnh mẽ.
+Ví dụ:
+* The balloon burst with a loud pop. (Quả bóng nổ tung với một tiếng nổ lớn)
+* She burst into tears when she heard the news. (Cô ấy bùng phát khóc khi nghe tin)
+
+Bury:
+- Chôn cất.
+- Giấu kín.
+Ngữ cảnh:
++ Trong tang lễ hoặc khảo cổ học.
++ Khi nói về việc che giấu hoặc quên đi.
+Ví dụ:
+* They buried the time capsule in the school yard. (Họ chôn viên nang thời gian trong sân trường)
+* He tried to bury his feelings of guilt. (Anh ta cố gắng giấu kín cảm giác tội lỗi của mình)
+
+Bush:
+- Làm thành bụi rậm (lan ra thành một đám dày đặc).
+- Cắt tỉa (cây).
+Ngữ cảnh:
++ Trong làm vườn hoặc nông nghiệp.
++ Khi nói về việc che giấu hoặc ngụy trang.
+Ví dụ:
+* They bushed out the hedge to make it thicker. (Họ làm cho hàng rào thành bụi rậm để nó dày hơn)
+* The gardener bushed the roses to encourage new growth. (Người làm vườn cắt tỉa hoa hồng để khuyến khích sự phát triển mới)
+
+Bust:
+- Bắt giữ.
+- Phá vỡ.
+Ngữ cảnh:
++ Trong thực thi pháp luật.
++ Khi nói về thất bại hoặc phá sản.
+Ví dụ:
+* The police busted a drug ring last night. (Cảnh sát đã bắt giữ một đường dây ma túy tối qua)
+* The company went bust during the economic crisis. (Công ty đã phá sản trong cuộc khủng hoảng kinh tế)
+
+Bustle:
+- Nhộn nhịp.
+- Vội vã.
+Ngữ cảnh:
++ Trong môi trường đô thị hoặc nơi làm việc bận rộn.
++ Khi mô tả hoạt động sôi nổi.
+Ví dụ:
+* The streets bustled with shoppers during the holiday season. (Đường phố nhộn nhịp với người mua sắm trong mùa lễ hội)
+* She bustled about the kitchen preparing dinner. (Cô ấy vội vã trong bếp chuẩn bị bữa tối)
+
+Busy:
+- Làm bận rộn.
+- Chiếm dụng.
+Ngữ cảnh:
++ Trong công việc hoặc cuộc sống hàng ngày.
++ Khi nói về việc sử dụng thời gian hoặc tài nguyên.
+Ví dụ:
+* The new project busied the team for months. (Dự án mới làm bận rộn đội ngũ trong nhiều tháng)
+* He busied himself with household chores to avoid thinking about his problems. (Anh ta làm bận rộn mình với việc nhà để tránh nghĩ về vấn đề của mình)
+
+Butcher:
+- Giết mổ.
+- Làm hỏng.
+Ngữ cảnh:
++ Trong ngành thực phẩm.
++ Khi nói về việc thực hiện kém hoặc tàn bạo.
+Ví dụ:
+* The farmer butchered a pig for the feast. (Người nông dân giết mổ một con lợn cho bữa tiệc)
+* The amateur actor butchered his lines in the play. (Diễn viên nghiệp dư làm hỏng những câu thoại của mình trong vở kịch)
+
+Butcher:
+- Giết mổ (động vật).
+- Làm hỏng, phá hỏng.
+Ngữ cảnh:
++ Trong ngành thịt và chế biến thực phẩm.
++ Khi nói về việc làm hỏng một công việc hoặc kỹ năng.
+Ví dụ:
+* The farmer butchered the pig for the feast. (Người nông dân giết mổ con lợn cho bữa tiệc)
+* He completely butchered the presentation. (Anh ta đã hoàn toàn phá hỏng bài thuyết trình)
+
+Button:
+- Cài nút.
+- Nhấn nút.
+Ngữ cảnh:
++ Trong may mặc và thời trang.
++ Trong công nghệ và giao diện người dùng.
+Ví dụ:
+* She buttoned up her coat before going outside. (Cô ấy cài nút áo khoác trước khi ra ngoài)
+* Click the button to submit your form. (Nhấn nút để gửi biểu mẫu của bạn)
+
+Buy:
+- Mua.
+- Tin, chấp nhận.
+Ngữ cảnh:
++ Trong thương mại và mua sắm.
++ Khi nói về việc chấp nhận một ý tưởng hoặc lý thuyết.
+Ví dụ:
+* I need to buy groceries for dinner. (Tôi cần mua thực phẩm cho bữa tối)
+* I don't buy his excuse for being late. (Tôi không tin lý do anh ta đưa ra về việc đến muộn)
+
+Buzz:
+- Kêu vo ve.
+- Gọi điện nhanh.
+Ngữ cảnh:
++ Khi nói về âm thanh của côn trùng.
++ Trong giao tiếp không chính thức.
+Ví dụ:
+* The bees buzzed around the flowers. (Những con ong bay vo ve quanh những bông hoa)
+* I'll buzz you when I'm free. (Tôi sẽ gọi nhanh cho bạn khi tôi rảnh)
+
+Bypass:
+- Đi vòng qua.
+- Bỏ qua, né tránh.
+Ngữ cảnh:
++ Trong giao thông và di chuyển.
++ Trong công nghệ và hệ thống.
+Ví dụ:
+* We bypassed the city to avoid traffic. (Chúng tôi đi vòng qua thành phố để tránh kẹt xe)
+* The hacker tried to bypass the security system. (Hacker cố gắng vượt qua hệ thống bảo mật)
+
+Calculate:
+- Tính toán.
+- Dự đoán, ước tính.
+Ngữ cảnh:
++ Trong toán học và khoa học.
++ Trong kế hoạch và chiến lược.
+Ví dụ:
+* The engineer calculated the stress on the bridge. (Kỹ sư tính toán áp lực lên cây cầu)
+* We need to calculate the risks before proceeding. (Chúng ta cần tính toán rủi ro trước khi tiến hành)
+
+Call:
+- Gọi.
+- Kêu gọi.
+Ngữ cảnh:
++ Trong giao tiếp.
++ Trong các cuộc họp và quyết định.
+Ví dụ:
+* I'll call you tomorrow. (Tôi sẽ gọi cho bạn vào ngày mai)
+* The chairman called for a vote. (Chủ tọa kêu gọi bỏ phiếu)
+
+Calm:
+- Làm dịu, làm bình tĩnh.
+- Trấn an.
+Ngữ cảnh:
++ Trong tình huống căng thẳng hoặc xung đột.
++ Khi đối phó với cảm xúc mạnh.
+Ví dụ:
+* The mother calmed her crying baby. (Người mẹ dỗ dành đứa con đang khóc)
+* Take a deep breath to calm yourself. (Hãy hít thở sâu để bình tĩnh lại)
+
+Camp:
+- Cắm trại.
+- Ở tạm.
+Ngữ cảnh:
++ Trong hoạt động ngoài trời và du lịch.
++ Khi nói về tình trạng vô gia cư hoặc di cư.
+Ví dụ:
+* We camped in the mountains for a week. (Chúng tôi cắm trại trên núi một tuần)
+* Refugees were forced to camp near the border. (Người tị nạn buộc phải ở tạm gần biên giới)
+
+Cancel:
+- Hủy bỏ.
+- Xóa bỏ.
+Ngữ cảnh:
++ Trong lập kế hoạch và sắp xếp.
++ Trong tài chính và hợp đồng.
+Ví dụ:
+* We had to cancel the picnic due to rain. (Chúng tôi phải hủy bỏ buổi dã ngoại vì trời mưa)
+* The bank canceled my credit card. (Ngân hàng đã hủy thẻ tín dụng của tôi)
+
+Canvass:
+- Vận động.
+- Khảo sát.
+Ngữ cảnh:
++ Trong chính trị và bầu cử.
++ Trong nghiên cứu thị trường.
+Ví dụ:
+* The candidate canvassed the neighborhood for votes. (Ứng cử viên vận động cử tri trong khu phố)
+* We canvassed opinion on the new product. (Chúng tôi khảo sát ý kiến về sản phẩm mới)
+
+Cap:
+- Đậy nắp.
+- Giới hạn.
+Ngữ cảnh:
++ Khi đóng gói hoặc bảo quản.
++ Trong tài chính và quản lý.
+Ví dụ:
+* Don't forget to cap the toothpaste tube. (Đừng quên đậy nắp ống kem đánh răng)
+* The government capped fuel prices. (Chính phủ đã giới hạn giá nhiên liệu)
+
+Capitalize:
+- Viết hoa.
+- Tận dụng.
+Ngữ cảnh:
++ Trong ngữ pháp và văn bản.
++ Trong kinh doanh và cơ hội.
+Ví dụ:
+* Remember to capitalize the first letter of each sentence. (Hãy nhớ viết hoa chữ cái đầu tiên của mỗi câu)
+* We need to capitalize on this market trend. (Chúng ta cần tận dụng xu hướng thị trường này)
+
+Capsize:
+- Lật úp.
+- Lật đổ.
+Ngữ cảnh:
++ Trong hàng hải và thể thao dưới nước.
++ Khi nói về thất bại hoặc đảo lộn.
+Ví dụ:
+* The boat capsized in the storm. (Con thuyền bị lật úp trong cơn bão)
+* The scandal capsized his political career. (Vụ bê bối đã lật đổ sự nghiệp chính trị của ông ta)
+
+Capture:
+- Bắt giữ.
+- Ghi lại.
+Ngữ cảnh:
++ Trong quân sự và thực thi pháp luật.
++ Trong nhiếp ảnh và ghi âm.
+Ví dụ:
+* The police captured the suspect after a long chase. (Cảnh sát đã bắt giữ nghi phạm sau một cuộc truy đuổi dài)
+* The photographer captured the beautiful sunset. (Nhiếp ảnh gia đã ghi lại cảnh hoàng hôn đẹp)
+
+Care:
+- Chăm sóc.
+- Quan tâm.
+Ngữ cảnh:
++ Trong y tế và chăm sóc sức khỏe.
++ Trong mối quan hệ và tình cảm.
+Ví dụ:
+* The nurse cared for the patients in the hospital. (Y tá chăm sóc bệnh nhân trong bệnh viện)
+* I care deeply about environmental issues. (Tôi rất quan tâm đến các vấn đề môi trường)
+
+Caress:
+- Vuốt ve.
+- Âu yếm.
+Ngữ cảnh:
++ Trong tình cảm và thể hiện yêu thương.
++ Trong văn học và nghệ thuật mô tả.
+Ví dụ:
+* She gently caressed the baby's cheek. (Cô ấy nhẹ nhàng vuốt ve má đứa bé)
+* The breeze caressed the flowers in the garden. (Làn gió nhẹ vuốt ve những bông hoa trong vườn)
+
+Caricature:
+- Vẽ tranh biếm họa.
+- Mô tả một cách quá đáng.
+Ngữ cảnh:
++ Trong nghệ thuật và truyền thông.
++ Trong phê bình và châm biếm.
+Ví dụ:
+* The artist caricatured the politician's prominent features. (Nghệ sĩ vẽ tranh biếm họa các đặc điểm nổi bật của chính trị gia)
+* His portrayal of the character was a caricature of a typical businessman. (Cách anh ta miêu tả nhân vật là một sự mô tả quá đáng về một doanh nhân điển hình)
+
+Carry:
+- Mang, vác.
+- Chuyên chở.
+Ngữ cảnh:
++ Trong vận chuyển và logistics.
++ Trong trách nhiệm và nghĩa vụ.
+Ví dụ:
+* The porter carried our luggage to the room. (Người khuân vác mang hành lý của chúng tôi vào phòng)
+* This bus carries up to 50 passengers. (Xe buýt này chở được tối đa 50 hành khách)
+
+Carve:
+- Chạm khắc.
+- Cắt, xẻ.
+Ngữ cảnh:
++ Trong nghệ thuật điêu khắc.
++ Trong ẩm thực khi cắt thịt.
+Ví dụ:
+* The sculptor carved a beautiful statue from marble. (Nhà điêu khắc chạm khắc một bức tượng đẹp từ đá cẩm thạch)
+* He carved the turkey for Thanksgiving dinner. (Anh ấy xẻ thịt gà tây cho bữa tối Lễ Tạ ơn)
+
+Cash:
+- Đổi thành tiền mặt.
+- Thanh toán bằng tiền mặt.
+Ngữ cảnh:
++ Trong giao dịch tài chính.
++ Khi sử dụng séc hoặc phiếu thanh toán.
+Ví dụ:
+* I need to cash this check at the bank. (Tôi cần đổi tấm séc này thành tiền mặt tại ngân hàng)
+* Can I cash in my vacation days for extra pay? (Tôi có thể đổi ngày nghỉ phép lấy tiền không?)
+
+Cast:
+- Ném, quăng.
+- Chọn diễn viên.
+Ngữ cảnh:
++ Trong câu cá hoặc thể thao.
++ Trong sản xuất phim ảnh và kịch nghệ.
+Ví dụ:
+* The fisherman cast his line into the river. (Người câu cá ném dây câu xuống sông)
+* The director cast a famous actor for the lead role. (Đạo diễn chọn một diễn viên nổi tiếng cho vai chính)
+
+Catalogue:
+- Lập danh mục.
+- Phân loại.
+Ngữ cảnh:
++ Trong thư viện và quản lý tài liệu.
++ Trong bán lẻ và thương mại điện tử.
+Ví dụ:
+* The librarian catalogued the new books. (Thủ thư lập danh mục cho những cuốn sách mới)
+* We need to catalogue all our products for the online store. (Chúng ta cần phân loại tất cả sản phẩm cho cửa hàng trực tuyến)
+
+Catch:
+- Bắt, chụp.
+- Hiểu, nắm bắt.
+Ngữ cảnh:
++ Trong thể thao và trò chơi.
++ Trong học tập và giao tiếp.
+Ví dụ:
+* The outfielder caught the fly ball. (Cầu thủ ngoại trường bắt được quả bóng bay)
+* I didn't quite catch what you said. Can you repeat it? (Tôi không nắm bắt được điều bạn nói. Bạn có thể nhắc lại được không?)
+
+Categorize:
+- Phân loại.
+- Sắp xếp theo nhóm.
+Ngữ cảnh:
++ Trong nghiên cứu và phân tích dữ liệu.
++ Trong quản lý và tổ chức.
+Ví dụ:
+* Scientists categorize animals into different species. (Các nhà khoa học phân loại động vật thành các loài khác nhau)
+* We need to categorize these expenses for tax purposes. (Chúng ta cần phân loại các khoản chi tiêu này cho mục đích thuế)
+
+Cater:
+- Cung cấp thức ăn.
+- Đáp ứng nhu cầu.
+Ngữ cảnh:
++ Trong ngành dịch vụ ăn uống.
++ Trong kinh doanh và dịch vụ khách hàng.
+Ví dụ:
+* The company catered for the wedding reception. (Công ty cung cấp thức ăn cho tiệc cưới)
+* This store caters to high-end customers. (Cửa hàng này đáp ứng nhu cầu của khách hàng cao cấp)
+
+Cause:
+- Gây ra, làm cho.
+- Là nguyên nhân của.
+Ngữ cảnh:
++ Trong khoa học và y học.
++ Trong xã hội học và tâm lý học.
+Ví dụ:
+* Smoking can cause lung cancer. (Hút thuốc có thể gây ung thư phổi)
+* What caused you to change your mind? (Điều gì khiến bạn thay đổi ý kiến?)
+
+Caution:
+- Cảnh báo.
+- Khuyên răn.
+Ngữ cảnh:
++ Trong an toàn và phòng ngừa.
++ Trong giáo dục và hướng dẫn.
+Ví dụ:
+* The sign cautioned drivers about the sharp turn ahead. (Biển báo cảnh báo tài xế về khúc cua gấp phía trước)
+* I cautioned him against making hasty decisions. (Tôi khuyên răn anh ấy đừng đưa ra quyết định vội vàng)
+
+Cave:
+- Sụp đổ, lún.
+- Đầu hàng, nhượng bộ.
+Ngữ cảnh:
++ Trong địa chất và xây dựng.
++ Trong đàm phán và xung đột.
+Ví dụ:
+* The roof caved in under the weight of the snow. (Mái nhà sụp đổ dưới sức nặng của tuyết)
+* After hours of pressure, he finally caved and agreed to the terms. (Sau nhiều giờ chịu áp lực, cuối cùng anh ta đã nhượng bộ và đồng ý với các điều khoản)
+
+Cease:
+- Ngừng, chấm dứt.
+- Dừng lại.
+Ngữ cảnh:
++ Trong luật pháp và hợp đồng.
++ Trong hoạt động và quy trình.
+Ví dụ:
+* The company ceased operations after declaring bankruptcy. (Công ty chấm dứt hoạt động sau khi tuyên bố phá sản)
+* Please cease talking and pay attention to the presentation. (Vui lòng ngừng nói chuyện và chú ý vào bài thuyết trình)
+
+Cede:
+- Nhượng lại, từ bỏ.
+- Chuyển giao.
+Ngữ cảnh:
++ Trong chính trị và ngoại giao.
++ Trong kinh doanh và quản lý.
+Ví dụ:
+* The losing candidate ceded the election to his opponent. (Ứng cử viên thua cuộc đã nhượng lại cuộc bầu cử cho đối thủ)
+* The company ceded control of its subsidiary to a larger corporation. (Công ty chuyển giao quyền kiểm soát công ty con cho một tập đoàn lớn hơn)
+
+Celebrate:
+- Ăn mừng, tổ chức.
+- Tôn vinh.
+Ngữ cảnh:
++ Trong các dịp đặc biệt và lễ hội.
++ Trong thành tựu và chiến thắng.
+Ví dụ:
+* We celebrated her birthday with a surprise party. (Chúng tôi tổ chức sinh nhật cô ấy bằng một bữa tiệc bất ngờ)
+* The whole country celebrated the team's victory in the World Cup. (Cả nước ăn mừng chiến thắng của đội tuyển tại World Cup)
+
+Censor:
+- Kiểm duyệt.
+- Cắt bỏ, che đậy.
+Ngữ cảnh:
++ Trong truyền thông và xuất bản.
++ Trong chính trị và quản lý thông tin.
+Ví dụ:
+* The government censored all news reports about the protest. (Chính phủ kiểm duyệt tất cả các bản tin về cuộc biểu tình)
+* The movie was heavily censored before its release. (Bộ phim đã bị kiểm duyệt nhiều trước khi phát hành)
+
+Center:
+- Đặt vào trung tâm.
+- Tập trung.
+Ngữ cảnh:
++ Trong thiết kế và bố trí.
++ Trong tâm lý học và thiền định.
+Ví dụ:
+* The artist centered the main figure in the painting. (Nghệ sĩ đặt nhân vật chính vào trung tâm bức tranh)
+* You need to center yourself before making this important decision. (Bạn cần tập trung bản thân trước khi đưa ra quyết định quan trọng này)
+
+Centralize:
+- Tập trung hóa.
+- Tập quyền.
+Ngữ cảnh:
++ Trong quản lý và tổ chức.
++ Trong chính trị và hành chính.
+Ví dụ:
+* The company decided to centralize all its IT operations. (Công ty quyết định tập trung hóa tất cả hoạt động CNTT)
+* The government aims to centralize power in the capital. (Chính phủ nhắm đến việc tập quyền tại thủ đô)
+
+Challenge:
+- Thách thức.
+- Đặt câu hỏi, chất vấn.
+Ngữ cảnh:
++ Trong thể thao và cạnh tranh.
++ Trong học thuật và tranh luận.
+Ví dụ:
+* The champion challenged the newcomer to a match. (Nhà vô địch thách đấu người mới đến một trận)
+* The student challenged the professor's theory during the lecture. (Sinh viên chất vấn lý thuyết của giáo sư trong buổi giảng)
+
+Champion:
+- Ủng hộ, bảo vệ.
+- Vô địch, chiến thắng.
+Ngữ cảnh:
++ Trong vận động và ủng hộ.
++ Trong thể thao và cạnh tranh.
+Ví dụ:
+* The senator championed the cause of environmental protection. (Thượng nghị sĩ ủng hộ mạnh mẽ cho sự bảo vệ môi trường)
+* Our team championed the league for the third year in a row. (Đội của chúng tôi vô địch giải đấu năm thứ ba liên tiếp)
+
+Change:
+- Thay đổi.
+- Đổi, hoán đổi.
+Ngữ cảnh:
++ Trong cuộc sống cá nhân và phát triển.
++ Trong kinh doanh và tổ chức.
+Ví dụ:
+* We need to change our strategy to adapt to the new market conditions. (Chúng ta cần thay đổi chiến lược để thích ứng với điều kiện thị trường mới)
+* Can you change a $20 bill for me? (Bạn có thể đổi cho tôi tờ 20 đô la không?)
