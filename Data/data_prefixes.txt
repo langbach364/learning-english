@@ -1,0 +1,523 @@
+Tiền tố: pre-
+Trái nghĩa: post-
+Tạo nghĩa: đứng trước, trước khi
+Tạo nghĩa trái nghĩa: sau, sau khi
+Ví dụ: prewar (trước chiến tranh), precondition (điều kiện tiên quyết)
+Ví dụ trái nghĩa: postwar (sau chiến tranh), postcondition (điều kiện sau)
+
+Tiền tố: un-
+Trái nghĩa: - (không có)
+Tạo nghĩa: phủ định, ngược lại
+Ví dụ: unhappy (không hạnh phúc), unlock (mở khóa)
+
+Tiền tố: re-
+Trái nghĩa: - (không có)
+Tạo nghĩa: lặp lại, làm lại
+Ví dụ: rewrite (viết lại), rethink (suy nghĩ lại)
+
+Tiền tố: dis-
+Trái nghĩa: - (không có)
+Tạo nghĩa: phủ định, ngược lại, tách rời
+Ví dụ: disagree (không đồng ý), disconnect (ngắt kết nối)
+
+Tiền tố: inter-
+Trái nghĩa: intra-
+Tạo nghĩa: giữa, trong số
+Tạo nghĩa trái nghĩa: bên trong, nội bộ
+Ví dụ: international (quốc tế), interact (tương tác)
+Ví dụ trái nghĩa: intranational (nội địa), intranet (mạng nội bộ)
+
+Tiền tố: anti-
+Trái nghĩa: pro-
+Tạo nghĩa: chống lại, đối lập
+Tạo nghĩa trái nghĩa: ủng hộ, tán thành
+Ví dụ: antiwar (chống chiến tranh), antivirus (chống virus)
+Ví dụ trái nghĩa: prowar (ủng hộ chiến tranh), pro-democracy (ủng hộ dân chủ)
+
+Tiền tố: auto-
+Trái nghĩa: manual-
+Tạo nghĩa: tự động, tự
+Tạo nghĩa trái nghĩa: thủ công, bằng tay
+Ví dụ: autobiography (tự truyện), automatic (tự động)
+Ví dụ trái nghĩa: manual transmission (hộp số sàn), manual labor (lao động thủ công)
+
+Tiền tố: bi-
+Trái nghĩa: uni-
+Tạo nghĩa: hai, kép
+Tạo nghĩa trái nghĩa: một, đơn
+Ví dụ: bilingual (song ngữ), bicycle (xe đạp)
+Ví dụ trái nghĩa: unilateral (đơn phương), unicycle (xe đạp một bánh)
+
+Tiền tố: co-
+Trái nghĩa: - (không có)
+Tạo nghĩa: cùng nhau, chung
+Ví dụ: cooperate (hợp tác), coexist (cùng tồn tại)
+
+Tiền tố: de-
+Trái nghĩa: - (không có)
+Tạo nghĩa: loại bỏ, giảm
+Ví dụ: deactivate (vô hiệu hóa), decrease (giảm)
+
+Tiền tố: hyper-
+Trái nghĩa: hypo-
+Tạo nghĩa: quá mức, cực độ
+Tạo nghĩa trái nghĩa: dưới mức, thiếu
+Ví dụ: hyperactive (hiếu động), hypersensitive (quá nhạy cảm)
+Ví dụ trái nghĩa: hypotension (huyết áp thấp), hypothermia (hạ thân nhiệt)
+
+Tiền tố: macro-
+Trái nghĩa: micro-
+Tạo nghĩa: lớn, quy mô lớn
+Tạo nghĩa trái nghĩa: nhỏ, quy mô nhỏ
+Ví dụ: macroeconomics (kinh tế vĩ mô), macroscopic (nhìn thấy bằng mắt thường)
+Ví dụ trái nghĩa: microeconomics (kinh tế vi mô), microscopic (nhìn bằng kính hiển vi)
+
+Tiền tố: over-
+Trái nghĩa: under-
+Tạo nghĩa: quá mức, vượt quá
+Tạo nghĩa trái nghĩa: dưới mức, không đủ
+Ví dụ: overeat (ăn quá nhiều), overwork (làm việc quá sức)
+Ví dụ trái nghĩa: underpay (trả lương thấp), underestimate (đánh giá thấp)
+
+Tiền tố: poly-
+Trái nghĩa: mono-
+Tạo nghĩa: nhiều
+Tạo nghĩa trái nghĩa: một, đơn
+Ví dụ: polygon (đa giác), polyglot (người nói nhiều thứ tiếng)
+Ví dụ trái nghĩa: monolingual (đơn ngữ), monogamy (chế độ một vợ một chồng)
+
+Tiền tố: super-
+Trái nghĩa: sub-
+Tạo nghĩa: trên, vượt trội
+Tạo nghĩa trái nghĩa: dưới, thấp hơn
+Ví dụ: superpower (siêu cường), superhuman (siêu phàm)
+Ví dụ trái nghĩa: subhuman (dưới con người), substandard (dưới tiêu chuẩn)
+
+Tiền tố: trans-
+Trái nghĩa: cis-
+Tạo nghĩa: qua, xuyên
+Tạo nghĩa trái nghĩa: cùng phía, không qua
+Ví dụ: transatlantic (xuyên Đại Tây Dương), transform (biến đổi)
+Ví dụ trái nghĩa: cisgender (đồng nhất giới), cislunar (trong quỹ đạo mặt trăng)
+
+Tiền tố: extra-
+Trái nghĩa: intra-
+Tạo nghĩa: ngoài, thêm
+Tạo nghĩa trái nghĩa: trong, nội bộ
+Ví dụ: extraterrestrial (ngoài trái đất), extraordinary (phi thường)
+Ví dụ trái nghĩa: intramural (nội bộ), intravenous (trong tĩnh mạch)
+
+Tiền tố: neo-
+Trái nghĩa: paleo-
+Tạo nghĩa: mới, hiện đại
+Tạo nghĩa trái nghĩa: cổ, cổ đại
+Ví dụ: neoclassical (tân cổ điển), neonatal (sơ sinh)
+Ví dụ trái nghĩa: paleolithic (thời đồ đá cũ), paleontology (cổ sinh vật học)
+
+Tiền tố: pseudo-
+Trái nghĩa: - (không có)
+Tạo nghĩa: giả, không thật
+Ví dụ: pseudoscience (khoa học giả), pseudonym (bút danh)
+
+Tiền tố: semi-
+Trái nghĩa: - (không có)
+Tạo nghĩa: nửa, một phần
+Ví dụ: semicircle (nửa vòng tròn), semifinal (bán kết)
+
+Tiền tố: tele-
+Trái nghĩa: - (không có)
+Tạo nghĩa: xa, từ xa
+Ví dụ: telephone (điện thoại), television (truyền hình)
+
+Tiền tố: meta-
+Trái nghĩa: - (không có)
+Tạo nghĩa: vượt trên, về chính nó
+Ví dụ: metadata (dữ liệu mô tả dữ liệu), metaphysics (siêu hình học)
+
+Tiền tố: para-
+Trái nghĩa: - (không có)
+Tạo nghĩa: bên cạnh, phụ
+Ví dụ: paramedic (nhân viên y tế), parallel (song song)
+
+Tiền tố: syn-/sym-
+Trái nghĩa: dia-
+Tạo nghĩa: cùng, chung
+Tạo nghĩa trái nghĩa: qua, xuyên qua
+Ví dụ: synchronize (đồng bộ hóa), sympathy (đồng cảm)
+Ví dụ trái nghĩa: diagonal (đường chéo), dialogue (đối thoại)
+
+Tiền tố: eu-
+Trái nghĩa: dys-
+Tạo nghĩa: tốt, đúng
+Tạo nghĩa trái nghĩa: xấu, không đúng
+Ví dụ: euphoria (hưng phấn), eulogy (bài điếu văn)
+Ví dụ trái nghĩa: dysfunctional (rối loạn chức năng), dystopia (phản địa đàng)
+
+Tiền tố: endo-
+Trái nghĩa: exo-
+Tạo nghĩa: bên trong
+Tạo nghĩa trái nghĩa: bên ngoài
+Ví dụ: endocrine (nội tiết), endogenous (nội sinh)
+Ví dụ trái nghĩa: exoskeleton (xương ngoài), exothermic (tỏa nhiệt)
+
+Tiền tố: homo-
+Trái nghĩa: hetero-
+Tạo nghĩa: giống nhau
+Tạo nghĩa trái nghĩa: khác nhau
+Ví dụ: homogeneous (đồng nhất), homosexual (đồng tính)
+Ví dụ trái nghĩa: heterogeneous (không đồng nhất), heterosexual (dị tính)
+
+Tiền tố: iso-
+Trái nghĩa: aniso-
+Tạo nghĩa: bằng nhau, đồng đẳng
+Tạo nghĩa trái nghĩa: không bằng nhau
+Ví dụ: isometric (đẳng tích), isotope (đồng vị)
+Ví dụ trái nghĩa: anisotropic (dị hướng), anisomeric (dị cấu)
+
+Tiền tố: ab-/abs-
+Trái nghĩa: ad-
+Tạo nghĩa: ra khỏi, tách rời
+Tạo nghĩa trái nghĩa: hướng tới, thêm vào
+Ví dụ: abduct (bắt cóc), absorb (hấp thụ)
+Ví dụ trái nghĩa: adhere (bám dính), adjoin (kề cận)
+
+Tiền tố: ambi-
+Trái nghĩa: uni-
+Tạo nghĩa: cả hai, xung quanh
+Tạo nghĩa trái nghĩa: một
+Ví dụ: ambidextrous (thuận cả hai tay), ambient (xung quanh)
+Ví dụ trái nghĩa: unilateral (đơn phương), uniform (đồng phục)
+
+Tiền tố: ana-
+Trái nghĩa: cata-
+Tạo nghĩa: lên, ngược lại
+Tạo nghĩa trái nghĩa: xuống, theo
+Ví dụ: anabolic (đồng hóa), analyze (phân tích)
+Ví dụ trái nghĩa: cataclysm (đại họa), catabolism (dị hóa)
+
+Tiền tố: bene-
+Trái nghĩa: male-
+Tạo nghĩa: tốt, tốt lành
+Tạo nghĩa trái nghĩa: xấu, tồi tệ
+Ví dụ: benefit (lợi ích), benevolent (nhân từ)
+Ví dụ trái nghĩa: malevolent (ác ý), maleficent (độc ác)
+
+Tiền tố: circum-
+Trái nghĩa: - (không có)
+Tạo nghĩa: xung quanh, vòng quanh
+Ví dụ: circumnavigate (đi vòng quanh), circumstance (hoàn cảnh)
+
+Tiền tố: contra-
+Trái nghĩa: pro-
+Tạo nghĩa: chống lại, đối lập
+Tạo nghĩa trái nghĩa: ủng hộ, tán thành
+Ví dụ: contradict (mâu thuẫn), contraindicate (chống chỉ định)
+Ví dụ trái nghĩa: proactive (chủ động), promote (thúc đẩy)
+
+Tiền tố: epi-
+Trái nghĩa: hypo-
+Tạo nghĩa: trên, bên ngoài
+Tạo nghĩa trái nghĩa: dưới, bên trong
+Ví dụ: epidemic (dịch bệnh), epidermal (thuộc biểu bì)
+Ví dụ trái nghĩa: hypodermic (dưới da), hypoglycemia (hạ đường huyết)
+
+Tiền tố: fore-
+Trái nghĩa: aft-
+Tạo nghĩa: trước, phía trước
+Tạo nghĩa trái nghĩa: sau, phía sau
+Ví dụ: foresee (tiên đoán), forefront (tuyến đầu)
+Ví dụ trái nghĩa: afterthought (ý nghĩ sau), aftermath (hậu quả)
+
+Tiền tố: hemi-
+Trái nghĩa: - (không có)
+Tạo nghĩa: nửa
+Ví dụ: hemisphere (bán cầu), hemicycle (nửa vòng tròn)
+
+Tiền tố: infra-
+Trái nghĩa: supra-
+Tạo nghĩa: dưới, bên dưới
+Tạo nghĩa trái nghĩa: trên, bên trên
+Ví dụ: infrared (hồng ngoại), infrastructure (cơ sở hạ tầng)
+Ví dụ trái nghĩa: supranational (siêu quốc gia), supraorbital (trên hốc mắt)
+
+Tiền tố: juxta-
+Trái nghĩa: - (không có)
+Tạo nghĩa: gần, cạnh
+Ví dụ: juxtapose (đặt cạnh nhau), juxtaposition (sự đối chiếu)
+
+Tiền tố: mega-
+Trái nghĩa: micro-
+Tạo nghĩa: lớn, to
+Tạo nghĩa trái nghĩa: nhỏ, vi mô
+Ví dụ: megacity (thành phố lớn), megaphone (loa phóng thanh)
+Ví dụ trái nghĩa: microchip (vi mạch), microscope (kính hiển vi)
+
+Tiền tố: omni-
+Trái nghĩa: - (không có)
+Tạo nghĩa: tất cả, mọi
+Ví dụ: omnipresent (hiện diện khắp nơi), omnivore (động vật ăn tạp)
+
+Tiền tố: pan-
+Trái nghĩa: - (không có)
+Tạo nghĩa: tất cả, toàn bộ
+Ví dụ: pandemic (đại dịch), panorama (toàn cảnh)
+
+Tiền tố: retro-
+Trái nghĩa: - (không có)
+Tạo nghĩa: lùi lại, quay về
+Ví dụ: retrospect (hồi tưởng), retrograde (đi ngược)
+
+Tiền tố: amphi-
+Trái nghĩa: - (không có)
+Tạo nghĩa: cả hai, xung quanh
+Ví dụ: amphibious (lưỡng cư), amphitheater (nhà hát hình bán nguyệt)
+
+Tiền tố: apo-
+Trái nghĩa: - (không có)
+Tạo nghĩa: xa, tách ra
+Ví dụ: apogee (điểm xa nhất), apology (lời xin lỗi)
+
+Tiền tố: dia-
+Trái nghĩa: - (không có)
+Tạo nghĩa: xuyên qua, giữa
+Ví dụ: diagonal (đường chéo), dialogue (đối thoại)
+
+Tiền tố: dys-
+Trái nghĩa: eu-
+Tạo nghĩa: xấu, khó khăn
+Tạo nghĩa trái nghĩa: tốt, dễ dàng
+Ví dụ: dyslexia (chứng khó đọc), dysfunction (rối loạn chức năng)
+Ví dụ trái nghĩa: euphoria (hưng phấn), euphony (âm hưởng dễ chịu)
+
+Tiền tố: ecto-
+Trái nghĩa: endo-
+Tạo nghĩa: bên ngoài
+Tạo nghĩa trái nghĩa: bên trong
+Ví dụ: ectoplasm (ngoại chất), ectoderm (lớp ngoài phôi)
+Ví dụ trái nghĩa: endocrine (nội tiết), endoscope (nội soi)
+
+Tiền tố: geo-
+Trái nghĩa: - (không có)
+Tạo nghĩa: liên quan đến trái đất
+Ví dụ: geology (địa chất học), geography (địa lý)
+
+Tiền tố: holo-
+Trái nghĩa: mero-
+Tạo nghĩa: toàn bộ, hoàn chỉnh
+Tạo nghĩa trái nghĩa: một phần, không đầy đủ
+Ví dụ: hologram (ảnh toàn ký), holistic (toàn diện)
+Ví dụ trái nghĩa: mereology (học thuyết về bộ phận), meronym (từ chỉ bộ phận)
+
+Tiền tố: idio-
+Trái nghĩa: - (không có)
+Tạo nghĩa: riêng, đặc trưng
+Ví dụ: idiosyncrasy (đặc tính cá nhân), idiom (thành ngữ)
+
+Tiền tố: kilo-
+Trái nghĩa: milli-
+Tạo nghĩa: nghìn
+Tạo nghĩa trái nghĩa: một phần nghìn
+Ví dụ: kilogram (kilôgam), kilometer (kilômét)
+Ví dụ trái nghĩa: milligram (miligam), millimeter (milimet)
+
+Tiền tố: litho-
+Trái nghĩa: - (không có)
+Tạo nghĩa: đá, liên quan đến đá
+Ví dụ: lithography (in đá), lithosphere (thạch quyển)
+
+Tiền tố: meso-
+Trái nghĩa: - (không có)
+Tạo nghĩa: giữa, trung gian
+Ví dụ: mesosphere (tầng trung quyển), mesolithic (thời đại đá giữa)
+
+Tiền tố: neo-
+Trái nghĩa: paleo-
+Tạo nghĩa: mới, hiện đại
+Tạo nghĩa trái nghĩa: cổ, cổ đại
+Ví dụ: neologism (từ mới), neonatal (sơ sinh)
+Ví dụ trái nghĩa: paleontology (cổ sinh vật học), paleolithic (thời kỳ đồ đá cũ)
+
+Tiền tố: ortho-
+Trái nghĩa: - (không có)
+Tạo nghĩa: đúng, thẳng
+Ví dụ: orthodox (chính thống), orthopedic (chỉnh hình)
+
+Tiền tố: proto-
+Trái nghĩa: - (không có)
+Tạo nghĩa: đầu tiên, nguyên thủy
+Ví dụ: prototype (nguyên mẫu), protozoa (động vật nguyên sinh)
+
+Tiền tố: acro-
+Trái nghĩa: - (không có)
+Tạo nghĩa: đỉnh, cao
+Ví dụ: acrobat (người biểu diễn nhào lộn), acronym (từ viết tắt)
+
+Tiền tố: allo-
+Trái nghĩa: auto-
+Tạo nghĩa: khác, khác biệt
+Tạo nghĩa trái nghĩa: tự, chính mình
+Ví dụ: allotrope (thể dị hình), allograft (mô ghép từ người khác)
+Ví dụ trái nghĩa: autobiography (tự truyện), autograph (chữ ký tự tay)
+
+Tiền tố: brachy-
+Trái nghĩa: macro-
+Tạo nghĩa: ngắn, nhỏ
+Tạo nghĩa trái nghĩa: dài, lớn
+Ví dụ: brachycephalic (đầu ngắn), brachytherapy (xạ trị áp sát)
+Ví dụ trái nghĩa: macrocosm (vũ trụ lớn), macroevolution (tiến hóa lớn)
+
+Tiền tố: cata-
+Trái nghĩa: ana-
+Tạo nghĩa: xuống, ngược lại
+Tạo nghĩa trái nghĩa: lên, trở lại
+Ví dụ: catalyst (chất xúc tác), catastrophe (thảm họa)
+Ví dụ trái nghĩa: anabolic (đồng hóa), anaphase (kỳ sau)
+
+Tiền tố: crypto-
+Trái nghĩa: - (không có)
+Tạo nghĩa: ẩn, bí mật
+Ví dụ: cryptography (mật mã học), cryptocurrency (tiền điện tử)
+
+Tiền tố: demo-
+Trái nghĩa: - (không có)
+Tạo nghĩa: người, dân
+Ví dụ: democracy (dân chủ), demography (nhân khẩu học)
+
+Tiền tố: ecto-
+Trái nghĩa: endo-
+Tạo nghĩa: bên ngoài
+Tạo nghĩa trái nghĩa: bên trong
+Ví dụ: ectoplasm (ngoại chất), ectotherm (động vật biến nhiệt)
+Ví dụ trái nghĩa: endocardium (nội tâm mạc), endospore (nội bào tử)
+
+Tiền tố: giga-
+Trái nghĩa: nano-
+Tạo nghĩa: tỷ
+Tạo nghĩa trái nghĩa: một phần tỷ
+Ví dụ: gigabyte (gigabyte), gigahertz (gigahertz)
+Ví dụ trái nghĩa: nanometer (nanomet), nanosecond (nanosecond)
+
+Tiền tố: hemi-
+Trái nghĩa: - (không có)
+Tạo nghĩa: nửa
+Ví dụ: hemisphere (bán cầu), hemiplegia (liệt nửa người)
+
+Tiền tố: leuco-
+Trái nghĩa: melano-
+Tạo nghĩa: trắng
+Tạo nghĩa trái nghĩa: đen
+Ví dụ: leucocyte (bạch cầu), leucoplast (bạch lạp)
+Ví dụ trái nghĩa: melanin (sắc tố đen), melanoma (u hắc tố)
+
+Tiền tố: myco-
+Trái nghĩa: - (không có)
+Tạo nghĩa: nấm
+Ví dụ: mycology (nấm học), mycorrhiza (nấm rễ cộng sinh)
+
+Tiền tố: necro-
+Trái nghĩa: bio-
+Tạo nghĩa: chết
+Tạo nghĩa trái nghĩa: sống
+Ví dụ: necropolis (nghĩa trang), necrosis (hoại tử)
+Ví dụ trái nghĩa: biology (sinh học), biosphere (sinh quyển)
+
+Tiền tố: onto-
+Trái nghĩa: - (không có)
+Tạo nghĩa: tồn tại, hiện hữu
+Ví dụ: ontology (bản thể học), ontogenesis (sự phát triển cá thể)
+
+Tiền tố: phyto-
+Trái nghĩa: zoo-
+Tạo nghĩa: thực vật
+Tạo nghĩa trái nghĩa: động vật
+Ví dụ: phytoplankton (thực vật phù du), phytotherapy (liệu pháp thảo dược)
+Ví dụ trái nghĩa: zoology (động vật học), zooplankton (động vật phù du)
+
+Tiền tố: xeno-
+Trái nghĩa: endo-
+Tạo nghĩa: ngoại lai, lạ
+Tạo nghĩa trái nghĩa: nội, bên trong
+Ví dụ: xenophobia (sợ người nước ngoài), xenotransplantation (cấy ghép từ loài khác)
+Ví dụ trái nghĩa: endogenous (nội sinh), endoskeleton (xương trong)
+
+Tiền tố: tachy-
+Trái nghĩa: brady-
+Tạo nghĩa: nhanh
+Tạo nghĩa trái nghĩa: chậm
+Ví dụ: tachycardia (nhịp tim nhanh), tachometer (đồng hồ đo tốc độ)
+Ví dụ trái nghĩa: bradycardia (nhịp tim chậm), bradypnea (thở chậm)
+
+Tiền tố: soma-
+Trái nghĩa: psycho-
+Tạo nghĩa: thân thể
+Tạo nghĩa trái nghĩa: tâm trí
+Ví dụ: somatic (thuộc về cơ thể), somatotype (thể trạng)
+Ví dụ trái nghĩa: psychology (tâm lý học), psychosomatic (tâm thể)
+
+Tiền tố: rhino-
+Trái nghĩa: - (không có)
+Tạo nghĩa: mũi
+Ví dụ: rhinoplasty (phẫu thuật mũi), rhinovirus (virus gây cảm lạnh)
+
+Tiền tố: pyro-
+Trái nghĩa: cryo-
+Tạo nghĩa: lửa, nhiệt
+Tạo nghĩa trái nghĩa: lạnh, đông lạnh
+Ví dụ: pyrotechnics (kỹ thuật pháo hoa), pyromaniac (người cuồng lửa)
+Ví dụ trái nghĩa: cryotherapy (liệu pháp lạnh), cryogenics (kỹ thuật đông lạnh)
+
+Tiền tố: oo-
+Trái nghĩa: - (không có)
+Tạo nghĩa: trứng
+Ví dụ: oocyte (tế bào trứng), oogenesis (quá trình tạo trứng)
+
+Tiền tố: nano-
+Trái nghĩa: mega-
+Tạo nghĩa: một phần tỷ
+Tạo nghĩa trái nghĩa: triệu
+Ví dụ: nanotechnology (công nghệ nano), nanometer (nanomet)
+Ví dụ trái nghĩa: megastructure (công trình khổng lồ), megawatt (megawatt)
+
+Tiền tố: myo-
+Trái nghĩa: - (không có)
+Tạo nghĩa: cơ
+Ví dụ: myocardium (cơ tim), myopathy (bệnh cơ)
+
+Tiền tố: logo-
+Trái nghĩa: - (không có)
+Tạo nghĩa: từ, lời nói
+Ví dụ: logotherapy (liệu pháp ý nghĩa), logorrhea (chứng nói nhiều)
+
+Tiền tố: ichthyo-
+Trái nghĩa: - (không có)
+Tạo nghĩa: cá
+Ví dụ: ichthyology (ngư loại học), ichthyosaur (cá long)
+
+Tiền tố: hydro-
+Trái nghĩa: xero-
+Tạo nghĩa: nước
+Tạo nghĩa trái nghĩa: khô
+Ví dụ: hydrology (thủy văn học), hydroelectric (thủy điện)
+Ví dụ trái nghĩa: xerophyte (thực vật chịu hạn), xerography (in khô)
+
+Tiền tố: gyno-
+Trái nghĩa: andro-
+Tạo nghĩa: phụ nữ
+Tạo nghĩa trái nghĩa: đàn ông
+Ví dụ: gynecology (phụ khoa học), gynecomastia (chứng vú to ở nam giới)
+Ví dụ trái nghĩa: andrology (nam học), androgen (hormone nam)
+
+Tiền tố: ferro-
+Trái nghĩa: - (không có)
+Tạo nghĩa: sắt
+Ví dụ: ferromagnetic (sắt từ), ferroelectric (sắt điện)
+
+Tiền tố: ergo-
+Trái nghĩa: - (không có)
+Tạo nghĩa: công việc
+Ví dụ: ergonomics (công thái học), ergometer (máy đo công)
+
+Tiền tố: dermo-
+Trái nghĩa: - (không có)
+Tạo nghĩa: da
+Ví dụ: dermatology (da liễu học), dermabrasion (mài mòn da)
