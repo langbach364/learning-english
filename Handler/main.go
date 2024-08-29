@@ -184,7 +184,7 @@ func handle_map_vi(words *[]map[string]interface{}, extractedWords *map[int]stri
 		return classified
 	}
 
-	time.Sleep(3 * time.Second)
+	time.Sleep(4 * time.Second)
 
 	translatedData, err := read_file_translate()
 	if err != nil {
@@ -260,7 +260,6 @@ func output_word(words map[string][]string, extractedWords map[int]string) {
         }
     }
 }
-
 
 func fetch_word(url string) ([]map[string]interface{}, error) {
 	response, err := http.Get(url)
