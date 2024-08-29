@@ -8,6 +8,8 @@ import (
 	"net/http"
 	"os"
 	"reflect"
+	"regexp"
+	"strconv"
 	"strings"
 	"time"
 	"unicode"
@@ -87,16 +89,16 @@ func classify_word(words []map[string]interface{}) map[string][]string {
 	return result
 }
 
-func write_file_translated(classified map[string][]string) error {
+func write_file_translated(words map[string][]string) error {
 	file, err := os.Create("./translate/trans.txt")
 	if err != nil {
 		return fmt.Errorf("lỗi khi tạo file trans.txt: %v", err)
 	}
 	defer file.Close()
 
-	for pos, definitions := range classified {
-		for _, def := range definitions {
-			_, err := file.WriteString(fmt.Sprintf("%s: %s\n", pos, def))
+	for pos, word := range words {
+		for _, wd := range word {
+			_, err := file.WriteString(fmt.Sprintf("%s: %s\n", pos, wd))
 			if err != nil {
 				return fmt.Errorf("lỗi khi ghi vào file trans.txt: %v", err)
 			}
@@ -138,16 +140,45 @@ func update_words_map(words []map[string]interface{}, translatedData map[string]
 	}
 	return translatedData
 }
-func handle_map_vi(words *[]map[string]interface{}) map[string][]string {
-	classified := classify_word(*words)
 
+func extract_replace(input string, extractedWords map[int]string, startCounter int) (string, int) {
+    counter := startCounter
+
+    if extractedWords == nil {
+        extractedWords = make(map[int]string)
+    }
+
+    replaceFunc := func(s string) string {
+        word := s[1 : len(s)-1]
+        extractedWords[counter] = word
+        result := fmt.Sprintf("(%d)", counter)
+        counter++
+        return result
+    }
+
+    result := regexp.MustCompile(`\(.*?\)`).ReplaceAllStringFunc(input, replaceFunc)
+    return result, counter
+}
+
+func handle_map_vi(words *[]map[string]interface{}, extractedWords *map[int]string) map[string][]string {
+	classified := classify_word(*words)
+    if *extractedWords == nil {
+        *extractedWords = make(map[int]string)
+    }
+    counter := 0
+    
 	for pos, definitions := range classified {
 		for i, def := range definitions {
-			classified[pos][i] = clean_define(def)
+			if pos == "idiom" {
+				classified[pos][i], counter = extract_replace(clean_define(def), *extractedWords, counter)
+			} else {
+				classified[pos][i] = clean_define(def)
+			}
 		}
 	}
-
+	
 	err := write_file_translated(classified)
+
 	if err != nil {
 		fmt.Println(err)
 		return classified
@@ -164,7 +195,7 @@ func handle_map_vi(words *[]map[string]interface{}) map[string][]string {
 	return update_words_map(*words, translatedData)
 }
 
-func handle_map_en(words *[]map[string]interface{}) map[string][]string{
+func handle_map_en(words *[]map[string]interface{}) map[string][]string {
 	classified := classify_word(*words)
 	for pos, definitions := range classified {
 		for i, def := range definitions {
@@ -174,45 +205,62 @@ func handle_map_en(words *[]map[string]interface{}) map[string][]string{
 	return classified
 }
 
-
 func check_value_map(definitions []string) bool {
-    for _, def := range definitions {
-        if def != "" {
-            return true
-        }
-    }
-    return false
+	for _, def := range definitions {
+		if def != "" {
+			return true
+		}
+	}
+	return false
 }
-
 
 func format_output(pos string, definitions []string) string {
-    pos = strings.TrimSuffix(pos, ".")
-    if len(pos) > 0 {
-        r, size := utf8.DecodeRuneInString(pos)
-        pos = string(unicode.ToUpper(r)) + pos[size:]
-    }
-    result := fmt.Sprintf("%s:\n", pos)
-    for _, def := range definitions {
-        if def != "" {
-            result += fmt.Sprintf("- %s\n", def)
-        }
-    }
-    return strings.TrimSpace(result)
+	pos = strings.TrimSuffix(pos, ".")
+	if len(pos) > 0 {
+		r, size := utf8.DecodeRuneInString(pos)
+		pos = string(unicode.ToUpper(r)) + pos[size:]
+	}
+	result := fmt.Sprintf("%s:\n", pos)
+	for _, def := range definitions {
+		if def != "" {
+			result += fmt.Sprintf("- %s\n", def)
+		}
+	}
+	return strings.TrimSpace(result)
 }
 
-func output_word(words map[string][]string) {
+func replace_numbers(input string, extractedWords map[int]string) string {
+    replaceFunc := func(s string) string {
+        numStr := s[1 : len(s)-1]
+        if num, err := strconv.Atoi(numStr); err == nil {
+            if word, ok := extractedWords[num]; ok {
+                return "(" + word + ")"
+            }
+        }
+        return s
+    }
+    
+    return regexp.MustCompile(`\(\d+\)`).ReplaceAllStringFunc(input, replaceFunc)
+}
+
+func output_word(words map[string][]string, extractedWords map[int]string) {
     isFirst := true
     for pos, definitions := range words {
         if len(definitions) > 0 && check_value_map(definitions) {
             if !isFirst {
                 fmt.Println("-------------------------------------")
             }
-            formatted := format_output(pos, definitions)
+            replacedDefinitions := make([]string, len(definitions))
+            for i, def := range definitions {
+                replacedDefinitions[i] = replace_numbers(def, extractedWords)
+            }
+            formatted := format_output(pos, replacedDefinitions)
             fmt.Println(formatted)
             isFirst = false
         }
     }
 }
+
 
 func fetch_word(url string) ([]map[string]interface{}, error) {
 	response, err := http.Get(url)
@@ -246,12 +294,14 @@ func define_word(word string) {
 
 	attributes := make(map[string]bool)
 	attributes = get_attributes(&attributes)
-	result := handle_map_vi(&definitions)
+
+	var extractedWords map[int]string
+	result := handle_map_vi(&definitions, &extractedWords)
 
 	fmt.Printf("Từ: %s\n\n", word)
-	output_word(result)
+	output_word(result, extractedWords)
 }
 
 func main() {
-	define_word("blue")
+	define_word("make")
 }

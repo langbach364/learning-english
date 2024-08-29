@@ -1,15 +1,20 @@
-noun: The hue of that portion of the visible spectrum lying between green and indigo, evoked in the human observer by radiant energy with wavelengths of approximately 420 to 490 nanometers; any of a group of colors that may vary in lightness and saturation, whose hue is that of a clear daytime sky; one of the additive or light primaries; one of the psychological primary hues.
+intransitive verb: To cause to exist or happen; bring about; create.
+intransitive verb: To bring into existence by shaping, modifying, or putting together material; construct.
+intransitive verb: To form by assembling individuals or constituents.
+intransitive verb: To change from one form or function to another.
+intransitive verb: 
 noun: 
-noun: A pigment or dye imparting this hue.
-noun: Bluing.
+noun: The style or manner in which a thing is made.
+noun: A specific line of manufactured goods, identified by the manufacturer's name or the registered trademark.
+noun: The origin of a product's manufacturing.
 noun: 
-adjective: Of the color blue.
-adjective: Bluish or having parts that are blue or bluish, as the blue spruce and the blue whale.
-adjective: Having a gray or purplish color, as from cold or contusion.
-adjective: Wearing blue.
-adjective: Being a trail, as for skiing, marked with a sign having a blue square, indicating an intermediate level of difficulty.
-transitive & intransitive verb : To make or become blue.
-idiom: (blue in the face)  At the point of extreme exasperation.
-idiom: (into the blue)  At a far distance; into the unknown.
-idiom: (out of the blue)  From an unexpected or unforeseen source.
-idiom: (out of the blue)  At a completely unexpected time.
+phrasal verb: To have or produce (a particular effect or result).
+phrasal verb: To help promote; further.
+phrasal verb: To depart in haste; run away.
+phrasal verb: To discern or see, especially with difficulty.
+phrasal verb: To understand.
+idiom: (0)  To confess fully.
+idiom: (1)  To distort the features of the face; grimace.
+idiom: (2)  To achieve success in.
+idiom: (3)  To carry off; steal.
+idiom: (4)  To use up or consume.
