@@ -160,16 +160,24 @@ func extract_replace(input string, extractedWords map[int]string, startCounter i
     return result, counter
 }
 
+func turn_off_Viet_Hoa() []string {
+	return []string {
+		"idiom",
+		"intransitive verb",
+	}
+}
+
 func handle_map_vi(words *[]map[string]interface{}, extractedWords *map[int]string) map[string][]string {
 	classified := classify_word(*words)
     if *extractedWords == nil {
         *extractedWords = make(map[int]string)
     }
     counter := 0
-    
+    class := turn_off_Viet_Hoa()
+
 	for pos, definitions := range classified {
 		for i, def := range definitions {
-			if pos == "idiom" {
+			if contains(class, pos) {
 				classified[pos][i], counter = extract_replace(clean_define(def), *extractedWords, counter)
 			} else {
 				classified[pos][i] = clean_define(def)
@@ -195,6 +203,14 @@ func handle_map_vi(words *[]map[string]interface{}, extractedWords *map[int]stri
 	return update_words_map(*words, translatedData)
 }
 
+func contains(slice []string, item string) bool {
+    for _, s := range slice {
+        if s == item {
+            return true
+        }
+    }
+    return false
+}
 func handle_map_en(words *[]map[string]interface{}) map[string][]string {
 	classified := classify_word(*words)
 	for pos, definitions := range classified {
@@ -302,5 +318,5 @@ func define_word(word string) {
 }
 
 func main() {
-	define_word("make")
+	define_word("sky")
 }
