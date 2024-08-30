@@ -4,223 +4,92 @@ import (
 	"bufio"
 	"encoding/json"
 	"fmt"
-	"io"
 	"net/http"
 	"os"
-	"reflect"
 	"regexp"
 	"strconv"
 	"strings"
+	"sync"
 	"time"
 	"unicode"
 	"unicode/utf8"
 
 	"github.com/joho/godotenv"
 )
+// Hàm chạy đầu tiên trước cả hàm main()
+/////////////////////////////////////////////////////////////////////////////////////
+// Hàm khởi tạo đầu tiên và lấy API key từ file .env
+var (
+	APIKey    string
+	regexPool sync.Pool
+)
 
-func get_api() string {
-	err := godotenv.Load(".env")
-	if err != nil {
-		fmt.Println("lỗi không load được file .env")
+func init() {
+	APIKey = load_API_key()
+	regexPool = sync.Pool{
+		New: func() interface{} {
+			return regexp.MustCompile(`\(.*?\)`)
+		},
+	}
+}
+
+func load_API_key() string {
+	if err := godotenv.Load(".env"); err != nil {
+		fmt.Println("Lỗi: Không thể tải file .env")
 	}
 	return os.Getenv("API_KEY")
 }
+/////////////////////////////////////////////////////////////////////////////////////
 
-func check_err_request(err error) {
-	if err != nil {
-		fmt.Println("lỗi không thể gửi yêu cầu")
-		fmt.Printf("cụ thể: %s\n", err)
-	}
-}
-
-func get_attributes(attributes *map[string]bool) map[string]bool {
-	*attributes = map[string]bool{
-		"Define":       true,
-		"PartOfSpeech": true,
-	}
-	return *attributes
-}
-
-func convert_struct_to_map(word interface{}) map[string]interface{} {
-	result := make(map[string]interface{})
-
-	v := reflect.ValueOf(word)
-	if v.Kind() == reflect.Struct {
-		for i := 0; i < v.NumField(); i++ {
-			field := v.Type().Field(i)
-			value := v.Field(i).Interface()
-			result[field.Name] = value
+// Hàm phụ trợ 
+/////////////////////////////////////////////////////////////////////////////////////
+// Kiểm tra các đói tượng trong slice có chứa item hay không
+func contains(slice []string, item string) bool { 
+	for _, s := range slice {
+		if s == item {
+			return true
 		}
 	}
-
-	return result
+	return false
 }
 
-func clean_define(define string) string {
-	var result string
-	in_tag := false
-	for _, char := range define {
-		if char == '<' {
-			in_tag = true
-		} else if char == '>' {
-			in_tag = false
-		} else if !in_tag {
-			result += string(char)
-		}
+// Ghi hoa chữ đầu và thêm "." vào cuối chuỗi (đã xử lý trường hợp ký tự khác bảng mã ascii)
+func normalize_key(key string) string {
+	key = strings.TrimSuffix(key, ".")
+	if len(key) > 0 {
+		r, size := utf8.DecodeRuneInString(key)
+		key = string(unicode.ToUpper(r)) + key[size:]
 	}
-	return result
+	return key
 }
 
-func limit_definition(words map[string][]string, partOfSpeech string, definition string, limit int) {
-	if len(words[partOfSpeech]) < limit {
-		words[partOfSpeech] = append(words[partOfSpeech], definition)
+// Giá trị có cùng tên key sau khi đã đưa về key trùng
+func group_attributes(attributes *map[string][]string) map[string][]string {
+	groupedAttributes := make(map[string][]string)
+	for key, values := range *attributes {
+		normalizedKey := normalize_key(key)
+		groupedAttributes[normalizedKey] = append(groupedAttributes[normalizedKey], values...)
 	}
+	return groupedAttributes
 }
 
-func classify_word(words []map[string]interface{}) map[string][]string {
-	result := make(map[string][]string)
-	for _, word := range words {
-		partOfSpeech, okPos := word["PartOfSpeech"].(string)
-		definition, okDef := word["Define"].(string)
-		if okPos && okDef {
-			limit_definition(result, partOfSpeech, definition, 5)
-		}
-	}
-	return result
-}
+// Thay thế các con số bằng các từ ngữ đã lưu trữ trước đó trong biến extractedWords
+func replace_numbers(input string, extractedWords map[int]string) string {
+	regex := regexPool.Get().(*regexp.Regexp)
+	defer regexPool.Put(regex)
 
-func write_file_translated(words map[string][]string) error {
-	file, err := os.Create("./translate/trans.txt")
-	if err != nil {
-		return fmt.Errorf("lỗi khi tạo file trans.txt: %v", err)
-	}
-	defer file.Close()
-
-	for pos, word := range words {
-		for _, wd := range word {
-			_, err := file.WriteString(fmt.Sprintf("%s: %s\n", pos, wd))
-			if err != nil {
-				return fmt.Errorf("lỗi khi ghi vào file trans.txt: %v", err)
+	return regex.ReplaceAllStringFunc(input, func(s string) string {
+		numStr := s[1 : len(s)-1]
+		if num, err := strconv.Atoi(numStr); err == nil {
+			if word, ok := extractedWords[num]; ok {
+				return "(" + word + ")"
 			}
 		}
-	}
-	return nil
+		return s
+	})
 }
 
-func read_file_translate() (map[string][]string, error) {
-	translatedFile, err := os.Open("./translate/trans_ed.txt")
-	if err != nil {
-		return nil, fmt.Errorf("lỗi khi mở file trans_ed.txt: %v", err)
-	}
-	defer translatedFile.Close()
-
-	scanner := bufio.NewScanner(translatedFile)
-	translatedData := make(map[string][]string)
-
-	for scanner.Scan() {
-		line := scanner.Text()
-		parts := strings.SplitN(line, ": ", 2)
-		if len(parts) == 2 {
-			pos, def := parts[0], parts[1]
-			translatedData[pos] = append(translatedData[pos], def)
-		}
-	}
-	return translatedData, nil
-}
-
-func update_words_map(words []map[string]interface{}, translatedData map[string][]string) map[string][]string {
-	for i, word := range words {
-		pos, ok := word["PartOfSpeech"].(string)
-		if ok {
-			if translatedDefs, exists := translatedData[pos]; exists && len(translatedDefs) > 0 {
-				words[i]["Define"] = translatedDefs[0]
-				translatedData[pos] = translatedDefs[1:]
-			}
-		}
-	}
-	return translatedData
-}
-
-func extract_replace(input string, extractedWords map[int]string, startCounter int) (string, int) {
-    counter := startCounter
-
-    if extractedWords == nil {
-        extractedWords = make(map[int]string)
-    }
-
-    replaceFunc := func(s string) string {
-        word := s[1 : len(s)-1]
-        extractedWords[counter] = word
-        result := fmt.Sprintf("(%d)", counter)
-        counter++
-        return result
-    }
-
-    result := regexp.MustCompile(`\(.*?\)`).ReplaceAllStringFunc(input, replaceFunc)
-    return result, counter
-}
-
-func turn_off_Viet_Hoa() []string {
-	return []string {
-		"idiom",
-		"intransitive verb",
-	}
-}
-
-func handle_map_vi(words *[]map[string]interface{}, extractedWords *map[int]string) map[string][]string {
-	classified := classify_word(*words)
-    if *extractedWords == nil {
-        *extractedWords = make(map[int]string)
-    }
-    counter := 0
-    class := turn_off_Viet_Hoa()
-
-	for pos, definitions := range classified {
-		for i, def := range definitions {
-			if contains(class, pos) {
-				classified[pos][i], counter = extract_replace(clean_define(def), *extractedWords, counter)
-			} else {
-				classified[pos][i] = clean_define(def)
-			}
-		}
-	}
-	
-	err := write_file_translated(classified)
-
-	if err != nil {
-		fmt.Println(err)
-		return classified
-	}
-
-	time.Sleep(4 * time.Second)
-
-	translatedData, err := read_file_translate()
-	if err != nil {
-		fmt.Println(err)
-		return classified
-	}
-
-	return update_words_map(*words, translatedData)
-}
-
-func contains(slice []string, item string) bool {
-    for _, s := range slice {
-        if s == item {
-            return true
-        }
-    }
-    return false
-}
-func handle_map_en(words *[]map[string]interface{}) map[string][]string {
-	classified := classify_word(*words)
-	for pos, definitions := range classified {
-		for i, def := range definitions {
-			classified[pos][i] = clean_define(def)
-		}
-	}
-	return classified
-}
-
+// Liểm tra giá trị có phải rỗng hay không
 func check_value_map(definitions []string) bool {
 	for _, def := range definitions {
 		if def != "" {
@@ -230,93 +99,226 @@ func check_value_map(definitions []string) bool {
 	return false
 }
 
+// Làm sạch sẽ lại dữ liệu rồi in ra 
 func format_output(pos string, definitions []string) string {
-	pos = strings.TrimSuffix(pos, ".")
-	if len(pos) > 0 {
-		r, size := utf8.DecodeRuneInString(pos)
-		pos = string(unicode.ToUpper(r)) + pos[size:]
-	}
-	result := fmt.Sprintf("%s:\n", pos)
+	var result strings.Builder
+	result.WriteString(fmt.Sprintf("%s:\n", pos))
 	for _, def := range definitions {
 		if def != "" {
-			result += fmt.Sprintf("- %s\n", def)
+			result.WriteString(fmt.Sprintf("- %s\n", def))
 		}
 	}
-	return strings.TrimSpace(result)
+	return strings.TrimSpace(result.String())
 }
+/////////////////////////////////////////////////////////////////////////////////////
 
-func replace_numbers(input string, extractedWords map[int]string) string {
-    replaceFunc := func(s string) string {
-        numStr := s[1 : len(s)-1]
-        if num, err := strconv.Atoi(numStr); err == nil {
-            if word, ok := extractedWords[num]; ok {
-                return "(" + word + ")"
-            }
-        }
-        return s
-    }
-    
-    return regexp.MustCompile(`\(\d+\)`).ReplaceAllStringFunc(input, replaceFunc)
-}
+// Các bước để chạy chương trình
+/////////////////////////////////////////////////////////////////////////////////////
+// Lấy các định nghĩa của từ API Wordnik
+func fetch_word_definitions(word string) ([]WordDefinition, error) {
+	url := fmt.Sprintf("https://api.wordnik.com/v4/word.json/%s/definitions?limit=300&includeRelated=false&sourceDictionaries=ahd-5&useCanonical=false&includeTags=false&api_key=%s", word, APIKey)
 
-func output_word(words map[string][]string, extractedWords map[int]string) {
-    isFirst := true
-    for pos, definitions := range words {
-        if len(definitions) > 0 && check_value_map(definitions) {
-            if !isFirst {
-                fmt.Println("-------------------------------------")
-            }
-            replacedDefinitions := make([]string, len(definitions))
-            for i, def := range definitions {
-                replacedDefinitions[i] = replace_numbers(def, extractedWords)
-            }
-            formatted := format_output(pos, replacedDefinitions)
-            fmt.Println(formatted)
-            isFirst = false
-        }
-    }
-}
-
-func fetch_word(url string) ([]map[string]interface{}, error) {
-	response, err := http.Get(url)
-	check_err_request(err)
-	defer response.Body.Close()
-
-	body, err := io.ReadAll(response.Body)
+	resp, err := http.Get(url)
 	if err != nil {
-		return nil, err
+		return nil, fmt.Errorf("lỗi khi gửi yêu cầu: %v", err)
+	}
+	defer resp.Body.Close()
+
+	var definitions []WordDefinition
+	decoder := json.NewDecoder(resp.Body)
+
+	if err := decoder.Decode(&definitions); err != nil {
+		return nil, fmt.Errorf("lỗi khi giải mã JSON: %v", err)
 	}
 
-	var word_definitions []word_definitions
-	err = json.Unmarshal(body, &word_definitions)
-	if err != nil {
-		return nil, err
-	}
-
-	definitions := make([]map[string]interface{}, len(word_definitions))
-	for attribute, text := range word_definitions {
-		definitions[attribute] = convert_struct_to_map(text)
-	}
 	return definitions, nil
 }
 
+// Phân loại loại từ theo định nghĩa của từ giới hạn mỗi từ loại là 5 định nghĩa 
+func classify_definitions(definitions []WordDefinition) map[string][]string {
+	result := make(map[string][]string)
+	for _, def := range definitions {
+		if len(result[def.PartOfSpeech]) < 5 {
+			result[def.PartOfSpeech] = append(result[def.PartOfSpeech], def.Define)
+		}
+	}
+	return result
+}
+
+// Làm sạch lại dữ liệu khi đã lấy được dữ liệu từ api
+func clean_definition(define string) string {
+	var result strings.Builder
+	inTag := false
+	for _, char := range define {
+		if char == '<' {
+			inTag = true
+		} else if char == '>' {
+			inTag = false
+		} else if !inTag {
+			result.WriteRune(char)
+		}
+	}
+	return result.String()
+}
+
+// Cập nhật lại các định nghĩa đã được dịch
+func update_definitions(definitions []WordDefinition, translatedData map[string][]string) map[string][]string {
+	for i := range definitions {
+		pos := definitions[i].PartOfSpeech
+		if translatedDefs, exists := translatedData[pos]; exists && len(translatedDefs) > 0 {
+			definitions[i].Define = translatedDefs[0]
+			translatedData[pos] = translatedDefs[1:]
+		}
+	}
+	return translatedData
+}
+
+// Qúa trình trích xuất từ không cần dịch dựa trên từ loại và cấu trúc trích xuất dựa trên return regexp.MustCompile(`\(.*?\)`) ở hàm init()
+func process_untranslated(classified *map[string][]string, extractedWords *map[int]string) {
+	counter := 0
+	class := []string{"idiom", "intransitive verb"}
+
+	for pos, definitions := range *classified {
+		for i, def := range definitions {
+			if contains(class, pos) {
+				(*classified)[pos][i], counter = extract_and_replace(clean_definition(def), *extractedWords, counter)
+			} else {
+				(*classified)[pos][i] = clean_definition(def)
+			}
+		}
+	}
+}
+
+// Trích xuất các từ đã lưu trước đó và thay thế chúng bằng các số thứ tự tương ứng (để kiểm soát các từ không cần dịch)
+func extract_and_replace(input string, extractedWords map[int]string, startCounter int) (string, int) {
+	regex := regexPool.Get().(*regexp.Regexp)
+	defer regexPool.Put(regex)
+
+	counter := startCounter
+	return regex.ReplaceAllStringFunc(input, func(s string) string {
+		word := s[1 : len(s)-1]
+		extractedWords[counter] = word
+		result := fmt.Sprintf("(%d)", counter)
+		counter++
+		return result
+	}), counter
+}
+/////////////////////////////////////////////////////////////////////////////////////
+
+// Hàm ghép các đoạn xử lý với bản muốn dịch
+func handle_vietnamese_map(definitions *[]WordDefinition, extractedWords *map[int]string) map[string][]string {
+	classified := classify_definitions(*definitions)
+
+	if *extractedWords == nil {
+		*extractedWords = make(map[int]string)
+	}
+
+	process_untranslated(&classified, extractedWords)
+
+	if err := write_translation_file(classified); err != nil {
+		fmt.Println(err)
+		return classified
+	}
+
+	time.Sleep(4 * time.Second)
+
+	translatedData, err := read_translated_file()
+	if err != nil {
+		fmt.Println(err)
+		return classified
+	}
+
+	translatedData = group_attributes(&translatedData)
+	return update_definitions(*definitions, translatedData)
+}
+
+// Hàm ghép lại các đoạn xử lý với bản không muốn dịch
+func handle_english_map(definitions *[]WordDefinition) map[string][]string {
+	classified := classify_definitions(*definitions)
+	for pos, defs := range classified {
+		for i, def := range defs {
+			classified[pos][i] = clean_definition(def)
+		}
+	}
+	return group_attributes(&classified)
+}
+/////////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////////
+// In ra txt cho công cụ dịch xử lý
+func write_translation_file(words map[string][]string) error {
+	file, err := os.Create("./translate/trans.txt")
+	if err != nil {
+		return fmt.Errorf("lỗi khi tạo file trans.txt: %v", err)
+	}
+	defer file.Close()
+
+	for pos, definitions := range words {
+		for _, def := range definitions {
+			if _, err := fmt.Fprintf(file, "%s: %s\n", pos, def); err != nil {
+				return fmt.Errorf("lỗi khi ghi vào file trans.txt: %v", err)
+			}
+		}
+	}
+	return nil
+}
+
+// Đọc file txt đã được công cụ xử lý
+func read_translated_file() (map[string][]string, error) {
+	file, err := os.Open("./translate/trans_ed.txt")
+	if err != nil {
+		return nil, fmt.Errorf("lỗi khi mở file trans_ed.txt: %v", err)
+	}
+	defer file.Close()
+
+	scanner := bufio.NewScanner(file)
+	translatedData := make(map[string][]string)
+
+	for scanner.Scan() {
+		parts := strings.SplitN(scanner.Text(), ": ", 2)
+		if len(parts) == 2 {
+			pos, def := parts[0], parts[1]
+			translatedData[pos] = append(translatedData[pos], def)
+		}
+	}
+	return translatedData, nil
+}
+
+// Xuất ra các từ đã cấu trúc rồi
+func output_word(words map[string][]string, extractedWords map[int]string) {
+	isFirst := true
+	for pos, definitions := range words {
+		if len(definitions) > 0 && check_value_map(definitions) {
+			if !isFirst {
+				fmt.Println("-------------------------------------")
+			}
+			replacedDefinitions := make([]string, len(definitions))
+			for i, def := range definitions {
+				replacedDefinitions[i] = replace_numbers(def, extractedWords)
+			}
+			formatted := format_output(pos, replacedDefinitions)
+			fmt.Println(formatted)
+			isFirst = false
+		}
+	}
+}
+
+// Tổng hợp lại 
 func define_word(word string) {
-	api_key := get_api()
-	url := fmt.Sprintf("https://api.wordnik.com/v4/word.json/%s/definitions?limit=300&includeRelated=false&sourceDictionaries=ahd-5&useCanonical=false&includeTags=false&api_key=%s", word, api_key)
-
-	definitions, err := fetch_word(url)
-	check_err_request(err)
-
-	attributes := make(map[string]bool)
-	attributes = get_attributes(&attributes)
+	definitions, err := fetch_word_definitions(word)
+	if err != nil {
+		fmt.Printf("Lỗi khi lấy định nghĩa: %v\n", err)
+		return
+	}
 
 	var extractedWords map[int]string
-	result := handle_map_vi(&definitions, &extractedWords)
+	result := handle_vietnamese_map(&definitions, &extractedWords)
 
 	fmt.Printf("Từ: %s\n\n", word)
 	output_word(result, extractedWords)
 }
+/////////////////////////////////////////////////////////////////////////////////////
 
 func main() {
-	define_word("sky")
+	define_word("cat")
 }
