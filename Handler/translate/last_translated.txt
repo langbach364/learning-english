@@ -1,8 +1,3 @@
-noun: 
-noun: A small domesticated carnivorous mammal (Felis catus), kept as a pet and as catcher of vermin, and existing in a variety of breeds.
-noun: Any of various other carnivorous mammals of the family Felidae, including the lion, tiger, leopard, and lynx.
-noun: The fur of a domestic cat.
-noun: A woman who is regarded as spiteful.
-intransitive verb: To hoist an anchor to (0).
-intransitive verb: To look for sexual partners; have an affair or affairs.
-idiom: (1)  To let a secret be known.
+transitive verb: To make again or anew.
+noun: The act of remaking.
+noun: Something in remade form, especially a new version of an earlier movie or song.
