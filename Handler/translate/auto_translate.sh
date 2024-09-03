@@ -15,7 +15,7 @@ translate_file() {
 if [ -f "$FILE_TO_WATCH" ]; then
     echo "Bắt đầu dịch file..."
     translate_file "$FILE_TO_WATCH" "$TRANSLATED_FILE"
-    echo "Dịch xong. Kết quả được lưu trong $TRANSLATED_FILE"
+    echo "Dịch xong. Kết quả được lưu trong $TRANSLATED_FILE" | nc -U $SOCKET_PATH
     exit 0
 else
     echo "File cần dịch không tồn tại: $FILE_TO_WATCH"

@@ -22,7 +22,7 @@ func main() {
 	go run_script("./translate/auto_translate.sh")
 
 	fmt.Println("Đang xử lý từ...")
-	define_word("remake")
+	define_word("make")
 
 	fmt.Println("Chương trình kết thúc")
 	fmt.Println()
