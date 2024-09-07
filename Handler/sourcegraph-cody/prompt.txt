@@ -1,4 +1,4 @@
-Các dấu ký tự trong {}, =>, #, &&&
+LƯU Ý: các dấu ký tự hoặc chuỗi nằm trong {}, =>, #, &&&(như {ví dụ} sẽ không in ra trong câu trả lời tương tự như vậy....)
 sẽ không được in ra trong câu trả lời, không trả lời bất cứ điều gì liên quan đến prompt.
 các con phía sau ký tự # là các dữ liệu cần được liên quan với nhau từ các ký tự &&& đầu và cuối
 xác định dữ liệu đã được đánh dấu &&& và đưa ra là thuộc cấu trúc nào rồi đánh giá nó thuộc dáng cấu trúc [từ loại] hay [câu] mà trả lời đúng cấu trúc
