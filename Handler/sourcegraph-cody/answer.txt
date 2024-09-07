@@ -1,0 +1,63 @@
+[Câu]:
+
+- Đây là thì hiện tại đơn
+
+- Biểu thị thời gian hiện tại
+
+- Ngữ cảnh sử dụng thì này để mô tả một sự thật chung hoặc một tình huống thường xuyên xảy ra
+
+- Ví dụ trường hợp khác: The cat sleeps on the couch every day.
+
++ Các trường hợp ví dụ sử dụng các thì khác:
+1. The cat was sleeping when I came home. (Quá khứ tiếp diễn)
+2. The cat has been living with us for 5 years. (Hiện tại hoàn thành tiếp diễn)
+3. The cat will be taken to the vet tomorrow. (Tương lai đơn)
+
++ Biểu thị thời gian của ví dụ cho từng trường hợp:
+1. Một thời điểm cụ thể trong quá khứ
+2. Từ quá khứ đến hiện tại
+3. Một thời điểm trong tương lai
+
++ Nêu mỗi thì của ví dụ cho từng trường hợp:
+1. Past Continuous: The cat was sleeping when I came home.
+   Dịch: Con mèo đang ngủ khi tôi về nhà.
+2. Present Perfect Continuous: The cat has been living with us for 5 years.
+   Dịch: Con mèo đã sống với chúng tôi được 5 năm.
+3. Future Simple: The cat will be taken to the vet tomorrow.
+   Dịch: Con mèo sẽ được đưa đến bác sĩ thú y vào ngày mai.
+
++ Ngữ cảnh hiểu từng ví dụ trường hợp:
+1. Mô tả hành động đang diễn ra tại một thời điểm cụ thể trong quá khứ
+2. Diễn tả một hành động bắt đầu từ quá khứ và vẫn tiếp tục đến hiện tại
+3. Diễn đạt một kế hoạch hoặc dự định trong tương lai
+
+- Phân loại các từ thành từ loại:
+the: mạo từ
+cat: danh từ
+is: động từ
+beautiful: tính từ
+carefully: trạng từ
+that: đại từ chỉ định
+will: trợ động từ
+bite: động từ
+you: đại từ nhân xưng
+
+- Kiểm tra câu có bị sai: Có
+
+- Ghi lại câu chưa sửa: The cat is beautiful carefully that is cat will bite you.
+
+- Ngữ cảnh để hiểu câu chưa sửa: Người nói đang cảnh báo về một con mèo đẹp nhưng có thể cắn.
+
+- Ghi lại câu đã sửa: The cat is beautiful, but be careful as it may bite you.
+
+- Ngữ cảnh để hiểu câu đã sửa: Người nói đang mô tả vẻ đẹp của con mèo nhưng cũng cảnh báo về khả năng nó có thể cắn.
+
+- Lý do sửa lại và khác gì với câu cũ:
+1. Thêm dấu phẩy sau "beautiful" để ngăn cách hai mệnh đề.
+2. Thay "carefully" bằng "be careful" để diễn đạt cảnh báo chính xác hơn.
+3. Thay "that is cat will bite you" bằng "as it may bite you" để diễn đạt khả năng và sử dụng ngữ pháp đúng.
+
++ Dịch sang tiếng Việt:
+Câu chưa sửa: Con mèo đẹp cẩn thận đó là mèo sẽ cắn bạn.
+Câu đã sửa: Con mèo rất đẹp, nhưng hãy cẩn thận vì nó có thể cắn bạn.
+

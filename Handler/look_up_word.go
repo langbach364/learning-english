@@ -7,8 +7,8 @@ import (
 	"net/http"
 	"os"
 	"regexp"
-	"strings"
 	"strconv"
+	"strings"
 	"sync"
 	"unicode"
 	"unicode/utf8"
@@ -16,13 +16,12 @@ import (
 	"github.com/joho/godotenv"
 )
 
-
 // Hàm chạy đầu tiên trước cả hàm main()
-/////////////////////////////////////////////////////////////////////////////////////
+// ///////////////////////////////////////////////////////////////////////////////////
 // Hàm khởi tạo đầu tiên và lấy API key từ file .env
-/////////////////////////////////////////////////////////////////////////////////////
-// Hàm phụ trợ 
-/////////////////////////////////////////////////////////////////////////////////////
+// ///////////////////////////////////////////////////////////////////////////////////
+// Hàm phụ trợ
+// ///////////////////////////////////////////////////////////////////////////////////
 var (
 	APIKey    string
 	regexPool sync.Pool
@@ -44,9 +43,8 @@ func load_API_key(nameAPI string) string {
 	return os.Getenv(nameAPI)
 }
 
-
 // Kiểm tra các đói tượng trong slice có chứa item hay không
-func contains(slice []string, item string) bool { 
+func contains(slice []string, item string) bool {
 	for _, s := range slice {
 		if s == item {
 			return true
@@ -101,24 +99,8 @@ func check_value_map(definitions []string) bool {
 	return false
 }
 
-// Làm sạch sẽ lại dữ liệu rồi in ra 
-func format_output(pos string, definitions []string) string {
-	var result strings.Builder
-	result.WriteString(fmt.Sprintf("%s:\n", pos))
-	for _, def := range definitions {
-		if def != "" {
-			result.WriteString(fmt.Sprintf("- %s\n", def))
-		}
-	}
-	return strings.TrimSpace(result.String())
-}
-
-
-/////////////////////////////////////////////////////////////////////////////////////
-
-
 // Các bước để chạy chương trình
-/////////////////////////////////////////////////////////////////////////////////////
+// ///////////////////////////////////////////////////////////////////////////////////
 // Lấy các định nghĩa của từ API Wordnik
 func fetch_word_definitions(word string) ([]WordDefinition, error) {
 	url := fmt.Sprintf("https://api.wordnik.com/v4/word.json/%s/definitions?limit=300&includeRelated=false&sourceDictionaries=ahd-5&useCanonical=false&includeTags=false&api_key=%s", word, APIKey)
@@ -139,7 +121,7 @@ func fetch_word_definitions(word string) ([]WordDefinition, error) {
 	return definitions, nil
 }
 
-// Phân loại loại từ theo định nghĩa của từ giới hạn mỗi từ loại là 5 định nghĩa 
+// Phân loại loại từ theo định nghĩa của từ giới hạn mỗi từ loại là 5 định nghĩa
 func classify_definitions(definitions []WordDefinition) map[string][]string {
 	result := make(map[string][]string)
 	for _, def := range definitions {
@@ -208,6 +190,7 @@ func extract_and_replace(input string, extractedWords map[int]string, startCount
 		return result
 	}), counter
 }
+
 /////////////////////////////////////////////////////////////////////////////////////
 
 // Hàm ghép các đoạn xử lý với bản muốn dịch
@@ -226,9 +209,9 @@ func handle_vietnamese_map(definitions *[]WordDefinition, extractedWords *map[in
 	}
 
 	if err := wait_tool_complete(socketPath); err != nil {
-        fmt.Println(err)
-        return classified
-    }
+		fmt.Println(err)
+		return classified
+	}
 
 	translatedData, err := read_translated_file()
 	if err != nil {
@@ -250,9 +233,10 @@ func handle_english_map(definitions *[]WordDefinition) map[string][]string {
 	}
 	return group_attributes(&classified)
 }
-/////////////////////////////////////////////////////////////////////////////////////
 
 /////////////////////////////////////////////////////////////////////////////////////
+
+// ///////////////////////////////////////////////////////////////////////////////////
 // In ra txt cho công cụ dịch xử lý
 func write_translation_file(words map[string][]string) error {
 	file, err := write_file("./translate/trans.txt")
@@ -298,25 +282,28 @@ func read_translated_file() (map[string][]string, error) {
 }
 
 // Xuất ra các từ đã cấu trúc rồi
-func output_word(words map[string][]string, extractedWords map[int]string) {
-	isFirst := true
+func graft(words map[string][]string, extractedWords map[int]string) map[string]string {
+	result := make(map[string]string)
+
 	for pos, definitions := range words {
-		if len(definitions) > 0 && check_value_map(definitions) {
-			if !isFirst {
-				fmt.Println("-------------------------------------")
+		var formattedDefs strings.Builder
+
+		for _, def := range definitions {
+			if def != "" {
+				replacedDef := replace_numbers(def, extractedWords)
+				formattedDefs.WriteString(fmt.Sprintf("- %s\n", replacedDef))
 			}
-			replacedDefinitions := make([]string, len(definitions))
-			for i, def := range definitions {
-				replacedDefinitions[i] = replace_numbers(def, extractedWords)
-			}
-			formatted := format_output(pos, replacedDefinitions)
-			fmt.Println(formatted)
-			isFirst = false
+		}
+
+		if formattedDefs.Len() > 0 {
+			result[pos] = strings.TrimSpace(formattedDefs.String())
 		}
 	}
+
+	return result
 }
 
-// Tổng hợp lại 
+// Tổng hợp lại
 func define_word(word string) {
 	definitions, err := fetch_word_definitions(word)
 	if err != nil {
@@ -325,9 +312,18 @@ func define_word(word string) {
 	}
 
 	var extractedWords map[int]string
-	result := handle_vietnamese_map(&definitions, &extractedWords)
+	words := handle_vietnamese_map(&definitions, &extractedWords)
+
+	result := graft(words, extractedWords)
 
 	fmt.Printf("Từ: %s\n\n", word)
-	output_word(result, extractedWords)
+	isFirst := true
+	for pos, definitions := range result {
+		if !isFirst {
+			fmt.Println("-------------------------------------")
+		}
+		fmt.Printf("%s:\n%s\n", pos, definitions)
+		isFirst = false
+	}
 }
 /////////////////////////////////////////////////////////////////////////////////////

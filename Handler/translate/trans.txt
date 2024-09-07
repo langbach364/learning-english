@@ -1,20 +1,7 @@
-idiom: (0)  To confess fully.
-idiom: (1)  To distort the features of the face; grimace.
-idiom: (2)  To achieve success in.
-idiom: (3)  To carry off; steal.
-idiom: (4)  To use up or consume.
-intransitive verb: To cause to exist or happen; bring about; create.
-intransitive verb: To bring into existence by shaping, modifying, or putting together material; construct.
-intransitive verb: To form by assembling individuals or constituents.
-intransitive verb: To change from one form or function to another.
-intransitive verb: 
-noun: 
-noun: The style or manner in which a thing is made.
-noun: A specific line of manufactured goods, identified by the manufacturer's name or the registered trademark.
-noun: The origin of a product's manufacturing.
-noun: 
-phrasal verb: To have or produce (a particular effect or result).
-phrasal verb: To help promote; further.
-phrasal verb: To depart in haste; run away.
-phrasal verb: To discern or see, especially with difficulty.
-phrasal verb: To understand.
+definite article.: 
+definite article.: Used before singular or plural nouns and noun phrases that denote particular, specified persons or things.
+definite article.: Used before a noun, and generally stressed, to emphasize one of a group or type as the most outstanding or prominent.
+definite article.: Used to indicate uniqueness.
+definite article.: Used before nouns that designate natural phenomena or points of the compass.
+adverb: To that extent; by that much. Used before a comparative.
+adverb: Beyond any other.

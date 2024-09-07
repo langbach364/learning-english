@@ -1,0 +1,7 @@
+anthropic/claude-3-5-sonnet-20240620
+anthropic/claude-3-opus-20240229
+openai/gpt-4o
+google/gemini-1.5-pro-latest
+google/gemini-1.5-flash-latest
+anthropic/claude-3-haiku-20240307
+fireworks/accounts/fireworks/models/mixtral-8x7b-instruct
