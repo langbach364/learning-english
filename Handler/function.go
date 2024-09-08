@@ -54,18 +54,15 @@ func wait_tool_complete(socketPath string) error {
     if err != nil {
         return fmt.Errorf("lỗi khi đọc từ socket: %v", err)
     }
-
     return nil
 }
 
-func create_socket(socketPath string, fileSH string) error {
+func create_socket(socketPath string) error {
     tmpDir := filepath.Dir(socketPath)
 	os.MkdirAll(tmpDir, os.ModePerm)
 
 	if _, err := os.Stat(socketPath); err == nil {
 		os.Remove(socketPath)
 	}
-
-	go run_script(fileSH)
 	return nil
 }

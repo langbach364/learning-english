@@ -89,16 +89,6 @@ func replace_numbers(input string, extractedWords map[int]string) string {
 	})
 }
 
-// Liểm tra giá trị có phải rỗng hay không
-func check_value_map(definitions []string) bool {
-	for _, def := range definitions {
-		if def != "" {
-			return true
-		}
-	}
-	return false
-}
-
 // Các bước để chạy chương trình
 // ///////////////////////////////////////////////////////////////////////////////////
 // Lấy các định nghĩa của từ API Wordnik
@@ -208,7 +198,7 @@ func handle_vietnamese_map(definitions *[]WordDefinition, extractedWords *map[in
 		return classified
 	}
 
-	if err := wait_tool_complete(socketPath); err != nil {
+	if err := wait_tool_complete("./tmp/translation_complete.sock"); err != nil {
 		fmt.Println(err)
 		return classified
 	}
@@ -282,21 +272,21 @@ func read_translated_file() (map[string][]string, error) {
 }
 
 // Xuất ra các từ đã cấu trúc rồi
-func graft(words map[string][]string, extractedWords map[int]string) map[string]string {
-	result := make(map[string]string)
+func graft(words map[string][]string, extractedWords map[int]string) map[string][]string {
+	result := make(map[string][]string)
 
 	for pos, definitions := range words {
-		var formattedDefs strings.Builder
+		var formattedDefs []string
 
 		for _, def := range definitions {
 			if def != "" {
 				replacedDef := replace_numbers(def, extractedWords)
-				formattedDefs.WriteString(fmt.Sprintf("- %s\n", replacedDef))
+				formattedDefs = append(formattedDefs, replacedDef)
 			}
 		}
 
-		if formattedDefs.Len() > 0 {
-			result[pos] = strings.TrimSpace(formattedDefs.String())
+		if len(formattedDefs) > 0 {
+			result[pos] = formattedDefs
 		}
 	}
 
@@ -304,26 +294,53 @@ func graft(words map[string][]string, extractedWords map[int]string) map[string]
 }
 
 // Tổng hợp lại
-func define_word(word string) {
-	definitions, err := fetch_word_definitions(word)
-	if err != nil {
-		fmt.Printf("Lỗi khi lấy định nghĩa: %v\n", err)
-		return
-	}
+func define_word(word string) map[string][]string {
+    definitions, err := fetch_word_definitions(word)
+    if err != nil {
+        fmt.Printf("Lỗi khi lấy định nghĩa: %v\n", err)
+        return nil
+    }
 
-	var extractedWords map[int]string
-	words := handle_vietnamese_map(&definitions, &extractedWords)
+    var extractedWords map[int]string
+    words := handle_vietnamese_map(&definitions, &extractedWords)
 
-	result := graft(words, extractedWords)
+    graftedWords := graft(words, extractedWords)
 
-	fmt.Printf("Từ: %s\n\n", word)
-	isFirst := true
-	for pos, definitions := range result {
-		if !isFirst {
-			fmt.Println("-------------------------------------")
-		}
-		fmt.Printf("%s:\n%s\n", pos, definitions)
-		isFirst = false
-	}
+    result := make(map[string][]string)
+    for pos, defs := range graftedWords {
+        result[pos] = defs
+    }
+
+    result["Từ"] = []string{word}
+
+    fmt.Printf("Từ: %s\n\n", word)
+    print_definitions(result)
+
+    return result
 }
+
+func print_definitions(result map[string][]string) {
+    isFirst := true
+    for pos, definitions := range result {
+        if !isFirst {
+            fmt.Println("-------------------------------------")
+        }
+        fmt.Printf("%s:\n", pos)
+        for _, def := range definitions {
+            fmt.Printf("- %s\n", def)
+        }
+        isFirst = false
+    }
+}
+
+func result_definitions(word string) map[string][]string {
+	fmt.Println("Bắt đầu chương trình")
+
+	create_socket("./tmp/translation_complete.sock")
+	run_script("./translate/auto_translate.sh")
+
+	data := define_word(word)
+	return data
+}
+
 /////////////////////////////////////////////////////////////////////////////////////

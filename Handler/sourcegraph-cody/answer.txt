@@ -1,17 +1,18 @@
-Dữ liệu được đánh dấu: "Add prompt, automate questions for Cody"
-
-Đây là một cụm từ thuộc cấu trúc [từ loại]. Tôi sẽ phân tích nó theo cấu trúc yêu cầu:
-
 [Từ loại]:
-- Cụm động từ chỉ hành động thêm và tự động hóa
-+ Thêm prompt và tự động hóa các câu hỏi cho Cody
-+ Add prompts and automate questions for Cody
+- the
+- Mạo từ xác định: Từ được sử dụng trước danh từ để chỉ định một người, vật hoặc khái niệm cụ thể.
+- Định nghĩa: 
++ Được sử dụng trước danh từ số ít hoặc số nhiều và cụm danh từ biểu thị những người hoặc vật cụ thể, cụ thể.
++ Dùng để biểu thị tính duy nhất.
++ Được sử dụng trước một danh từ và thường được nhấn mạnh để nhấn mạnh một trong những nhóm hoặc loại là nổi bật hoặc nổi bật nhất.
++ Dùng trước danh từ chỉ hiện tượng tự nhiên hoặc các điểm của la bàn.
++ Ví dụ: Cuốn sách trên bàn là của tôi.
++ Ví dụ: The book on the table is mine.
 
-- Danh từ chỉ đối tượng được thêm và tự động hóa
-+ Prompt và câu hỏi được thêm và tự động hóa cho Cody
-+ Prompts and questions are added and automated for Cody
-
-- Danh từ riêng chỉ tên của AI assistant
-+ Cody là tên của trợ lý AI được đề cập
-+ Cody is the name of the AI assistant mentioned
+- Trạng từ: Từ dùng để bổ sung ý nghĩa cho động từ, tính từ hoặc trạng từ khác.
+- Định nghĩa:
++ Đến mức đó; chừng đó. Dùng trước so sánh hơn.
++ Ngoài bất kỳ khác.
++ Ví dụ: Tôi không nghĩ rằng anh ấy lại thông minh đến thế.
++ Ví dụ: I didn't think he was that smart.
 

@@ -1,27 +1,31 @@
 package main
 
 import (
-	
+	"bufio"
 	"fmt"
 )
 
-func add_data(data map[string]string) {
+func add_data(data map[string][]string) {
 	file, err := write_file("./sourcegraph-cody/data.txt")
 	if err != nil {
 		fmt.Println("Lỗi khi tạo file: ", err)
 	}
 	defer file.Close()
 
-	for key, value := range data {
-		_, err = file.WriteString(fmt.Sprintf("%s: %s\n", key, value))
-		if err != nil {
-			fmt.Println("Lỗi khi ghi vào file: ", err)
+	file.WriteString("&&&\n")
+	for key, values := range data {
+		file.WriteString(key + ":\n\n")
+		for _, value := range values {
+			file.WriteString("- " + value + "\n\n")
 		}
+		file.WriteString("-------------------------------------\n\n")
 	}
+	file.WriteString("&&&")
 }
 
+
 func add_model(model string)  {
-	file, err := write_file("./sourcegraph-cody/answer.txt")
+	file, err := write_file("./sourcegraph-cody/model.txt")
 	if err != nil {
 		fmt.Println("Lỗi khi tạo file: ", err)
 	}
@@ -34,22 +38,23 @@ func add_model(model string)  {
 
 }
 
-// func chat_cody(data map[string]string, model string, pathSocket string) string {
-// 	add_data(data)
-// 	add_model(model)
+func chat_cody(data map[string][]string, model string, pathSocket string) string {
+	add_data(data)
+	add_model(model)
 	
-// 	create_socket(pathSocket, "./sourcegraph-cody/cody.sh")
-// 	file, err := read_file("./sourcegraph-cody/answer.txt")
-// 	if err != nil {
-// 		fmt.Println("Lỗi khi đọc file: ", err)
-// 	}
-// 	defer file.Close()
+	create_socket(pathSocket)
+	run_script("./sourcegraph-cody/cody.sh")
 
-// 	scanner := bufio.NewScanner(file)
-// 	for scanner.Scan() {
-// 		answer := scanner.Text()
-// 		return answer
-// 	}
-// 	return ""
+	file, err := read_file("./sourcegraph-cody/answer.txt")
+	if err != nil {
+		fmt.Println("Lỗi khi đọc file: ", err)
+	}
+	defer file.Close()
 
-// }
+	scanner := bufio.NewScanner(file)
+	for scanner.Scan() {
+		answer := scanner.Text()
+		return answer
+	}
+	return ""
+}
