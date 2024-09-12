@@ -5,7 +5,6 @@ import (
 	"net"
 	"os"
 	"os/exec"
-	"time"
 )
 
 
@@ -14,7 +13,6 @@ func write_file(fileName string) (*os.File, error) {
 	if err != nil {
 		return nil, fmt.Errorf("lỗi khi tạo file: %v", err)
 	}
-	time.Sleep(100 * time.Millisecond) 
 	return file, nil
 }
 
