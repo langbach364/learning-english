@@ -5,7 +5,7 @@ import (
 	"net"
 	"os"
 	"os/exec"
-	"path/filepath"
+	"time"
 )
 
 
@@ -14,6 +14,7 @@ func write_file(fileName string) (*os.File, error) {
 	if err != nil {
 		return nil, fmt.Errorf("lỗi khi tạo file: %v", err)
 	}
+	time.Sleep(100 * time.Millisecond) 
 	return file, nil
 }
 
@@ -35,34 +36,15 @@ func run_script(scriptName string) {
 	}
 }
 
-// Đợi luồng công cụ xử lý
-func wait_tool_complete(socketPath string) error {
+func create_socket(socketPath string) error {
+    fmt.Printf("Đã tạo socket %s\n", socketPath)
     listener, err := net.Listen("unix", socketPath)
     if err != nil {
         return fmt.Errorf("lỗi khi tạo socket: %v", err)
     }
+	fmt.Println("Socket đã được tạo thành công")
     defer listener.Close()
 
-    conn, err := listener.Accept()
-    if err != nil {
-        return fmt.Errorf("lỗi khi chấp nhận kết nối: %v", err)
-    }
-    defer conn.Close()
-
-    buffer := make([]byte, 1024)
-    _, err = conn.Read(buffer)
-    if err != nil {
-        return fmt.Errorf("lỗi khi đọc từ socket: %v", err)
-    }
+	fmt.Println("Socket đã được tự động xóa khi đóng listener.Close")
     return nil
-}
-
-func create_socket(socketPath string) error {
-    tmpDir := filepath.Dir(socketPath)
-	os.MkdirAll(tmpDir, os.ModePerm)
-
-	if _, err := os.Stat(socketPath); err == nil {
-		os.Remove(socketPath)
-	}
-	return nil
 }

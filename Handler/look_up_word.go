@@ -181,6 +181,29 @@ func extract_and_replace(input string, extractedWords map[int]string, startCount
 	}), counter
 }
 
+// Đồng bộ giữa các bước ngăn tình trạng bất đồng bộ
+func execute_steps(classified map[string][]string, scriptName string) bool {
+	done := make(chan bool)
+
+	go func() {
+		if err := write_translation_file(classified); err != nil {
+			fmt.Println(err)
+			done <- false
+			return
+		}
+		done <- true
+	}()
+
+	if <-done {
+		go func() {
+			run_script(scriptName)
+			done <- true
+		}()
+	}
+
+	return <-done
+}
+
 /////////////////////////////////////////////////////////////////////////////////////
 
 // Hàm ghép các đoạn xử lý với bản muốn dịch
@@ -193,13 +216,9 @@ func handle_vietnamese_map(definitions *[]WordDefinition, extractedWords *map[in
 
 	process_untranslated(&classified, extractedWords)
 
-	if err := write_translation_file(classified); err != nil {
-		fmt.Println(err)
-		return classified
-	}
+	check := execute_steps(classified, "./translate/auto_translate.sh")
 
-	if err := wait_tool_complete("./tmp/translation_complete.sock"); err != nil {
-		fmt.Println(err)
+	if !check {
 		return classified
 	}
 
@@ -295,51 +314,50 @@ func graft(words map[string][]string, extractedWords map[int]string) map[string]
 
 // Tổng hợp lại
 func define_word(word string) map[string][]string {
-    definitions, err := fetch_word_definitions(word)
-    if err != nil {
-        fmt.Printf("Lỗi khi lấy định nghĩa: %v\n", err)
-        return nil
-    }
+	definitions, err := fetch_word_definitions(word)
+	if err != nil {
+		fmt.Printf("Lỗi khi lấy định nghĩa: %v\n", err)
+		return nil
+	}
 
-    var extractedWords map[int]string
-    words := handle_vietnamese_map(&definitions, &extractedWords)
+	var extractedWords map[int]string
+	words := handle_vietnamese_map(&definitions, &extractedWords)
 
-    graftedWords := graft(words, extractedWords)
+	graftedWords := graft(words, extractedWords)
 
-    result := make(map[string][]string)
-    for pos, defs := range graftedWords {
-        result[pos] = defs
-    }
+	result := make(map[string][]string)
+	for pos, defs := range graftedWords {
+		result[pos] = defs
+	}
 
-    result["Từ"] = []string{word}
+	result["Từ"] = []string{word}
 
-    fmt.Printf("Từ: %s\n\n", word)
-    print_definitions(result)
+	fmt.Printf("Từ: %s\n\n", word)
+	print_definitions(result)
 
-    return result
+	return result
 }
 
 func print_definitions(result map[string][]string) {
-    isFirst := true
-    for pos, definitions := range result {
-        if !isFirst {
-            fmt.Println("-------------------------------------")
-        }
-        fmt.Printf("%s:\n", pos)
-        for _, def := range definitions {
-            fmt.Printf("- %s\n", def)
-        }
-        isFirst = false
-    }
+	isFirst := true
+	for pos, definitions := range result {
+		if !isFirst {
+			fmt.Println("-------------------------------------")
+		}
+		fmt.Printf("%s:\n", pos)
+		for _, def := range definitions {
+			fmt.Printf("- %s\n", def)
+		}
+		isFirst = false
+	}
 }
 
 func result_definitions(word string) map[string][]string {
-	fmt.Println("Bắt đầu chương trình")
+	socketPath := "./tmp/translation_complete.sock"
 
-	create_socket("./tmp/translation_complete.sock")
-	run_script("./translate/auto_translate.sh")
-
+	create_socket(socketPath)
 	data := define_word(word)
+
 	return data
 }
 
