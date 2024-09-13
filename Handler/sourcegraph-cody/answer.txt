@@ -1,31 +1,18 @@
+Dữ liệu được đánh dấu &&& thuộc cấu trúc [Từ loại]. Tôi sẽ trả lời theo cấu trúc đó:
+
 [Từ loại]:
+- Từ: the
 
-- cat
-- Danh từ: Một loài động vật có vú ăn thịt nhỏ đã được thuần hóa (Felis catus), được nuôi như thú cưng và để bắt sâu bọ, và tồn tại ở nhiều giống khác nhau.
-+ Ví dụ: Con mèo đang nằm ngủ trên ghế sofa.
-+ Ví dụ: The cat is sleeping on the sofa.
+* Mạo từ xác định: 
+- Được sử dụng trước một danh từ và thường được nhấn mạnh để nhấn mạnh một trong những nhóm hoặc loại là nổi bật hoặc nổi bật nhất.
+- Được sử dụng trước danh từ số ít hoặc số nhiều và cụm danh từ biểu thị những người hoặc vật cụ thể, cụ thể.
+- Dùng để biểu thị tính duy nhất.
+- Dùng trước danh từ chỉ hiện tượng tự nhiên hoặc các điểm của la bàn.
 
-- Danh từ: Bất kỳ loài động vật có vú ăn thịt nào khác thuộc họ Felidae, bao gồm sư tử, hổ, báo và linh miêu.
-+ Ví dụ: Chúng tôi nhìn thấy một con báo đốm trong chuyến đi safari.
-+ Ví dụ: We saw a leopard during our safari trip.
+* Trạng từ:
+- Đến mức đó; chừng đó. Dùng trước so sánh hơn.
+- Ngoài bất kỳ khác.
 
-- Danh từ: Lông của mèo nhà.
-+ Ví dụ: Áo khoác của tôi phủ đầy lông mèo.
-+ Ví dụ: My coat is covered in cat hair.
-
-- Danh từ: Một người phụ nữ được coi là cay nghiệt.
-+ Ví dụ: Cô ấy thực sự là một con mèo cáu kỉnh trong cuộc họp hôm nay.
-+ Ví dụ: She was a real cat at the meeting today.
-
-- Động từ nội động từ: Kéo mỏ neo lên (the cathead).
-+ Ví dụ: Thủy thủ đoàn đang chuẩn bị cat neo để rời cảng.
-+ Ví dụ: The crew is preparing to cat the anchor to leave port.
-
-- Động từ nội động từ: Tìm kiếm bạn tình; có một mối quan hệ hoặc các vấn đề.
-+ Ví dụ: Anh ấy đã đi catting cả đêm ở các quán bar.
-+ Ví dụ: He went catting all night at the bars.
-
-- Thành ngữ: (let the cat out of the bag) Tiết lộ bí mật.
-+ Ví dụ: Đừng để lộ chuyện về bữa tiệc bất ngờ, đừng để lộ bí mật ra ngoài.
-+ Ví dụ: Don't reveal anything about the surprise party, don't let the cat out of the bag.
++ Ví dụ: Cuốn sách này là cuốn hay nhất trong thư viện.
++ Ví dụ: This is the best book in the library.
 

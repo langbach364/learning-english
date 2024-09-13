@@ -5,9 +5,8 @@ xác định dữ liệu đã được đánh dấu &&& và đưa ra là thuộc
 
 Cấu trúc: 
 [Từ loại]:
-- {Từ}
-- {Từ loại}: {định nghĩa} 
-- {Định nghĩa}: {Khái niệm}
+- {Từ}: {từ}
+* {Từ loại}: {định nghĩa} 
 + {Ví dụ}: {đúng khái niệm toàn bộ đều dùng bằng tiếng Việt} 
 + {Ví dụ}: {đúng khái niệm toàn bộ đều dùng bằng tiếng Anh} 
 => Mỗi một định nghĩa(tức là ký tự "-") sẽ tự xuống 1 dòng

@@ -1,8 +1,7 @@
-noun: 
-noun: A small domesticated carnivorous mammal (Felis catus), kept as a pet and as catcher of vermin, and existing in a variety of breeds.
-noun: Any of various other carnivorous mammals of the family Felidae, including the lion, tiger, leopard, and lynx.
-noun: The fur of a domestic cat.
-noun: A woman who is regarded as spiteful.
-intransitive verb: To hoist an anchor to (0).
-intransitive verb: To look for sexual partners; have an affair or affairs.
-idiom: (1)  To let a secret be known.
+definite article.: 
+definite article.: Used before singular or plural nouns and noun phrases that denote particular, specified persons or things.
+definite article.: Used before a noun, and generally stressed, to emphasize one of a group or type as the most outstanding or prominent.
+definite article.: Used to indicate uniqueness.
+definite article.: Used before nouns that designate natural phenomena or points of the compass.
+adverb: To that extent; by that much. Used before a comparative.
+adverb: Beyond any other.

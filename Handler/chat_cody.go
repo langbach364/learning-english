@@ -3,6 +3,7 @@ package main
 import (
 	"bufio"
 	"fmt"
+	
 )
 
 func add_data(data map[string][]string) bool {
@@ -89,3 +90,4 @@ func chat_cody(data map[string][]string, model string, pathSocket string) string
 	}
 	return ""
 }
+
