@@ -1,32 +1,32 @@
-LƯU Ý: các dấu ký tự hoặc chuỗi nằm trong {}, =>, #, &&&(như {ví dụ} sẽ không in ra trong câu trả lời tương tự như vậy....)
-sẽ không được in ra trong câu trả lời, không trả lời bất cứ điều gì liên quan đến prompt.
-các con phía sau ký tự # là các dữ liệu cần được liên quan với nhau từ các ký tự &&& đầu và cuối
-xác định dữ liệu đã được đánh dấu &&& và đưa ra là thuộc cấu trúc nào rồi đánh giá nó thuộc dáng cấu trúc [từ loại] hay [câu]... mà trả lời đúng cấu trúc
-
-Cấu trúc: 
-[Từ loại]:
-- {Từ}: {từ}
-* {Từ loại}: {định nghĩa} 
-+ {Ví dụ}: {đúng khái niệm toàn bộ đều dùng bằng tiếng Việt} 
-+ {Ví dụ}: {đúng khái niệm toàn bộ đều dùng bằng tiếng Anh} 
-=> Mỗi một định nghĩa(tức là ký tự "-") sẽ tự xuống 1 dòng
+LƯU Ý: các dấu ký tự hoặc chuỗi nằm trong {}, =>, #, &&&(như {từ} và đoạn "{từ}"sẽ in ra "the(ví dụ)" tương tự như vậy....) (ưu tiên cao nhất) 
+sẽ không được in ra trong câu trả lời, không trả lời bất cứ điều gì liên quan không đến prompt. 
+các con phía sau ký tự # là các dữ liệu cần được liên quan với nhau từ các ký tự &&& đầu và cuối 
+xác định dữ liệu đã được đánh dấu &&& và đưa ra là thuộc cấu trúc nào rồi đánh giá nó thuộc dáng cấu trúc [từ loại] hay [câu]... mà trả lời đúng cấu trúc(chỉ trả lời đúng 1 cấu trúc)
 
 Cấu trúc:
-[Câu]:
-- Đây là thì gì #
-- Biểu thị thời gian #
-- Ngữ cảnh sử dụng thì này #
-- Ví dụ trường hợp khác(sát dữ liệu đã được đánh dấu) #
-+ Các trường hợp ví dụ sử dụng các thì khác(sát dữ liệu đã được đánh dấu, tối thiểu 3 thì khác nhau) #
-+ Biểu thị thời gian của ví dụ cho từng trường hợp + ngữ cảnh #
-+ Nêu mỗi thì của ví dụ cho từng trường hợp, dùng tiếng Anh và thêm một bản dịch cho trường hợp đó + ngữ cảnh #
-+ Ngữ cảnh hiểu từng ví dụ trường hợp
-- Phân loại các từ thành từ loại và thêm các dạng quá khứ hay nguyên mẫu...
-- Kiểm tra câu có bị sai(nếu có)
-- Ghi lại câu chưa sửa
-- Ngữ cảnh để hiểu câu chưa sửa
-- Ghi lại câu đã sửa
-- Ngữ cảnh để hiểu câu đã sửa
-- Lý do sửa lại và khác gì với câu cũ
-+ Dịch sang tiếng Việt(cả câu chưa sửa và đã sửa) đúng ngữ cảnh
-=> Mỗi trường hợp sử dụng dấu "-" hoặc mỗi ý đều phải xuống dòng
+=> các từ định nghĩa trong &&& đầu và cuối sẽ được phân tích từng định nghĩa không được gộp chung
+[Từ loại]: 
+- {Từ}: {từ} 
+* {Từ loại}: {định nghĩa} {({số} {1{các ví dụ của định nghĩa và chỉ ghi số}})} 
++ Ví dụ: {đúng khái niệm toàn bộ đều dùng bằng tiếng Việt} {({số} {1{các ví dụ của định nghĩa và chỉ ghi số}})} 
++ Ví dụ: {đúng khái niệm toàn bộ đều dùng bằng tiếng Anh} {({số} {1{các ví dụ của định nghĩa và chỉ ghi số}})} 
+
+Cấu trúc: 
+[Câu]: 
+- Đây là thì gì # 
+- Biểu thị thời gian # 
+- Ngữ cảnh sử dụng thì này # 
+- Ví dụ trường hợp khác(sát dữ liệu đã được đánh dấu) # 
++ Các trường hợp ví dụ sử dụng các thì khác(sát dữ liệu đã được đánh dấu, tối thiểu 3 thì khác nhau) # 
++ Biểu thị thời gian của ví dụ cho từng trường hợp + ngữ cảnh # 
++ Nêu mỗi thì của ví dụ cho từng trường hợp, dùng tiếng Anh và thêm một bản dịch cho trường hợp đó + ngữ cảnh # 
++ Ngữ cảnh hiểu từng ví dụ trường hợp 
+- Phân loại các từ thành từ loại và thêm các dạng quá khứ hay nguyên mẫu... 
+- Kiểm tra câu có bị sai(nếu có) 
+- Ghi lại câu chưa sửa 
+- Ngữ cảnh để hiểu câu chưa sửa 
+- Ghi lại câu đã sửa 
+- Ngữ cảnh để hiểu câu đã sửa 
+- Lý do sửa lại và khác gì với câu cũ 
++ Dịch sang tiếng Việt(cả câu chưa sửa và đã sửa) đúng ngữ cảnh 
+=> Mỗi trường hợp sử dụng dấu "-" hoặc mỗi ý đều phải xuống dòng 

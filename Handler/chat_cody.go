@@ -3,7 +3,8 @@ package main
 import (
 	"bufio"
 	"fmt"
-	
+	"os"
+	"strings"
 )
 
 func add_data(data map[string][]string) bool {
@@ -26,7 +27,7 @@ func add_data(data map[string][]string) bool {
 	return true
 }
 
-func add_model(model string) bool{
+func add_model(model string) bool {
 	file, err := write_file("./sourcegraph-cody/model.txt")
 	if err != nil {
 		fmt.Println("Lỗi khi tạo file: ", err)
@@ -43,7 +44,7 @@ func add_model(model string) bool{
 	return true
 }
 
-func start_chat(data map[string][]string, model, scriptName string) bool{
+func start_chat(data map[string][]string, model, scriptName string) bool {
 	chan_data := make(chan bool)
 	chan_model := make(chan bool)
 
@@ -57,7 +58,7 @@ func start_chat(data map[string][]string, model, scriptName string) bool{
 	}()
 
 	go func() {
-		if(!add_model(model)) {
+		if !add_model(model) {
 			chan_model <- false
 			fmt.Println("Lỗi khi thêm model vào cody")
 			return
@@ -91,3 +92,47 @@ func chat_cody(data map[string][]string, model string, pathSocket string) string
 	return ""
 }
 
+func process_line(line string, data *WordData, currentType **WordType, currentDefinition **Definition) {
+	if len(line) == 0 {
+		return
+	}
+
+	content := strings.TrimSpace(line[1:])
+
+	switch line[0] {
+	case '-':
+		data.Word = content
+	case '*':
+		if *currentType == nil {
+			newType := WordType{Type: content}
+			data.Types = append(data.Types, newType)
+			*currentType = &data.Types[len(data.Types)-1]
+		} else {
+			newDefinition := Definition{Meaning: content}
+			(*currentType).Definitions = append((*currentType).Definitions, newDefinition)
+			*currentDefinition = &(*currentType).Definitions[len((*currentType).Definitions)-1]
+		}
+	case '+':
+		if *currentDefinition != nil {
+			(*currentDefinition).Examples = append((*currentDefinition).Examples, content)
+		}
+	}
+}
+
+func data_structure(pathFile *os.File) WordData {
+	scanner := bufio.NewScanner(pathFile)
+	var data WordData
+	var currentType *WordType
+	var currentDefinition *Definition
+
+	for scanner.Scan() {
+		line := scanner.Text()
+		process_line(line, &data, &currentType, &currentDefinition)
+	}
+
+	if err := scanner.Err(); err != nil {
+		fmt.Println("Lỗi khi đọc file:", err)
+	}
+
+	return data
+}
