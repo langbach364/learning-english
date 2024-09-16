@@ -18,3 +18,16 @@ type WordDefinition struct {
 	RelatedWords     []interface{} `json:"relatedWords"`     // Danh sách các từ có liên quan
 	TextProns        []interface{} `json:"textProns"`        // Danh sách các cách phát âm của từ được biểu diễn bằng văn bản
 }
+
+type AudioWord struct {
+	CommentCount    string `json:"commentCount"`    // Số lượng bình luận về file âm thanh
+	CreatedBy       string `json:"createdBy"`       // Người tạo file âm thanh
+	CreatedAt       string `json:"createdAt"`       // Thời gian tạo file âm thanh
+	ID              string `json:"id"`              // ID định danh duy nhất cho file âm thanh
+	Word            string `json:"word"`            // Từ được phát âm trong file âm thanh
+	Duration        string `json:"duration"`        // Thời lượng của file âm thanh
+	AudioType       string `json:"audioType"`       // Cách phát âm
+	AttributionText string `json:"attributionText"` // Văn bản ghi nhận nguồn của file âm thanh
+	AttributionUrl  string `json:"attributionUrl"`  // URL dẫn đến nguồn của file âm thanh
+	FileUrl         string `json:"fileUrl"`         // URL để tải xuống file âm thanh
+}

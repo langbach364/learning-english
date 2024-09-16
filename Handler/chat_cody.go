@@ -73,6 +73,7 @@ func start_chat(data map[string][]string, model, scriptName string) bool {
 	return false
 }
 
+
 func chat_cody(data map[string][]string, model string, pathSocket string) string {
 
 	create_socket(pathSocket)
@@ -81,6 +82,7 @@ func chat_cody(data map[string][]string, model string, pathSocket string) string
 	file, err := read_file("./sourcegraph-cody/answer.txt")
 	if err != nil {
 		fmt.Println("Lỗi khi đọc file: ", err)
+		return ""
 	}
 	defer file.Close()
 
@@ -90,8 +92,8 @@ func chat_cody(data map[string][]string, model string, pathSocket string) string
 		return answer
 	}
 	return ""
-}
 
+}
 func process_line(line string, data *WordData, currentType **WordType, currentDefinition **Definition) {
 	if len(line) == 0 {
 		return

@@ -1,70 +1,23 @@
-[Từ loại]: 
-- Từ: make 
-* Thành ngữ: Thú nhận trọn vẹn (1) 
-+ Ví dụ: Anh ấy đã thú nhận trọn vẹn mọi tội lỗi của mình. (1) 
-+ Ví dụ: She decided to make a clean breast of everything. (1) 
+[Từ loại]:
+- Từ: remake
 
-* Thành ngữ: Làm biến dạng nét mặt; nhăn nhó (2) 
-+ Ví dụ: Cô ấy làm biến dạng nét mặt khi thấy món ăn đó. (2) 
-+ Ví dụ: He made a face at the sour taste of the lemon. (2) 
+* Danh từ: 
+1. Hành động làm lại (1)
+2. Một cái gì đó ở dạng làm lại, đặc biệt là phiên bản mới của một bộ phim hoặc bài hát trước đó (2)
 
-* Thành ngữ: Để đạt được thành công trong (3) 
-+ Ví dụ: Họ đã đạt được thành công trong việc kinh doanh mới. (3) 
-+ Ví dụ: They managed to make a go of their new business. (3) 
++ Ví dụ: 
+1. Việc làm lại bộ phim cổ điển đó đã gây ra nhiều tranh cãi.
+2. Bản remake của bài hát "Hallelujah" đã trở nên nổi tiếng hơn cả phiên bản gốc.
 
-* Thành ngữ: Mang đi; ăn cắp (4) 
-+ Ví dụ: Kẻ trộm đã mang đi chiếc xe đạp của tôi. (4) 
-+ Ví dụ: The thief made away with my bicycle. (4) 
++ Example:
+1. The remake of that classic movie sparked a lot of controversy.
+2. The remake of the song "Hallelujah" became more popular than the original version.
 
-* Thành ngữ: Dùng hết hoặc tiêu thụ (5) 
-+ Ví dụ: Chúng tôi đã dùng hết toàn bộ thức ăn. (5) 
-+ Ví dụ: We made away with all the food. (5) 
+* Động từ chuyển tiếp: Làm lại hoặc làm mới (3)
 
-* Động từ nội động từ: Làm cho tồn tại hoặc xảy ra; mang lại; tạo nên (6) 
-+ Ví dụ: Cô ấy đã làm cho buổi tiệc trở nên thú vị. (6) 
-+ Ví dụ: She made the party enjoyable. (6) 
++ Ví dụ:
+3. Đạo diễn quyết định remake bộ phim kinh điển từ những năm 1980.
 
-* Động từ nội động từ: Tạo ra sự tồn tại bằng cách định hình, sửa đổi hoặc kết hợp các vật liệu; xây dựng (7) 
-+ Ví dụ: Anh ấy đã xây dựng một ngôi nhà từ gỗ. (7) 
-+ Ví dụ: He made a house out of wood. (7) 
-
-* Động từ nội động từ: Hình thành bằng cách tập hợp các cá nhân hoặc thành phần (8) 
-+ Ví dụ: Họ đã hình thành một đội bóng mạnh. (8) 
-+ Ví dụ: They made a strong football team. (8) 
-
-* Động từ nội động từ: Thay đổi từ dạng hoặc chức năng này sang dạng hoặc chức năng khác (9) 
-+ Ví dụ: Cô ấy đã thay đổi từ một giáo viên thành một nhà văn. (9) 
-+ Ví dụ: She made the transition from teacher to writer. (9) 
-
-* Danh từ: Phong cách hoặc cách thức mà một vật được tạo ra (10) 
-+ Ví dụ: Phong cách của chiếc váy này rất độc đáo. (10) 
-+ Ví dụ: The make of this dress is very unique. (10) 
-
-* Danh từ: Một dòng sản phẩm cụ thể được sản xuất, được xác định bằng tên của nhà sản xuất hoặc nhãn hiệu đã đăng ký (11) 
-+ Ví dụ: Đây là một dòng sản phẩm nổi tiếng của hãng. (11) 
-+ Ví dụ: This is a famous make of the brand. (11) 
-
-* Danh từ: Nguồn gốc sản xuất của sản phẩm (12) 
-+ Ví dụ: Nguồn gốc sản xuất của sản phẩm này là từ Nhật Bản. (12) 
-+ Ví dụ: The make of this product is from Japan. (12) 
-
-* Cụm động từ: Có hoặc tạo ra (một hiệu ứng hoặc kết quả cụ thể) (13) 
-+ Ví dụ: Cô ấy đã tạo ra một ấn tượng tốt. (13) 
-+ Ví dụ: She made a good impression. (13) 
-
-* Cụm động từ: Để giúp thúc đẩy; hơn nữa (14) 
-+ Ví dụ: Anh ấy đã giúp thúc đẩy dự án. (14) 
-+ Ví dụ: He made further progress on the project. (14) 
-
-* Cụm động từ: Khởi hành vội vàng; chạy đi (15) 
-+ Ví dụ: Họ đã khởi hành vội vàng khi nghe tin tức. (15) 
-+ Ví dụ: They made a quick departure upon hearing the news. (15) 
-
-* Cụm động từ: Để phân biệt hoặc nhìn thấy, đặc biệt là khi gặp khó khăn (16) 
-+ Ví dụ: Tôi không thể phân biệt được chữ viết của anh ấy. (16) 
-+ Ví dụ: I couldn't make out his handwriting. (16) 
-
-* Cụm động từ: Để hiểu (17) 
-+ Ví dụ: Tôi không thể hiểu được ý của anh ấy. (17) 
-+ Ví dụ: I couldn't make out his point. (17)
++ Example:
+3. The director decided to remake the classic film from the 1980s.
 
