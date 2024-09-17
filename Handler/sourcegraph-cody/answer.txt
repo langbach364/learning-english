@@ -1,23 +1,61 @@
-[Từ loại]:
-- Từ: remake
+[Câu]:
 
-* Danh từ: 
-1. Hành động làm lại (1)
-2. Một cái gì đó ở dạng làm lại, đặc biệt là phiên bản mới của một bộ phim hoặc bài hát trước đó (2)
+- Đây là thì hiện tại đơn
 
-+ Ví dụ: 
-1. Việc làm lại bộ phim cổ điển đó đã gây ra nhiều tranh cãi.
-2. Bản remake của bài hát "Hallelujah" đã trở nên nổi tiếng hơn cả phiên bản gốc.
+- Biểu thị thời gian hiện tại
 
-+ Example:
-1. The remake of that classic movie sparked a lot of controversy.
-2. The remake of the song "Hallelujah" became more popular than the original version.
+- Ngữ cảnh sử dụng thì này để diễn đạt tình cảm, cảm xúc hiện tại
 
-* Động từ chuyển tiếp: Làm lại hoặc làm mới (3)
+- Ví dụ trường hợp khác:
+I love chocolate.
+We love our family.
+She loves her job.
 
-+ Ví dụ:
-3. Đạo diễn quyết định remake bộ phim kinh điển từ những năm 1980.
++ Các trường hợp ví dụ sử dụng các thì khác:
+I loved you when we first met. (Quá khứ đơn)
+I have loved you since we met. (Hiện tại hoàn thành)
+I will always love you. (Tương lai đơn)
 
-+ Example:
-3. The director decided to remake the classic film from the 1980s.
++ Biểu thị thời gian của ví dụ cho từng trường hợp + ngữ cảnh:
+- Quá khứ đơn: Một thời điểm cụ thể trong quá khứ khi hai người gặp nhau lần đầu
+- Hiện tại hoàn thành: Từ lúc gặp nhau đến hiện tại và có thể tiếp tục trong tương lai
+- Tương lai đơn: Một cam kết về tình cảm trong tương lai
+
++ Nêu mỗi thì của ví dụ cho từng trường hợp, dùng tiếng Anh và thêm một bản dịch cho trường hợp đó + ngữ cảnh:
+- Past Simple: I loved you when we first met.
+Dịch: Tôi đã yêu em khi chúng ta gặp nhau lần đầu.
+Ngữ cảnh: Diễn tả tình cảm tại một thời điểm cụ thể trong quá khứ.
+
+- Present Perfect: I have loved you since we met.
+Dịch: Anh đã yêu em kể từ khi chúng ta gặp nhau.
+Ngữ cảnh: Diễn tả tình cảm bắt đầu từ quá khứ và kéo dài đến hiện tại.
+
+- Future Simple: I will always love you.
+Dịch: Anh sẽ luôn yêu em.
+Ngữ cảnh: Cam kết về tình cảm trong tương lai.
+
++ Ngữ cảnh hiểu từng ví dụ trường hợp:
+- Quá khứ đơn: Nhấn mạnh vào thời điểm bắt đầu của tình cảm
+- Hiện tại hoàn thành: Nhấn mạnh vào sự liên tục của tình cảm từ quá khứ đến hiện tại
+- Tương lai đơn: Nhấn mạnh vào sự cam kết và duy trì tình cảm trong tương lai
+
+- Phân loại các từ thành từ loại và thêm các dạng quá khứ hay nguyên mẫu:
+I (đại từ nhân xưng)
+love (động từ, nguyên mẫu: love, quá khứ: loved)
+you (đại từ nhân xưng)
+
+- Kiểm tra câu có bị sai: Câu không bị sai
+
+- Ghi lại câu chưa sửa: I love you
+
+- Ngữ cảnh để hiểu câu chưa sửa: Diễn đạt tình cảm yêu thương của người nói dành cho người nghe tại thời điểm hiện tại
+
+- Ghi lại câu đã sửa: Không cần sửa
+
+- Ngữ cảnh để hiểu câu đã sửa: Không áp dụng
+
+- Lý do sửa lại và khác gì với câu cũ: Không áp dụng
+
++ Dịch sang tiếng Việt đúng ngữ cảnh:
+- Câu chưa sửa: Tôi yêu bạn/em/anh (tùy vào mối quan hệ giữa người nói và người nghe)
 

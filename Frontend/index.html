@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Từ điển tiếng Anh</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles/main.css" />
+  </head>
+  <body class="bg-gray-100">
+    <div id="app">
+      <div class="container mx-auto p-4">
+        <h1 class="text-3xl font-bold mb-4">Từ điển tiếng Anh</h1>
+        <div v-if="currentWord">
+          <h2 class="text-2xl font-semibold mb-2">{{ currentWord }}</h2>
+          <div
+            v-for="(definitions, partOfSpeech) in groupedDefinitions"
+            :key="partOfSpeech"
+            class="mb-4"
+          >
+            <h3 class="text-xl font-semibold mb-2">{{ partOfSpeech }}</h3>
+            <table class="w-full bg-white shadow-md rounded-lg overflow-hidden">
+              <thead class="bg-blue-500 text-white">
+                <tr>
+                  <th class="py-2 px-4 text-left">Định nghĩa</th>
+                  <th class="py-2 px-4 text-left">Ví dụ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr
+                  v-for="(def, index) in definitions"
+                  :key="index"
+                  class="border-b"
+                >
+                  <td class="py-2 px-4">{{ def['Định nghĩa'] }}</td>
+                  <td class="py-2 px-4">
+                    <ul class="list-disc list-inside">
+                      <li v-for="(example, i) in def['Ví dụ']" :key="i">
+                        {{ example }}
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.2.31/dist/vue.global.js"></script>
+    <script type="module" src="src/components/get_definition.js"></script>
+    <script type="module" src="src/components/struct_definition.js"></script>
+    <script src="src/App.js"></script>
+    <script src="src/main.js"></script>
+  </body>
+</html>
