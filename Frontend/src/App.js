@@ -1,31 +1,19 @@
 const app = Vue.createApp({
-  data() {
+    data() {
       return {
-          definitions: {},
-          currentWord: ''
+        sentenceInfo: {}
       }
-  },
-  computed: {
-      groupedDefinitions() {
-          if (!this.currentWord) return {};
-          return this.definitions[this.currentWord].reduce((acc, def) => {
-              if (!acc[def['Từ loại']]) {
-                  acc[def['Từ loại']] = [];
-              }
-              acc[def['Từ loại']].push(def);
-              return acc;
-          }, {});
-      }
-  },
-  mounted() {
+    },
+    mounted() {
       fetch('../Handler/sourcegraph-cody/answer.txt')
-          .then(response => response.text())
-          .then(data => {
-              this.definitions = window.parseDefinitions(data);
-              this.currentWord = Object.keys(this.definitions)[0];
-          })
-          .catch(error => console.error('Error:', error));
-  }
-});
-
-app.mount('#app');
+        .then(response => response.text())
+        .then(data => {
+          const parsedData = window.parseDefinitions(data);
+          this.sentenceInfo = parsedData.sentence;
+        })
+        .catch(error => console.error('Error:', error));
+    }
+  });
+  
+  app.mount('#app');
+  

@@ -1,34 +1,57 @@
 function parseDefinitions(content) {
   const lines = content.split('\n');
-  const definitions = {};
+  const result = { sentence: {}, words: {} };
+  let currentSection = '';
   let currentWord = '';
-  let currentDefinition = {};
+  let currentType = '';
+  let inWordSection = false;
 
   lines.forEach(line => {
     line = line.trim();
-    if (line.startsWith('- Từ:')) {
-      currentWord = line.split(':')[1].trim();
-      definitions[currentWord] = [];
-    } else if (line.startsWith('*')) {
-      if (Object.keys(currentDefinition).length > 0) {
-        definitions[currentWord].push(currentDefinition);
+    if (line.startsWith('- Câu:')) {
+      inWordSection = false;
+      result.sentence['Câu gốc'] = line.substring(7).trim();
+    } else if (line.startsWith('[Từ loại]:')) {
+      inWordSection = true;
+    } else if (inWordSection && line.startsWith('- Từ:')) {
+      currentWord = line.substring(6).trim();
+    } else if (inWordSection && line.startsWith('*')) {
+      currentType = line.substring(1).split(':')[0].trim();
+      let definition = line.includes(':') ? line.split(':')[1].trim() : '';
+      if (!result.words[currentType]) {
+        result.words[currentType] = {};
       }
-      currentDefinition = {};
-      const [type, content] = line.substring(1).split(':').map(s => s.trim());
-      currentDefinition['Từ loại'] = type;
-      currentDefinition['Định nghĩa'] = content;
-      currentDefinition['Ví dụ'] = [];
-    } else if (line.startsWith('+')) {
-      const example = line.substring(1).split(':')[1].trim();
-      currentDefinition['Ví dụ'].push(example);
+      if (!result.words[currentType][currentWord]) {
+        result.words[currentType][currentWord] = [];
+      }
+      result.words[currentType][currentWord].push({
+        definition: definition,
+        examples: []
+      });
+    } else if (inWordSection && line.startsWith('+')) {
+      let lastDefinition = result.words[currentType][currentWord][result.words[currentType][currentWord].length - 1];
+      lastDefinition.examples.push(line.substring(1).trim());
+    } else if (!inWordSection) {
+      if (line.startsWith('*')) {
+        currentSection = line.substring(1).split(':')[0].trim();
+        result.sentence[currentSection] = line.includes(':') ? line.split(':')[1].trim() : [];
+      } else if (line.startsWith('+') || line.startsWith('-')) {
+        if (Array.isArray(result.sentence[currentSection])) {
+          result.sentence[currentSection].push(line.substring(1).trim());
+        } else {
+          result.sentence[currentSection] = [line.substring(1).trim()];
+        }
+      } else if (line && currentSection) {
+        if (typeof result.sentence[currentSection] === 'string') {
+          result.sentence[currentSection] += ' ' + line;
+        } else if (Array.isArray(result.sentence[currentSection])) {
+          result.sentence[currentSection][result.sentence[currentSection].length - 1] += ' ' + line;
+        }
+      }
     }
   });
 
-  if (Object.keys(currentDefinition).length > 0) {
-    definitions[currentWord].push(currentDefinition);
-  }
-
-  return definitions;
+  return result;
 }
 
 window.parseDefinitions = parseDefinitions;

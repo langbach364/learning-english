@@ -48,6 +48,7 @@ func check_text(text string) bool {
 
 func middleware_Word(filePath string) {
    fileChanged := make(chan bool)
+   var checkText string
    go watch_file(filePath, fileChanged)
 
    for range fileChanged {
@@ -61,12 +62,17 @@ func middleware_Word(filePath string) {
 
            scanner := bufio.NewScanner(file)
            var text string
+           
            for scanner.Scan() {
                text = scanner.Text()
            }
-           if text == "" {
+          
+
+           if text == "" || checkText == text{
                return
            }
+           
+           checkText = text
 
            if err := scanner.Err(); err != nil {
                log.Printf("Lỗi khi đọc file: %v", err)
@@ -79,7 +85,7 @@ func middleware_Word(filePath string) {
                data = result_definitions(text)
                fmt.Println(text)
            }
-           chat_cody(data, "anthropic/claude-3-5-sonnet-20240620", "./tmp/cody.sock")
+           chat_cody(data, "openai/gpt-4o", "./tmp/cody.sock")
        }()
    }
 }
