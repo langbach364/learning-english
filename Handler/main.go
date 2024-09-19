@@ -85,7 +85,7 @@ func middleware_Word(filePath string) {
                data = result_definitions(text)
                fmt.Println(text)
            }
-           chat_cody(data, "openai/gpt-4o", "./tmp/cody.sock")
+           chat_cody(data, "anthropic/claude-3-5-sonnet-20240620", "./tmp/cody.sock")
        }()
    }
 }

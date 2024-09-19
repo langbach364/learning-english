@@ -1,35 +1,28 @@
-[Câu]:
-- Câu: i blue color grass
-* Thì: Hiện tại đơn
-* Biểu thị thời gian: Hiện tại
-* Cách sử dụng thì: 
-  + Thời gian: Hiện tại
-  + Điều kiện: Mô tả sự thật hoặc thói quen
-* Phân loại các từ thành từ loại:
-  - i: Đại từ
-  - blue: Tính từ
-  - color: Danh từ
-  - grass: Danh từ
-* Phân loại các từ thành các dạng quá khứ hay tương lai:
-  - i: hiện tại
-  - blue: hiện tại
-  - color: hiện tại
-  - grass: hiện tại
-* Ví dụ sử dụng các dạng thì khác:
-  - I will color the grass blue. (Tương lai đơn)
-  - I am coloring the grass blue. (Hiện tại tiếp diễn)
-  - I colored the grass blue. (Quá khứ đơn)
-* Kiểm tra câu có bị sai: Có
-* Ghi lại câu chưa sửa: i blue color grass
-* Trường hợp hiểu câu chưa sửa: Tôi tô màu xanh cho cỏ
-* Ghi lại câu đã sửa: I color the grass blue.
-* Trường hợp hiểu câu đã sửa: Tôi tô màu xanh cho cỏ
-* Lý do sửa lại và khác gì với câu cũ: 
-  - Câu cũ thiếu mạo từ "the" trước "grass" và trật tự từ không đúng.
-  - Câu mới đã sửa lại trật tự từ và thêm mạo từ "the" để câu có nghĩa rõ ràng hơn.
-* Cấu trúc cú pháp hoặc cấu trúc ngữ pháp phải như thế nào là đúng: 
-  - Chủ ngữ + Động từ + Tân ngữ + Tính từ
-* Dịch sang tiếng Việt:
-  - Câu chưa sửa: tôi màu xanh cỏ
-  - Câu đã sửa: Tôi tô màu xanh cho cỏ
+[Từ loại]:
+
+- Từ: cat
+
+* Danh từ: Một loài động vật có vú ăn thịt nhỏ đã được thuần hóa (Felis catus), được nuôi như thú cưng và để bắt sâu bọ, và tồn tại ở nhiều giống khác nhau. (1)
++ Ví dụ: Con mèo đang nằm ngủ trên ghế sofa. (1)
++ Ví dụ: The cat is sleeping on the sofa. (1)
+
+* Danh từ: Bất kỳ loài động vật có vú ăn thịt nào khác thuộc họ Felidae, bao gồm sư tử, hổ, báo và linh miêu. (2)
++ Ví dụ: Chúng tôi nhìn thấy một con báo đốm trong chuyến đi safari. (2)
++ Ví dụ: We saw a leopard during our safari trip. (2)
+
+* Danh từ: Lông của mèo nhà. (3)
++ Ví dụ: Chiếc áo khoác của cô ấy phủ đầy lông mèo. (3)
++ Ví dụ: Her coat was covered in cat hair. (3)
+
+* Danh từ: Một người phụ nữ được coi là cay nghiệt. (4)
++ Ví dụ: Cô ta thực sự là một con mèo cáu kỉnh trong cuộc họp hôm nay. (4)
++ Ví dụ: She was a real cat at the meeting today. (4)
+
+* Động từ nội động từ: Kéo mỏ neo lên (the cathead). (5)
++ Ví dụ: Thủy thủ đoàn đang cat neo để chuẩn bị rời cảng. (5)
++ Ví dụ: The crew is catting the anchor to prepare for departure. (5)
+
+* Động từ nội động từ: Tìm kiếm bạn tình; có một mối quan hệ hoặc các vấn đề. (6)
++ Ví dụ: Anh ấy đang cat xung quanh thị trấn, hy vọng tìm được một mối quan hệ mới. (6)
++ Ví dụ: He's catting around town, hoping to find a new relationship. (6)
 
