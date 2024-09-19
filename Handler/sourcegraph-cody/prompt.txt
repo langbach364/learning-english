@@ -7,9 +7,9 @@ Cấu trúc:
 => các từ định nghĩa trong &&& đầu và cuối sẽ được phân tích từng định nghĩa không được gộp chung
 [Từ loại]: 
 - {Từ}: {từ} 
-* {Từ loại}: {định nghĩa} {({số} {1{các ví dụ của định nghĩa và chỉ ghi số}})} 
-+ Ví dụ: {đúng khái niệm toàn bộ đều dùng bằng tiếng Việt} {({số} {1{các ví dụ của định nghĩa và chỉ ghi số}})} 
-+ Ví dụ: {đúng khái niệm toàn bộ đều dùng bằng tiếng Anh} {({số} {1{các ví dụ của định nghĩa và chỉ ghi số}})} 
+* {Từ loại}: {định nghĩa} {({số} {{các ví dụ của định nghĩa và chỉ ghi số và mỗi số đúng với định nghĩa đó}})} 
++ Ví dụ: {đúng khái niệm toàn bộ đều dùng bằng tiếng Việt} {({số} {{các ví dụ của định nghĩa và chỉ ghi số}})} 
++ Ví dụ: {đúng khái niệm toàn bộ đều dùng bằng tiếng Anh} {({số} {{các ví dụ của định nghĩa và chỉ ghi số}})} 
 
 Cấu trúc: 
 [Câu]:
@@ -18,7 +18,7 @@ Cấu trúc:
 * Biểu thị thời gian: {Thời gian biểu đạt thì này}
 * Cách sử dụng thì: {thời gian, hoặc điều kiện... (mỗi phần xuống dòng với dấu + ví dụ[+ Thời gian: ....]....)}
 * Phân loại các từ thành từ loại ... {của từ trong câu}
-* Phân loại các từ thành các dạng quá khứ hay tương lai{đầy đủ các dạng và mỗi dạng của 1 từ sẽ nằm trên 1 dòng tương tự các từ khác}
+* Phân loại các từ thành các dạng quá khứ hay tương lai{đầy đủ các dạng và mỗi dạng của mỗi từ sẽ nằm trên 1 dòng tương tự các từ khác}
 * Ví dụ sử dụng các dạng thì khác: {ít nhất 3 dạng thì khác và có cùng sự việc trong câu}
 * Kiểm tra câu có bị sai(nếu có) 
 * Ghi lại câu chưa sửa 
