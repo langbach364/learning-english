@@ -1,27 +1,6 @@
-[Từ loại]:
-- Từ: cat
-
-* Danh từ: Một loài động vật có vú ăn thịt nhỏ đã được thuần hóa, thường được nuôi làm thú cưng hoặc để bắt chuột (1, 2, 3, 4)
-+ Ví dụ: Con mèo đang nằm trên ghế sofa (1)
-+ Example: The cat is sleeping on the windowsill (1)
-
-* Danh từ: Bất kỳ loài động vật có vú ăn thịt nào thuộc họ Felidae (2)
-+ Ví dụ: Sư tử là một loài mèo lớn sống ở châu Phi (2)
-+ Example: Tigers are the largest cats in the world (2)
-
-* Danh từ: Lông của mèo nhà (3)
-+ Ví dụ: Chiếc áo khoác này được làm từ lông mèo giả (3)
-+ Example: She's allergic to cat fur (3)
-
-* Danh từ: Một người phụ nữ được coi là cay nghiệt (4)
-+ Ví dụ: Cô ấy thực sự là một con mèo cáu kỉnh trong cuộc họp hôm nay (4)
-+ Example: Don't be such a catty gossip (4)
-
-* Động từ nội: Kéo mỏ neo lên (5)
-+ Ví dụ: Thủy thủ đoàn đang cat neo để chuẩn bị rời cảng (5)
-+ Example: They catted the anchor before setting sail (5)
-
-* Động từ nội: Tìm kiếm bạn tình; có một mối quan hệ hoặc các vấn đề (6)
-+ Ví dụ: Anh ấy đang cat xung quanh để tìm một người bạn gái mới (6)
-+ Example: She's been catting around town lately (6)
+[Từ loại]: 
+- Từ: gorotine 
+* Từ loại: danh từ 
++ Ví dụ: "Gorotine là một thuật ngữ trong lập trình Go." (1) 
++ Ví dụ: "The gorotine executed the task efficiently." (2)
 
