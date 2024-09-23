@@ -90,5 +90,7 @@ func middleware_Word(filePath string) {
 }
 
 func main() {
+	filePath := "../Middleware/word.txt"
+	go middleware_Word(filePath)
     create_server()
 }

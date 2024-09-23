@@ -28,7 +28,6 @@ func word_file(filePath string) http.HandlerFunc{
 				err = json.Unmarshal(body, &word)
 				check_err(err)
 
-				go middleware_Word(filePath)
 				wrFile, err := write_file(filePath)
 				check_err(err)
 				defer wrFile.Close()
@@ -65,7 +64,7 @@ func create_server() {
 	muxtiplexer_router(router)
 
 	server := http.Server{
-		Addr:    ":5050",
+		Addr:    ":7089",
 		Handler: enable_middleware_cors(router),
 	}
 	log.Fatal(server.ListenAndServe())

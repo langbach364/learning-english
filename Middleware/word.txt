@@ -1,1 +1,1 @@
-gorotine
+partition

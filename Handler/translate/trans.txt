@@ -1,4 +1,8 @@
-: 
-: 
-: 
-: 
+noun: 
+noun: The act or process of dividing something into parts.
+noun: The state of being so divided.
+noun: 
+noun: Something that divides or separates, as a wall dividing one room or cubicle from another.
+transitive verb: To divide into parts, pieces, or sections.
+transitive verb: To divide or separate by means of a partition.
+transitive verb: To divide (a country) into separate, autonomous nations.

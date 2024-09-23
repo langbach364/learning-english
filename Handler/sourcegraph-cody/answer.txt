@@ -1,6 +1,21 @@
 [Từ loại]: 
-- Từ: gorotine 
-* Từ loại: danh từ 
-+ Ví dụ: "Gorotine là một thuật ngữ trong lập trình Go." (1) 
-+ Ví dụ: "The gorotine executed the task efficiently." (2)
+- Từ: partition 
+* Danh từ: Hành động hoặc quá trình chia một cái gì đó thành nhiều phần. (1)
++ Ví dụ: Việc partition của căn phòng thành hai phần đã hoàn thành. (1)
++ Ví dụ: The partition of the room into two parts has been completed. (1)
+* Danh từ: Trạng thái bị chia cắt. (2)
++ Ví dụ: Sự partition của đất nước đã gây ra nhiều khó khăn. (2)
++ Ví dụ: The partition of the country caused many difficulties. (2)
+* Danh từ: Cái gì đó chia cắt hoặc ngăn cách, như một bức tường ngăn cách một căn phòng hoặc một căn phòng với một căn phòng khác. (3)
++ Ví dụ: Bức tường partition giữa hai phòng rất dày. (3)
++ Ví dụ: The partition wall between the two rooms is very thick. (3)
+* Động từ chuyển tiếp: Để chia thành các phần, phần hoặc phần. (4)
++ Ví dụ: Họ partition căn phòng thành ba phần. (4)
++ Ví dụ: They partitioned the room into three parts. (4)
+* Động từ chuyển tiếp: Để chia hoặc tách bằng cách phân vùng. (5)
++ Ví dụ: Cô ấy partition khu vực làm việc bằng các tấm ngăn. (5)
++ Ví dụ: She partitioned the work area with dividers. (5)
+* Động từ chuyển tiếp: Chia (một quốc gia) thành các quốc gia riêng biệt, tự trị. (6)
++ Ví dụ: Họ partition đất nước thành hai quốc gia riêng biệt. (6)
++ Ví dụ: They partitioned the country into two separate states. (6)
 
