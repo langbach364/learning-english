@@ -17,16 +17,71 @@
         <button @click="sendWordToServer" class="bg-blue-500 text-white p-2 ml-2">Gửi</button>
       </div>
 
+      <button @click="toggleScanning" class="bg-blue-500 text-white p-2 mb-2 flex items-center">
+        {{ isScanning ? 'Dừng quét' : 'Bắt đầu quét' }}
+        <span v-if="isScanning" class="ml-2 animate-pulse">🔍</span>
+      </button>
+
+      <div v-if="isScanning" class="text-green-600 mb-2">
+        Chế độ quét đang hoạt động. Hãy chọn từ trong câu gốc để xem định nghĩa.
+      </div>
+
       <div v-if="sentenceInfo" class="mb-8">
         <h2 class="text-2xl font-bold mb-2">Thông tin câu:</h2>
+        <div v-if="sentenceInfo['Câu gốc']" class="mb-4">
+          <h3 class="text-xl font-semibold mb-2">Câu gốc:</h3>
+          <div
+          @mousedown="startSelection"
+          @mousemove="updateSelection"
+          @mouseup="endSelection"
+          @click="handleClick"
+          class="original-sentence"
+        >
+          <span
+            v-for="(word, index) in sentenceInfo['Câu gốc'].split(' ')"
+            :key="index"
+            :class="{
+              'cursor-pointer': isScanning,
+              'bg-yellow-100': isScanning && highlightedWords.includes(word),
+              'word-span': true
+            }"
+            class="mr-1"
+          >
+            {{ word }}
+          </span>
+        </div
+        </div>
         <div v-for="(value, key) in sentenceInfo" :key="key" class="mb-4">
-          <h3 class="text-xl font-semibold mb-2">{{ key }}:</h3>
-          <div v-if="Array.isArray(value)">
-            <ul class="list-disc list-inside">
-              <li v-for="item in value">{{ item }}</li>
-            </ul>
+          <template v-if="key !== 'Câu gốc'">
+            <h3 class="text-xl font-semibold mb-2">{{ key }}:</h3>
+            <div v-if="Array.isArray(value)">
+              <ul class="list-disc list-inside">
+                <li v-for="item in value">{{ item }}</li>
+              </ul>
+            </div>
+            <div v-else>{{ value }}</div>
+          </template>
+        </div>
+      </div>
+
+      <div v-if="highlightedWords.length" class="fixed bg-white p-4 shadow-lg rounded-lg max-w-md" :style="{ top: tooltipPosition.y + 'px', left: tooltipPosition.x + 'px' }">
+        <h3 class="text-xl font-bold mb-2 tooltip-words">
+          {{ highlightedWords.join(' ') }}
+        </h3>
+        <div v-for="word in highlightedWords" :key="word">
+          <div v-for="(typeInfo, type) in wordsInfo" :key="type">
+            <div v-if="typeInfo[word]">
+              <h4 class="font-semibold text-blue-600">{{ type }}</h4>
+              <ul class="list-disc list-inside">
+                <li v-for="(definition, index) in typeInfo[word]" :key="index">
+                  {{ definition.definition }}
+                  <ul v-if="definition.examples.length" class="list-disc list-inside ml-4 text-gray-600">
+                    <li v-for="example in definition.examples" :key="example">{{ example }}</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div v-else>{{ value }}</div>
         </div>
       </div>
 

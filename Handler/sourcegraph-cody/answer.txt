@@ -1,54 +1,27 @@
-[Từ loại]: 
-- blue: blue 
-* Thành ngữ: Đến mức cực kỳ bực tức. (1)
-+ Ví dụ: Anh ấy đã tranh luận đến mức cực kỳ bực tức. (1)
-+ Ví dụ: He argued until he was blue in the face. (1)
-
-* Thành ngữ: Ở nơi xa; vào cái chưa biết. (2)
-+ Ví dụ: Họ đã đi vào nơi xa. (2)
-+ Ví dụ: They ventured into the blue. (2)
-
-* Thành ngữ: Từ một nguồn bất ngờ hoặc không lường trước được. (3)
-+ Ví dụ: Tin tức đến từ một nguồn bất ngờ. (3)
-+ Ví dụ: The news came out of the blue. (3)
-
-* Thành ngữ: Vào một thời điểm hoàn toàn bất ngờ. (4)
-+ Ví dụ: Anh ấy xuất hiện vào một thời điểm hoàn toàn bất ngờ. (4)
-+ Ví dụ: He showed up out of the blue. (4)
-
-* Danh từ: Màu sắc của phần quang phổ nhìn thấy được nằm giữa màu lục và màu chàm, được gợi lên ở người quan sát bởi năng lượng bức xạ có bước sóng khoảng 420 đến 490 nanomet; bất kỳ nhóm màu nào có thể khác nhau về độ sáng và độ bão hòa, có màu sắc giống như bầu trời ban ngày trong xanh; một trong những bầu cử sơ bộ phụ gia hoặc ánh sáng; một trong những màu sắc tâm lý cơ bản. (5)
-+ Ví dụ: Màu xanh của bầu trời rất đẹp. (5)
-+ Ví dụ: The blue of the sky is beautiful. (5)
-
-* Danh từ: Chất màu hoặc thuốc nhuộm mang lại màu sắc này. (6)
-+ Ví dụ: Họ sử dụng chất màu xanh để nhuộm vải. (6)
-+ Ví dụ: They use blue dye to color the fabric. (6)
-
-* Danh từ: Bluing. (7)
-+ Ví dụ: Bluing được sử dụng trong quá trình giặt ủi. (7)
-+ Ví dụ: Bluing is used in the laundry process. (7)
-
-* Tính từ: Thuộc màu xanh lam. (8)
-+ Ví dụ: Chiếc áo này có màu xanh lam. (8)
-+ Ví dụ: This shirt is blue. (8)
-
-* Tính từ: Hơi xanh hoặc có các bộ phận có màu xanh hoặc hơi xanh, như cây vân sam xanh và cá voi xanh. (9)
-+ Ví dụ: Cây vân sam xanh rất đẹp. (9)
-+ Ví dụ: The blue spruce is beautiful. (9)
-
-* Tính từ: Có màu xám hoặc tím, như do lạnh hoặc nhiễm trùng. (10)
-+ Ví dụ: Môi của anh ấy trở nên xanh vì lạnh. (10)
-+ Ví dụ: His lips turned blue from the cold. (10)
-
-* Tính từ: Mặc màu xanh. (11)
-+ Ví dụ: Cô ấy mặc một chiếc váy xanh. (11)
-+ Ví dụ: She is wearing a blue dress. (11)
-
-* Tính từ: Là một đường mòn, giống như môn trượt tuyết, được đánh dấu bằng một biển báo có hình vuông màu xanh lam, biểu thị mức độ khó trung bình. (12)
-+ Ví dụ: Đường trượt tuyết này được đánh dấu bằng biển báo xanh lam. (12)
-+ Ví dụ: This ski trail is marked with a blue sign. (12)
-
-* Động từ chuyển tiếp & nội động từ: Làm hoặc trở thành màu xanh. (13)
-+ Ví dụ: Nước trở nên xanh khi có tảo. (13)
-+ Ví dụ: The water turns blue when algae are present. (13)
+[Câu]:
+- Câu: the car
+* Thì: Hiện tại đơn
+* Biểu thị thời gian: Không xác định rõ ràng
+* Cách sử dụng thì:
+  + Thời gian: Không xác định rõ ràng
+* Phân loại các từ thành từ loại:
+  + the: mạo từ
+  + car: danh từ
+* Phân loại các từ thành các dạng quá khứ hay tương lai:
+  + the: không có dạng quá khứ hay tương lai
+  + car: không có dạng quá khứ hay tương lai
+* Ví dụ sử dụng các dạng thì khác:
+  + Quá khứ đơn: The car was new.
+  + Tương lai đơn: The car will be new.
+  + Hiện tại hoàn thành: The car has been new.
+* Kiểm tra câu có bị sai: Không
+* Ghi lại câu chưa sửa: the car
+* Trường hợp hiểu câu chưa sửa: Chiếc xe
+* Ghi lại câu đã sửa: Không cần sửa
+* Trường hợp hiểu câu đã sửa: Không cần sửa
+* Lý do sửa lại và khác gì với câu cũ: Không cần sửa
+* Cấu trúc cú pháp hoặc cấu trúc ngữ pháp phải như thế nào là đúng: Câu đúng cú pháp và ngữ pháp
+* Dịch sang tiếng Việt:
+  + Câu chưa sửa: chiếc xe
+  + Câu đã sửa: không cần sửa
 
