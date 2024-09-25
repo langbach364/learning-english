@@ -23,7 +23,7 @@
       </button>
 
       <div v-if="isScanning" class="text-green-600 mb-2">
-        Chế độ quét đang hoạt động. Hãy chọn từ trong câu gốc để xem định nghĩa.
+        Chế độ quét đang hoạt động. Hãy chọn từ trong câu để xem định nghĩa.
       </div>
 
       <div v-if="sentenceInfo" class="mb-8">
@@ -31,28 +31,51 @@
         <div v-if="sentenceInfo['Câu gốc']" class="mb-4">
           <h3 class="text-xl font-semibold mb-2">Câu gốc:</h3>
           <div
-          @mousedown="startSelection"
-          @mousemove="updateSelection"
-          @mouseup="endSelection"
-          @click="handleClick"
-          class="original-sentence"
-        >
-          <span
-            v-for="(word, index) in sentenceInfo['Câu gốc'].split(' ')"
-            :key="index"
-            :class="{
-              'cursor-pointer': isScanning,
-              'bg-yellow-100': isScanning && highlightedWords.includes(word),
-              'word-span': true
-            }"
-            class="mr-1"
+            @mousedown="startSelection($event, 'original')"
+            @mousemove="updateSelection($event, 'original')"
+            @mouseup="endSelection($event, 'original')"
+            @click="handleClick($event, 'original')"
+            class="original-sentence"
           >
-            {{ word }}
-          </span>
-        </div
+            <span
+              v-for="(word, index) in sentenceInfo['Câu gốc'].split(' ')"
+              :key="index"
+              :class="{
+                'cursor-pointer': isScanning,
+                'bg-yellow-100': isScanning && highlightedOriginalWords.includes(word),
+                'word-span': true
+              }"
+              class="mr-1"
+            >
+              {{ word }}
+            </span>
+          </div>
+        </div>
+        <div v-if="sentenceInfo['Ghi lại câu đã sửa']" class="mb-4">
+          <h3 class="text-xl font-semibold mb-2">Ghi lại câu đã sửa:</h3>
+          <div
+            @mousedown="startSelection($event, 'edited')"
+            @mousemove="updateSelection($event, 'edited')"
+            @mouseup="endSelection($event, 'edited')"
+            @click="handleClick($event, 'edited')"
+            class="edited-sentence"
+          >
+            <span
+              v-for="(word, index) in sentenceInfo['Ghi lại câu đã sửa'].split(' ')"
+              :key="index"
+              :class="{
+                'cursor-pointer': isScanning,
+                'bg-yellow-100': isScanning && highlightedEditedWords.includes(word),
+                'word-span': true
+              }"
+              class="mr-1"
+            >
+              {{ word }}
+            </span>
+          </div>
         </div>
         <div v-for="(value, key) in sentenceInfo" :key="key" class="mb-4">
-          <template v-if="key !== 'Câu gốc'">
+          <template v-if="key !== 'Câu gốc' && key !== 'Ghi lại câu đã sửa'">
             <h3 class="text-xl font-semibold mb-2">{{ key }}:</h3>
             <div v-if="Array.isArray(value)">
               <ul class="list-disc list-inside">
@@ -64,11 +87,11 @@
         </div>
       </div>
 
-      <div v-if="highlightedWords.length" class="fixed bg-white p-4 shadow-lg rounded-lg max-w-md" :style="{ top: tooltipPosition.y + 'px', left: tooltipPosition.x + 'px' }">
+      <div v-if="highlightedOriginalWords.length || highlightedEditedWords.length" class="fixed bg-white p-4 shadow-lg rounded-lg max-w-md" :style="{ top: tooltipPosition.y + 'px', left: tooltipPosition.x + 'px' }">
         <h3 class="text-xl font-bold mb-2 tooltip-words">
-          {{ highlightedWords.join(' ') }}
+          {{ (highlightedOriginalWords.length ? highlightedOriginalWords : highlightedEditedWords).join(' ') }}
         </h3>
-        <div v-for="word in highlightedWords" :key="word">
+        <div v-for="word in (highlightedOriginalWords.length ? highlightedOriginalWords : highlightedEditedWords)" :key="word">
           <div v-for="(typeInfo, type) in wordsInfo" :key="type">
             <div v-if="typeInfo[word]">
               <h4 class="font-semibold text-blue-600">{{ type }}</h4>

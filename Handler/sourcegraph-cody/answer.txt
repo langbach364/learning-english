@@ -1,27 +1,29 @@
 [Câu]:
-- Câu: the car
-* Thì: Hiện tại đơn
-* Biểu thị thời gian: Không xác định rõ ràng
+- Câu: got away it
+* Thì: Quá khứ đơn
+* Biểu thị thời gian: Quá khứ
 * Cách sử dụng thì:
-  + Thời gian: Không xác định rõ ràng
+  + Thời gian: Diễn tả hành động đã xảy ra và kết thúc trong quá khứ
 * Phân loại các từ thành từ loại:
-  + the: mạo từ
-  + car: danh từ
+  + got: động từ (quá khứ của "get")
+  + away: trạng từ
+  + it: đại từ
 * Phân loại các từ thành các dạng quá khứ hay tương lai:
-  + the: không có dạng quá khứ hay tương lai
-  + car: không có dạng quá khứ hay tương lai
+  + got: quá khứ
+  + away: không thay đổi
+  + it: không thay đổi
 * Ví dụ sử dụng các dạng thì khác:
-  + Quá khứ đơn: The car was new.
-  + Tương lai đơn: The car will be new.
-  + Hiện tại hoàn thành: The car has been new.
-* Kiểm tra câu có bị sai: Không
-* Ghi lại câu chưa sửa: the car
-* Trường hợp hiểu câu chưa sửa: Chiếc xe
-* Ghi lại câu đã sửa: Không cần sửa
-* Trường hợp hiểu câu đã sửa: Không cần sửa
-* Lý do sửa lại và khác gì với câu cũ: Không cần sửa
-* Cấu trúc cú pháp hoặc cấu trúc ngữ pháp phải như thế nào là đúng: Câu đúng cú pháp và ngữ pháp
+  + Hiện tại đơn: gets away it
+  + Hiện tại tiếp diễn: is getting away it
+  + Tương lai đơn: will get away it
+* Kiểm tra câu có bị sai: Có
+* Ghi lại câu chưa sửa: got away it
+* Trường hợp hiểu câu chưa sửa: Câu này không đúng cấu trúc ngữ pháp tiếng Anh
+* Ghi lại câu đã sửa: got away with it
+* Trường hợp hiểu câu đã sửa: Câu này có nghĩa là "đã thoát khỏi nó" hoặc "đã tránh được hậu quả của nó"
+* Lý do sửa lại và khác gì với câu cũ: Thêm "with" để đúng cấu trúc ngữ pháp của cụm động từ "get away with"
+* Cấu trúc cú pháp hoặc cấu trúc ngữ pháp phải như thế nào là đúng: Cần có giới từ "with" sau "get away" để tạo thành cụm động từ đúng
 * Dịch sang tiếng Việt:
-  + Câu chưa sửa: chiếc xe
-  + Câu đã sửa: không cần sửa
+  + Câu chưa sửa: đã thoát khỏi nó (sai ngữ pháp)
+  + Câu đã sửa: đã thoát khỏi nó (đúng ngữ pháp)
 
