@@ -1,6 +1,7 @@
 package main
 
 import (
+	"bufio"
 	"log"
 	"os"
 	"os/exec"
@@ -22,31 +23,6 @@ func delete_file(fileName string) {
 		log.Fatal(err)
 	}
 }
-
-// func check_word(text string) bool {
-//     words := strings.Fields(text)
-//         return len(words) == 1
-// }
-
-// func get_audio_word(text string) ([]AudioWord, error) {
-//     apiKey := load_API_key("API_wordnik")
-//     url := fmt.Sprintf("https://api.wordnik.com/v4/word.json/%s/audio?useCanonical=false&limit=50&api_key=%s", text, apiKey)
-
-//     resp, err := http.Get(url)
-// 	if err != nil {
-// 		return nil, fmt.Errorf("lỗi khi gửi yêu cầu: %v", err)
-// 	}
-// 	defer resp.Body.Close()
-//     var audioWord []AudioWord
-    
-//     decoder := json.NewDecoder(resp.Body)
-
-// 	if err := decoder.Decode(&audioWord); err != nil {
-// 		return nil, fmt.Errorf("lỗi khi giải mã JSON: %v", err)
-// 	}
-
-// 	return audioWord, nil
-// }
 
 func listen_word(text, name,language_code string) bool {
     speech := htgotts.Speech{
@@ -70,4 +46,23 @@ func listen_word(text, name,language_code string) bool {
 
     delete_file(filePath)
     return true
+}
+
+func get_data(name, language_code string) {
+    file, err := read_file("../Middleware/listen.txt")
+    check_err(err)
+
+    defer file.Close()
+
+    scanner := bufio.NewScanner(file)
+    var data string
+
+    for scanner.Scan() {
+        data = scanner.Text()
+    }
+
+    if data == "" {
+        return
+    }
+    listen_word(data, name, language_code)
 }

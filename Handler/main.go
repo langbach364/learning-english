@@ -89,8 +89,15 @@ func middleware_Word(filePath string) {
 	}
 }
 
+// func middleware_listen_word(filePath string) {
+// 	fileChanged := make(chan bool)
+// 	var checkText string
+// 	go watch_file(filePath, fileChanged)
+// }
+
 func main() {
-	filePath := "../Middleware/word.txt"
-	go middleware_Word(filePath)
-    create_server()
+	// filePath := "../Middleware/word.txt"
+	// go middleware_Word(filePath)
+    // create_server()
+	get_data("LangBach", "vi")
 }
