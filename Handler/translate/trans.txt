@@ -1,15 +1,8 @@
-idiom: (0)  At the point of extreme exasperation.
-idiom: (1)  At a far distance; into the unknown.
-idiom: (2)  From an unexpected or unforeseen source.
-idiom: (3)  At a completely unexpected time.
-noun: The hue of that portion of the visible spectrum lying between green and indigo, evoked in the human observer by radiant energy with wavelengths of approximately 420 to 490 nanometers; any of a group of colors that may vary in lightness and saturation, whose hue is that of a clear daytime sky; one of the additive or light primaries; one of the psychological primary hues.
+intransitive verb: To hoist an anchor to (0).
+intransitive verb: To look for sexual partners; have an affair or affairs.
+idiom: (1)  To let a secret be known.
 noun: 
-noun: A pigment or dye imparting this hue.
-noun: Bluing.
-noun: 
-adjective: Of the color blue.
-adjective: Bluish or having parts that are blue or bluish, as the blue spruce and the blue whale.
-adjective: Having a gray or purplish color, as from cold or contusion.
-adjective: Wearing blue.
-adjective: Being a trail, as for skiing, marked with a sign having a blue square, indicating an intermediate level of difficulty.
-transitive & intransitive verb : To make or become blue.
+noun: A small domesticated carnivorous mammal (Felis catus), kept as a pet and as catcher of vermin, and existing in a variety of breeds.
+noun: Any of various other carnivorous mammals of the family Felidae, including the lion, tiger, leopard, and lynx.
+noun: The fur of a domestic cat.
+noun: A woman who is regarded as spiteful.

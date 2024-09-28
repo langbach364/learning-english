@@ -91,11 +91,10 @@ func middleware_Word(filePath string) {
 
 func middleware_listen_word(filePath string) {
 	fileChanged := make(chan bool)
-	var checkText string
 	go watch_file(filePath, fileChanged)
 
 	for range fileChanged {
-		go func() {
+		func() {
 			file, err := os.Open(filePath)
 			if err != nil {
 				log.Printf("Không thể mở file: %v", err)
@@ -109,14 +108,12 @@ func middleware_listen_word(filePath string) {
 				text = scanner.Text()
 			}
 
-			if text == "" || checkText == text {
+			if text == "" {
 				return
 			}
-			checkText = text
 
-			if check_text(text) {
-				get_data("LangBach", "en")
-			}
+			get_data("LangBach", "en")
+			
 		}()
 	}
 }

@@ -21,9 +21,8 @@ const app = Vue.createApp({
         },
         body: JSON.stringify({ data: this.newWord }),
       })
-        .then((response) => response.json())
-        .then((data) => {
-          console.log("Success:", data);
+        .then(() => {
+          console.log("Success");
           this.newWord = "";
           this.fetchDefinitions();
         })
@@ -48,7 +47,10 @@ const app = Vue.createApp({
     startSelection(event, type) {
       if (!this.isScanning) return;
       event.preventDefault();
+      event.stopPropagation();
       this.selectionStart = event.target;
+      this.selectionEnd = event.target;
+
       if (type === 'original') {
         this.highlightedOriginalWords = [event.target.textContent.trim()];
         this.highlightedEditedWords = [];
@@ -61,14 +63,35 @@ const app = Vue.createApp({
     updateSelection(event, type) {
       if (!this.isScanning || !this.selectionStart) return;
       event.preventDefault();
+      event.stopPropagation();
       this.selectionEnd = event.target;
       this.highlightSelection(type);
     },
     endSelection(event, type) {
       if (!this.isScanning) return;
       event.preventDefault();
+      event.stopPropagation();
+
+      const selectedWords = type === 'original' ? this.highlightedOriginalWords : this.highlightedEditedWords;
+      if (selectedWords.length > 0) {
+        this.sendScannedWordsToServer(selectedWords);
+      }
+
       this.selectionStart = null;
       this.selectionEnd = null;
+    },
+    sendScannedWordsToServer(words) {
+      fetch("http://localhost:7089/listen_word", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ data: words.join(' ') }),
+      })
+        .then(() => {
+          console.log("Success");
+        })
+        .catch((error) => console.error("Error:", error));
     },
     highlightSelection(type) {
       if (!this.isScanning || !this.selectionStart || !this.selectionEnd) return;
@@ -104,6 +127,9 @@ const app = Vue.createApp({
     },
     handleClick(event, type) {
       if (!this.isScanning) return;
+      event.preventDefault();
+      event.stopPropagation();
+
       if (event.target.classList.contains("word-span")) {
         const clickedWord = event.target.textContent.trim();
         if (type === 'original') {
@@ -114,6 +140,8 @@ const app = Vue.createApp({
           this.highlightedOriginalWords = [];
         }
         this.updateTooltipPosition(event.target);
+
+        this.sendScannedWordsToServer([clickedWord]);
       } else if (event.target.classList.contains("original-sentence") || event.target.classList.contains("edited-sentence")) {
         if (type === 'original') {
           this.highlightedOriginalWords = this.sentenceInfo["Câu gốc"].split(" ");
@@ -123,6 +151,9 @@ const app = Vue.createApp({
           this.highlightedOriginalWords = [];
         }
         this.updateTooltipPosition(event.target);
+
+        const fullSentenceWords = this.highlightedOriginalWords.length > 0 ? this.highlightedOriginalWords : this.highlightedEditedWords;
+        this.sendScannedWordsToServer(fullSentenceWords);
       } else {
         this.highlightedOriginalWords = [];
         this.highlightedEditedWords = [];
