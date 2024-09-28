@@ -89,15 +89,41 @@ func middleware_Word(filePath string) {
 	}
 }
 
-// func middleware_listen_word(filePath string) {
-// 	fileChanged := make(chan bool)
-// 	var checkText string
-// 	go watch_file(filePath, fileChanged)
-// }
+func middleware_listen_word(filePath string) {
+	fileChanged := make(chan bool)
+	var checkText string
+	go watch_file(filePath, fileChanged)
+
+	for range fileChanged {
+		go func() {
+			file, err := os.Open(filePath)
+			if err != nil {
+				log.Printf("Không thể mở file: %v", err)
+				return
+			}
+			defer file.Close()
+
+			scanner := bufio.NewScanner(file)
+			var text string
+			for scanner.Scan() {
+				text = scanner.Text()
+			}
+
+			if text == "" || checkText == text {
+				return
+			}
+			checkText = text
+
+			if check_text(text) {
+				get_data("LangBach", "en")
+			}
+		}()
+	}
+}
 
 func main() {
-	// filePath := "../Middleware/word.txt"
-	// go middleware_Word(filePath)
-    // create_server()
-	get_data("LangBach", "vi")
+	data := path_file()
+	go middleware_Word(data["word"])
+	go middleware_listen_word(data["listen_word"])
+    create_server()
 }

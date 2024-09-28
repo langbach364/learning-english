@@ -60,9 +60,6 @@ func get_data(name, language_code string) {
     for scanner.Scan() {
         data = scanner.Text()
     }
-
-    if data == "" {
-        return
-    }
+    
     listen_word(data, name, language_code)
 }

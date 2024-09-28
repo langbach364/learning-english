@@ -1,20 +1,15 @@
-intransitive verb: 
-intransitive verb: To come into possession or use of; receive.
-intransitive verb: To meet with or incur.
-intransitive verb: 
-intransitive verb: To go after and obtain.
-noun: Progeny; offspring.
-noun: A foolish or contemptible person.
-noun: A return, as in tennis, on a shot that seems impossible to reach.
-noun: A document presented by a husband to his wife whereby a divorce is effected between them according to Jewish religious law.
-noun: A divorce effected by a get.
-phrasal verb: To make understandable or clear.
-phrasal verb: To be convincing or understandable.
-phrasal verb: To urge or scold.
-phrasal verb: To improve one's situation; be successful.
-phrasal verb: To be or continue to be on harmonious terms.
-idiom: (0)  To find the time or occasion for; deal with.
-idiom: (1)  To escape the consequences of (2).
-idiom: (3)  To take revenge on.
-idiom: (4)  To begin to work; get started.
-idiom: (5)  To obtain revenge.
+idiom: (0)  At the point of extreme exasperation.
+idiom: (1)  At a far distance; into the unknown.
+idiom: (2)  From an unexpected or unforeseen source.
+idiom: (3)  At a completely unexpected time.
+noun: The hue of that portion of the visible spectrum lying between green and indigo, evoked in the human observer by radiant energy with wavelengths of approximately 420 to 490 nanometers; any of a group of colors that may vary in lightness and saturation, whose hue is that of a clear daytime sky; one of the additive or light primaries; one of the psychological primary hues.
+noun: 
+noun: A pigment or dye imparting this hue.
+noun: Bluing.
+noun: 
+adjective: Of the color blue.
+adjective: Bluish or having parts that are blue or bluish, as the blue spruce and the blue whale.
+adjective: Having a gray or purplish color, as from cold or contusion.
+adjective: Wearing blue.
+adjective: Being a trail, as for skiing, marked with a sign having a blue square, indicating an intermediate level of difficulty.
+transitive & intransitive verb : To make or become blue.

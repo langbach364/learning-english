@@ -1,29 +1,20 @@
-[Câu]:
-- Câu: got away it
-* Thì: Quá khứ đơn
-* Biểu thị thời gian: Quá khứ
-* Cách sử dụng thì:
-  + Thời gian: Diễn tả hành động đã xảy ra và kết thúc trong quá khứ
-* Phân loại các từ thành từ loại:
-  + got: động từ (quá khứ của "get")
-  + away: trạng từ
-  + it: đại từ
-* Phân loại các từ thành các dạng quá khứ hay tương lai:
-  + got: quá khứ
-  + away: không thay đổi
-  + it: không thay đổi
-* Ví dụ sử dụng các dạng thì khác:
-  + Hiện tại đơn: gets away it
-  + Hiện tại tiếp diễn: is getting away it
-  + Tương lai đơn: will get away it
-* Kiểm tra câu có bị sai: Có
-* Ghi lại câu chưa sửa: got away it
-* Trường hợp hiểu câu chưa sửa: Câu này không đúng cấu trúc ngữ pháp tiếng Anh
-* Ghi lại câu đã sửa: got away with it
-* Trường hợp hiểu câu đã sửa: Câu này có nghĩa là "đã thoát khỏi nó" hoặc "đã tránh được hậu quả của nó"
-* Lý do sửa lại và khác gì với câu cũ: Thêm "with" để đúng cấu trúc ngữ pháp của cụm động từ "get away with"
-* Cấu trúc cú pháp hoặc cấu trúc ngữ pháp phải như thế nào là đúng: Cần có giới từ "with" sau "get away" để tạo thành cụm động từ đúng
-* Dịch sang tiếng Việt:
-  + Câu chưa sửa: đã thoát khỏi nó (sai ngữ pháp)
-  + Câu đã sửa: đã thoát khỏi nó (đúng ngữ pháp)
+[Từ loại]: 
+- Từ: blue 
+* Tính từ: 
+  - Thuộc màu xanh lam. 
+  - Hơi xanh hoặc có các bộ phận có màu xanh hoặc hơi xanh, như cây vân sam xanh và cá voi xanh. 
+  - Có màu xám hoặc tía, như do bị lạnh hoặc bị giập. 
+  - Mặc màu xanh. 
+  - Là đường mòn, giống như môn trượt tuyết, được đánh dấu bằng một biển báo có hình vuông màu xanh lam, biểu thị mức độ khó trung bình. 
+* Động từ chuyển tiếp & nội động từ: 
+  - Làm hoặc trở thành màu xanh. 
+* Thành ngữ: 
+  - (blue in the face) Đến mức cực kỳ bực tức. 
+  - (into the blue) Ở nơi xa; vào cái chưa biết. 
+  - (out of the blue) Từ một nguồn bất ngờ hoặc không lường trước được. 
+  - (out of the blue) Vào một thời điểm hoàn toàn bất ngờ. 
+* Danh từ: 
+  - Màu sắc của phần quang phổ nhìn thấy được nằm giữa màu lục và màu chàm, được gợi lên ở người quan sát bởi năng lượng bức xạ có bước sóng khoảng 420 đến 490 nanomet; bất kỳ nhóm màu nào có thể khác nhau về độ sáng và độ bão hòa, có màu sắc giống như bầu trời ban ngày trong xanh; một trong những bầu cử sơ bộ phụ gia hoặc ánh sáng; một trong những màu sắc tâm lý cơ bản. 
+  - Chất màu hoặc thuốc nhuộm mang lại màu sắc này. 
+  - Bluing.
 
