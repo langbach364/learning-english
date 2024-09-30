@@ -1,30 +1,36 @@
 [Câu]:
-- Câu: the blue cat
+- Câu: who want sheriff
 * Thì: Hiện tại đơn
-* Biểu thị thời gian: Không xác định thời gian cụ thể
-* Cách sử dụng thì: 
-  + Thời gian: Không xác định
-  + Điều kiện: Không xác định
+* Biểu thị thời gian: Hiện tại
+* Cách sử dụng thì:
+  + Thời gian: Hiện tại
+  + Điều kiện: Sự việc đang diễn ra hoặc thói quen
 * Phân loại các từ thành từ loại:
-  + the: Mạo từ
-  + blue: Tính từ
-  + cat: Danh từ
+  + who: đại từ quan hệ
+  + want: động từ
+  + sheriff: danh từ
 * Phân loại các từ thành các dạng quá khứ hay tương lai:
-  + the: Không có dạng quá khứ hay tương lai
-  + blue: Không có dạng quá khứ hay tương lai
-  + cat: Không có dạng quá khứ hay tương lai
+  + who: không có dạng quá khứ hay tương lai
+  + want: 
+    - Quá khứ: wanted
+    - Tương lai: will want
+  + sheriff: không có dạng quá khứ hay tương lai
 * Ví dụ sử dụng các dạng thì khác:
-  + The cat was blue. (Quá khứ đơn)
-  + The cat will be blue. (Tương lai đơn)
-  + The cat is being blue. (Hiện tại tiếp diễn)
-* Kiểm tra câu có bị sai: Không
-* Ghi lại câu chưa sửa: the blue cat
-* Trường hợp hiểu câu chưa sửa: Con mèo màu xanh
-* Ghi lại câu đã sửa: Không cần sửa
-* Trường hợp hiểu câu đã sửa: Không cần sửa
-* Lý do sửa lại và khác gì với câu cũ: Không cần sửa
-* Cấu trúc cú pháp hoặc cấu trúc ngữ pháp phải như thế nào là đúng: Câu đúng cú pháp và ngữ pháp
+  + Quá khứ đơn: Who wanted sheriff?
+  + Tương lai đơn: Who will want sheriff?
+  + Hiện tại hoàn thành: Who has wanted sheriff?
+* Kiểm tra câu có bị sai: Có
+* Ghi lại câu chưa sửa: who want sheriff
+* Trường hợp hiểu câu chưa sửa: Ai muốn cảnh sát trưởng
+* Ghi lại câu đã sửa: Who wants the sheriff?
+* Trường hợp hiểu câu đã sửa: Ai muốn cảnh sát trưởng?
+* Lý do sửa lại và khác gì với câu cũ: 
+  + Sửa "want" thành "wants" để phù hợp với chủ ngữ "who" trong câu hỏi hiện tại đơn.
+  + Thêm "the" trước "sheriff" để câu rõ nghĩa hơn.
+* Cấu trúc cú pháp hoặc cấu trúc ngữ pháp phải như thế nào là đúng: 
+  + Câu hỏi trong thì hiện tại đơn với đại từ quan hệ "who" cần động từ chia ở ngôi thứ ba số ít.
+  + Thêm mạo từ "the" trước danh từ "sheriff" để chỉ rõ đối tượng.
 * Dịch sang tiếng Việt:
-  + Câu chưa sửa: Con mèo màu xanh
-  + Câu đã sửa: Không cần sửa
+  + Câu chưa sửa: Ai muốn cảnh sát trưởng
+  + Câu đã sửa: Ai muốn cảnh sát trưởng?
 

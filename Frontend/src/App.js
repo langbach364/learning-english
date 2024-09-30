@@ -10,10 +10,15 @@ const app = Vue.createApp({
       isScanning: false,
       selectionStart: null,
       selectionEnd: null,
+      suppressClickHandler: false,
+      isSending: false,
     };
   },
   methods: {
     sendWordToServer() {
+      if (this.newWord.trim() === "") return;
+
+      this.isSending = true;
       fetch("http://localhost:7089/word", {
         method: "POST",
         headers: {
@@ -22,27 +27,33 @@ const app = Vue.createApp({
         body: JSON.stringify({ data: this.newWord }),
       })
         .then(() => {
-          console.log("Success");
+          console.log("Word sent successfully");
           this.newWord = "";
           this.fetchDefinitions();
         })
-        .catch((error) => console.error("Error:", error));
+        .catch((error) => console.error("Error sending word:", error))
+        .finally(() => {
+          this.isSending = false;
+        });
     },
     fetchDefinitions() {
+      console.log("Fetching definitions...");
       fetch("../Handler/sourcegraph-cody/answer.txt")
         .then((response) => response.text())
         .then((data) => {
           const parsedData = window.parseDefinitions(data);
           this.sentenceInfo = parsedData.sentence;
           this.wordsInfo = parsedData.words;
+          console.log("Definitions fetched and parsed");
         })
-        .catch((error) => console.error("Error:", error));
+        .catch((error) => console.error("Error fetching definitions:", error));
     },
     toggleScanning() {
       this.isScanning = !this.isScanning;
       if (!this.isScanning) {
         this.clearHighlight();
       }
+      console.log("Scanning mode:", this.isScanning ? "ON" : "OFF");
     },
     startSelection(event, type) {
       if (!this.isScanning) return;
@@ -51,11 +62,12 @@ const app = Vue.createApp({
       this.selectionStart = event.target;
       this.selectionEnd = event.target;
 
+      const word = event.target.textContent.trim();
       if (type === 'original') {
-        this.highlightedOriginalWords = [event.target.textContent.trim()];
+        this.highlightedOriginalWords = [word];
         this.highlightedEditedWords = [];
       } else {
-        this.highlightedEditedWords = [event.target.textContent.trim()];
+        this.highlightedEditedWords = [word];
         this.highlightedOriginalWords = [];
       }
       this.updateTooltipPosition(event.target);
@@ -75,12 +87,15 @@ const app = Vue.createApp({
       const selectedWords = type === 'original' ? this.highlightedOriginalWords : this.highlightedEditedWords;
       if (selectedWords.length > 0) {
         this.sendScannedWordsToServer(selectedWords);
+        this.suppressClickHandler = true;
       }
 
       this.selectionStart = null;
       this.selectionEnd = null;
     },
     sendScannedWordsToServer(words) {
+      if (this.isSending) return;
+      this.isSending = true;
       fetch("http://localhost:7089/listen_word", {
         method: "POST",
         headers: {
@@ -89,9 +104,12 @@ const app = Vue.createApp({
         body: JSON.stringify({ data: words.join(' ') }),
       })
         .then(() => {
-          console.log("Success");
+          console.log("Scanned words sent successfully");
         })
-        .catch((error) => console.error("Error:", error));
+        .catch((error) => console.error("Error sending scanned words:", error))
+        .finally(() => {
+          this.isSending = false;
+        });
     },
     highlightSelection(type) {
       if (!this.isScanning || !this.selectionStart || !this.selectionEnd) return;
@@ -126,6 +144,11 @@ const app = Vue.createApp({
       this.selectionEnd = null;
     },
     handleClick(event, type) {
+      if (this.suppressClickHandler) {
+        this.suppressClickHandler = false;
+        return;
+      }
+
       if (!this.isScanning) return;
       event.preventDefault();
       event.stopPropagation();
@@ -169,6 +192,7 @@ const app = Vue.createApp({
   },
   mounted() {
     this.fetchDefinitions();
+    console.log("App mounted");
   },
 });
 

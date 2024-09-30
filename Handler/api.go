@@ -42,32 +42,6 @@ func word_file(filePath string) http.HandlerFunc {
 	}
 }
 
-func listen_word_file(filePath string) http.HandlerFunc {
-	return func(w http.ResponseWriter, r *http.Request) {
-		switch r.Method {
-		case "POST":
-			{
-				body, err := io.ReadAll(r.Body)
-				check_err(err)
-
-				var word Word
-				err = json.Unmarshal(body, &word)
-				check_err(err)
-
-				wr, err := write_file(filePath)
-				check_err(err)
-				defer wr.Close()
-
-				_, err = wr.WriteString(word.Data)
-				fmt.Println("Từ đã được in trong file")
-				check_err(err)
-			}
-		default:
-			fmt.Println("Method không được sử dụng")
-		}
-	}
-}
-
 func enable_middleware_cors(next http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		Cors := cors.New(cors.Options{
@@ -91,7 +65,7 @@ func path_file() map[string]string {
 func muxtiplexer_router(router *http.ServeMux) {
 	data := path_file()
 	router.HandleFunc("/word", word_file(data["word"]))
-	router.HandleFunc("/listen_word", listen_word_file(data["listen_word"]))
+	router.HandleFunc("/listen_word", word_file(data["listen_word"]))
 }
 
 func create_server() {

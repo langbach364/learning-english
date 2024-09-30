@@ -7,6 +7,7 @@ import (
 	"os"
 	"path/filepath"
 	"strings"
+	"sync"
 
 	"github.com/fsnotify/fsnotify"
 )
@@ -90,32 +91,38 @@ func middleware_Word(filePath string) {
 }
 
 func middleware_listen_word(filePath string) {
-	fileChanged := make(chan bool)
-	go watch_file(filePath, fileChanged)
+	var processMutex sync.Mutex
+    fileChanged := make(chan bool)
+    go watch_file(filePath, fileChanged)
 
-	for range fileChanged {
-		func() {
-			file, err := os.Open(filePath)
-			if err != nil {
-				log.Printf("Không thể mở file: %v", err)
-				return
-			}
-			defer file.Close()
+    for range fileChanged {
+        if !processMutex.TryLock() {
+            continue
+        }
+        go func() {
+            defer processMutex.Unlock()
+            
+            file, err := os.Open(filePath)
+            if err != nil {
+                log.Printf("Không thể mở file: %v", err)
+                return
+            }
+            defer file.Close()
 
-			scanner := bufio.NewScanner(file)
-			var text string
-			for scanner.Scan() {
-				text = scanner.Text()
-			}
+            scanner := bufio.NewScanner(file)
+            var text string
+            for scanner.Scan() {
+                text = scanner.Text()
+            }
 
-			if text == "" {
-				return
-			}
+            if text == "" {
+                return
+            }
 
-			get_data("LangBach", "en")
-			
-		}()
-	}
+            get_data("LangBach", "en")
+            fmt.Println("Đã có âm thanh")
+        }()
+    }
 }
 
 func main() {
