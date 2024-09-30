@@ -1,15 +1,4 @@
-idiom: (0)  At the point of extreme exasperation.
-idiom: (1)  At a far distance; into the unknown.
-idiom: (2)  From an unexpected or unforeseen source.
-idiom: (3)  At a completely unexpected time.
-noun: The hue of that portion of the visible spectrum lying between green and indigo, evoked in the human observer by radiant energy with wavelengths of approximately 420 to 490 nanometers; any of a group of colors that may vary in lightness and saturation, whose hue is that of a clear daytime sky; one of the additive or light primaries; one of the psychological primary hues.
-noun: 
-noun: A pigment or dye imparting this hue.
-noun: Bluing.
-noun: 
-adjective: Of the color blue.
-adjective: Bluish or having parts that are blue or bluish, as the blue spruce and the blue whale.
-adjective: Having a gray or purplish color, as from cold or contusion.
-adjective: Wearing blue.
-adjective: Being a trail, as for skiing, marked with a sign having a blue square, indicating an intermediate level of difficulty.
-transitive & intransitive verb : To make or become blue.
+: 
+: 
+: 
+: 

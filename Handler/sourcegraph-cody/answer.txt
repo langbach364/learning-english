@@ -1,36 +1,28 @@
 [Câu]:
-- Câu: who want sheriff
+- Câu: the car
 * Thì: Hiện tại đơn
-* Biểu thị thời gian: Hiện tại
+* Biểu thị thời gian: Không xác định rõ ràng
 * Cách sử dụng thì:
-  + Thời gian: Hiện tại
-  + Điều kiện: Sự việc đang diễn ra hoặc thói quen
+  + Thời gian: Không xác định rõ ràng
+  + Điều kiện: Không xác định rõ ràng
 * Phân loại các từ thành từ loại:
-  + who: đại từ quan hệ
-  + want: động từ
-  + sheriff: danh từ
+  + the: mạo từ
+  + car: danh từ
 * Phân loại các từ thành các dạng quá khứ hay tương lai:
-  + who: không có dạng quá khứ hay tương lai
-  + want: 
-    - Quá khứ: wanted
-    - Tương lai: will want
-  + sheriff: không có dạng quá khứ hay tương lai
+  + the: không có dạng quá khứ hay tương lai
+  + car: không có dạng quá khứ hay tương lai
 * Ví dụ sử dụng các dạng thì khác:
-  + Quá khứ đơn: Who wanted sheriff?
-  + Tương lai đơn: Who will want sheriff?
-  + Hiện tại hoàn thành: Who has wanted sheriff?
-* Kiểm tra câu có bị sai: Có
-* Ghi lại câu chưa sửa: who want sheriff
-* Trường hợp hiểu câu chưa sửa: Ai muốn cảnh sát trưởng
-* Ghi lại câu đã sửa: Who wants the sheriff?
-* Trường hợp hiểu câu đã sửa: Ai muốn cảnh sát trưởng?
-* Lý do sửa lại và khác gì với câu cũ: 
-  + Sửa "want" thành "wants" để phù hợp với chủ ngữ "who" trong câu hỏi hiện tại đơn.
-  + Thêm "the" trước "sheriff" để câu rõ nghĩa hơn.
-* Cấu trúc cú pháp hoặc cấu trúc ngữ pháp phải như thế nào là đúng: 
-  + Câu hỏi trong thì hiện tại đơn với đại từ quan hệ "who" cần động từ chia ở ngôi thứ ba số ít.
-  + Thêm mạo từ "the" trước danh từ "sheriff" để chỉ rõ đối tượng.
+  + Quá khứ đơn: The car was red.
+  + Hiện tại tiếp diễn: The car is being washed.
+  + Tương lai đơn: The car will be fixed.
+* Kiểm tra câu có bị sai: Không
+* Ghi lại câu chưa sửa: the car
+* Trường hợp hiểu câu chưa sửa: chiếc xe
+* Ghi lại câu đã sửa: Không có sửa đổi
+* Trường hợp hiểu câu đã sửa: chiếc xe
+* Lý do sửa lại và khác gì với câu cũ: Không có sửa đổi
+* Cấu trúc cú pháp hoặc cấu trúc ngữ pháp phải như thế nào là đúng: Câu đúng cú pháp và ngữ pháp
 * Dịch sang tiếng Việt:
-  + Câu chưa sửa: Ai muốn cảnh sát trưởng
-  + Câu đã sửa: Ai muốn cảnh sát trưởng?
+  + Câu chưa sửa: chiếc xe
+  + Câu đã sửa: Không có sửa đổi
 

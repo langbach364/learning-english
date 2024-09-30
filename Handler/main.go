@@ -11,7 +11,7 @@ import (
 
 	"github.com/fsnotify/fsnotify"
 )
-
+/////// The stream hasn't been fixed yet
 func watch_file(fileName string, fileChanged chan<- bool) {
 	watcher, err := fsnotify.NewWatcher()
 	if err != nil {
