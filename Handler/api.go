@@ -35,6 +35,9 @@ func word_file(filePath string) http.HandlerFunc {
 				_, err = wrFile.WriteString(word.Data)
 				fmt.Println("Từ đã được in trong file")
 				check_err(err)
+
+				w.WriteHeader(http.StatusOK)
+                w.Write([]byte("Success"))
 			}
 		default:
 			fmt.Println("Method không được sử dụng")

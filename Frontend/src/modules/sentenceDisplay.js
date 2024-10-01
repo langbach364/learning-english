@@ -34,6 +34,8 @@ export function initSentenceDisplay(state) {
     sentence.addEventListener('mouseup', (event) => endSelection(event, state));
     sentence.addEventListener('click', (event) => handleClick(event, state));
   });
+
+  Vue.watch(() => [state.highlightedOriginalWords, state.highlightedEditedWords, state.tooltipPosition], updateTooltip);
 }
 
 function startSelection(event, state) {
@@ -126,4 +128,9 @@ function updateTooltipPosition(state, element) {
     x: rect.right,
     y: rect.bottom,
   };
+}
+
+function updateTooltip(state) {
+  // Implement the logic to update the tooltip here
+  // This function will be called whenever the watched values change
 }

@@ -103,8 +103,14 @@ const app = Vue.createApp({
         },
         body: JSON.stringify({ data: words.join(' ') }),
       })
-        .then(() => {
-          console.log("Scanned words sent successfully");
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.text();
+        })
+        .then(data => {
+          console.log("Server response:", data);
         })
         .catch((error) => console.error("Error sending scanned words:", error))
         .finally(() => {
@@ -190,10 +196,15 @@ const app = Vue.createApp({
       };
     },
   },
-  mounted() {
+  created() {
     this.fetchDefinitions();
-    console.log("App mounted");
+    this.isScanning = JSON.parse(localStorage.getItem('isScanning')) || false;
   },
+  watch: {
+    isScanning(newValue) {
+      localStorage.setItem('isScanning', JSON.stringify(newValue));
+    }
+  }
 });
 
 app.mount("#app");

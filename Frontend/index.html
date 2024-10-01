@@ -14,10 +14,10 @@
 
       <div class="mb-4">
         <input v-model="newWord" type="text" class="border p-2" placeholder="Nhập từ mới">
-        <button @click="sendWordToServer" class="bg-blue-500 text-white p-2 ml-2">Gửi</button>
+        <button @click.prevent="sendWordToServer" class="bg-blue-500 text-white p-2 ml-2">Gửi</button>
       </div>
 
-      <button @click="toggleScanning" class="bg-blue-500 text-white p-2 mb-2 flex items-center">
+      <button @click.prevent="toggleScanning" class="bg-blue-500 text-white p-2 mb-2 flex items-center">
         {{ isScanning ? 'Dừng quét' : 'Bắt đầu quét' }}
         <span v-if="isScanning" class="ml-2 animate-pulse">🔍</span>
       </button>
