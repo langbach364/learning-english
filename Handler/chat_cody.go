@@ -73,7 +73,6 @@ func start_chat(data map[string][]string, model, scriptName string) bool {
 	return false
 }
 
-
 func chat_cody(data map[string][]string, model string, pathSocket string) string {
 
 	create_socket(pathSocket)

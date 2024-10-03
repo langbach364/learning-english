@@ -362,3 +362,47 @@ func result_definitions(word string) map[string][]string {
 }
 
 /////////////////////////////////////////////////////////////////////////////////////
+
+func scan_line(line string, data *map[string][]string, currentKey *string) {
+	switch {
+	case strings.HasPrefix(line, "- "), strings.HasPrefix(line, "* "):
+		{
+			parts := strings.SplitN(line[2:], ":", 2)
+			if len(parts) == 2 {
+				*currentKey = strings.TrimSpace(parts[0])
+				values := strings.Split(parts[1], ",")
+				for _, v := range values {
+					value := strings.TrimSpace(v)
+					if value != "" {
+						(*data)[*currentKey] = append((*data)[*currentKey], value)
+					}
+				}
+			}
+		}
+	case strings.HasPrefix(line, "+") && *currentKey != "":
+		{
+			value := strings.TrimSpace(line[2:])
+			if value != "" {
+				(*data)[*currentKey] = append((*data)[*currentKey], value)
+			}
+		}
+	}
+}
+
+func data_synthetic() map[string][]string {
+	data := make(map[string][]string)
+	content, err := os.ReadFile("./sourcegraph-cody/answer.txt")
+	if err != nil {
+		fmt.Println("Lỗi khi đọc file:", err)
+		return data
+	}
+
+	lines := strings.Split(string(content), "\n")
+	currentKey := ""
+
+	for _, line := range lines {
+		scan_line(strings.TrimSpace(line), &data, &currentKey)
+	}
+
+	return data
+}

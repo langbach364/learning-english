@@ -11,7 +11,7 @@ import (
 
 	"github.com/fsnotify/fsnotify"
 )
-/////// The stream hasn't been fixed yet
+
 func watch_file(fileName string, fileChanged chan<- bool) {
 	watcher, err := fsnotify.NewWatcher()
 	if err != nil {
@@ -125,9 +125,23 @@ func middleware_listen_word(filePath string) {
     }
 }
 
+func print_structured_data(data map[string][]string) {
+    for key, values := range data {
+        fmt.Printf("[key] %s: ", key)
+        for _, value := range values {
+            fmt.Printf("[value] %s\n", value)
+        }
+        fmt.Println()
+    }
+}
+
+
 func main() {
-	data := path_file()
-	go middleware_Word(data["word"])
-	go middleware_listen_word(data["listen_word"])
-    create_server()
+	// data := path_file()
+	// go middleware_Word(data["word"])
+	// go middleware_listen_word(data["listen_word"])
+    // create_server()
+
+	data := data_synthetic()
+	print_structured_data(data)
 }
