@@ -73,7 +73,7 @@ func start_chat(data map[string][]string, model, scriptName string) bool {
 	return false
 }
 
-func chat_cody(data map[string][]string, model string, pathSocket string) string {
+func chat_cody(data map[string][]string, model string, pathSocket string) {
 
 	create_socket(pathSocket)
 	start_chat(data, model, "./sourcegraph-cody/cody.sh")
@@ -81,18 +81,10 @@ func chat_cody(data map[string][]string, model string, pathSocket string) string
 	file, err := read_file("./sourcegraph-cody/answer.txt")
 	if err != nil {
 		fmt.Println("Lỗi khi đọc file: ", err)
-		return ""
 	}
 	defer file.Close()
-
-	scanner := bufio.NewScanner(file)
-	for scanner.Scan() {
-		answer := scanner.Text()
-		return answer
-	}
-	return ""
-
 }
+
 func process_line(line string, data *WordData, currentType **WordType, currentDefinition **Definition) {
 	if len(line) == 0 {
 		return

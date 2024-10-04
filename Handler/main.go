@@ -137,11 +137,8 @@ func print_structured_data(data map[string][]string) {
 
 
 func main() {
-	// data := path_file()
-	// go middleware_Word(data["word"])
-	// go middleware_listen_word(data["listen_word"])
-    // create_server()
-
-	data := data_synthetic()
-	print_structured_data(data)
+	data := path_file()
+	go middleware_Word(data["word"])
+	go middleware_listen_word(data["listen_word"])
+    create_server()
 }

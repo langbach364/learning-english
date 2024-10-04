@@ -1,28 +1,31 @@
 [Câu]:
-- Câu: the car
+- Câu: the cart is bad
 * Thì: Hiện tại đơn
-* Biểu thị thời gian: Không xác định rõ ràng
+* Biểu thị thời gian: Hiện tại
 * Cách sử dụng thì:
-  + Thời gian: Không xác định rõ ràng
-  + Điều kiện: Không xác định rõ ràng
+  + Thời gian: Hiện tại
+  + Điều kiện: Sự thật, trạng thái hiện tại
 * Phân loại các từ thành từ loại:
-  + the: mạo từ
-  + car: danh từ
+  - the: Mạo từ
+  - cart: Danh từ
+  - is: Động từ to be
+  - bad: Tính từ
 * Phân loại các từ thành các dạng quá khứ hay tương lai:
-  + the: không có dạng quá khứ hay tương lai
-  + car: không có dạng quá khứ hay tương lai
+  - cart: Không thay đổi theo thì
+  - is: Hiện tại đơn
+  - bad: Không thay đổi theo thì
 * Ví dụ sử dụng các dạng thì khác:
-  + Quá khứ đơn: The car was red.
-  + Hiện tại tiếp diễn: The car is being washed.
-  + Tương lai đơn: The car will be fixed.
+  - The cart was bad. (Quá khứ đơn)
+  - The cart will be bad. (Tương lai đơn)
+  - The cart has been bad. (Hiện tại hoàn thành)
 * Kiểm tra câu có bị sai: Không
-* Ghi lại câu chưa sửa: the car
-* Trường hợp hiểu câu chưa sửa: chiếc xe
-* Ghi lại câu đã sửa: Không có sửa đổi
-* Trường hợp hiểu câu đã sửa: chiếc xe
-* Lý do sửa lại và khác gì với câu cũ: Không có sửa đổi
+* Ghi lại câu chưa sửa: the cart is bad
+* Trường hợp hiểu câu chưa sửa: Chiếc xe đẩy này đang ở trạng thái xấu
+* Ghi lại câu đã sửa: the cart is bad
+* Trường hợp hiểu câu đã sửa: Chiếc xe đẩy này đang ở trạng thái xấu
+* Lý do sửa lại và khác gì với câu cũ: Không có sửa đổi vì câu đúng
 * Cấu trúc cú pháp hoặc cấu trúc ngữ pháp phải như thế nào là đúng: Câu đúng cú pháp và ngữ pháp
 * Dịch sang tiếng Việt:
-  + Câu chưa sửa: chiếc xe
-  + Câu đã sửa: Không có sửa đổi
+  - Câu chưa sửa: Chiếc xe đẩy thì xấu
+  - Câu đã sửa: Chiếc xe đẩy thì xấu
 
