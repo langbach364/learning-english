@@ -3,7 +3,6 @@ package main
 import (
 	"bufio"
 	"fmt"
-	"os"
 	"strings"
 )
 
@@ -73,9 +72,7 @@ func start_chat(data map[string][]string, model, scriptName string) bool {
 	return false
 }
 
-func chat_cody(data map[string][]string, model string, pathSocket string) {
-
-	create_socket(pathSocket)
+func chat_cody(data map[string][]string, model string) {
 	start_chat(data, model, "./sourcegraph-cody/cody.sh")
 
 	file, err := read_file("./sourcegraph-cody/answer.txt")
@@ -85,47 +82,65 @@ func chat_cody(data map[string][]string, model string, pathSocket string) {
 	defer file.Close()
 }
 
-func process_line(line string, data *WordData, currentType **WordType, currentDefinition **Definition) {
-	if len(line) == 0 {
-		return
-	}
+func process_line(line string, data *AnswerData, currentKey *string) {
+    if len(line) == 0 {
+        return
+    }
 
-	content := strings.TrimSpace(line[1:])
+    content := strings.TrimSpace(line)
 
-	switch line[0] {
-	case '-':
-		data.Word = content
-	case '*':
-		if *currentType == nil {
-			newType := WordType{Type: content}
-			data.Types = append(data.Types, newType)
-			*currentType = &data.Types[len(data.Types)-1]
-		} else {
-			newDefinition := Definition{Meaning: content}
-			(*currentType).Definitions = append((*currentType).Definitions, newDefinition)
-			*currentDefinition = &(*currentType).Definitions[len((*currentType).Definitions)-1]
-		}
-	case '+':
-		if *currentDefinition != nil {
-			(*currentDefinition).Examples = append((*currentDefinition).Examples, content)
-		}
-	}
+    switch {
+    case strings.HasPrefix(content, "[Câu]:"):
+        *currentKey = "Câu"
+        if data.Details == nil {
+            data.Details = make(map[string][]string)
+        }
+        value := strings.TrimSpace(strings.TrimPrefix(content, "[Câu]:"))
+        if value != "" {
+            data.Details[*currentKey] = append(data.Details[*currentKey], value)
+        }
+    case strings.HasPrefix(content, "* "):
+        parts := strings.SplitN(content[2:], ":", 2)
+        *currentKey = strings.TrimSpace(parts[0])
+        if data.Details == nil {
+            data.Details = make(map[string][]string)
+        }
+        if len(parts) > 1 {
+            value := strings.TrimSpace(parts[1])
+            if value != "" {
+                data.Details[*currentKey] = append(data.Details[*currentKey], value)
+            }
+        }
+    case strings.HasPrefix(content, "+ "):
+        value := strings.TrimSpace(strings.TrimPrefix(content, "+ "))
+        if *currentKey != "" && value != "" {
+            data.Details[*currentKey] = append(data.Details[*currentKey], value)
+        }
+    default:
+        if *currentKey != "" && content != "" {
+            data.Details[*currentKey] = append(data.Details[*currentKey], content)
+        }
+    }
 }
 
-func data_structure(pathFile *os.File) WordData {
-	scanner := bufio.NewScanner(pathFile)
-	var data WordData
-	var currentType *WordType
-	var currentDefinition *Definition
+func data_structure() AnswerData {
+    pathFile, err := read_file("./sourcegraph-cody/answer.txt")
+    check_err(err)
 
-	for scanner.Scan() {
-		line := scanner.Text()
-		process_line(line, &data, &currentType, &currentDefinition)
-	}
+    scanner := bufio.NewScanner(pathFile)
+    var data AnswerData
+    var currentKey string
 
-	if err := scanner.Err(); err != nil {
-		fmt.Println("Lỗi khi đọc file:", err)
-	}
+    data.Details = make(map[string][]string)
 
-	return data
+    for scanner.Scan() {
+        line := scanner.Text()
+        process_line(line, &data, &currentKey)
+    }
+
+    if err := scanner.Err(); err != nil {
+        fmt.Println("Lỗi khi đọc file:", err)
+    }
+
+    return data
 }

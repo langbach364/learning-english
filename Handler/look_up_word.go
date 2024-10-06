@@ -353,11 +353,7 @@ func print_definitions(result map[string][]string) {
 }
 
 func result_definitions(word string) map[string][]string {
-	socketPath := "./tmp/translation_complete.sock"
-
-	create_socket(socketPath)
 	data := define_word(word)
-
 	return data
 }
 

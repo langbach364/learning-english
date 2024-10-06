@@ -34,15 +34,16 @@ func run_script(scriptName string) {
 	}
 }
 
-func create_socket(socketPath string) error {
-    fmt.Printf("Đã tạo socket %s\n", socketPath)
+func create_socket(socketPath string) (net.Listener, error) {
+    fmt.Printf("Đang tạo socket %s\n", socketPath)
+	
+    os.Remove(socketPath)
+
     listener, err := net.Listen("unix", socketPath)
     if err != nil {
-        return fmt.Errorf("lỗi khi tạo socket: %v", err)
+        return nil, fmt.Errorf("lỗi khi tạo socket: %v", err)
     }
-	fmt.Println("Socket đã được tạo thành công")
-    defer listener.Close()
 
-	fmt.Println("Socket đã được tự động xóa khi đóng listener.Close")
-    return nil
+    fmt.Println("Socket đã được tạo thành công")
+    return listener, nil
 }

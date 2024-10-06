@@ -1,31 +1,57 @@
 [Câu]:
-- Câu: the cart is bad
-* Thì: Hiện tại đơn
-* Biểu thị thời gian: Hiện tại
-* Cách sử dụng thì:
-  + Thời gian: Hiện tại
-  + Điều kiện: Sự thật, trạng thái hiện tại
+* Câu: fixs socket and to converted data read to txt such as call api
+
+* Thì: Không có thì rõ ràng trong câu này
+
+* Biểu thị thời gian: Không có biểu thị thời gian cụ thể
+
+* Cách sử dụng thì: Không áp dụng
+
 * Phân loại các từ thành từ loại:
-  - the: Mạo từ
-  - cart: Danh từ
-  - is: Động từ to be
-  - bad: Tính từ
++ fixs: động từ (lỗi chính tả)
++ socket: danh từ
++ and: liên từ
++ to: giới từ
++ converted: động từ (lỗi ngữ pháp)
++ data: danh từ
++ read: động từ
++ to: giới từ
++ txt: danh từ
++ such: tính từ
++ as: giới từ
++ call: động từ
++ api: danh từ
+
 * Phân loại các từ thành các dạng quá khứ hay tương lai:
-  - cart: Không thay đổi theo thì
-  - is: Hiện tại đơn
-  - bad: Không thay đổi theo thì
++ fix: fixed (quá khứ), will fix (tương lai)
++ convert: converted (quá khứ), will convert (tương lai)
++ read: read (quá khứ), will read (tương lai)
++ call: called (quá khứ), will call (tương lai)
+
 * Ví dụ sử dụng các dạng thì khác:
-  - The cart was bad. (Quá khứ đơn)
-  - The cart will be bad. (Tương lai đơn)
-  - The cart has been bad. (Hiện tại hoàn thành)
-* Kiểm tra câu có bị sai: Không
-* Ghi lại câu chưa sửa: the cart is bad
-* Trường hợp hiểu câu chưa sửa: Chiếc xe đẩy này đang ở trạng thái xấu
-* Ghi lại câu đã sửa: the cart is bad
-* Trường hợp hiểu câu đã sửa: Chiếc xe đẩy này đang ở trạng thái xấu
-* Lý do sửa lại và khác gì với câu cũ: Không có sửa đổi vì câu đúng
-* Cấu trúc cú pháp hoặc cấu trúc ngữ pháp phải như thế nào là đúng: Câu đúng cú pháp và ngữ pháp
-* Dịch sang tiếng Việt:
-  - Câu chưa sửa: Chiếc xe đẩy thì xấu
-  - Câu đã sửa: Chiếc xe đẩy thì xấu
++ I am fixing the socket and converting data to txt format such as calling an API. (Hiện tại tiếp diễn)
++ I will fix the socket and convert data to txt format such as calling an API. (Tương lai đơn)
++ I have fixed the socket and converted data to txt format such as calling an API. (Hiện tại hoàn thành)
+
+* Kiểm tra câu có bị sai: Có
+
+* Ghi lại câu chưa sửa: fixs socket and to converted data read to txt such as call api
+
+* Trường hợp hiểu câu chưa sửa: Sửa socket và chuyển đổi dữ liệu đọc thành txt như gọi API
+
+* Ghi lại câu đã sửa: Fix socket and convert data read to txt such as calling an API
+
+* Trường hợp hiểu câu đã sửa: Sửa socket và chuyển đổi dữ liệu đọc thành định dạng txt như khi gọi API
+
+* Lý do sửa lại và khác gì với câu cũ:
++ fixs: Sửa thành "Fix" vì đây là động từ nguyên mẫu
++ to converted: Bỏ "to" và sửa "converted" thành "convert" để phù hợp với cấu trúc câu
++ call: Sửa thành "calling" để phù hợp với cấu trúc "such as"
+
+* Cấu trúc cú pháp hoặc cấu trúc ngữ pháp phải như thế nào là đúng:
+Cấu trúc đúng: [Động từ nguyên mẫu] + [Danh từ] + and + [Động từ nguyên mẫu] + [Danh từ] + [Động từ] + to + [Danh từ] + such as + [Động từ -ing] + [Danh từ]
+
+* Dịch sang tiếng Việt đúng ngữ cảnh:
++ Câu chưa sửa: Sửa socket và để chuyển đổi dữ liệu đọc thành txt như gọi api
++ Câu đã sửa: Sửa socket và chuyển đổi dữ liệu đọc thành định dạng txt như khi gọi API
 

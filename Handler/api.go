@@ -16,7 +16,7 @@ func check_err(err error) {
 	}
 }
 
-func write_file_api(filePath string) http.HandlerFunc {
+func write_word_file_api(filePath string) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 		switch r.Method {
 		case "POST":
@@ -45,7 +45,7 @@ func write_file_api(filePath string) http.HandlerFunc {
 	}
 }
 
-func read_file_word_api(filePath string) http.HandlerFunc {
+func read_file_word_api() http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 		switch r.Method {
 		case "POST":
@@ -86,9 +86,9 @@ func path_file() map[string]string {
 
 func muxtiplexer_router(router *http.ServeMux) {
 	data := path_file()
-	router.HandleFunc("/word", write_file_api(data["word"]))
-	router.HandleFunc("/listen_word", write_file_api(data["listen_word"]))
-	router.HandleFunc("/read_word", read_file_word_api(data["read_word"]))
+	router.HandleFunc("/word", write_word_file_api(data["word"]))
+	router.HandleFunc("/listen_word", write_word_file_api(data["listen_word"]))
+	router.HandleFunc("/read_word", read_file_word_api())
 }
 
 func create_server() {

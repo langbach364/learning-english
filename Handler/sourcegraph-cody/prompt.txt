@@ -2,6 +2,7 @@ LƯU Ý: các dấu ký tự hoặc chuỗi nằm trong {}, =>, #, &&&(như {t�
 sẽ không được in ra trong câu trả lời, không trả lời bất cứ điều gì liên quan không đến prompt. 
 các con phía sau ký tự # là các dữ liệu cần được liên quan với nhau từ các ký tự &&& đầu và cuối 
 xác định dữ liệu đã được đánh dấu &&& và đưa ra là thuộc cấu trúc nào rồi đánh giá nó thuộc dáng cấu trúc [từ loại] hay [câu]... mà trả lời đúng cấu trúc(chỉ trả lời đúng 1 cấu trúc)
+Hãy suy nghĩ theo hướng cấu trúc tôi đã sắp xếp không được suy nghĩ theo hướng nào khác
 
 Cấu trúc:
 => các từ định nghĩa trong &&& đầu và cuối sẽ được phân tích từng định nghĩa không được gộp chung
@@ -13,18 +14,18 @@ Cấu trúc:
 
 Cấu trúc: 
 [Câu]:
-- {Câu}: {câu}
+* {Câu}: {câu}
 * Thì: {Đây là thì gì} 
 * Biểu thị thời gian: {Thời gian biểu đạt thì này}
 * Cách sử dụng thì: {thời gian, hoặc điều kiện... (mỗi phần xuống dòng với dấu + ví dụ[+ Thời gian: ....]....)}
-* Phân loại các từ thành từ loại ... {của từ trong câu}
-* Phân loại các từ thành các dạng quá khứ hay tương lai{đầy đủ các dạng và mỗi dạng của mỗi từ sẽ nằm trên 1 dòng tương tự các từ khác}
-* Ví dụ sử dụng các dạng thì khác: {ít nhất 3 dạng thì khác và có cùng sự việc trong câu}
+* Phân loại các từ thành từ loại ... {của từ trong câu(mỗi từ sẽ có cấu trúc +{ từ})}
+* Phân loại các từ thành các dạng quá khứ hay tương lai{đầy đủ các dạng và mỗi dạng của mỗi từ sẽ nằm trên 1 dòng tương tự các từ khác (mỗi dạng sẽ có cấu trúc +{ dạng})}
+* Ví dụ sử dụng các dạng thì khác: {ít nhất 3 dạng thì khác và có cùng sự việc trong câu (mỗi dạng sẽ có cấu trúc +{ dạng})}
 * Kiểm tra câu có bị sai(nếu có) 
 * Ghi lại câu chưa sửa 
 * Trường hợp hiểu câu chưa sửa
 * Ghi lại câu đã sửa 
 * Trường hợp hiểu câu đã sửa
-* Lý do sửa lại và khác gì với câu cũ 
+* Lý do sửa lại và khác gì với câu cũ (mỗi từ sẽ có cấu trúc +{ từ})
 * Cấu trúc cú pháp hoặc cấu trúc ngữ pháp phải như thế nào là đúng (nếu sai cú pháp hoặc cấy tu tu trúc)
-* Dịch sang tiếng Việt(cả câu chưa sửa và đã sửa) đúng ngữ cảnh 
+* Dịch sang tiếng Việt(cả câu chưa sửa và đã sửa) đúng ngữ cảnh  (mỗi câu sẽ có cấu trúc +{ câu})

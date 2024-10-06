@@ -16,3 +16,7 @@ type Definition struct {
     Meaning string
     Examples []string
 }
+
+type AnswerData struct {
+    Details  map[string][]string
+}

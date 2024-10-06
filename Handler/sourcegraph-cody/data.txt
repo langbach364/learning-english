@@ -1,7 +1,7 @@
 &&&
 Câu:
 
-- the cart is bad
+- "fixs socket and to converted data read to txt such as call api"
 
 -------------------------------------
 
