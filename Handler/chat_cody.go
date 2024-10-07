@@ -82,65 +82,79 @@ func chat_cody(data map[string][]string, model string) {
 	defer file.Close()
 }
 
-func process_line(line string, data *AnswerData, currentKey *string) {
-    if len(line) == 0 {
-        return
-    }
-
-    content := strings.TrimSpace(line)
-
-    switch {
-    case strings.HasPrefix(content, "[Câu]:"):
-        *currentKey = "Câu"
-        if data.Details == nil {
-            data.Details = make(map[string][]string)
-        }
-        value := strings.TrimSpace(strings.TrimPrefix(content, "[Câu]:"))
-        if value != "" {
-            data.Details[*currentKey] = append(data.Details[*currentKey], value)
-        }
-    case strings.HasPrefix(content, "* "):
-        parts := strings.SplitN(content[2:], ":", 2)
-        *currentKey = strings.TrimSpace(parts[0])
-        if data.Details == nil {
-            data.Details = make(map[string][]string)
-        }
-        if len(parts) > 1 {
-            value := strings.TrimSpace(parts[1])
-            if value != "" {
-                data.Details[*currentKey] = append(data.Details[*currentKey], value)
-            }
-        }
-    case strings.HasPrefix(content, "+ "):
-        value := strings.TrimSpace(strings.TrimPrefix(content, "+ "))
-        if *currentKey != "" && value != "" {
-            data.Details[*currentKey] = append(data.Details[*currentKey], value)
-        }
-    default:
-        if *currentKey != "" && content != "" {
-            data.Details[*currentKey] = append(data.Details[*currentKey], content)
-        }
-    }
+func get_key_line(line string) string {
+	x := strings.Index(line, ":")
+	return line[:x+1]
 }
 
-func data_structure() AnswerData {
-    pathFile, err := read_file("./sourcegraph-cody/answer.txt")
-    check_err(err)
+func get_value_line(line string) string {
+	x := strings.Index(line, ":")
+	return strings.TrimSpace(line[x+1:])
+}
 
-    scanner := bufio.NewScanner(pathFile)
-    var data AnswerData
-    var currentKey string
-
-    data.Details = make(map[string][]string)
-
-    for scanner.Scan() {
-        line := scanner.Text()
-        process_line(line, &data, &currentKey)
+func process_line(line string) int {
+	if len(line) == 0 {
+        return -1
     }
 
-    if err := scanner.Err(); err != nil {
-        fmt.Println("Lỗi khi đọc file:", err)
-    }
+	switch line[0] {
+	case '*':
+		{
+			return 0
+		}
+	case '+':
+		{
+			return 1
+		}
+	}
+	return -1
+}
 
-    return data
+func handler_data(data map[string][]string, line string, saveKey *string) {
+	switch process_line(line) {
+	case 0:
+		{
+			key := get_key_line(line)
+			value := get_value_line(line)
+
+			if len(value) > 0 {
+				data[key] = append(data[key], value)
+				return
+			}
+			*saveKey = key
+		}
+	case 1:
+		{
+			data[*saveKey] = append(data[*saveKey], line)
+		}
+	default:
+		{
+			{
+				fmt.Println("Lỗi khi xử lý dữ liệu")
+			}
+		}
+	}
+}
+
+func skip_line(line string) bool {
+	return strings.Contains(line, "[") && strings.Contains(line, "]")
+}
+
+func data_structure() map[string][]string{
+	pathFile, err := read_file("./sourcegraph-cody/answer.txt")
+	check_err(err)
+	defer pathFile.Close()
+
+	scanner := bufio.NewScanner(pathFile)
+	data := make(map[string][]string)
+	var saveKey string
+
+	for scanner.Scan() {
+		line := scanner.Text()
+		if skip_line(line) {
+			continue
+		}
+		handler_data(data, line, &saveKey)
+	}
+	return data
 }

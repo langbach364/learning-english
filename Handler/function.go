@@ -7,7 +7,6 @@ import (
 	"os/exec"
 )
 
-
 func write_file(fileName string) (*os.File, error) {
 	file, err := os.Create(fileName)
 	if err != nil {

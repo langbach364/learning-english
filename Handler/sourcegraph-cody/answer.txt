@@ -1,57 +1,38 @@
 [Câu]:
-* Câu: fixs socket and to converted data read to txt such as call api
-
-* Thì: Không có thì rõ ràng trong câu này
-
-* Biểu thị thời gian: Không có biểu thị thời gian cụ thể
-
-* Cách sử dụng thì: Không áp dụng
-
+* Câu: so bad is the good
+* Thì: Hiện tại đơn
+* Biểu thị thời gian: Hiện tại
+* Cách sử dụng thì:
++ Diễn tả sự thật, chân lý
++ Mô tả tình trạng, trạng thái hiện tại
 * Phân loại các từ thành từ loại:
-+ fixs: động từ (lỗi chính tả)
-+ socket: danh từ
-+ and: liên từ
-+ to: giới từ
-+ converted: động từ (lỗi ngữ pháp)
-+ data: danh từ
-+ read: động từ
-+ to: giới từ
-+ txt: danh từ
-+ such: tính từ
-+ as: giới từ
-+ call: động từ
-+ api: danh từ
-
++ so: trạng từ
++ bad: tính từ
++ is: động từ
++ the: mạo từ
++ good: tính từ
 * Phân loại các từ thành các dạng quá khứ hay tương lai:
-+ fix: fixed (quá khứ), will fix (tương lai)
-+ convert: converted (quá khứ), will convert (tương lai)
-+ read: read (quá khứ), will read (tương lai)
-+ call: called (quá khứ), will call (tương lai)
-
++ so: không thay đổi
++ bad: không thay đổi
++ is: was (quá khứ), will be (tương lai)
++ the: không thay đổi
++ good: không thay đổi
 * Ví dụ sử dụng các dạng thì khác:
-+ I am fixing the socket and converting data to txt format such as calling an API. (Hiện tại tiếp diễn)
-+ I will fix the socket and convert data to txt format such as calling an API. (Tương lai đơn)
-+ I have fixed the socket and converted data to txt format such as calling an API. (Hiện tại hoàn thành)
-
++ Quá khứ đơn: So bad was the good
++ Tương lai đơn: So bad will be the good
++ Hiện tại hoàn thành: So bad has been the good
 * Kiểm tra câu có bị sai: Có
-
-* Ghi lại câu chưa sửa: fixs socket and to converted data read to txt such as call api
-
-* Trường hợp hiểu câu chưa sửa: Sửa socket và chuyển đổi dữ liệu đọc thành txt như gọi API
-
-* Ghi lại câu đã sửa: Fix socket and convert data read to txt such as calling an API
-
-* Trường hợp hiểu câu đã sửa: Sửa socket và chuyển đổi dữ liệu đọc thành định dạng txt như khi gọi API
-
+* Ghi lại câu chưa sửa: so bad is the good
+* Trường hợp hiểu câu chưa sửa: Câu này không có ý nghĩa rõ ràng và cấu trúc không đúng ngữ pháp.
+* Ghi lại câu đã sửa: The good is so bad
+* Trường hợp hiểu câu đã sửa: Điều tốt lại quá tệ
 * Lý do sửa lại và khác gì với câu cũ:
-+ fixs: Sửa thành "Fix" vì đây là động từ nguyên mẫu
-+ to converted: Bỏ "to" và sửa "converted" thành "convert" để phù hợp với cấu trúc câu
-+ call: Sửa thành "calling" để phù hợp với cấu trúc "such as"
-
-* Cấu trúc cú pháp hoặc cấu trúc ngữ pháp phải như thế nào là đúng:
-Cấu trúc đúng: [Động từ nguyên mẫu] + [Danh từ] + and + [Động từ nguyên mẫu] + [Danh từ] + [Động từ] + to + [Danh từ] + such as + [Động từ -ing] + [Danh từ]
-
-* Dịch sang tiếng Việt đúng ngữ cảnh:
-+ Câu chưa sửa: Sửa socket và để chuyển đổi dữ liệu đọc thành txt như gọi api
-+ Câu đã sửa: Sửa socket và chuyển đổi dữ liệu đọc thành định dạng txt như khi gọi API
++ Thứ tự từ được sắp xếp lại cho đúng cấu trúc ngữ pháp
++ "The good" được đặt làm chủ ngữ
++ "is" được đặt sau chủ ngữ
++ "so bad" được đặt cuối câu làm bổ ngữ
+* Cấu trúc cú pháp hoặc cấu trúc ngữ pháp phải như thế nào là đúng: Chủ ngữ + Động từ + Bổ ngữ
+* Dịch sang tiếng Việt:
++ Câu chưa sửa: Quá tệ là cái tốt (câu này không có ý nghĩa rõ ràng)
++ Câu đã sửa: Điều tốt lại quá tệ
 

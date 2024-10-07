@@ -1,4 +1,5 @@
-: 
-: 
-: 
-: 
+noun: An automobile.
+noun: A vehicle, such as a streetcar, that runs on rails.
+noun: A boxlike enclosure for passengers and freight on a conveyance.
+noun: The part of a balloon or airship that carries people and cargo.
+noun: A chariot, carriage, or cart.

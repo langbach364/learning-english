@@ -139,23 +139,7 @@ func print_structured_data(data map[string][]string) {
     }
 }
 
-func printAnswerData(data AnswerData) {
-    fmt.Println(strings.Repeat("-", 40))
 
-    for key, values := range data.Details {
-        fmt.Printf("%s\n", key)
-        for i, value := range values {
-            if i == len(values)-1 {
-                fmt.Printf("└─ %s\n", value)
-            } else {
-                fmt.Printf("├─ %s\n", value)
-            }
-        }
-        fmt.Println()
-    }
-
-    fmt.Println(strings.Repeat("-", 40))
-}
 
 var (
     socketCody net.Listener
@@ -174,21 +158,21 @@ func close_socket(socket net.Listener) {
 }
 
 func main() {
-    // data := path_file()
-    // socketPath := "./tmp/cody.sock"
+    data := path_file()
+    socketPath := "./tmp/cody.sock"
 
-    // var err error
-    // socketCody, err = create_socket(socketPath)
-    // if err != nil {
-    //     log.Fatalf("Không thể tạo socket: %v", err)
-    // }
+    var err error
+    socketCody, err = create_socket(socketPath)
+    if err != nil {
+        log.Fatalf("Không thể tạo socket: %v", err)
+    }
 
-    // go middleware_Word(data["word"])
-    // go middleware_listen_word(data["listen_word"])
+    go middleware_Word(data["word"])
+    go middleware_listen_word(data["listen_word"])
 
-	// close_socket(socketCody)
-    // create_server()
+	close_socket(socketCody)
+    create_server()
 
-	data_x := data_structure()
-	printAnswerData(data_x)
+	// data_x := data_structure()
+	// fmt.Println(data_x)
 }

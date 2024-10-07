@@ -5,12 +5,17 @@ xác định dữ liệu đã được đánh dấu &&& và đưa ra là thuộc
 Hãy suy nghĩ theo hướng cấu trúc tôi đã sắp xếp không được suy nghĩ theo hướng nào khác
 
 Cấu trúc:
-=> các từ định nghĩa trong &&& đầu và cuối sẽ được phân tích từng định nghĩa không được gộp chung
+=> các từ định nghĩa trong &&& đầu và cuối sẽ được phân tích từng định nghĩa không được gộp chung,
+
 [Từ loại]: 
-- {Từ}: {từ} 
-* {Từ loại}: {định nghĩa} {({số} {{các ví dụ của định nghĩa và chỉ ghi số và mỗi số đúng với định nghĩa đó}})} 
-+ Ví dụ: {đúng khái niệm toàn bộ đều dùng bằng tiếng Việt} {({số} {{các ví dụ của định nghĩa và chỉ ghi số}})} 
-+ Ví dụ: {đúng khái niệm toàn bộ đều dùng bằng tiếng Anh} {({số} {{các ví dụ của định nghĩa và chỉ ghi số}})} 
+{Lưu ý: các định nghĩa đầu dòng luôn là đánh dấu bằng số thứ tự mà dựa vào cấu trúc}
+* Từ: từ 
+* Từ loại: các từ loại
+* Định nghĩa (từ loại) 
++ Các định nghĩa (số tương ứng với định nghĩa được đặt ở cuối dòng và các con số sẽ đánh dấu cho các ví dụ nào phù hợp với định nghĩa ví dụ + {Định nghĩa (số)} )
++ Ví dụ: (đúng định nghĩa và toàn bộ đều dùng bằng tiếng Việt) (số tương ứng với định nghĩa được đặt ở cuối chuỗi) ("VI" bắt buộc phải có)
++ Ví dụ: (đúng định nghĩa và bộ đều dùng bằng tiếng Anh) (số tương ứng với định nghĩa được đặt ở cuối chuỗi) ("EN" bắt buộc phải có)
+
 
 Cấu trúc: 
 [Câu]:

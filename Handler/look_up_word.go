@@ -105,12 +105,11 @@ func fetch_word_definitions(word string) ([]WordDefinition, error) {
 	decoder := json.NewDecoder(resp.Body)
 
 	if err := decoder.Decode(&definitions); err != nil {
-		return nil, fmt.Errorf("lỗi khi giải mã JSON: %v", err)
+		return nil, fmt.Errorf("lỗi khi giải mã JSON:  %v", err)
 	}
 
 	return definitions, nil
 }
-
 // Phân loại loại từ theo định nghĩa của từ giới hạn mỗi từ loại là 5 định nghĩa
 func classify_definitions(definitions []WordDefinition) map[string][]string {
 	result := make(map[string][]string)
