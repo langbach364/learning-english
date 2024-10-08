@@ -3,6 +3,7 @@ package main
 import (
 	"bufio"
 	"fmt"
+	"regexp"
 	"strings"
 )
 
@@ -82,6 +83,23 @@ func chat_cody(data map[string][]string, model string) {
 	defer file.Close()
 }
 
+func check_data_structure(line string) int {
+	startChar := strings.Index(line, "[")
+	endChar := strings.Index(line, "]")
+
+	switch line[startChar+1 : endChar] {
+	case "Câu":
+		{
+			return 1
+		}
+	case "Từ loại":
+		{
+			return 2
+		}
+	}
+	return -1
+}
+
 func get_key_line(line string) string {
 	x := strings.Index(line, ":")
 	return line[:x+1]
@@ -93,10 +111,6 @@ func get_value_line(line string) string {
 }
 
 func process_line(line string) int {
-	if len(line) == 0 {
-        return -1
-    }
-
 	switch line[0] {
 	case '*':
 		{
@@ -137,24 +151,100 @@ func handler_data(data map[string][]string, line string, saveKey *string) {
 }
 
 func skip_line(line string) bool {
-	return strings.Contains(line, "[") && strings.Contains(line, "]")
+	line = strings.TrimSpace(line)
+	return len(line) == 0
 }
 
-func data_structure() map[string][]string{
+func check_key_or_value(data string) int {
+	re := regexp.MustCompile(`\((\w+)\)`)
+	matches := re.FindAllStringSubmatch(data, -1)
+
+	if len(matches) > 1 {
+		return 1 // value
+	}
+	return 2 // key
+}
+
+func get_number_string(data string) string {
+	re := regexp.MustCompile(`\((\w+)\)`)
+	matches := re.FindAllStringSubmatch(data, -1)
+
+	if len(matches) > 0 && len(matches[0]) > 1 {
+		return matches[0][1]
+	}
+	return ""
+}
+
+func get_language_code_string(data string) string {
+	re := regexp.MustCompile(`\((\w+)\)`)
+	matches := re.FindAllStringSubmatch(data, -1)
+
+	if len(matches) > 1 && len(matches[1]) > 1 {
+		return matches[1][1]
+	}
+	return ""
+}
+
+func handler_data_word_class(data map[string]map[string][][]string, line string, saveKey *string) {
+	switch process_line(line) {
+	case 0:
+		{
+			value := get_value_line(line)
+			if len(value) == 0 {
+				key := value
+				data[key] = make(map[string][][]string)
+				*saveKey = key
+			}
+		}
+	case 1:
+		{
+			check := check_key_or_value(line)
+			value := line
+			if check == 2 {
+				data[*saveKey][value] = make([][]string, 0)
+			} else {
+				for key1, value1 := range data {
+					for key2 := range value1 {
+						indexKey := get_number_string(key2)
+						indexValue := get_number_string(value)
+						if indexKey == indexValue {
+							codeLa := get_language_code_string(value)
+							data[key1][key2] = append(data[key1][key2], []string{codeLa, value})
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+type DataStructure interface{}
+
+func data_structure() DataStructure {
 	pathFile, err := read_file("./sourcegraph-cody/answer.txt")
 	check_err(err)
 	defer pathFile.Close()
 
 	scanner := bufio.NewScanner(pathFile)
-	data := make(map[string][]string)
+	var result DataStructure
 	var saveKey string
 
 	for scanner.Scan() {
 		line := scanner.Text()
+
 		if skip_line(line) {
 			continue
 		}
-		handler_data(data, line, &saveKey)
+
+		if check_data_structure(line) == 1 {
+			data := make(map[string][]string)
+			handler_data(data, line, &saveKey)
+			result = data
+		} else {
+			data := make(map[string]map[string][][]string)
+			handler_data_word_class(data, line, &saveKey)
+			result = data
+		}
 	}
-	return data
+	return result
 }

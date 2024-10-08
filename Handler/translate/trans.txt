@@ -1,5 +1,20 @@
-noun: An automobile.
-noun: A vehicle, such as a streetcar, that runs on rails.
-noun: A boxlike enclosure for passengers and freight on a conveyance.
-noun: The part of a balloon or airship that carries people and cargo.
-noun: A chariot, carriage, or cart.
+idiom: (0)  To confess fully.
+idiom: (1)  To distort the features of the face; grimace.
+idiom: (2)  To achieve success in.
+idiom: (3)  To carry off; steal.
+idiom: (4)  To use up or consume.
+intransitive verb: To cause to exist or happen; bring about; create.
+intransitive verb: To bring into existence by shaping, modifying, or putting together material; construct.
+intransitive verb: To form by assembling individuals or constituents.
+intransitive verb: To change from one form or function to another.
+intransitive verb: 
+noun: 
+noun: The style or manner in which a thing is made.
+noun: A specific line of manufactured goods, identified by the manufacturer's name or the registered trademark.
+noun: The origin of a product's manufacturing.
+noun: 
+phrasal verb: To have or produce (a particular effect or result).
+phrasal verb: To help promote; further.
+phrasal verb: To depart in haste; run away.
+phrasal verb: To discern or see, especially with difficulty.
+phrasal verb: To understand.
