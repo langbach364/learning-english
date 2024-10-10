@@ -16,3 +16,5 @@ type Definition struct {
     Meaning string
     Examples []string
 }
+
+type DataStructure interface{}

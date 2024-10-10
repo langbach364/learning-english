@@ -2,7 +2,7 @@ package main
 
 import (
 	"bufio"
-	
+
 	"fmt"
 	"log"
 	"net"
@@ -96,83 +96,82 @@ func middleware_Word(filePath string) {
 
 func middleware_listen_word(filePath string) {
 	var processMutex sync.Mutex
-    fileChanged := make(chan bool)
-    go watch_file(filePath, fileChanged)
+	fileChanged := make(chan bool)
+	go watch_file(filePath, fileChanged)
 
-    for range fileChanged {
-        if !processMutex.TryLock() {
-            continue
-        }
-        go func() {
-            defer processMutex.Unlock()
-            
-            file, err := os.Open(filePath)
-            if err != nil {
-                log.Printf("Không thể mở file: %v", err)
-                return
-            }
-            defer file.Close()
+	for range fileChanged {
+		if !processMutex.TryLock() {
+			continue
+		}
+		go func() {
+			defer processMutex.Unlock()
 
-            scanner := bufio.NewScanner(file)
-            var text string
-            for scanner.Scan() {
-                text = scanner.Text()
-            }
+			file, err := os.Open(filePath)
+			if err != nil {
+				log.Printf("Không thể mở file: %v", err)
+				return
+			}
+			defer file.Close()
 
-            if text == "" {
-                return
-            }
+			scanner := bufio.NewScanner(file)
+			var text string
+			for scanner.Scan() {
+				text = scanner.Text()
+			}
 
-            get_data("LangBach", "en")
-            fmt.Println("Đã có âm thanh")
-        }()
-    }
+			if text == "" {
+				return
+			}
+
+			get_data("LangBach", "en")
+			fmt.Println("Đã có âm thanh")
+		}()
+	}
 }
 
 func print_structured_data(data map[string][]string) {
-    for key, values := range data {
-        fmt.Printf("[key] %s: ", key)
-        for _, value := range values {
-            fmt.Printf("[value] %s\n", value)
-        }
-        fmt.Println()
-    }
+	for key, values := range data {
+		fmt.Printf("[key] %s: ", key)
+		for _, value := range values {
+			fmt.Printf("[value] %s\n", value)
+		}
+		fmt.Println()
+	}
 }
 
-
-
 var (
-    socketCody net.Listener
+	socketCody net.Listener
 )
 
 func close_socket(socket net.Listener) {
 	c := make(chan os.Signal, 1)
-    signal.Notify(c, os.Interrupt, syscall.SIGTERM)
-    go func() {
-        <-c
-        if socket != nil {
-            socket.Close()
-        }
-        os.Exit(0)
-    }()
+	signal.Notify(c, os.Interrupt, syscall.SIGTERM)
+	go func() {
+		<-c
+		if socket != nil {
+			socket.Close()
+		}
+		os.Exit(0)
+	}()
 }
 
 func main() {
-    // data := path_file()
-    // socketPath := "./tmp/cody.sock"
+	// data := path_file()
+	// socketPath := "./tmp/cody.sock"
 
-    // var err error
-    // socketCody, err = create_socket(socketPath)
-    // if err != nil {
-    //     log.Fatalf("Không thể tạo socket: %v", err)
-    // }
+	// var err error
+	// socketCody, err = create_socket(socketPath)
+	// if err != nil {
+	//     log.Fatalf("Không thể tạo socket: %v", err)
+	// }
 
-    // go middleware_Word(data["word"])
-    // go middleware_listen_word(data["listen_word"])
+	// go middleware_Word(data["word"])
+	// go middleware_listen_word(data["listen_word"])
 
 	// close_socket(socketCody)
-    // create_server()
+	// create_server()
 
 	data_x := data_structure()
 	fmt.Println(data_x)
+
 }

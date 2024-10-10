@@ -185,14 +185,14 @@ func get_language_code_string(data string) string {
 	return ""
 }
 
-func handler_data_word_class(data map[string]map[string][][]string, line string, saveKey *string) {
+func handler_data_word_class(data map[string]map[string]map[string][]string, line string, saveKey *string) {
 	switch process_line(line) {
 	case 0:
 		{
 			value := get_value_line(line)
 			if len(value) == 0 {
-				key := value
-				data[key] = make(map[string][][]string)
+				key := get_key_line(line)
+				data[key] = make(map[string]map[string][]string)
 				*saveKey = key
 			}
 		}
@@ -201,7 +201,7 @@ func handler_data_word_class(data map[string]map[string][][]string, line string,
 			check := check_key_or_value(line)
 			value := line
 			if check == 2 {
-				data[*saveKey][value] = make([][]string, 0)
+				data[*saveKey][value] = make(map[string][]string, 0)
 			} else {
 				for key1, value1 := range data {
 					for key2 := range value1 {
@@ -209,7 +209,7 @@ func handler_data_word_class(data map[string]map[string][][]string, line string,
 						indexValue := get_number_string(value)
 						if indexKey == indexValue {
 							codeLa := get_language_code_string(value)
-							data[key1][key2] = append(data[key1][key2], []string{codeLa, value})
+							data[key1][key2][codeLa] = append(data[key1][key2][codeLa], value)
 						}
 					}
 				}
@@ -218,8 +218,6 @@ func handler_data_word_class(data map[string]map[string][][]string, line string,
 	}
 }
 
-type DataStructure interface{}
-
 func data_structure() DataStructure {
 	pathFile, err := read_file("./sourcegraph-cody/answer.txt")
 	check_err(err)
@@ -227,6 +225,8 @@ func data_structure() DataStructure {
 
 	scanner := bufio.NewScanner(pathFile)
 	var result DataStructure
+	var data DataStructure
+	check := 0
 	var saveKey string
 
 	for scanner.Scan() {
@@ -235,16 +235,26 @@ func data_structure() DataStructure {
 		if skip_line(line) {
 			continue
 		}
+		if check == 0 {
+			check = check_data_structure(line)
+			switch check {
+			case 1:
+				data = make(map[string][]string)
+			case 2:
+				data = make(map[string]map[string]map[string][]string)
+			}
+		}
 
-		if check_data_structure(line) == 1 {
-			data := make(map[string][]string)
-			handler_data(data, line, &saveKey)
-			result = data
-		} else {
-			data := make(map[string]map[string][][]string)
-			handler_data_word_class(data, line, &saveKey)
-			result = data
+		switch check {
+		case 1:
+			handler_data(data.(map[string][]string), line, &saveKey)
+		case 2:
+			handler_data_word_class(data.(map[string]map[string]map[string][]string), line, &saveKey)
+		default:
+			fmt.Println("Không đúng trường hợp nào")
 		}
 	}
+
+	result = data
 	return result
 }
