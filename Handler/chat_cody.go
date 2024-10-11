@@ -4,7 +4,9 @@ import (
 	"bufio"
 	"fmt"
 	"regexp"
+	"strconv"
 	"strings"
+	"unicode"
 )
 
 func add_data(data map[string][]string) bool {
@@ -170,7 +172,11 @@ func get_number_string(data string) string {
 	matches := re.FindAllStringSubmatch(data, -1)
 
 	if len(matches) > 0 && len(matches[0]) > 1 {
-		return matches[0][1]
+  		for i, match := range matches {
+  			if _, err := strconv.Atoi(match[1]); err == nil {
+  				return matches[i][1]
+  			}
+  		}
 	}
 	return ""
 }
@@ -180,7 +186,11 @@ func get_language_code_string(data string) string {
 	matches := re.FindAllStringSubmatch(data, -1)
 
 	if len(matches) > 1 && len(matches[1]) > 1 {
-		return matches[1][1]
+		for _, match := range matches {
+			if strings.IndexFunc(match[1], unicode.IsLetter) != -1 {
+                return match[1]
+            }
+		}
 	}
 	return ""
 }

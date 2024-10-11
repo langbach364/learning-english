@@ -320,7 +320,7 @@ func define_word(word string) map[string][]string {
 	}
 
 	var extractedWords map[int]string
-	words := handle_vietnamese_map(&definitions, &extractedWords)
+	words := handle_english_map(&definitions)
 
 	graftedWords := graft(words, extractedWords)
 

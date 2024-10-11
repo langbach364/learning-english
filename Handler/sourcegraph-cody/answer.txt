@@ -1,21 +1,79 @@
+Dựa trên thông tin được cung cấp, tôi xác định đây là cấu trúc [Từ loại]. Tôi sẽ phân tích theo cấu trúc đó:
+
 [Từ loại]:
 
-* Từ: remake
-* Từ loại: danh từ, động từ
+* Từ: make
+* Từ loại: Động từ nội động, Danh từ, Cụm động từ, Thành ngữ
 
-* Định nghĩa (danh từ):
-+ Một cái gì đó ở dạng làm lại, đặc biệt là phiên bản mới của một bộ phim hoặc bài hát trước đó. (1)
-+ Hành động làm lại. (2)
+* Định nghĩa (Động từ nội động):
++ Gây ra sự tồn tại hoặc xảy ra; tạo ra; làm cho. (1)
++ Ví dụ: Cô ấy đã tạo ra một tác phẩm nghệ thuật tuyệt đẹp. (VI) (1)
++ Ví dụ: She made a beautiful piece of art. (EN) (1)
 
-* Định nghĩa (động từ):
-+ Làm lại hoặc làm mới. (3)
++ Tạo ra bằng cách định hình, sửa đổi hoặc kết hợp vật liệu; xây dựng. (2)
++ Ví dụ: Anh ấy đã làm một chiếc ghế từ gỗ sồi. (VI) (2)
++ Ví dụ: He made a chair from oak wood. (EN) (2)
 
-+ Ví dụ: Bộ phim "Người đẹp và quái vật" năm 2017 là một remake của phiên bản hoạt hình năm 1991. (1) (VI)
-+ Ví dụ: The 2017 film "Beauty and the Beast" is a remake of the 1991 animated version. (1) (EN)
++ Hình thành bằng cách tập hợp các cá nhân hoặc thành phần. (3)
++ Ví dụ: Họ đã lập một ủy ban để giải quyết vấn đề. (VI) (3)
++ Ví dụ: They made a committee to address the issue. (EN) (3)
 
-+ Ví dụ: Việc remake lại các bài hát cũ đang trở thành xu hướng trong ngành âm nhạc. (2) (VI)
-+ Ví dụ: The remake of old songs is becoming a trend in the music industry. (2) (EN)
++ Thay đổi từ một hình thức hoặc chức năng này sang hình thức hoặc chức năng khác. (4)
++ Ví dụ: Cô ấy đã biến căn phòng thành một văn phòng. (VI) (4)
++ Ví dụ: She made the room into an office. (EN) (4)
 
-+ Ví dụ: Họ quyết định remake lại bộ phim kinh điển để phù hợp với khán giả hiện đại. (3) (VI)
-+ Ví dụ: They decided to remake the classic film to appeal to modern audiences. (3) (EN)
+* Định nghĩa (Danh từ):
++ Phong cách hoặc cách thức mà một vật được tạo ra. (5)
++ Ví dụ: Chiếc áo này có kiểu dáng rất đẹp. (VI) (5)
++ Ví dụ: This dress has a beautiful make. (EN) (5)
+
++ Một dòng sản phẩm cụ thể, được xác định bởi tên nhà sản xuất hoặc thương hiệu đã đăng ký. (6)
++ Ví dụ: Anh ấy thích xe hơi của hãng Toyota. (VI) (6)
++ Ví dụ: He likes cars of the Toyota make. (EN) (6)
+
++ Nguồn gốc sản xuất của một sản phẩm. (7)
++ Ví dụ: Sản phẩm này có xuất xứ từ Nhật Bản. (VI) (7)
++ Ví dụ: This product is of Japanese make. (EN) (7)
+
+* Định nghĩa (Cụm động từ):
++ Có hoặc tạo ra (một hiệu ứng hoặc kết quả cụ thể). (8)
++ Ví dụ: Quyết định này sẽ tạo ra sự khác biệt lớn. (VI) (8)
++ Ví dụ: This decision will make a big difference. (EN) (8)
+
++ Giúp thúc đẩy; tiến xa hơn. (9)
++ Ví dụ: Chính sách mới này sẽ thúc đẩy tăng trưởng kinh tế. (VI) (9)
++ Ví dụ: This new policy will make for economic growth. (EN) (9)
+
++ Rời đi vội vàng; chạy trốn. (10)
++ Ví dụ: Khi cảnh sát đến, bọn trộm đã bỏ chạy. (VI) (10)
++ Ví dụ: When the police arrived, the thieves made off. (EN) (10)
+
++ Nhận ra hoặc thấy, đặc biệt là với sự khó khăn. (11)
++ Ví dụ: Tôi có thể nhìn thấy một con tàu ở xa xa. (VI) (11)
++ Ví dụ: I can make out a ship in the distance. (EN) (11)
+
++ Hiểu. (12)
++ Ví dụ: Tôi không thể hiểu được ý của anh ấy. (VI) (12)
++ Ví dụ: I couldn't make out what he meant. (EN) (12)
+
+* Định nghĩa (Thành ngữ):
++ (make a clean breast of) Thú nhận hoàn toàn. (13)
++ Ví dụ: Anh ấy đã thú nhận hết mọi chuyện với cảnh sát. (VI) (13)
++ Ví dụ: He made a clean breast of everything to the police. (EN) (13)
+
++ (make a face) Làm méo mó các đặc điểm của khuôn mặt; nhăn nhó. (14)
++ Ví dụ: Đứa trẻ nhăn mặt khi nếm thử món ăn cay. (VI) (14)
++ Ví dụ: The child made a face when tasting the spicy food. (EN) (14)
+
++ (make a go of) Đạt được thành công trong. (15)
++ Ví dụ: Họ đã thành công trong việc kinh doanh nhà hàng. (VI) (15)
++ Ví dụ: They made a go of the restaurant business. (EN) (15)
+
++ (make away with) Mang đi; ăn cắp. (16)
++ Ví dụ: Tên trộm đã lấy đi tất cả đồ trang sức. (VI) (16)
++ Ví dụ: The thief made away with all the jewelry. (EN) (16)
+
++ (make away with) Sử dụng hết hoặc tiêu thụ. (17)
++ Ví dụ: Chúng tôi đã ăn hết tất cả bánh pizza. (VI) (17)
++ Ví dụ: We made away with all the pizza. (EN) (17)
 
