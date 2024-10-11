@@ -174,4 +174,4 @@ func main() {
 	data_x := data_structure()
 	fmt.Println(data_x)
 
-}
+} 

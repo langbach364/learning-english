@@ -50,7 +50,7 @@ func read_file_word_api() http.HandlerFunc {
 		switch r.Method {
 		case "POST":
 			{
-				data := data_synthetic()
+				data := data_structure()
 				jsonData, err := json.Marshal(data)
 				check_err(err)
 
