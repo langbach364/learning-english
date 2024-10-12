@@ -51,11 +51,17 @@ func read_file_word_api() http.HandlerFunc {
 		case "POST":
 			{
 				data := data_structure()
-				jsonData, err := json.Marshal(data)
+				jsonData, err := json.MarshalIndent(data, "", "    ")
 				check_err(err)
 
 				fmt.Println(string(jsonData))
-				json.NewEncoder(w).Encode(jsonData)
+				response := map[string]string{
+					"data": string(jsonData),
+				}
+
+				w.Header().Set("Content-Type", "application/json")
+				json.NewEncoder(w).SetIndent("", "    ")
+				json.NewEncoder(w).Encode(response)
 			}
 		default:
 			fmt.Println("Method không được sử dụng")
@@ -80,7 +86,7 @@ func path_file() map[string]string {
 	return map[string]string{
 		"word":        "../Middleware/word.txt",
 		"listen_word": "../Middleware/listen.txt",
-		"read_word": "./sourcegraph-cody/answer.txt",
+		"read_word":   "./sourcegraph-cody/answer.txt",
 	}
 }
 

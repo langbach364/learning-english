@@ -1,133 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Phân tích câu tiếng Anh</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="src/styles/main.css" />
-</head>
-<body class="bg-gray-100">
-  <div id="app">
-    <div class="container mx-auto p-4">
-      <h1 class="text-3xl font-bold mb-4">Phân tích câu tiếng Anh</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phân tích từ tiếng Anh</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles/main.css" />
+  </head>
+  <body class="bg-gray-100">
+    <div id="app" class="container mx-auto p-4">
+      <h1 class="text-3xl font-bold mb-4">Phân tích từ tiếng Anh</h1>
 
       <div class="mb-4">
-        <input v-model="newWord" type="text" class="border p-2" placeholder="Nhập từ mới">
-        <button @click.prevent="sendWordToServer" class="bg-blue-500 text-white p-2 ml-2">Gửi</button>
+        <input
+          v-model="newWord"
+          type="text"
+          class="border p-2"
+          placeholder="Nhập từ mới"
+        />
+        <button
+          @click="sendWordToServer"
+          class="bg-blue-500 text-white p-2 ml-2"
+          :disabled="isSending"
+        >
+          {{ isSending ? 'Đang gửi...' : 'Gửi' }}
+        </button>
       </div>
 
-      <button @click.prevent="toggleScanning" class="bg-blue-500 text-white p-2 mb-2 flex items-center">
+      <button
+        @click="toggleScanning"
+        class="bg-blue-500 text-white p-2 mb-2 flex items-center"
+      >
         {{ isScanning ? 'Dừng quét' : 'Bắt đầu quét' }}
         <span v-if="isScanning" class="ml-2 animate-pulse">🔍</span>
       </button>
 
       <div v-if="isScanning" class="text-green-600 mb-2">
-        Chế độ quét đang hoạt động. Hãy chọn từ trong câu để xem định nghĩa.
+        Chế độ quét đang hoạt động. Hãy chọn từ để xem định nghĩa.
       </div>
 
-      <div v-if="sentenceInfo" class="mb-8">
-        <h2 class="text-2xl font-bold mb-2">Thông tin câu:</h2>
-        <div v-if="sentenceInfo['Câu gốc']" class="mb-4">
-          <h3 class="text-xl font-semibold mb-2">Câu gốc:</h3>
-          <div
-            @mousedown="startSelection($event, 'original')"
-            @mousemove="updateSelection($event, 'original')"
-            @mouseup="endSelection($event, 'original')"
-            @click="handleClick($event, 'original')"
-            class="original-sentence"
-          >
-            <span
-              v-for="(word, index) in sentenceInfo['Câu gốc'].split(' ')"
-              :key="index"
-              :class="{
-                'cursor-pointer': isScanning,
-                'bg-yellow-100': isScanning && highlightedOriginalWords.includes(word),
-                'word-span': true
-              }"
-              class="mr-1"
-            >
-              {{ word }}
-            </span>
+      <div
+        v-for="(typeDefinitions, type) in definitions"
+        :key="type"
+        class="mb-6"
+      >
+        <h2 class="text-2xl font-bold mb-2">{{ type }}</h2>
+        <div
+          v-for="(definition, key) in typeDefinitions"
+          :key="key"
+          class="mb-4"
+        >
+          <h3 class="text-xl font-semibold mb-2">{{ key }}</h3>
+          <div v-if="definition.examples.VI.length" class="mb-2">
+            <h4 class="text-lg font-medium">Ví dụ tiếng Việt:</h4>
+            <ul class="list-disc list-inside">
+              <li
+                v-for="example in definition.examples.VI"
+                :key="example"
+                @click="handleWordClick(example)"
+                :class="{'cursor-pointer': isScanning, 'bg-yellow-100': isScanning && highlightedWords.includes(example)}"
+              >
+                {{ example }}
+              </li>
+            </ul>
           </div>
-        </div>
-        <div v-if="sentenceInfo['Ghi lại câu đã sửa']" class="mb-4">
-          <h3 class="text-xl font-semibold mb-2">Ghi lại câu đã sửa:</h3>
-          <div
-            @mousedown="startSelection($event, 'edited')"
-            @mousemove="updateSelection($event, 'edited')"
-            @mouseup="endSelection($event, 'edited')"
-            @click="handleClick($event, 'edited')"
-            class="edited-sentence"
-          >
-            <span
-              v-for="(word, index) in sentenceInfo['Ghi lại câu đã sửa'].split(' ')"
-              :key="index"
-              :class="{
-                'cursor-pointer': isScanning,
-                'bg-yellow-100': isScanning && highlightedEditedWords.includes(word),
-                'word-span': true
-              }"
-              class="mr-1"
-            >
-              {{ word }}
-            </span>
-          </div>
-        </div>
-        <div v-for="(value, key) in sentenceInfo" :key="key" class="mb-4">
-          <template v-if="key !== 'Câu gốc' && key !== 'Ghi lại câu đã sửa'">
-            <h3 class="text-xl font-semibold mb-2">{{ key }}:</h3>
-            <div v-if="Array.isArray(value)">
-              <ul class="list-disc list-inside">
-                <li v-for="item in value">{{ item }}</li>
-              </ul>
-            </div>
-            <div v-else>{{ value }}</div>
-          </template>
-        </div>
-      </div>
-
-      <div v-if="highlightedOriginalWords.length || highlightedEditedWords.length" class="fixed bg-white p-4 shadow-lg rounded-lg max-w-md" :style="{ top: tooltipPosition.y + 'px', left: tooltipPosition.x + 'px' }">
-        <h3 class="text-xl font-bold mb-2 tooltip-words">
-          {{ (highlightedOriginalWords.length ? highlightedOriginalWords : highlightedEditedWords).join(' ') }}
-        </h3>
-        <div v-for="word in (highlightedOriginalWords.length ? highlightedOriginalWords : highlightedEditedWords)" :key="word">
-          <div v-for="(typeInfo, type) in wordsInfo" :key="type">
-            <div v-if="typeInfo[word]">
-              <h4 class="font-semibold text-blue-600">{{ type }}</h4>
-              <ul class="list-disc list-inside">
-                <li v-for="(definition, index) in typeInfo[word]" :key="index">
-                  {{ definition.definition }}
-                  <ul v-if="definition.examples.length" class="list-disc list-inside ml-4 text-gray-600">
-                    <li v-for="example in definition.examples" :key="example">{{ example }}</li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
+          <div v-if="definition.examples.EN.length" class="mb-2">
+            <h4 class="text-lg font-medium">Ví dụ tiếng Anh:</h4>
+            <ul class="list-disc list-inside">
+              <li
+                v-for="example in definition.examples.EN"
+                :key="example"
+                @click="handleWordClick(example)"
+                :class="{'cursor-pointer': isScanning, 'bg-yellow-100': isScanning && highlightedWords.includes(example)}"
+              >
+                {{ example }}
+              </li>
+            </ul>
           </div>
         </div>
       </div>
 
-      <div v-if="wordsInfo">
-        <h2 class="text-2xl font-bold mb-2">Thông tin từ:</h2>
-        <div v-for="(typeInfo, type) in wordsInfo" :key="type" class="mb-6">
-          <h3 class="text-xl font-semibold mb-2">{{ type }}</h3>
-          <div v-for="(wordInfo, word) in typeInfo" :key="word" class="mb-4">
-            <h4 class="text-lg font-medium mb-2">{{ word }}</h4>
-            <div v-for="(definition, index) in wordInfo" :key="index" class="mb-2">
-              <p>{{ definition.definition }}</p>
-              <ul v-if="definition.examples && definition.examples.length" class="list-disc list-inside ml-4">
-                <li v-for="example in definition.examples" :key="example">{{ example }}</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+      <div
+        v-if="highlightedWords.length"
+        class="fixed bg-white p-4 shadow-lg rounded-lg max-w-md"
+        :style="{ top: tooltipPosition.y + 'px', left: tooltipPosition.x + 'px' }"
+      >
+        <h3 class="text-xl font-bold mb-2">{{ highlightedWords.join(' ') }}</h3>
+        <!-- Thêm nội dung tooltip ở đây nếu cần -->
       </div>
     </div>
-  </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/vue@3.2.31/dist/vue.global.js"></script>
-  <script src="src/modules/struct_definition.js"></script>
-  <script src="src/App.js"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.2.31/dist/vue.global.js"></script>
+    <script type="module" src="src/App.js"></script>
+  </body>
 </html>

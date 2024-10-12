@@ -156,22 +156,19 @@ func close_socket(socket net.Listener) {
 }
 
 func main() {
-	// data := path_file()
-	// socketPath := "./tmp/cody.sock"
+	data := path_file()
+	socketPath := "./tmp/cody.sock"
 
-	// var err error
-	// socketCody, err = create_socket(socketPath)
-	// if err != nil {
-	//     log.Fatalf("Không thể tạo socket: %v", err)
-	// }
+	var err error
+	socketCody, err = create_socket(socketPath)
+	if err != nil {
+	    log.Fatalf("Không thể tạo socket: %v", err)
+	}
 
-	// go middleware_Word(data["word"])
-	// go middleware_listen_word(data["listen_word"])
+	go middleware_Word(data["word"])
+	go middleware_listen_word(data["listen_word"])
 
-	// close_socket(socketCody)
-	// create_server()
-
-	data_x := data_structure()
-	fmt.Println(data_x)
+	close_socket(socketCody)
+	create_server()
 
 } 

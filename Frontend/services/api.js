@@ -17,3 +17,15 @@ export function sendScannedWordsToServer(words) {
     body: JSON.stringify({ data: words.join(' ') }),
   });
 }
+
+export function fetchDefinitionsFromServer() {
+  return fetch("http://localhost:7089/read_word", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+  })
+  .then(response => response.json())
+  .then(data => JSON.parse(data.data));
+}
+
