@@ -1,57 +1,7 @@
 &&&
-Idiom:
+Câu:
 
-- (make a clean breast of)  To confess fully.
-
-- (make a face)  To distort the features of the face; grimace.
-
-- (make a go of)  To achieve success in.
-
-- (make away with)  To carry off; steal.
-
-- (make away with)  To use up or consume.
-
--------------------------------------
-
-Từ:
-
-- make
-
--------------------------------------
-
-Intransitive verb:
-
-- To cause to exist or happen; bring about; create.
-
-- To bring into existence by shaping, modifying, or putting together material; construct.
-
-- To form by assembling individuals or constituents.
-
-- To change from one form or function to another.
-
--------------------------------------
-
-Noun:
-
-- The style or manner in which a thing is made.
-
-- A specific line of manufactured goods, identified by the manufacturer's name or the registered trademark.
-
-- The origin of a product's manufacturing.
-
--------------------------------------
-
-Phrasal verb:
-
-- To have or produce (a particular effect or result).
-
-- To help promote; further.
-
-- To depart in haste; run away.
-
-- To discern or see, especially with difficulty.
-
-- To understand.
+- done fix frontend but not added funtion scan word 
 
 -------------------------------------
 

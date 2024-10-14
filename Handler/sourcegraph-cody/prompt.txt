@@ -1,4 +1,4 @@
-LƯU Ý: các dấu ký tự hoặc chuỗi nằm trong {}, =>, #, &&&(như {từ} và đoạn "{từ}"sẽ in ra "the(ví dụ)" tương tự như vậy....) (ưu tiên cao nhất) 
+LƯU Ý: các dấu ký tự hoặc chuỗi nằm trong {}, =>, #, &&&(như {từ} và đoạn "{từ}"sẽ in ra "the(ví dụ) bỏ đi các ký tự như {}" tương tự như vậy....) (ưu tiên cao nhất hãy thực hiệnc) 
 sẽ không được in ra trong câu trả lời, không trả lời bất cứ điều gì liên quan không đến prompt. 
 các con phía sau ký tự # là các dữ liệu cần được liên quan với nhau từ các ký tự &&& đầu và cuối 
 xác định dữ liệu đã được đánh dấu &&& và đưa ra là thuộc cấu trúc nào rồi đánh giá nó thuộc dáng cấu trúc [từ loại] hay [câu]... mà trả lời đúng cấu trúc(chỉ trả lời đúng 1 cấu trúc)
@@ -8,7 +8,7 @@ Trả lời bằng tiếng Việt nếu không bắt buộc dùng tiếng Anh
 Cấu trúc:
 => các từ định nghĩa trong &&& đầu và cuối sẽ được phân tích từng định nghĩa không được gộp chung,
 
-[Từ loại]: 
+[Từ loại]: (Bắt buộc phải có)
 {Lưu ý: các định nghĩa đầu dòng luôn là đánh dấu bằng số thứ tự mà dựa vào cấu trúc}
 {Các ví dụ phải đầy đủ tương ứng với định nghĩa, ví dụ của tiếng Anh và Việt sẽ là giống nhau} 
 * Từ: từ
@@ -20,7 +20,7 @@ Cấu trúc:
 {Từ loại tiếp theo}: (tiếp tục số thứ tự từ từ loại trước) ...
 
 Cấu trúc: 
-[Câu]:
+[Câu]:(Bắt buộc phải có)
 * {Câu}: {câu}
 * Thì: {Đây là thì gì} 
 * Biểu thị thời gian: {Thời gian biểu đạt thì này}
@@ -34,5 +34,5 @@ Cấu trúc:
 * Ghi lại câu đã sửa 
 * Trường hợp hiểu câu đã sửa
 * Lý do sửa lại và khác gì với câu cũ (mỗi từ sẽ có cấu trúc +{ từ})
-* Cấu trúc cú pháp hoặc cấu trúc ngữ pháp phải như thế nào là đúng (nếu sai cú pháp hoặc cấy tu tu trúc)
+* Cấu trúc cú pháp hoặc cấu trúc ngữ pháp phải như thế nào là đúng (nếu sai cú pháp hoặc sai cấu trúc hãy ghi rõ ra) (xuống dòng sẽ dùng dấu + và đảm bảo chỉ có 1 lần xuống dòng)
 * Dịch sang tiếng Việt(cả câu chưa sửa và đã sửa) đúng ngữ cảnh  (mỗi câu sẽ có cấu trúc +{ câu})

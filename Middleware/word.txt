@@ -1,1 +1,1 @@
-make
+done fix frontend but not added funtion scan word 

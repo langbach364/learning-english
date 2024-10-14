@@ -1,14 +1,16 @@
-import { fetchDefinitionsFromServer } from "../services/api.js";
+import { fetchDefinitionsFromServer, sendWordToServer, sendScannedWordsToServer } from "../services/api.js";
 
 const app = Vue.createApp({
   data() {
     return {
       definitions: {},
+      sentenceStructure: {},
       newWord: "",
       highlightedWords: [],
       tooltipPosition: { x: 0, y: 0 },
       isScanning: false,
       isSending: false,
+      dataType: null,
     };
   },
   methods: {
@@ -16,13 +18,7 @@ const app = Vue.createApp({
       if (this.newWord.trim() === "") return;
 
       this.isSending = true;
-      fetch("http://localhost:7089/word", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ data: this.newWord }),
-      })
+      sendWordToServer(this.newWord)
         .then(() => {
           console.log("Word sent successfully");
           this.newWord = "";
@@ -37,35 +33,63 @@ const app = Vue.createApp({
       console.log("Fetching definitions...");
       fetchDefinitionsFromServer()
         .then((data) => {
-          this.definitions = this.processDefinitions(data);
+          if (data['* Câu:']) {
+            this.sentenceStructure = this.processSentenceStructure(data);
+            this.dataType = 'sentence';
+          } else {
+            this.definitions = this.processWordDefinitions(data);
+            this.dataType = 'word';
+          }
           console.log("Definitions fetched and processed");
         })
         .catch((error) => console.error("Error fetching definitions:", error));
     },
-    processDefinitions(data) {
+    processWordDefinitions(data) {
       const processed = {};
       for (const [type, definitions] of Object.entries(data)) {
-        processed[type.replace('*', '').trim()] = {};
-        const sortedDefinitions = Object.entries(definitions).sort((a, b) => {
-          const numA = parseInt(a[0].match(/\((\d+)\)/)[1]);
-          const numB = parseInt(b[0].match(/\((\d+)\)/)[1]);
-          return numA - numB;
-        });
-        for (const [def, examples] of sortedDefinitions) {
-          const [definition, number] = def.replace('+', '').split('(');
-          const key = definition.trim();
-          processed[type.replace('*', '').trim()][key] = {
-            number: number ? number.replace(')', '').trim() : '',
+        processed[type.replace(/^\*\s*/, '')] = {};
+        for (const [def, examples] of Object.entries(definitions)) {
+          const newDef = def.replace(/^[+*]\s*/, '');
+          processed[type.replace(/^\*\s*/, '')][newDef] = {
             examples: {
-              VI: examples.VI ? examples.VI.map(e => e.replace(/^Ví dụ: /, '').trim()) : [],
-              EN: examples.EN ? examples.EN.map(e => e.replace(/^Ví dụ: /, '').trim()) : []
+              VI: examples && examples.VI ? examples.VI.map(e => e.replace(/^Ví dụ: /, '').trim()) : [],
+              EN: examples && examples.EN ? examples.EN.map(e => e.replace(/^Ví dụ: /, '').trim()) : []
             }
           };
         }
       }
       return processed;
+    
+    },
+    processSentenceStructure(data) {
+      const processed = {};
+      const order = ['* Câu:', '* Ghi lại câu chưa sửa:', '* Ghi lại câu đã sửa:'];
+      
+      // Xử lý các khóa ưu tiên trước
+      for (const key of order) {
+        if (data[key]) {
+          processed[key.replace(/^\*\s*/, '')] = data[key];
+        }
+      }
+      
+      // Xử lý các khóa còn lại
+      for (const [key, value] of Object.entries(data)) {
+        if (!order.includes(key)) {
+          const newKey = key.replace(/^\*\s*/, '');
+          if (Array.isArray(value)) {
+            processed[newKey] = value.map(item => item.replace(/^[+*]\s*/, '').replace(/^\{|\}$/g, ''));
+          } else if (typeof value === 'string') {
+            processed[newKey] = value.replace(/^\{|\}$/g, '');
+          } else {
+            processed[newKey] = value;
+          }
+        }
+      }
+      
+      return processed;
     }
     ,
+
     toggleScanning() {
       this.isScanning = !this.isScanning;
       if (!this.isScanning) {
@@ -82,13 +106,7 @@ const app = Vue.createApp({
     sendScannedWordsToServer(words) {
       if (this.isSending) return;
       this.isSending = true;
-      fetch("http://localhost:7089/listen_word", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ data: words.join(" ") }),
-      })
+      sendScannedWordsToServer(words)
         .then((response) => {
           if (!response.ok) {
             throw new Error("Network response was not ok");

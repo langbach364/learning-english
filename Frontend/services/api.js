@@ -28,4 +28,3 @@ export function fetchDefinitionsFromServer() {
   .then(response => response.json())
   .then(data => JSON.parse(data.data));
 }
-
