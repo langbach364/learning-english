@@ -60,17 +60,32 @@ li {
   user-select: none;
 }
 
-.original-sentence span {
-  padding: 2px 0;
-  margin-right: 4px;
-  cursor: pointer;
+.scanning-active:hover {
+  background-color: transparent;
 }
 
-.scanning-active:hover {
-  background-color: rgba(255, 255, 0, 0.2);
-  transition: background-color 0.3s ease;
+.original-sentence span:hover {
+  background-color: transparent;
 }
 
 .highlighted {
   background-color: #ffff00;
+}
+
+.bg-yellow-100 {
+  background-color: rgba(255, 255, 0, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+.bg-green-200 {
+  background-color: rgba(0, 255, 0, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.cursor-pointer:hover {
+  background-color: transparent;
 }

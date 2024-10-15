@@ -1,7 +1,10 @@
 export function initWordInfo(state) {
-  const wordInfoContainer = document.querySelector('#wordInfo');
-
-  function updateWordInfo() {
+    function updateWordInfo() {
+      const wordInfoContainer = document.querySelector('#wordInfo');
+      if (!wordInfoContainer) {
+        console.warn('Word info container not found');
+        return;
+      }
     let html = '<h2 class="text-2xl font-bold mb-2">Thông tin từ:</h2>';
     for (const [type, typeInfo] of Object.entries(state.wordsInfo)) {
       html += `<div class="mb-6">

@@ -1,43 +1,39 @@
-Dữ liệu được đánh dấu &&& thuộc cấu trúc [Câu]. Tôi sẽ phân tích và trả lời theo cấu trúc đó:
-
 [Câu]:
-* Câu: done fix frontend but not added funtion scan word
+
+* Câu: The car is the best
 * Thì: Hiện tại đơn
 * Biểu thị thời gian: Hiện tại
-* Cách sử dụng thì: 
-+ Thời gian: Diễn tả một hành động đã hoàn thành
-+ Điều kiện: Không có điều kiện cụ thể
+* Cách sử dụng thì:
++ Diễn tả sự thật, chân lý
++ Diễn tả thói quen, hành động lặp đi lặp lại
++ Diễn tả tình trạng, trạng thái ở hiện tại
+
 * Phân loại các từ thành từ loại:
-+ done: Tính từ
-+ fix: Động từ
-+ frontend: Danh từ
-+ but: Liên từ
-+ not: Phó từ
-+ added: Động từ (quá khứ phân từ)
-+ funtion: Danh từ (lỗi chính tả)
-+ scan: Động từ
-+ word: Danh từ
++ The: Mạo từ
++ car: Danh từ
++ is: Động từ
++ the: Mạo từ
++ best: Tính từ
+
 * Phân loại các từ thành các dạng quá khứ hay tương lai:
-+ done: Quá khứ phân từ của "do"
-+ fix: Nguyên mẫu
-+ added: Quá khứ phân từ của "add"
-+ scan: Nguyên mẫu
++ The: Không thay đổi
++ car: Không thay đổi
++ is: Quá khứ: was, Tương lai: will be
++ the: Không thay đổi
++ best: Không thay đổi
+
 * Ví dụ sử dụng các dạng thì khác:
-+ I have done fixing the frontend but have not added the function to scan words. (Hiện tại hoàn thành)
-+ I was fixing the frontend but did not add the function to scan words. (Quá khứ tiếp diễn)
-+ I will fix the frontend but will not add the function to scan words. (Tương lai đơn)
-* Kiểm tra câu có bị sai: Có
-* Ghi lại câu chưa sửa: done fix frontend but not added funtion scan word
-* Trường hợp hiểu câu chưa sửa: Đã sửa xong phần giao diện nhưng chưa thêm chức năng quét từ
-* Ghi lại câu đã sửa: Done fixing the frontend but not added function to scan words
-* Trường hợp hiểu câu đã sửa: Đã hoàn thành việc sửa giao diện nhưng chưa thêm chức năng quét từ
-* Lý do sửa lại và khác gì với câu cũ:
-+ done: Thêm "ing" để tạo thành cụm động từ "done fixing"
-+ funtion: Sửa lỗi chính tả thành "function"
-+ to: Thêm "to" trước "scan" để tạo cụm động từ nguyên mẫu
-* Cấu trúc cú pháp hoặc cấu trúc ngữ pháp phải như thế nào là đúng: 
-+ [Chủ ngữ] + have/has + done + V-ing + [Tân ngữ] + but + have/has + not + V3 + [Tân ngữ]
++ Quá khứ đơn: The car was the best
++ Tương lai đơn: The car will be the best
++ Hiện tại hoàn thành: The car has been the best
+
+* Kiểm tra câu có bị sai: Không
+* Ghi lại câu chưa sửa: The car is the best
+* Trường hợp hiểu câu chưa sửa: Chiếc xe hơi là tốt nhất
+* Ghi lại câu đã sửa: Không cần sửa
+* Trường hợp hiểu câu đã sửa: Không áp dụng
+* Lý do sửa lại và khác gì với câu cũ: Không áp dụng
+* Cấu trúc cú pháp hoặc cấu trúc ngữ pháp phải như thế nào là đúng: Câu đã đúng cấu trúc: Chủ ngữ (The car) + Động từ (is) + Bổ ngữ (the best)
 * Dịch sang tiếng Việt đúng ngữ cảnh:
-+ Câu chưa sửa: Đã sửa xong giao diện nhưng chưa thêm chức năng quét từ
-+ Câu đã sửa: Đã hoàn thành việc sửa giao diện nhưng chưa thêm chức năng quét từ
++ Chiếc xe hơi là tốt nhất
 

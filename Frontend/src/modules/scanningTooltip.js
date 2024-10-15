@@ -2,29 +2,20 @@ export function initScanningTooltip(state) {
   const tooltipContainer = document.querySelector('#scanningTooltip');
 
   function updateTooltip() {
-    if (state.highlightedOriginalWords.length || state.highlightedEditedWords.length) {
-      const words = state.highlightedOriginalWords.length ? state.highlightedOriginalWords : state.highlightedEditedWords;
-      let html = `<h3 class="text-xl font-bold mb-2 tooltip-words">${words.join(' ')}</h3>`;
-      for (const word of words) {
-        for (const [type, typeInfo] of Object.entries(state.wordsInfo)) {
-          if (typeInfo[word]) {
-            html += `<div>
-              <h4 class="font-semibold text-blue-600">${type}</h4>
-              <ul class="list-disc list-inside">`;
-            for (const definition of typeInfo[word]) {
-              html += `<li>
-                ${definition.definition}
-                ${definition.examples.length ? `
-                  <ul class="list-disc list-inside ml-4 text-gray-600">
-                    ${definition.examples.map(example => `<li>${example}</li>`).join('')}
-                  </ul>
-                ` : ''}
-              </li>`;
-            }
-            html += `</ul></div>`;
-          }
+    if (state.isScanning && state.currentScannedWord) {
+      const { word } = state.currentScannedWord;
+      let html = `<h3 class="text-xl font-bold mb-2">Đang quét: ${word}</h3>`;
+
+      if (state.wordsInfo[word]) {
+        html += `<div class="mt-4">
+          <h4 class="font-semibold text-blue-600">Thông tin từ</h4>
+          <ul class="list-disc list-inside">`;
+        for (const definition of state.wordsInfo[word]) {
+          html += `<li>${definition.definition}</li>`;
         }
+        html += `</ul></div>`;
       }
+
       tooltipContainer.innerHTML = html;
       tooltipContainer.style.display = 'block';
       tooltipContainer.style.top = `${state.tooltipPosition.y}px`;
@@ -34,6 +25,5 @@ export function initScanningTooltip(state) {
     }
   }
 
-  // Observe state changes and update tooltip
-  setInterval(() => updateTooltip(), 100);
+  setInterval(updateTooltip, 100);
 }
