@@ -1,39 +1,9 @@
-[Câu]:
+[Từ loại]:
 
-* Câu: The car is the best
-* Thì: Hiện tại đơn
-* Biểu thị thời gian: Hiện tại
-* Cách sử dụng thì:
-+ Diễn tả sự thật, chân lý
-+ Diễn tả thói quen, hành động lặp đi lặp lại
-+ Diễn tả tình trạng, trạng thái ở hiện tại
-
-* Phân loại các từ thành từ loại:
-+ The: Mạo từ
-+ car: Danh từ
-+ is: Động từ
-+ the: Mạo từ
-+ best: Tính từ
-
-* Phân loại các từ thành các dạng quá khứ hay tương lai:
-+ The: Không thay đổi
-+ car: Không thay đổi
-+ is: Quá khứ: was, Tương lai: will be
-+ the: Không thay đổi
-+ best: Không thay đổi
-
-* Ví dụ sử dụng các dạng thì khác:
-+ Quá khứ đơn: The car was the best
-+ Tương lai đơn: The car will be the best
-+ Hiện tại hoàn thành: The car has been the best
-
-* Kiểm tra câu có bị sai: Không
-* Ghi lại câu chưa sửa: The car is the best
-* Trường hợp hiểu câu chưa sửa: Chiếc xe hơi là tốt nhất
-* Ghi lại câu đã sửa: Không cần sửa
-* Trường hợp hiểu câu đã sửa: Không áp dụng
-* Lý do sửa lại và khác gì với câu cũ: Không áp dụng
-* Cấu trúc cú pháp hoặc cấu trúc ngữ pháp phải như thế nào là đúng: Câu đã đúng cấu trúc: Chủ ngữ (The car) + Động từ (is) + Bổ ngữ (the best)
-* Dịch sang tiếng Việt đúng ngữ cảnh:
-+ Chiếc xe hơi là tốt nhất
+* Từ: 123123
+* Từ loại: Số
+* Định nghĩa (số):
++ Một dãy các chữ số biểu thị một giá trị số học cụ thể. (1)
++ Ví dụ: Số điện thoại của tôi là 123123. (1) (VI)
++ Ví dụ: My phone number is 123123. (1) (EN)
 

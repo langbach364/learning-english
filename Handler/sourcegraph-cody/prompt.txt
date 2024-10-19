@@ -4,6 +4,7 @@ các con phía sau ký tự # là các dữ liệu cần được liên quan v�
 xác định dữ liệu đã được đánh dấu &&& và đưa ra là thuộc cấu trúc nào rồi đánh giá nó thuộc dáng cấu trúc [từ loại] hay [câu]... mà trả lời đúng cấu trúc(chỉ trả lời đúng 1 cấu trúc)
 Hãy suy nghĩ theo hướng cấu trúc tôi đã sắp xếp không được suy nghĩ theo hướng nào khác
 Trả lời bằng tiếng Việt nếu không bắt buộc dùng tiếng Anh
+Câu trả lời bắt buộc phải giống cấu trúc(ưu tiên cao nhất)
 
 Cấu trúc:
 => các từ định nghĩa trong &&& đầu và cuối sẽ được phân tích từng định nghĩa không được gộp chung,

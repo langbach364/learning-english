@@ -9,6 +9,7 @@ require (
 
 require (
 	github.com/fsnotify/fsnotify v1.7.0
+	github.com/gorilla/websocket v1.5.3
 	github.com/hajimehoshi/go-mp3 v0.3.3 // indirect
 	github.com/hajimehoshi/oto/v2 v2.2.0 // indirect
 	github.com/rs/cors v1.11.1

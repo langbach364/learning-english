@@ -1,3 +1,4 @@
+
 import { fetchDefinitionsFromServer, sendWordToServer, sendScannedWordsToServer } from "../services/api.js";
 import { highlightWord, clearHighlight, highlightSentence, getWordClass } from "../utils/highlight.js";
 import { initScanningTooltip } from "./modules/scanningTooltip.js";

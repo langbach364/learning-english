@@ -2,6 +2,7 @@ package main
 
 import (
 	"bufio"
+	"encoding/json"
 
 	"fmt"
 	"log"
@@ -15,6 +16,9 @@ import (
 
 	"github.com/fsnotify/fsnotify"
 )
+
+var data_json map[string][]byte
+var broadcast map[string]chan bool
 
 func watch_file(fileName string, fileChanged chan<- bool) {
 	watcher, err := fsnotify.NewWatcher()
@@ -90,8 +94,15 @@ func middleware_Word(filePath string) {
 				fmt.Println(text)
 			}
 			chat_cody(data, "anthropic/claude-3-5-sonnet-20240620")
-		}()
-	}
+
+			data_cody := data_structure()
+
+			jsonData, err := json.Marshal(data_cody)
+			check_err(err)
+
+			data_json["AnsCody"] = jsonData
+			broadcast["AnsCody"] <- true
+		}()	}
 }
 
 func middleware_listen_word(filePath string) {
@@ -124,18 +135,10 @@ func middleware_listen_word(filePath string) {
 			}
 
 			get_data("LangBach", "en")
+			data_json["LisWord"] = []byte("true")
+			broadcast["LisWord"] <- true
 			fmt.Println("Đã có âm thanh")
 		}()
-	}
-}
-
-func print_structured_data(data map[string][]string) {
-	for key, values := range data {
-		fmt.Printf("[key] %s: ", key)
-		for _, value := range values {
-			fmt.Printf("[value] %s\n", value)
-		}
-		fmt.Println()
 	}
 }
 
@@ -162,7 +165,7 @@ func main() {
 	var err error
 	socketCody, err = create_socket(socketPath)
 	if err != nil {
-	    log.Fatalf("Không thể tạo socket: %v", err)
+		log.Fatalf("Không thể tạo socket: %v", err)
 	}
 
 	go middleware_Word(data["word"])
@@ -171,4 +174,4 @@ func main() {
 	close_socket(socketCody)
 	create_server()
 
-} 
+}

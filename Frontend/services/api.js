@@ -30,25 +30,3 @@ export function fetchDefinitionsFromServer() {
   .then(response => response.json())
   .then(data => JSON.parse(data.data));
 }
-
-export function fetchSentenceAnalysis(sentence) {
-  return fetch(`${API_BASE_URL}/analyze_sentence`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({ data: sentence }),
-  })
-  .then(response => response.json());
-}
-
-export function fetchWordInfo(word) {
-  return fetch(`${API_BASE_URL}/word_info`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({ data: word }),
-  })
-  .then(response => response.json());
-}
