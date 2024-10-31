@@ -5,6 +5,8 @@ xác định dữ liệu đã được đánh dấu &&& và đưa ra là thuộc
 Hãy suy nghĩ theo hướng cấu trúc tôi đã sắp xếp không được suy nghĩ theo hướng nào khác
 Trả lời bằng tiếng Việt nếu không bắt buộc dùng tiếng Anh
 Câu trả lời bắt buộc phải giống cấu trúc(ưu tiên cao nhất)
+Không sử dụng số để thay thế cấu trúc đã định sẵn
+Không trả lời bất kỳ đoạn nào ngoài cấu trúc đã định sẵn
 
 Cấu trúc:
 => các từ định nghĩa trong &&& đầu và cuối sẽ được phân tích từng định nghĩa không được gộp chung,

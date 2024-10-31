@@ -154,7 +154,11 @@ func handler_data(data map[string][]string, line string, saveKey *string) {
 
 func skip_line(line string) bool {
 	line = strings.TrimSpace(line)
-	return len(line) == 0
+	if len(line) == 0 {
+		return true
+	}
+	_, ok := map[rune]bool{'*': false, '[': false, '+': false}[rune(line[0])]
+	return !ok
 }
 
 func check_key_or_value(data string) int {
@@ -172,11 +176,11 @@ func get_number_string(data string) string {
 	matches := re.FindAllStringSubmatch(data, -1)
 
 	if len(matches) > 0 && len(matches[0]) > 1 {
-  		for i, match := range matches {
-  			if _, err := strconv.Atoi(match[1]); err == nil {
-  				return matches[i][1]
-  			}
-  		}
+		for i, match := range matches {
+			if _, err := strconv.Atoi(match[1]); err == nil {
+				return matches[i][1]
+			}
+		}
 	}
 	return ""
 }
@@ -188,8 +192,8 @@ func get_language_code_string(data string) string {
 	if len(matches) > 1 && len(matches[1]) > 1 {
 		for _, match := range matches {
 			if strings.IndexFunc(match[1], unicode.IsLetter) != -1 {
-                return match[1]
-            }
+				return match[1]
+			}
 		}
 	}
 	return ""
@@ -245,6 +249,7 @@ func data_structure() DataStructure {
 		if skip_line(line) {
 			continue
 		}
+
 		if check == 0 {
 			check = check_data_structure(line)
 			switch check {

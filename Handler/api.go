@@ -45,6 +45,16 @@ func write_word_file_api(filePath string) http.HandlerFunc {
 	}
 }
 
+func websocket_cody(nameEvent string) http.HandlerFunc {
+	return func(w http.ResponseWriter, r *http.Request) {
+		conn := connect_client(w, r)
+		
+		if conn == nil {
+			return
+		}
+		handle_connection(nameEvent, conn)
+	}
+}
 
 func enable_middleware_cors(next http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
@@ -73,14 +83,20 @@ func muxtiplexer_router(router *http.ServeMux) {
 	router.HandleFunc("/listen_word", write_word_file_api(data["listen_word"]))
 }
 
-func create_server() {
-	router := http.NewServeMux()
-	muxtiplexer_router(router)
+func muxtiplexer_websocket(router *http.ServeMux) {
+    router.Handle("/ChatCody", websocket_cody("ChatCody"))
+}
 
-	server := http.Server{
-		Addr:    ":7089",
-		Handler: enable_middleware_cors(router),
-	}
-	log.Fatal(server.ListenAndServe())
-	server.ListenAndServe()
+func create_server() {
+    router := http.NewServeMux()
+    
+    muxtiplexer_router(router)
+    muxtiplexer_websocket(router)
+    
+    server := http.Server{
+        Addr:    ":7089",
+        Handler: enable_middleware_cors(router),
+    }
+    
+    log.Fatal(server.ListenAndServe())
 }

@@ -2,9 +2,12 @@ package main
 
 import (
 	"fmt"
-	"net"
+	"log"
 	"os"
 	"os/exec"
+	"path/filepath"
+
+	"github.com/fsnotify/fsnotify"
 )
 
 func write_file(fileName string) (*os.File, error) {
@@ -33,16 +36,32 @@ func run_script(scriptName string) {
 	}
 }
 
-func create_socket(socketPath string) (net.Listener, error) {
-    fmt.Printf("Đang tạo socket %s\n", socketPath)
-	
-    os.Remove(socketPath)
+func watch_file(fileName string, fileChanged chan<- bool) {
+	watcher, err := fsnotify.NewWatcher()
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer watcher.Close()
 
-    listener, err := net.Listen("unix", socketPath)
-    if err != nil {
-        return nil, fmt.Errorf("lỗi khi tạo socket: %v", err)
-    }
+	err = watcher.Add(filepath.Dir(fileName))
+	if err != nil {
+		log.Fatal(err)
+	}
 
-    fmt.Println("Socket đã được tạo thành công")
-    return listener, nil
+	for {
+		select {
+		case event, ok := <-watcher.Events:
+			if !ok {
+				return
+			}
+			if event.Op&fsnotify.Write == fsnotify.Write && event.Name == fileName {
+				fileChanged <- true
+			}
+		case err, ok := <-watcher.Errors:
+			if !ok {
+				return
+			}
+			log.Println("error:", err)
+		}
+	}
 }

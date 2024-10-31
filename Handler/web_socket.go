@@ -1,85 +1,112 @@
 package main
 
 import (
+	"encoding/json"
 	"log"
 	"net/http"
-	"sync"
 
 	"github.com/gorilla/websocket"
 )
 
+var broadCast = make(map[string]chan bool)
+var dataJson = make(map[string][]byte)
+
+
+// Websocket connection
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 var (
 	upgrader = websocket.Upgrader{
 		CheckOrigin: func(r *http.Request) bool {
 			return true
 		},
 	}
-	clients      = make(map[*websocket.Conn]bool)
-	clientsMutex = &sync.Mutex{}
+
+	clients = make(map[*websocket.Conn][]string)
 )
 
 func connect_client(w http.ResponseWriter, r *http.Request) *websocket.Conn {
 	conn, err := upgrader.Upgrade(w, r, nil)
 	if err != nil {
-		log.Println("Lỗi khi thực hiện kết nối WebSocket:", err)
+		log.Println("upgrade:", err)
 		return nil
 	}
 	return conn
 }
 
-func send_message(conn *websocket.Conn, message []byte) {
-	clientsMutex.Lock()
-	defer clientsMutex.Unlock()
+func recive_message_client(conn *websocket.Conn) string {
+	defer func() {
+		if r := recover(); r != nil {
+			log.Println("Client ngắt kết nối đột ngột:", conn.RemoteAddr())
+			conn.Close()
+			delete(clients, conn)
+			return
+		}
+	}()
 
-	err := conn.WriteMessage(websocket.TextMessage, message)
+	_, messageClient, err := conn.ReadMessage()
 	if err != nil {
-		log.Println("Lỗi khi gửi tin nhắn:", err)
+		log.Println("Client mất kết nối tại:", conn.RemoteAddr())
+		conn.Close()
+		delete(clients, conn)
+		return ""
+	}
+
+	log.Printf("Dữ liệu client %s là: %s", conn.RemoteAddr(), string(messageClient))
+
+	return string(messageClient)
+}
+
+func send_message_client(conn *websocket.Conn, message interface{}) {
+	defer func() {
+		if r := recover(); r != nil {
+			log.Println("Client ngắt kết nối đột ngột:", conn.RemoteAddr())
+			conn.Close()
+			delete(clients, conn)
+		}
+	}()
+	err := conn.WriteJSON(message)
+	if err != nil {
+		log.Println("Client đã mất kết nối tại địa chỉ:", conn.RemoteAddr())
+		log.Panicln("Lỗi: ", err)
 		conn.Close()
 		delete(clients, conn)
 	}
 }
 
-func handler_boardcast(key string, boardcast *map[string]chan bool, jsonData []byte, conn *websocket.Conn) {
-	if jsonData == nil {
-		log.Println("Không tìm thấy dữ liệu JSON")
-		return
-	}
-	
-	send_message(conn, jsonData)
-	(*boardcast)[key] <- false
+func handle_websocket(nameEvent string) {
+    go func() {
+        for <-broadCast[nameEvent] {
+            for conn := range clients {
+                data := dataJson[nameEvent]
+                var jsonObj interface{}
+
+                json.Unmarshal(data, &jsonObj)
+                prettyJson, err := json.MarshalIndent(jsonObj, "", "    ")
+                if err != nil {
+                    log.Println("Lỗi khi format JSON:", err)
+                    return
+                }
+                
+                log.Println("Gửi dữ liệu cho client:", conn.RemoteAddr())
+                send_message_client(conn, string(prettyJson))
+            }
+        }
+    }()
 }
 
-func boardcast_socket(conn *websocket.Conn, boardcast map[string]chan bool, data_json map[string][]byte) {
-	for {
-		for key, ch := range boardcast {
-			select {
-			case <-ch:
-				switch key {
-				case "AnsCody":
-					{
-						jsonData := data_json[key]
-						handler_boardcast(key, &boardcast, jsonData, conn)
-					}
-				case "ListenWord":
-					{
-						jsonData := data_json[key]
-						handler_boardcast(key, &boardcast, jsonData, conn)
-					}
-				}
-				default: 
-			}
-		}
-	}
+func check_alive_client(conn *websocket.Conn) {
+	go func () {
+		recive_message_client(conn)
+	} ()
 }
-func synthetic_websocket(w http.ResponseWriter, r *http.Request) {
-	conn := connect_client(w, r)
-	if conn == nil {
-		return
+
+func handle_connection(nameEvent string, conn *websocket.Conn) {
+	log.Printf("Client đã kết nối tại: %s", conn.RemoteAddr())
+	clients[conn] = append(clients[conn], nameEvent)
+	if broadCast[nameEvent] == nil {
+		broadCast[nameEvent] = make(chan bool)
 	}
 
-	clientsMutex.Lock()
-    clients[conn] = true
-    clientsMutex.Unlock()
-
-	go boardcast_socket(conn, broadcast, data_json)
+	handle_websocket(nameEvent)
+	check_alive_client(conn)
 }

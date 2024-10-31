@@ -3,52 +3,14 @@ package main
 import (
 	"bufio"
 	"encoding/json"
-
 	"fmt"
 	"log"
-	"net"
 	"os"
-	"os/signal"
-	"path/filepath"
 	"strings"
 	"sync"
-	"syscall"
-
-	"github.com/fsnotify/fsnotify"
 )
 
-var data_json map[string][]byte
-var broadcast map[string]chan bool
 
-func watch_file(fileName string, fileChanged chan<- bool) {
-	watcher, err := fsnotify.NewWatcher()
-	if err != nil {
-		log.Fatal(err)
-	}
-	defer watcher.Close()
-
-	err = watcher.Add(filepath.Dir(fileName))
-	if err != nil {
-		log.Fatal(err)
-	}
-
-	for {
-		select {
-		case event, ok := <-watcher.Events:
-			if !ok {
-				return
-			}
-			if event.Op&fsnotify.Write == fsnotify.Write && event.Name == fileName {
-				fileChanged <- true
-			}
-		case err, ok := <-watcher.Errors:
-			if !ok {
-				return
-			}
-			log.Println("error:", err)
-		}
-	}
-}
 
 func check_text(text string) bool {
 	words := strings.Fields(text)
@@ -94,15 +56,23 @@ func middleware_Word(filePath string) {
 				fmt.Println(text)
 			}
 			chat_cody(data, "anthropic/claude-3-5-sonnet-20240620")
+			dataStructure := data_structure()
 
-			data_cody := data_structure()
+			jsonData, err := json.Marshal(dataStructure)
+			if err != nil {
+				log.Printf("Lỗi khi chuyển đổi JSON: %v", err)
+				return
+			}
 
-			jsonData, err := json.Marshal(data_cody)
-			check_err(err)
+			if dataJson["ChatCody"] == nil {
+				dataJson["ChatCody"] = make([]byte, 0)
+			}
 
-			data_json["AnsCody"] = jsonData
-			broadcast["AnsCody"] <- true
-		}()	}
+			dataJson["ChatCody"] = jsonData
+			log.Print(string(dataJson["ChatCody"]))
+			broadCast["ChatCody"] <- true
+		}()
+	}
 }
 
 func middleware_listen_word(filePath string) {
@@ -135,43 +105,16 @@ func middleware_listen_word(filePath string) {
 			}
 
 			get_data("LangBach", "en")
-			data_json["LisWord"] = []byte("true")
-			broadcast["LisWord"] <- true
 			fmt.Println("Đã có âm thanh")
 		}()
 	}
 }
 
-var (
-	socketCody net.Listener
-)
-
-func close_socket(socket net.Listener) {
-	c := make(chan os.Signal, 1)
-	signal.Notify(c, os.Interrupt, syscall.SIGTERM)
-	go func() {
-		<-c
-		if socket != nil {
-			socket.Close()
-		}
-		os.Exit(0)
-	}()
-}
-
 func main() {
 	data := path_file()
-	socketPath := "./tmp/cody.sock"
-
-	var err error
-	socketCody, err = create_socket(socketPath)
-	if err != nil {
-		log.Fatalf("Không thể tạo socket: %v", err)
-	}
 
 	go middleware_Word(data["word"])
 	go middleware_listen_word(data["listen_word"])
-
-	close_socket(socketCody)
 	create_server()
 
 }
