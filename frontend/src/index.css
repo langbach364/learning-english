@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.selectable-text {
+    user-select: none;
+    cursor: pointer;
+    padding: 0 2px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin: 0 2px;
+    position: relative;
+}
+
+.selectable-text:hover {
+  background-color: rgba(59, 130, 246, 0.1);
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.selectable-text:active {
+  transform: translateY(1px);
+}
+
+::selection {
+  background-color: rgba(59, 130, 246, 0.2);
+  color: #1d4ed8;
+  border-radius: 4px;
+}
+
+.active-word {
+    background-color: rgba(59, 130, 246, 0.2) !important;
+    color: #1d4ed8 !important;
+    border-radius: 4px;
+    animation: pulse 0.5s ease-in-out;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0px); }
+}
+
+.hover-float:hover {
+  animation: float 2s ease-in-out infinite;
+}

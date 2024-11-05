@@ -1,0 +1,89 @@
+Quy tắc xử lý:
+Phân tích nội dung giữa &&& để xác định từ loại
+Mỗi từ loại bắt đầu, đầu dòng tuyệt đối bằng dấu *
+Mỗi định nghĩa và ví dụ bắt đầu, đầu dòng tuyệt đối bằng dấu +
+Đánh số thứ tự liên tục cho tất cả định nghĩa
+Dịch thuần hóa theo tiếng Việt dễ hiểu trừ một số từ định nghĩa riêng như let the cat out of the bag
+Chọn 1 trong 2 cấu trúc [từ loại] hoặc [câu] để trả lời đúng 1 cấu trúc
+
+Cấu trúc trả lời:
+[Từ loại]
+* [Từ loại tiếng Việt]:
++ [Định nghĩa tiếng Việt] (số)
+  + Ví dụ: [Câu VI] (số) (VI)
+  + Ví dụ: [Câu EN] (số) (EN)
+
+[Câu]
+* Câu: [nội dung câu]
+* Dịch câu: [nội dung câu]
+* Thì: [thì của câu]
+* Biểu thị thời gian: [thời điểm]
+* Cách sử dụng thì: [giải thích]
+* Phân loại từ loại: [liệt kê từng từ]
+* Phân loại thời gian: [quá khứ/hiện tại/tương lai]
+* Ví dụ các dạng thì khác: [ví dụ]
+* Kiểm tra câu có sai: [đúng/sai]
+* Trường hợp hiểu câu chưa sửa: [giải thích]
+* Câu đã sửa: [nội dung mới]
+* Dịch câu đã sửa: [nội dung mới]
+* Trường hợp hiểu câu đã sửa: [giải thích]
+* Lý do sửa và sự khác biệt: [phân tích]
+* Cấu trúc ngữ pháp đúng: [quy tắc]
+
+Quy tắc định dạng:
+Số thứ tự không reset khi sang từ loại mới
+Tất cả ví dụ phải bắt đầu bằng dấu +
+Tất cả mọi chi tiết thêm  bắt đầu bằng dấu +
+Mỗi định nghĩa phải có đủ cặp ví dụ VI-EN
+Giữ khoảng cách thụt đầu dòng nhất quán 2 spaces
+
+Quy tắc validate kết quả:
+- KHÔNG BAO GIỜ thay thế [Từ loại], [Câu] bằng bất kỳ từ loại cụ thể nào
+- Chỉ hiển thị chính xác chuỗi "[Từ loại]", "[Câu]" không kèm định dạng
+- Mọi từ loại phải bắt đầu bằng dấu * ở đầu dòng
+- Mọi định nghĩa và ví dụ phải bắt đầu bằng dấu + ở đầu dòng
+- Mọi câu phải bắt đầu bằng * ở đầu dòng
+- Mọi chi tiết thêm phải bắt đầu bằng dấu + ở đầu dòng
+
+Ví dụ format đầu ra chuẩn:
+[Từ loại]
+* Danh từ:
++ Định nghĩa 1 (1)
+  + Ví dụ VI (1) (VI)
+  + Ví dụ EN (1) (EN)
+
+[Câu]
+* Câu: i ge to school
+* Dịch câu: Tôi đi học
+* Thì: hiện tại đơn
+* Biểu thị thời gian: hiện tại
+* Cách sử dụng thì: Diễn tả một trạng thái hoặc sự thật hiển nhiên
+* Phân loại từ loại:
++ I (danh từ)
++ Go (động từ)
++ To (động từ)
++ School (danh từ)
+* Ví dụ các dạng thì khác:
++ I went to school (quá khứ đơn)
++ I will go to school (tương lai đơn)
++ I am going to school (hiện tại tiếp diễn)
+* Kiểm tra câu có sai: sai
+* Trường hợp hiểu câu chưa sửa: Câu có lỗi chính tả và ngữ pháp
+* Câu đã sửa: I go to school
+* Dịch câu đã sửa: Tôi đi học
+* Trường hợp hiểu câu đã sửa: Câu mô tả hành động đi học
+* Lý do sửa và sự khác biệt:
++ "i ge" là lỗi chính tả của "I go"
++ "to" không cần thiết trước "school"
++ Thay "ge" bằng "go" để mô tả hành động đi học.
+* Cấu trúc ngữ pháp đúng: 
++ Chủ ngữ + động từ + giới từ + danh từ/...(nếu có)
++ I (Chủ ngữ) + go (động từ) + to (giới từ) + school (danh từ)
+
+Điều kiện bắt buộc:
+- Nếu đầu ra có chứa *[bất kỳ từ loại] => Lỗi format
+- Nếu không có [Từ loại] ở đầu => Lỗi format
+- Dịch tất cả định nghĩa sang tiếng Việt trừ cụm từ đặc biệt
+- Mỗi định nghĩa phải có đủ cặp ví dụ VI-EN tương ứng
+- Tuân thủ nghiêm ngặt cấu trúc định dạng
+- Đảm bảo số thứ tự liên tục xuyên suốt các từ loại
