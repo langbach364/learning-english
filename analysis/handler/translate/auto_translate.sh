@@ -8,7 +8,7 @@ translate_file() {
     local input_file=$1
     local output_file=$2
 
-    trans -b -i "$input_file" -o "$output_file" -s en -t vi -e "$TRANSLATION_MODEL"
+    trans -b -i "$input_file" -o "$output_file" -s en -t vi -e "$TRANSLATION_MODEL" 
     return $?
 }
 

@@ -52,7 +52,7 @@ func middleware_Word(filePath string) {
 				data = result_definitions(text)
 				fmt.Println(text)
 			}
-			chat_cody(data, "openai/gpt-4o")
+			chat_cody(data, "anthropic/claude-3-5-sonnet-latest")
 			dataStructure := data_structure()
 
 			if dataSocket["ChatCody"] == nil {
@@ -62,9 +62,9 @@ func middleware_Word(filePath string) {
 			dataSocket["ChatCody"] = []interface{}{dataStructure}
 			log.Print(dataSocket["ChatCody"])
 			broadCast["ChatCody"] <- true
-		}()	}
+		}()
+	}
 }
-
 
 func middleware_listen_word(filePath string) {
 	var processMutex sync.Mutex

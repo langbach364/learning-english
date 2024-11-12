@@ -1,0 +1,26 @@
+services:
+  db:
+    build:
+      context: ../
+      dockerfile: ./docker/dockerfile/mysql.dockerfile
+    container_name: mysql
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./mysql_data:/var/lib/mysql
+    networks:
+      my_network:
+        ipv4_address: 172.21.0.2
+
+# Configuration for container
+volumes:
+  mysql_data:
+    name: my_mysql_data
+
+networks:
+  my_network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.21.0.0/24
+# =====================================

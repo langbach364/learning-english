@@ -1,0 +1,10 @@
+anthropic/claude-3-5-sonnet-latest
+openai/gpt-4o
+anthropic/claude-3-5-haiku-latest
+//
+openai/cody-chat-preview-001
+openai/cody-chat-preview-002
+//
+
+google/gemini-1.5-pro-latest
+google/gemini-1.5-flash-latest

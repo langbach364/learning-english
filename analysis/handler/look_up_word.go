@@ -110,6 +110,7 @@ func fetch_word_definitions(word string) ([]WordDefinition, error) {
 
 	return definitions, nil
 }
+
 // Phân loại loại từ theo định nghĩa của từ giới hạn mỗi từ loại là 5 định nghĩa
 func classify_definitions(definitions []WordDefinition) map[string][]string {
 	result := make(map[string][]string)

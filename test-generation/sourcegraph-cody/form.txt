@@ -1,0 +1,23 @@
+Phần 1: kiểm tra từ vựng đã học
+Từ (từ loại) 1: [nghĩa]
+* Cách đọc: [cách đọc]
+* Cách nhớ:
++ [Cách nhớ]
+-> [Chi tiết]
+
+Phần 2: từ vựng mới
+[Đảm bảo đầy đủ 5 từ]
+Từ (từ loại) 1: [nghĩa]
+* Cách đọc: [cách đọc]
+* Cách nhớ:
++ [Cách nhớ]
+-> [Chi tiết]
+
+Phần 3: kiểm tra câu
+[Mỗi câu đầy đủ quá khứ, hiện tại, tương lai và tạo đầy đủ 5 câu]
+Câu 1: [nội dung câu] áp dụng từ vựng mới ở phần 2 
+* Dịch câu: [nội dung câu]
+
+Phần 4: Đọc hiểu
+[Tạo một đoạn ngắn là 6 câu về một chủ đề công nghệ như devops, kubernetes, docker, cloud, ...]
+* Dịch đoạn văn: [nội dung đoạn văn]

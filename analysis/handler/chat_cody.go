@@ -116,7 +116,7 @@ func get_value_line(line string) string {
 
 func process_line(line string) int {
 	line = strings.TrimSpace(line)
- 
+
 	switch line[0] {
 	case '*':
 		{

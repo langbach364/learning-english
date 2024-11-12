@@ -1,0 +1,22 @@
+[Câu]
+* Câu: put trap in here
+* Dịch câu: Đặt bẫy vào đây
+* Thì: mệnh lệnh
+* Biểu thị thời gian: hiện tại
+* Cách sử dụng thì: Diễn tả mệnh lệnh, yêu cầu hoặc chỉ dẫn
+* Phân loại từ loại:
++ Put (động từ)
++ Trap (danh từ)
++ In (giới từ)
++ Here (trạng từ chỉ nơi chốn)
+* Phân loại thời gian: hiện tại
+* Ví dụ các dạng thì khác:
++ He puts a trap in here (hiện tại đơn)
++ He put a trap in here (quá khứ đơn)
++ He will put a trap in here (tương lai đơn)
+* Kiểm tra câu có sai: đúng
+* Trường hợp hiểu câu: Câu mệnh lệnh yêu cầu đặt bẫy vào vị trí được chỉ định
+* Cấu trúc ngữ pháp đúng:
++ Động từ nguyên mẫu + danh từ + giới từ + trạng từ chỉ nơi chốn
++ Put (động từ) + trap (danh từ) + in (giới từ) + here (trạng từ)
+

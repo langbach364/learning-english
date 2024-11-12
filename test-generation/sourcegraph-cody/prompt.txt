@@ -1,0 +1,50 @@
+Form đầu ra chuẩn:
+
+Phần 1: kiểm tra từ vựng đã học
+_______(v): đi ra xa một địa điểm nào đó.
+* Cách đọc: /gəʊ/
+* Cách nhớ:
++ Go with someone đi cùng ai đó đến địa điểm nào đó.
+
+_______(v): làm tối ưu hóa.
+* Cách đọc: /ˈɒptɪmaɪz/
+* Cách nhớ:
++ Hậu tố -ize: thường có nghĩa "làm cho trở thành/biến thành" 
+-> Biến thành động từ, optimize = làm tối ưu hóa
+-> Làm một điều gì đó tốt nhất có thể.
++ Hậu tố -mum: thường chỉ điểm/trạng thái cao nhất/tốt nhất
+-> Biến thành danh từ, optimum = tối ưu hóa điểm nào đó
+-> Kết quả tốt nhất đạt được
++ Hậu tố -tion: thường chỉ quá trình/hành động
+-> Biến thành danh từ, optimization = quá trình tối ưu hóa
+-> Quá trình làm một điều gì đó tốt nhất có thể.
+...
+
+Phần 2: từ vựng mới
+_______(adj): đẹp trai.
+* Cách đọc: /ˈhænsəm/
+* Cách nhớ: 
++ Hậu tố -some: thường có tính chất/gây cảm giác
+-> Biến thành danh từ, handsome = đẹp trai
+-> Cảm giác mạnh nhờ vẻ đẹp của con trai
+...
+
+Phần 3: kiểm tra câu
+Câu 1: He is a handsome boy. 
+* Dịch câu: Cậu ấy là một cậu bé đẹp trai
+
+Câu 2: My father was very handsome when he was young.
+* Dịch câu: Bố tôi rất đẹp trai khi còn trẻ
+
+Câu 3: That handsome actor will be very famous.
+* Dịch câu: Nam diễn viên đẹp trai đó sẽ rất nổi tiếng
+
+Câu 4: John has been tall and handsome.
+* Dịch câu: John đã luôn cao và đẹp trai
+
+Câu 5: The handsome prince is going to marry the beautiful princess.
+* Dịch câu: Hoàng tử đẹp trai sẽ kết hôn với công chúa xinh đẹp
+
+Phần 4: Đọc hiểu
+Kubernetes is an open-source container orchestration platform developed by Google that has become the industry standard for modern applications. It enables development teams to deploy, scale, and manage containerized applications automatically and efficiently. With Kubernetes, load balancing, disaster recovery, and application updates become simpler and more flexible than ever before. Features like self-healing and auto-scaling ensure applications remain stable and responsive to user demands. Kubernetes supports multi-cloud platforms, allowing businesses to easily move workloads between different cloud service providers. With strong community growth and a rich ecosystem, Kubernetes is shaping the future of modern application operations.
+* Dịch đoạn văn: Kubernetes là một nền tảng điều phối container mã nguồn mở được phát triển bởi Google và hiện đang là tiêu chuẩn trong ngành công nghiệp. Nó cho phép các đội phát triển triển khai, mở rộng và quản lý các ứng dụng container hóa một cách tự động và hiệu quả. Với Kubernetes, việc tự động cân bằng tải, phục hồi sau sự cố và cập nhật ứng dụng trở nên đơn giản và linh hoạt hơn bao giờ hết. Các tính năng như self-healing và auto-scaling giúp đảm bảo ứng dụng luôn hoạt động ổn định và đáp ứng được nhu cầu người dùng. Kubernetes cũng hỗ trợ đa nền tảng cloud, cho phép doanh nghiệp dễ dàng di chuyển workload giữa các nhà cung cấp dịch vụ đám mây khác nhau. Với sự phát triển mạnh mẽ của cộng đồng và hệ sinh thái phong phú, Kubernetes đang định hình tương lai của việc vận hành ứng dụng hiện đại.
