@@ -1,0 +1,80 @@
+
+/////////////////////////////////////////////////////////////
+Form đầu ra chuẩn:
+Phần 1: kiểm tra từ vựng đã học
+_______(v): đi ra xa một địa điểm nào đó.
+* Cách đọc: /gəʊ/
+* Cách nhớ:
++ Go with someone đi cùng ai đó đến địa điểm nào đó.
+
+_______(v): làm tối ưu hóa.
+* Cách đọc: /ˈɒptɪmaɪz/
+* Cách nhớ:
++ Hậu tố -ize: thường có nghĩa "làm cho trở thành/biến thành" 
+-> Biến thành động từ, optimize = làm tối ưu hóa
+-> Làm một điều gì đó tốt nhất có thể.
++ Hậu tố -mum: thường chỉ điểm/trạng thái cao nhất/tốt nhất
+-> Biến thành danh từ, optimum = tối ưu hóa điểm nào đó
+-> Kết quả tốt nhất đạt được
++ Hậu tố -tion: thường chỉ quá trình/hành động
+-> Biến thành danh từ, optimization = quá trình tối ưu hóa
+-> Quá trình làm một điều gì đó tốt nhất có thể.
+...
+
+Phần 2: từ vựng mới
+_______(adj): đẹp trai.
+* Cách đọc: /ˈhænsəm/
+* Cách nhớ: 
++ Hậu tố -some: thường có tính chất/gây cảm giác
+-> Biến thành danh từ, handsome = đẹp trai
+-> Cảm giác mạnh nhờ vẻ đẹp của con trai
+...
+
+Phần 3: kiểm tra câu
+Câu 1: He is a handsome boy. 
+* Dịch câu: Cậu ấy là một cậu bé đẹp trai
+
+Câu 2: My father was very handsome when he was young.
+* Dịch câu: Bố tôi rất đẹp trai khi còn trẻ
+
+Câu 3: That handsome actor will be very famous.
+* Dịch câu: Nam diễn viên đẹp trai đó sẽ rất nổi tiếng
+
+Câu 4: John has been tall and handsome.
+* Dịch câu: John đã luôn cao và đẹp trai
+
+Câu 5: The handsome prince is going to marry the beautiful princess.
+* Dịch câu: Hoàng tử đẹp trai sẽ kết hôn với công chúa xinh đẹp
+
+Phần 4: Đọc hiểu
+A: Hi John! How are you today?
+B: Hello! I'm doing great, thanks for asking. How about you?
+
+A: I'm good too. What are your plans for the weekend?
+B: I'm planning to go to the movies. Would you like to join me?
+
+A: That sounds fun! What movie do you want to watch?
+B: I was thinking about watching the new action movie. I heard it's really good.
+
+A: Oh, I've heard about that one too. What time should we meet?
+B: How about Saturday at 2 PM? We can meet at the cinema.
+
+A: Perfect! I'll see you there then.
+B: Great! Looking forward to it. See you on Saturday!
+
+* Dịch: 
+A: Chào John! Hôm nay bạn thế nào?
+B: Chào! Mình khỏe, cảm ơn vì đã hỏi thăm. Còn bạn thì sao?
+
+A: Mình cũng khỏe. Cuối tuần này bạn có kế hoạch gì không?
+B: Mình định đi xem phim. Bạn có muốn đi cùng không?
+
+A: Nghe vui đấy! Bạn muốn xem phim gì?
+B: Mình đang nghĩ đến việc xem phim hành động mới. Mình nghe nói nó rất hay.
+
+A: Ồ, mình cũng nghe nói về phim đó. Chúng ta nên gặp nhau lúc mấy giờ?
+B: Thứ Bảy 2 giờ chiều thế nào? Chúng ta có thể gặp nhau ở rạp.
+
+A: Tuyệt! Vậy hẹn gặp bạn ở đó nhé.
+B: Tuyệt! Rất mong được gặp bạn. Hẹn gặp vào thứ Bảy!
+//////////////////////////////////////////////////////////////////////
