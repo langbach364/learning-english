@@ -17,3 +17,5 @@ CREATE TABLE IF NOT EXISTS schedule (
     word VARCHAR(255),
     PRIMARY KEY (id)
 );
+
+SELECT * FROM vocabulary WHERE frequency > 0

@@ -1,22 +1,37 @@
-[Câu]
-* Câu: put trap in here
-* Dịch câu: Đặt bẫy vào đây
-* Thì: mệnh lệnh
-* Biểu thị thời gian: hiện tại
-* Cách sử dụng thì: Diễn tả mệnh lệnh, yêu cầu hoặc chỉ dẫn
-* Phân loại từ loại:
-+ Put (động từ)
-+ Trap (danh từ)
-+ In (giới từ)
-+ Here (trạng từ chỉ nơi chốn)
-* Phân loại thời gian: hiện tại
-* Ví dụ các dạng thì khác:
-+ He puts a trap in here (hiện tại đơn)
-+ He put a trap in here (quá khứ đơn)
-+ He will put a trap in here (tương lai đơn)
-* Kiểm tra câu có sai: đúng
-* Trường hợp hiểu câu: Câu mệnh lệnh yêu cầu đặt bẫy vào vị trí được chỉ định
-* Cấu trúc ngữ pháp đúng:
-+ Động từ nguyên mẫu + danh từ + giới từ + trạng từ chỉ nơi chốn
-+ Put (động từ) + trap (danh từ) + in (giới từ) + here (trạng từ)
+[Từ loại]
+* Động từ:
++ Làm cho lạnh hoặc như thể bị lạnh (1)
+  + Gió lạnh làm tôi run rẩy (1) (VI)
+  + The cold wind made me chill (1) (EN)
++ Làm giảm nhiệt độ; làm mát (2)
+  + Tôi để nước trái cây vào tủ lạnh để làm mát (2) (VI)
+  + I put the juice in the fridge to chill (2) (EN)
++ Làm nản lòng; làm mất tinh thần (3)
+  + Tin xấu làm cô ấy nản lòng (3) (VI)
+  + The bad news chilled her spirits (3) (EN)
++ Làm cứng (bề mặt kim loại) bằng cách làm lạnh nhanh (4)
+  + Thợ rèn làm cứng lưỡi dao bằng cách làm lạnh nhanh (4) (VI)
+  + The blacksmith chilled the blade by rapid cooling (4) (EN)
+
+* Danh từ:
++ Cảm giác lạnh vừa phải nhưng thấm sâu (5)
+  + Cơn gió lạnh thấm vào xương (5) (VI)
+  + The chill penetrated to the bone (5) (EN)
++ Cảm giác lạnh kèm theo run rẩy và da tái nhợt (6)
+  + Cơn ớn lạnh khiến anh ấy run rẩy (6) (VI)
+  + The chill made him shiver (6) (EN)
++ Sự dập tắt nhiệt huyết, tinh thần hoặc niềm vui (7)
+  + Thất bại tạo nên cảm giác chán nản (7) (VI)
+  + The failure cast a chill over their spirits (7) (EN)
+
+* Tính từ:
++ Hơi lạnh; se lạnh (8)
+  + Buổi sáng se lạnh (8) (VI)
+  + A chill morning (8) (EN)
++ Không ấm áp và thân thiện; xa cách (9)
+  + Thái độ lạnh nhạt của cô ấy làm tôi khó chịu (9) (VI)
+  + Her chill attitude made me uncomfortable (9) (EN)
++ Gây nản lòng; làm mất tinh thần (10)
+  + Bầu không khí ảm đạm bao trùm căn phòng (10) (VI)
+  + A chill atmosphere filled the room (10) (EN)
 

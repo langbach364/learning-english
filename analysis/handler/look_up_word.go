@@ -37,7 +37,7 @@ func init() {
 }
 
 func load_API_key(nameAPI string) string {
-	if err := godotenv.Load("./enviroment/.env"); err != nil {
+	if err := godotenv.Load("../../enviroment/.env"); err != nil {
 		fmt.Println("Lỗi: Không thể tải file .env")
 	}
 	return os.Getenv(nameAPI)

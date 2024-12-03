@@ -1,0 +1,30 @@
+/** 
+* TODO: list options IncludePartOfSpeech 
+noun - danh từ
+adjective - tính từ  
+verb - động từ
+adverb - trạng từ
+interjection - thán từ
+pronoun - đại từ
+preposition - giới từ
+abbreviation - từ viết tắt
+affix - tiền tố/hậu tố
+article - mạo từ
+auxiliary-verb - trợ động từ
+conjunction - liên từ
+definite-article - mạo từ xác định
+family-name - họ
+given-name - tên
+idiom - thành ngữ
+imperative - mệnh lệnh
+noun-plural - danh từ số nhiều
+noun-posessive - danh từ sở hữu
+past-participle - phân từ quá khứ
+phrasal-prefix - tiền tố cụm từ
+proper-noun - danh từ riêng
+proper-noun-plural - danh từ riêng số nhiều
+proper-noun-posessive - danh từ riêng sở hữu
+suffix - hậu tố
+verb-intransitive - nội động từ
+verb-transitive - ngoại động từ
+*/

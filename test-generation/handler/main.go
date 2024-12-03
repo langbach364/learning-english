@@ -1,7 +1,6 @@
 package main
 
-import ()
-
 func main() {
-	enable_graph_sql(":8080", "graph")
+	// generate_word()
+	enable_graphQL(":8080", "graphql", 10)
 }
