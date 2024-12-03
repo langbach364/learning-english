@@ -10,5 +10,7 @@ require (
 	github.com/go-sql-driver/mysql v1.8.1
 	github.com/graphql-go/graphql v0.8.1
 	github.com/graphql-go/handler v0.2.4
+	github.com/iancoleman/orderedmap v0.3.0
+	github.com/joho/godotenv v1.5.1
 	golang.org/x/sys v0.13.0 // indirect
 )

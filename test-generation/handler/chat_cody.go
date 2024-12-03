@@ -4,8 +4,6 @@ import (
 	"fmt"
 )
 
-var dataStructure string
-
 func add_data(data map[string][]string) bool {
 	file, err := write_file("./sourcegraph-cody/data.txt")
 	if err != nil {

@@ -1,0 +1,61 @@
+Tôi sẽ tạo form dựa trên từ "vocabulary" từ data.txt và theo mẫu form-output.txt:
+
+```text:sourcegraph-cody/form-output-new.txt
+Phần 1: kiểm tra từ vựng đã học
+vocabulary(n): từ vựng, vốn từ
+* Cách đọc: /vəʊˈkæbjʊləri/
+* Cách nhớ:
++ Vocab là từ viết tắt của vocabulary
++ Vocal (adj) liên quan đến giọng nói
+-> vocabulary là tập hợp các từ để nói và viết
+
+Phần 2: từ vựng mới
+athetizing(v): phủ nhận, bác bỏ
+* Cách đọc: /əˈθetaɪzɪŋ/
+* Cách nhớ:
++ Tiền tố a- thường có nghĩa phủ định
+-> Phủ nhận một điều gì đó
+
+Phần 3: kiểm tra câu
+Câu 1: He is athetizing the statement.
+* Dịch câu: Anh ấy đang phủ nhận lời tuyên bố đó.
+
+Câu 2: They athetized the rumors yesterday.
+* Dịch câu: Họ đã bác bỏ những tin đồn ngày hôm qua.
+
+Câu 3: She will be athetizing the false claims tomorrow.
+* Dịch câu: Cô ấy sẽ phủ nhận những tuyên bố sai sự thật vào ngày mai.
+
+Câu 4: We have been athetizing these accusations.
+* Dịch câu: Chúng tôi đã và đang bác bỏ những lời buộc tội này.
+
+Câu 5: The lawyer is going to athetize the evidence.
+* Dịch câu: Luật sư sẽ bác bỏ bằng chứng đó.
+
+Phần 4: Đọc hiểu
+A: Did you hear about the news conference?
+B: Yes, I did. The spokesperson was athetizing all the allegations.
+
+A: What exactly did they say?
+B: They said the reports were completely false.
+
+A: Do you believe their explanation?
+B: I'm not sure. We need more evidence to verify their claims.
+
+A: Should we wait for more information?
+B: Yes, let's wait for official statements before making any conclusions.
+
+* Dịch:
+A: Bạn có nghe về cuộc họp báo không?
+B: Có, tôi có nghe. Người phát ngôn đã phủ nhận tất cả các cáo buộc.
+
+A: Họ đã nói chính xác những gì?
+B: Họ nói rằng những báo cáo đó hoàn toàn sai sự thật.
+
+A: Bạn có tin vào lời giải thích của họ không?
+B: Tôi không chắc. Chúng ta cần thêm bằng chứng để xác minh những tuyên bố của họ.
+
+A: Chúng ta có nên đợi thêm thông tin không?
+B: Đúng vậy, hãy đợi các tuyên bố chính thức trước khi đưa ra kết luận.
+```
+
