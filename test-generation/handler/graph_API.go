@@ -232,7 +232,7 @@ func insert_data(tableInfo *orderedmap.OrderedMap) *graphql.Field {
 		},
 	}
 }
-
+///////////////////////////////////////////////////////
 func enable_graphQL(port, pattern string, limitQuery int) {
 	if err := init_DB(); err != nil {
 		log.Fatal("Không thể kết nối database:", err)
@@ -268,7 +268,7 @@ func enable_graphQL(port, pattern string, limitQuery int) {
         }),
     },
 }
-
+///////////////////////////////////////////////////////
 	schema, err := graphql.NewSchema(graphql.SchemaConfig{
 		Query: graphql.NewObject(graphql.ObjectConfig{
 			Name:   "RootQuery",
