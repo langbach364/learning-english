@@ -6,6 +6,7 @@ import (
 	"log"
 	"net/http"
 	"strings"
+	"time"
 
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/graphql-go/graphql"
@@ -18,50 +19,84 @@ var (
 	tables map[string]*orderedmap.OrderedMap
 )
 
-func init() {
-	tables = init_tables()
-}
-
-func setTables(nameTable *orderedmap.OrderedMap, fields map[string]string) *orderedmap.OrderedMap {
-	for k, v := range fields {
-		nameTable.Set(k, v)
-	}
-	return nameTable
-}
-
-func init_tables() map[string]*orderedmap.OrderedMap {
-	data := make(map[string]*orderedmap.OrderedMap)
-
-	vocabulary := orderedmap.New()
-	fieldsVocabulary := map[string]string{
-		"word":        "string",
-		"frequency":   "int",
-		"error_count": "int",
-	}
-	setTables(vocabulary, fieldsVocabulary)
-	data["vocabulary"] = vocabulary
-
-	schedule := orderedmap.New()
-	fieldsSchedule := map[string]string{
-		"id":   "string",
-		"time": "string",
-		"word": "string",
-	}
-	setTables(schedule, fieldsSchedule)
-	data["schedule"] = schedule
-
-	return data
-}
-
+// Tạo kết nối database
+// Create database connection
 func init_DB() error {
 	db, err := sql.Open("mysql", "root:@ztegc4df9f4e@tcp(localhost:3306)/learned_vocabulary")
 	if err != nil {
 		return err
 	}
+
+	db.SetConnMaxLifetime(5 * time.Minute)
 	dbPool = db
 	return nil
 }
 
+// Lấy cấu trúc schema của các bảng trong database
+// Get table schema from database
+func get_table_schema(db *sql.DB, dbName string) (map[string]*orderedmap.OrderedMap, error) {
+	data := make(map[string]*orderedmap.OrderedMap)
+
+	query := `SELECT TABLE_NAME 
+             FROM INFORMATION_SCHEMA.TABLES 
+             WHERE TABLE_SCHEMA = ?`
+
+	rows, err := db.Query(query, dbName)
+	if err != nil {
+		return nil, err
+	}
+	defer rows.Close()
+
+	for rows.Next() {
+		var tableName string
+		if err := rows.Scan(&tableName); err != nil {
+			return nil, err
+		}
+
+		colQuery := `SELECT COLUMN_NAME, DATA_TYPE 
+                    FROM INFORMATION_SCHEMA.COLUMNS 
+                    WHERE TABLE_SCHEMA = ? AND TABLE_NAME = ?`
+
+		colRows, err := db.Query(colQuery, dbName, tableName)
+		if err != nil {
+			return nil, err
+		}
+		defer colRows.Close()
+
+		tableInfo := orderedmap.New()
+		fields := make(map[string]string)
+
+		for colRows.Next() {
+			var colName, dataType string
+			if err := colRows.Scan(&colName, &dataType); err != nil {
+				return nil, err
+			}
+
+			switch dataType {
+			case "int", "tinyint", "smallint", "mediumint", "bigint":
+				fields[colName] = "int"
+			case "varchar", "text", "char":
+				fields[colName] = "string"
+			case "float", "double", "decimal":
+				fields[colName] = "float"
+			case "datetime", "timestamp":
+				fields[colName] = "datetime"
+			default:
+				fields[colName] = "string"
+			}
+		}
+
+		for k, v := range fields {
+			tableInfo.Set(k, v)
+		}
+		data[tableName] = tableInfo
+	}
+
+	return data, nil
+}
+
+// Chuyển đổi kiểu dữ liệu sang kiểu GraphQL tương ứng
+// Convert data type to corresponding GraphQL type
 func get_graphQL_type(fieldType string) graphql.Type {
 	typeMap := map[string]graphql.Type{
 		"string":   graphql.String,
@@ -76,6 +111,8 @@ func get_graphQL_type(fieldType string) graphql.Type {
 	return graphql.String
 }
 
+// Tạo các trường GraphQL từ thông tin bảng
+// Create GraphQL fields from table information
 func create_graphQL_fields(tableInfo *orderedmap.OrderedMap) graphql.Fields {
 	fields := graphql.Fields{}
 	for _, key := range tableInfo.Keys() {
@@ -87,6 +124,8 @@ func create_graphQL_fields(tableInfo *orderedmap.OrderedMap) graphql.Fields {
 	return fields
 }
 
+// Xây dựng câu truy vấn SQL dựa trên operation
+// Build SQL query based on operation type
 func build_query(tableInfo *orderedmap.OrderedMap, tableName string, limit int, operation, word string) string {
 	columns := tableInfo.Keys()
 	operation = strings.ToUpper(strings.TrimSpace(operation))
@@ -109,6 +148,8 @@ func build_query(tableInfo *orderedmap.OrderedMap, tableName string, limit int, 
 	}
 }
 
+// Xử lý kết quả truy vấn từ database
+// Process query results from database
 func process_rows(rows *sql.Rows) ([]map[string]interface{}, error) {
 	columns, err := rows.Columns()
 	if err != nil {
@@ -141,6 +182,8 @@ func process_rows(rows *sql.Rows) ([]map[string]interface{}, error) {
 	return result, nil
 }
 
+// Tạo resolver cho operation SELECT
+// Create resolver for SELECT operation
 func select_data(tableName string, tableInfo *orderedmap.OrderedMap, limit int) *graphql.Field {
 	return &graphql.Field{
 		Type: graphql.NewList(graphql.NewObject(graphql.ObjectConfig{
@@ -156,8 +199,6 @@ func select_data(tableName string, tableInfo *orderedmap.OrderedMap, limit int) 
 			}
 
 			query := build_query(tableInfo, tableName, limit, "SELECT", "")
-			fmt.Println(query)
-
 			rows, err := dbPool.Query(query)
 			if err != nil {
 				return nil, err
@@ -169,6 +210,8 @@ func select_data(tableName string, tableInfo *orderedmap.OrderedMap, limit int) 
 	}
 }
 
+// Tạo resolver cho operation DELETE
+// Create resolver for DELETE operation
 func delete_data(tableName string, tableInfo *orderedmap.OrderedMap) *graphql.Field {
 	return &graphql.Field{
 		Type: graphql.Boolean,
@@ -179,21 +222,19 @@ func delete_data(tableName string, tableInfo *orderedmap.OrderedMap) *graphql.Fi
 		},
 		Resolve: func(p graphql.ResolveParams) (interface{}, error) {
 			word := p.Args["word"].(string)
-
 			query := build_query(tableInfo, tableName, 0, "DELETE", word)
-			fmt.Println(query)
-
 			result, err := dbPool.Exec(query)
 			if err != nil {
 				return false, err
 			}
-
 			affected, _ := result.RowsAffected()
 			return affected > 0, nil
 		},
 	}
 }
 
+// Tạo resolver cho operation INSERT
+// Create resolver for INSERT operation
 func insert_data(tableName string, tableInfo *orderedmap.OrderedMap) *graphql.Field {
 	args := make(graphql.FieldConfigArgument)
 	for _, key := range tableInfo.Keys() {
@@ -206,9 +247,7 @@ func insert_data(tableName string, tableInfo *orderedmap.OrderedMap) *graphql.Fi
 		Args: args,
 		Resolve: func(p graphql.ResolveParams) (interface{}, error) {
 			fields := tableInfo.Keys()
-
 			query := build_query(tableInfo, tableName, 0, "INSERT", "")
-			fmt.Println(query)
 
 			values := make([]interface{}, len(fields))
 			for i, field := range fields {
@@ -226,6 +265,8 @@ func insert_data(tableName string, tableInfo *orderedmap.OrderedMap) *graphql.Fi
 	}
 }
 
+// Tạo schema operation cho GraphQL
+// Create schema operation for GraphQL
 func create_schema_operation(operation string, resolvers graphql.Fields) *graphql.Field {
 	return &graphql.Field{
 		Type: graphql.NewObject(graphql.ObjectConfig{
@@ -238,6 +279,8 @@ func create_schema_operation(operation string, resolvers graphql.Fields) *graphq
 	}
 }
 
+// Tạo các trường operation cho GraphQL
+// Create operation fields for GraphQL
 func create_operation_fields(operation string, tables map[string]*orderedmap.OrderedMap, limitQuery int) graphql.Fields {
 	fields := graphql.Fields{}
 
@@ -254,11 +297,19 @@ func create_operation_fields(operation string, tables map[string]*orderedmap.Ord
 	return fields
 }
 
+// Khởi tạo và cấu hình GraphQL server
+// Initialize and configure GraphQL server
 func enable_graphQL(port, pattern string, limitQuery int) {
 	if err := init_DB(); err != nil {
 		log.Fatal("Không thể kết nối database:", err)
 	}
 	defer dbPool.Close()
+
+	var err error
+	tables, err = get_table_schema(dbPool, "learned_vocabulary")
+	if err != nil {
+		log.Fatal("Không thể lấy schema:", err)
+	}
 
 	fieldsQuery := graphql.Fields{
 		"select": create_schema_operation("Select", create_operation_fields("Select", tables, limitQuery)),

@@ -4,10 +4,10 @@ USE learned_vocabulary;
 
 -- Create vocabulary table
 CREATE TABLE IF NOT EXISTS vocabulary (
-    Word VARCHAR(255),
+    word VARCHAR(255),
     frequency INT,
     error_count INT,
-    PRIMARY KEY (Word)
+    PRIMARY KEY (word)
 );
 
 -- Create schedule table
