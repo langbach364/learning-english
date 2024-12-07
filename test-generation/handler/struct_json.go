@@ -17,6 +17,8 @@ type RandomWordParams struct {
 	Limit               int    `json:"limit,omitempty"`               // Số lượng từ tối đa trả về
 }
 
-type WordSchedule struct {
-	Word string `json:"word"`
+type infoWord struct {
+    Word        string `json:"word"`         // Sửa thành viết hoa để export
+    Frequency   int    `json:"frequency"`    // Sửa thành viết hoa để export  
+    ErrorCount  int    `json:"error_count"`  // Sửa thành viết hoa để export
 }

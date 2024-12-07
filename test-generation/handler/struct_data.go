@@ -1,6 +1,6 @@
 package main
 
-import "time"
+import ()
 
 type FieldsWord struct {
 	HasDictionaryDef    bool   // Chỉ trả về các từ có trong từ điển
@@ -15,9 +15,4 @@ type FieldsWord struct {
 	SortBy              string // Thuộc tính để sắp xếp kết quả Ví dụ: "alpha" (theo bảng chữ cái), "count" (theo tần suất)
 	SortOrder           string // Thứ tự sắp xếp Giá trị: "asc" (tăng dần) hoặc "desc" (giảm dần)
 	Limit               int    // Số lượng từ tối đa trả về
-}
-
-type InfoWord struct {
-	time time.Time
-	word string
 }

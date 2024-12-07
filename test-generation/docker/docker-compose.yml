@@ -8,6 +8,7 @@ services:
       - "3306:3306"
     volumes:
       - ./mysql_data:/var/lib/mysql
+      - ../database/trigger.sql:/docker-entrypoint-initdb.d/02-trigger.sql
     networks:
       my_network:
         ipv4_address: 172.21.0.2

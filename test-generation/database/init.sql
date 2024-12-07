@@ -13,9 +13,7 @@ CREATE TABLE IF NOT EXISTS vocabulary (
 -- Create schedule table
 CREATE TABLE IF NOT EXISTS schedule (
     id BIGINT,
-    time DateTime,
-    word VARCHAR(255),
+    time DATE NOT NULL,
+    word VARCHAR(255) UNIQUE,
     PRIMARY KEY (id)
 );
-
-SELECT * FROM vocabulary WHERE frequency > 0

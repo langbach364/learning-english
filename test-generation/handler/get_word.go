@@ -30,7 +30,7 @@ func init() {
 	APIKey = load_API_key("API_wordnik")
 }
 
-func random_word(w http.ResponseWriter, field FieldsWord) {
+func random_word(w http.ResponseWriter, field FieldsWord) []RandomWord {
 	baseURL := "https://api.wordnik.com/v4/words.json/randomWords"
 
 	params := url.Values{}
@@ -65,14 +65,14 @@ func random_word(w http.ResponseWriter, field FieldsWord) {
 	resp, err := http.Get(fullURL)
 	if err != nil {
 		fmt.Fprintf(w, "Lỗi khi gọi API: %v\n", err)
-		return
+		return nil
 	}
 	defer resp.Body.Close()
 
 	var randomWords []RandomWord
 	if err := json.NewDecoder(resp.Body).Decode(&randomWords); err != nil {
 		fmt.Fprintf(w, "Lỗi khi đọc dữ liệu: %v\n", err)
-		return
+		return nil
 	}
 
 	// In kết quả ra màn hình
@@ -82,9 +82,10 @@ func random_word(w http.ResponseWriter, field FieldsWord) {
 		fmt.Fprintf(w, "Từ: %s\n", word.Word)
 		fmt.Fprintln(w, "----------------------------------------")
 	}
+	return randomWords
 }
 
-func generate_word() {
+func generate_word(limitWord int) []RandomWord {
 	w := httptest.NewRecorder()
 	listInclue := []string{
 		"noun",
@@ -111,10 +112,10 @@ func generate_word() {
 		IncludePartOfSpeech: strings.Join(listInclue, ","),
 		MinLength:           3,
 		MaxLength:           10,
-		Limit:               5,
+		Limit:               limitWord,
 	}
 
-	random_word(w, field)
+	words := random_word(w, field)
 
-	fmt.Println(w.Body.String())
+	return words
 }
