@@ -16,3 +16,7 @@ type FieldsWord struct {
 	SortOrder           string // Thứ tự sắp xếp Giá trị: "asc" (tăng dần) hoặc "desc" (giảm dần)
 	Limit               int    // Số lượng từ tối đa trả về
 }
+
+type VocabularyStatistics struct {
+	
+}

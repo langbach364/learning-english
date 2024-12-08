@@ -1,64 +1,105 @@
 package main
 
 import (
-	"bytes"
-	"encoding/json"
-	"fmt"
-	"log"
-	"net/http"
-	"time"
+    "fmt"
+    "log"
+    "time"
 )
 
+func insertSampleData() error {
+    db, err := connect_db()
+    if err != nil {
+        return err
+    }
+    defer db.Close()
+
+    sampleData := []struct {
+        date        string
+        wordLearned int
+        wrong       int
+    }{
+        {"2024-03-01", 10, 2},
+        {"2024-03-01", 15, 3},
+        {"2024-02-15", 30, 8},
+        {"2024-02-16", 22, 5},
+        {"2023-12-01", 45, 10},
+        {"2023-11-01", 38, 7},
+    }
+
+    query := `INSERT INTO vocabulary_statistics (time, word_learned, wrong) VALUES (?, ?, ?)`
+    
+    for _, data := range sampleData {
+        _, err := db.Exec(query, data.date, data.wordLearned, data.wrong)
+        if err != nil {
+            return err
+        }
+    }
+    return nil
+}
+
+func printStats(timeRange TimeRange, stats []VocabStats) {
+    title := map[TimeRange]string{
+        Daily:   "Thống kê theo ngày",
+        Monthly: "Thống kê theo tháng",
+        Yearly:  "Thống kê theo năm",
+    }
+
+    fmt.Printf("\n%s:\n", title[timeRange])
+    if len(stats) == 0 {
+        fmt.Println("Không có dữ liệu")
+        return
+    }
+
+    fmt.Println("┌──────────────┬──────────────┬───────┐")
+    fmt.Println("│  Thời gian   │ Từ đã học    │  Sai  │")
+    fmt.Println("├──────────────┼──────────────┼───────┤")
+
+    timeFormat := map[TimeRange]string{
+        Daily:   "02/01/2006",
+        Monthly: "01/2006",
+        Yearly:  "2006",
+    }
+
+    for _, stat := range stats {
+        fmt.Printf("│ %s │ %12d │ %5d │\n",
+            stat.Date.Format(timeFormat[timeRange]),
+            stat.WordLearned,
+            stat.Wrong)
+    }
+    fmt.Println("└──────────────┴──────────────┴───────┘")
+}
+
+func checkStatistics(year int, month int, day int) {
+    date := time.Date(year, time.Month(month), day, 0, 0, 0, 0, time.Local)
+    searchDate := date.Format("02/01/2006")
+    fmt.Printf("\n=== Thống kê cho ngày %s ===\n", searchDate)
+
+    timeRanges := []TimeRange{Daily, Monthly, Yearly}
+    for _, timeRange := range timeRanges {
+        stats, err := get_data(timeRange, date)
+        if err != nil {
+            // Thêm ngày đang tìm kiếm vào thông báo lỗi
+            log.Printf("Lỗi thống kê %v cho ngày %s: %v", timeRange, searchDate, err)
+            continue
+        }
+        printStats(timeRange, stats)
+    }
+}
+
+
 func main() {
-	// Khởi động GraphQL server
-	go enable_graphQL(":8080", "graphql", 10)
+    if err := insertSampleData(); err != nil {
+        log.Fatalf("Lỗi khi chèn dữ liệu mẫu: %v", err)
+    }
+    fmt.Println("Đã chèn dữ liệu mẫu thành công!")
 
-	// Khởi động REST API server
-	go enable_rest("8081", "/words")
-
-	// Khởi động scheduling system
-	scheduling_word()
-
-	// Đợi servers khởi động
-	time.Sleep(2 * time.Second)
-
-	// Test data để gửi qua REST API
-	testWords := []infoWord{
-		{Word: "book", Frequency: 5, ErrorCount: 1},
-		{Word: "study", Frequency: 3, ErrorCount: 2},
-		{Word: "learn", Frequency: 0, ErrorCount: 4},
-	}
-
-	// Test gửi từ qua REST API
-	for _, word := range testWords {
-		jsonData, err := json.Marshal(word)
-		if err != nil {
-			log.Printf("Lỗi marshal JSON: %v", err)
-			continue
-		}
-
-		resp, err := http.Post("http://localhost:8081/words",
-			"application/json",
-			bytes.NewBuffer(jsonData))
-
-		if err != nil {
-			log.Printf("Lỗi gửi request: %v", err)
-			continue
-		}
-
-		if resp.StatusCode == http.StatusOK {
-			fmt.Printf("Thêm từ thành công: %s\n", word.Word)
-		} else {
-			fmt.Printf("Lỗi khi thêm từ %s: %d\n", word.Word, resp.StatusCode)
-		}
-		resp.Body.Close()
-
-		// Đợi một chút giữa các request
-		time.Sleep(500 * time.Millisecond)
-	}
-
-	// Đợi để xem kết quả
-	time.Sleep(2 * time.Second)
-
-	select {}
+    var year, month, day int
+    fmt.Print("\nNhập năm: ")
+    fmt.Scan(&year)
+    fmt.Print("Nhập tháng: ")
+    fmt.Scan(&month)
+    fmt.Print("Nhập ngày: ")
+    fmt.Scan(&day)
+    
+    checkStatistics(year, month, day)
 }

@@ -1,6 +1,7 @@
 package main
 
 import (
+	"database/sql"
 	"net/http"
 
 	"github.com/labstack/echo/v4"
@@ -9,6 +10,15 @@ import (
 var (
 	clientWords []infoWord
 )
+
+func connect_db() (*sql.DB, error) {
+	db, err := sql.Open("mysql", "root:@ztegc4df9f4e@tcp(localhost:3306)/learned_vocabulary")
+	if err != nil {
+		return nil, err
+	}
+	return db, nil
+}
+
 
 func enable_rest(port, pattern string) {
 	e := echo.New()

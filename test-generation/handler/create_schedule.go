@@ -11,14 +11,6 @@ import (
 
 var wordChannel = make(chan infoWord)
 
-func scheduling_word() {
-	go func() {
-		for word := range wordChannel {
-			process_word(word)
-		}
-	}()
-}
-
 func rules(word infoWord, currentTime time.Time) time.Time {
 	x := word.Frequency - word.ErrorCount
 	if x > 0 {
@@ -85,4 +77,48 @@ func process_word(word infoWord) {
 	}
 
 	rules_scheduling([]infoWord{word})
+}
+
+func scheduling_word() {
+	go func() {
+		for word := range wordChannel {
+			process_word(word)
+		}
+	}()
+}
+
+func get_words() ([]string, error) {
+    db, err := connect_db()
+    if err != nil {
+        return nil, fmt.Errorf("không thể kết nối đến cơ sở dữ liệu: %v", err)
+    }
+    defer db.Close()
+
+    currentDate := time.Now().Format("2006-01-02")
+
+    query := fmt.Sprintf(`
+        SELECT word 
+        FROM schedule 
+        WHERE time = '%s'`, currentDate)
+
+    rows, err := db.Query(query)
+    if err != nil {
+        return nil, fmt.Errorf("không thể lấy danh sách từ: %v", err)
+    }
+    defer rows.Close()
+
+    var words []string
+    for rows.Next() {
+        var word string
+        if err := rows.Scan(&word); err != nil {
+            return nil, fmt.Errorf("không thể đọc từ: %v", err)
+        }
+        words = append(words, word)
+    }
+
+    if err := rows.Err(); err != nil {
+        return nil, fmt.Errorf("lỗi trong quá trình đọc dữ liệu: %v", err)
+    }
+
+    return words, nil
 }

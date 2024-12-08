@@ -17,3 +17,11 @@ CREATE TABLE IF NOT EXISTS schedule (
     word VARCHAR(255) UNIQUE,
     PRIMARY KEY (id)
 );
+
+CREATE TABLE IF NOT EXISTS vocabulary_statistics (
+    id INT AUTO_INCREMENT,
+    time DATE,
+    word_learned INT,
+    wrong INT,
+    PRIMARY KEY (id)
+)
