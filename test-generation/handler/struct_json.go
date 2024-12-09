@@ -18,7 +18,7 @@ type RandomWordParams struct {
 }
 
 type infoWord struct {
-    Word        string `json:"word"`         // Sửa thành viết hoa để export
-    Frequency   int    `json:"frequency"`    // Sửa thành viết hoa để export  
-    ErrorCount  int    `json:"error_count"`  // Sửa thành viết hoa để export
+    Word        string `json:"word"`         
+    Frequency   int    `json:"frequency"`    
+    ErrorCount  int    `json:"error_count"`  
 }

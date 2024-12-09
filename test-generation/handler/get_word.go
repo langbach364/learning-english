@@ -1,8 +1,10 @@
 package main
 
 import (
+	"database/sql"
 	"encoding/json"
 	"fmt"
+	"log"
 	"net/http"
 	"net/http/httptest"
 	"net/url"
@@ -75,7 +77,6 @@ func random_word(w http.ResponseWriter, field FieldsWord) []RandomWord {
 		return nil
 	}
 
-	// In kết quả ra màn hình
 	fmt.Fprintln(w, "Các từ ngẫu nhiên được tìm thấy:")
 	fmt.Fprintln(w, "----------------------------------------")
 	for _, word := range randomWords {
@@ -83,6 +84,45 @@ func random_word(w http.ResponseWriter, field FieldsWord) []RandomWord {
 		fmt.Fprintln(w, "----------------------------------------")
 	}
 	return randomWords
+}
+
+func check_duplicate_words(words []RandomWord) []RandomWord {
+	db, err := sql.Open("mysql", "root:@ztegc4df9f4e@tcp(localhost:3306)/learned_vocabulary")
+	if err != nil {
+		log.Printf("Lỗi kết nối database: %v", err)
+		return words
+	}
+	defer db.Close()
+
+	for i, word := range words {
+		for {
+			var exists bool
+			err := db.QueryRow("SELECT EXISTS(SELECT 1 FROM vocabulary WHERE word = ?)", word.Word).Scan(&exists)
+			if err != nil {
+				log.Printf("Lỗi truy vấn database: %v", err)
+				break
+			}
+
+			if !exists {
+				break
+			}
+
+			w := httptest.NewRecorder()
+			field := FieldsWord{
+				HasDictionaryDef: true,
+				MinLength:        3,
+				MaxLength:        10,
+				Limit:            1,
+			}
+			newWords := random_word(w, field)
+			if len(newWords) > 0 {
+				words[i] = newWords[0]
+				word = newWords[0]
+			}
+		}
+	}
+
+	return words
 }
 
 func generate_word(limitWord int) []RandomWord {
@@ -117,5 +157,7 @@ func generate_word(limitWord int) []RandomWord {
 
 	words := random_word(w, field)
 
+	words = check_duplicate_words(words)
+	
 	return words
 }

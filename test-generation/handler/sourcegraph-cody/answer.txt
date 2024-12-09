@@ -1,61 +1,72 @@
-Tôi sẽ tạo form dựa trên từ "vocabulary" từ data.txt và theo mẫu form-output.txt:
+Dựa vào form chuẩn, tôi sẽ tạo nội dung từ các từ trong data.txt:
 
-```text:sourcegraph-cody/form-output-new.txt
+```plain text:sourcegraph-cody/form-output.txt
 Phần 1: kiểm tra từ vựng đã học
-vocabulary(n): từ vựng, vốn từ
-* Cách đọc: /vəʊˈkæbjʊləri/
-* Cách nhớ:
-+ Vocab là từ viết tắt của vocabulary
-+ Vocal (adj) liên quan đến giọng nói
--> vocabulary là tập hợp các từ để nói và viết
-
-Phần 2: từ vựng mới
-athetizing(v): phủ nhận, bác bỏ
+athetizing (v): phủ nhận, bác bỏ
 * Cách đọc: /əˈθetaɪzɪŋ/
 * Cách nhớ:
-+ Tiền tố a- thường có nghĩa phủ định
++ Tiền tố a- thường mang nghĩa phủ định
 -> Phủ nhận một điều gì đó
 
+Phần 2: từ vựng mới
+vocabulary (n): từ vựng
+* Cách đọc: /vəˈkæbjʊləri/
+* Cách nhớ:
++ Vocab là viết tắt của vocabulary
+-> Tập hợp các từ trong một ngôn ngữ
+
+glycocholate (n): muối mật
+* Cách đọc: /ˌglaɪkəˈkəʊleɪt/ 
+* Cách nhớ:
++ Glyco- liên quan đến đường
+-> Hợp chất trong mật
+
+mimsies (n): sự nhõng nhẽo
+* Cách đọc: /ˈmɪmziz/
+* Cách nhớ:
++ Mim gợi nhớ mime - diễn
+-> Hành động làm nũng
+
+gymnocarpium (n): loại dương xỉ
+* Cách đọc: /ˌdʒɪmnəˈkɑːpiəm/
+* Cách nhớ:
++ Gymno- nghĩa là trần
+-> Loại cây dương xỉ
+
 Phần 3: kiểm tra câu
-Câu 1: He is athetizing the statement.
-* Dịch câu: Anh ấy đang phủ nhận lời tuyên bố đó.
+Câu 1: The vocabulary test was difficult yesterday.
+* Dịch câu: Bài kiểm tra từ vựng hôm qua rất khó.
 
-Câu 2: They athetized the rumors yesterday.
-* Dịch câu: Họ đã bác bỏ những tin đồn ngày hôm qua.
+Câu 2: She is studying new vocabulary now.
+* Dịch câu: Cô ấy đang học từ vựng mới.
 
-Câu 3: She will be athetizing the false claims tomorrow.
-* Dịch câu: Cô ấy sẽ phủ nhận những tuyên bố sai sự thật vào ngày mai.
+Câu 3: He will expand his vocabulary next month.
+* Dịch câu: Anh ấy sẽ mở rộng vốn từ vựng vào tháng sau.
 
-Câu 4: We have been athetizing these accusations.
-* Dịch câu: Chúng tôi đã và đang bác bỏ những lời buộc tội này.
+Câu 4: The gymnocarpium has grown well in the garden.
+* Dịch câu: Cây dương xỉ đã mọc tốt trong vườn.
 
-Câu 5: The lawyer is going to athetize the evidence.
-* Dịch câu: Luật sư sẽ bác bỏ bằng chứng đó.
+Câu 5: The glycocholate will be analyzed in the lab.
+* Dịch câu: Muối mật sẽ được phân tích trong phòng thí nghiệm.
 
 Phần 4: Đọc hiểu
-A: Did you hear about the news conference?
-B: Yes, I did. The spokesperson was athetizing all the allegations.
+A: Hi Sarah! Are you studying for the vocabulary test?
+B: Yes, I am. There are so many new words to remember.
 
-A: What exactly did they say?
-B: They said the reports were completely false.
+A: I can help you practice. Let's review the vocabulary together.
+B: That would be great! I'm having trouble with scientific terms like glycocholate.
 
-A: Do you believe their explanation?
-B: I'm not sure. We need more evidence to verify their claims.
-
-A: Should we wait for more information?
-B: Yes, let's wait for official statements before making any conclusions.
+A: Don't worry, we can use memory tricks to learn them.
+B: Thanks! Working together will make it easier.
 
 * Dịch:
-A: Bạn có nghe về cuộc họp báo không?
-B: Có, tôi có nghe. Người phát ngôn đã phủ nhận tất cả các cáo buộc.
+A: Chào Sarah! Bạn đang học cho bài kiểm tra từ vựng à?
+B: Vâng, đúng vậy. Có rất nhiều từ mới cần phải nhớ.
 
-A: Họ đã nói chính xác những gì?
-B: Họ nói rằng những báo cáo đó hoàn toàn sai sự thật.
+A: Mình có thể giúp bạn luyện tập. Hãy cùng ôn từ vựng nhé.
+B: Tuyệt quá! Mình đang gặp khó khăn với các thuật ngữ khoa học như glycocholate.
 
-A: Bạn có tin vào lời giải thích của họ không?
-B: Tôi không chắc. Chúng ta cần thêm bằng chứng để xác minh những tuyên bố của họ.
-
-A: Chúng ta có nên đợi thêm thông tin không?
-B: Đúng vậy, hãy đợi các tuyên bố chính thức trước khi đưa ra kết luận.
+A: Đừng lo, chúng ta có thể dùng các mẹo để học chúng.
+B: Cảm ơn! Học cùng nhau sẽ dễ dàng hơn.
 ```
 

@@ -19,24 +19,41 @@ func connect_db() (*sql.DB, error) {
 	return db, nil
 }
 
-
-func enable_rest(port, pattern string) {
-	e := echo.New()
-
+func Send_Word(e *echo.Echo, pattern string, data interface{}) error {
 	e.POST(pattern, func(c echo.Context) error {
-		word := new(infoWord)
-		if err := c.Bind(word); err != nil {
+		return c.JSON(http.StatusOK, data)
+	})
+	return nil
+}
+
+func Get_Word(e *echo.Echo, pattern string) error {
+	e.POST(pattern, func(c echo.Context) error {
+		var receivedWords []infoWord
+
+		if err := c.Bind(&receivedWords); err != nil {
 			return c.JSON(http.StatusBadRequest, map[string]string{
-				"error": "Invalid data format",
+				"message": "Lỗi khi nhận dữ liệu",
 			})
 		}
-		clientWords = append(clientWords, *word)
-		wordChannel <- *word
-		return c.JSON(http.StatusOK, word)
+
+		clientWords = append(clientWords, receivedWords...)
+		for _, word := range receivedWords {
+			wordChannel <- word
+		}
+
+		return c.JSON(http.StatusOK, map[string]string{
+			"message": "Đã gửi dữ liệu thành công",
+		})
 	})
+	return nil
+}
+
+func enable_rest(port string) *echo.Echo {
+	e := echo.New()
 
 	serverAddr := ":" + port
 	println("REST Server is running at", serverAddr)
 
-	e.Start(serverAddr)
+	go e.Start(serverAddr)
+	return e
 }

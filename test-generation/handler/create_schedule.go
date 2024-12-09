@@ -87,7 +87,7 @@ func scheduling_word() {
 	}()
 }
 
-func get_words() ([]string, error) {
+func get_schedule() ([]string, error) {
     db, err := connect_db()
     if err != nil {
         return nil, fmt.Errorf("không thể kết nối đến cơ sở dữ liệu: %v", err)

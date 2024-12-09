@@ -1,1 +1,3 @@
-Hãy dựa vào data và làm them form với form mẫu từ form-output
+- Không trả lời bất kỳ đoạn nào ngoài form đầu ra chuẩn
+- Hãy dựa vào nội dung file data để trả lời dựa vào form đầu ra chuẩn
+- Hãy trả lơi đúng cấu trúc theo form.txt 
