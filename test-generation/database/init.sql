@@ -15,6 +15,7 @@ CREATE TABLE IF NOT EXISTS schedule (
     id BIGINT,
     time DATE NOT NULL,
     word VARCHAR(255) UNIQUE,
+    priority INT,
     PRIMARY KEY (id)
 );
 

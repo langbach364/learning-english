@@ -5,6 +5,8 @@ import (
 	"fmt"
 	"log"
 	"net/http"
+	"os"
+	"os/signal"
 	"strings"
 	"time"
 
@@ -303,7 +305,16 @@ func enable_graphQL(port, pattern string, limitQuery int) {
 	if err := init_DB(); err != nil {
 		log.Fatal("Không thể kết nối database:", err)
 	}
-	defer dbPool.Close()
+
+	c := make(chan os.Signal, 1)
+	signal.Notify(c, os.Interrupt)
+	go func() {
+		<-c
+		if dbPool != nil {
+			dbPool.Close()
+		}
+		os.Exit(0)
+	}()
 
 	var err error
 	tables, err = get_table_schema(dbPool, "learned_vocabulary")
@@ -343,5 +354,9 @@ func enable_graphQL(port, pattern string, limitQuery int) {
 
 	http.Handle("/"+pattern, h)
 	fmt.Printf("Server đang chạy tại http://localhost%s/%s\n", port, pattern)
-	log.Fatal(http.ListenAndServe(port, nil))
+	go func() {
+		if err := http.ListenAndServe(port, nil); err != nil {
+			log.Printf("GraphQL server error: %v", err)
+		}
+	}()
 }

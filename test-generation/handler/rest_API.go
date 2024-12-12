@@ -2,6 +2,7 @@ package main
 
 import (
 	"database/sql"
+	"log"
 	"net/http"
 
 	"github.com/labstack/echo/v4"
@@ -39,6 +40,7 @@ func Get_Word(e *echo.Echo, pattern string) error {
 		clientWords = append(clientWords, receivedWords...)
 		for _, word := range receivedWords {
 			wordChannel <- word
+			log.Println("Đã gửi từ vào channel:", word.Word)
 		}
 
 		return c.JSON(http.StatusOK, map[string]string{

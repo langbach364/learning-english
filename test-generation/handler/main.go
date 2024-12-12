@@ -2,6 +2,7 @@ package main
 
 import (
 	"log"
+	"time"
 
 	"github.com/labstack/echo/v4"
 )
@@ -12,7 +13,6 @@ func learn_word(e *echo.Echo, wordLearned int) {
 }
 
 func create_schedule(e *echo.Echo) {
-	scheduling_word()
 	Get_Word(e, "/create_schedule")
 }
 
@@ -27,10 +27,16 @@ func revise_word(e *echo.Echo) {
 
 func main() {
 	wordLearned := 5
+	reviewWord := 10
+	scheduling_word(reviewWord)
 	enable_graphQL(":8080", "graph", wordLearned)
-    
-	rest := enable_rest(":8081")
+
+	rest := enable_rest("8081")
+	time.Sleep(1 * time.Second)
 	learn_word(rest, wordLearned)
+
+	
 	create_schedule(rest)
-    revise_word(rest)
+	revise_word(rest)
+	select {}
 }
