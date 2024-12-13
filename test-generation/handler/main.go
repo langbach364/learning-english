@@ -1,7 +1,6 @@
 package main
 
 import (
-	"log"
 	"time"
 
 	"github.com/labstack/echo/v4"
@@ -17,12 +16,7 @@ func create_schedule(e *echo.Echo) {
 }
 
 func revise_word(e *echo.Echo) {
-	data, err := get_schedule()
-	if err != nil {
-		log.Printf("Lỗi lấy lịch: %v", err)
-		return
-	}
-	Send_Word(e, "/revise_word", data)
+	Get_Schedule(e, "/revise_word")
 }
 
 func main() {

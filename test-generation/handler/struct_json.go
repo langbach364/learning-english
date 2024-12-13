@@ -22,3 +22,7 @@ type infoWord struct {
     Frequency   int    `json:"frequency"`    
     ErrorCount  int    `json:"error_count"`  
 }
+
+type TargetDate struct {
+    Date string `json:"target_date"`
+}

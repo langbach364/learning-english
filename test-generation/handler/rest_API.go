@@ -4,6 +4,7 @@ import (
 	"database/sql"
 	"log"
 	"net/http"
+	"time"
 
 	"github.com/labstack/echo/v4"
 )
@@ -25,6 +26,39 @@ func Send_Word(e *echo.Echo, pattern string, data interface{}) error {
 		return c.JSON(http.StatusOK, data)
 	})
 	return nil
+}
+
+func Get_Schedule(e *echo.Echo, pattern string) error {
+    e.POST(pattern, func(c echo.Context) error {
+        var target TargetDate
+        if err := c.Bind(&target); err != nil {
+            log.Printf("Lỗi binding: %v", err)
+            return c.JSON(http.StatusBadRequest, map[string]string{
+                "message": "Lỗi khi nhận dữ liệu",
+            })
+        }
+
+        parsedDate, err := time.Parse("2006-01-02", target.Date)
+        if err != nil {
+            log.Printf("Lỗi parse date: %v", err)
+            return c.JSON(http.StatusBadRequest, map[string]string{
+                "message": "Định dạng ngày không hợp lệ",
+            })
+        }
+
+        words, err := get_schedule(parsedDate)
+        if err != nil {
+            log.Printf("Lỗi get_schedule: %v", err)
+            return c.JSON(http.StatusInternalServerError, map[string]string{
+                "message": "Lỗi khi lấy lịch học",
+            })
+        }
+
+        return c.JSON(http.StatusOK, map[string]interface{}{
+            "words": words,
+        })
+    })
+    return nil
 }
 
 func Get_Word(e *echo.Echo, pattern string) error {

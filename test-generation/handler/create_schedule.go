@@ -138,20 +138,19 @@ func scheduling_word(limitQuery int) {
     }()
 }
 
-func get_schedule() ([]string, error) {
+func get_schedule(targetDate time.Time) ([]string, error) {
+    formattedTime := targetDate.Format("2006-01-02")
     db, err := connect_db()
     if err != nil {
         return nil, fmt.Errorf("không thể kết nối đến cơ sở dữ liệu: %v", err)
     }
     defer db.Close()
 
-    currentDate := time.Now().Format("2006-01-02")
-
     query := fmt.Sprintf(`
         SELECT word 
         FROM schedule 
         WHERE time = '%s'
-        ORDER BY priority ASC`, currentDate)
+        ORDER BY priority ASC`, formattedTime)
 
     rows, err := db.Query(query)
     if err != nil {
@@ -170,3 +169,4 @@ func get_schedule() ([]string, error) {
 
     return words, nil
 }
+
