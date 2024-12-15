@@ -19,6 +19,10 @@ func revise_word(e *echo.Echo) {
 	Get_Schedule(e, "/revise_word")
 }
 
+func get_statistics(e *echo.Echo) {
+	Get_Statistic(e, "/get_statistics")
+}
+
 func main() {
 	wordLearned := 5
 	reviewWord := 10
@@ -27,10 +31,10 @@ func main() {
 
 	rest := enable_rest("8081")
 	time.Sleep(1 * time.Second)
-	learn_word(rest, wordLearned)
 
-	
+	learn_word(rest, wordLearned)
 	create_schedule(rest)
 	revise_word(rest)
+	get_statistics(rest)
 	select {}
 }

@@ -29,36 +29,36 @@ func Send_Word(e *echo.Echo, pattern string, data interface{}) error {
 }
 
 func Get_Schedule(e *echo.Echo, pattern string) error {
-    e.POST(pattern, func(c echo.Context) error {
-        var target TargetDate
-        if err := c.Bind(&target); err != nil {
-            log.Printf("Lỗi binding: %v", err)
-            return c.JSON(http.StatusBadRequest, map[string]string{
-                "message": "Lỗi khi nhận dữ liệu",
-            })
-        }
+	e.POST(pattern, func(c echo.Context) error {
+		var target TargetDate
+		if err := c.Bind(&target); err != nil {
+			log.Printf("Lỗi binding: %v", err)
+			return c.JSON(http.StatusBadRequest, map[string]string{
+				"message": "Lỗi khi nhận dữ liệu",
+			})
+		}
 
-        parsedDate, err := time.Parse("2006-01-02", target.Date)
-        if err != nil {
-            log.Printf("Lỗi parse date: %v", err)
-            return c.JSON(http.StatusBadRequest, map[string]string{
-                "message": "Định dạng ngày không hợp lệ",
-            })
-        }
+		parsedDate, err := time.Parse("2006-01-02", target.Date)
+		if err != nil {
+			log.Printf("Lỗi parse date: %v", err)
+			return c.JSON(http.StatusBadRequest, map[string]string{
+				"message": "Định dạng ngày không hợp lệ",
+			})
+		}
 
-        words, err := get_schedule(parsedDate)
-        if err != nil {
-            log.Printf("Lỗi get_schedule: %v", err)
-            return c.JSON(http.StatusInternalServerError, map[string]string{
-                "message": "Lỗi khi lấy lịch học",
-            })
-        }
+		words, err := get_schedule(parsedDate)
+		if err != nil {
+			log.Printf("Lỗi get_schedule: %v", err)
+			return c.JSON(http.StatusInternalServerError, map[string]string{
+				"message": "Lỗi khi lấy lịch học",
+			})
+		}
 
-        return c.JSON(http.StatusOK, map[string]interface{}{
-            "words": words,
-        })
-    })
-    return nil
+		return c.JSON(http.StatusOK, map[string]interface{}{
+			"words": words,
+		})
+	})
+	return nil
 }
 
 func Get_Word(e *echo.Echo, pattern string) error {
@@ -80,6 +80,37 @@ func Get_Word(e *echo.Echo, pattern string) error {
 		return c.JSON(http.StatusOK, map[string]string{
 			"message": "Đã gửi dữ liệu thành công",
 		})
+	})
+	return nil
+}
+
+func Get_Statistic(e *echo.Echo, pattern string) error {
+	e.POST(pattern, func(c echo.Context) error {
+		var t Timege
+		if err := c.Bind(&t); err != nil {
+			log.Printf("Lỗi binding JSON: %v", err)
+			return c.JSON(http.StatusBadRequest, map[string]string{
+				"message": "Lỗi khi nhận dữ liệu",
+			})
+		}
+
+		parsedDate, err := time.Parse("2006-01-02", t.Date)
+		if err != nil {
+			log.Printf("Lỗi parse date: %v", err)
+			return c.JSON(http.StatusBadRequest, map[string]string{
+				"message": "Định dạng ngày không hợp lệ",
+			})
+		}
+
+		data, err := get_vocabulary_stastics(TimeRange(t.Range), parsedDate)
+		if err != nil {
+			return c.JSON(http.StatusInternalServerError, map[string]string{
+				"message": "Lỗi khi lấy thống kê",
+			})
+		}
+
+		log.Printf("Thành công, trả về data: %+v", data)
+		return c.JSON(http.StatusOK, data)
 	})
 	return nil
 }

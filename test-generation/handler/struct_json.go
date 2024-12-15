@@ -1,7 +1,5 @@
 package main
 
-import ()
-
 type RandomWordParams struct {
 	HasDictionaryDef    bool   `json:"hasDictionaryDef,omitempty"`    // Chỉ trả về các từ có trong từ điển
 	IncludePartOfSpeech string `json:"includePartOfSpeech,omitempty"` // Chỉ bao gồm các từ loại được chỉ định (noun, verb, adjective,...) Ví dụ: "noun,verb,adjective"
@@ -18,11 +16,16 @@ type RandomWordParams struct {
 }
 
 type infoWord struct {
-    Word        string `json:"word"`         
-    Frequency   int    `json:"frequency"`    
-    ErrorCount  int    `json:"error_count"`  
+	Word       string `json:"word"`
+	Frequency  int    `json:"frequency"`
+	ErrorCount int    `json:"error_count"`
 }
 
 type TargetDate struct {
-    Date string `json:"target_date"`
+	Date string `json:"target_date"`
+}
+
+type Timege struct {
+	Range string `json:"range"`
+	Date  string `json:"date"`
 }

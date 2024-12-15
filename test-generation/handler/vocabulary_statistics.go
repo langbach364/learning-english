@@ -1,6 +1,7 @@
 package main
 
 import (
+	"log"
 	"time"
 )
 
@@ -57,37 +58,51 @@ func prepare_args(timeRange TimeRange, date time.Time) []interface{} {
 	}
 }
 
-func get_data(timeRange TimeRange, date time.Time) ([]VocabStats, error) {
-	db, err := connect_db()
-	if err != nil {
-		return nil, err
-	}
-	defer db.Close()
+func get_vocabulary_stastics(timeRange TimeRange, date time.Time) ([]VocabStats, error) {
+    formattedDate := date.Format("2006-01-02")
+    log.Printf("Bắt đầu lấy thống kê với timeRange=%s, date=%s", timeRange, formattedDate)
 
-	query := queries[timeRange]
-	args := prepare_args(timeRange, date)
+    db, err := connect_db()
+    if err != nil {
+        log.Printf("Lỗi kết nối DB: %v", err)
+        return nil, err
+    }
+    defer db.Close()
 
-	rows, err := db.Query(query, args...)
-	if err != nil {
-		return nil, err
-	}
-	defer rows.Close()
+    query := queries[timeRange]
+    args := prepare_args(timeRange, date)
 
-	var stats []VocabStats
-	for rows.Next() {
-		var stat VocabStats
-		var dateStr string
+    log.Printf("Thực thi query: %s với args: %v", query, args)
 
-		if err := rows.Scan(&dateStr, &stat.WordLearned, &stat.Wrong); err != nil {
-			return nil, err
-		}
+    rows, err := db.Query(query, args...)
+    if err != nil {
+        log.Printf("Lỗi query DB: %v", err)
+        return nil, err
+    }
+    defer rows.Close()
 
-		if stat.Date, err = time.Parse("2006-01-02", dateStr); err != nil {
-			return nil, err
-		}
+    var stats []VocabStats
+    for rows.Next() {
+        var stat VocabStats
+        var dateStr string
 
-		stats = append(stats, stat)
-	}
+        if err := rows.Scan(&dateStr, &stat.WordLearned, &stat.Wrong); err != nil {
+            log.Printf("Lỗi scan row: %v", err)
+            return nil, err
+        }
 
-	return stats, nil
+        stat.Date, err = time.Parse("2006-01-02", dateStr)
+        if err != nil {
+            log.Printf("Lỗi parse date %s: %v", dateStr, err)
+            return nil, err
+        }
+
+        stats = append(stats, stat)
+        log.Printf("Đã thêm stat: Date=%s, WordLearned=%d, Wrong=%d",
+            stat.Date.Format("2006-01-02"), stat.WordLearned, stat.Wrong)
+    }
+
+    log.Printf("Hoàn thành, trả về %d records", len(stats))
+    return stats, nil
 }
+
