@@ -1,8 +1,8 @@
 services:
   fe:
     build:
-      context: ../
-      dockerfile: ./analysis/docker/dockerfile/fe.dockerfile
+      context: ../../
+      dockerfile: ./docker/dockerfile/fe.dockerfile
     container_name: my_fe_container
     ports:
       - "5501:5501"
@@ -22,8 +22,8 @@ services:
 
   be:
     build:
-      context: ../
-      dockerfile: ./analysis/docker/dockerfile/be.dockerfile
+      context: ../../
+      dockerfile: ./docker/dockerfile/be.dockerfile
     container_name: my_be_container
     ports:
       - "7089:7089"
