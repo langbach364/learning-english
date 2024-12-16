@@ -1,7 +1,7 @@
 fe:
     build:
       context: ../
-      dockerfile: ./docker/dockerfile/fe.dockerfile
+      dockerfile: ./analysis/docker/dockerfile/fe.dockerfile
     container_name: my_fe_container
     ports:
       - "5501:5501"
@@ -22,7 +22,7 @@ fe:
 be:
   build:
     context: ../
-    dockerfile: ./docker/dockerfile/be.dockerfile
+    dockerfile: ./analysis/docker/dockerfile/be.dockerfile
   container_name: my_be_container
   ports:
     - "7089:7089"
