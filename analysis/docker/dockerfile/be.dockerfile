@@ -6,6 +6,6 @@ COPY ./analysis/handler .
 WORKDIR /Documents/learning-english/analysis/handler
 RUN go mod tidy
 
-RUN go build -o main .
+RUN CGO_ENABLED=0 GOOS=linux go build -o main .
 
 ENTRYPOINT ["./main"]
