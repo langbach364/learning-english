@@ -1,62 +1,62 @@
 services:
-fe:
-  build:
-    context: ../
-    dockerfile: ./analysis/docker/dockerfile/fe.dockerfile
-  container_name: my_fe_container
-  ports:
-    - "5501:5501"
-  labels:
-    - "traefik.enable=true"
-    - "traefik.docker.network=my_network"
-    - "traefik.http.routers.fe.entrypoints=websecure"
-    - "traefik.http.routers.fe.rule=Host(`test.bachlang364.id.vn`)"
-    - "traefik.http.routers.fe.tls.certresolver=lets-encrypt"
-    - "traefik.http.services.fe.loadbalancer.server.port=5501"
-  depends_on:
-    - be
-  restart: always
-  networks:
-    my_network:
-      ipv4_address: 172.21.0.5
+  fe:
+    build:
+      context: ../
+      dockerfile: ./analysis/docker/dockerfile/fe.dockerfile
+    container_name: my_fe_container
+    ports:
+      - "5501:5501"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=my_network"
+      - "traefik.http.routers.fe.entrypoints=websecure"
+      - "traefik.http.routers.fe.rule=Host(`test.bachlang364.id.vn`)"
+      - "traefik.http.routers.fe.tls.certresolver=lets-encrypt"
+      - "traefik.http.services.fe.loadbalancer.server.port=5501"
+    depends_on:
+      - be
+    restart: always
+    networks:
+      my_network:
+        ipv4_address: 172.21.0.5
 
-be:
-  build:
-    context: ../
-    dockerfile: ./analysis/docker/dockerfile/be.dockerfile
-  container_name: my_be_container
-  ports:
-    - "7089:7089"
-  labels:
-    - "traefik.enable=true"
-    - "traefik.docker.network=my_network"
-    - "traefik.http.routers.be.entrypoints=websecure"
-    - "traefik.http.routers.be.rule=Host(`api.bachlang364.id.vn`) && (PathPrefix(`/word`) || PathPrefix(`/listen_word`) || PathPrefix(`/ChatCody`)"
-    - "traefik.http.routers.be.tls.certresolver=lets-encrypt"
-    - "traefik.http.services.be.loadbalancer.server.port=7089"
-  restart: always
-  networks:
-    my_network:
-      ipv4_address: 172.21.0.2
+  be:
+    build:
+      context: ../
+      dockerfile: ./analysis/docker/dockerfile/be.dockerfile
+    container_name: my_be_container
+    ports:
+      - "7089:7089"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=my_network"
+      - "traefik.http.routers.be.entrypoints=websecure"
+      - "traefik.http.routers.be.rule=Host(`api.bachlang364.id.vn`) && (PathPrefix(`/word`) || PathPrefix(`/listen_word`) || PathPrefix(`/ChatCody`)"
+      - "traefik.http.routers.be.tls.certresolver=lets-encrypt"
+      - "traefik.http.services.be.loadbalancer.server.port=7089"
+    restart: always
+    networks:
+      my_network:
+        ipv4_address: 172.21.0.2
 
-traefik:
-  image: traefik:latest
-  container_name: traefik
-  ports:
-    - "8000:80"
-    - "443:443"
-  volumes:
-    - /var/run/docker.sock:/var/run/docker.sock
-    - ./dockerfile/traefik/traefik.toml:/traefik.toml
-    - ./dockerfile/traefik/traefik_dynamic.toml:/traefik_dynamic.toml
-    - ./dockerfile/traefik/letsencrypt:/letsencrypt
-    - ./dockerfile/traefik/acme.json:/acme.json
-  depends_on:
-    - fe
-  restart: always
-  networks:
-    my_network:
-      ipv4_address: 172.21.0.3
+  traefik:
+    image: traefik:latest
+    container_name: traefik
+    ports:
+      - "8000:80"
+      - "443:443"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./dockerfile/traefik/traefik.toml:/traefik.toml
+      - ./dockerfile/traefik/traefik_dynamic.toml:/traefik_dynamic.toml
+      - ./dockerfile/traefik/letsencrypt:/letsencrypt
+      - ./dockerfile/traefik/acme.json:/acme.json
+    depends_on:
+      - fe
+    restart: always
+    networks:
+      my_network:
+        ipv4_address: 172.21.0.3
 
 networks:
   my_network:
