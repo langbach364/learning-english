@@ -1,23 +1,24 @@
+services:
 fe:
-    build:
-      context: ../
-      dockerfile: ./analysis/docker/dockerfile/fe.dockerfile
-    container_name: my_fe_container
-    ports:
-      - "5501:5501"
-    labels:
-      - "traefik.enable=true"
-      - "traefik.docker.network=my_network"
-      - "traefik.http.routers.fe.entrypoints=websecure"
-      - "traefik.http.routers.fe.rule=Host(`test.bachlang364.id.vn`)"
-      - "traefik.http.routers.fe.tls.certresolver=lets-encrypt"
-      - "traefik.http.services.fe.loadbalancer.server.port=5501"
-    depends_on:
-      - be
-    restart: always
-    networks:
-      my_network:
-        ipv4_address: 172.21.0.5
+  build:
+    context: ../
+    dockerfile: ./analysis/docker/dockerfile/fe.dockerfile
+  container_name: my_fe_container
+  ports:
+    - "5501:5501"
+  labels:
+    - "traefik.enable=true"
+    - "traefik.docker.network=my_network"
+    - "traefik.http.routers.fe.entrypoints=websecure"
+    - "traefik.http.routers.fe.rule=Host(`test.bachlang364.id.vn`)"
+    - "traefik.http.routers.fe.tls.certresolver=lets-encrypt"
+    - "traefik.http.services.fe.loadbalancer.server.port=5501"
+  depends_on:
+    - be
+  restart: always
+  networks:
+    my_network:
+      ipv4_address: 172.21.0.5
 
 be:
   build:
