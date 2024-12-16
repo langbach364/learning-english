@@ -1,7 +1,7 @@
 FROM node:latest
 
 WORKDIR /Documents/learning-english/analysis
-COPY ./frontend/package*.json ./
+COPY ./analysis/frontend/package*.json .
 RUN npm install
 
 COPY ./frontend .

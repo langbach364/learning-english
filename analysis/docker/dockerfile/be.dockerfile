@@ -1,7 +1,7 @@
 FROM golang:latest
 
 WORKDIR /Documents/learning-english/analysis
-COPY ./handler .
+COPY ./analysis/handler .
 
 WORKDIR /Documents/learning-english/analysis/handler
 RUN go mod tidy
