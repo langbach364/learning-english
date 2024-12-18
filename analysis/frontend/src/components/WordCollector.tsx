@@ -1,6 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import { DictionaryWordType, GrammarDetail } from '../types/dictionary';
-import { API_CONFIG } from '../constants/config';
+
+
+declare global {
+  interface Window {
+    responsiveVoice: {
+      speak: (text: string, voice: string, options?: any) => void;
+      cancel: () => void;
+      voiceSupport: () => boolean;
+      isPlaying: () => boolean;
+      init: (apiKey: string) => void;
+    };
+  }
+}
 
 interface WordCollectorProps {
   data: DictionaryWordType | GrammarDetail;
@@ -14,11 +26,45 @@ const WordCollector: React.FC<WordCollectorProps> = ({ data }) => {
   const [selectedWords, setSelectedWords] = useState<string[]>([]);
   const [lastSelectedPosition, setLastSelectedPosition] = useState<{ x: number; y: number } | null>(null);
   const [showSelectedWords, setShowSelectedWords] = useState(false);
+  const [isVoiceReady, setIsVoiceReady] = useState(false);
+
+  useEffect(() => {
+    if (window.responsiveVoice) {
+      window.responsiveVoice.init(process.env.REACT_APP_RESPONSIVE_VOICE_KEY || '');
+      
+      const checkVoiceReady = setInterval(() => {
+        if (window.responsiveVoice.voiceSupport()) {
+          setIsVoiceReady(true);
+          clearInterval(checkVoiceReady);
+        }
+      }, 100);
+    }
+  }, []);
+
+  const speakText = (text: string) => {
+    if (isVoiceReady) {
+      if (window.responsiveVoice.isPlaying()) {
+        window.responsiveVoice.cancel();
+      }
+
+      window.responsiveVoice.speak(text, "US English Female", {
+        pitch: 1,
+        rate: 1,
+        volume: 1,
+        onstart: () => console.log("Bắt đầu đọc"),
+        onend: () => console.log("Đọc xong"),
+        onerror: (err: any) => console.error("Lỗi khi đọc:", err)
+      });
+    }
+  };
 
   const clearSelection = () => {
     setSelectedWords([]);
     setLastSelectedPosition(null);
     setShowSelectedWords(false);
+    if (isVoiceReady && window.responsiveVoice.isPlaying()) {
+      window.responsiveVoice.cancel();
+    }
   };
 
   const getAllElementsBetween = (start: HTMLElement, end: HTMLElement) => {
@@ -71,7 +117,7 @@ const WordCollector: React.FC<WordCollectorProps> = ({ data }) => {
       }
     };
 
-    const handleMouseUp = async (event: MouseEvent) => {
+    const handleMouseUp = (event: MouseEvent) => {
       if (!isCollectingEnabled) return;
       
       const words = Array.from(activeElements)
@@ -81,18 +127,8 @@ const WordCollector: React.FC<WordCollectorProps> = ({ data }) => {
       if (words.length > 0) {
         setSelectedWords(words);
         setShowSelectedWords(true);
-
-        try {
-          await fetch(`${API_CONFIG.BASE_URL}/listen_word`, {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ data: words.join(' ') }),
-          });
-        } catch (error) {
-          console.error('Lỗi khi gửi từ đã quét:', error);
-        }
+        
+        speakText(words.join(' '));
         
         setLastSelectedPosition({
           x: event.clientX,
@@ -120,7 +156,7 @@ const WordCollector: React.FC<WordCollectorProps> = ({ data }) => {
       document.removeEventListener('mouseenter', handleMouseEnter, true);
       document.removeEventListener('mouseup', handleMouseUp);
     };
-  }, [isDragging, activeElements, startElement, isCollectingEnabled]);
+  }, [isDragging, activeElements, startElement, isCollectingEnabled, isVoiceReady]);
 
   useEffect(() => {
     if (!isCollectingEnabled) {

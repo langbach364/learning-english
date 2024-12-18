@@ -12,6 +12,7 @@ import (
 
 func check_err(err error) {
 	if err != nil {
+		fmt.Println("Lỗi")
 		log.Fatal(err)
 	}
 }
@@ -70,9 +71,10 @@ func enable_middleware_cors(next http.Handler) http.Handler {
 }
 
 func path_file() map[string]string {
+	
 	return map[string]string{
 		"word":        "../middleware/word.txt",
-		"listen_word": "../middleware/listen.txt",
+	//	"listen_word": "../middleware/listen.txt",
 		"answer_cody":   "./sourcegraph-cody/answer.txt",
 	}
 }
@@ -80,7 +82,7 @@ func path_file() map[string]string {
 func muxtiplexer_router(router *http.ServeMux) {
 	data := path_file()
 	router.HandleFunc("/word", write_word_file_api(data["word"]))
-	router.HandleFunc("/listen_word", write_word_file_api(data["listen_word"]))
+//	router.HandleFunc("/listen_word", write_word_file_api(data["listen_word"]))
 }
 
 func muxtiplexer_websocket(router *http.ServeMux) {

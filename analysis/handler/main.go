@@ -6,7 +6,6 @@ import (
 	"log"
 	"os"
 	"strings"
-	"sync"
 )
 
 func check_text(text string) bool {
@@ -66,7 +65,7 @@ func middleware_Word(filePath string) {
 	}
 }
 
-func middleware_listen_word(filePath string) {
+/* func middleware_listen_word(filePath string) {
 	var processMutex sync.Mutex
 	fileChanged := make(chan bool)
 	go watch_file(filePath, fileChanged)
@@ -99,14 +98,15 @@ func middleware_listen_word(filePath string) {
 			fmt.Println("Đã có âm thanh")
 		}()
 	}
-}
+} */
 
 func main() {
 	data := path_file()
 
 	go middleware_Word(data["word"])
-	go middleware_listen_word(data["listen_word"])
+//	go middleware_listen_word(data["listen_word"])
 	create_server()
+	log.Println("Đã chạy api và server")
 
 	// data := data_structure()
 	// fmt.Println(data)
