@@ -31,7 +31,7 @@ services:
       - "traefik.enable=true"
       - "traefik.docker.network=my_network"
       - "traefik.http.routers.be.entrypoints=websecure"
-      - "traefik.http.routers.be.rule=Host(`api.bachlang364.id.vn`) && (PathPrefix(`/word`) || PathPrefix(`/ChatCody`)"
+      - "traefik.http.routers.be.rule=Host(`api.bachlang364.id.vn`) && (PathPrefix(`/word`) || PathPrefix(`/ChatCody`))"
       - "traefik.http.routers.be.tls.certresolver=lets-encrypt"
       - "traefik.http.services.be.loadbalancer.server.port=7089"
     restart: always
@@ -47,10 +47,10 @@ services:
       - "443:443"
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - ./dockerfile/traefik/traefik.toml:/traefik.toml
-      - ./dockerfile/traefik/traefik_dynamic.toml:/traefik_dynamic.toml
-      - ./dockerfile/traefik/letsencrypt:/letsencrypt
-      - ./dockerfile/traefik/acme.json:/acme.json
+      - ./traefik/traefik.toml:/traefik.toml
+      - ./traefik/traefik_dynamic.toml:/traefik_dynamic.toml
+      - ./traefik/letsencrypt:/letsencrypt
+      - ./traefik/acme.json:/acme.json
     depends_on:
       - fe
     restart: always
