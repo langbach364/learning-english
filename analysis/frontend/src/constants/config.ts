@@ -1,5 +1,5 @@
 export const API_CONFIG = {
-    BASE_URL: 'http://localhost:7089',
-    WS_URL: 'ws://localhost:7089/ChatCody'
-  };
-  
+  BASE_URL: process.env.base_url,
+  WS_URL: process.env.ws_url,
+  API_TOKEN: process.env.API_TOKEN
+};

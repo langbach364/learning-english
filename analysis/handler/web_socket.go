@@ -81,10 +81,10 @@ func handle_websocket(nameEvent string) {
 
 				data := dataSocket[nameEvent]
 				dataJson := AnswerData{
-					Detail: data[0],
+					Detail:    data[0],
 					Structure: dataStructure,
 				}
-				
+
 				log.Printf("Gửi dữ liệu cho client: %s\n", conn.RemoteAddr())
 				send_message_client(conn, dataJson)
 			}

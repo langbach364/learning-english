@@ -10,6 +10,31 @@ import (
 	"github.com/rs/cors"
 )
 
+var TOKEN string
+
+func init() {
+	TOKEN = load_API_key("TOKEN")
+}
+
+func validate_token(next http.HandlerFunc) http.HandlerFunc {
+    return func(w http.ResponseWriter, r *http.Request) {
+        token := r.Header.Get("Authorization")
+        
+        if token == "" {
+            http.Error(w, "Token không được để trống", http.StatusUnauthorized)
+            return
+        }
+
+        if token != TOKEN {
+            http.Error(w, "Token không hợp lệ", http.StatusUnauthorized)
+            return
+        }
+
+        next.ServeHTTP(w, r)
+    }
+}
+
+
 func check_err(err error) {
 	if err != nil {
 		fmt.Println("Lỗi")
@@ -81,12 +106,12 @@ func path_file() map[string]string {
 
 func muxtiplexer_router(router *http.ServeMux) {
 	data := path_file()
-	router.HandleFunc("/word", write_word_file_api(data["word"]))
+	router.HandleFunc("/word", validate_token(write_word_file_api(data["word"])))
 //	router.HandleFunc("/listen_word", write_word_file_api(data["listen_word"]))
 }
 
 func muxtiplexer_websocket(router *http.ServeMux) {
-    router.Handle("/ChatCody", websocket_cody("ChatCody"))
+	router.HandleFunc("/ChatCody", validate_token(websocket_cody("ChatCody")))
 }
 
 func create_server() {

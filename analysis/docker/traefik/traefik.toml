@@ -6,6 +6,8 @@
       scheme = "https"
   [entryPoints.websecure]
     address = ":443"
+    [entryPoints.websecure.http.tls]
+      certResolver = "lets-encrypt"
 
 [api]
   dashboard = true
@@ -18,6 +20,10 @@
 [providers.docker]
   watch = true
   network = "my_network"
+  exposedByDefault = false
 
 [providers.file]
   filename = "./traefik_dynamic.toml"
+
+[log]
+  level = "INFO"
