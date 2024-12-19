@@ -6,50 +6,44 @@ export class APIService {
   private static isConnecting = false;
   private static reconnectInterval: NodeJS.Timeout | null = null;
   private static readonly RECONNECT_DELAY = 1000;
+  private static readonly MAX_RETRIES = 3;
+  private static retryCount = 0;
+
+
+  private static getCleanToken(): string {
+    const token = API_CONFIG.API_TOKEN;
+    if (!token) {
+        throw new Error('Token không tồn tại');
+    }
+    return token.replace(/['"]+/g, '').trim();
+}
+
 
   private static getHeaders(): HeadersInit {
     return {
       'Content-Type': 'application/json',
-      'Authorization': API_CONFIG.API_TOKEN || ''
+      'Authorization': this.getCleanToken()
     };
   }
 
-  private static handleResponseError(response: Response): void {
-    if (response.status === 401) {
-      throw new Error('Token không hợp lệ hoặc đã hết hạn');
-    }
-    if (response.status === 403) {
-      throw new Error('Không có quyền truy cập');
-    }
-    if (!response.ok) {
-      throw new Error('Lỗi kết nối mạng');
-    }
-  }
-
   private static getWebSocketUrl(): string {
-    if (!API_CONFIG.WS_URL) {
-      throw new Error('WebSocket URL chưa được cấu hình');
-    }
-    return `${API_CONFIG.WS_URL}?token=${API_CONFIG.API_TOKEN}`;
+    const wsUrl = new URL(`${API_CONFIG.WS_URL}/ChatCody`);
+    wsUrl.searchParams.append('token', this.getCleanToken());
+    return wsUrl.toString();
   }
 
-  private static startReconnectInterval(
-    onMessage: (data: AnswerData, type: string) => void,
-    onConnectionChange: (status: boolean) => void
-  ): void {
-    if (this.reconnectInterval) return;
+  private static handleResponseError(response: Response): void {
+    const errors: Record<number, string> = {
+      401: 'Token không hợp lệ hoặc đã hết hạn',
+      403: 'Không có quyền truy cập',
+      404: 'Không tìm thấy tài nguyên',
+      500: 'Lỗi server',
+      502: 'Bad Gateway',
+      503: 'Dịch vụ không khả dụng'
+    };
 
-    this.reconnectInterval = setInterval(() => {
-      if (!this.ws || this.ws.readyState === WebSocket.CLOSED) {
-        this.connectWebSocket(onMessage, onConnectionChange);
-      }
-    }, this.RECONNECT_DELAY);
-  }
-
-  private static stopReconnectInterval(): void {
-    if (this.reconnectInterval) {
-      clearInterval(this.reconnectInterval);
-      this.reconnectInterval = null;
+    if (!response.ok) {
+      throw new Error(errors[response.status] || 'Lỗi không xác định');
     }
   }
 
@@ -62,10 +56,44 @@ export class APIService {
       });
 
       this.handleResponseError(response);
+      return await response.json();
     } catch (error) {
       console.error('Lỗi khi tìm kiếm từ:', error);
       throw error;
     }
+  }
+
+  private static startReconnectInterval(
+    onMessage: (data: AnswerData, type: string) => void,
+    onConnectionChange: (status: boolean) => void
+  ): void {
+    if (this.reconnectInterval) return;
+
+    this.reconnectInterval = setInterval(() => {
+      if (this.retryCount >= this.MAX_RETRIES) {
+        this.cleanup();
+        onConnectionChange(false);
+        return;
+      }
+
+      if (!this.ws || this.ws.readyState === WebSocket.CLOSED) {
+        this.retryCount++;
+        this.connectWebSocket(onMessage, onConnectionChange);
+      }
+    }, this.RECONNECT_DELAY);
+  }
+
+  private static cleanup(): void {
+    if (this.reconnectInterval) {
+      clearInterval(this.reconnectInterval);
+      this.reconnectInterval = null;
+    }
+    if (this.ws) {
+      this.ws.close();
+      this.ws = null;
+    }
+    this.retryCount = 0;
+    this.isConnecting = false;
   }
 
   static connectWebSocket(
@@ -82,8 +110,9 @@ export class APIService {
 
       this.ws.onopen = () => {
         this.isConnecting = false;
+        this.retryCount = 0;
         onConnectionChange(true);
-        this.stopReconnectInterval();
+        console.log('WebSocket đã kết nối thành công');
       };
 
       this.ws.onmessage = (event) => {
@@ -95,11 +124,9 @@ export class APIService {
               structure: message.structure || "Sentence"
             };
             onMessage(processedData, message.type || 'dictionary');
-          } else {
-            console.warn('Dữ liệu không hợp lệ:', message);
           }
         } catch (error) {
-          console.error('Lỗi xử lý dữ liệu:', error);
+          console.error('Lỗi xử lý dữ liệu WebSocket:', error);
         }
       };
 
@@ -107,30 +134,22 @@ export class APIService {
         this.isConnecting = false;
         onConnectionChange(false);
         this.startReconnectInterval(onMessage, onConnectionChange);
+        console.log('WebSocket đã đóng kết nối');
       };
 
-      this.ws.onerror = () => {
+      this.ws.onerror = (error) => {
         this.isConnecting = false;
         onConnectionChange(false);
+        console.error('Lỗi WebSocket:', error);
         this.ws?.close();
       };
 
-      this.startReconnectInterval(onMessage, onConnectionChange);
-
     } catch (error) {
-      console.error('Lỗi kết nối WebSocket:', error);
+      console.error('Lỗi khởi tạo WebSocket:', error);
       this.isConnecting = false;
       onConnectionChange(false);
     }
 
     return () => this.cleanup();
-  }
-
-  private static cleanup(): void {
-    this.stopReconnectInterval();
-    if (this.ws) {
-      this.ws.close();
-      this.ws = null;
-    }
   }
 }

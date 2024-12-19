@@ -6,6 +6,7 @@ import (
 	"io"
 	"log"
 	"net/http"
+	"strings"
 
 	"github.com/rs/cors"
 )
@@ -16,24 +17,28 @@ func init() {
 	TOKEN = load_API_key("TOKEN")
 }
 
-func validate_token(next http.HandlerFunc) http.HandlerFunc {
-    return func(w http.ResponseWriter, r *http.Request) {
-        token := r.Header.Get("Authorization")
-        
-        if token == "" {
-            http.Error(w, "Token không được để trống", http.StatusUnauthorized)
-            return
-        }
-
-        if token != TOKEN {
-            http.Error(w, "Token không hợp lệ", http.StatusUnauthorized)
-            return
-        }
-
-        next.ServeHTTP(w, r)
-    }
+func clean_token(token string) string {
+	token = strings.Trim(token, "\"")
+	return token
 }
 
+func validate_token(next http.HandlerFunc) http.HandlerFunc {
+	return func(w http.ResponseWriter, r *http.Request) {
+		token := clean_token(r.Header.Get("Authorization"))
+
+		if token == "" {
+			http.Error(w, "Token không được để trống", http.StatusUnauthorized)
+			return
+		}
+
+		if token != TOKEN {
+			http.Error(w, "Token không hợp lệ", http.StatusUnauthorized)
+			return
+		}
+
+		next.ServeHTTP(w, r)
+	}
+}
 
 func check_err(err error) {
 	if err != nil {
@@ -74,7 +79,7 @@ func write_word_file_api(filePath string) http.HandlerFunc {
 func websocket_cody(nameEvent string) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 		conn := connect_client(w, r)
-		
+
 		if conn == nil {
 			return
 		}
@@ -96,18 +101,18 @@ func enable_middleware_cors(next http.Handler) http.Handler {
 }
 
 func path_file() map[string]string {
-	
+
 	return map[string]string{
-		"word":        "../middleware/word.txt",
-	//	"listen_word": "../middleware/listen.txt",
-		"answer_cody":   "./sourcegraph-cody/answer.txt",
+		"word": "../middleware/word.txt",
+		//	"listen_word": "../middleware/listen.txt",
+		"answer_cody": "./sourcegraph-cody/answer.txt",
 	}
 }
 
 func muxtiplexer_router(router *http.ServeMux) {
 	data := path_file()
 	router.HandleFunc("/word", validate_token(write_word_file_api(data["word"])))
-//	router.HandleFunc("/listen_word", write_word_file_api(data["listen_word"]))
+	// router.HandleFunc("/listen_word", write_word_file_api(data["listen_word"]))
 }
 
 func muxtiplexer_websocket(router *http.ServeMux) {
@@ -115,17 +120,15 @@ func muxtiplexer_websocket(router *http.ServeMux) {
 }
 
 func create_server() {
-    router := http.NewServeMux()
-    
-    muxtiplexer_router(router)
-    muxtiplexer_websocket(router)
-    
-    server := http.Server{
-        Addr:    ":7089",
-        Handler: enable_middleware_cors(router),
-    }
-    
-    log.Fatal(server.ListenAndServe())
+	router := http.NewServeMux()
+
+	muxtiplexer_router(router)
+	muxtiplexer_websocket(router)
+
+	server := http.Server{
+		Addr:    ":7089",
+		Handler: enable_middleware_cors(router),
+	}
+
+	log.Fatal(server.ListenAndServe())
 }
-
-
