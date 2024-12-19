@@ -90,8 +90,22 @@ func websocket_cody(nameEvent string) http.HandlerFunc {
 func enable_middleware_cors(next http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		Cors := cors.New(cors.Options{
-			AllowedHeaders:   []string{"Accept", "Accept-Language", "Content-Language", "Content-Type"},
-			AllowedMethods:   []string{"POST", "GET", "OPTIONS", "PUT", "DELETE"},
+			AllowedHeaders: []string{
+				"Authorization",
+				"Content-Type",
+				"Accept",
+				"Accept-Language",
+				"Content-Language",
+				"Origin",
+				"Host",
+				"Connection",
+				"Upgrade",
+				"Sec-WebSocket-Version",
+				"Sec-WebSocket-Key",
+				"Sec-WebSocket-Extensions",
+				"Sec-WebSocket-Protocol",
+			},
+			AllowedMethods:   []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
 			AllowedOrigins:   []string{"*"},
 			AllowCredentials: true,
 			Debug:            true,
@@ -121,13 +135,14 @@ func muxtiplexer_websocket(router *http.ServeMux) {
 
 func create_server() {
 	router := http.NewServeMux()
+	corsMiddleware := enable_middleware_cors(router)
 
 	muxtiplexer_router(router)
 	muxtiplexer_websocket(router)
 
 	server := http.Server{
 		Addr:    ":7089",
-		Handler: enable_middleware_cors(router),
+		Handler: corsMiddleware,
 	}
 
 	log.Fatal(server.ListenAndServe())

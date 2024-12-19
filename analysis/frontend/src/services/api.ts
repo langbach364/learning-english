@@ -10,31 +10,40 @@ export class APIService {
   private static retryCount = 0;
 
   private static getCleanToken(): string {
-    console.log('Getting API token from config:', API_CONFIG.API_TOKEN);
     const token = API_CONFIG.API_TOKEN;
     if (!token) {
-      console.error('Token không tồn tại trong config');
       throw new Error('Token không tồn tại');
     }
-    const cleanToken = token.replace(/['"]+/g, '').trim();
-    console.log('Clean token:', cleanToken);
-    return cleanToken;
+    return token.replace(/['"]+/g, '').trim();
   }
 
   private static getHeaders(): HeadersInit {
-    const headers = {
+    return {
       'Content-Type': 'application/json',
-      'Authorization': this.getCleanToken()
+      'Authorization': this.getCleanToken(),
+      'Connection': 'Upgrade',
+      'Upgrade': 'websocket',
+      'Sec-WebSocket-Version': '13',
+      'Sec-WebSocket-Key': btoa(Math.random().toString(36)),
+      'Host': API_CONFIG.HOST,
+      'Origin': API_CONFIG.ORIGIN
     };
-    console.log('Request headers:', headers);
-    return headers;
   }
 
   private static getWebSocketUrl(): string {
-    console.log('WS_URL from config:', API_CONFIG.WS_URL);
     const wsUrl = new URL(API_CONFIG.WS_URL);
-    wsUrl.searchParams.append('token', this.getCleanToken());
-    console.log('Final WebSocket URL:', wsUrl.toString());
+    const params = {
+      token: this.getCleanToken(),
+      version: '13',
+      authorization: this.getCleanToken(),
+      host: API_CONFIG.HOST,
+      origin: API_CONFIG.ORIGIN
+    };
+
+    Object.entries(params).forEach(([key, value]) => {
+      wsUrl.searchParams.append(key, value);
+    });
+
     return wsUrl.toString();
   }
 
@@ -49,33 +58,21 @@ export class APIService {
     };
 
     if (!response.ok) {
-      const errorMessage = errors[response.status] || 'Lỗi không xác định';
-      console.error(`API Error ${response.status}:`, errorMessage);
-      throw new Error(errorMessage);
+      throw new Error(errors[response.status] || 'Lỗi không xác định');
     }
   }
 
-  static async searchWord(word: string): Promise<void> {
+  static async searchWord(word: string): Promise<any> {
     try {
-      console.log('Searching word:', word);
       const url = `${API_CONFIG.BASE_URL}/word`;
-      console.log('Search API URL:', url);
-
-      const requestBody = JSON.stringify({ data: word });
-      console.log('Request body:', requestBody);
-
       const response = await fetch(url, {
         method: 'POST',
         headers: this.getHeaders(),
-        body: requestBody,
+        body: JSON.stringify({ data: word }),
       });
 
-      console.log('Response status:', response.status);
       this.handleResponseError(response);
-      
-      const data = await response.json();
-      console.log('Response data:', data);
-      return data;
+      return await response.json();
     } catch (error) {
       console.error('Search word error:', error);
       throw error;
@@ -86,22 +83,16 @@ export class APIService {
     onMessage: (data: AnswerData, type: string) => void,
     onConnectionChange: (status: boolean) => void
   ): void {
-    if (this.reconnectInterval) {
-      console.log('Reconnect interval already running');
-      return;
-    }
+    if (this.reconnectInterval) return;
 
-    console.log('Starting reconnect interval');
     this.reconnectInterval = setInterval(() => {
       if (this.retryCount >= this.MAX_RETRIES) {
-        console.log('Max retries reached, cleaning up');
         this.cleanup();
         onConnectionChange(false);
         return;
       }
 
       if (!this.ws || this.ws.readyState === WebSocket.CLOSED) {
-        console.log(`Retry attempt ${this.retryCount + 1}/${this.MAX_RETRIES}`);
         this.retryCount++;
         this.connectWebSocket(onMessage, onConnectionChange);
       }
@@ -109,7 +100,6 @@ export class APIService {
   }
 
   private static cleanup(): void {
-    console.log('Cleaning up WebSocket connection');
     if (this.reconnectInterval) {
       clearInterval(this.reconnectInterval);
       this.reconnectInterval = null;
@@ -126,25 +116,18 @@ export class APIService {
     onMessage: (data: AnswerData, type: string) => void,
     onConnectionChange: (status: boolean) => void
   ): () => void {
-    console.log('Initializing WebSocket connection');
-    console.log('Current connection state:', {
-      isConnecting: this.isConnecting,
-      wsState: this.ws?.readyState
-    });
-
     if (this.ws?.readyState === WebSocket.OPEN || this.isConnecting) {
-      console.log('WebSocket already connected or connecting');
       return () => this.cleanup();
     }
 
     try {
       this.isConnecting = true;
       const wsUrl = this.getWebSocketUrl();
-      console.log('Connecting to WebSocket:', wsUrl);
+      
       this.ws = new WebSocket(wsUrl);
 
       this.ws.onopen = () => {
-        console.log('WebSocket connected successfully');
+        console.log('WebSocket kết nối thành công');
         this.isConnecting = false;
         this.retryCount = 0;
         onConnectionChange(true);
@@ -152,37 +135,40 @@ export class APIService {
 
       this.ws.onmessage = (event) => {
         try {
-          console.log('WebSocket message received:', event.data);
           const message = JSON.parse(event.data);
           if (message) {
             const processedData: AnswerData = {
               detail: message.detail || {},
-              structure: message.structure || "Sentence"
+              structure: message.structure || 'Sentence'
             };
-            console.log('Processed WebSocket data:', processedData);
             onMessage(processedData, message.type || 'dictionary');
           }
         } catch (error) {
-          console.error('WebSocket message processing error:', error);
+          console.error('Lỗi xử lý tin nhắn WebSocket:', error);
         }
       };
 
       this.ws.onclose = () => {
-        console.log('WebSocket connection closed');
+        console.log('WebSocket đã đóng kết nối');
         this.isConnecting = false;
         onConnectionChange(false);
         this.startReconnectInterval(onMessage, onConnectionChange);
       };
 
       this.ws.onerror = (error) => {
-        console.error('WebSocket error:', error);
+        console.error('Chi tiết lỗi WebSocket:', {
+          error,
+          config: API_CONFIG,
+          headers: this.getHeaders(),
+          url: this.getWebSocketUrl()
+        });
         this.isConnecting = false;
         onConnectionChange(false);
         this.ws?.close();
       };
 
     } catch (error) {
-      console.error('WebSocket initialization error:', error);
+      console.error('Lỗi khởi tạo WebSocket:', error);
       this.isConnecting = false;
       onConnectionChange(false);
     }
