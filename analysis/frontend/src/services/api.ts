@@ -13,10 +13,11 @@ export class APIService {
   private static getCleanToken(): string {
     const token = API_CONFIG.API_TOKEN;
     if (!token) {
-        throw new Error('Token không tồn tại');
+      throw new Error('Token không tồn tại');
     }
     return token.replace(/['"]+/g, '').trim();
-}
+  }
+  
 
 
   private static getHeaders(): HeadersInit {
@@ -27,7 +28,7 @@ export class APIService {
   }
 
   private static getWebSocketUrl(): string {
-    const wsUrl = new URL(`${API_CONFIG.WS_URL}/ChatCody`);
+    const wsUrl = new URL(API_CONFIG.WS_URL);
     wsUrl.searchParams.append('token', this.getCleanToken());
     return wsUrl.toString();
   }

@@ -4,8 +4,8 @@ interface Config {
   API_TOKEN: string;
 }
 
-export const API_CONFIG: Config = {
-  BASE_URL: process.env.base_url || '',
-  WS_URL: process.env.ws_url || '',
-  API_TOKEN: process.env.API_TOKEN || ''
-};
+export const API_CONFIG = {
+  API_TOKEN: process.env.REACT_APP_API_TOKEN || "",
+  BASE_URL: process.env.REACT_APP_BASE_URL || "",
+  WS_URL: process.env.REACT_APP_WS_URL || "",
+}
