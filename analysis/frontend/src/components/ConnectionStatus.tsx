@@ -10,23 +10,10 @@ function ConnectionStatus({ isConnected }: ConnectionStatusProps) {
 
   useEffect(() => {
     if (prevConnectedRef.current !== isConnected) {
-      const message = isConnected 
-        ? 'Kết nối WebSocket thành công!' 
-        : 'Mất kết nối WebSocket, đang thử kết nối lại...';
-      
-      console.log(message);
-      console.log('Chi tiết trạng thái kết nối:', {
-        isConnected,
-        token: localStorage.getItem('token'),
-        timestamp: new Date().toISOString(),
-        wsState: APIService.getWebSocketState() // Thêm method mới để lấy trạng thái
-      });
-
       prevConnectedRef.current = isConnected;
     }
   }, [isConnected]);
 
-  // Chỉ render khi thực sự cần thiết
   if (!localStorage.getItem('token')) return null;
 
   return (
