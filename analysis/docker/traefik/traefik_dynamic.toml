@@ -1,12 +1,29 @@
-[http.middlewares.simpleAuth.basicAuth]
-  users = [
-    "admin:$apr1$vb9sltka$sshtNDi13f5uTJfUsOFNw."
-  ]
+[entryPoints]
+  [entryPoints.my_network]
+    address = ":80"
+    [entryPoints.my_network.http.redirections.entryPoint]
+      to = "websecure"
+      scheme = "https"
+  [entryPoints.websecure]
+    address = ":443"
+    [entryPoints.websecure.http.tls]
+      certResolver = "lets-encrypt"
 
-[http.routers.api]
-  rule = "Host(`monitor.bachlang364.id.vn`)"
-  entrypoints = ["websecure"]
-  middlewares = ["simpleAuth"]
-  service = "api@internal"
-  [http.routers.api.tls]
-    certResolver = "lets-encrypt"
+[api]
+  dashboard = true
+
+[certificatesResolvers.lets-encrypt.acme]
+  email = "bachlang364@gmail.com" 
+  storage = "acme.json"
+  [certificatesResolvers.lets-encrypt.acme.tlsChallenge]
+
+[providers.docker]
+  watch = true
+  network = "my_network"
+  exposedByDefault = false
+
+[providers.file]
+  filename = "./traefik_dynamic.toml"
+
+[log]
+  level = "INFO"

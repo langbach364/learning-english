@@ -1,24 +1,32 @@
 [Từ loại]
 * Danh từ:
-+ Số tiền, khoản tiền (1)
-  + Ví dụ: Khoản tiền này rất lớn (1) (VI)
-  + Ví dụ: This amountment is very large (1) (EN)
++ Một con thú có vú ăn thịt nhỏ được nuôi trong nhà (Felis catus), được nuôi như vật cưng và để bắt chuột, tồn tại ở nhiều giống khác nhau (1)
+  + Ví dụ: Mèo con rất dễ thương (1) (VI)
+  + Ví dụ: The cat is sleeping on the sofa (1) (EN)
 
-* Lưu ý:
-+ "Amountment" là từ không chính xác trong tiếng Anh
-+ Từ đúng nên là "amount"
-+ Cấu trúc đúng:
-  + The amount of money
-  + A large amount
-  + Total amount
-+ Ví dụ câu đúng:
-  + The amount of money is significant
-  + We need to calculate the total amount
-  + He paid a large amount for the house
++ Các loài động vật ăn thịt thuộc họ Felidae, bao gồm sư tử, hổ, báo và miêu (2)
+  + Ví dụ: Sư tử là một loài mèo hoang dã (2) (VI)
+  + Ví dụ: Lions are wild cats in the savanna (2) (EN)
 
-* Giải thích:
-+ "Amount" là danh từ chỉ số lượng/số tiền
-+ "Amountment" không tồn tại trong từ điển tiếng Anh
-+ Không nên thêm hậu tố "-ment" vào từ "amount"
-+ Nên sử dụng "amount" trong mọi trường hợp
++ Lông của một con mèo nhà (3)
+  + Ví dụ: Chiếc áo khoác làm từ lông mèo (3) (VI)
+  + Ví dụ: A coat made of cat fur (3) (EN)
+
++ Một người phụ nữ được coi là khó chịu hoặc ác ý (4)
+  + Ví dụ: Cô ấy là một con mèo khó chịu trong văn phòng (4) (VI)
+  + Ví dụ: She's such a cat at work (4) (EN)
+
+* Động từ không chuyển động:
++ Kéo neo lên (1)
+  + Ví dụ: Thủy thủ đã kéo neo lên (1) (VI)
+  + Ví dụ: To cat the anchor on the ship (1) (EN)
+
++ Tìm kiếm đối tác tình dục; có một hoặc nhiều mối quan hệ ngoài luồng (2)
+  + Ví dụ: Anh ta hay đi lang thang tìm bạn tình (2) (VI)
+  + Ví dụ: He likes to cat around town (2) (EN)
+
+* Thành ngữ:
++ (Thả mèo ra khỏi bao) Để lộ một bí mật (1)
+  + Ví dụ: Cô ấy vô tình để lộ bí mật (1) (VI)
+  + Ví dụ: He let the cat out of the bag during the meeting (1) (EN)
 

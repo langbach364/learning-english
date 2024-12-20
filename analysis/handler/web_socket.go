@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"log"
 	"net/http"
+	"time"
 
 	"github.com/gorilla/websocket"
 )
@@ -11,24 +12,42 @@ import (
 var broadCast = make(map[string]chan bool)
 var dataSocket = make(map[string][]interface{})
 
-// Websocket connection
-// ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 var (
 	upgrader = websocket.Upgrader{
 		CheckOrigin: func(r *http.Request) bool {
 			return true
 		},
+		EnableCompression: true,
+		HandshakeTimeout:  10 * time.Second,
 	}
-
 	clients = make(map[*websocket.Conn][]string)
 )
 
 func connect_client(w http.ResponseWriter, r *http.Request) *websocket.Conn {
-	conn, err := upgrader.Upgrade(w, r, nil)
+	log.Printf("Đang xử lý yêu cầu WebSocket từ: %s", r.RemoteAddr)
+	protocol := r.Header.Get("Sec-WebSocket-Protocol")
+	log.Printf("Protocol nhận được: %s", protocol)
+
+	claims, err := validate_token(protocol)
 	if err != nil {
-		log.Println("upgrade:", err)
+		log.Printf("Lỗi xác thực token: %v", err)
+		send_error_response(w, http.StatusUnauthorized, "Token không hợp lệ", "WS_INVALID_TOKEN")
 		return nil
 	}
+
+	log.Printf("Token hợp lệ cho user: %s", claims.UserID)
+
+	upgrader.Subprotocols = []string{protocol}
+
+	conn, err := upgrader.Upgrade(w, r, nil)
+	if err != nil {
+		log.Printf("Lỗi nâng cấp kết nối: %v", err)
+		return nil
+	}
+
+	clients[conn] = []string{claims.UserID}
+	log.Printf("Kết nối WebSocket thành công cho user: %s", claims.UserID)
+
 	return conn
 }
 
@@ -51,7 +70,6 @@ func recive_message_client(conn *websocket.Conn) string {
 	}
 
 	log.Printf("Dữ liệu client %s là: %s", conn.RemoteAddr(), string(messageClient))
-
 	return string(messageClient)
 }
 
@@ -63,6 +81,7 @@ func send_message_client(conn *websocket.Conn, message interface{}) {
 			delete(clients, conn)
 		}
 	}()
+
 	err := conn.WriteJSON(message)
 	fmt.Println("Dữ liệu gửi đến client là:", message)
 
@@ -78,13 +97,12 @@ func handle_websocket(nameEvent string) {
 	go func() {
 		for <-broadCast[nameEvent] {
 			for conn := range clients {
-
 				data := dataSocket[nameEvent]
 				dataJson := AnswerData{
-					Detail: data[0],
+					Detail:    data[0],
 					Structure: dataStructure,
 				}
-				
+
 				log.Printf("Gửi dữ liệu cho client: %s\n", conn.RemoteAddr())
 				send_message_client(conn, dataJson)
 			}

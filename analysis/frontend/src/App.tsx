@@ -2,11 +2,12 @@ import React, { useEffect, useState, useCallback } from "react";
 import { APIService } from "./services/api";
 import { AnswerData } from "./types/dictionary";
 import ConnectionStatus from "./components/ConnectionStatus";
-import WordInput from "./components/WordInput"; 
+import WordInput from "./components/WordInput";
 import ChatDisplay from "./components/ChatDisplay";
 import Loading from "./components/Loading";
-import styled from '@emotion/styled';
-import { fadeIn } from './styles/animation';
+import { Login } from "./components/Login";
+import styled from "@emotion/styled";
+import { fadeIn } from "./styles/animation";
 
 const AppContainer = styled.div`
   animation: ${fadeIn} 0.5s ease-out;
@@ -33,31 +34,42 @@ function App() {
   const [word, setWord] = useState("");
   const [definitions, setDefinitions] = useState<AnswerData>({
     detail: {},
-    structure: "Sentence"
+    structure: "Sentence",
   });
   const [messageType, setMessageType] = useState<string>("dictionary");
   const [isLoading, setIsLoading] = useState(false);
   const [isConnected, setIsConnected] = useState(false);
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
 
-  const handleWebSocketMessage = useCallback((data: AnswerData, type: string) => {
-    if (data) {
-      setDefinitions({
-        detail: data.detail || {},
-        structure: data.structure || "Sentence"
-      });
-      setMessageType(type || "dictionary");
-      setIsLoading(false);
+  const handleWebSocketMessage = useCallback(
+    (data: AnswerData, type: string) => {
+      if (data) {
+        setDefinitions({
+          detail: data.detail || {},
+          structure: data.structure || "Sentence",
+        });
+        setMessageType(type || "dictionary");
+        setIsLoading(false);
+      }
+    },
+    []
+  );
+
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    if (token) {
+      setIsAuthenticated(true);
+      const cleanup = APIService.connectWebSocket(
+        handleWebSocketMessage,
+        setIsConnected
+      );
+      return cleanup;
     }
   }, []);
 
-  useEffect(() => {
-    const cleanup = APIService.connectWebSocket(handleWebSocketMessage, setIsConnected);
-    return () => cleanup();
-  }, [handleWebSocketMessage]);
-
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!word.trim()) return;
+    if (!word.trim() || !isAuthenticated) return;
 
     setIsLoading(true);
     try {
@@ -69,27 +81,34 @@ function App() {
     }
   };
 
+  const handleLoginSuccess = useCallback(() => {
+    setIsAuthenticated(true);
+  }, []);
+
   return (
     <AppContainer>
-      {isLoading && <Loading />}
-      <ConnectionStatus isConnected={isConnected} />
-      
-      <ContentWrapper>
-        <Title>Phân tích từ hoặc câu tiếng Anh</Title>
+      {!isAuthenticated ? (
+        <Login onLoginSuccess={handleLoginSuccess} />
+      ) : (
+        <>
+          {isLoading && <Loading />}
+          <ConnectionStatus isConnected={isConnected} />
 
-        <WordInput
-          word={word}
-          setWord={setWord}
-          onSubmit={handleSubmit}
-          isLoading={isLoading}
-          data={definitions.detail}
-        />
+          <ContentWrapper>
+            <Title>Phân tích từ hoặc câu tiếng Anh</Title>
 
-        <ChatDisplay 
-          data={definitions} 
-          type={messageType} 
-        />
-      </ContentWrapper>
+            <WordInput
+              word={word}
+              setWord={setWord}
+              onSubmit={handleSubmit}
+              isLoading={isLoading}
+              data={definitions.detail}
+            />
+
+            <ChatDisplay data={definitions} type={messageType} />
+          </ContentWrapper>
+        </>
+      )}
     </AppContainer>
   );
 }

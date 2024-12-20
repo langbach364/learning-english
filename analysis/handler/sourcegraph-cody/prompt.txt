@@ -5,6 +5,7 @@ Mỗi định nghĩa và ví dụ bắt đầu, đầu dòng tuyệt đối bằ
 Đánh số thứ tự liên tục cho tất cả định nghĩa
 Dịch thuần hóa theo tiếng Việt dễ hiểu trừ một số từ định nghĩa riêng như let the cat out of the bag
 Chọn 1 trong 2 cấu trúc [từ loại] hoặc [câu] để trả lời đúng 1 cấu trúc
+Nếu từ hoặc câu không theo ngôn ngữ anh thì hãy trả về theo cấu trúc [từ loại]
 
 Cấu trúc trả lời:
 [Từ loại]
