@@ -43,13 +43,15 @@ export class APIService {
       localStorage.setItem('token', data.token);
       return data.token;
     } catch (error) {
-      console.error('Lỗi đăng nhập:', error);
-      throw error;
+      if (error instanceof Error) {
+        throw new Error(`Lỗi đăng nhập: ${error.message}`);
+      }
+      throw new Error('Đã xảy ra lỗi không xác định trong quá trình đăng nhập');
     }
   }
 
   static async searchWord(word: string): Promise<void> {
-    if (!this.token) throw new Error('Vui lòng đăng nhập');
+    if (!this.token) throw new Error('Vui lòng đăng nhập để tiếp tục');
 
     try {
       const response = await fetch(`${API_CONFIG.BASE_URL}/word`, {
@@ -67,8 +69,10 @@ export class APIService {
         throw new Error(error.message || 'Lỗi khi tìm từ');
       }
     } catch (error) {
-      console.error('Lỗi tìm kiếm:', error);
-      throw error;
+      if (error instanceof Error) {
+        throw new Error(`Lỗi tìm kiếm từ: ${error.message}`);
+      }
+      throw new Error('Đã xảy ra lỗi không xác định trong quá trình tìm kiếm');
     }
   }
 
@@ -77,17 +81,15 @@ export class APIService {
     onConnectionChange: (status: boolean) => void
   ): () => void {
     if (!this.token) {
-      throw new Error('Vui lòng đăng nhập');
+      throw new Error('Vui lòng đăng nhập để kết nối WebSocket');
     }
 
     if (this.ws?.readyState === WebSocket.OPEN) {
-      console.log('WebSocket đã được kết nối');
       onConnectionChange(true);
       return () => this.cleanup();
     }
 
     if (this.isConnecting) {
-      console.log('Đang trong quá trình kết nối');
       return () => this.cleanup();
     }
 
@@ -101,19 +103,17 @@ export class APIService {
   ): void {
     this.isConnecting = true;
     this.reconnectAttempts = 0;
-    console.log('Khởi tạo kết nối WebSocket');
 
     try {
       if (this.token === null) {
-        throw new Error('Token is null');
+        throw new Error('Token không tồn tại');
       }
       if (!API_CONFIG.WS_URL) {
-        throw new Error('WebSocket URL is undefined');
+        throw new Error('Không tìm thấy địa chỉ WebSocket');
       }
       this.ws = new WebSocket(API_CONFIG.WS_URL, [this.token]);
 
       this.ws.onopen = () => {
-        console.log('WebSocket kết nối thành công');
         this.isConnecting = false;
         this.reconnectAttempts = 0;
         onConnectionChange(true);
@@ -123,57 +123,66 @@ export class APIService {
       this.ws.onmessage = (event) => {
         try {
           const message = JSON.parse(event.data);
-          console.log('Nhận được tin nhắn:', message);
           
-          if (message) {
-            const processedData: AnswerData = {
-              detail: message.detail || {},
-              structure: message.structure || "Sentence"
-            };
-            onMessage(processedData, message.type || 'dictionary');
+          if (!message) {
+            throw new Error('Dữ liệu nhận được không hợp lệ');
           }
+
+          const processedData: AnswerData = {
+            detail: message.detail || {},
+            structure: message.structure || "Sentence"
+          };
+          onMessage(processedData, message.type || 'dictionary');
         } catch (error) {
-          console.error('Lỗi xử lý tin nhắn:', error);
+          if (error instanceof Error) {
+            throw new Error(`Lỗi xử lý tin nhắn WebSocket: ${error.message}`);
+          }
+          throw new Error('Lỗi không xác định khi xử lý tin nhắn WebSocket');
         }
       };
 
-      this.ws.onclose = () => {
-        console.log('WebSocket đã đóng kết nối');
+      this.ws.onclose = (event) => {
         this.isConnecting = false;
         onConnectionChange(false);
+        
         if (this.reconnectAttempts < this.maxReconnectAttempts) {
           this.startReconnectInterval(onMessage, onConnectionChange);
+        } else {
+          throw new Error(`WebSocket đóng với mã: ${event.code}, lý do: ${event.reason}`);
         }
       };
 
       this.ws.onerror = (error) => {
-        console.error('Lỗi WebSocket:', error);
         this.isConnecting = false;
         onConnectionChange(false);
+        throw new Error(`Lỗi kết nối WebSocket: ${error}`);
       };
 
     } catch (error) {
-      console.error('Lỗi khởi tạo WebSocket:', error);
       this.isConnecting = false;
       onConnectionChange(false);
+      if (error instanceof Error) {
+        throw new Error(`Lỗi khởi tạo WebSocket: ${error.message}`);
+      }
+      throw new Error('Lỗi không xác định khi khởi tạo WebSocket');
     }
-  }  private static startReconnectInterval(
+  }
+
+  private static startReconnectInterval(
     onMessage: (data: AnswerData, type: string) => void,
     onConnectionChange: (status: boolean) => void
   ): void {
     if (this.reconnectInterval) return;
 
-    console.log('Khởi động cơ chế kết nối lại');
     this.reconnectInterval = setInterval(() => {
       if (!this.ws || this.ws.readyState === WebSocket.CLOSED) {
         this.reconnectAttempts++;
-        console.log(`Đang thử kết nối lại... (Lần ${this.reconnectAttempts}/${this.maxReconnectAttempts})`);
         
         if (this.reconnectAttempts < this.maxReconnectAttempts) {
           this.initializeWebSocket(onMessage, onConnectionChange);
         } else {
           this.stopReconnectInterval();
-          console.log('Đã đạt giới hạn số lần thử kết nối lại');
+          throw new Error(`Không thể kết nối lại sau ${this.maxReconnectAttempts} lần thử`);
         }
       }
     }, this.reconnectDelay);
@@ -181,14 +190,12 @@ export class APIService {
 
   private static stopReconnectInterval(): void {
     if (this.reconnectInterval) {
-      console.log('Dừng cơ chế kết nối lại');
       clearInterval(this.reconnectInterval);
       this.reconnectInterval = null;
     }
   }
 
   private static cleanup(): void {
-    console.log('Thực hiện cleanup');
     this.stopReconnectInterval();
     if (this.ws) {
       this.ws.close();
@@ -197,7 +204,6 @@ export class APIService {
   }
 
   static logout(): void {
-    console.log('Thực hiện đăng xuất');
     localStorage.removeItem('token');
     this.token = null;
     this.cleanup();
