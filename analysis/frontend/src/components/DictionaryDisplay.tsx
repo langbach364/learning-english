@@ -22,6 +22,16 @@ const AnimatedContainer = styled.div`
 const WordTypeCard = styled.div`
   animation: ${slideDown} 0.6s ease-out;
   transition: all 0.3s ease;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  margin-bottom: 1.5rem;
+
+  @media (max-width: 480px) {
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+  }
+
   &:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
@@ -31,6 +41,14 @@ const WordTypeCard = styled.div`
 const DefinitionBlock = styled.div`
   animation: ${slideLeft} 0.5s ease-out;
   transition: all 0.3s ease;
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+
+  @media (max-width: 480px) {
+    margin-left: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
   &:hover {
     transform: scale(1.01);
   }
@@ -38,6 +56,14 @@ const DefinitionBlock = styled.div`
 
 const ExampleContainer = styled.div`
   animation: ${fadeIn} 0.7s ease-out;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+
+  @media (max-width: 480px) {
+    margin-left: 0.5rem;
+    margin-top: 0.25rem;
+  }
+
   &:hover {
     animation: ${swing} 1s ease-in-out;
   }
@@ -61,7 +87,7 @@ const DictionaryDisplay: React.FC<DictionaryDisplayProps> = ({
     const cleanedText = text
       .replace(/^[*:+\s]+/, '')
       .replace(/^Ví dụ:?\s*/i, '')
-      .replace(/\((?:\d+|vi|en)\)/gi, '')  // Chỉ xóa (số), (vi), (en)
+      .replace(/\((?:\d+|vi|en)\)/gi, '')
       .trim();
   
     return cleanedText.charAt(0).match(/[A-Za-z]/) 
@@ -73,7 +99,7 @@ const DictionaryDisplay: React.FC<DictionaryDisplayProps> = ({
     return text.split(" ").map((word, index) => (
       <span
         key={index}
-        className="selectable-text mx-1 hover:bg-blue-100 hover-float"
+        className="selectable-text mx-0.5 md:mx-1 hover:bg-blue-100 hover-float text-sm md:text-base"
       >
         {word}
       </span>
@@ -85,22 +111,22 @@ const DictionaryDisplay: React.FC<DictionaryDisplayProps> = ({
     examples: DictionaryExample
   ) => {
     return (
-      <DefinitionBlock className="ml-6 mb-4">
-        <div className="text-indigo-800 font-medium mb-2">
+      <DefinitionBlock>
+        <div className="text-indigo-800 font-medium mb-1 md:mb-2 text-sm md:text-base">
           {renderWords(definition)}
         </div>
         {examples.EN && (
-          <div className="ml-4 space-y-2">
+          <div className="space-y-1 md:space-y-2">
             {examples.EN.map((en, idx) => (
               <div
                 key={idx}
-                className="bg-blue-50 p-3 rounded flex items-start gap-8"
+                className="bg-blue-50 p-2 md:p-3 rounded flex flex-col md:flex-row items-start gap-2 md:gap-8"
               >
-                <div className="text-blue-700 flex-1 min-w-0">
+                <div className="text-blue-700 flex-1 min-w-0 text-sm md:text-base">
                   {renderWords(cleanValue(en))}
                 </div>
                 {examples.VI && examples.VI[idx] && (
-                  <div className="text-gray-600 flex-1 min-w-0">
+                  <div className="text-gray-600 flex-1 min-w-0 text-sm md:text-base">
                     {renderWords(cleanValue(examples.VI[idx]))}
                   </div>
                 )}
@@ -116,15 +142,12 @@ const DictionaryDisplay: React.FC<DictionaryDisplayProps> = ({
     if (structure !== "WordClass") return null;
 
     return Object.entries(content).map(([wordType, definitions], index) => (
-      <WordTypeCard
-        key={index}
-        className="bg-white rounded-xl shadow-md border border-blue-200 hover:shadow-lg transition-shadow mb-6"
-      >
-        <div className="p-6 bg-gradient-to-b from-white to-blue-50">
-          <h3 className="font-bold text-blue-900 text-lg mb-4">
+      <WordTypeCard key={index}>
+        <div className="bg-gradient-to-b from-white to-blue-50">
+          <h3 className="font-bold text-blue-900 text-base md:text-lg mb-2 md:mb-4">
             {cleanKey(wordType)}
           </h3>
-          <div className="space-y-4">
+          <div className="space-y-2 md:space-y-4">
             {Object.entries(definitions).map(([def, examples], idx) => (
               <div key={idx}>
                 {renderDefinitionBlock(cleanValue(def), examples)}
@@ -137,7 +160,7 @@ const DictionaryDisplay: React.FC<DictionaryDisplayProps> = ({
   };
 
   return (
-    <AnimatedContainer className="space-y-6">
+    <AnimatedContainer className="space-y-4 md:space-y-6">
       {renderContent()}
     </AnimatedContainer>
   );

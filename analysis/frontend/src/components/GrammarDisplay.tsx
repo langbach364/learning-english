@@ -19,6 +19,11 @@ const KeyContainer = styled.div`
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   border: 1px solid #e2e8f0;
   margin-bottom: 1.5rem;
+
+  @media (max-width: 480px) {
+    padding: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
 `;
 
 const KeyButton = styled.button<{ isSelected: boolean }>`
@@ -29,6 +34,12 @@ const KeyButton = styled.button<{ isSelected: boolean }>`
   width: 100%;
   background: ${props => props.isSelected ? '#3B82F6' : '#EFF6FF'};
   color: ${props => props.isSelected ? 'white' : '#1D4ED8'};
+  font-size: var(--font-size-base);
+
+  @media (max-width: 480px) {
+    padding: 0.5rem;
+    font-size: var(--font-size-sm);
+  }
 
   &:hover {
     transform: translateY(-2px);
@@ -49,6 +60,11 @@ const ContentCard = styled.div`
   border: 1px solid #e2e8f0;
   margin-bottom: 1rem;
   transition: transform 0.3s ease;
+
+  @media (max-width: 480px) {
+    padding: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
 
   &:hover {
     transform: translateY(-4px);
@@ -100,7 +116,7 @@ const GrammarDisplay: React.FC<GrammarDisplayProps> = ({ content }) => {
 
   const renderKeyButtons = () => (
     <KeyContainer>
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 md:gap-4">
         {Object.keys(content.detail).map((key) => (
           <KeyButton
             key={key}
@@ -121,14 +137,14 @@ const GrammarDisplay: React.FC<GrammarDisplayProps> = ({ content }) => {
       const values = content.detail[key];
       return (
         <ContentCard key={key}>
-          <h3 className="font-bold text-blue-900 text-lg mb-4">
+          <h3 className="font-bold text-blue-900 text-base md:text-lg mb-2 md:mb-4">
             {cleanKey(key)}
           </h3>
-          <div className="space-y-4">
+          <div className="space-y-2 md:space-y-4">
             {values.map((item, idx) => (
-              <ContentItem key={idx} index={idx} className="ml-4">
-                <div className="bg-blue-50 p-3 rounded">
-                  <div className="text-blue-700">
+              <ContentItem key={idx} index={idx} className="ml-2 md:ml-4">
+                <div className="bg-blue-50 p-2 md:p-3 rounded">
+                  <div className="text-blue-700 text-sm md:text-base">
                     {renderWords(cleanValue(item))}
                   </div>
                 </div>

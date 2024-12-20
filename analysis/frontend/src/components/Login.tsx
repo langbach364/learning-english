@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { APIService } from '../services/api';
 import { API_CONFIG } from '../constants/config';
 import styled from '@emotion/styled';
+import { fadeIn, slideDown } from '../styles/animation';
 
 const LoginContainer = styled.div`
   display: flex;
@@ -10,56 +11,98 @@ const LoginContainer = styled.div`
   justify-content: center;
   min-height: 100vh;
   background-color: rgb(249 250 251);
+  padding: 1rem;
+  animation: ${fadeIn} 0.5s ease-out;
+
+  @media (min-width: 640px) {
+    padding: 2rem;
+  }
 `;
 
 const LoginBox = styled.div`
   background: white;
-  padding: 2rem;
-  border-radius: 8px;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 400px;
+  max-width: 320px;
+  animation: ${slideDown} 0.5s ease-out;
+
+  @media (min-width: 640px) {
+    padding: 2rem;
+    max-width: 400px;
+    border-radius: 0.75rem;
+  }
+
+  @media (min-width: 768px) {
+    padding: 2.5rem;
+    max-width: 450px;
+  }
 `;
 
 const Title = styled.h1`
   color: #2563eb;
-  font-size: 1.5rem;
+  font-size: var(--font-size-xl);
   text-align: center;
-  margin-bottom: 2rem;
-`;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
 
-const Button = styled.button<{ isLoading?: boolean }>`
-  width: 100%;
-  padding: 0.75rem;
-  background-color: ${props => props.isLoading ? '#93c5fd' : '#2563eb'};
-  color: white;
-  border: none;
-  border-radius: 4px;
-  font-size: 1rem;
-  cursor: ${props => props.isLoading ? 'not-allowed' : 'pointer'};
-  transition: background-color 0.2s;
+  @media (min-width: 640px) {
+    font-size: var(--font-size-2xl);
+    margin-bottom: 2rem;
+  }
 
-  &:hover {
-    background-color: ${props => props.isLoading ? '#93c5fd' : '#1d4ed8'};
+  @media (min-width: 768px) {
+    font-size: var(--font-size-3xl);
   }
 `;
 
-const ErrorMessage = styled.div`
-  color: #dc2626;
-  background-color: #fee2e2;
+const Button = styled.button<{ isLoading?: boolean; isLogout?: boolean }>`
+  width: 100%;
   padding: 0.75rem;
-  border-radius: 4px;
-  margin-bottom: 1rem;
-  text-align: center;
+  background-color: ${props => {
+    if (props.isLogout) return '#dc2626';
+    return props.isLoading ? '#93c5fd' : '#2563eb';
+  }};
+  color: white;
+  border: none;
+  border-radius: 0.375rem;
+  font-size: var(--font-size-base);
+  cursor: ${props => props.isLoading ? 'not-allowed' : 'pointer'};
+  transition: all 0.2s ease;
+  margin-top: ${props => props.isLogout ? '1rem' : '0'};
+
+  &:hover {
+    background-color: ${props => {
+      if (props.isLogout) return '#b91c1c';
+      return props.isLoading ? '#93c5fd' : '#1d4ed8';
+    }};
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+
+  @media (min-width: 640px) {
+    padding: 1rem;
+    font-size: var(--font-size-lg);
+  }
 `;
 
-const StatusMessage = styled.div`
-  color: #059669;
-  background-color: #d1fae5;
+const Message = styled.div<{ type: 'error' | 'status' }>`
+  color: ${props => props.type === 'error' ? '#dc2626' : '#059669'};
+  background-color: ${props => props.type === 'error' ? '#fee2e2' : '#d1fae5'};
   padding: 0.75rem;
-  border-radius: 4px;
+  border-radius: 0.375rem;
   margin-bottom: 1rem;
   text-align: center;
+  font-size: var(--font-size-sm);
+
+  @media (min-width: 640px) {
+    padding: 1rem;
+    font-size: var(--font-size-base);
+  }
 `;
 
 interface LoginProps {
@@ -120,7 +163,8 @@ export const Login: React.FC<LoginProps> = ({ onLoginSuccess }) => {
     } finally {
       setLoading(false);
     }
-  };  
+  };
+
   const handleLogout = () => {
     APIService.logout();
     setStatus(null);
@@ -133,8 +177,8 @@ export const Login: React.FC<LoginProps> = ({ onLoginSuccess }) => {
       <LoginBox>
         <Title>Đăng nhập hệ thống</Title>
 
-        {error && <ErrorMessage>{error}</ErrorMessage>}
-        {status && <StatusMessage>{status}</StatusMessage>}
+        {error && <Message type="error">{error}</Message>}
+        {status && <Message type="status">{status}</Message>}
 
         <Button 
           onClick={handleLogin} 
@@ -147,7 +191,7 @@ export const Login: React.FC<LoginProps> = ({ onLoginSuccess }) => {
         {localStorage.getItem('token') && (
           <Button 
             onClick={handleLogout}
-            style={{ marginTop: '1rem', backgroundColor: '#dc2626' }}
+            isLogout
           >
             Đăng xuất
           </Button>

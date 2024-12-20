@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { DictionaryWordType, GrammarDetail } from '../types/dictionary';
 
-
 declare global {
   interface Window {
     responsiveVoice: {
@@ -46,14 +45,10 @@ const WordCollector: React.FC<WordCollectorProps> = ({ data }) => {
       if (window.responsiveVoice.isPlaying()) {
         window.responsiveVoice.cancel();
       }
-
       window.responsiveVoice.speak(text, "US English Female", {
         pitch: 1,
         rate: 1,
-        volume: 1,
-        onstart: () => console.log("Bắt đầu đọc"),
-        onend: () => console.log("Đọc xong"),
-        onerror: (err: any) => console.error("Lỗi khi đọc:", err)
+        volume: 1
       });
     }
   };
@@ -84,10 +79,19 @@ const WordCollector: React.FC<WordCollectorProps> = ({ data }) => {
     return elements;
   };
 
+  const toggleCollecting = () => {
+    const newState = !isCollectingEnabled;
+    setIsCollectingEnabled(newState);
+    document.body.classList.toggle('collecting', newState);
+    if (!newState) {
+      clearSelection();
+    }
+  };
+
   useEffect(() => {
-    const handleMouseDown = (event: MouseEvent) => {
+    const handleInteractionStart = (event: MouseEvent | TouchEvent) => {
       if (!isCollectingEnabled) return;
-      const target = event.target as HTMLElement;
+      const target = ('touches' in event ? event.touches[0].target : event.target) as HTMLElement;
       if (target.classList.contains('selectable-text')) {
         setIsDragging(true);
         setStartElement(target);
@@ -96,17 +100,22 @@ const WordCollector: React.FC<WordCollectorProps> = ({ data }) => {
       }
     };
 
-    const handleMouseEnter = (event: MouseEvent) => {
+    const handleInteractionMove = (event: MouseEvent | TouchEvent) => {
       if (!isCollectingEnabled || !isDragging || !startElement) return;
       
-      const target = event.target as HTMLElement;
-      if (target.classList.contains('selectable-text')) {
+      const target = ('touches' in event 
+        ? document.elementFromPoint(
+            event.touches[0].clientX,
+            event.touches[0].clientY
+          )
+        : event.target) as HTMLElement;
+
+      if (target?.classList.contains('selectable-text')) {
         activeElements.forEach(element => {
           element.classList.remove('active-word');
         });
         
         const elements = getAllElementsBetween(startElement, target);
-        
         const newActiveElements = new Set<HTMLElement>();
         elements.forEach(element => {
           element.classList.add('active-word');
@@ -117,7 +126,7 @@ const WordCollector: React.FC<WordCollectorProps> = ({ data }) => {
       }
     };
 
-    const handleMouseUp = (event: MouseEvent) => {
+    const handleInteractionEnd = (event: MouseEvent | TouchEvent) => {
       if (!isCollectingEnabled) return;
       
       const words = Array.from(activeElements)
@@ -127,18 +136,20 @@ const WordCollector: React.FC<WordCollectorProps> = ({ data }) => {
       if (words.length > 0) {
         setSelectedWords(words);
         setShowSelectedWords(true);
-        
         speakText(words.join(' '));
         
+        const position = 'changedTouches' in event
+          ? event.changedTouches[0]
+          : event;
+          
         setLastSelectedPosition({
-          x: event.clientX,
-          y: event.clientY + window.scrollY
+          x: position.clientX,
+          y: position.clientY + window.scrollY
         });
       }
 
       setIsDragging(false);
       setStartElement(null);
-      
       activeElements.forEach(element => {
         element.classList.remove('active-word');
       });
@@ -146,29 +157,29 @@ const WordCollector: React.FC<WordCollectorProps> = ({ data }) => {
     };
 
     if (isCollectingEnabled) {
-      document.addEventListener('mousedown', handleMouseDown);
-      document.addEventListener('mouseenter', handleMouseEnter, true);
-      document.addEventListener('mouseup', handleMouseUp);
+      document.addEventListener('mousedown', handleInteractionStart);
+      document.addEventListener('mousemove', handleInteractionMove);
+      document.addEventListener('mouseup', handleInteractionEnd);
+      document.addEventListener('touchstart', handleInteractionStart);
+      document.addEventListener('touchmove', handleInteractionMove);
+      document.addEventListener('touchend', handleInteractionEnd);
     }
 
     return () => {
-      document.removeEventListener('mousedown', handleMouseDown);
-      document.removeEventListener('mouseenter', handleMouseEnter, true);
-      document.removeEventListener('mouseup', handleMouseUp);
+      document.removeEventListener('mousedown', handleInteractionStart);
+      document.removeEventListener('mousemove', handleInteractionMove);
+      document.removeEventListener('mouseup', handleInteractionEnd);
+      document.removeEventListener('touchstart', handleInteractionStart);
+      document.removeEventListener('touchmove', handleInteractionMove);
+      document.removeEventListener('touchend', handleInteractionEnd);
     };
   }, [isDragging, activeElements, startElement, isCollectingEnabled, isVoiceReady]);
-
-  useEffect(() => {
-    if (!isCollectingEnabled) {
-      clearSelection();
-    }
-  }, [isCollectingEnabled]);
 
   return (
     <>
       <button
-        onClick={() => setIsCollectingEnabled(!isCollectingEnabled)}
-        className={`px-6 py-2 rounded-lg transition-colors ${
+        onClick={toggleCollecting}
+        className={`px-3 md:px-6 py-1 md:py-2 text-sm md:text-base rounded-lg transition-colors ${
           isCollectingEnabled 
             ? 'bg-blue-600 text-white hover:bg-blue-700' 
             : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
@@ -179,7 +190,7 @@ const WordCollector: React.FC<WordCollectorProps> = ({ data }) => {
 
       {showSelectedWords && selectedWords.length > 0 && lastSelectedPosition && (
         <div 
-          className="fixed bg-white rounded-xl shadow-lg border border-gray-100 p-4 max-w-md"
+          className="fixed bg-white rounded-xl shadow-lg border border-gray-100 p-3 md:p-4 max-w-[90vw] md:max-w-md"
           style={{
             top: `${lastSelectedPosition.y + 20}px`,
             left: `${lastSelectedPosition.x}px`,
@@ -188,14 +199,14 @@ const WordCollector: React.FC<WordCollectorProps> = ({ data }) => {
           }}
         >
           <div className="flex justify-between items-start">
-            <p className="text-gray-800 pr-4">
+            <p className="text-gray-800 pr-4 text-sm md:text-base">
               {selectedWords.join(' ')}
             </p>
             <button 
               onClick={clearSelection}
               className="text-gray-500 hover:text-gray-700"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 md:h-5 md:w-5" viewBox="0 0 20 20" fill="currentColor">
                 <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
               </svg>
             </button>

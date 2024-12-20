@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Root variables cho typography */
+:root {
+  --font-size-xs: 0.75rem;    /* 12px */
+  --font-size-sm: 0.875rem;   /* 14px */
+  --font-size-base: 1rem;     /* 16px */ 
+  --font-size-lg: 1.125rem;   /* 18px */
+  --font-size-xl: 1.25rem;    /* 20px */
+  --font-size-2xl: 1.5rem;    /* 24px */
+  --font-size-3xl: 1.875rem;  /* 30px */
+}
+
+/* Base styles */
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -9,21 +21,66 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: var(--font-size-base);
+  line-height: 1.5;
 }
 
+/* Responsive typography */
+@media (max-width: 640px) {
+  :root {
+    --font-size-xs: 0.625rem;   /* 10px */
+    --font-size-sm: 0.75rem;    /* 12px */
+    --font-size-base: 0.875rem; /* 14px */
+    --font-size-lg: 1rem;       /* 16px */
+    --font-size-xl: 1.125rem;   /* 18px */
+    --font-size-2xl: 1.25rem;   /* 20px */
+    --font-size-3xl: 1.5rem;    /* 24px */
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --font-size-xs: 0.625rem;   /* 10px */
+    --font-size-sm: 0.75rem;    /* 12px */ 
+    --font-size-base: 0.813rem; /* 13px */
+    --font-size-lg: 0.875rem;   /* 14px */
+    --font-size-xl: 1rem;       /* 16px */
+    --font-size-2xl: 1.125rem;  /* 18px */
+    --font-size-3xl: 1.25rem;   /* 20px */
+  }
+}
+
+/* Box sizing */
 * {
   box-sizing: border-box;
 }
 
+/* Selectable text styles */
 .selectable-text {
     user-select: none;
     cursor: pointer;
-    padding: 0 2px;
-    border-radius: 3px;
+    padding: 0.125rem 0.25rem;
+    border-radius: 0.25rem;
     transition: all 0.3s ease;
     display: inline-block;
-    margin: 0 2px;
+    margin: 0 0.125rem;
     position: relative;
+    font-size: var(--font-size-base);
+}
+
+@media (max-width: 480px) {
+  .selectable-text {
+    padding: 0.1rem 0.2rem;
+    margin: 0 0.1rem;
+    font-size: var(--font-size-sm);
+  }
+}
+
+@media (min-width: 768px) {
+  .selectable-text {
+    padding: 0.25rem 0.5rem;
+    margin: 0 0.25rem;
+  }
 }
 
 .selectable-text:hover {
@@ -36,12 +93,14 @@ body {
   transform: translateY(1px);
 }
 
+/* Selection styles */
 ::selection {
   background-color: rgba(59, 130, 246, 0.2);
   color: #1d4ed8;
   border-radius: 4px;
 }
 
+/* Active word styles */
 .active-word {
     background-color: rgba(59, 130, 246, 0.2) !important;
     color: #1d4ed8 !important;
@@ -49,6 +108,7 @@ body {
     animation: pulse 0.5s ease-in-out;
 }
 
+/* Animations */
 @keyframes pulse {
   0% { transform: scale(1); }
   50% { transform: scale(1.05); }
@@ -63,4 +123,58 @@ body {
 
 .hover-float:hover {
   animation: float 2s ease-in-out infinite;
+}
+
+/* Responsive container classes */
+.container {
+  width: 100%;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0.75rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+    padding: 2.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding: 3rem;
+  }
+}
+
+.selectable-text {
+  touch-action: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+body.collecting {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
 }

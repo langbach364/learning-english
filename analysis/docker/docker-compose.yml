@@ -31,7 +31,7 @@ services:
       - "traefik.enable=true"
       - "traefik.docker.network=my_network"
       - "traefik.http.routers.be.entrypoints=websecure"
-      - "traefik.http.routers.be.rule=Host(`api.bachlang364.id.vn`) && (PathPrefix(`/word`) || PathPrefix(`/ChatCody`))"
+      - "traefik.http.routers.be.rule=Host(`api.bachlang364.id.vn`) && (PathPrefix(`/word`) || PathPrefix(`/ChatCody`) || PathPrefix(`/login`))"
       - "traefik.http.routers.be.tls.certresolver=lets-encrypt"
       - "traefik.http.services.be.loadbalancer.server.port=7089"
     restart: always
