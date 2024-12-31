@@ -55,10 +55,25 @@ function App() {
     []
   );
 
+  const verifyAuthentication = async () => {
+    try {
+      const response = await APIService.verifyToken();
+      if (!response.success) {
+        localStorage.removeItem('token');
+        setIsAuthenticated(false);
+      }
+    } catch (error) {
+      console.error('Verification failed:', error);
+      localStorage.removeItem('token');
+      setIsAuthenticated(false);
+    }
+  };
+
   useEffect(() => {
     const token = localStorage.getItem("token");
     if (token) {
       setIsAuthenticated(true);
+      verifyAuthentication();
       const cleanup = APIService.connectWebSocket(
         handleWebSocketMessage,
         setIsConnected
@@ -83,6 +98,7 @@ function App() {
 
   const handleLoginSuccess = useCallback(() => {
     setIsAuthenticated(true);
+    verifyAuthentication(); // Verify sau khi đăng nhập thành công
   }, []);
 
   return (

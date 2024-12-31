@@ -1,16 +1,4 @@
 &&&
-Adjective:
-
-- Being of the color black, producing or reflecting comparatively little light and having no predominant hue.
-
-- Having little or no light.
-
-- Of or belonging to a racial group having brown to black skin, especially one of African origin.
-
-- Of or belonging to an American ethnic group descended from African peoples having dark skin; African-American.
-
--------------------------------------
-
 Noun:
 
 - The achromatic color value of minimum lightness or maximum darkness; the color of objects that absorb nearly all light of all visible wavelengths; one extreme of the neutral gray series, the opposite being white. Although strictly a response to zero stimulation of the retina, the perception of black appears to depend on contrast with surrounding color stimuli.
@@ -46,6 +34,18 @@ Phrasal verb:
 - To prohibit the dissemination of, especially by censorship.
 
 - To extinguish or conceal all lights that might help enemy aircraft find a target during an air raid.
+
+-------------------------------------
+
+Adjective:
+
+- Being of the color black, producing or reflecting comparatively little light and having no predominant hue.
+
+- Having little or no light.
+
+- Of or belonging to a racial group having brown to black skin, especially one of African origin.
+
+- Of or belonging to an American ethnic group descended from African peoples having dark skin; African-American.
 
 -------------------------------------
 
