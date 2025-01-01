@@ -1,135 +1,215 @@
 import { API_CONFIG } from '../constants/config';
+import { AnswerData } from '../types/dictionary';
+import { LoginRequest, LoginResponse } from '../constants/auth';
 
-type WebSocketMessageCallback = (data: any, type: string) => void;
-type ConnectionStatusCallback = (status: boolean) => void;
+export class APIService {
+  private static token: string | null = localStorage.getItem('token');
+  private static ws: WebSocket | null = null;
+  private static isConnecting = false;
+  private static reconnectInterval: NodeJS.Timeout | null = null;
+  private static reconnectAttempts = 0;
+  private static maxReconnectAttempts = 5;
+  private static reconnectDelay = 5000;
 
-class APIServiceClass {
-  private ws: WebSocket | null = null;
-  private messageCallback: WebSocketMessageCallback | null = null;
-  private statusCallback: ConnectionStatusCallback | null = null;
-
-  constructor() {
-    this.ws = null;
-    this.messageCallback = null;
-    this.statusCallback = null;
+  static getWebSocketState(): string {
+    if (!this.ws) return 'CLOSED';
+    const states: { [key: number]: string } = {
+      [WebSocket.CONNECTING]: 'CONNECTING',
+      [WebSocket.OPEN]: 'OPEN',
+      [WebSocket.CLOSING]: 'CLOSING',
+      [WebSocket.CLOSED]: 'CLOSED'
+    };
+    return states[this.ws.readyState] || 'UNKNOWN';
   }
 
-  public connectWebSocket = (
-    onMessage: WebSocketMessageCallback,
-    onConnectionStatus: ConnectionStatusCallback
-  ) => {
-    this.messageCallback = onMessage;
-    this.statusCallback = onConnectionStatus;
-
-    const token = localStorage.getItem('token');
-    if (!token) return;
-
-    const wsUrl = `${API_CONFIG.WS_URL}?token=${token}`;
-    this.ws = new WebSocket(wsUrl);
-
-    this.ws.onopen = () => {
-      this.statusCallback?.(true);
-    };
-
-    this.ws.onclose = () => {
-      this.statusCallback?.(false);
-      setTimeout(() => this.reconnect(), 3000);
-    };
-
-    this.ws.onmessage = (event) => {
-      try {
-        const data = JSON.parse(event.data);
-        this.messageCallback?.(data.data, data.type);
-      } catch (error) {
-        console.error('WebSocket message parse error:', error);
-      }
-    };
-
-    return () => {
-      if (this.ws && this.ws.readyState === WebSocket.OPEN) {
-        this.ws.close();
-      }
-    };
-  };
-
-  private reconnect = () => {
-    if (this.messageCallback && this.statusCallback) {
-      this.connectWebSocket(this.messageCallback, this.statusCallback);
-    }
-  };
-
-  public searchWord = async (word: string) => {
-    if (!this.ws || this.ws.readyState !== WebSocket.OPEN) {
-      throw new Error('WebSocket connection not established');
-    }
-
-    this.ws.send(JSON.stringify({
-      type: 'search',
-      data: { word }
-    }));
-  };
-
-  public login = async (credentials: { username: string; password: string }) => {
+  static async login(credentials: LoginRequest): Promise<string> {
     try {
-      const response = await fetch(`${API_CONFIG.BASE_URL}/auth/login`, {
+      const response = await fetch(`${API_CONFIG.BASE_URL}/login`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
           'Accept': 'application/json',
-          'Access-Control-Allow-Origin': '*',
-          'Access-Control-Allow-Methods': 'POST, GET, OPTIONS',
-          'Access-Control-Allow-Headers': 'Content-Type'
         },
-        credentials: 'include',
-        mode: 'cors',
         body: JSON.stringify(credentials)
       });
 
       if (!response.ok) {
-        throw new Error('Login failed');
+        const error = await response.json();
+        throw new Error(error.message || 'Đăng nhập thất bại');
       }
 
-      const data = await response.json();
+      const data: LoginResponse = await response.json();
+      this.token = data.token;
       localStorage.setItem('token', data.token);
-      return data;
+      return data.token;
     } catch (error) {
-      console.error('Login error:', error);
-      throw error;
-    }
-  };
-
-  public logout = () => {
-    localStorage.removeItem('token');
-    if (this.ws && this.ws.readyState === WebSocket.OPEN) {
-      this.ws.close();
-    }
-  };
-
-  public verifyToken = async (): Promise<{ success: boolean }> => {
-    try {
-      const token = localStorage.getItem('token');
-      if (!token) {
-        return { success: false };
+      if (error instanceof Error) {
+        throw new Error(`Lỗi đăng nhập: ${error.message}`);
       }
+      throw new Error('Đã xảy ra lỗi không xác định trong quá trình đăng nhập');
+    }
+  }
 
-      const response = await fetch(`${API_CONFIG.BASE_URL}/auth/verify`, {
+  static async searchWord(word: string): Promise<void> {
+    if (!this.token) throw new Error('Vui lòng đăng nhập để tiếp tục');
+
+    try {
+      const response = await fetch(`${API_CONFIG.BASE_URL}/word`, {
         method: 'POST',
         headers: {
-          'Authorization': `Bearer ${token}`,
-          'Content-Type': 'application/json'
-        }
+          'Authorization': `Bearer ${this.token}`,
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+        },
+        body: JSON.stringify({ data: word }),
       });
 
       if (!response.ok) {
-        throw new Error('Token verification failed');
+        const error = await response.json();
+        throw new Error(error.message || 'Lỗi khi tìm từ');
       }
-
-      return { success: true };
     } catch (error) {
-      console.error('Token verification error:', error);
-      return { success: false };
+      if (error instanceof Error) {
+        throw new Error(`Lỗi tìm kiếm từ: ${error.message}`);
+      }
+      throw new Error('Đã xảy ra lỗi không xác định trong quá trình tìm kiếm');
     }
-  };
-}
+  }
 
-export const APIService = new APIServiceClass();
+  static connectWebSocket(
+    onMessage: (data: AnswerData, type: string) => void,
+    onConnectionChange: (status: boolean) => void
+  ): () => void {
+    if (!this.token) {
+      throw new Error('Vui lòng đăng nhập để kết nối WebSocket');
+    }
+
+    if (this.ws?.readyState === WebSocket.OPEN) {
+      onConnectionChange(true);
+      return () => this.cleanup();
+    }
+
+    if (this.isConnecting) {
+      return () => this.cleanup();
+    }
+
+    this.initializeWebSocket(onMessage, onConnectionChange);
+    return () => this.cleanup();
+  }
+
+  private static initializeWebSocket(
+    onMessage: (data: AnswerData, type: string) => void,
+    onConnectionChange: (status: boolean) => void
+  ): void {
+    this.isConnecting = true;
+    this.reconnectAttempts = 0;
+
+    try {
+      if (this.token === null) {
+        throw new Error('Token không tồn tại');
+      }
+      if (!API_CONFIG.WS_URL) {
+        throw new Error('Không tìm thấy địa chỉ WebSocket');
+      }
+      this.ws = new WebSocket(API_CONFIG.WS_URL, [this.token]);
+
+      this.ws.onopen = () => {
+        this.isConnecting = false;
+        this.reconnectAttempts = 0;
+        onConnectionChange(true);
+        this.stopReconnectInterval();
+      };
+
+      this.ws.onmessage = (event) => {
+        try {
+          const message = JSON.parse(event.data);
+          
+          if (!message) {
+            throw new Error('Dữ liệu nhận được không hợp lệ');
+          }
+
+          const processedData: AnswerData = {
+            detail: message.detail || {},
+            structure: message.structure || "Sentence"
+          };
+          onMessage(processedData, message.type || 'dictionary');
+        } catch (error) {
+          if (error instanceof Error) {
+            throw new Error(`Lỗi xử lý tin nhắn WebSocket: ${error.message}`);
+          }
+          throw new Error('Lỗi không xác định khi xử lý tin nhắn WebSocket');
+        }
+      };
+
+      this.ws.onclose = (event) => {
+        this.isConnecting = false;
+        onConnectionChange(false);
+        
+        if (this.reconnectAttempts < this.maxReconnectAttempts) {
+          this.startReconnectInterval(onMessage, onConnectionChange);
+        } else {
+          throw new Error(`WebSocket đóng với mã: ${event.code}, lý do: ${event.reason}`);
+        }
+      };
+
+      this.ws.onerror = (error) => {
+        this.isConnecting = false;
+        onConnectionChange(false);
+        throw new Error(`Lỗi kết nối WebSocket: ${error}`);
+      };
+
+    } catch (error) {
+      this.isConnecting = false;
+      onConnectionChange(false);
+      if (error instanceof Error) {
+        throw new Error(`Lỗi khởi tạo WebSocket: ${error.message}`);
+      }
+      throw new Error('Lỗi không xác định khi khởi tạo WebSocket');
+    }
+  }
+
+  private static startReconnectInterval(
+    onMessage: (data: AnswerData, type: string) => void,
+    onConnectionChange: (status: boolean) => void
+  ): void {
+    if (this.reconnectInterval) return;
+
+    this.reconnectInterval = setInterval(() => {
+      if (!this.ws || this.ws.readyState === WebSocket.CLOSED) {
+        this.reconnectAttempts++;
+        
+        if (this.reconnectAttempts < this.maxReconnectAttempts) {
+          this.initializeWebSocket(onMessage, onConnectionChange);
+        } else {
+          this.stopReconnectInterval();
+          throw new Error(`Không thể kết nối lại sau ${this.maxReconnectAttempts} lần thử`);
+        }
+      }
+    }, this.reconnectDelay);
+  }
+
+  private static stopReconnectInterval(): void {
+    if (this.reconnectInterval) {
+      clearInterval(this.reconnectInterval);
+      this.reconnectInterval = null;
+    }
+  }
+
+  private static cleanup(): void {
+    this.stopReconnectInterval();
+    if (this.ws) {
+      this.ws.close();
+      this.ws = null;
+    }
+  }
+
+  static logout(): void {
+    localStorage.removeItem('token');
+    this.token = null;
+    this.cleanup();
+  }
+
+  static isWebSocketConnected(): boolean {
+    return this.ws?.readyState === WebSocket.OPEN;
+  }
+}

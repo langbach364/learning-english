@@ -6,6 +6,7 @@ import (
 	"net/http"
 	"time"
 
+	"github.com/labstack/echo/v4/middleware"
 	"github.com/labstack/echo/v4"
 )
 
@@ -21,13 +22,23 @@ func connect_db() (*sql.DB, error) {
 	return db, nil
 }
 
-func Send_Word(e *echo.Echo, pattern string, data interface{}) error {
+func Send_Word(e *echo.Echo, pattern string, wordLearned int) error {
 	e.POST(pattern, func(c echo.Context) error {
+		data := generate_word(wordLearned)
+		if data == nil {
+			return c.JSON(http.StatusOK, map[string]string{
+				"message": "No data available",
+			})
+		}
 		return c.JSON(http.StatusOK, data)
 	})
+	
+	e.OPTIONS(pattern, func(c echo.Context) error {
+		return c.NoContent(http.StatusOK)
+	})
+	
 	return nil
 }
-
 func Get_Schedule(e *echo.Echo, pattern string) error {
 	e.POST(pattern, func(c echo.Context) error {
 		var target TargetDate
@@ -117,6 +128,13 @@ func Get_Statistic(e *echo.Echo, pattern string) error {
 
 func enable_rest(port string) *echo.Echo {
 	e := echo.New()
+
+	e.Use(middleware.CORSWithConfig(middleware.CORSConfig{
+		AllowOrigins:     []string{"http://localhost:3000"},
+		AllowMethods:     []string{http.MethodGet, http.MethodPost, http.MethodPut, http.MethodDelete},
+		AllowHeaders:     []string{echo.HeaderOrigin, echo.HeaderContentType, echo.HeaderAccept},
+		AllowCredentials: true,
+	}))
 
 	serverAddr := ":" + port
 	println("REST Server is running at", serverAddr)

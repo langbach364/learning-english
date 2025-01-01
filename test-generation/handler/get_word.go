@@ -33,6 +33,8 @@ func init() {
 }
 
 func random_word(w http.ResponseWriter, field FieldsWord) []RandomWord {
+	log.Printf("🎲 Bắt đầu tìm từ ngẫu nhiên với các tham số: %+v", field)
+	
 	baseURL := "https://api.wordnik.com/v4/words.json/randomWords"
 
 	params := url.Values{}
@@ -63,9 +65,11 @@ func random_word(w http.ResponseWriter, field FieldsWord) []RandomWord {
 	}
 
 	fullURL := baseURL + "?" + params.Encode()
+	log.Printf("🌐 Gọi API với URL: %s", fullURL)
 
 	resp, err := http.Get(fullURL)
 	if err != nil {
+		log.Printf("❌ Lỗi khi gọi API: %v", err)
 		fmt.Fprintf(w, "Lỗi khi gọi API: %v\n", err)
 		return nil
 	}
@@ -73,10 +77,12 @@ func random_word(w http.ResponseWriter, field FieldsWord) []RandomWord {
 
 	var randomWords []RandomWord
 	if err := json.NewDecoder(resp.Body).Decode(&randomWords); err != nil {
+		log.Printf("❌ Lỗi khi parse JSON: %v", err)
 		fmt.Fprintf(w, "Lỗi khi đọc dữ liệu: %v\n", err)
 		return nil
 	}
 
+	log.Printf("✅ Tìm thấy %d từ ngẫu nhiên", len(randomWords))
 	fmt.Fprintln(w, "Các từ ngẫu nhiên được tìm thấy:")
 	fmt.Fprintln(w, "----------------------------------------")
 	for _, word := range randomWords {
@@ -87,26 +93,31 @@ func random_word(w http.ResponseWriter, field FieldsWord) []RandomWord {
 }
 
 func check_duplicate_words(words []RandomWord) []RandomWord {
+	log.Printf("🔍 Kiểm tra trùng lặp cho %d từ", len(words))
+	
 	db, err := sql.Open("mysql", "root:@ztegc4df9f4e@tcp(localhost:3306)/learned_vocabulary")
 	if err != nil {
-		log.Printf("Lỗi kết nối database: %v", err)
+		log.Printf("❌ Lỗi kết nối database: %v", err)
 		return words
 	}
 	defer db.Close()
 
 	for i, word := range words {
+		log.Printf("👀 Đang kiểm tra từ: %s", word.Word)
 		for {
 			var exists bool
 			err := db.QueryRow("SELECT EXISTS(SELECT 1 FROM vocabulary WHERE word = ?)", word.Word).Scan(&exists)
 			if err != nil {
-				log.Printf("Lỗi truy vấn database: %v", err)
+				log.Printf("❌ Lỗi truy vấn database cho từ %s: %v", word.Word, err)
 				break
 			}
 
 			if !exists {
+				log.Printf("✅ Từ '%s' chưa tồn tại trong database", word.Word)
 				break
 			}
 
+			log.Printf("🔄 Từ '%s' đã tồn tại, đang tìm từ mới thay thế", word.Word)
 			w := httptest.NewRecorder()
 			field := FieldsWord{
 				HasDictionaryDef: true,
@@ -126,6 +137,8 @@ func check_duplicate_words(words []RandomWord) []RandomWord {
 }
 
 func generate_word(limitWord int) []RandomWord {
+	log.Printf("🎯 Bắt đầu tạo %d từ mới", limitWord)
+	
 	w := httptest.NewRecorder()
 	listInclue := []string{
 		"noun",
@@ -159,5 +172,6 @@ func generate_word(limitWord int) []RandomWord {
 
 	words = check_duplicate_words(words)
 	
+	log.Printf("📝 Đã tạo xong danh sách %d từ", len(words))
 	return words
 }

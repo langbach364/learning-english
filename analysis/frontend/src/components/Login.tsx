@@ -113,7 +113,6 @@ export const Login: React.FC<LoginProps> = ({ onLoginSuccess }) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [status, setStatus] = useState<string | null>(null);
-  const [isConnected, setIsConnected] = useState(false);
 
   useEffect(() => {
     const token = localStorage.getItem('token');
@@ -132,10 +131,6 @@ export const Login: React.FC<LoginProps> = ({ onLoginSuccess }) => {
     } finally {
       setStatus(null);
     }
-  };
-
-  const handleWebSocketMessage = (message: any) => {
-    // Handle WebSocket messages here
   };
 
   const handleLogin = async () => {
@@ -158,13 +153,9 @@ export const Login: React.FC<LoginProps> = ({ onLoginSuccess }) => {
   
       setStatus('Đăng nhập thành công!');
       
-      // Thêm đoạn này để kết nối WebSocket ngay sau khi đăng nhập
-      const cleanup = APIService.connectWebSocket(
-        handleWebSocketMessage,
-        setIsConnected
-      );
-      
-      onLoginSuccess();
+      setTimeout(() => {
+        onLoginSuccess();
+      }, 1000);
   
     } catch (err) {
       console.error('Lỗi đăng nhập:', err);
