@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { Word } from '../types';
 
 const REST_API = 'http://localhost:8081';
 
@@ -20,8 +21,14 @@ export const learnWord = async (count: number) => {
   }
 };
 
-export const createSchedule = async () => {
-  return await api.post('/create_schedule');
+export const createSchedule = async (words: Word[]) => {
+  try {
+    const response = await api.post('/create_schedule', words);
+    return response;
+  } catch (error) {
+    console.error('Error creating schedule:', error);
+    throw error;
+  }
 };
 
 export const reviseWord = async () => {

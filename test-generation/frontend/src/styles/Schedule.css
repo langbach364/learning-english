@@ -1,4 +1,4 @@
-.vocabulary-content {
+.schedule-content {
   align-items: center;
   padding: 20px;
   padding-top: 40px;
@@ -15,7 +15,7 @@
   color: #697e91;
 }
 
-.vocabulary-header {
+.schedule-header {
   position: absolute;
   top: 0;
   right: 0;
@@ -29,35 +29,7 @@
   color: #425475;
 }
 
-.vocabulary-title {
-  font-weight: 600;
-  font-size: 1.25rem;
-  color: #425675;
-  margin-bottom: 0.75rem;
-}
-
-.vocabulary-description {
-  color: #697e91;
-  margin-bottom: 1rem;
-}
-
-.vocabulary-list {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-}
-
-.vocabulary-item {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.vocabulary-action {
-  margin-top: 1.25rem;
-}
-
-.words-container {
+.schedule-container {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
@@ -65,40 +37,33 @@
   width: 100%;
 }
 
-.word-card {
+.date-card {
   background: #f8f9ff;
   padding: 0.8rem 1rem;
   border-radius: 6px;
-  text-align: center;
+  text-align: left;
   width: 100%;
   box-sizing: border-box;
 }
 
-.word-info {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-}
-
-.word-text {
+.date-text {
   font-size: 1.1rem;
   color: #425275;
+  margin-bottom: 0.5rem;
+  display: block;
 }
 
-.wrong-count {
-  font-size: 0.9rem;
-  color: #e53e3e;
-  font-weight: 500;
+.word-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.word-meaning {
-  font-size: 0.9rem;
+.word-item {
+  padding: 0.25rem 0;
   color: #697e91;
-  width: 100%;
 }
-
-.learn-button {
+.schedule-button {
   width: 100%;
   padding: 0.8rem;
   font-size: 1rem;
@@ -111,23 +76,17 @@
   transition: all 0.2s;
 }
 
-.learn-button:hover {
+.schedule-button:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.learn-button:active {
+.schedule-button:active {
   transform: translateY(-1px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-.wrong-count {
-  font-size: 0.8rem;
-  color: #e53e3e;
-  margin-top: 0.25rem;
-}
-
-.learn-button::after {
+.schedule-button::after {
   content: "";
   display: inline-block;
   height: 100%;
@@ -141,12 +100,12 @@
   background-color: #6558d3;
 }
 
-.learn-button:hover::after {
+.schedule-button:hover::after {
   transform: scaleX(1.1) scaleY(1.2);
   opacity: 0;
 }
 
-.learn-button:disabled {
+.schedule-button:disabled {
   opacity: 0.7;
   cursor: not-allowed;
 }
