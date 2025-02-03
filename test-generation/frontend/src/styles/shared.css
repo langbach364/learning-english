@@ -1,0 +1,98 @@
+.content-container {
+  position: relative;
+  max-width: 800px;
+  margin: 2rem auto;
+  will-change: width, height;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+.collapsible-content {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  align-items: center;
+  padding: 20px;
+  padding-top: 40px;
+  background-color: #ecf0ff;
+  border-radius: 16px;
+  box-shadow: 0 30px 30px -25px rgba(0, 38, 255, 0.205);
+  cursor: move;
+  user-select: none;
+  touch-action: none;
+  z-index: 1000;
+  color: #697e91;
+}
+
+.content-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.words-section {
+  flex: 1;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.collapse-button {
+  position: absolute;
+  left: 20px;
+  top: 8px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #6558d3;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  transition: all 0.2s ease;
+}
+
+.content-wrapper {
+  height: 100%;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease;
+}
+
+.content-wrapper.collapsed {
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.resize-handle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #6558d3;
+  border-radius: 50%;
+  cursor: nw-resize;
+  opacity: 0; /* Mặc định ẩn */
+  transition: opacity 0.2s ease;
+  z-index: 1000;
+}
+
+.collapsible-content:hover .resize-handle {
+  opacity: 1; /* Chỉ hiện khi hover vào component */
+}
+
+.resize-handle-bottom-right {
+  bottom: -5px;
+  right: -5px;
+  cursor: se-resize;
+}
+
+.resize-handle-bottom-left {
+  bottom: -5px;
+  left: -5px;
+  cursor: sw-resize;
+}

@@ -1,3 +1,20 @@
+/* Container chính */
+.vocabulary-container {
+  position: relative;
+  max-width: 800px;
+  margin: 2rem auto;
+  will-change: width, height;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+.container {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+}
+
 .vocabulary-content {
   align-items: center;
   padding: 20px;
@@ -13,102 +30,154 @@
   max-width: 800px;
   margin: 2rem auto;
   color: #697e91;
+  will-change: width, height;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
 }
 
+/* Các style khác giữ nguyên */
+
+.content-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.collapse-button {
+  position: absolute;
+  left: 20px;
+  top: 8px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #6558d3;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+/* Điểm resize */
+.resize-handle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #6558d3;
+  border-radius: 50%;
+  cursor: nw-resize;
+  transition: opacity 0.2s ease;
+  opacity: 0;
+  z-index: 1000; /* Đảm bảo điểm resize luôn hiển thị trên cùng */
+}
+
+.resize-handle-bottom-right {
+  bottom: -5px;
+  right: -5px;
+  cursor: se-resize;
+}
+
+.resize-handle-bottom-left {
+  bottom: -5px;
+  left: -5px;
+  cursor: sw-resize;
+}
+
+.vocabulary-content:hover .resize-handle {
+  opacity: 1;
+}
+
+/* Header */
 .vocabulary-header {
   position: absolute;
   top: 0;
   right: 0;
   background-color: #bed6fb;
   border-radius: 99em 0 0 99em;
-  display: flex;
-  align-items: center;
   padding: 0.625em 0.75em;
-  font-size: 1.25rem;
+  font-size: inherit;
+  transition: all 0.1s ease-out;
+}
+
+.vocabulary-header span {
+  font-size: inherit; /* Kế thừa font size từ parent */
   font-weight: 600;
   color: #425475;
 }
 
-.vocabulary-title {
-  font-weight: 600;
-  font-size: 1.25rem;
-  color: #425675;
-  margin-bottom: 0.75rem;
-}
-
-.vocabulary-description {
-  color: #697e91;
-  margin-bottom: 1rem;
-}
-
-.vocabulary-list {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-}
-
-.vocabulary-item {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.vocabulary-action {
-  margin-top: 1.25rem;
-}
-
-.words-container {
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
-  padding: 1.5rem 0;
-  width: 100%;
-}
-
-.word-card {
-  background: #f8f9ff;
-  padding: 0.8rem 1rem;
-  border-radius: 6px;
-  text-align: center;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.word-info {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-}
-
-.word-text {
-  font-size: 1.1rem;
-  color: #425275;
-}
-
-.wrong-count {
-  font-size: 0.9rem;
-  color: #e53e3e;
-  font-weight: 500;
-}
-
-.word-meaning {
-  font-size: 0.9rem;
-  color: #697e91;
-  width: 100%;
-}
-
+/* Button */
 .learn-button {
   width: 100%;
-  padding: 0.8rem;
-  font-size: 1rem;
+  padding: 0.8em;
+  font-size: inherit; /* Kế thừa font size từ parent */
+  margin-top: 10px;
   background-color: #6558d3;
   color: white;
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  position: relative;
-  transition: all 0.2s;
+  transition: all 0.1s ease-out;
+}
+
+/* Phần danh sách từ */
+.words-section {
+  flex: 1;
+  margin: 1em 0;
+  overflow: auto;
+  height: 100%;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+/* Chrome, Safari và Opera */
+.words-section::-webkit-scrollbar {
+  display: none;
+}
+
+.words-container {
+  height: 100%;
+  padding: 1rem;
+}
+
+.words-grid {
+  display: grid;
+  gap: 1rem;
+  height: 100%;
+}
+
+.word-card {
+  background: #f8f9ff;
+  border-radius: 6px;
+  text-align: center;
+  font-size: inherit;
+  transition: all 0.1s ease-out;
+}
+
+.word-card h3 {
+  font-size: inherit;
+  font-weight: 600;
+  color: #425475;
+}
+
+.wrong-count {
+  font-size: inherit;
+  color: #e53e3e;
+  margin-top: 0.25rem;
+}
+
+/* Nút học từ mới */
+.learn-button {
+  width: 100%;
+  padding: 0.8em;
+  font-size: inherit;
+  margin-top: auto;
+  background-color: #6558d3;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.1s ease-out;
 }
 
 .learn-button:hover {
@@ -121,32 +190,16 @@
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-.wrong-count {
-  font-size: 0.8rem;
-  color: #e53e3e;
-  margin-top: 0.25rem;
-}
-
-.learn-button::after {
-  content: "";
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-  border-radius: 6px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transition: all 0.4s;
-  background-color: #6558d3;
-}
-
-.learn-button:hover::after {
-  transform: scaleX(1.1) scaleY(1.2);
-  opacity: 0;
-}
-
 .learn-button:disabled {
   opacity: 0.7;
   cursor: not-allowed;
+}
+
+/* Tắt outline và selection */
+*:focus {
+  outline: none;
+}
+
+*::selection {
+  background: transparent;
 }

@@ -24,7 +24,7 @@ export const learnWord = async (count: number) => {
 export const createSchedule = async (words: Word[]) => {
   try {
     const response = await api.post('/create_schedule', words);
-    return response;
+    return response.data;
   } catch (error) {
     console.error('Error creating schedule:', error);
     throw error;

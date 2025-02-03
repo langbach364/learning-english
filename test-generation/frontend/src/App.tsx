@@ -9,11 +9,9 @@ const App = () => {
   return (
     <ThemeProvider>
       <WordProvider>
-        <div className="container mx-auto p-4">
-          <div className="grid gap-8">
-            <LearnWord />
-            <Schedule />
-          </div>
+        <div className="grid gap-8">
+          <LearnWord />
+          <Schedule />
         </div>
       </WordProvider>
     </ThemeProvider>

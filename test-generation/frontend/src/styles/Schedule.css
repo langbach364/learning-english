@@ -1,18 +1,73 @@
 .schedule-content {
-  align-items: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   padding: 20px;
   padding-top: 40px;
   background-color: #ecf0ff;
   border-radius: 16px;
   box-shadow: 0 30px 30px -25px rgba(0, 38, 255, 0.205);
-  position: relative;
   cursor: move;
   user-select: none;
   touch-action: none;
-  z-index: 1000;
-  max-width: 800px;
-  margin: 2rem auto;
   color: #697e91;
+  position: relative;
+  min-width: 150px;
+  transition: none;
+  min-height: 60px;
+}
+
+.content-wrapper {
+  transition: opacity 0.3s ease;
+}
+
+.schedule-item {
+  transition: none;
+}
+
+.collapse-button {
+  position: absolute;
+  left: 20px;
+  top: 8px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #6558d3;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  z-index: 1000;
+}
+
+.resize-handle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #6558d3;
+  border-radius: 50%;
+  cursor: nw-resize;
+  transition: opacity 0.2s ease;
+  opacity: 0;
+  z-index: 1000;
+}
+
+.resize-handle-bottom-right {
+  bottom: -5px;
+  right: -5px;
+  cursor: se-resize;
+}
+
+.resize-handle-bottom-left {
+  bottom: -5px;
+  left: -5px;
+  cursor: sw-resize;
+}
+.schedule-content:hover .resize-handle {
+  opacity: 1;
 }
 
 .schedule-header {
@@ -21,58 +76,127 @@
   right: 0;
   background-color: #bed6fb;
   border-radius: 99em 0 0 99em;
-  display: flex;
-  align-items: center;
   padding: 0.625em 0.75em;
-  font-size: 1.25rem;
+  font-size: inherit;
+}
+
+.schedule-header span {
+  font-size: inherit;
   font-weight: 600;
   color: #425475;
 }
-
-.schedule-container {
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
-  padding: 1.5rem 0;
+.schedule-section {
+  flex: 1;
+  margin: 1em 0;
+  overflow: auto;
   width: 100%;
+}
+
+.schedule-item {
+  width: 100%;
+  transition: all 0.1s ease-out;
+}
+.date-header {
+  background: linear-gradient(135deg, #6558d3, #4e44a8);
+  padding: 1em;
+  border-radius: 8px 8px 0 0;
+  margin: -1px;
+}
+
+.date-badge {
+  background: white;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5em 1em;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.date-day {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #6558d3;
+  line-height: 1;
+}
+
+.date-month-year {
+  font-size: 0.9em;
+  color: #425475;
+  margin-top: 0.2em;
 }
 
 .date-card {
   background: #f8f9ff;
-  padding: 0.8rem 1rem;
-  border-radius: 6px;
-  text-align: left;
-  width: 100%;
-  box-sizing: border-box;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
 }
 
 .date-text {
   font-size: 1.1rem;
   color: #425275;
-  margin-bottom: 0.5rem;
   display: block;
+  margin-bottom: 0.5rem;
 }
 
 .word-list {
   list-style: none;
-  padding: 0;
+  padding: 1em;
   margin: 0;
+  width: 100%;
+}
+.word-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8em;
+  border-bottom: 1px solid #edf2f7;
+  font-size: inherit;
 }
 
-.word-item {
-  padding: 0.25rem 0;
-  color: #697e91;
+.word-item:hover {
+  background-color: #f7fafc;
 }
+
+.word-text, .wrong-count-badge {
+  font-size: inherit;
+}
+
+.wrong-count-badge {
+  padding: 0.2em 0.6em;
+  border-radius: 999px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+.wrong-count-badge.success {
+  color: #059669;
+  margin-right: 0.8em;
+  background-color: #ecfdf5;
+  border: 1px solid #a7f3d0;
+}
+
+.wrong-count-badge.error {
+  color: #e53e3e;
+  background-color: #fff5f5;
+  border: 1px solid #fed7d7;
+}
+
+.wrong-count-badge:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
 .schedule-button {
   width: 100%;
-  padding: 0.8rem;
-  font-size: 1rem;
+  padding: 0.8em;
+  font-size: inherit;
+  margin-top: auto;
   background-color: #6558d3;
   color: white;
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  position: relative;
   transition: all 0.2s;
 }
 
@@ -86,26 +210,40 @@
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-.schedule-button::after {
-  content: "";
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-  border-radius: 6px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transition: all 0.4s;
-  background-color: #6558d3;
-}
-
-.schedule-button:hover::after {
-  transform: scaleX(1.1) scaleY(1.2);
-  opacity: 0;
-}
-
 .schedule-button:disabled {
   opacity: 0.7;
   cursor: not-allowed;
+}
+
+.collapse-button {
+  position: absolute;
+  left: 20px;
+  top: 8px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #6558d3;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  z-index: 1000;
+}
+
+.collapse-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  background: #4e44a8;
+}
+
+.collapse-button:active {
+  transform: translateY(0);
+}
+
+/* Thêm transition cho height */
+.schedule-content {
+  transition: height 0.3s ease;
 }

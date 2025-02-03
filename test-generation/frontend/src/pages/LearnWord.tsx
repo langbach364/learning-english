@@ -1,12 +1,22 @@
-import React, { useState, useCallback } from "react";
+import React, { useState, useCallback, useEffect, useRef } from "react";
 import { motion, useMotionValue } from "framer-motion";
-import gsap from "gsap";
 import { learnWord } from "../services/api";
 import "../styles/LearnWord.css";
+import "../styles/shared.css";
 import { useWords } from "../context/WordContext";
 import { Word } from '../types';
+import { useResize } from '../hooks/useResize';
+import WordList from "../components/WordList";
 
 const LearnWord: React.FC = () => {
+  const { isResizing, startResize, size, setSize } = useResize({
+    minWidth: 150,
+    minHeight: 150
+  });
+
+  const [isDraggable, setIsDraggable] = useState(true);
+  const [isCollapsed, setIsCollapsed] = useState(false);
+  const contentRef = useRef<HTMLDivElement>(null);
   const { setLearnedWords } = useWords();
   const [words, setWords] = useState<Word[]>([]);
   const [loading, setLoading] = useState(false);
@@ -14,20 +24,9 @@ const LearnWord: React.FC = () => {
   const x = useMotionValue(0);
   const y = useMotionValue(0);
 
-  const handleWrongAnswer = (wordId: number) => {
-    setWords(prevWords => {
-      const updatedWords = prevWords.map(word => {
-        if (word.id === wordId) {
-          const newCount = (word.wrongCount || 0) + 1;
-          console.log(`Từ "${word.word}" đã sai ${newCount} lần`);
-          return { ...word, wrongCount: newCount };
-        }
-        return word;
-      });
-      console.log('Danh sách từ và số lần sai:', updatedWords);
-      return updatedWords;
-    });
-  };
+  useEffect(() => {
+    setIsDraggable(!isResizing);
+  }, [isResizing]);
 
   const handleLearnClick = useCallback(async () => {
     try {
@@ -37,7 +36,6 @@ const LearnWord: React.FC = () => {
         ...word,
         wrongCount: 0
       }));
-      console.log('Từ mới được tải:', wordsWithCount);
       setWords(wordsWithCount);
       setLearnedWords(wordsWithCount);
     } catch (error) {
@@ -46,43 +44,55 @@ const LearnWord: React.FC = () => {
       setLoading(false);
     }
   }, [setLearnedWords]);
-  return (
-    <div className="container mx-auto p-4">
-      <motion.div 
-        className="vocabulary-content"
-        drag
-        dragMomentum={false}
-        dragElastic={0}
-        style={{ x, y }}
-      >
-        <motion.span className="vocabulary-header">
-          <span>Học từ mới</span>
-        </motion.span>
 
-        <div className="words-container">
-          {words.map((word, index) => (
-            <motion.div
-              key={word.id || index}
-              className="vocabulary-item"
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{
-                delay: index * 0.1,
-                duration: 0.5,
-                type: "spring",
-                stiffness: 100,
-              }}
-            >
-              <div className="word-card">
-                <div className="word-info">
-                  <strong className="word-text">{word.word}</strong>
-                  <span className="wrong-count">
-                    {word.wrongCount > 0 ? `(${word.wrongCount})` : ''}
-                  </span>
-                </div>
-              </div>
-            </motion.div>
-          ))}
+  const toggleCollapse = () => {
+    setIsCollapsed(prev => !prev);
+    if (!isCollapsed) {
+      setSize(current => ({...current, height: 60}));
+    } else {
+      const contentHeight = contentRef.current?.scrollHeight || 400;
+      setSize(current => ({...current, height: Math.max(contentHeight + 80, 400)}));
+    }
+  };
+  return (
+    <motion.div 
+      className="collapsible-content"
+      style={{ 
+        x, y,
+        width: size.width,
+        height: size.height,
+        fontSize: `${Math.max(10, size.width * 0.02)}px`,
+        overflow: isCollapsed ? 'hidden' : 'visible',
+      }}
+      drag={isDraggable}
+      dragMomentum={false}
+      dragElastic={0}
+    >
+      {/* Các nút resize vẫn giữ nguyên vị trí và chức năng */}
+      <div 
+        className="resize-handle resize-handle-bottom-right"
+        onMouseDown={(e) => startResize(e, 'bottom-right')}
+      />
+      <div 
+        className="resize-handle resize-handle-bottom-left"
+        onMouseDown={(e) => startResize(e, 'bottom-left')}
+      />
+      
+      {/* Nội dung khác */}
+      <button className="collapse-button" onClick={toggleCollapse}>
+        {isCollapsed ? '▼' : '▲'}
+      </button>
+      
+      <div className="vocabulary-header">
+        <span>Học từ mới</span>
+      </div>
+
+      <div ref={contentRef} className={`content-wrapper ${isCollapsed ? 'collapsed' : ''}`}>
+        <div className="words-section">
+          <WordList 
+            words={words} 
+            containerWidth={size.width - 40}
+          />
         </div>
 
         <button
@@ -92,8 +102,8 @@ const LearnWord: React.FC = () => {
         >
           {loading ? "Đang tải..." : "Học từ mới"}
         </button>
-      </motion.div>
-    </div>
+      </div>
+    </motion.div>
   );
-};
+}
 export default LearnWord;
