@@ -36,5 +36,11 @@ export const reviseWord = async () => {
 };
 
 export const getStatistics = async () => {
-  return await api.post('/get_statistics');
+  const today = new Date().toISOString().split('T')[0];
+  const payload = {
+    date: today,
+    range: "daily"
+  };
+  return await api.post('/get_statistics', payload);
 };
+

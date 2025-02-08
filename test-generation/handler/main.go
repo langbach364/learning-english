@@ -25,8 +25,10 @@ func get_statistics(e *echo.Echo) {
 }
 
 func setupLogging(e *echo.Echo) {
+	log.Println("⚙️ Đang cấu hình logging...")
+
 	e.Use(middleware.LoggerWithConfig(middleware.LoggerConfig{
-		Format: "[${time_rfc3339}] ${method} ${uri} ${status} (${latency_human})\n",
+		Format: "📝 [${time_rfc3339}] ${method} ${uri} ${status} (${latency_human})\n",
 	}))
 
 	e.Use(func(next echo.HandlerFunc) echo.HandlerFunc {
@@ -36,7 +38,7 @@ func setupLogging(e *echo.Echo) {
 			start := time.Now()
 			err := next(c)
 			
-			log.Printf("✅ Hoàn thành xử lý: %s %s - Status: %d - Thời gian xử lý: %v", 
+			log.Printf("✅ Hoàn thành: %s %s - Status: %d - Thời gian: %v", 
 				c.Request().Method, 
 				c.Request().URL,
 				c.Response().Status,
@@ -45,27 +47,43 @@ func setupLogging(e *echo.Echo) {
 			return err
 		}
 	})
+	log.Println("✅ Cấu hình logging hoàn tất")
 }
 
 func main() {
-	wordLearned := 5
-	reviewWord := 10
-	
-	log.Println("🚀 Khởi động server...")
-	
-	scheduling_word(reviewWord)
-	enable_graphQL(":8080", "graph", wordLearned)
+    wordLearned := 5
+    reviewWord := 10
+    
+    log.Println("🎯 Khởi động ứng dụng với cấu hình:")
+    log.Printf("📚 Số từ học mới: %d", wordLearned)
+    log.Printf("🔄 Số từ ôn tập: %d", reviewWord)
+    
+    log.Println("🚀 Khởi động server...")
+    
+    scheduling_word(reviewWord)
+    log.Println("📅 Đã khởi tạo lịch học")
+    
+    enable_graphQL(":8080", "graph", wordLearned)
+    log.Println("🎯 GraphQL server đã sẵn sàng")
 
-	rest := enable_rest("8081")
-	setupLogging(rest)
-	
-	time.Sleep(1 * time.Second)
+    rest := enable_rest("8081")
+    setupLogging(rest)
+    
+    time.Sleep(1 * time.Second)
 
-	learn_word(rest, wordLearned)
-	create_schedule(rest)
-	revise_word(rest)
-	get_statistics(rest)
-	
-	log.Println("✨ Server đã sẵn sàng phục vụ")
-	select {}
+    learn_word(rest, wordLearned)
+    log.Println("📖 Đã cấu hình học từ mới")
+    
+    create_schedule(rest)
+    log.Println("📅 Đã tạo lịch học")
+    
+    revise_word(rest)
+    log.Println("🔄 Đã cấu hình ôn tập")
+    
+    get_statistics(rest)
+    log.Println("📊 Đã cấu hình thống kê")
+    
+    log.Println("✨ Server đã sẵn sàng phục vụ")
+    select {}
 }
+

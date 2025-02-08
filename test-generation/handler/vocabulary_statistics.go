@@ -98,11 +98,10 @@ func get_vocabulary_stastics(timeRange TimeRange, date time.Time) ([]VocabStats,
         }
 
         stats = append(stats, stat)
-        log.Printf("Đã thêm stat: Date=%s, WordLearned=%d, Wrong=%d",
+        log.Printf("Đã thêm stat: Date=%s, WordLearned=%d, Wrong=%d", 
             stat.Date.Format("2006-01-02"), stat.WordLearned, stat.Wrong)
     }
 
     log.Printf("Hoàn thành, trả về %d records", len(stats))
     return stats, nil
 }
-

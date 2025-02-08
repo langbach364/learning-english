@@ -115,17 +115,16 @@ func Get_Statistic(e *echo.Echo, pattern string) error {
 
 		data, err := get_vocabulary_stastics(TimeRange(t.Range), parsedDate)
 		if err != nil {
+			log.Printf("Lỗi get_vocabulary_stastics: %v", err)
 			return c.JSON(http.StatusInternalServerError, map[string]string{
 				"message": "Lỗi khi lấy thống kê",
 			})
 		}
 
-		log.Printf("Thành công, trả về data: %+v", data)
 		return c.JSON(http.StatusOK, data)
 	})
 	return nil
 }
-
 func enable_rest(port string) *echo.Echo {
 	e := echo.New()
 

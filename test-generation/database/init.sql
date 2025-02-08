@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS vocabulary (
 
 -- Create schedule table
 CREATE TABLE IF NOT EXISTS schedule (
-    id BIGINT,
+    id VARCHAR(20),
     time DATE NOT NULL,
     word VARCHAR(255) UNIQUE,
     priority INT,

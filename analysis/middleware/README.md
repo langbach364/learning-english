@@ -1,0 +1,1 @@
+# Thư mục này chỉ chứa các dữ liệu từ client gửi về cho server

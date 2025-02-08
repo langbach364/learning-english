@@ -26,9 +26,10 @@ var (
 func init_DB() error {
 	db, err := sql.Open("mysql", "root:@ztegc4df9f4e@tcp(localhost:3306)/learned_vocabulary")
 	if err != nil {
+		log.Printf("❌ Lỗi kết nối database: %v", err)
 		return err
 	}
-
+	log.Println("✅ Kết nối database thành công")
 	db.SetConnMaxLifetime(5 * time.Minute)
 	dbPool = db
 	return nil
@@ -37,6 +38,7 @@ func init_DB() error {
 // Lấy cấu trúc schema của các bảng trong database
 // Get table schema from database
 func get_table_schema(db *sql.DB, dbName string) (map[string]*orderedmap.OrderedMap, error) {
+	log.Printf("📊 Đang lấy schema cho database %s...", dbName)
 	data := make(map[string]*orderedmap.OrderedMap)
 
 	query := `SELECT TABLE_NAME 
@@ -75,7 +77,9 @@ func get_table_schema(db *sql.DB, dbName string) (map[string]*orderedmap.Ordered
 			}
 
 			switch dataType {
-			case "int", "tinyint", "smallint", "mediumint", "bigint":
+			case "bigint":
+				fields[colName] = "int64"
+			case "int", "tinyint", "smallint", "mediumint":
 				fields[colName] = "int"
 			case "varchar", "text", "char":
 				fields[colName] = "string"
@@ -94,15 +98,19 @@ func get_table_schema(db *sql.DB, dbName string) (map[string]*orderedmap.Ordered
 		data[tableName] = tableInfo
 	}
 
+	log.Printf("✅ Đã lấy schema cho %d bảng", len(data))
 	return data, nil
 }
 
 // Chuyển đổi kiểu dữ liệu sang kiểu GraphQL tương ứng
 // Convert data type to corresponding GraphQL type
 func get_graphQL_type(fieldType string) graphql.Type {
+	log.Printf("🔄 Chuyển đổi kiểu dữ liệu: %s", fieldType)
 	typeMap := map[string]graphql.Type{
 		"string":   graphql.String,
 		"int":      graphql.Int,
+		"int64":    graphql.Int,
+		"bigint":   graphql.Int,
 		"datetime": graphql.DateTime,
 		"float":    graphql.Float,
 		"boolean":  graphql.Boolean,
@@ -110,6 +118,7 @@ func get_graphQL_type(fieldType string) graphql.Type {
 	if t, exists := typeMap[fieldType]; exists {
 		return t
 	}
+	log.Printf("⚠️ Sử dụng kiểu mặc định String cho kiểu: %s", fieldType)
 	return graphql.String
 }
 
@@ -119,8 +128,19 @@ func create_graphQL_fields(tableInfo *orderedmap.OrderedMap) graphql.Fields {
 	fields := graphql.Fields{}
 	for _, key := range tableInfo.Keys() {
 		fieldType, _ := tableInfo.Get(key)
+		currentKey := key
+
+		log.Printf("🔍 Đang tạo field GraphQL: %s với kiểu %s", key, fieldType)
+
 		fields[key] = &graphql.Field{
 			Type: get_graphQL_type(fieldType.(string)),
+			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
+				if source, ok := p.Source.(map[string]interface{}); ok {
+					log.Printf("🔄 Đang xử lý field %s với giá trị: %v", currentKey, source[currentKey])
+					return source[currentKey], nil
+				}
+				return nil, nil
+			},
 		}
 	}
 	return fields
@@ -173,14 +193,21 @@ func process_rows(rows *sql.Rows) ([]map[string]interface{}, error) {
 
 		entry := make(map[string]interface{})
 		for i, col := range columns {
-			if val, ok := values[i].([]byte); ok {
-				entry[col] = string(val)
-			} else {
-				entry[col] = values[i]
+			val := values[i]
+			switch v := val.(type) {
+			case int64:
+				log.Printf("🔢 Giá trị BIGINT cho %s: %v", col, v)
+				entry[col] = v
+			case []byte:
+				entry[col] = string(v)
+			default:
+				entry[col] = v
 			}
 		}
 		result = append(result, entry)
 	}
+
+	log.Printf("✅ Kết quả là: %v", result)
 	return result, nil
 }
 
@@ -201,6 +228,8 @@ func select_data(tableName string, tableInfo *orderedmap.OrderedMap, limit int) 
 			}
 
 			query := build_query(tableInfo, tableName, limit, "SELECT", "")
+			log.Printf("🔍 Executing query: %s", query)
+
 			rows, err := dbPool.Query(query)
 			if err != nil {
 				return nil, err
@@ -302,8 +331,10 @@ func create_operation_fields(operation string, tables map[string]*orderedmap.Ord
 // Khởi tạo và cấu hình GraphQL server
 // Initialize and configure GraphQL server
 func enable_graphQL(port, pattern string, limitQuery int) {
+	log.Println("🚀 Khởi động GraphQL server...")
+
 	if err := init_DB(); err != nil {
-		log.Fatal("Không thể kết nối database:", err)
+		log.Fatal("❌ Không thể kết nối database:", err)
 	}
 
 	c := make(chan os.Signal, 1)
@@ -322,23 +353,22 @@ func enable_graphQL(port, pattern string, limitQuery int) {
 		log.Fatal("Không thể lấy schema:", err)
 	}
 
-	fieldsQuery := graphql.Fields{
-		"select": create_schema_operation("Select", create_operation_fields("Select", tables, limitQuery)),
-	}
-
-	fieldsMutation := graphql.Fields{
-		"delete": create_schema_operation("Delete", create_operation_fields("Delete", tables, 0)),
-		"insert": create_schema_operation("Insert", create_operation_fields("Insert", tables, 0)),
-	}
-
 	schemaRoot, err := graphql.NewSchema(graphql.SchemaConfig{
 		Query: graphql.NewObject(graphql.ObjectConfig{
-			Name:   "RootQuery",
-			Fields: fieldsQuery,
+			Name: "RootQuery",
+			Fields: graphql.Fields{
+				"select": create_schema_operation("Select", 
+					create_operation_fields("Select", tables, limitQuery)),
+			},
 		}),
 		Mutation: graphql.NewObject(graphql.ObjectConfig{
-			Name:   "RootMutation",
-			Fields: fieldsMutation,
+			Name: "RootMutation",
+			Fields: graphql.Fields{
+				"delete": create_schema_operation("Delete", 
+					create_operation_fields("Delete", tables, 0)),
+				"insert": create_schema_operation("Insert", 
+					create_operation_fields("Insert", tables, 0)),
+			},
 		}),
 	})
 
@@ -347,16 +377,15 @@ func enable_graphQL(port, pattern string, limitQuery int) {
 	}
 
 	h := handler.New(&handler.Config{
-		Schema:   &schemaRoot,
-		Pretty:   true,
+		Schema: &schemaRoot,
+		Pretty: true,
 		GraphiQL: true,
 	})
 
 	http.Handle("/"+pattern, h)
-	fmt.Printf("Server đang chạy tại http://localhost%s/%s\n", port, pattern)
-	go func() {
-		if err := http.ListenAndServe(port, nil); err != nil {
-			log.Printf("GraphQL server error: %v", err)
-		}
-	}()
+	log.Printf("📡 Đang lắng nghe tại http://localhost%s/%s", port, pattern)
+
+	if err := http.ListenAndServe(port, nil); err != nil {
+		log.Printf("❌ GraphQL server error: %v", err)
+	}
 }
