@@ -1,14 +1,14 @@
 package main
 
 import (
-	"time"
-	"log"
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
+	"log"
+	"time"
 )
 
 func learn_word(e *echo.Echo, wordLearned int) {
-	
+
 	Send_Word(e, "/learn_word", wordLearned)
 }
 
@@ -34,16 +34,16 @@ func setupLogging(e *echo.Echo) {
 	e.Use(func(next echo.HandlerFunc) echo.HandlerFunc {
 		return func(c echo.Context) error {
 			log.Printf("➡️ Nhận request mới: %s %s", c.Request().Method, c.Request().URL)
-			
+
 			start := time.Now()
 			err := next(c)
-			
-			log.Printf("✅ Hoàn thành: %s %s - Status: %d - Thời gian: %v", 
-				c.Request().Method, 
+
+			log.Printf("✅ Hoàn thành: %s %s - Status: %d - Thời gian: %v",
+				c.Request().Method,
 				c.Request().URL,
 				c.Response().Status,
 				time.Since(start))
-				
+
 			return err
 		}
 	})
@@ -51,39 +51,38 @@ func setupLogging(e *echo.Echo) {
 }
 
 func main() {
-    wordLearned := 5
-    reviewWord := 10
-    
-    log.Println("🎯 Khởi động ứng dụng với cấu hình:")
-    log.Printf("📚 Số từ học mới: %d", wordLearned)
-    log.Printf("🔄 Số từ ôn tập: %d", reviewWord)
-    
-    log.Println("🚀 Khởi động server...")
-    
-    scheduling_word(reviewWord)
-    log.Println("📅 Đã khởi tạo lịch học")
-    
-    enable_graphQL(":8080", "graph", wordLearned)
-    log.Println("🎯 GraphQL server đã sẵn sàng")
+	wordLearned := 5
+	reviewWord := 10
 
-    rest := enable_rest("8081")
-    setupLogging(rest)
-    
-    time.Sleep(1 * time.Second)
+	log.Println("🎯 Khởi động ứng dụng với cấu hình:")
+	log.Printf("📚 Số từ học mới: %d", wordLearned)
+	log.Printf("🔄 Số từ ôn tập: %d", reviewWord)
 
-    learn_word(rest, wordLearned)
-    log.Println("📖 Đã cấu hình học từ mới")
-    
-    create_schedule(rest)
-    log.Println("📅 Đã tạo lịch học")
-    
-    revise_word(rest)
-    log.Println("🔄 Đã cấu hình ôn tập")
-    
-    get_statistics(rest)
-    log.Println("📊 Đã cấu hình thống kê")
-    
-    log.Println("✨ Server đã sẵn sàng phục vụ")
-    select {}
+	log.Println("🚀 Khởi động server...")
+
+	scheduling_word(reviewWord)
+	log.Println("📅 Đã khởi tạo lịch học")
+
+	rest := enable_rest("8081")
+	setupLogging(rest)
+
+	enable_graphQL(":8081", "graph", wordLearned)
+	log.Println("🎯 GraphQL server đã sẵn sàng")
+
+	time.Sleep(1 * time.Second)
+
+	learn_word(rest, wordLearned)
+	log.Println("📖 Đã cấu hình học từ mới")
+
+	create_schedule(rest)
+	log.Println("📅 Đã tạo lịch học")
+
+	revise_word(rest)
+	log.Println("🔄 Đã cấu hình ôn tập")
+
+	get_statistics(rest)
+	log.Println("📊 Đã cấu hình thống kê")
+
+	log.Println("✨ Server đã sẵn sàng phục vụ")
+	select {}
 }
-

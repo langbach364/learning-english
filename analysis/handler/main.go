@@ -51,7 +51,7 @@ func middleware_Word(filePath string) {
 				data = result_definitions(text)
 				fmt.Println(text)
 			}
-			chat_cody(data, "anthropic/claude-3-5-sonnet-latest")
+			chat_cody(data, "google::v1::gemini-2.0-pro-exp-02-05")
 			dataStructure := data_structure()
 
 			if dataSocket["ChatCody"] == nil {
@@ -104,7 +104,7 @@ func main() {
 	data := path_file()
 
 	go middleware_Word(data["word"])
-//	go middleware_listen_word(data["listen_word"])
+	//	go middleware_listen_word(data["listen_word"])
 	create_server()
 	log.Println("Đã chạy api và server")
 
