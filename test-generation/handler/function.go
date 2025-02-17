@@ -10,6 +10,12 @@ import (
 	"github.com/fsnotify/fsnotify"
 )
 
+func check_err(err error) {
+	if err != nil {
+		log.Fatal(err)
+	}
+}
+
 func write_file(fileName string) (*os.File, error) {
 	file, err := os.Create(fileName)
 	if err != nil {

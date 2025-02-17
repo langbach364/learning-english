@@ -17,6 +17,12 @@ type FieldsWord struct {
 	Limit               int    // Số lượng từ tối đa trả về
 }
 
-type VocabularyStatistics struct {
-	
+type Word struct {
+	WordMeaning []string
+	Remember    []string
+}
+
+type Sentence struct {
+	English []string
+	Vietnamese []string
 }

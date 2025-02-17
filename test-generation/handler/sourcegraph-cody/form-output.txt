@@ -2,12 +2,12 @@
 /////////////////////////////////////////////////////////////
 Form đầu ra chuẩn:
 Phần 1: kiểm tra từ vựng đã học
-_______(v): đi ra xa một địa điểm nào đó.
+*_______(v): đi ra xa một địa điểm nào đó.
 * Cách đọc: /gəʊ/
 * Cách nhớ:
 + Go with someone đi cùng ai đó đến địa điểm nào đó.
 
-_______(v): làm tối ưu hóa.
+*_______(v): làm tối ưu hóa.
 * Cách đọc: /ˈɒptɪmaɪz/
 * Cách nhớ:
 + Hậu tố -ize: thường có nghĩa "làm cho trở thành/biến thành" 
@@ -22,7 +22,7 @@ _______(v): làm tối ưu hóa.
 ...
 
 Phần 2: từ vựng mới
-_______(adj): đẹp trai.
+*_______(adj): đẹp trai.
 * Cách đọc: /ˈhænsəm/
 * Cách nhớ: 
 + Hậu tố -some: thường có tính chất/gây cảm giác
