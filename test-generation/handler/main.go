@@ -51,38 +51,41 @@ func setupLogging(e *echo.Echo) {
 }
 
 func main() {
-	wordLearned := 5
-	reviewWord := 10
+	// wordLearned := 5
+	// reviewWord := 10
 
-	log.Println("🎯 Khởi động ứng dụng với cấu hình:")
-	log.Printf("📚 Số từ học mới: %d", wordLearned)
-	log.Printf("🔄 Số từ ôn tập: %d", reviewWord)
+	// log.Println("🎯 Khởi động ứng dụng với cấu hình:")
+	// log.Printf("📚 Số từ học mới: %d", wordLearned)
+	// log.Printf("🔄 Số từ ôn tập: %d", reviewWord)
 
-	log.Println("🚀 Khởi động server...")
+	// log.Println("🚀 Khởi động server...")
 
-	scheduling_word(reviewWord)
-	log.Println("📅 Đã khởi tạo lịch học")
+	// scheduling_word(reviewWord)
+	// log.Println("📅 Đã khởi tạo lịch học")
 
-	rest := enable_rest("8081")
-	setupLogging(rest)
+	// rest := enable_rest("8081")
+	// setupLogging(rest)
 
-	enable_graphQL(":8081", "graph", wordLearned)
-	log.Println("🎯 GraphQL server đã sẵn sàng")
+	// enable_graphQL(":8081", "graph", wordLearned)
+	// log.Println("🎯 GraphQL server đã sẵn sàng")
 
-	time.Sleep(1 * time.Second)
+	// time.Sleep(1 * time.Second)
 
-	learn_word(rest, wordLearned)
-	log.Println("📖 Đã cấu hình học từ mới")
+	// learn_word(rest, wordLearned)
+	// log.Println("📖 Đã cấu hình học từ mới")
 
-	create_schedule(rest)
-	log.Println("📅 Đã tạo lịch học")
+	// create_schedule(rest)
+	// log.Println("📅 Đã tạo lịch học")
 
-	revise_word(rest)
-	log.Println("🔄 Đã cấu hình ôn tập")
+	// revise_word(rest)
+	// log.Println("🔄 Đã cấu hình ôn tập")
 
-	get_statistics(rest)
-	log.Println("📊 Đã cấu hình thống kê")
+	// get_statistics(rest)
+	// log.Println("📊 Đã cấu hình thống kê")
 
-	log.Println("✨ Server đã sẵn sàng phục vụ")
-	select {}
+	// log.Println("✨ Server đã sẵn sàng phục vụ")
+	// select {}
+
+	data := handler_data()
+	print_data(data)
 }

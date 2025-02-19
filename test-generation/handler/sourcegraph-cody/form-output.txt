@@ -2,14 +2,16 @@
 /////////////////////////////////////////////////////////////
 Form đầu ra chuẩn:
 Phần 1: kiểm tra từ vựng đã học
-*_______(v): đi ra xa một địa điểm nào đó.
-* Cách đọc: /gəʊ/
-* Cách nhớ:
+* Go (v): đi ra xa một địa điểm nào đó.
+* Cách đọc Go: /gəʊ/
+* Cách nhớ Go: 
 + Go with someone đi cùng ai đó đến địa điểm nào đó.
++ Go somewhere đi đến địa điểm nào đó.
+......
 
-*_______(v): làm tối ưu hóa.
-* Cách đọc: /ˈɒptɪmaɪz/
-* Cách nhớ:
+* Optimize (v): làm tối ưu hóa.
+* Cách đọc Optimize: /ˈɒptɪmaɪz/
+* Cách nhớ Optimize: 
 + Hậu tố -ize: thường có nghĩa "làm cho trở thành/biến thành" 
 -> Biến thành động từ, optimize = làm tối ưu hóa
 -> Làm một điều gì đó tốt nhất có thể.
@@ -22,9 +24,9 @@ Phần 1: kiểm tra từ vựng đã học
 ...
 
 Phần 2: từ vựng mới
-*_______(adj): đẹp trai.
-* Cách đọc: /ˈhænsəm/
-* Cách nhớ: 
+* Handsome (adj): đẹp trai.
+* Cách đọc Handsome: /ˈhænsəm/
+* Cách nhớ Handsome: 
 + Hậu tố -some: thường có tính chất/gây cảm giác
 -> Biến thành danh từ, handsome = đẹp trai
 -> Cảm giác mạnh nhờ vẻ đẹp của con trai
