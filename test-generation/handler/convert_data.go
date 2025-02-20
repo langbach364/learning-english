@@ -6,8 +6,24 @@ import (
 	"regexp"
 )
 
+var DataStructure = map[string][]string{
+    "word":     {"Phần 1", "Phần 2"},
+    "sentence": {"Phần 3", "Phần 4"},
+}
+
+func check_part_type(numberPart string) string {
+    for dataType, parts := range DataStructure {
+        for _, part := range parts {
+            if part == numberPart {
+                return dataType
+            }
+        }
+    }
+    return ""
+}
+
 func process_line(line string) string {
-	re := regexp.MustCompile(`Phần (\d+)`)
+	re := regexp.MustCompile(`(Phần \d+)`)
 	match := re.FindStringSubmatch(line)
 
 	if len(match) > 1 {
@@ -56,6 +72,61 @@ func get_key_value(line string) (string, string) {
     return key, value
 }
 
+func handler_word(numberPart *string, line string) map[string]map[string][]string {
+	check := check_part_type(*numberPart)
+	if check == "sentence" {
+		return nil
+	}
+
+	data := make(map[string]map[string][]string)
+	saveNumberPart := ""
+	saveKey2 := ""
+
+	if (*numberPart)  != "" {
+		data[(*numberPart) ] = make(map[string][]string)
+		saveNumberPart = (*numberPart) 
+	} else {
+		checkCase := check_key_or_value(line)
+		switch checkCase {
+		case 1:
+			{
+				key, value := get_key_value(line)
+				data[saveNumberPart][key] = append(data[saveNumberPart][key], value)
+				if value == "" {
+					saveKey2 = key
+				}
+			}
+		case 2:
+			{
+				data[saveNumberPart][saveKey2] = append(data[saveNumberPart][saveKey2], line)
+			}
+		case 3:
+			{
+				data[saveNumberPart][saveKey2] = append(data[saveNumberPart][saveKey2], line)
+			}
+		}
+	}
+
+	return data
+}
+
+func handler_sentence(numberPart *string, line string) map[string]map[string][]string {
+	check := check_part_type(*numberPart)
+	if check == "word" {
+		return nil
+	}
+
+	data := make(map[string]map[string][]string)
+	checkCase := check_key_or_value(line)
+
+	switch checkCase {
+	case 1: {
+		key, value := get_key_value(line)
+		
+	}
+	}
+}
+
 func handler_data() map[string]map[string][]string {
 	pathFile, err := read_file("./sourcegraph-cody/answer.txt")
 	check_err(err)
@@ -64,39 +135,13 @@ func handler_data() map[string]map[string][]string {
 	scanner := bufio.NewScanner(pathFile)
 
 	data := make(map[string]map[string][]string)
-	saveNumberPart := ""
-	saveKey2 := ""
+	
 
 	for scanner.Scan() {
 		line := scanner.Text()
 		numberPart := process_line(line)
-
-		if numberPart != "" {
-			data[numberPart] = make(map[string][]string)
-			saveNumberPart = numberPart
-		} else {
-			checkCase := check_key_or_value(line)
-			switch checkCase {
-			case 1:
-				{
-					key, value := get_key_value(line)
-					data[saveNumberPart][key] = append(data[saveNumberPart][key], value)
-					if value == "" {
-						saveKey2 = key
-					}
-				}
-			case 2:
-				{
-					data[saveNumberPart][saveKey2] = append(data[saveNumberPart][saveKey2], line)
-				}
-			case 3:
-				{
-					data[saveNumberPart][saveKey2] = append(data[saveNumberPart][saveKey2], line)
-				}
-			}
-		}
+		handler_word(&numberPart, line)
 	}
-
 	return data
 }
 
