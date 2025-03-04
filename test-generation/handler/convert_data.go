@@ -117,12 +117,15 @@ func handler_sentence(numberPart *string, line string) map[string]map[string][]s
 	}
 
 	data := make(map[string]map[string][]string)
+	data[*numberPart]["vietnamese"] = make([]string, 0)
+	data[*numberPart]["english"] = make([]string, 0)
+	
 	checkCase := check_key_or_value(line)
 
 	switch checkCase {
 	case 1: {
-		key, value := get_key_value(line)
-		
+		_, value := get_key_value(line)
+		data[*numberPart]["english"] = append(data[*numberPart]["english"], value)
 	}
 	}
 }

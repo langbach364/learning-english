@@ -16,11 +16,12 @@ Phần 2: từ vựng mới
 Phần 3: kiểm tra câu
 [Mỗi câu đầy đủ quá khứ, hiện tại, tương lai và tạo đầy đủ 5 câu]
 * Câu 1: [nội dung câu] áp dụng từ vựng mới ở phần 2 
-+ Dịch câu: [nội dung câu]
++ Dịch câu 1: [nội dung câu]
 
 Phần 4: Đọc hiểu
 [Tạo một nội dung trò chuyện từ 4 đến 5 câu cho mỗi người, sử dụng từ mới ở phần 2]
 * A: [nội dung trò chuyện]
 * B: [nội dung trò chuyện]
 .... [có thể nhiều nhân vật khác]
-* Dịch đoạn văn: [nội dung trò chuyện]
++ A Dịch đoạn văn: [nội dung trò chuyện]
++ B Dịch đoạn văn: [nội dung trò chuyện]
