@@ -18,7 +18,9 @@ require (
 )
 
 require (
+	github.com/elliotchance/orderedmap v1.8.0
 	github.com/go-sql-driver/mysql v1.8.1
+	github.com/gorilla/websocket v1.5.3
 	github.com/graphql-go/graphql v0.8.1
 	github.com/graphql-go/handler v0.2.4
 	github.com/iancoleman/orderedmap v0.3.0

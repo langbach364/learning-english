@@ -1,1 +1,1 @@
-google::v1::gemini-2.0-pro-exp-02-05
+openai::2024-02-01::gpt-4o

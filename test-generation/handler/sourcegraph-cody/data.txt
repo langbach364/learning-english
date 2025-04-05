@@ -1,5 +1,16 @@
-wanderlust
-ephemeral
-serendipity
-mellifluous
-quintessential
+&&&
+word:
+
+- hello
+
+- world
+
+- learning
+
+- english
+
+- vocabulary
+
+-------------------------------------
+
+&&&

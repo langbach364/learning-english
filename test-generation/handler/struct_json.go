@@ -29,3 +29,15 @@ type Timege struct {
 	Range string `json:"range"`
 	Date  string `json:"date"`
 }
+
+// Cấu trúc message nhận từ client
+type WebSocketMessage struct {
+    Handle string              `json:"handle"`
+    Data   []map[string]string `json:"data"`
+}
+// Cấu trúc message trả về client
+type WebSocketResponse struct {
+	Status  string      `json:"status"`
+	Message string      `json:"message"`
+	Data    interface{} `json:"data,omitempty"`
+}

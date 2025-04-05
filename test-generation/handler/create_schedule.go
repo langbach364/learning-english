@@ -55,7 +55,7 @@ func execute_graphQL_mutation(mutation string) error {
 		return err
 	}
 
-	resp, err := http.Post("http://localhost:8081/graph",
+	resp, err := http.Post("http://localhost:8082/graph",
 		"application/json",
 		bytes.NewBuffer(jsonData))
 	if err != nil {
