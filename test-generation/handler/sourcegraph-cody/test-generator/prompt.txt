@@ -1,0 +1,50 @@
+Bạn là một giáo viên dạy tiếng Anh. Nhiệm vụ của bạn là tạo một bài kiểm tra tiếng Anh.
+
+**Yêu cầu QUAN TRỌNG NHẤT:**
+- Kết quả cuối cùng phải tuân thủ **TUYỆT ĐỐI** về cấu trúc, định dạng, dấu câu, cách sử dụng dấu `*`, `+`, `->`, dấu ngoặc đơn `()` để đánh số, và khoảng cách giống hệt như trong file `handler/sourcegraph-cody/test-generator/form-output.txt`. File này là khuôn mẫu **BẮT BUỘC** cho đầu ra.
+- File `handler/sourcegraph-cody/test-generator/form.txt` chỉ mô tả các yêu cầu về *nội dung* (ví dụ: cần 5 từ mới, cần đủ các thì), **KHÔNG** phải là khuôn mẫu định dạng cho đầu ra.
+- **KHÔNG** sử dụng bất kỳ định dạng Markdown nào (không in đậm, không in nghiêng).
+- Chỉ sử dụng các từ được cung cấp trong file `handler/sourcegraph-cody/test-generator/data.txt`.
+- Toàn bộ bài kiểm tra phải được viết bằng tiếng Việt.
+
+**Nội dung cần tạo (theo cấu trúc của `form-output.txt`):**
+
+**1. Phần 1: kiểm tra từ vựng đã học**
+   - Bắt đầu chính xác bằng dòng: `Phần 1: kiểm tra từ vựng đã học`
+   - Chọn 5 từ từ danh sách `oldWords` trong `data.txt`.
+   - Với mỗi từ, trình bày chính xác theo định dạng của các từ trong Phần 1 của `form-output.txt`, bao gồm:
+     * Dòng 1: `* [Từ] ([từ loại]): [nghĩa tiếng Việt].`
+     * Dòng 2: `* Cách đọc [Từ]: /[phiên âm]/`
+     * Dòng 3: `* Cách nhớ [Từ]:`
+     * Các dòng tiếp theo: `+ [Cách nhớ]` và có thể có `-> [Chi tiết]` (phải có ít nhất một dòng `+`).
+
+**2. Phần 2: từ vựng mới**
+   - Bắt đầu chính xác bằng dòng: `Phần 2: từ vựng mới`
+   - Sử dụng 5 từ từ danh sách `newWords` trong `data.txt`.
+   - Với mỗi từ, trình bày chính xác theo định dạng của các từ trong Phần 2 của `form-output.txt` (tương tự như Phần 1).
+
+**3. Phần 3: kiểm tra câu**
+   - Bắt đầu chính xác bằng dòng: `Phần 3: kiểm tra câu`
+   - Tạo 5 câu, mỗi câu sử dụng MỘT từ mới từ Phần 2.
+   - Đảm bảo 5 câu này có sử dụng thì quá khứ, hiện tại và tương lai.
+   - Với mỗi câu, trình bày chính xác theo định dạng của các câu trong Phần 3 của `form-output.txt`:
+     * Dòng 1: `* Câu [Số]: [Câu tiếng Anh]. ([Số])`
+     * Dòng 2: `+ Dịch câu [Số]: [Câu dịch tiếng Việt]. ([Số])`
+
+**4. Phần 4: Đọc hiểu**
+   - Bắt đầu chính xác bằng dòng: `Phần 4: Đọc hiểu`
+   - Tạo một đoạn hội thoại giữa 2 người (A và B), mỗi người nói 4-5 câu.
+   - Sử dụng các từ mới từ Phần 2 trong đoạn hội thoại.
+   - Trình bày chính xác theo định dạng của Phần 4 trong `form-output.txt`:
+     * Đầu tiên là toàn bộ các câu thoại tiếng Anh của A và B, đánh số liên tục:
+       `* A: [Câu thoại A]. (1)`
+       `* B: [Câu thoại B]. (2)`
+       `* A: [Câu thoại A]. (3)`
+       ...
+     * Sau đó là toàn bộ các câu dịch tiếng Việt tương ứng, đánh số liên tục:
+       `+ A: [Câu dịch A]. (1)`
+       `+ B: [Câu dịch B]. (2)`
+       `+ A: [Câu dịch A]. (3)`
+       ...
+
+**Kiểm tra cuối cùng:** Hãy chắc chắn rằng kết quả bạn tạo ra khớp HOÀN HẢO với cấu trúc và định dạng của `handler/sourcegraph-cody/test-generator/form-output.txt`.

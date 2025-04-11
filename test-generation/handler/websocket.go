@@ -1,7 +1,6 @@
 package main
 
 import (
-	"bytes"
 	"encoding/json"
 	"log"
 	"net/http"
@@ -20,7 +19,7 @@ var (
 	}
 )
 
-func HandleWebSocket(c echo.Context) error {
+func Handle_web_socket(c echo.Context) error {
 	ws, err := upgrader.Upgrade(c.Response(), c.Request(), nil)
 	if err != nil {
 		log.Printf("❌ Lỗi nâng cấp kết nối: %v", err)
@@ -31,66 +30,79 @@ func HandleWebSocket(c echo.Context) error {
 	log.Println("🔌 Kết nối WebSocket mới được thiết lập")
 
 	for {
-		_, msg, err := ws.ReadMessage()
+		messageType, msg, err := ws.ReadMessage()
 		if err != nil {
 			if websocket.IsUnexpectedCloseError(err, websocket.CloseGoingAway, websocket.CloseAbnormalClosure) {
 				log.Printf("❌ Lỗi đọc message: %v", err)
+			} else {
+				log.Printf("🔌 Kết nối WebSocket đóng: %v", err)
 			}
 			break
 		}
 
-		// Ghi log message nhận được
+		if messageType != websocket.TextMessage {
+			log.Printf("⚠️ Nhận được message không phải dạng text: %d", messageType)
+			continue
+		}
+
 		log.Printf("📥 Nhận được message: %s", string(msg))
 
-		// Làm sạch dữ liệu JSON
-		cleanMsg := bytes.TrimSpace(msg)
-
-		var message WebSocketMessage
-		if err := json.Unmarshal(cleanMsg, &message); err != nil {
-			log.Printf("❌ Lỗi parse JSON: %v", err)
-			sendErrorResponse(ws, "Lỗi định dạng JSON: "+err.Error())
+		var message WebSocketMessageRevised
+		if err := json.Unmarshal(msg, &message); err != nil {
+			log.Printf("❌ Lỗi parse JSON: %v. Dữ liệu nhận được: %s", err, string(msg))
+			sendErrorResponse(ws, "Lỗi định dạng JSON: "+err.Error()+". Vui lòng kiểm tra cấu trúc {handle: '...', data: { 'new_words': [...], 'old_words': [...]}}")
 			continue
 		}
 
 		switch message.Handle {
 		case "start":
-			handleStartProcess(ws, message.Data)
+			handle_start_process(ws, message.Data)
 		default:
-			sendErrorResponse(ws, "Không hỗ trợ handle này")
+			log.Printf("🚫 Handle không được hỗ trợ: %s", message.Handle)
+			sendErrorResponse(ws, "Không hỗ trợ handle này: "+message.Handle)
 		}
 	}
 
+	log.Println("🔌 Đóng kết nối WebSocket")
 	return nil
 }
 
-func handleStartProcess(ws *websocket.Conn, data []map[string]string) {
-	log.Println("🚀 Bắt đầu xử lý dữ liệu từ vựng")
+func handle_start_process(ws *websocket.Conn, data map[string][]string) {
+	log.Println("🚀 Bắt đầu xử lý dữ liệu từ vựng (mới/cũ)")
 
-	if len(data) == 0 {
-		sendErrorResponse(ws, "Không có dữ liệu từ vựng")
+	if data == nil {
+		log.Println("❌ Dữ liệu từ vựng rỗng")
+		sendErrorResponse(ws, "Dữ liệu từ vựng không được rỗng")
 		return
 	}
 
-	processedData := make(map[string][]string)
+	newWords, newExists := data["newWords"]
+	oldWords, oldExists := data["oldWords"]
 
-	for _, item := range data {
-		if word, exists := item["word"]; exists && word != "" {
-			if _, ok := processedData["word"]; !ok {
-				processedData["word"] = []string{}
-			}
-			processedData["word"] = append(processedData["word"], word)
-		}
+	if !newExists || len(newWords) == 0 {
+		log.Println("❌ Không tìm thấy hoặc không có 'newWords' hợp lệ")
+		sendErrorResponse(ws, "Thiếu hoặc không có dữ liệu 'newWords'")
+	}
+	if !oldExists || len(oldWords) == 0 {
+		log.Println("❌ Không tìm thấy hoặc không có 'oldWords' hợp lệ")
+		sendErrorResponse(ws, "Thiếu hoặc không có dữ liệu 'oldWords'")
 	}
 
-	if len(processedData["word"]) == 0 {
-		sendErrorResponse(ws, "Không tìm thấy từ vựng hợp lệ")
+	if (!newExists || len(newWords) == 0) && (!oldExists || len(oldWords) == 0) {
+		log.Println("❌ Không có dữ liệu từ vựng hợp lệ nào (cả mới và cũ)")
+		sendErrorResponse(ws, "Không có dữ liệu từ vựng hợp lệ nào được cung cấp")
 		return
 	}
+
+	log.Printf("📊 Dữ liệu nhận được: %d từ mới, %d từ cũ", len(newWords), len(oldWords))
+
+	processedData := data
 
 	sendProgressResponse(ws, "Đang xử lý dữ liệu với Cody...")
 
-	model := "openai::2024-02-01::gpt-4o"
-	chat_cody(processedData, model)
+	model := "anthropic::2024-10-22::claude-3-7-sonnet-extended-thinking"
+
+	test_generator(processedData, model)
 
 	sendProgressResponse(ws, "Đang phân tích kết quả từ Cody...")
 
@@ -102,8 +114,8 @@ func handleStartProcess(ws *websocket.Conn, data []map[string]string) {
 		Data:    result,
 	}
 
-	sendResponse(ws, response)
-	log.Println("✅ Hoàn thành xử lý dữ liệu từ vựng")
+	send_response(ws, response)
+	log.Println("✅ Hoàn thành xử lý dữ liệu từ vựng (mới/cũ)")
 }
 
 func sendErrorResponse(ws *websocket.Conn, message string) {
@@ -111,7 +123,7 @@ func sendErrorResponse(ws *websocket.Conn, message string) {
 		Status:  "error",
 		Message: message,
 	}
-	sendResponse(ws, response)
+	send_response(ws, response)
 }
 
 func sendProgressResponse(ws *websocket.Conn, message string) {
@@ -119,10 +131,10 @@ func sendProgressResponse(ws *websocket.Conn, message string) {
 		Status:  "progress",
 		Message: message,
 	}
-	sendResponse(ws, response)
+	send_response(ws, response)
 }
 
-func sendResponse(ws *websocket.Conn, response WebSocketResponse) {
+func send_response(ws *websocket.Conn, response WebSocketResponse) {
 	responseJSON, err := json.Marshal(response)
 	if err != nil {
 		log.Printf("❌ Lỗi chuyển đổi response thành JSON: %v", err)
@@ -131,10 +143,12 @@ func sendResponse(ws *websocket.Conn, response WebSocketResponse) {
 
 	if err := ws.WriteMessage(websocket.TextMessage, responseJSON); err != nil {
 		log.Printf("❌ Lỗi gửi response: %v", err)
+	} else {
+		log.Printf("📤 Đã gửi response: %s", string(responseJSON))
 	}
 }
 
-func SetupWebSocket(e *echo.Echo) {
-	e.GET("/ws", HandleWebSocket)
+func Setup_web_socket(e *echo.Echo) {
+	e.GET("/ws", Handle_web_socket)
 	log.Println("📡 Đã thiết lập endpoint WebSocket tại /ws")
 }

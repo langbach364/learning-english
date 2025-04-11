@@ -6,7 +6,7 @@ import (
 
 
 func add_data(data map[string][]string) bool {
-	file, err := write_file("./sourcegraph-cody/data.txt")
+	file, err := write_file("./sourcegraph-cody/test-generator/data.txt")
 	if err != nil {
 		fmt.Println("Lỗi khi tạo file: ", err)
 		return false
@@ -26,7 +26,7 @@ func add_data(data map[string][]string) bool {
 }
 
 func add_model(model string) bool {
-	file, err := write_file("./sourcegraph-cody/model.txt")
+	file, err := write_file("./sourcegraph-cody/test-generator/model.txt")
 	if err != nil {
 		fmt.Println("Lỗi khi tạo file: ", err)
 		return false
@@ -71,10 +71,10 @@ func start_chat(data map[string][]string, model, scriptName string) bool {
 	return false
 }
 
-func chat_cody(data map[string][]string, model string) {
-	start_chat(data, model, "./sourcegraph-cody/cody.sh")
+func test_generator(data map[string][]string, model string) {
+	start_chat(data, model, "./sourcegraph-cody/test-generator/cody.sh")
 
-	file, err := read_file("./sourcegraph-cody/answer.txt")
+	file, err := read_file("./sourcegraph-cody/test-generator/answer.txt")
 	if err != nil {
 		fmt.Println("Lỗi khi đọc file: ", err)
 	}

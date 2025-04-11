@@ -83,7 +83,7 @@ func main() {
 	get_statistics(rest)
 	log.Println("📊 Đã cấu hình thống kê")
 
-	SetupWebSocket(rest)
+	Setup_web_socket(rest)
 	log.Println("🔌 Đã cấu hình WebSocket")
 
 	log.Println("✨ Server đã sẵn sàng phục vụ")

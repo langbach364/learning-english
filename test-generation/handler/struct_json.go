@@ -31,9 +31,9 @@ type Timege struct {
 }
 
 // Cấu trúc message nhận từ client
-type WebSocketMessage struct {
-    Handle string              `json:"handle"`
-    Data   []map[string]string `json:"data"`
+type WebSocketMessageRevised struct {
+	Handle string            `json:"handle"`
+	Data   map[string][]string `json:"data"`
 }
 // Cấu trúc message trả về client
 type WebSocketResponse struct {

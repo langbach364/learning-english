@@ -1,15 +1,16 @@
 #!/bin/bash
 
 # cd ./learning-english/test-generation/handler/ || exit
-cd ../
+cd ./sourcegraph-cody/test-generator/ || exit
 
-DATA="./sourcegraph-cody/data.txt"
-PROMPT=$(cat ./sourcegraph-cody/prompt.txt)
-MODEL=$(cat ./sourcegraph-cody/model.txt)
-FORM="./sourcegraph-cody/form.txt"
-FORM_OUTPUT="./sourcegraph-cody/form-output.txt"
+DATA="./data.txt"
+PROMPT=$(cat ./prompt.txt)
+MODEL=$(cat ./model.txt)
 
-ANSWER_DIR="./sourcegraph-cody"
+FORM="./form.txt"
+FORM_OUTPUT="./form-output.txt"
+
+ANSWER_DIR="./"
 mkdir -p "$ANSWER_DIR"
 
 ANSWER_FILE="$ANSWER_DIR/answer.txt"

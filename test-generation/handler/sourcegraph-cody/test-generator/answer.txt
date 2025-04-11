@@ -1,0 +1,118 @@
+<think>OK, I need to create an English test following the exact format in form-output.txt while using the words from data.txt. Let me break down the task:
+
+1. For Part 1, I need to use 5 words from the "oldWords" list: hello, world, learn, review, practice.
+2. For Part 2, I need to use 5 words from the "newWords" list: ubiquitous, ephemeral, serendipity, mellifluous, cacophony.
+3. For Part 3, I need to create 5 sentences using each of the new words, with various tenses.
+4. For Part 4, I need to create a conversation between A and B using the new words.
+
+The format must match exactly the form-output.txt example, with the same punctuation, spacing, and symbol usage.</think>
+Phần 1: kiểm tra từ vựng đã học
+* Hello (n): lời chào.
+* Cách đọc Hello: /həˈləʊ/
+* Cách nhớ Hello: 
++ Hello là từ dùng để chào hỏi khi gặp ai đó.
+-> Có thể dùng trong nhiều tình huống, cả trang trọng lẫn thân mật.
+
+* World (n): thế giới.
+* Cách đọc World: /wɜːld/
+* Cách nhớ World: 
++ World Wide Web (www) nghĩa là mạng lưới toàn cầu.
+-> World chỉ toàn bộ hành tinh chúng ta đang sống.
+
+* Learn (v): học.
+* Cách đọc Learn: /lɜːn/
+* Cách nhớ Learn: 
++ Learn by doing: học thông qua hành động.
++ Learn from mistakes: học từ những sai lầm.
+-> Learn là quá trình tiếp thu kiến thức hoặc kỹ năng mới.
+
+* Review (n, v): ôn tập, xem xét lại.
+* Cách đọc Review: /rɪˈvjuː/
+* Cách nhớ Review: 
++ Re + view = nhìn lại.
+-> Review là việc nhìn lại, xem xét lại điều gì đó đã học hoặc đã làm.
+
+* Practice (n, v): thực hành, luyện tập.
+* Cách đọc Practice: /ˈpræktɪs/
+* Cách nhớ Practice: 
++ Practice makes perfect: thực hành tạo nên sự hoàn hảo.
+-> Practice là quá trình lặp đi lặp lại để nâng cao kỹ năng.
+
+Phần 2: từ vựng mới
+* Ubiquitous (adj): phổ biến, có mặt khắp nơi.
+* Cách đọc Ubiquitous: /juːˈbɪkwɪtəs/
+* Cách nhớ Ubiquitous: 
++ Từ gốc Latin "ubique" nghĩa là "ở mọi nơi".
+-> Chỉ những thứ xuất hiện ở khắp mọi nơi, không thể tránh khỏi.
+
+* Ephemeral (adj): ngắn ngủi, thoáng qua.
+* Cách đọc Ephemeral: /ɪˈfemərəl/
+* Cách nhớ Ephemeral: 
++ Từ gốc Hy Lạp "ephemeros" nghĩa là "chỉ kéo dài một ngày".
+-> Chỉ những thứ tồn tại trong thời gian ngắn rồi biến mất.
+
+* Serendipity (n): sự tình cờ may mắn.
+* Cách đọc Serendipity: /ˌserənˈdɪpəti/
+* Cách nhớ Serendipity: 
++ Bắt nguồn từ truyện cổ tích "Ba hoàng tử xứ Serendip" - họ luôn tình cờ tìm thấy những thứ tốt đẹp.
+-> Chỉ việc tình cờ phát hiện ra điều tốt đẹp khi không hề tìm kiếm nó.
+
+* Mellifluous (adj): du dương, ngọt ngào (âm thanh).
+* Cách đọc Mellifluous: /məˈlɪfluəs/
+* Cách nhớ Mellifluous: 
++ Từ gốc Latin "mel" (mật ong) + "fluere" (chảy).
+-> Chỉ âm thanh ngọt ngào như mật ong đang chảy, rất dễ chịu khi nghe.
+
+* Cacophony (n): âm thanh hỗn loạn, chói tai.
+* Cách đọc Cacophony: /kəˈkɒfəni/
+* Cách nhớ Cacophony: 
++ Từ gốc Hy Lạp "kakos" (xấu) + "phone" (âm thanh).
+-> Chỉ tiếng ồn lộn xộn, khó chịu, không hài hòa.
+
+Phần 3: kiểm tra câu
+* Câu 1: Smartphones have become ubiquitous in modern society. (1)
++ Dịch câu 1: Điện thoại thông minh đã trở nên phổ biến trong xã hội hiện đại. (1)
+
+* Câu 2: The beauty of cherry blossoms is ephemeral, lasting only a few days each spring. (2)
++ Dịch câu 2: Vẻ đẹp của hoa anh đào thật ngắn ngủi, chỉ kéo dài vài ngày mỗi mùa xuân. (2)
+
+* Câu 3: We will experience serendipity if we keep our minds open to new possibilities. (3)
++ Dịch câu 3: Chúng ta sẽ trải nghiệm những điều tình cờ may mắn nếu giữ tâm trí cởi mở với những khả năng mới. (3)
+
+* Câu 4: Her mellifluous voice captivated the entire audience at the concert last night. (4)
++ Dịch câu 4: Giọng hát du dương của cô ấy đã thu hút toàn bộ khán giả tại buổi hòa nhạc tối qua. (4)
+
+* Câu 5: The construction site has been creating a cacophony of noise since early morning. (5)
++ Dịch câu 5: Công trường xây dựng đã tạo ra một sự hỗn loạn của tiếng ồn từ sáng sớm. (5)
+
+Phần 4: Đọc hiểu
+* A: Have you noticed how smartphones have become ubiquitous these days? Everyone seems to have one. (1)
+* B: Yes, it's impossible to go anywhere without seeing people staring at their screens. I wonder if this technology will be ephemeral or last for generations. (2)
+
+* A: Speaking of technology, I experienced a moment of serendipity yesterday when I accidentally discovered a wonderful coffee shop while looking for a phone repair store. (3)
+* B: That sounds lovely! Was there any music playing? I always enjoy places with mellifluous background music. (4)
+
+* A: Actually, there was a live pianist playing classical pieces. It was so relaxing compared to the cacophony of the busy streets outside. (5)
+* B: That sounds perfect. I've been looking for a quiet place to read. Would you mind sharing the location with me? (6)
+
+* A: Of course not! It's on Oak Street, next to the bookstore. We could go there together sometime if you'd like. (7)
+* B: I'd love that. How about this weekend? I need a break from all the noise of everyday life. (8)
+
+* A: Sounds perfect. Let's meet there on Saturday afternoon. (9)
+* B: Great plan. I'm looking forward to it! (10)
+ 
++ A: Bạn có nhận thấy điện thoại thông minh đã trở nên phổ biến như thế nào ngày nay không? Dường như ai cũng có một chiếc. (1)
++ B: Đúng vậy, thật không thể đi đâu mà không thấy mọi người nhìn chằm chằm vào màn hình của họ. Tôi tự hỏi liệu công nghệ này sẽ chỉ tồn tại ngắn ngủi hay kéo dài nhiều thế hệ. (2)
+
++ A: Nói về công nghệ, tôi đã trải nghiệm một khoảnh khắc tình cờ may mắn hôm qua khi vô tình phát hiện ra một quán cà phê tuyệt vời trong lúc tìm kiếm cửa hàng sửa điện thoại. (3)
++ B: Nghe có vẻ thú vị! Có nhạc nào đang phát không? Tôi luôn thích những nơi có nhạc nền du dương. (4)
+
++ A: Thực ra, có một nghệ sĩ piano đang chơi những bản nhạc cổ điển. Thật thư giãn so với sự hỗn loạn của những con phố nhộn nhịp bên ngoài. (5)
++ B: Nghe thật hoàn hảo. Tôi đang tìm một nơi yên tĩnh để đọc sách. Bạn có phiền chia sẻ vị trí với tôi không? (6)
+
++ A: Tất nhiên là không! Nó ở trên đường Oak, bên cạnh hiệu sách. Chúng ta có thể đến đó cùng nhau vào một lúc nào đó nếu bạn muốn. (7)
++ B: Tôi rất thích điều đó. Cuối tuần này thế nào? Tôi cần nghỉ ngơi khỏi tất cả tiếng ồn của cuộc sống hàng ngày. (8)
+
++ A: Nghe hoàn hảo. Hãy gặp nhau ở đó vào chiều thứ Bảy. (9)
++ B: Kế hoạch tuyệt vời. Tôi đang mong chờ điều đó! (10)
+

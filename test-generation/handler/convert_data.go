@@ -191,7 +191,7 @@ func handler_sentence(numberPart *string, line string) map[string]*orderedmap.Or
 }
 
 func handler_data() map[string]map[string][]string {
-	pathFile, err := read_file("./sourcegraph-cody/answer.txt")
+	pathFile, err := read_file("./sourcegraph-cody/test-generator/answer.txt")
 	check_err(err)
 	defer pathFile.Close()
 

@@ -1,0 +1,30 @@
+&&&
+newWords:
+
+- ubiquitous
+
+- ephemeral
+
+- serendipity
+
+- mellifluous
+
+- cacophony
+
+-------------------------------------
+
+oldWords:
+
+- hello
+
+- world
+
+- learn
+
+- review
+
+- practice
+
+-------------------------------------
+
+&&&
