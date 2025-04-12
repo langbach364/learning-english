@@ -215,38 +215,46 @@ func handler_data() map[string]map[string][]string {
 		}
 
 		merge_data(data, handler_word(&currentPart, line, saveNumberPart))
-		// merge_data(data, handler_sentence(&currentPart, line))
+		merge_data(data, handler_sentence(&currentPart, line))
 	}
 
 	return data
 }
 
 func printf_log_data(data map[string]map[string][]string) {
-	fmt.Println("\n=== PRINTING DATA STRUCTURE ===")
+
+	fmt.Print("\n=== PRINTING DATA STRUCTURE ===\n")
 	fmt.Printf("Tổng số phần: %d\n\n", len(data))
 
 	for part, content := range data {
-		fmt.Printf("┌─────────────────────────────────────────────┐\n")
+
+		fmt.Print("┌─────────────────────────────────────────────┐\n")
 		fmt.Printf("│ PHẦN: %-39s │\n", part)
-		fmt.Printf("├─────────────────────────────────────────────┤\n")
+
+		fmt.Print("├─────────────────────────────────────────────┤\n")
 		fmt.Printf("│ Số lượng khóa: %-29d │\n", len(content))
-		fmt.Printf("└─────────────────────────────────────────────┘\n")
+
+		fmt.Print("└─────────────────────────────────────────────┘\n")
 
 		for key, values := range content {
 			fmt.Printf("  • Khóa: \"%s\"\n", key)
 			fmt.Printf("    Số lượng giá trị: %d\n", len(values))
 
 			if len(values) == 0 {
-				fmt.Println("    Giá trị: (không có)")
+
+				fmt.Print("    Giá trị: (không có)\n")
 			} else {
-				fmt.Println("    Giá trị:")
+
+				fmt.Print("    Giá trị:\n")
 				for i, value := range values {
 					fmt.Printf("      %d. %s\n", i+1, value)
 				}
 			}
-			fmt.Println()
+
+			fmt.Print("\n")
 		}
-		fmt.Println("------------------------------------------------")
+
+		fmt.Print("------------------------------------------------\n")
 	}
 
 	// Thống kê tổng quát
@@ -259,9 +267,12 @@ func printf_log_data(data map[string]map[string][]string) {
 		}
 	}
 
-	fmt.Printf("\n=== THỐNG KÊ TỔNG QUÁT ===\n")
+
+	fmt.Print("\n=== THỐNG KÊ TỔNG QUÁT ===\n")
 	fmt.Printf("Tổng số phần: %d\n", len(data))
 	fmt.Printf("Tổng số khóa: %d\n", totalKeys)
 	fmt.Printf("Tổng số giá trị: %d\n", totalValues)
-	fmt.Println("===========================\n")
+
+
+	fmt.Print("===========================\n")
 }

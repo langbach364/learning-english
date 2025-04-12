@@ -1,28 +1,29 @@
 &&&
 newWords:
 
-- apple
+- apple: 3
 
-- book
+- book : 2
 
-- cat
+- cat: 2
 
-- dog
+- dog: 2
 
-- elephant
+- elephant: 1
 
 -------------------------------------
 
 oldWords:
 
-- house
+- house: 1
 
-- car
+- car: 0
 
-- computer
+- computer: 0
 
-- phone
+- phone: 0
 
 -------------------------------------
 
 &&&
+
