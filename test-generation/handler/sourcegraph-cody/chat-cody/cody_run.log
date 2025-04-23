@@ -1,0 +1,2718 @@
+==================================================
+Script started at: Tue Apr 15 03:56:41 PM +07 2025
+Checked/Created directories: ./question, ./answer
+Model read from ./model.txt: google::v1::gemini-2.5-pro-preview-03-25
+Prompt read from ./prompt.txt
+Base answer file ./answer/answer.txt does not exist. Using it as the answer file.
+Adding data file to context args: ./data.txt
+DEBUG: Listing all files in ./question:
+total 8
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 15:56 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+Adding question files to context:
+DEBUG: Listing all files in ./answer:
+total 8
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 15:56 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+Adding answer files to context:
+All context arguments (2 args):
+  --context-file ./data.txt
+Executing Cody chat command...
+Command to execute: cody chat --model "google::v1::gemini-2.5-pro-preview-03-25" [context_args] --message "[Prompt from ./prompt.txt]"
+- Logging in
+(node:30916) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Noxide Loader: Loading noxide library
+DelegatingProxy: Loaded 154 CA certs from noxide
+Uncaught exception: AbortError2: The user aborted a request.
+    at abort3 (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:47863:23)
+    at AbortSignal.abortAndFinalize2 (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:47877:11)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:827:20)
+    at AbortSignal.dispatchEvent (node:internal/event_target:762:26)
+    at runAbort (node:internal/abort_controller:426:10)
+    at abortSignal (node:internal/abort_controller:412:3)
+    at AbortController.abort (node:internal/abort_controller:444:5)
+    at AbortSignal.abortHandler (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:51788:19)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:827:20)
+    at AbortSignal.dispatchEvent (node:internal/event_target:762:26)
+    at runAbort (node:internal/abort_controller:426:10)
+    at abortSignal (node:internal/abort_controller:412:3)
+    at AbortController.abort (node:internal/abort_controller:444:5)
+    at AbortAggregator.abort (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:53628:25)
+    at GraphQLResultCache.invalidate (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:53704:22)
+    at Object.next (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:53645:21) {
+  type: 'aborted'
+}
+Uncaught exception: AbortError2: The user aborted a request.
+    at abort3 (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:47863:23)
+    at AbortSignal.abortAndFinalize2 (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:47877:11)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:827:20)
+    at AbortSignal.dispatchEvent (node:internal/event_target:762:26)
+    at runAbort (node:internal/abort_controller:426:10)
+    at abortSignal (node:internal/abort_controller:412:3)
+    at AbortController.abort (node:internal/abort_controller:444:5)
+    at AbortSignal.abortHandler (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:51788:19)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:827:20)
+    at AbortSignal.dispatchEvent (node:internal/event_target:762:26)
+    at runAbort (node:internal/abort_controller:426:10)
+    at abortSignal (node:internal/abort_controller:412:3)
+    at AbortController.abort (node:internal/abort_controller:444:5)
+    at AbortAggregator.abort (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:53628:25)
+    at GraphQLResultCache.invalidate (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:53704:22)
+    at Object.next (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:53645:21) {
+  type: 'aborted'
+}
+✔ Gemini 2.5 Pro Preview (33 tokens/second)
+Cody chat command executed successfully.
+Câu trả lời đã được lưu vào: ./answer/answer.txt
+Output saved to: ./answer/answer.txt
+Script finished at: Tue Apr 15 03:57:02 PM +07 2025
+==================================================
+
+==================================================
+Script started at: Tue Apr 15 03:57:02 PM +07 2025
+Checked/Created directories: ./question, ./answer
+Model read from ./model.txt: google::v1::gemini-2.5-pro-preview-03-25
+Prompt read from ./prompt.txt
+Base answer file ./answer/answer.txt exists. Found max count: 0. Next answer file will be: ./answer/answer(1).txt
+Adding data file to context args: ./data.txt
+DEBUG: Listing all files in ./question:
+total 12
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 15:57 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users   25 Apr 15 15:57 question(1).txt
+Adding question files to context:
+  Added question file to context: ./question/question(1).txt
+DEBUG: Listing all files in ./answer:
+total 12
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 15:56 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users 1501 Apr 15 15:57 answer.txt
+Adding answer files to context:
+  Added answer file to context: ./answer/answer.txt
+All context arguments (6 args):
+  --context-file ./data.txt
+  --context-file ./question/question(1).txt
+  --context-file ./answer/answer.txt
+Executing Cody chat command...
+Command to execute: cody chat --model "google::v1::gemini-2.5-pro-preview-03-25" [context_args] --message "[Prompt from ./prompt.txt]"
+- Logging in
+(node:30986) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Noxide Loader: Loading noxide library
+DelegatingProxy: Loaded 154 CA certs from noxide
+✔ Gemini 2.5 Pro Preview (40 tokens/second)
+Cody chat command executed successfully.
+Câu trả lời đã được lưu vào: ./answer/answer(1).txt
+Output saved to: ./answer/answer(1).txt
+Script finished at: Tue Apr 15 03:57:19 PM +07 2025
+==================================================
+
+==================================================
+Script started at: Tue Apr 15 03:58:12 PM +07 2025
+Checked/Created directories: ./question, ./answer
+Model read from ./model.txt: google::v1::gemini-2.5-pro-preview-03-25
+Prompt read from ./prompt.txt
+Base answer file ./answer/answer.txt exists. Found max count: 1. Next answer file will be: ./answer/answer(2).txt
+Adding data file to context args: ./data.txt
+DEBUG: Listing all files in ./question:
+total 16
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 15:58 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users   25 Apr 15 15:57 question(1).txt
+-rw-r--r-- 1 bachlang364 users   45 Apr 15 15:58 question(2).txt
+Adding question files to context:
+  Added question file to context: ./question/question(1).txt
+  Added question file to context: ./question/question(2).txt
+DEBUG: Listing all files in ./answer:
+total 16
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 15:57 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users 1288 Apr 15 15:57 answer(1).txt
+-rw-r--r-- 1 bachlang364 users 1501 Apr 15 15:57 answer.txt
+Adding answer files to context:
+  Added answer file to context: ./answer/answer(1).txt
+  Added answer file to context: ./answer/answer.txt
+All context arguments (10 args):
+  --context-file ./data.txt
+  --context-file ./question/question(1).txt
+  --context-file ./question/question(2).txt
+  --context-file ./answer/answer(1).txt
+  --context-file ./answer/answer.txt
+Executing Cody chat command...
+Command to execute: cody chat --model "google::v1::gemini-2.5-pro-preview-03-25" [context_args] --message "[Prompt from ./prompt.txt]"
+- Logging in
+(node:31663) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Noxide Loader: Loading noxide library
+DelegatingProxy: Loaded 154 CA certs from noxide
+✔ Gemini 2.5 Pro Preview (6 tokens/second)
+Cody chat command executed successfully.
+Câu trả lời đã được lưu vào: ./answer/answer(2).txt
+Output saved to: ./answer/answer(2).txt
+Script finished at: Tue Apr 15 03:58:34 PM +07 2025
+==================================================
+
+==================================================
+Script started at: Tue Apr 15 03:59:11 PM +07 2025
+Checked/Created directories: ./question, ./answer
+Model read from ./model.txt: google::v1::gemini-2.5-pro-preview-03-25
+Prompt read from ./prompt.txt
+Base answer file ./answer/answer.txt exists. Found max count: 2. Next answer file will be: ./answer/answer(3).txt
+Adding data file to context args: ./data.txt
+DEBUG: Listing all files in ./question:
+total 20
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 15:59 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users   25 Apr 15 15:57 question(1).txt
+-rw-r--r-- 1 bachlang364 users   45 Apr 15 15:58 question(2).txt
+-rw-r--r-- 1 bachlang364 users   19 Apr 15 15:59 question(3).txt
+Adding question files to context:
+  Added question file to context: ./question/question(1).txt
+  Added question file to context: ./question/question(2).txt
+  Added question file to context: ./question/question(3).txt
+DEBUG: Listing all files in ./answer:
+total 20
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 15:58 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users 1288 Apr 15 15:57 answer(1).txt
+-rw-r--r-- 1 bachlang364 users  282 Apr 15 15:58 answer(2).txt
+-rw-r--r-- 1 bachlang364 users 1501 Apr 15 15:57 answer.txt
+Adding answer files to context:
+  Added answer file to context: ./answer/answer(1).txt
+  Added answer file to context: ./answer/answer(2).txt
+  Added answer file to context: ./answer/answer.txt
+All context arguments (14 args):
+  --context-file ./data.txt
+  --context-file ./question/question(1).txt
+  --context-file ./question/question(2).txt
+  --context-file ./question/question(3).txt
+  --context-file ./answer/answer(1).txt
+  --context-file ./answer/answer(2).txt
+  --context-file ./answer/answer.txt
+Executing Cody chat command...
+Command to execute: cody chat --model "google::v1::gemini-2.5-pro-preview-03-25" [context_args] --message "[Prompt from ./prompt.txt]"
+- Logging in
+(node:32224) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Noxide Loader: Loading noxide library
+DelegatingProxy: Loaded 154 CA certs from noxide
+Uncaught exception: AbortError2: The user aborted a request.
+    at abort3 (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:47863:23)
+    at AbortSignal.abortAndFinalize2 (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:47877:11)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:827:20)
+    at AbortSignal.dispatchEvent (node:internal/event_target:762:26)
+    at runAbort (node:internal/abort_controller:426:10)
+    at abortSignal (node:internal/abort_controller:412:3)
+    at AbortController.abort (node:internal/abort_controller:444:5)
+    at AbortSignal.abortHandler (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:51788:19)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:827:20)
+    at AbortSignal.dispatchEvent (node:internal/event_target:762:26)
+    at runAbort (node:internal/abort_controller:426:10)
+    at abortSignal (node:internal/abort_controller:412:3)
+    at AbortController.abort (node:internal/abort_controller:444:5)
+    at AbortAggregator.abort (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:53628:25)
+    at GraphQLResultCache.invalidate (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:53704:22)
+    at Object.next (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:53645:21) {
+  type: 'aborted'
+}
+Uncaught exception: AbortError2: The user aborted a request.
+    at abort3 (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:47863:23)
+    at AbortSignal.abortAndFinalize2 (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:47877:11)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:827:20)
+    at AbortSignal.dispatchEvent (node:internal/event_target:762:26)
+    at runAbort (node:internal/abort_controller:426:10)
+    at abortSignal (node:internal/abort_controller:412:3)
+    at AbortController.abort (node:internal/abort_controller:444:5)
+    at AbortSignal.abortHandler (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:51788:19)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:827:20)
+    at AbortSignal.dispatchEvent (node:internal/event_target:762:26)
+    at runAbort (node:internal/abort_controller:426:10)
+    at abortSignal (node:internal/abort_controller:412:3)
+    at AbortController.abort (node:internal/abort_controller:444:5)
+    at AbortAggregator.abort (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:53628:25)
+    at GraphQLResultCache.invalidate (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:53704:22)
+    at Object.next (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:53645:21) {
+  type: 'aborted'
+}
+✔ Gemini 2.5 Pro Preview (3 tokens/second)
+Cody chat command executed successfully.
+Câu trả lời đã được lưu vào: ./answer/answer(3).txt
+Output saved to: ./answer/answer(3).txt
+Script finished at: Tue Apr 15 03:59:28 PM +07 2025
+==================================================
+
+==================================================
+Script started at: Tue Apr 15 04:00:19 PM +07 2025
+Checked/Created directories: ./question, ./answer
+Model read from ./model.txt: google::v1::gemini-2.5-pro-preview-03-25
+Prompt read from ./prompt.txt
+Base answer file ./answer/answer.txt exists. Found max count: 3. Next answer file will be: ./answer/answer(4).txt
+Adding data file to context args: ./data.txt
+DEBUG: Listing all files in ./question:
+total 24
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 16:00 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users   25 Apr 15 15:57 question(1).txt
+-rw-r--r-- 1 bachlang364 users   45 Apr 15 15:58 question(2).txt
+-rw-r--r-- 1 bachlang364 users   19 Apr 15 15:59 question(3).txt
+-rw-r--r-- 1 bachlang364 users   91 Apr 15 16:00 question(4).txt
+Adding question files to context:
+  Added question file to context: ./question/question(1).txt
+  Added question file to context: ./question/question(2).txt
+  Added question file to context: ./question/question(3).txt
+  Added question file to context: ./question/question(4).txt
+DEBUG: Listing all files in ./answer:
+total 24
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 15:59 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users 1288 Apr 15 15:57 answer(1).txt
+-rw-r--r-- 1 bachlang364 users  282 Apr 15 15:58 answer(2).txt
+-rw-r--r-- 1 bachlang364 users   80 Apr 15 15:59 answer(3).txt
+-rw-r--r-- 1 bachlang364 users 1501 Apr 15 15:57 answer.txt
+Adding answer files to context:
+  Added answer file to context: ./answer/answer(1).txt
+  Added answer file to context: ./answer/answer(2).txt
+  Added answer file to context: ./answer/answer(3).txt
+  Added answer file to context: ./answer/answer.txt
+All context arguments (18 args):
+  --context-file ./data.txt
+  --context-file ./question/question(1).txt
+  --context-file ./question/question(2).txt
+  --context-file ./question/question(3).txt
+  --context-file ./question/question(4).txt
+  --context-file ./answer/answer(1).txt
+  --context-file ./answer/answer(2).txt
+  --context-file ./answer/answer(3).txt
+  --context-file ./answer/answer.txt
+Executing Cody chat command...
+Command to execute: cody chat --model "google::v1::gemini-2.5-pro-preview-03-25" [context_args] --message "[Prompt from ./prompt.txt]"
+- Logging in
+(node:32680) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Noxide Loader: Loading noxide library
+DelegatingProxy: Loaded 154 CA certs from noxide
+✔ Gemini 2.5 Pro Preview (30 tokens/second)
+Cody chat command executed successfully.
+Câu trả lời đã được lưu vào: ./answer/answer(4).txt
+Output saved to: ./answer/answer(4).txt
+Script finished at: Tue Apr 15 04:00:53 PM +07 2025
+==================================================
+
+==================================================
+Script started at: Tue Apr 15 04:30:47 PM +07 2025
+Checked/Created directories: ./question, ./answer
+Model read from ./model.txt: google::v1::gemini-2.5-pro-preview-03-25
+Prompt read from ./prompt.txt
+Base answer file ./answer/answer.txt exists. Found max count: 4. Next answer file will be: ./answer/answer(5).txt
+Adding data file to context args: ./data.txt
+DEBUG: Listing all files in ./question:
+total 28
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 16:30 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users   25 Apr 15 15:57 question(1).txt
+-rw-r--r-- 1 bachlang364 users   45 Apr 15 15:58 question(2).txt
+-rw-r--r-- 1 bachlang364 users   19 Apr 15 15:59 question(3).txt
+-rw-r--r-- 1 bachlang364 users   91 Apr 15 16:00 question(4).txt
+-rw-r--r-- 1 bachlang364 users   55 Apr 15 16:30 question(5).txt
+Adding question files to context:
+  Added question file to context: ./question/question(1).txt
+  Added question file to context: ./question/question(2).txt
+  Added question file to context: ./question/question(3).txt
+  Added question file to context: ./question/question(4).txt
+  Added question file to context: ./question/question(5).txt
+DEBUG: Listing all files in ./answer:
+total 28
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 16:00 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users 1288 Apr 15 15:57 answer(1).txt
+-rw-r--r-- 1 bachlang364 users  282 Apr 15 15:58 answer(2).txt
+-rw-r--r-- 1 bachlang364 users   80 Apr 15 15:59 answer(3).txt
+-rw-r--r-- 1 bachlang364 users 2037 Apr 15 16:00 answer(4).txt
+-rw-r--r-- 1 bachlang364 users 1501 Apr 15 15:57 answer.txt
+Adding answer files to context:
+  Added answer file to context: ./answer/answer(1).txt
+  Added answer file to context: ./answer/answer(2).txt
+  Added answer file to context: ./answer/answer(3).txt
+  Added answer file to context: ./answer/answer(4).txt
+  Added answer file to context: ./answer/answer.txt
+All context arguments (22 args):
+  --context-file ./data.txt
+  --context-file ./question/question(1).txt
+  --context-file ./question/question(2).txt
+  --context-file ./question/question(3).txt
+  --context-file ./question/question(4).txt
+  --context-file ./question/question(5).txt
+  --context-file ./answer/answer(1).txt
+  --context-file ./answer/answer(2).txt
+  --context-file ./answer/answer(3).txt
+  --context-file ./answer/answer(4).txt
+  --context-file ./answer/answer.txt
+Executing Cody chat command...
+Command to execute: cody chat --silent --model "google::v1::gemini-2.5-pro-preview-03-25" [context_args] --message "[Prompt from ./prompt.txt]"
+- Logging in
+(node:38364) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Noxide Loader: Loading noxide library
+DelegatingProxy: Loaded 154 CA certs from noxide
+✔ Gemini 2.5 Pro Preview (21 tokens/second)
+Cody chat command executed successfully.
+Câu trả lời đã được lưu vào: ./answer/answer(5).txt
+Output saved to: ./answer/answer(5).txt
+Script finished at: Tue Apr 15 04:31:17 PM +07 2025
+==================================================
+
+==================================================
+Script started at: Tue Apr 15 04:31:40 PM +07 2025
+Checked/Created directories: ./question, ./answer
+Model read from ./model.txt: google::v1::gemini-2.5-pro-preview-03-25
+Prompt read from ./prompt.txt
+Base answer file ./answer/answer.txt exists. Found max count: 5. Next answer file will be: ./answer/answer(6).txt
+Adding data file to context args: ./data.txt
+DEBUG: Listing all files in ./question:
+total 32
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 16:31 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users   25 Apr 15 15:57 question(1).txt
+-rw-r--r-- 1 bachlang364 users   45 Apr 15 15:58 question(2).txt
+-rw-r--r-- 1 bachlang364 users   19 Apr 15 15:59 question(3).txt
+-rw-r--r-- 1 bachlang364 users   91 Apr 15 16:00 question(4).txt
+-rw-r--r-- 1 bachlang364 users   55 Apr 15 16:30 question(5).txt
+-rw-r--r-- 1 bachlang364 users   79 Apr 15 16:31 question(6).txt
+Adding question files to context:
+  Added question file to context: ./question/question(1).txt
+  Added question file to context: ./question/question(2).txt
+  Added question file to context: ./question/question(3).txt
+  Added question file to context: ./question/question(4).txt
+  Added question file to context: ./question/question(5).txt
+  Added question file to context: ./question/question(6).txt
+DEBUG: Listing all files in ./answer:
+total 32
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 16:30 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users 1288 Apr 15 15:57 answer(1).txt
+-rw-r--r-- 1 bachlang364 users  282 Apr 15 15:58 answer(2).txt
+-rw-r--r-- 1 bachlang364 users   80 Apr 15 15:59 answer(3).txt
+-rw-r--r-- 1 bachlang364 users 2037 Apr 15 16:00 answer(4).txt
+-rw-r--r-- 1 bachlang364 users 1454 Apr 15 16:31 answer(5).txt
+-rw-r--r-- 1 bachlang364 users 1501 Apr 15 15:57 answer.txt
+Adding answer files to context:
+  Added answer file to context: ./answer/answer(1).txt
+  Added answer file to context: ./answer/answer(2).txt
+  Added answer file to context: ./answer/answer(3).txt
+  Added answer file to context: ./answer/answer(4).txt
+  Added answer file to context: ./answer/answer(5).txt
+  Added answer file to context: ./answer/answer.txt
+All context arguments (26 args):
+  --context-file ./data.txt
+  --context-file ./question/question(1).txt
+  --context-file ./question/question(2).txt
+  --context-file ./question/question(3).txt
+  --context-file ./question/question(4).txt
+  --context-file ./question/question(5).txt
+  --context-file ./question/question(6).txt
+  --context-file ./answer/answer(1).txt
+  --context-file ./answer/answer(2).txt
+  --context-file ./answer/answer(3).txt
+  --context-file ./answer/answer(4).txt
+  --context-file ./answer/answer(5).txt
+  --context-file ./answer/answer.txt
+Executing Cody chat command...
+Command to execute: cody chat --silent --model "google::v1::gemini-2.5-pro-preview-03-25" [context_args] --message "[Prompt from ./prompt.txt]"
+- Logging in
+(node:39506) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Noxide Loader: Loading noxide library
+DelegatingProxy: Loaded 154 CA certs from noxide
+✔ Gemini 2.5 Pro Preview (11 tokens/second)
+Cody chat command executed successfully.
+Câu trả lời đã được lưu vào: ./answer/answer(6).txt
+Output saved to: ./answer/answer(6).txt
+Script finished at: Tue Apr 15 04:32:06 PM +07 2025
+==================================================
+
+==================================================
+Script started at: Tue Apr 15 04:33:35 PM +07 2025
+Checked/Created directories: ./question, ./answer
+Model read from ./model.txt: google::v1::gemini-2.0-flash
+Prompt read from ./prompt.txt
+Base answer file ./answer/answer.txt exists. Found max count: 6. Next answer file will be: ./answer/answer(7).txt
+Adding data file to context args: ./data.txt
+DEBUG: Listing all files in ./question:
+total 36
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 16:33 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users   25 Apr 15 15:57 question(1).txt
+-rw-r--r-- 1 bachlang364 users   45 Apr 15 15:58 question(2).txt
+-rw-r--r-- 1 bachlang364 users   19 Apr 15 15:59 question(3).txt
+-rw-r--r-- 1 bachlang364 users   91 Apr 15 16:00 question(4).txt
+-rw-r--r-- 1 bachlang364 users   55 Apr 15 16:30 question(5).txt
+-rw-r--r-- 1 bachlang364 users   79 Apr 15 16:31 question(6).txt
+-rw-r--r-- 1 bachlang364 users   79 Apr 15 16:33 question(7).txt
+Adding question files to context:
+  Added question file to context: ./question/question(1).txt
+  Added question file to context: ./question/question(2).txt
+  Added question file to context: ./question/question(3).txt
+  Added question file to context: ./question/question(4).txt
+  Added question file to context: ./question/question(5).txt
+  Added question file to context: ./question/question(6).txt
+  Added question file to context: ./question/question(7).txt
+DEBUG: Listing all files in ./answer:
+total 36
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 16:31 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users 1288 Apr 15 15:57 answer(1).txt
+-rw-r--r-- 1 bachlang364 users  282 Apr 15 15:58 answer(2).txt
+-rw-r--r-- 1 bachlang364 users   80 Apr 15 15:59 answer(3).txt
+-rw-r--r-- 1 bachlang364 users 2037 Apr 15 16:00 answer(4).txt
+-rw-r--r-- 1 bachlang364 users 1454 Apr 15 16:31 answer(5).txt
+-rw-r--r-- 1 bachlang364 users  593 Apr 15 16:32 answer(6).txt
+-rw-r--r-- 1 bachlang364 users 1501 Apr 15 15:57 answer.txt
+Adding answer files to context:
+  Added answer file to context: ./answer/answer(1).txt
+  Added answer file to context: ./answer/answer(2).txt
+  Added answer file to context: ./answer/answer(3).txt
+  Added answer file to context: ./answer/answer(4).txt
+  Added answer file to context: ./answer/answer(5).txt
+  Added answer file to context: ./answer/answer(6).txt
+  Added answer file to context: ./answer/answer.txt
+All context arguments (30 args):
+  --context-file ./data.txt
+  --context-file ./question/question(1).txt
+  --context-file ./question/question(2).txt
+  --context-file ./question/question(3).txt
+  --context-file ./question/question(4).txt
+  --context-file ./question/question(5).txt
+  --context-file ./question/question(6).txt
+  --context-file ./question/question(7).txt
+  --context-file ./answer/answer(1).txt
+  --context-file ./answer/answer(2).txt
+  --context-file ./answer/answer(3).txt
+  --context-file ./answer/answer(4).txt
+  --context-file ./answer/answer(5).txt
+  --context-file ./answer/answer(6).txt
+  --context-file ./answer/answer.txt
+Executing Cody chat command...
+Command to execute: cody chat --silent --model "google::v1::gemini-2.0-flash" [context_args] --message "[Prompt from ./prompt.txt]"
+- Logging in
+(node:40394) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Noxide Loader: Loading noxide library
+DelegatingProxy: Loaded 154 CA certs from noxide
+✔ Gemini 2.0 Flash (164 tokens/second)
+Cody chat command executed successfully.
+Câu trả lời đã được lưu vào: ./answer/answer(7).txt
+Output saved to: ./answer/answer(7).txt
+Script finished at: Tue Apr 15 04:33:43 PM +07 2025
+==================================================
+
+==================================================
+Script started at: Tue Apr 15 04:34:30 PM +07 2025
+Checked/Created directories: ./question, ./answer
+Model read from ./model.txt: google::v1::gemini-2.0-flash
+Prompt read from ./prompt.txt
+Base answer file ./answer/answer.txt exists. Found max count: 0. Next answer file will be: ./answer/answer(1).txt
+Adding data file to context args: ./data.txt
+DEBUG: Listing all files in ./question:
+total 12
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 16:34 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users   79 Apr 15 16:34 question(1).txt
+Adding question files to context:
+  Added question file to context: ./question/question(1).txt
+DEBUG: Listing all files in ./answer:
+total 12
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 16:33 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users 1501 Apr 15 15:57 answer.txt
+Adding answer files to context:
+  Added answer file to context: ./answer/answer.txt
+All context arguments (6 args):
+  --context-file ./data.txt
+  --context-file ./question/question(1).txt
+  --context-file ./answer/answer.txt
+Executing Cody chat command...
+Command to execute: cody chat --silent --model "google::v1::gemini-2.0-flash" [context_args] --message "[Prompt from ./prompt.txt]"
+- Logging in
+(node:40967) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Noxide Loader: Loading noxide library
+DelegatingProxy: Loaded 154 CA certs from noxide
+✔ Gemini 2.0 Flash (115 tokens/second)
+Cody chat command executed successfully.
+Câu trả lời đã được lưu vào: ./answer/answer(1).txt
+Output saved to: ./answer/answer(1).txt
+Script finished at: Tue Apr 15 04:34:36 PM +07 2025
+==================================================
+
+==================================================
+Script started at: Tue Apr 15 04:35:01 PM +07 2025
+Checked/Created directories: ./question, ./answer
+Model read from ./model.txt: google::v1::gemini-2.0-flash
+Prompt read from ./prompt.txt
+Base answer file ./answer/answer.txt exists. Found max count: 1. Next answer file will be: ./answer/answer(2).txt
+Adding data file to context args: ./data.txt
+DEBUG: Listing all files in ./question:
+total 16
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 16:35 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users   79 Apr 15 16:34 question(1).txt
+-rw-r--r-- 1 bachlang364 users   80 Apr 15 16:35 question(2).txt
+Adding question files to context:
+  Added question file to context: ./question/question(1).txt
+  Added question file to context: ./question/question(2).txt
+DEBUG: Listing all files in ./answer:
+total 16
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 16:34 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users  610 Apr 15 16:34 answer(1).txt
+-rw-r--r-- 1 bachlang364 users 1501 Apr 15 15:57 answer.txt
+Adding answer files to context:
+  Added answer file to context: ./answer/answer(1).txt
+  Added answer file to context: ./answer/answer.txt
+All context arguments (10 args):
+  --context-file ./data.txt
+  --context-file ./question/question(1).txt
+  --context-file ./question/question(2).txt
+  --context-file ./answer/answer(1).txt
+  --context-file ./answer/answer.txt
+Executing Cody chat command...
+Command to execute: cody chat --silent --model "google::v1::gemini-2.0-flash" [context_args] --message "[Prompt from ./prompt.txt]"
+- Logging in
+(node:42351) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Noxide Loader: Loading noxide library
+DelegatingProxy: Loaded 154 CA certs from noxide
+✔ Gemini 2.0 Flash (117 tokens/second)
+Cody chat command executed successfully.
+Câu trả lời đã được lưu vào: ./answer/answer(2).txt
+Output saved to: ./answer/answer(2).txt
+Script finished at: Tue Apr 15 04:35:07 PM +07 2025
+==================================================
+
+==================================================
+Script started at: Tue Apr 15 04:35:21 PM +07 2025
+Checked/Created directories: ./question, ./answer
+Model read from ./model.txt: google::v1::gemini-2.0-flash
+Prompt read from ./prompt.txt
+Base answer file ./answer/answer.txt exists. Found max count: 2. Next answer file will be: ./answer/answer(3).txt
+Adding data file to context args: ./data.txt
+DEBUG: Listing all files in ./question:
+total 20
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 16:35 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users   79 Apr 15 16:34 question(1).txt
+-rw-r--r-- 1 bachlang364 users   80 Apr 15 16:35 question(2).txt
+-rw-r--r-- 1 bachlang364 users   80 Apr 15 16:35 question(3).txt
+Adding question files to context:
+  Added question file to context: ./question/question(1).txt
+  Added question file to context: ./question/question(2).txt
+  Added question file to context: ./question/question(3).txt
+DEBUG: Listing all files in ./answer:
+total 20
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 16:35 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users  610 Apr 15 16:34 answer(1).txt
+-rw-r--r-- 1 bachlang364 users  586 Apr 15 16:35 answer(2).txt
+-rw-r--r-- 1 bachlang364 users 1501 Apr 15 15:57 answer.txt
+Adding answer files to context:
+  Added answer file to context: ./answer/answer(1).txt
+  Added answer file to context: ./answer/answer(2).txt
+  Added answer file to context: ./answer/answer.txt
+All context arguments (14 args):
+  --context-file ./data.txt
+  --context-file ./question/question(1).txt
+  --context-file ./question/question(2).txt
+  --context-file ./question/question(3).txt
+  --context-file ./answer/answer(1).txt
+  --context-file ./answer/answer(2).txt
+  --context-file ./answer/answer.txt
+Executing Cody chat command...
+Command to execute: cody chat --silent --model "google::v1::gemini-2.0-flash" [context_args] --message "[Prompt from ./prompt.txt]"
+- Logging in
+(node:42629) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Noxide Loader: Loading noxide library
+DelegatingProxy: Loaded 154 CA certs from noxide
+Uncaught exception: AbortError2: The user aborted a request.
+    at abort3 (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:47863:23)
+    at AbortSignal.abortAndFinalize2 (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:47877:11)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:827:20)
+    at AbortSignal.dispatchEvent (node:internal/event_target:762:26)
+    at runAbort (node:internal/abort_controller:426:10)
+    at abortSignal (node:internal/abort_controller:412:3)
+    at AbortController.abort (node:internal/abort_controller:444:5)
+    at AbortSignal.abortHandler (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:51788:19)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:827:20)
+    at AbortSignal.dispatchEvent (node:internal/event_target:762:26)
+    at runAbort (node:internal/abort_controller:426:10)
+    at abortSignal (node:internal/abort_controller:412:3)
+    at AbortController.abort (node:internal/abort_controller:444:5)
+    at AbortAggregator.abort (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:53628:25)
+    at GraphQLResultCache.invalidate (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:53704:22)
+    at Object.next (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:53645:21) {
+  type: 'aborted'
+}
+Uncaught exception: AbortError2: The user aborted a request.
+    at abort3 (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:47863:23)
+    at AbortSignal.abortAndFinalize2 (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:47877:11)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:827:20)
+    at AbortSignal.dispatchEvent (node:internal/event_target:762:26)
+    at runAbort (node:internal/abort_controller:426:10)
+    at abortSignal (node:internal/abort_controller:412:3)
+    at AbortController.abort (node:internal/abort_controller:444:5)
+    at AbortSignal.abortHandler (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:51788:19)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:827:20)
+    at AbortSignal.dispatchEvent (node:internal/event_target:762:26)
+    at runAbort (node:internal/abort_controller:426:10)
+    at abortSignal (node:internal/abort_controller:412:3)
+    at AbortController.abort (node:internal/abort_controller:444:5)
+    at AbortAggregator.abort (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:53628:25)
+    at GraphQLResultCache.invalidate (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:53704:22)
+    at Object.next (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:53645:21) {
+  type: 'aborted'
+}
+✔ Gemini 2.0 Flash (121 tokens/second)
+Cody chat command executed successfully.
+Câu trả lời đã được lưu vào: ./answer/answer(3).txt
+Output saved to: ./answer/answer(3).txt
+Script finished at: Tue Apr 15 04:35:27 PM +07 2025
+==================================================
+
+==================================================
+Script started at: Tue Apr 15 04:35:31 PM +07 2025
+Checked/Created directories: ./question, ./answer
+Model read from ./model.txt: google::v1::gemini-2.0-flash
+Prompt read from ./prompt.txt
+Base answer file ./answer/answer.txt exists. Found max count: 3. Next answer file will be: ./answer/answer(4).txt
+Adding data file to context args: ./data.txt
+DEBUG: Listing all files in ./question:
+total 24
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 16:35 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users   79 Apr 15 16:34 question(1).txt
+-rw-r--r-- 1 bachlang364 users   80 Apr 15 16:35 question(2).txt
+-rw-r--r-- 1 bachlang364 users   80 Apr 15 16:35 question(3).txt
+-rw-r--r-- 1 bachlang364 users   80 Apr 15 16:35 question(4).txt
+Adding question files to context:
+  Added question file to context: ./question/question(1).txt
+  Added question file to context: ./question/question(2).txt
+  Added question file to context: ./question/question(3).txt
+  Added question file to context: ./question/question(4).txt
+DEBUG: Listing all files in ./answer:
+total 24
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 16:35 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users  610 Apr 15 16:34 answer(1).txt
+-rw-r--r-- 1 bachlang364 users  586 Apr 15 16:35 answer(2).txt
+-rw-r--r-- 1 bachlang364 users  606 Apr 15 16:35 answer(3).txt
+-rw-r--r-- 1 bachlang364 users 1501 Apr 15 15:57 answer.txt
+Adding answer files to context:
+  Added answer file to context: ./answer/answer(1).txt
+  Added answer file to context: ./answer/answer(2).txt
+  Added answer file to context: ./answer/answer(3).txt
+  Added answer file to context: ./answer/answer.txt
+All context arguments (18 args):
+  --context-file ./data.txt
+  --context-file ./question/question(1).txt
+  --context-file ./question/question(2).txt
+  --context-file ./question/question(3).txt
+  --context-file ./question/question(4).txt
+  --context-file ./answer/answer(1).txt
+  --context-file ./answer/answer(2).txt
+  --context-file ./answer/answer(3).txt
+  --context-file ./answer/answer.txt
+Executing Cody chat command...
+Command to execute: cody chat --silent --model "google::v1::gemini-2.0-flash" [context_args] --message "[Prompt from ./prompt.txt]"
+- Logging in
+(node:42901) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Noxide Loader: Loading noxide library
+DelegatingProxy: Loaded 154 CA certs from noxide
+✔ Gemini 2.0 Flash (119 tokens/second)
+Cody chat command executed successfully.
+Câu trả lời đã được lưu vào: ./answer/answer(4).txt
+Output saved to: ./answer/answer(4).txt
+Script finished at: Tue Apr 15 04:35:37 PM +07 2025
+==================================================
+
+==================================================
+Script started at: Tue Apr 15 04:40:34 PM +07 2025
+Checked/Created directories: ./question, ./answer
+Model read from ./model.txt: google::v1::gemini-2.0-flash
+Prompt read from ./prompt.txt
+Base answer file ./answer/answer.txt does not exist. Using it as the answer file.
+Adding data file to context args: ./data.txt
+DEBUG: Listing all files in ./question:
+total 8
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 16:40 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+Finding latest question file for context:
+  WARNING: No question file found to add to context!
+DEBUG: Listing all files in ./answer:
+total 8
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 16:40 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+Adding answer files to context:
+All context arguments (2 args):
+  --context-file ./data.txt
+Executing Cody chat command...
+Command to execute: cody chat --silent --model "google::v1::gemini-2.0-flash" [context_args] --message "[Prompt from ./prompt.txt]"
+- Logging in
+(node:43982) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Noxide Loader: Loading noxide library
+DelegatingProxy: Loaded 154 CA certs from noxide
+✔ Gemini 2.0 Flash (15 tokens/second)
+Cody chat command executed successfully.
+Câu trả lời đã được lưu vào: ./answer/answer.txt
+Output saved to: ./answer/answer.txt
+Script finished at: Tue Apr 15 04:40:39 PM +07 2025
+==================================================
+
+==================================================
+Script started at: Tue Apr 15 04:40:39 PM +07 2025
+Checked/Created directories: ./question, ./answer
+Model read from ./model.txt: google::v1::gemini-2.0-flash
+Prompt read from ./prompt.txt
+Base answer file ./answer/answer.txt exists. Found max count: 0. Next answer file will be: ./answer/answer(1).txt
+Adding data file to context args: ./data.txt
+DEBUG: Listing all files in ./question:
+total 12
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 16:40 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users   46 Apr 15 16:40 question(1).txt
+Finding latest question file for context:
+  Added latest question file to context: ./question/question(1).txt
+DEBUG: Listing all files in ./answer:
+total 12
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 16:40 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users   64 Apr 15 16:40 answer.txt
+Adding answer files to context:
+  Added answer file to context: ./answer/answer.txt
+All context arguments (6 args):
+  --context-file ./data.txt
+  --context-file ./question/question(1).txt
+  --context-file ./answer/answer.txt
+Executing Cody chat command...
+Command to execute: cody chat --silent --model "google::v1::gemini-2.0-flash" [context_args] --message "[Prompt from ./prompt.txt]"
+- Logging in
+(node:44047) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Noxide Loader: Loading noxide library
+DelegatingProxy: Loaded 154 CA certs from noxide
+✔ Gemini 2.0 Flash (112 tokens/second)
+Cody chat command executed successfully.
+Câu trả lời đã được lưu vào: ./answer/answer(1).txt
+Output saved to: ./answer/answer(1).txt
+Script finished at: Tue Apr 15 04:40:45 PM +07 2025
+==================================================
+
+==================================================
+Script started at: Tue Apr 15 04:41:10 PM +07 2025
+Checked/Created directories: ./question, ./answer
+Model read from ./model.txt: google::v1::gemini-2.0-flash
+Prompt read from ./prompt.txt
+Base answer file ./answer/answer.txt exists. Found max count: 1. Next answer file will be: ./answer/answer(2).txt
+Adding data file to context args: ./data.txt
+DEBUG: Listing all files in ./question:
+total 16
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 16:41 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users   46 Apr 15 16:40 question(1).txt
+-rw-r--r-- 1 bachlang364 users   57 Apr 15 16:41 question(2).txt
+Finding latest question file for context:
+  Added latest question file to context: ./question/question(2).txt
+DEBUG: Listing all files in ./answer:
+total 16
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 16:40 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users  612 Apr 15 16:40 answer(1).txt
+-rw-r--r-- 1 bachlang364 users   64 Apr 15 16:40 answer.txt
+Adding answer files to context:
+  Added answer file to context: ./answer/answer(1).txt
+  Added answer file to context: ./answer/answer.txt
+All context arguments (8 args):
+  --context-file ./data.txt
+  --context-file ./question/question(2).txt
+  --context-file ./answer/answer(1).txt
+  --context-file ./answer/answer.txt
+Executing Cody chat command...
+Command to execute: cody chat --silent --model "google::v1::gemini-2.0-flash" [context_args] --message "[Prompt from ./prompt.txt]"
+- Logging in
+(node:44541) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Noxide Loader: Loading noxide library
+DelegatingProxy: Loaded 154 CA certs from noxide
+✔ Gemini 2.0 Flash (83 tokens/second)
+Cody chat command executed successfully.
+Câu trả lời đã được lưu vào: ./answer/answer(2).txt
+Output saved to: ./answer/answer(2).txt
+Script finished at: Tue Apr 15 04:41:16 PM +07 2025
+==================================================
+
+==================================================
+Script started at: Tue Apr 15 04:46:24 PM +07 2025
+Checked/Created directories: ./question, ./answer
+Model read from ./model.txt: google::v1::gemini-2.0-flash
+Prompt read from ./prompt.txt
+Base answer file ./answer/answer.txt exists. Found max count: 2. Next answer file will be: ./answer/answer(3).txt
+Adding data file to context args: ./data.txt
+DEBUG: Listing all files in ./question:
+total 20
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 16:46 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users   46 Apr 15 16:40 question(1).txt
+-rw-r--r-- 1 bachlang364 users   57 Apr 15 16:41 question(2).txt
+-rw-r--r-- 1 bachlang364 users   67 Apr 15 16:46 question(3).txt
+Finding latest question file for context:
+  Added latest question file to context: ./question/question(3).txt
+DEBUG: Listing all files in ./answer:
+total 20
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 16:41 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users  612 Apr 15 16:40 answer(1).txt
+-rw-r--r-- 1 bachlang364 users  367 Apr 15 16:41 answer(2).txt
+-rw-r--r-- 1 bachlang364 users   64 Apr 15 16:40 answer.txt
+Adding answer files to context:
+  Added answer file to context: ./answer/answer(1).txt
+  Added answer file to context: ./answer/answer(2).txt
+  Added answer file to context: ./answer/answer.txt
+All context arguments (10 args):
+  --context-file ./data.txt
+  --context-file ./question/question(3).txt
+  --context-file ./answer/answer(1).txt
+  --context-file ./answer/answer(2).txt
+  --context-file ./answer/answer.txt
+Executing Cody chat command...
+Command to execute: cody chat --silent --model "google::v1::gemini-2.0-flash" [context_args] --message "[Prompt from ./prompt.txt]"
+- Logging in
+(node:45815) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Noxide Loader: Loading noxide library
+DelegatingProxy: Loaded 154 CA certs from noxide
+✔ Gemini 2.0 Flash (63 tokens/second)
+Cody chat command executed successfully.
+Câu trả lời đã được lưu vào: ./answer/answer(3).txt
+Output saved to: ./answer/answer(3).txt
+Script finished at: Tue Apr 15 04:46:29 PM +07 2025
+==================================================
+
+==================================================
+Script started at: Tue Apr 15 04:47:26 PM +07 2025
+Checked/Created directories: ./question, ./answer
+Model read from ./model.txt: google::v1::gemini-2.0-flash
+Prompt read from ./prompt.txt
+Base answer file ./answer/answer.txt exists. Found max count: 0. Next answer file will be: ./answer/answer(1).txt
+Adding data file to context args: ./data.txt
+DEBUG: Listing all files in ./question:
+total 12
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 16:47 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users   48 Apr 15 16:47 question(1).txt
+Finding latest question file for context:
+  Added latest question file to context: ./question/question(1).txt
+DEBUG: Listing all files in ./answer:
+total 12
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 16:46 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users   64 Apr 15 16:40 answer.txt
+Adding answer files to context:
+  Added answer file to context: ./answer/answer.txt
+All context arguments (6 args):
+  --context-file ./data.txt
+  --context-file ./question/question(1).txt
+  --context-file ./answer/answer.txt
+Executing Cody chat command...
+Command to execute: cody chat --silent --model "google::v1::gemini-2.0-flash" [context_args] --message "[Prompt from ./prompt.txt]"
+- Logging in
+(node:47258) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Noxide Loader: Loading noxide library
+DelegatingProxy: Loaded 154 CA certs from noxide
+✔ Gemini 2.0 Flash (85 tokens/second)
+Cody chat command executed successfully.
+Câu trả lời đã được lưu vào: ./answer/answer(1).txt
+Output saved to: ./answer/answer(1).txt
+Script finished at: Tue Apr 15 04:47:32 PM +07 2025
+==================================================
+
+==================================================
+Script started at: Tue Apr 15 04:50:46 PM +07 2025
+Checked/Created directories: ./question, ./answer
+Model read from ./model.txt: google::v1::gemini-2.0-flash
+Prompt read from ./prompt.txt
+Base answer file ./answer/answer.txt does not exist. Using it as the answer file.
+Adding data file to context args: ./data.txt
+DEBUG: Listing all files in ./question:
+total 8
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 16:50 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+Finding latest question file for context:
+  WARNING: No question file found to add to context!
+DEBUG: Listing all files in ./answer:
+total 8
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 16:50 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+Adding answer files to context:
+All context arguments (2 args):
+  --context-file ./data.txt
+Executing Cody chat command...
+Command to execute: cody chat --silent --model "google::v1::gemini-2.0-flash" [context_args] --message "[Prompt from ./prompt.txt]"
+- Logging in
+(node:48146) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Noxide Loader: Loading noxide library
+DelegatingProxy: Loaded 154 CA certs from noxide
+✔ Gemini 2.0 Flash (33 tokens/second)
+Cody chat command executed successfully.
+Câu trả lời đã được lưu vào: ./answer/answer.txt
+Output saved to: ./answer/answer.txt
+Script finished at: Tue Apr 15 04:50:51 PM +07 2025
+==================================================
+
+==================================================
+Script started at: Tue Apr 15 04:50:51 PM +07 2025
+Checked/Created directories: ./question, ./answer
+Model read from ./model.txt: google::v1::gemini-2.0-flash
+Prompt read from ./prompt.txt
+Base answer file ./answer/answer.txt exists. Found max count: 0. Next answer file will be: ./answer/answer(1).txt
+Adding data file to context args: ./data.txt
+DEBUG: Listing all files in ./question:
+total 12
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 16:50 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users   15 Apr 15 16:50 question(1).txt
+Finding latest question file for context:
+  Added latest question file to context: ./question/question(1).txt
+DEBUG: Listing all files in ./answer:
+total 12
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 16:50 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users  108 Apr 15 16:50 answer.txt
+Adding answer files to context:
+  Added answer file to context: ./answer/answer.txt
+All context arguments (6 args):
+  --context-file ./data.txt
+  --context-file ./question/question(1).txt
+  --context-file ./answer/answer.txt
+Executing Cody chat command...
+Command to execute: cody chat --silent --model "google::v1::gemini-2.0-flash" [context_args] --message "[Prompt from ./prompt.txt]"
+- Logging in
+(node:48203) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Noxide Loader: Loading noxide library
+DelegatingProxy: Loaded 154 CA certs from noxide
+✔ Gemini 2.0 Flash (23 tokens/second)
+Cody chat command executed successfully.
+Câu trả lời đã được lưu vào: ./answer/answer(1).txt
+Output saved to: ./answer/answer(1).txt
+Script finished at: Tue Apr 15 04:50:56 PM +07 2025
+==================================================
+
+==================================================
+Script started at: Tue Apr 15 04:51:40 PM +07 2025
+Checked/Created directories: ./question, ./answer
+Model read from ./model.txt: google::v1::gemini-2.0-flash
+Prompt read from ./prompt.txt
+Base answer file ./answer/answer.txt exists. Found max count: 1. Next answer file will be: ./answer/answer(2).txt
+Adding data file to context args: ./data.txt
+DEBUG: Listing all files in ./question:
+total 16
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 16:51 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users   15 Apr 15 16:50 question(1).txt
+-rw-r--r-- 1 bachlang364 users   48 Apr 15 16:51 question(2).txt
+Finding latest question file for context:
+  Added latest question file to context: ./question/question(2).txt
+DEBUG: Listing all files in ./answer:
+total 16
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 16:50 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users   58 Apr 15 16:50 answer(1).txt
+-rw-r--r-- 1 bachlang364 users  108 Apr 15 16:50 answer.txt
+Adding answer files to context:
+  Added answer file to context: ./answer/answer(1).txt
+  Added answer file to context: ./answer/answer.txt
+All context arguments (8 args):
+  --context-file ./data.txt
+  --context-file ./question/question(2).txt
+  --context-file ./answer/answer(1).txt
+  --context-file ./answer/answer.txt
+Executing Cody chat command...
+Command to execute: cody chat --silent --model "google::v1::gemini-2.0-flash" [context_args] --message "[Prompt from ./prompt.txt]"
+- Logging in
+(node:48745) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Noxide Loader: Loading noxide library
+DelegatingProxy: Loaded 154 CA certs from noxide
+✔ Gemini 2.0 Flash (33 tokens/second)
+Cody chat command executed successfully.
+Câu trả lời đã được lưu vào: ./answer/answer(2).txt
+Output saved to: ./answer/answer(2).txt
+Script finished at: Tue Apr 15 04:51:45 PM +07 2025
+==================================================
+
+==================================================
+Script started at: Tue Apr 15 04:57:26 PM +07 2025
+Checked/Created directories: ./question, ./answer
+Model read from ./model.txt: google::v1::gemini-2.0-flash
+Prompt read from ./prompt.txt
+Base answer file ./answer/answer.txt exists. Found max count: 0. Next answer file will be: ./answer/answer(1).txt
+Adding data file to context args: ./data.txt
+DEBUG: Listing all files in ./question:
+total 12
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 16:57 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users    9 Apr 15 16:57 question(1).txt
+Finding latest question file for context:
+  Added latest question file to context: ./question/question(1).txt
+DEBUG: Listing all files in ./answer:
+total 12
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 16:56 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users  108 Apr 15 16:50 answer.txt
+Adding answer files to context:
+  Added answer file to context: ./answer/answer.txt
+All context arguments (6 args):
+  --context-file ./data.txt
+  --context-file ./question/question(1).txt
+  --context-file ./answer/answer.txt
+Executing Cody chat command...
+Command to execute: cody chat --silent --model "google::v1::gemini-2.0-flash" [context_args] --message "[Prompt from ./prompt.txt]"
+- Logging in
+(node:49893) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Noxide Loader: Loading noxide library
+DelegatingProxy: Loaded 154 CA certs from noxide
+✔ Gemini 2.0 Flash (40 tokens/second)
+Cody chat command executed successfully.
+Câu trả lời đã được lưu vào: ./answer/answer(1).txt
+Output saved to: ./answer/answer(1).txt
+Script finished at: Tue Apr 15 04:57:31 PM +07 2025
+==================================================
+
+==================================================
+Script started at: Tue Apr 15 04:57:52 PM +07 2025
+Checked/Created directories: ./question, ./answer
+Model read from ./model.txt: google::v1::gemini-2.0-flash
+Prompt read from ./prompt.txt
+Base answer file ./answer/answer.txt exists. Found max count: 1. Next answer file will be: ./answer/answer(2).txt
+Adding data file to context args: ./data.txt
+DEBUG: Listing all files in ./question:
+total 16
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 16:57 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users    9 Apr 15 16:57 question(1).txt
+-rw-r--r-- 1 bachlang364 users   48 Apr 15 16:57 question(2).txt
+Finding latest question file for context:
+  Added latest question file to context: ./question/question(2).txt
+DEBUG: Listing all files in ./answer:
+total 16
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 16:57 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users  160 Apr 15 16:57 answer(1).txt
+-rw-r--r-- 1 bachlang364 users  108 Apr 15 16:50 answer.txt
+Adding answer files to context:
+  Added answer file to context: ./answer/answer(1).txt
+  Added answer file to context: ./answer/answer.txt
+All context arguments (8 args):
+  --context-file ./data.txt
+  --context-file ./question/question(2).txt
+  --context-file ./answer/answer(1).txt
+  --context-file ./answer/answer.txt
+Executing Cody chat command...
+Command to execute: cody chat --silent --model "google::v1::gemini-2.0-flash" [context_args] --message "[Prompt from ./prompt.txt]"
+- Logging in
+(node:50343) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Noxide Loader: Loading noxide library
+DelegatingProxy: Loaded 154 CA certs from noxide
+✔ Gemini 2.0 Flash (42 tokens/second)
+Cody chat command executed successfully.
+Câu trả lời đã được lưu vào: ./answer/answer(2).txt
+Output saved to: ./answer/answer(2).txt
+Script finished at: Tue Apr 15 04:57:57 PM +07 2025
+==================================================
+
+==================================================
+Script started at: Tue Apr 15 04:58:12 PM +07 2025
+Checked/Created directories: ./question, ./answer
+Model read from ./model.txt: google::v1::gemini-2.0-flash
+Prompt read from ./prompt.txt
+Base answer file ./answer/answer.txt exists. Found max count: 2. Next answer file will be: ./answer/answer(3).txt
+Adding data file to context args: ./data.txt
+DEBUG: Listing all files in ./question:
+total 20
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 16:58 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users    9 Apr 15 16:57 question(1).txt
+-rw-r--r-- 1 bachlang364 users   48 Apr 15 16:57 question(2).txt
+-rw-r--r-- 1 bachlang364 users   36 Apr 15 16:58 question(3).txt
+Finding latest question file for context:
+  Added latest question file to context: ./question/question(3).txt
+DEBUG: Listing all files in ./answer:
+total 20
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 16:57 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users  160 Apr 15 16:57 answer(1).txt
+-rw-r--r-- 1 bachlang364 users  219 Apr 15 16:57 answer(2).txt
+-rw-r--r-- 1 bachlang364 users  108 Apr 15 16:50 answer.txt
+Adding answer files to context:
+  Added answer file to context: ./answer/answer(1).txt
+  Added answer file to context: ./answer/answer(2).txt
+  Added answer file to context: ./answer/answer.txt
+All context arguments (10 args):
+  --context-file ./data.txt
+  --context-file ./question/question(3).txt
+  --context-file ./answer/answer(1).txt
+  --context-file ./answer/answer(2).txt
+  --context-file ./answer/answer.txt
+Executing Cody chat command...
+Command to execute: cody chat --silent --model "google::v1::gemini-2.0-flash" [context_args] --message "[Prompt from ./prompt.txt]"
+- Logging in
+(node:50829) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Noxide Loader: Loading noxide library
+DelegatingProxy: Loaded 154 CA certs from noxide
+✔ Gemini 2.0 Flash (58 tokens/second)
+Cody chat command executed successfully.
+Câu trả lời đã được lưu vào: ./answer/answer(3).txt
+Output saved to: ./answer/answer(3).txt
+Script finished at: Tue Apr 15 04:58:17 PM +07 2025
+==================================================
+
+==================================================
+Script started at: Tue Apr 15 05:06:21 PM +07 2025
+Checked/Created directories: ./question, ./answer
+Model read from ./model.txt: google::v1::gemini-2.0-flash
+Prompt read from ./prompt.txt
+Base answer file ./answer/answer.txt does not exist. Using it as the answer file.
+Adding data file to context args: ./data.txt
+DEBUG: Listing all files in ./question:
+total 8
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 17:06 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+Finding latest question file for context:
+  WARNING: No question file found to add to context!
+DEBUG: Listing all files in ./answer:
+total 8
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 17:06 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+Adding answer files to context:
+All context arguments (2 args):
+  --context-file ./data.txt
+Executing Cody chat command...
+Command to execute: cody chat --silent --model "google::v1::gemini-2.0-flash" [context_args] --message "[Prompt from ./prompt.txt]"
+- Logging in
+(node:52064) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Noxide Loader: Loading noxide library
+DelegatingProxy: Loaded 154 CA certs from noxide
+✔ Gemini 2.0 Flash (48 tokens/second)
+Cody chat command executed successfully.
+Câu trả lời đã được lưu vào: ./answer/answer.txt
+Output saved to: ./answer/answer.txt
+Script finished at: Tue Apr 15 05:06:26 PM +07 2025
+==================================================
+
+==================================================
+Script started at: Tue Apr 15 05:06:26 PM +07 2025
+Checked/Created directories: ./question, ./answer
+Model read from ./model.txt: google::v1::gemini-2.0-flash
+Prompt read from ./prompt.txt
+Base answer file ./answer/answer.txt exists. Found max count: 0. Next answer file will be: ./answer/answer(1).txt
+Adding data file to context args: ./data.txt
+DEBUG: Listing all files in ./question:
+total 12
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 17:06 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users    9 Apr 15 17:06 question(1).txt
+Finding latest question file for context:
+  Added latest question file to context: ./question/question(1).txt
+DEBUG: Listing all files in ./answer:
+total 12
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 17:06 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users  178 Apr 15 17:06 answer.txt
+Adding answer files to context:
+  Added answer file to context: ./answer/answer.txt
+All context arguments (6 args):
+  --context-file ./data.txt
+  --context-file ./question/question(1).txt
+  --context-file ./answer/answer.txt
+Executing Cody chat command...
+Command to execute: cody chat --silent --model "google::v1::gemini-2.0-flash" [context_args] --message "[Prompt from ./prompt.txt]"
+- Logging in
+(node:52115) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Noxide Loader: Loading noxide library
+DelegatingProxy: Loaded 154 CA certs from noxide
+✔ Gemini 2.0 Flash (51 tokens/second)
+Cody chat command executed successfully.
+Câu trả lời đã được lưu vào: ./answer/answer(1).txt
+Output saved to: ./answer/answer(1).txt
+Script finished at: Tue Apr 15 05:06:31 PM +07 2025
+==================================================
+
+==================================================
+Script started at: Tue Apr 15 05:06:50 PM +07 2025
+Checked/Created directories: ./question, ./answer
+Model read from ./model.txt: google::v1::gemini-2.0-flash
+Prompt read from ./prompt.txt
+Base answer file ./answer/answer.txt exists. Found max count: 1. Next answer file will be: ./answer/answer(2).txt
+Adding data file to context args: ./data.txt
+DEBUG: Listing all files in ./question:
+total 16
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 17:06 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users    9 Apr 15 17:06 question(1).txt
+-rw-r--r-- 1 bachlang364 users   48 Apr 15 17:06 question(2).txt
+Finding latest question file for context:
+  Added latest question file to context: ./question/question(2).txt
+DEBUG: Listing all files in ./answer:
+total 16
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 17:06 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users  178 Apr 15 17:06 answer(1).txt
+-rw-r--r-- 1 bachlang364 users  178 Apr 15 17:06 answer.txt
+Adding answer files to context:
+  Added answer file to context: ./answer/answer(1).txt
+  Added answer file to context: ./answer/answer.txt
+All context arguments (8 args):
+  --context-file ./data.txt
+  --context-file ./question/question(2).txt
+  --context-file ./answer/answer(1).txt
+  --context-file ./answer/answer.txt
+Executing Cody chat command...
+Command to execute: cody chat --silent --model "google::v1::gemini-2.0-flash" [context_args] --message "[Prompt from ./prompt.txt]"
+- Logging in
+(node:52541) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Noxide Loader: Loading noxide library
+DelegatingProxy: Loaded 154 CA certs from noxide
+✔ Gemini 2.0 Flash (97 tokens/second)
+Cody chat command executed successfully.
+Câu trả lời đã được lưu vào: ./answer/answer(2).txt
+Output saved to: ./answer/answer(2).txt
+Script finished at: Tue Apr 15 05:06:56 PM +07 2025
+==================================================
+
+==================================================
+Script started at: Tue Apr 15 05:07:27 PM +07 2025
+Checked/Created directories: ./question, ./answer
+Model read from ./model.txt: google::v1::gemini-2.0-flash
+Prompt read from ./prompt.txt
+Base answer file ./answer/answer.txt exists. Found max count: 2. Next answer file will be: ./answer/answer(3).txt
+Adding data file to context args: ./data.txt
+DEBUG: Listing all files in ./question:
+total 20
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 17:07 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users    9 Apr 15 17:06 question(1).txt
+-rw-r--r-- 1 bachlang364 users   48 Apr 15 17:06 question(2).txt
+-rw-r--r-- 1 bachlang364 users   99 Apr 15 17:07 question(3).txt
+Finding latest question file for context:
+  Added latest question file to context: ./question/question(3).txt
+DEBUG: Listing all files in ./answer:
+total 20
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 17:06 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users  178 Apr 15 17:06 answer(1).txt
+-rw-r--r-- 1 bachlang364 users  472 Apr 15 17:06 answer(2).txt
+-rw-r--r-- 1 bachlang364 users  178 Apr 15 17:06 answer.txt
+Adding answer files to context:
+  Added answer file to context: ./answer/answer(1).txt
+  Added answer file to context: ./answer/answer(2).txt
+  Added answer file to context: ./answer/answer.txt
+All context arguments (10 args):
+  --context-file ./data.txt
+  --context-file ./question/question(3).txt
+  --context-file ./answer/answer(1).txt
+  --context-file ./answer/answer(2).txt
+  --context-file ./answer/answer.txt
+Executing Cody chat command...
+Command to execute: cody chat --silent --model "google::v1::gemini-2.0-flash" [context_args] --message "[Prompt from ./prompt.txt]"
+- Logging in
+(node:53576) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Noxide Loader: Loading noxide library
+DelegatingProxy: Loaded 154 CA certs from noxide
+✔ Gemini 2.0 Flash (98 tokens/second)
+Cody chat command executed successfully.
+Câu trả lời đã được lưu vào: ./answer/answer(3).txt
+Output saved to: ./answer/answer(3).txt
+Script finished at: Tue Apr 15 05:07:32 PM +07 2025
+==================================================
+
+==================================================
+Script started at: Tue Apr 15 05:23:57 PM +07 2025
+Checked/Created directories: ./question, ./answer
+Model read from ./model.txt: google::v1::gemini-2.0-flash
+Prompt read from ./prompt.txt
+Base answer file ./answer/answer.txt does not exist. Using it as the answer file.
+Adding data file to context args: ./data.txt
+DEBUG: Listing all files in ./question:
+total 8
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 17:23 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+Finding latest question file for context:
+  WARNING: No question file found to add to context!
+DEBUG: Listing all files in ./answer:
+total 8
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 17:23 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+Adding answer files to context:
+All context arguments (2 args):
+  --context-file ./data.txt
+Executing Cody chat command...
+Command to execute: cody chat --silent --model "google::v1::gemini-2.0-flash" [context_args] --message "[Prompt from ./prompt.txt]"
+- Logging in
+(node:55975) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Noxide Loader: Loading noxide library
+DelegatingProxy: Loaded 154 CA certs from noxide
+Uncaught exception: AbortError2: The user aborted a request.
+    at abort3 (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:47863:23)
+    at AbortSignal.abortAndFinalize2 (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:47877:11)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:827:20)
+    at AbortSignal.dispatchEvent (node:internal/event_target:762:26)
+    at runAbort (node:internal/abort_controller:426:10)
+    at abortSignal (node:internal/abort_controller:412:3)
+    at AbortController.abort (node:internal/abort_controller:444:5)
+    at AbortSignal.abortHandler (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:51788:19)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:827:20)
+    at AbortSignal.dispatchEvent (node:internal/event_target:762:26)
+    at runAbort (node:internal/abort_controller:426:10)
+    at abortSignal (node:internal/abort_controller:412:3)
+    at AbortController.abort (node:internal/abort_controller:444:5)
+    at AbortAggregator.abort (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:53628:25)
+    at GraphQLResultCache.invalidate (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:53704:22)
+    at Object.next (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:53645:21) {
+  type: 'aborted'
+}
+Uncaught exception: AbortError2: The user aborted a request.
+    at abort3 (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:47863:23)
+    at AbortSignal.abortAndFinalize2 (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:47877:11)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:827:20)
+    at AbortSignal.dispatchEvent (node:internal/event_target:762:26)
+    at runAbort (node:internal/abort_controller:426:10)
+    at abortSignal (node:internal/abort_controller:412:3)
+    at AbortController.abort (node:internal/abort_controller:444:5)
+    at AbortSignal.abortHandler (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:51788:19)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:827:20)
+    at AbortSignal.dispatchEvent (node:internal/event_target:762:26)
+    at runAbort (node:internal/abort_controller:426:10)
+    at abortSignal (node:internal/abort_controller:412:3)
+    at AbortController.abort (node:internal/abort_controller:444:5)
+    at AbortAggregator.abort (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:53628:25)
+    at GraphQLResultCache.invalidate (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:53704:22)
+    at Object.next (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:53645:21) {
+  type: 'aborted'
+}
+✔ Gemini 2.0 Flash (64 tokens/second)
+Cody chat command executed successfully.
+Câu trả lời đã được lưu vào: ./answer/answer.txt
+Output saved to: ./answer/answer.txt
+Script finished at: Tue Apr 15 05:24:02 PM +07 2025
+==================================================
+
+==================================================
+Script started at: Tue Apr 15 05:24:02 PM +07 2025
+Checked/Created directories: ./question, ./answer
+Model read from ./model.txt: google::v1::gemini-2.0-flash
+Prompt read from ./prompt.txt
+Base answer file ./answer/answer.txt exists. Found max count: 0. Next answer file will be: ./answer/answer(1).txt
+Adding data file to context args: ./data.txt
+DEBUG: Listing all files in ./question:
+total 12
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 17:24 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users    9 Apr 15 17:24 question(1).txt
+Finding latest question file for context:
+  Added latest question file to context: ./question/question(1).txt
+DEBUG: Listing all files in ./answer:
+total 12
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 17:23 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users  233 Apr 15 17:24 answer.txt
+Adding answer files to context:
+  Added answer file to context: ./answer/answer.txt
+All context arguments (6 args):
+  --context-file ./data.txt
+  --context-file ./question/question(1).txt
+  --context-file ./answer/answer.txt
+Executing Cody chat command...
+Command to execute: cody chat --silent --model "google::v1::gemini-2.0-flash" [context_args] --message "[Prompt from ./prompt.txt]"
+- Logging in
+(node:56025) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Noxide Loader: Loading noxide library
+DelegatingProxy: Loaded 154 CA certs from noxide
+✔ Gemini 2.0 Flash (68 tokens/second)
+Cody chat command executed successfully.
+Câu trả lời đã được lưu vào: ./answer/answer(1).txt
+Output saved to: ./answer/answer(1).txt
+Script finished at: Tue Apr 15 05:24:07 PM +07 2025
+==================================================
+
+==================================================
+Script started at: Tue Apr 15 05:24:30 PM +07 2025
+Checked/Created directories: ./question, ./answer
+Model read from ./model.txt: google::v1::gemini-2.0-flash
+Prompt read from ./prompt.txt
+Base answer file ./answer/answer.txt exists. Found max count: 1. Next answer file will be: ./answer/answer(2).txt
+Adding data file to context args: ./data.txt
+DEBUG: Listing all files in ./question:
+total 16
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 17:24 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users    9 Apr 15 17:24 question(1).txt
+-rw-r--r-- 1 bachlang364 users   47 Apr 15 17:24 question(2).txt
+Finding latest question file for context:
+  Added latest question file to context: ./question/question(2).txt
+DEBUG: Listing all files in ./answer:
+total 16
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 17:24 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users  233 Apr 15 17:24 answer(1).txt
+-rw-r--r-- 1 bachlang364 users  233 Apr 15 17:24 answer.txt
+Adding answer files to context:
+  Added answer file to context: ./answer/answer(1).txt
+  Added answer file to context: ./answer/answer.txt
+All context arguments (8 args):
+  --context-file ./data.txt
+  --context-file ./question/question(2).txt
+  --context-file ./answer/answer(1).txt
+  --context-file ./answer/answer.txt
+Executing Cody chat command...
+Command to execute: cody chat --silent --model "google::v1::gemini-2.0-flash" [context_args] --message "[Prompt from ./prompt.txt]"
+- Logging in
+(node:56691) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Noxide Loader: Loading noxide library
+DelegatingProxy: Loaded 154 CA certs from noxide
+✔ Gemini 2.0 Flash (117 tokens/second)
+Cody chat command executed successfully.
+Câu trả lời đã được lưu vào: ./answer/answer(2).txt
+Output saved to: ./answer/answer(2).txt
+Script finished at: Tue Apr 15 05:24:35 PM +07 2025
+==================================================
+
+==================================================
+Script started at: Tue Apr 15 05:25:03 PM +07 2025
+Checked/Created directories: ./question, ./answer
+Model read from ./model.txt: google::v1::gemini-2.0-flash
+Prompt read from ./prompt.txt
+Base answer file ./answer/answer.txt exists. Found max count: 2. Next answer file will be: ./answer/answer(3).txt
+Adding data file to context args: ./data.txt
+DEBUG: Listing all files in ./question:
+total 20
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 17:25 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users    9 Apr 15 17:24 question(1).txt
+-rw-r--r-- 1 bachlang364 users   47 Apr 15 17:24 question(2).txt
+-rw-r--r-- 1 bachlang364 users  120 Apr 15 17:25 question(3).txt
+Finding latest question file for context:
+  Added latest question file to context: ./question/question(3).txt
+DEBUG: Listing all files in ./answer:
+total 20
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 17:24 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users  233 Apr 15 17:24 answer(1).txt
+-rw-r--r-- 1 bachlang364 users  575 Apr 15 17:24 answer(2).txt
+-rw-r--r-- 1 bachlang364 users  233 Apr 15 17:24 answer.txt
+Adding answer files to context:
+  Added answer file to context: ./answer/answer(1).txt
+  Added answer file to context: ./answer/answer(2).txt
+  Added answer file to context: ./answer/answer.txt
+All context arguments (10 args):
+  --context-file ./data.txt
+  --context-file ./question/question(3).txt
+  --context-file ./answer/answer(1).txt
+  --context-file ./answer/answer(2).txt
+  --context-file ./answer/answer.txt
+Executing Cody chat command...
+Command to execute: cody chat --silent --model "google::v1::gemini-2.0-flash" [context_args] --message "[Prompt from ./prompt.txt]"
+- Logging in
+(node:57183) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Noxide Loader: Loading noxide library
+DelegatingProxy: Loaded 154 CA certs from noxide
+✔ Gemini 2.0 Flash (76 tokens/second)
+Cody chat command executed successfully.
+Câu trả lời đã được lưu vào: ./answer/answer(3).txt
+Output saved to: ./answer/answer(3).txt
+Script finished at: Tue Apr 15 05:25:08 PM +07 2025
+==================================================
+
+==================================================
+Script started at: Tue Apr 15 05:25:35 PM +07 2025
+Checked/Created directories: ./question, ./answer
+Model read from ./model.txt: google::v1::gemini-2.0-flash
+Prompt read from ./prompt.txt
+Base answer file ./answer/answer.txt exists. Found max count: 3. Next answer file will be: ./answer/answer(4).txt
+Adding data file to context args: ./data.txt
+DEBUG: Listing all files in ./question:
+total 24
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 17:25 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users    9 Apr 15 17:24 question(1).txt
+-rw-r--r-- 1 bachlang364 users   47 Apr 15 17:24 question(2).txt
+-rw-r--r-- 1 bachlang364 users  120 Apr 15 17:25 question(3).txt
+-rw-r--r-- 1 bachlang364 users   44 Apr 15 17:25 question(4).txt
+Finding latest question file for context:
+  Added latest question file to context: ./question/question(4).txt
+DEBUG: Listing all files in ./answer:
+total 24
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 17:25 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users  233 Apr 15 17:24 answer(1).txt
+-rw-r--r-- 1 bachlang364 users  575 Apr 15 17:24 answer(2).txt
+-rw-r--r-- 1 bachlang364 users  379 Apr 15 17:25 answer(3).txt
+-rw-r--r-- 1 bachlang364 users  233 Apr 15 17:24 answer.txt
+Adding answer files to context:
+  Added answer file to context: ./answer/answer(1).txt
+  Added answer file to context: ./answer/answer(2).txt
+  Added answer file to context: ./answer/answer(3).txt
+  Added answer file to context: ./answer/answer.txt
+All context arguments (12 args):
+  --context-file ./data.txt
+  --context-file ./question/question(4).txt
+  --context-file ./answer/answer(1).txt
+  --context-file ./answer/answer(2).txt
+  --context-file ./answer/answer(3).txt
+  --context-file ./answer/answer.txt
+Executing Cody chat command...
+Command to execute: cody chat --silent --model "google::v1::gemini-2.0-flash" [context_args] --message "[Prompt from ./prompt.txt]"
+- Logging in
+(node:57760) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Noxide Loader: Loading noxide library
+DelegatingProxy: Loaded 154 CA certs from noxide
+✔ Gemini 2.0 Flash (101 tokens/second)
+Cody chat command executed successfully.
+Câu trả lời đã được lưu vào: ./answer/answer(4).txt
+Output saved to: ./answer/answer(4).txt
+Script finished at: Tue Apr 15 05:25:41 PM +07 2025
+==================================================
+
+==================================================
+Script started at: Tue Apr 15 05:29:04 PM +07 2025
+Checked/Created directories: ./question, ./answer
+Model read from ./model.txt: google::v1::gemini-2.0-flash
+Prompt read from ./prompt.txt
+Base answer file ./answer/answer.txt does not exist. Using it as the answer file.
+Adding data file to context args: ./data.txt
+DEBUG: Listing all files in ./question:
+total 8
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 17:28 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+Finding latest question file for context:
+  WARNING: No question file found to add to context!
+DEBUG: Listing all files in ./answer:
+total 8
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 17:28 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+Adding answer files to context:
+All context arguments (2 args):
+  --context-file ./data.txt
+Executing Cody chat command...
+Command to execute: cody chat --silent --model "google::v1::gemini-2.0-flash" [context_args] --message "[Prompt from ./prompt.txt]"
+- Logging in
+(node:58800) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Noxide Loader: Loading noxide library
+DelegatingProxy: Loaded 154 CA certs from noxide
+✔ Gemini 2.0 Flash (98 tokens/second)
+Cody chat command executed successfully.
+Câu trả lời đã được lưu vào: ./answer/answer.txt
+Output saved to: ./answer/answer.txt
+Script finished at: Tue Apr 15 05:29:10 PM +07 2025
+==================================================
+
+==================================================
+Script started at: Tue Apr 15 05:29:10 PM +07 2025
+Checked/Created directories: ./question, ./answer
+Model read from ./model.txt: google::v1::gemini-2.0-flash
+Prompt read from ./prompt.txt
+Base answer file ./answer/answer.txt exists. Found max count: 0. Next answer file will be: ./answer/answer(1).txt
+Adding data file to context args: ./data.txt
+DEBUG: Listing all files in ./question:
+total 12
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 17:29 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users   15 Apr 15 17:29 question(1).txt
+Finding latest question file for context:
+  Added latest question file to context: ./question/question(1).txt
+DEBUG: Listing all files in ./answer:
+total 12
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 17:29 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users  621 Apr 15 17:29 answer.txt
+Adding answer files to context:
+  Added answer file to context: ./answer/answer.txt
+All context arguments (6 args):
+  --context-file ./data.txt
+  --context-file ./question/question(1).txt
+  --context-file ./answer/answer.txt
+Executing Cody chat command...
+Command to execute: cody chat --silent --model "google::v1::gemini-2.0-flash" [context_args] --message "[Prompt from ./prompt.txt]"
+- Logging in
+(node:58852) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Noxide Loader: Loading noxide library
+DelegatingProxy: Loaded 154 CA certs from noxide
+✔ Gemini 2.0 Flash (40 tokens/second)
+Cody chat command executed successfully.
+Câu trả lời đã được lưu vào: ./answer/answer(1).txt
+Output saved to: ./answer/answer(1).txt
+Script finished at: Tue Apr 15 05:29:15 PM +07 2025
+==================================================
+
+==================================================
+Script started at: Tue Apr 15 05:29:38 PM +07 2025
+Checked/Created directories: ./question, ./answer
+Model read from ./model.txt: google::v1::gemini-2.0-flash
+Prompt read from ./prompt.txt
+Base answer file ./answer/answer.txt exists. Found max count: 1. Next answer file will be: ./answer/answer(2).txt
+Adding data file to context args: ./data.txt
+DEBUG: Listing all files in ./question:
+total 16
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 17:29 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users   15 Apr 15 17:29 question(1).txt
+-rw-r--r-- 1 bachlang364 users   48 Apr 15 17:29 question(2).txt
+Finding latest question file for context:
+  Added latest question file to context: ./question/question(2).txt
+DEBUG: Listing all files in ./answer:
+total 16
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 17:29 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users  130 Apr 15 17:29 answer(1).txt
+-rw-r--r-- 1 bachlang364 users  621 Apr 15 17:29 answer.txt
+Adding answer files to context:
+  Added answer file to context: ./answer/answer(1).txt
+  Added answer file to context: ./answer/answer.txt
+All context arguments (8 args):
+  --context-file ./data.txt
+  --context-file ./question/question(2).txt
+  --context-file ./answer/answer(1).txt
+  --context-file ./answer/answer.txt
+Executing Cody chat command...
+Command to execute: cody chat --silent --model "google::v1::gemini-2.0-flash" [context_args] --message "[Prompt from ./prompt.txt]"
+- Logging in
+(node:59568) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Noxide Loader: Loading noxide library
+DelegatingProxy: Loaded 154 CA certs from noxide
+✔ Gemini 2.0 Flash (107 tokens/second)
+Cody chat command executed successfully.
+Câu trả lời đã được lưu vào: ./answer/answer(2).txt
+Output saved to: ./answer/answer(2).txt
+Script finished at: Tue Apr 15 05:29:43 PM +07 2025
+==================================================
+
+==================================================
+Script started at: Tue Apr 15 05:30:07 PM +07 2025
+Checked/Created directories: ./question, ./answer
+Model read from ./model.txt: google::v1::gemini-2.0-flash
+Prompt read from ./prompt.txt
+Base answer file ./answer/answer.txt exists. Found max count: 2. Next answer file will be: ./answer/answer(3).txt
+Adding data file to context args: ./data.txt
+DEBUG: Listing all files in ./question:
+total 20
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 17:30 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users   15 Apr 15 17:29 question(1).txt
+-rw-r--r-- 1 bachlang364 users   48 Apr 15 17:29 question(2).txt
+-rw-r--r-- 1 bachlang364 users  106 Apr 15 17:30 question(3).txt
+Finding latest question file for context:
+  Added latest question file to context: ./question/question(3).txt
+DEBUG: Listing all files in ./answer:
+total 20
+drwxr-xr-x 2 bachlang364 users 4096 Apr 15 17:29 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users  130 Apr 15 17:29 answer(1).txt
+-rw-r--r-- 1 bachlang364 users  531 Apr 15 17:29 answer(2).txt
+-rw-r--r-- 1 bachlang364 users  621 Apr 15 17:29 answer.txt
+Adding answer files to context:
+  Added answer file to context: ./answer/answer(1).txt
+  Added answer file to context: ./answer/answer(2).txt
+  Added answer file to context: ./answer/answer.txt
+All context arguments (10 args):
+  --context-file ./data.txt
+  --context-file ./question/question(3).txt
+  --context-file ./answer/answer(1).txt
+  --context-file ./answer/answer(2).txt
+  --context-file ./answer/answer.txt
+Executing Cody chat command...
+Command to execute: cody chat --silent --model "google::v1::gemini-2.0-flash" [context_args] --message "[Prompt from ./prompt.txt]"
+- Logging in
+(node:60065) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Noxide Loader: Loading noxide library
+DelegatingProxy: Loaded 154 CA certs from noxide
+Uncaught exception: AbortError2: The user aborted a request.
+    at abort3 (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:47863:23)
+    at AbortSignal.abortAndFinalize2 (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:47877:11)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:827:20)
+    at AbortSignal.dispatchEvent (node:internal/event_target:762:26)
+    at runAbort (node:internal/abort_controller:426:10)
+    at abortSignal (node:internal/abort_controller:412:3)
+    at AbortController.abort (node:internal/abort_controller:444:5)
+    at AbortSignal.abortHandler (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:51788:19)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:827:20)
+    at AbortSignal.dispatchEvent (node:internal/event_target:762:26)
+    at runAbort (node:internal/abort_controller:426:10)
+    at abortSignal (node:internal/abort_controller:412:3)
+    at AbortController.abort (node:internal/abort_controller:444:5)
+    at AbortAggregator.abort (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:53628:25)
+    at GraphQLResultCache.invalidate (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:53704:22)
+    at Object.next (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:53645:21) {
+  type: 'aborted'
+}
+Uncaught exception: AbortError2: The user aborted a request.
+    at abort3 (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:47863:23)
+    at AbortSignal.abortAndFinalize2 (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:47877:11)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:827:20)
+    at AbortSignal.dispatchEvent (node:internal/event_target:762:26)
+    at runAbort (node:internal/abort_controller:426:10)
+    at abortSignal (node:internal/abort_controller:412:3)
+    at AbortController.abort (node:internal/abort_controller:444:5)
+    at AbortSignal.abortHandler (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:51788:19)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:827:20)
+    at AbortSignal.dispatchEvent (node:internal/event_target:762:26)
+    at runAbort (node:internal/abort_controller:426:10)
+    at abortSignal (node:internal/abort_controller:412:3)
+    at AbortController.abort (node:internal/abort_controller:444:5)
+    at AbortAggregator.abort (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:53628:25)
+    at GraphQLResultCache.invalidate (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:53704:22)
+    at Object.next (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:53645:21) {
+  type: 'aborted'
+}
+✔ Gemini 2.0 Flash (123 tokens/second)
+Cody chat command executed successfully.
+Câu trả lời đã được lưu vào: ./answer/answer(3).txt
+Output saved to: ./answer/answer(3).txt
+Script finished at: Tue Apr 15 05:30:12 PM +07 2025
+==================================================
+
+==================================================
+Script started at: Wed Apr 16 08:53:28 PM +07 2025
+Checked/Created directories: ./question, ./answer
+Model read from ./model.txt: openai::2024-02-01::gpt-4.1-nano
+Prompt read from ./prompt.txt
+Base answer file ./answer/answer.txt exists. Found max count: 0. Next answer file will be: ./answer/answer(1).txt
+Adding data file to context args: ./data.txt
+DEBUG: Listing all files in ./question:
+total 12
+drwxr-xr-x 2 bachlang364 users 4096 Apr 16 20:53 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users  106 Apr 16 20:53 question(1).txt
+Finding latest question file for context:
+  Added latest question file to context: ./question/question(1).txt
+DEBUG: Listing all files in ./answer:
+total 12
+drwxr-xr-x 2 bachlang364 users 4096 Apr 16 20:53 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users  621 Apr 15 17:29 answer.txt
+Adding answer files to context:
+  Added answer file to context: ./answer/answer.txt
+All context arguments (6 args):
+  --context-file ./data.txt
+  --context-file ./question/question(1).txt
+  --context-file ./answer/answer.txt
+Executing Cody chat command...
+Command to execute: cody chat --silent --model "openai::2024-02-01::gpt-4.1-nano" [context_args] --message "[Prompt from ./prompt.txt]"
+- Logging in
+(node:5511) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Noxide Loader: Loading noxide library
+DelegatingProxy: Loaded 154 CA certs from noxide
+✔ GPT-4.1-nano (70 tokens/second)
+Cody chat command executed successfully.
+Câu trả lời đã được lưu vào: ./answer/answer(1).txt
+Output saved to: ./answer/answer(1).txt
+Script finished at: Wed Apr 16 08:53:39 PM +07 2025
+==================================================
+
+==================================================
+Script started at: Wed Apr 16 08:54:31 PM +07 2025
+Checked/Created directories: ./question, ./answer
+Model read from ./model.txt: openai::2024-02-01::gpt-4.1-mini
+Prompt read from ./prompt.txt
+Base answer file ./answer/answer.txt exists. Found max count: 0. Next answer file will be: ./answer/answer(1).txt
+Adding data file to context args: ./data.txt
+DEBUG: Listing all files in ./question:
+total 16
+drwxr-xr-x 2 bachlang364 users 4096 Apr 16 20:54 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users  106 Apr 16 20:53 question(1).txt
+-rw-r--r-- 1 bachlang364 users  106 Apr 16 20:54 question(2).txt
+Finding latest question file for context:
+  Added latest question file to context: ./question/question(2).txt
+DEBUG: Listing all files in ./answer:
+total 12
+drwxr-xr-x 2 bachlang364 users 4096 Apr 16 20:53 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users  621 Apr 15 17:29 answer.txt
+Adding answer files to context:
+  Added answer file to context: ./answer/answer.txt
+All context arguments (6 args):
+  --context-file ./data.txt
+  --context-file ./question/question(2).txt
+  --context-file ./answer/answer.txt
+Executing Cody chat command...
+Command to execute: cody chat --silent --model "openai::2024-02-01::gpt-4.1-mini" [context_args] --message "[Prompt from ./prompt.txt]"
+- Logging in
+(node:5893) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Noxide Loader: Loading noxide library
+DelegatingProxy: Loaded 154 CA certs from noxide
+✔ GPT-4.1-mini (57 tokens/second)
+Cody chat command executed successfully.
+Câu trả lời đã được lưu vào: ./answer/answer(1).txt
+Output saved to: ./answer/answer(1).txt
+Script finished at: Wed Apr 16 08:54:41 PM +07 2025
+==================================================
+
+==================================================
+Script started at: Wed Apr 16 08:54:46 PM +07 2025
+Checked/Created directories: ./question, ./answer
+Model read from ./model.txt: openai::2024-02-01::gpt-4.1-mini
+Prompt read from ./prompt.txt
+Base answer file ./answer/answer.txt exists. Found max count: 0. Next answer file will be: ./answer/answer(1).txt
+Adding data file to context args: ./data.txt
+DEBUG: Listing all files in ./question:
+total 12
+drwxr-xr-x 2 bachlang364 users 4096 Apr 16 20:54 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users  106 Apr 16 20:54 question(1).txt
+Finding latest question file for context:
+  Added latest question file to context: ./question/question(1).txt
+DEBUG: Listing all files in ./answer:
+total 12
+drwxr-xr-x 2 bachlang364 users 4096 Apr 16 20:54 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users  621 Apr 15 17:29 answer.txt
+Adding answer files to context:
+  Added answer file to context: ./answer/answer.txt
+All context arguments (6 args):
+  --context-file ./data.txt
+  --context-file ./question/question(1).txt
+  --context-file ./answer/answer.txt
+Executing Cody chat command...
+Command to execute: cody chat --silent --model "openai::2024-02-01::gpt-4.1-mini" [context_args] --message "[Prompt from ./prompt.txt]"
+- Logging in
+(node:6177) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Noxide Loader: Loading noxide library
+DelegatingProxy: Loaded 154 CA certs from noxide
+Uncaught exception: AbortError2: The user aborted a request.
+    at abort3 (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:47863:23)
+    at AbortSignal.abortAndFinalize2 (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:47877:11)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:827:20)
+    at AbortSignal.dispatchEvent (node:internal/event_target:762:26)
+    at runAbort (node:internal/abort_controller:426:10)
+    at abortSignal (node:internal/abort_controller:412:3)
+    at AbortController.abort (node:internal/abort_controller:444:5)
+    at AbortSignal.abortHandler (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:51788:19)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:827:20)
+    at AbortSignal.dispatchEvent (node:internal/event_target:762:26)
+    at runAbort (node:internal/abort_controller:426:10)
+    at abortSignal (node:internal/abort_controller:412:3)
+    at AbortController.abort (node:internal/abort_controller:444:5)
+    at AbortAggregator.abort (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:53628:25)
+    at GraphQLResultCache.invalidate (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:53704:22)
+    at Object.next (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:53645:21) {
+  type: 'aborted'
+}
+Uncaught exception: AbortError2: The user aborted a request.
+    at abort3 (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:47863:23)
+    at AbortSignal.abortAndFinalize2 (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:47877:11)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:827:20)
+    at AbortSignal.dispatchEvent (node:internal/event_target:762:26)
+    at runAbort (node:internal/abort_controller:426:10)
+    at abortSignal (node:internal/abort_controller:412:3)
+    at AbortController.abort (node:internal/abort_controller:444:5)
+    at AbortSignal.abortHandler (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:51788:19)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:827:20)
+    at AbortSignal.dispatchEvent (node:internal/event_target:762:26)
+    at runAbort (node:internal/abort_controller:426:10)
+    at abortSignal (node:internal/abort_controller:412:3)
+    at AbortController.abort (node:internal/abort_controller:444:5)
+    at AbortAggregator.abort (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:53628:25)
+    at GraphQLResultCache.invalidate (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:53704:22)
+    at Object.next (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:53645:21) {
+  type: 'aborted'
+}
+✔ GPT-4.1-mini (68 tokens/second)
+Cody chat command executed successfully.
+Câu trả lời đã được lưu vào: ./answer/answer(1).txt
+Output saved to: ./answer/answer(1).txt
+Script finished at: Wed Apr 16 08:54:57 PM +07 2025
+==================================================
+
+==================================================
+Script started at: Wed Apr 16 08:56:01 PM +07 2025
+Checked/Created directories: ./question, ./answer
+Model read from ./model.txt: openai::2024-02-01::gpt-4.1-mini
+Prompt read from ./prompt.txt
+Base answer file ./answer/answer.txt exists. Found max count: 1. Next answer file will be: ./answer/answer(2).txt
+Adding data file to context args: ./data.txt
+DEBUG: Listing all files in ./question:
+total 16
+drwxr-xr-x 2 bachlang364 users 4096 Apr 16 20:56 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users  106 Apr 16 20:54 question(1).txt
+-rw-r--r-- 1 bachlang364 users   42 Apr 16 20:56 question(2).txt
+Finding latest question file for context:
+  Added latest question file to context: ./question/question(2).txt
+DEBUG: Listing all files in ./answer:
+total 16
+drwxr-xr-x 2 bachlang364 users 4096 Apr 16 20:54 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users 1295 Apr 16 20:54 answer(1).txt
+-rw-r--r-- 1 bachlang364 users  621 Apr 15 17:29 answer.txt
+Adding answer files to context:
+  Added answer file to context: ./answer/answer(1).txt
+  Added answer file to context: ./answer/answer.txt
+All context arguments (8 args):
+  --context-file ./data.txt
+  --context-file ./question/question(2).txt
+  --context-file ./answer/answer(1).txt
+  --context-file ./answer/answer.txt
+Executing Cody chat command...
+Command to execute: cody chat --silent --model "openai::2024-02-01::gpt-4.1-mini" [context_args] --message "[Prompt from ./prompt.txt]"
+- Logging in
+(node:6915) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Noxide Loader: Loading noxide library
+DelegatingProxy: Loaded 154 CA certs from noxide
+✔ GPT-4.1-mini (69 tokens/second)
+Cody chat command executed successfully.
+Câu trả lời đã được lưu vào: ./answer/answer(2).txt
+Output saved to: ./answer/answer(2).txt
+Script finished at: Wed Apr 16 08:56:12 PM +07 2025
+==================================================
+
+==================================================
+Script started at: Wed Apr 16 08:57:07 PM +07 2025
+Checked/Created directories: ./question, ./answer
+Model read from ./model.txt: openai::2024-02-01::gpt-4.1
+Prompt read from ./prompt.txt
+Base answer file ./answer/answer.txt does not exist. Using it as the answer file.
+Adding data file to context args: ./data.txt
+DEBUG: Listing all files in ./question:
+total 8
+drwxr-xr-x 2 bachlang364 users 4096 Apr 16 20:56 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+Finding latest question file for context:
+  WARNING: No question file found to add to context!
+DEBUG: Listing all files in ./answer:
+total 8
+drwxr-xr-x 2 bachlang364 users 4096 Apr 16 20:56 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+Adding answer files to context:
+All context arguments (2 args):
+  --context-file ./data.txt
+Executing Cody chat command...
+Command to execute: cody chat --silent --model "openai::2024-02-01::gpt-4.1" [context_args] --message "[Prompt from ./prompt.txt]"
+- Logging in
+(node:7783) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Noxide Loader: Loading noxide library
+DelegatingProxy: Loaded 154 CA certs from noxide
+✔ GPT-4.1 (35 tokens/second)
+Cody chat command executed successfully.
+Câu trả lời đã được lưu vào: ./answer/answer.txt
+Output saved to: ./answer/answer.txt
+Script finished at: Wed Apr 16 08:57:13 PM +07 2025
+==================================================
+
+==================================================
+Script started at: Wed Apr 16 08:57:13 PM +07 2025
+Checked/Created directories: ./question, ./answer
+Model read from ./model.txt: openai::2024-02-01::gpt-4.1
+Prompt read from ./prompt.txt
+Base answer file ./answer/answer.txt exists. Found max count: 0. Next answer file will be: ./answer/answer(1).txt
+Adding data file to context args: ./data.txt
+DEBUG: Listing all files in ./question:
+total 12
+drwxr-xr-x 2 bachlang364 users 4096 Apr 16 20:57 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users   15 Apr 16 20:57 question(1).txt
+Finding latest question file for context:
+  Added latest question file to context: ./question/question(1).txt
+DEBUG: Listing all files in ./answer:
+total 12
+drwxr-xr-x 2 bachlang364 users 4096 Apr 16 20:57 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users  257 Apr 16 20:57 answer.txt
+Adding answer files to context:
+  Added answer file to context: ./answer/answer.txt
+All context arguments (6 args):
+  --context-file ./data.txt
+  --context-file ./question/question(1).txt
+  --context-file ./answer/answer.txt
+Executing Cody chat command...
+Command to execute: cody chat --silent --model "openai::2024-02-01::gpt-4.1" [context_args] --message "[Prompt from ./prompt.txt]"
+- Logging in
+(node:7850) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Noxide Loader: Loading noxide library
+DelegatingProxy: Loaded 154 CA certs from noxide
+✔ GPT-4.1 (38 tokens/second)
+Cody chat command executed successfully.
+Câu trả lời đã được lưu vào: ./answer/answer(1).txt
+Output saved to: ./answer/answer(1).txt
+Script finished at: Wed Apr 16 08:57:19 PM +07 2025
+==================================================
+
+==================================================
+Script started at: Wed Apr 16 08:57:48 PM +07 2025
+Checked/Created directories: ./question, ./answer
+Model read from ./model.txt: openai::2024-02-01::gpt-4.1
+Prompt read from ./prompt.txt
+Base answer file ./answer/answer.txt exists. Found max count: 1. Next answer file will be: ./answer/answer(2).txt
+Adding data file to context args: ./data.txt
+DEBUG: Listing all files in ./question:
+total 16
+drwxr-xr-x 2 bachlang364 users 4096 Apr 16 20:57 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users   15 Apr 16 20:57 question(1).txt
+-rw-r--r-- 1 bachlang364 users   41 Apr 16 20:57 question(2).txt
+Finding latest question file for context:
+  Added latest question file to context: ./question/question(2).txt
+DEBUG: Listing all files in ./answer:
+total 16
+drwxr-xr-x 2 bachlang364 users 4096 Apr 16 20:57 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users  247 Apr 16 20:57 answer(1).txt
+-rw-r--r-- 1 bachlang364 users  257 Apr 16 20:57 answer.txt
+Adding answer files to context:
+  Added answer file to context: ./answer/answer(1).txt
+  Added answer file to context: ./answer/answer.txt
+All context arguments (8 args):
+  --context-file ./data.txt
+  --context-file ./question/question(2).txt
+  --context-file ./answer/answer(1).txt
+  --context-file ./answer/answer.txt
+Executing Cody chat command...
+Command to execute: cody chat --silent --model "openai::2024-02-01::gpt-4.1" [context_args] --message "[Prompt from ./prompt.txt]"
+- Logging in
+(node:8636) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Noxide Loader: Loading noxide library
+DelegatingProxy: Loaded 154 CA certs from noxide
+✔ GPT-4.1 (35 tokens/second)
+Cody chat command executed successfully.
+Câu trả lời đã được lưu vào: ./answer/answer(2).txt
+Output saved to: ./answer/answer(2).txt
+Script finished at: Wed Apr 16 08:58:03 PM +07 2025
+==================================================
+
+==================================================
+Script started at: Wed Apr 16 08:58:45 PM +07 2025
+Checked/Created directories: ./question, ./answer
+Model read from ./model.txt: openai::2024-02-01::gpt-4.1
+Prompt read from ./prompt.txt
+Base answer file ./answer/answer.txt exists. Found max count: 2. Next answer file will be: ./answer/answer(3).txt
+Adding data file to context args: ./data.txt
+DEBUG: Listing all files in ./question:
+total 20
+drwxr-xr-x 2 bachlang364 users 4096 Apr 16 20:58 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users   15 Apr 16 20:57 question(1).txt
+-rw-r--r-- 1 bachlang364 users   41 Apr 16 20:57 question(2).txt
+-rw-r--r-- 1 bachlang364 users   88 Apr 16 20:58 question(3).txt
+Finding latest question file for context:
+  Added latest question file to context: ./question/question(3).txt
+DEBUG: Listing all files in ./answer:
+total 20
+drwxr-xr-x 2 bachlang364 users 4096 Apr 16 20:57 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users  247 Apr 16 20:57 answer(1).txt
+-rw-r--r-- 1 bachlang364 users  747 Apr 16 20:58 answer(2).txt
+-rw-r--r-- 1 bachlang364 users  257 Apr 16 20:57 answer.txt
+Adding answer files to context:
+  Added answer file to context: ./answer/answer(1).txt
+  Added answer file to context: ./answer/answer(2).txt
+  Added answer file to context: ./answer/answer.txt
+All context arguments (10 args):
+  --context-file ./data.txt
+  --context-file ./question/question(3).txt
+  --context-file ./answer/answer(1).txt
+  --context-file ./answer/answer(2).txt
+  --context-file ./answer/answer.txt
+Executing Cody chat command...
+Command to execute: cody chat --silent --model "openai::2024-02-01::gpt-4.1" [context_args] --message "[Prompt from ./prompt.txt]"
+- Logging in
+(node:10089) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Noxide Loader: Loading noxide library
+DelegatingProxy: Loaded 154 CA certs from noxide
+Uncaught exception: AbortError2: The user aborted a request.
+    at abort3 (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:47863:23)
+    at AbortSignal.abortAndFinalize2 (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:47877:11)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:827:20)
+    at AbortSignal.dispatchEvent (node:internal/event_target:762:26)
+    at runAbort (node:internal/abort_controller:426:10)
+    at abortSignal (node:internal/abort_controller:412:3)
+    at AbortController.abort (node:internal/abort_controller:444:5)
+    at AbortSignal.abortHandler (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:51788:19)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:827:20)
+    at AbortSignal.dispatchEvent (node:internal/event_target:762:26)
+    at runAbort (node:internal/abort_controller:426:10)
+    at abortSignal (node:internal/abort_controller:412:3)
+    at AbortController.abort (node:internal/abort_controller:444:5)
+    at AbortAggregator.abort (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:53628:25)
+    at GraphQLResultCache.invalidate (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:53704:22)
+    at Object.next (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:53645:21) {
+  type: 'aborted'
+}
+Uncaught exception: AbortError2: The user aborted a request.
+    at abort3 (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:47863:23)
+    at AbortSignal.abortAndFinalize2 (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:47877:11)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:827:20)
+    at AbortSignal.dispatchEvent (node:internal/event_target:762:26)
+    at runAbort (node:internal/abort_controller:426:10)
+    at abortSignal (node:internal/abort_controller:412:3)
+    at AbortController.abort (node:internal/abort_controller:444:5)
+    at AbortSignal.abortHandler (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:51788:19)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:827:20)
+    at AbortSignal.dispatchEvent (node:internal/event_target:762:26)
+    at runAbort (node:internal/abort_controller:426:10)
+    at abortSignal (node:internal/abort_controller:412:3)
+    at AbortController.abort (node:internal/abort_controller:444:5)
+    at AbortAggregator.abort (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:53628:25)
+    at GraphQLResultCache.invalidate (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:53704:22)
+    at Object.next (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:53645:21) {
+  type: 'aborted'
+}
+✔ GPT-4.1 (28 tokens/second)
+Cody chat command executed successfully.
+Câu trả lời đã được lưu vào: ./answer/answer(3).txt
+Output saved to: ./answer/answer(3).txt
+Script finished at: Wed Apr 16 08:59:01 PM +07 2025
+==================================================
+
+==================================================
+Script started at: Wed Apr 16 08:59:35 PM +07 2025
+Checked/Created directories: ./question, ./answer
+Model read from ./model.txt: openai::2024-02-01::gpt-4.1
+Prompt read from ./prompt.txt
+Base answer file ./answer/answer.txt exists. Found max count: 3. Next answer file will be: ./answer/answer(4).txt
+Adding data file to context args: ./data.txt
+DEBUG: Listing all files in ./question:
+total 24
+drwxr-xr-x 2 bachlang364 users 4096 Apr 16 20:59 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users   15 Apr 16 20:57 question(1).txt
+-rw-r--r-- 1 bachlang364 users   41 Apr 16 20:57 question(2).txt
+-rw-r--r-- 1 bachlang364 users   88 Apr 16 20:58 question(3).txt
+-rw-r--r-- 1 bachlang364 users   58 Apr 16 20:59 question(4).txt
+Finding latest question file for context:
+  Added latest question file to context: ./question/question(4).txt
+DEBUG: Listing all files in ./answer:
+total 24
+drwxr-xr-x 2 bachlang364 users 4096 Apr 16 20:58 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users  247 Apr 16 20:57 answer(1).txt
+-rw-r--r-- 1 bachlang364 users  747 Apr 16 20:58 answer(2).txt
+-rw-r--r-- 1 bachlang364 users  890 Apr 16 20:59 answer(3).txt
+-rw-r--r-- 1 bachlang364 users  257 Apr 16 20:57 answer.txt
+Adding answer files to context:
+  Added answer file to context: ./answer/answer(1).txt
+  Added answer file to context: ./answer/answer(2).txt
+  Added answer file to context: ./answer/answer(3).txt
+  Added answer file to context: ./answer/answer.txt
+All context arguments (12 args):
+  --context-file ./data.txt
+  --context-file ./question/question(4).txt
+  --context-file ./answer/answer(1).txt
+  --context-file ./answer/answer(2).txt
+  --context-file ./answer/answer(3).txt
+  --context-file ./answer/answer.txt
+Executing Cody chat command...
+Command to execute: cody chat --silent --model "openai::2024-02-01::gpt-4.1" [context_args] --message "[Prompt from ./prompt.txt]"
+- Logging in
+(node:10588) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Noxide Loader: Loading noxide library
+DelegatingProxy: Loaded 154 CA certs from noxide
+✔ GPT-4.1 (73 tokens/second)
+Cody chat command executed successfully.
+Câu trả lời đã được lưu vào: ./answer/answer(4).txt
+Output saved to: ./answer/answer(4).txt
+Script finished at: Wed Apr 16 08:59:52 PM +07 2025
+==================================================
+
+==================================================
+Script started at: Wed Apr 16 09:00:47 PM +07 2025
+Checked/Created directories: ./question, ./answer
+Model read from ./model.txt: openai::2024-02-01::gpt-4.1
+Prompt read from ./prompt.txt
+Base answer file ./answer/answer.txt exists. Found max count: 4. Next answer file will be: ./answer/answer(5).txt
+Adding data file to context args: ./data.txt
+DEBUG: Listing all files in ./question:
+total 28
+drwxr-xr-x 2 bachlang364 users 4096 Apr 16 21:00 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users   15 Apr 16 20:57 question(1).txt
+-rw-r--r-- 1 bachlang364 users   41 Apr 16 20:57 question(2).txt
+-rw-r--r-- 1 bachlang364 users   88 Apr 16 20:58 question(3).txt
+-rw-r--r-- 1 bachlang364 users   58 Apr 16 20:59 question(4).txt
+-rw-r--r-- 1 bachlang364 users   61 Apr 16 21:00 question(5).txt
+Finding latest question file for context:
+  Added latest question file to context: ./question/question(5).txt
+DEBUG: Listing all files in ./answer:
+total 28
+drwxr-xr-x 2 bachlang364 users 4096 Apr 16 20:59 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users  247 Apr 16 20:57 answer(1).txt
+-rw-r--r-- 1 bachlang364 users  747 Apr 16 20:58 answer(2).txt
+-rw-r--r-- 1 bachlang364 users  890 Apr 16 20:59 answer(3).txt
+-rw-r--r-- 1 bachlang364 users 1458 Apr 16 20:59 answer(4).txt
+-rw-r--r-- 1 bachlang364 users  257 Apr 16 20:57 answer.txt
+Adding answer files to context:
+  Added answer file to context: ./answer/answer(1).txt
+  Added answer file to context: ./answer/answer(2).txt
+  Added answer file to context: ./answer/answer(3).txt
+  Added answer file to context: ./answer/answer(4).txt
+  Added answer file to context: ./answer/answer.txt
+All context arguments (14 args):
+  --context-file ./data.txt
+  --context-file ./question/question(5).txt
+  --context-file ./answer/answer(1).txt
+  --context-file ./answer/answer(2).txt
+  --context-file ./answer/answer(3).txt
+  --context-file ./answer/answer(4).txt
+  --context-file ./answer/answer.txt
+Executing Cody chat command...
+Command to execute: cody chat --silent --model "openai::2024-02-01::gpt-4.1" [context_args] --message "[Prompt from ./prompt.txt]"
+- Logging in
+(node:11467) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Noxide Loader: Loading noxide library
+DelegatingProxy: Loaded 154 CA certs from noxide
+Uncaught exception: AbortError2: The user aborted a request.
+    at abort3 (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:47863:23)
+    at AbortSignal.abortAndFinalize2 (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:47877:11)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:827:20)
+    at AbortSignal.dispatchEvent (node:internal/event_target:762:26)
+    at runAbort (node:internal/abort_controller:426:10)
+    at abortSignal (node:internal/abort_controller:412:3)
+    at AbortController.abort (node:internal/abort_controller:444:5)
+    at AbortSignal.abortHandler (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:51788:19)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:827:20)
+    at AbortSignal.dispatchEvent (node:internal/event_target:762:26)
+    at runAbort (node:internal/abort_controller:426:10)
+    at abortSignal (node:internal/abort_controller:412:3)
+    at AbortController.abort (node:internal/abort_controller:444:5)
+    at AbortAggregator.abort (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:53628:25)
+    at GraphQLResultCache.invalidate (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:53704:22)
+    at Object.next (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:53645:21) {
+  type: 'aborted'
+}
+Uncaught exception: AbortError2: The user aborted a request.
+    at abort3 (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:47863:23)
+    at AbortSignal.abortAndFinalize2 (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:47877:11)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:827:20)
+    at AbortSignal.dispatchEvent (node:internal/event_target:762:26)
+    at runAbort (node:internal/abort_controller:426:10)
+    at abortSignal (node:internal/abort_controller:412:3)
+    at AbortController.abort (node:internal/abort_controller:444:5)
+    at AbortSignal.abortHandler (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:51788:19)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:827:20)
+    at AbortSignal.dispatchEvent (node:internal/event_target:762:26)
+    at runAbort (node:internal/abort_controller:426:10)
+    at abortSignal (node:internal/abort_controller:412:3)
+    at AbortController.abort (node:internal/abort_controller:444:5)
+    at AbortAggregator.abort (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:53628:25)
+    at GraphQLResultCache.invalidate (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:53704:22)
+    at Object.next (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:53645:21) {
+  type: 'aborted'
+}
+✔ GPT-4.1 (66 tokens/second)
+Cody chat command executed successfully.
+Câu trả lời đã được lưu vào: ./answer/answer(5).txt
+Output saved to: ./answer/answer(5).txt
+Script finished at: Wed Apr 16 09:00:56 PM +07 2025
+==================================================
+
+==================================================
+Script started at: Wed Apr 16 09:01:49 PM +07 2025
+Checked/Created directories: ./question, ./answer
+Model read from ./model.txt: openai::2024-02-01::gpt-4.1
+Prompt read from ./prompt.txt
+Base answer file ./answer/answer.txt exists. Found max count: 5. Next answer file will be: ./answer/answer(6).txt
+Adding data file to context args: ./data.txt
+DEBUG: Listing all files in ./question:
+total 32
+drwxr-xr-x 2 bachlang364 users 4096 Apr 16 21:01 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users   15 Apr 16 20:57 question(1).txt
+-rw-r--r-- 1 bachlang364 users   41 Apr 16 20:57 question(2).txt
+-rw-r--r-- 1 bachlang364 users   88 Apr 16 20:58 question(3).txt
+-rw-r--r-- 1 bachlang364 users   58 Apr 16 20:59 question(4).txt
+-rw-r--r-- 1 bachlang364 users   61 Apr 16 21:00 question(5).txt
+-rw-r--r-- 1 bachlang364 users   33 Apr 16 21:01 question(6).txt
+Finding latest question file for context:
+  Added latest question file to context: ./question/question(6).txt
+DEBUG: Listing all files in ./answer:
+total 32
+drwxr-xr-x 2 bachlang364 users 4096 Apr 16 21:00 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users  247 Apr 16 20:57 answer(1).txt
+-rw-r--r-- 1 bachlang364 users  747 Apr 16 20:58 answer(2).txt
+-rw-r--r-- 1 bachlang364 users  890 Apr 16 20:59 answer(3).txt
+-rw-r--r-- 1 bachlang364 users 1458 Apr 16 20:59 answer(4).txt
+-rw-r--r-- 1 bachlang364 users  860 Apr 16 21:00 answer(5).txt
+-rw-r--r-- 1 bachlang364 users  257 Apr 16 20:57 answer.txt
+Adding answer files to context:
+  Added answer file to context: ./answer/answer(1).txt
+  Added answer file to context: ./answer/answer(2).txt
+  Added answer file to context: ./answer/answer(3).txt
+  Added answer file to context: ./answer/answer(4).txt
+  Added answer file to context: ./answer/answer(5).txt
+  Added answer file to context: ./answer/answer.txt
+All context arguments (16 args):
+  --context-file ./data.txt
+  --context-file ./question/question(6).txt
+  --context-file ./answer/answer(1).txt
+  --context-file ./answer/answer(2).txt
+  --context-file ./answer/answer(3).txt
+  --context-file ./answer/answer(4).txt
+  --context-file ./answer/answer(5).txt
+  --context-file ./answer/answer.txt
+Executing Cody chat command...
+Command to execute: cody chat --silent --model "openai::2024-02-01::gpt-4.1" [context_args] --message "[Prompt from ./prompt.txt]"
+- Logging in
+(node:11977) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Noxide Loader: Loading noxide library
+DelegatingProxy: Loaded 154 CA certs from noxide
+✔ GPT-4.1 (43 tokens/second)
+Cody chat command executed successfully.
+Câu trả lời đã được lưu vào: ./answer/answer(6).txt
+Output saved to: ./answer/answer(6).txt
+Script finished at: Wed Apr 16 09:02:00 PM +07 2025
+==================================================
+
+==================================================
+Script started at: Wed Apr 16 09:02:48 PM +07 2025
+Checked/Created directories: ./question, ./answer
+Model read from ./model.txt: openai::2024-02-01::gpt-4.1
+Prompt read from ./prompt.txt
+Base answer file ./answer/answer.txt exists. Found max count: 6. Next answer file will be: ./answer/answer(7).txt
+Adding data file to context args: ./data.txt
+DEBUG: Listing all files in ./question:
+total 36
+drwxr-xr-x 2 bachlang364 users 4096 Apr 16 21:02 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users   15 Apr 16 20:57 question(1).txt
+-rw-r--r-- 1 bachlang364 users   41 Apr 16 20:57 question(2).txt
+-rw-r--r-- 1 bachlang364 users   88 Apr 16 20:58 question(3).txt
+-rw-r--r-- 1 bachlang364 users   58 Apr 16 20:59 question(4).txt
+-rw-r--r-- 1 bachlang364 users   61 Apr 16 21:00 question(5).txt
+-rw-r--r-- 1 bachlang364 users   33 Apr 16 21:01 question(6).txt
+-rw-r--r-- 1 bachlang364 users   88 Apr 16 21:02 question(7).txt
+Finding latest question file for context:
+  Added latest question file to context: ./question/question(7).txt
+DEBUG: Listing all files in ./answer:
+total 36
+drwxr-xr-x 2 bachlang364 users 4096 Apr 16 21:01 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users  247 Apr 16 20:57 answer(1).txt
+-rw-r--r-- 1 bachlang364 users  747 Apr 16 20:58 answer(2).txt
+-rw-r--r-- 1 bachlang364 users  890 Apr 16 20:59 answer(3).txt
+-rw-r--r-- 1 bachlang364 users 1458 Apr 16 20:59 answer(4).txt
+-rw-r--r-- 1 bachlang364 users  860 Apr 16 21:00 answer(5).txt
+-rw-r--r-- 1 bachlang364 users  912 Apr 16 21:02 answer(6).txt
+-rw-r--r-- 1 bachlang364 users  257 Apr 16 20:57 answer.txt
+Adding answer files to context:
+  Added answer file to context: ./answer/answer(1).txt
+  Added answer file to context: ./answer/answer(2).txt
+  Added answer file to context: ./answer/answer(3).txt
+  Added answer file to context: ./answer/answer(4).txt
+  Added answer file to context: ./answer/answer(5).txt
+  Added answer file to context: ./answer/answer(6).txt
+  Added answer file to context: ./answer/answer.txt
+All context arguments (18 args):
+  --context-file ./data.txt
+  --context-file ./question/question(7).txt
+  --context-file ./answer/answer(1).txt
+  --context-file ./answer/answer(2).txt
+  --context-file ./answer/answer(3).txt
+  --context-file ./answer/answer(4).txt
+  --context-file ./answer/answer(5).txt
+  --context-file ./answer/answer(6).txt
+  --context-file ./answer/answer.txt
+Executing Cody chat command...
+Command to execute: cody chat --silent --model "openai::2024-02-01::gpt-4.1" [context_args] --message "[Prompt from ./prompt.txt]"
+- Logging in
+(node:12842) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Noxide Loader: Loading noxide library
+DelegatingProxy: Loaded 154 CA certs from noxide
+✔ GPT-4.1 (75 tokens/second)
+Cody chat command executed successfully.
+Câu trả lời đã được lưu vào: ./answer/answer(7).txt
+Output saved to: ./answer/answer(7).txt
+Script finished at: Wed Apr 16 09:02:56 PM +07 2025
+==================================================
+
+==================================================
+Script started at: Wed Apr 16 09:03:43 PM +07 2025
+Checked/Created directories: ./question, ./answer
+Model read from ./model.txt: openai::2024-02-01::gpt-4.1
+Prompt read from ./prompt.txt
+Base answer file ./answer/answer.txt exists. Found max count: 7. Next answer file will be: ./answer/answer(8).txt
+Adding data file to context args: ./data.txt
+DEBUG: Listing all files in ./question:
+total 40
+drwxr-xr-x 2 bachlang364 users 4096 Apr 16 21:03 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users   15 Apr 16 20:57 question(1).txt
+-rw-r--r-- 1 bachlang364 users   41 Apr 16 20:57 question(2).txt
+-rw-r--r-- 1 bachlang364 users   88 Apr 16 20:58 question(3).txt
+-rw-r--r-- 1 bachlang364 users   58 Apr 16 20:59 question(4).txt
+-rw-r--r-- 1 bachlang364 users   61 Apr 16 21:00 question(5).txt
+-rw-r--r-- 1 bachlang364 users   33 Apr 16 21:01 question(6).txt
+-rw-r--r-- 1 bachlang364 users   88 Apr 16 21:02 question(7).txt
+-rw-r--r-- 1 bachlang364 users   84 Apr 16 21:03 question(8).txt
+Finding latest question file for context:
+  Added latest question file to context: ./question/question(8).txt
+DEBUG: Listing all files in ./answer:
+total 40
+drwxr-xr-x 2 bachlang364 users 4096 Apr 16 21:02 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users  247 Apr 16 20:57 answer(1).txt
+-rw-r--r-- 1 bachlang364 users  747 Apr 16 20:58 answer(2).txt
+-rw-r--r-- 1 bachlang364 users  890 Apr 16 20:59 answer(3).txt
+-rw-r--r-- 1 bachlang364 users 1458 Apr 16 20:59 answer(4).txt
+-rw-r--r-- 1 bachlang364 users  860 Apr 16 21:00 answer(5).txt
+-rw-r--r-- 1 bachlang364 users  912 Apr 16 21:02 answer(6).txt
+-rw-r--r-- 1 bachlang364 users  890 Apr 16 21:02 answer(7).txt
+-rw-r--r-- 1 bachlang364 users  257 Apr 16 20:57 answer.txt
+Adding answer files to context:
+  Added answer file to context: ./answer/answer(1).txt
+  Added answer file to context: ./answer/answer(2).txt
+  Added answer file to context: ./answer/answer(3).txt
+  Added answer file to context: ./answer/answer(4).txt
+  Added answer file to context: ./answer/answer(5).txt
+  Added answer file to context: ./answer/answer(6).txt
+  Added answer file to context: ./answer/answer(7).txt
+  Added answer file to context: ./answer/answer.txt
+All context arguments (20 args):
+  --context-file ./data.txt
+  --context-file ./question/question(8).txt
+  --context-file ./answer/answer(1).txt
+  --context-file ./answer/answer(2).txt
+  --context-file ./answer/answer(3).txt
+  --context-file ./answer/answer(4).txt
+  --context-file ./answer/answer(5).txt
+  --context-file ./answer/answer(6).txt
+  --context-file ./answer/answer(7).txt
+  --context-file ./answer/answer.txt
+Executing Cody chat command...
+Command to execute: cody chat --silent --model "openai::2024-02-01::gpt-4.1" [context_args] --message "[Prompt from ./prompt.txt]"
+- Logging in
+(node:13711) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Noxide Loader: Loading noxide library
+DelegatingProxy: Loaded 154 CA certs from noxide
+✔ GPT-4.1 (80 tokens/second)
+Cody chat command executed successfully.
+Câu trả lời đã được lưu vào: ./answer/answer(8).txt
+Output saved to: ./answer/answer(8).txt
+Script finished at: Wed Apr 16 09:03:51 PM +07 2025
+==================================================
+
+==================================================
+Script started at: Wed Apr 16 09:12:25 PM +07 2025
+Checked/Created directories: ./question, ./answer
+Model read from ./model.txt: openai::2024-02-01::gpt-4.1
+Prompt read from ./prompt.txt
+Base answer file ./answer/answer.txt exists. Found max count: 8. Next answer file will be: ./answer/answer(9).txt
+Adding data file to context args: ./data.txt
+DEBUG: Listing all files in ./question:
+total 44
+drwxr-xr-x 2 bachlang364 users 4096 Apr 16 21:12 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users   15 Apr 16 20:57 question(1).txt
+-rw-r--r-- 1 bachlang364 users   41 Apr 16 20:57 question(2).txt
+-rw-r--r-- 1 bachlang364 users   88 Apr 16 20:58 question(3).txt
+-rw-r--r-- 1 bachlang364 users   58 Apr 16 20:59 question(4).txt
+-rw-r--r-- 1 bachlang364 users   61 Apr 16 21:00 question(5).txt
+-rw-r--r-- 1 bachlang364 users   33 Apr 16 21:01 question(6).txt
+-rw-r--r-- 1 bachlang364 users   88 Apr 16 21:02 question(7).txt
+-rw-r--r-- 1 bachlang364 users   84 Apr 16 21:03 question(8).txt
+-rw-r--r-- 1 bachlang364 users   84 Apr 16 21:12 question(9).txt
+Finding latest question file for context:
+  Added latest question file to context: ./question/question(9).txt
+DEBUG: Listing all files in ./answer:
+total 44
+drwxr-xr-x 2 bachlang364 users 4096 Apr 16 21:03 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users  247 Apr 16 20:57 answer(1).txt
+-rw-r--r-- 1 bachlang364 users  747 Apr 16 20:58 answer(2).txt
+-rw-r--r-- 1 bachlang364 users  890 Apr 16 20:59 answer(3).txt
+-rw-r--r-- 1 bachlang364 users 1458 Apr 16 20:59 answer(4).txt
+-rw-r--r-- 1 bachlang364 users  860 Apr 16 21:00 answer(5).txt
+-rw-r--r-- 1 bachlang364 users  912 Apr 16 21:02 answer(6).txt
+-rw-r--r-- 1 bachlang364 users  890 Apr 16 21:02 answer(7).txt
+-rw-r--r-- 1 bachlang364 users  890 Apr 16 21:03 answer(8).txt
+-rw-r--r-- 1 bachlang364 users  257 Apr 16 20:57 answer.txt
+Adding answer files to context:
+  Added answer file to context: ./answer/answer(1).txt
+  Added answer file to context: ./answer/answer(2).txt
+  Added answer file to context: ./answer/answer(3).txt
+  Added answer file to context: ./answer/answer(4).txt
+  Added answer file to context: ./answer/answer(5).txt
+  Added answer file to context: ./answer/answer(6).txt
+  Added answer file to context: ./answer/answer(7).txt
+  Added answer file to context: ./answer/answer(8).txt
+  Added answer file to context: ./answer/answer.txt
+All context arguments (22 args):
+  --context-file ./data.txt
+  --context-file ./question/question(9).txt
+  --context-file ./answer/answer(1).txt
+  --context-file ./answer/answer(2).txt
+  --context-file ./answer/answer(3).txt
+  --context-file ./answer/answer(4).txt
+  --context-file ./answer/answer(5).txt
+  --context-file ./answer/answer(6).txt
+  --context-file ./answer/answer(7).txt
+  --context-file ./answer/answer(8).txt
+  --context-file ./answer/answer.txt
+Executing Cody chat command...
+Command to execute: cody chat --silent --model "openai::2024-02-01::gpt-4.1" [context_args] --message "[Prompt from ./prompt.txt]"
+- Logging in
+(node:14929) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Noxide Loader: Loading noxide library
+DelegatingProxy: Loaded 154 CA certs from noxide
+Uncaught exception: AbortError2: The user aborted a request.
+    at abort3 (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:47863:23)
+    at AbortSignal.abortAndFinalize2 (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:47877:11)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:827:20)
+    at AbortSignal.dispatchEvent (node:internal/event_target:762:26)
+    at runAbort (node:internal/abort_controller:426:10)
+    at abortSignal (node:internal/abort_controller:412:3)
+    at AbortController.abort (node:internal/abort_controller:444:5)
+    at AbortSignal.abortHandler (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:51788:19)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:827:20)
+    at AbortSignal.dispatchEvent (node:internal/event_target:762:26)
+    at runAbort (node:internal/abort_controller:426:10)
+    at abortSignal (node:internal/abort_controller:412:3)
+    at AbortController.abort (node:internal/abort_controller:444:5)
+    at AbortAggregator.abort (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:53628:25)
+    at GraphQLResultCache.invalidate (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:53704:22)
+    at Object.next (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:53645:21) {
+  type: 'aborted'
+}
+Uncaught exception: AbortError2: The user aborted a request.
+    at abort3 (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:47863:23)
+    at AbortSignal.abortAndFinalize2 (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:47877:11)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:827:20)
+    at AbortSignal.dispatchEvent (node:internal/event_target:762:26)
+    at runAbort (node:internal/abort_controller:426:10)
+    at abortSignal (node:internal/abort_controller:412:3)
+    at AbortController.abort (node:internal/abort_controller:444:5)
+    at AbortSignal.abortHandler (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:51788:19)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:827:20)
+    at AbortSignal.dispatchEvent (node:internal/event_target:762:26)
+    at runAbort (node:internal/abort_controller:426:10)
+    at abortSignal (node:internal/abort_controller:412:3)
+    at AbortController.abort (node:internal/abort_controller:444:5)
+    at AbortAggregator.abort (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:53628:25)
+    at GraphQLResultCache.invalidate (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:53704:22)
+    at Object.next (/home/bachlang364/.npm-global/lib/node_modules/@sourcegraph/cody/dist/index.js:53645:21) {
+  type: 'aborted'
+}
+✔ GPT-4.1 (74 tokens/second)
+Cody chat command executed successfully.
+Câu trả lời đã được lưu vào: ./answer/answer(9).txt
+Output saved to: ./answer/answer(9).txt
+Script finished at: Wed Apr 16 09:12:39 PM +07 2025
+==================================================
+
+==================================================
+Script started at: Wed Apr 16 09:13:53 PM +07 2025
+Checked/Created directories: ./question, ./answer
+Model read from ./model.txt: openai::2024-02-01::gpt-4.1
+Prompt read from ./prompt.txt
+Base answer file ./answer/answer.txt exists. Found max count: 9. Next answer file will be: ./answer/answer(10).txt
+Adding data file to context args: ./data.txt
+DEBUG: Listing all files in ./question:
+total 48
+drwxr-xr-x 2 bachlang364 users 4096 Apr 16 21:13 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users   34 Apr 16 21:13 question(10).txt
+-rw-r--r-- 1 bachlang364 users   15 Apr 16 20:57 question(1).txt
+-rw-r--r-- 1 bachlang364 users   41 Apr 16 20:57 question(2).txt
+-rw-r--r-- 1 bachlang364 users   88 Apr 16 20:58 question(3).txt
+-rw-r--r-- 1 bachlang364 users   58 Apr 16 20:59 question(4).txt
+-rw-r--r-- 1 bachlang364 users   61 Apr 16 21:00 question(5).txt
+-rw-r--r-- 1 bachlang364 users   33 Apr 16 21:01 question(6).txt
+-rw-r--r-- 1 bachlang364 users   88 Apr 16 21:02 question(7).txt
+-rw-r--r-- 1 bachlang364 users   84 Apr 16 21:03 question(8).txt
+-rw-r--r-- 1 bachlang364 users   84 Apr 16 21:12 question(9).txt
+Finding latest question file for context:
+  Added latest question file to context: ./question/question(10).txt
+DEBUG: Listing all files in ./answer:
+total 48
+drwxr-xr-x 2 bachlang364 users 4096 Apr 16 21:12 .
+drwxr-xr-x 4 bachlang364 users 4096 Apr 15 15:56 ..
+-rw-r--r-- 1 bachlang364 users  247 Apr 16 20:57 answer(1).txt
+-rw-r--r-- 1 bachlang364 users  747 Apr 16 20:58 answer(2).txt
+-rw-r--r-- 1 bachlang364 users  890 Apr 16 20:59 answer(3).txt
+-rw-r--r-- 1 bachlang364 users 1458 Apr 16 20:59 answer(4).txt
+-rw-r--r-- 1 bachlang364 users  860 Apr 16 21:00 answer(5).txt
+-rw-r--r-- 1 bachlang364 users  912 Apr 16 21:02 answer(6).txt
+-rw-r--r-- 1 bachlang364 users  890 Apr 16 21:02 answer(7).txt
+-rw-r--r-- 1 bachlang364 users  890 Apr 16 21:03 answer(8).txt
+-rw-r--r-- 1 bachlang364 users 1905 Apr 16 21:12 answer(9).txt
+-rw-r--r-- 1 bachlang364 users  257 Apr 16 20:57 answer.txt
+Adding answer files to context:
+  Added answer file to context: ./answer/answer(1).txt
+  Added answer file to context: ./answer/answer(2).txt
+  Added answer file to context: ./answer/answer(3).txt
+  Added answer file to context: ./answer/answer(4).txt
+  Added answer file to context: ./answer/answer(5).txt
+  Added answer file to context: ./answer/answer(6).txt
+  Added answer file to context: ./answer/answer(7).txt
+  Added answer file to context: ./answer/answer(8).txt
+  Added answer file to context: ./answer/answer(9).txt
+  Added answer file to context: ./answer/answer.txt
+All context arguments (24 args):
+  --context-file ./data.txt
+  --context-file ./question/question(10).txt
+  --context-file ./answer/answer(1).txt
+  --context-file ./answer/answer(2).txt
+  --context-file ./answer/answer(3).txt
+  --context-file ./answer/answer(4).txt
+  --context-file ./answer/answer(5).txt
+  --context-file ./answer/answer(6).txt
+  --context-file ./answer/answer(7).txt
+  --context-file ./answer/answer(8).txt
+  --context-file ./answer/answer(9).txt
+  --context-file ./answer/answer.txt
+Executing Cody chat command...
+Command to execute: cody chat --silent --model "openai::2024-02-01::gpt-4.1" [context_args] --message "[Prompt from ./prompt.txt]"
+- Logging in
+(node:15466) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Noxide Loader: Loading noxide library
+DelegatingProxy: Loaded 154 CA certs from noxide
+✔ GPT-4.1 (59 tokens/second)
+Cody chat command executed successfully.
+Câu trả lời đã được lưu vào: ./answer/answer(10).txt
+Output saved to: ./answer/answer(10).txt
+Script finished at: Wed Apr 16 09:14:09 PM +07 2025
+==================================================
+

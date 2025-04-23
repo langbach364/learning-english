@@ -1,1 +1,1 @@
-anthropic::2024-10-22::claude-3-7-sonnet-extended-thinking
+openai::2024-02-01::gpt-4.1

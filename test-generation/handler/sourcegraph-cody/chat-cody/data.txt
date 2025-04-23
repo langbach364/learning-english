@@ -27,3 +27,13 @@ oldWords:
 
 &&&
 
+Từ mới apple sai 3 lần
+Từ mới book sai 2 lần
+Từ mới cat sai 2 lần
+Từ mới dog sai 2 lần
+Từ mới elephant sai 1 lần
+
+Từ cũ house sai 1 lần trên 5 lần xuất hiện 
+Từ cũ car sai 0 lần trên 3 lần xuất hiện
+Từ cũ computer sai 0 lần trên 6 lần xuất hiện
+Từ cũ phone sai 0 lần trên 1 lần xuất hiện

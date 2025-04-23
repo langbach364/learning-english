@@ -1,0 +1,17 @@
+Dưới đây là thống kê phần học tập của bạn nè:
+
+- Từ mới:
+  - apple: bạn đã sai 3 lần
+  - book: bạn đã sai 2 lần
+  - cat: bạn đã sai 2 lần
+  - dog: bạn đã sai 2 lần
+  - elephant: bạn đã sai 1 lần
+
+- Từ cũ:
+  - house: bạn sai 1 lần trên 5 lần xuất hiện
+  - car: bạn chưa sai lần nào trên 3 lần xuất hiện
+  - computer: bạn chưa sai lần nào trên 6 lần xuất hiện
+  - phone: bạn chưa sai lần nào trên 1 lần xuất hiện
+
+Nhìn chung, bạn đang làm rất tốt với các từ cũ rồi đó! 😎 Còn mấy từ mới, mình cùng luyện thêm chút nữa là ổn áp liền. Có từ nào bạn muốn ôn lại trước không nè? 😉✨
+

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # cd ./learning-english/test-generation/handler/ || exit
-cd ./sourcegraph-cody/test-generator/ || exit
+# cd ./sourcegraph-cody/test-generator/ || exit
 
 DATA="./data.txt"
 PROMPT=$(cat ./prompt.txt)
